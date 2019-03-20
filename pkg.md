@@ -94,6 +94,6 @@ The package manager for KISS is tiny and comes in at around `250` lines of code.
 ## Example package checksums
 
 ```
-43bfea3a6b24b4e5f63190409a199bee8cb93dbea01c52ad7f017078ebdf7c9b  /var/cache/pkg/linux-headers/linux-5.0.2.tar.xz
-2715d463b92bd629da579661e3a2a19c0b87f31083bc60b7e33c380293fe10a4  /var/cache/pkg/linux-headers/patch-5.0.2.xz
+SHA256 (signify-0.1p1.tar.gz) = a878fd281ed78e5a461ee7e8ab85546467bf24c20ac5069aed719daff34d33d0
+SHA256 (fix-decls.patch) = c752016319c5c70daaa08533c4fbd429f0244538fb214bfab2aed40788329486
 ```
