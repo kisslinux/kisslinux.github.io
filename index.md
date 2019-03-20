@@ -22,6 +22,8 @@ An ultra minimal Linux distribution.
 
 * [Package Management](#package-management)
 * [Installation](#installation)
+* [Frequently Asked Questions](#frequently-asked-questions)
+    * [Can I replace NAME program?](#can-i-replace-name-program)
 
 <!-- vim-markdown-toc -->
 
@@ -38,3 +40,10 @@ This has the added benefit of making package contribution simple. A pull request
 ## Installation
 
 To install KISS you will need to hijack the live installation of another `musl` based Linux distribution. From there you need to manually partition the disks and install the distribution from a `chroot`.
+
+
+## Frequently Asked Questions
+
+### Can I replace NAME program?
+
+You can change any of the running software with the exception of `musl` and `gcc`. None of it is tightly wrapped into the distributions workings.
