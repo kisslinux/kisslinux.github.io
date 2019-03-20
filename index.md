@@ -1,5 +1,3 @@
-<a href='/pkg'>pkg</a>
-
 # KISS
 
 An ultra minimal Linux distribution.
@@ -12,7 +10,7 @@ An ultra minimal Linux distribution.
 **Links**
 
 - Repository: <https://github.com/kissx/kiss>
-- Package Manager: <https://github.com/kissx/pkg>
+- Package Manager: <https://kissx.github.io/pkg>
 
 
 **STATUS**: Buildable inside a `chroot`.
