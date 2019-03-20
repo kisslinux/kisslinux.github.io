@@ -31,10 +31,12 @@ The package manager for KISS is tiny and comes in at around `250` lines of code.
 
 - Downloads the source files defined in the `pkgfile`.
 - Verifies their checksums.
-- Builds the package.
+- All source files are moved to `build/src`.
+- The package is built.
+- The package is "installed" to `build/pkg`.
 - The package's database entry is included in the package.
 - Generates a `.manifest` containing the package's contents.
-- Generates a `pkg-version.tar.gz` file.
+- Generates a `PKG-pkg_version-release.tar.gz` file.
 
 **Add**
 
@@ -56,7 +58,8 @@ The package manager for KISS is tiny and comes in at around `250` lines of code.
 
 **Checksum**
 
-- Generate checksums for all package sources.
+- Downloads all sources.
+- Generates checksums for all package sources.
 
 
 ## Example package manifest
