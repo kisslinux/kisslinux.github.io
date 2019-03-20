@@ -1,1 +1,11 @@
 theme:
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  startings: [html, head, body]
+
+
+
+
+
