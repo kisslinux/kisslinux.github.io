@@ -15,7 +15,7 @@ The package manager for KISS Linux.
 
 ## Introduction
 
-The package manager for KISS is tiny and comes in at around `250` lines of code. The package manager has 5 basic functions; `build`, `add`, `del`, ``list` and `checksum`.
+The package manager for KISS is tiny and comes in at around `250` lines of code. The package manager has 5 basic functions; `build`, `add`, `del`, `list` and `checksum`.
 
 **Build**
 
