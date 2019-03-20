@@ -12,7 +12,6 @@ An ultra minimal Linux distribution.
 - Repository: <https://github.com/kissx/kiss>
 - Package Manager: <https://github.com/kissx/pkg>
 
----
 
 ## Table of Contents
 
