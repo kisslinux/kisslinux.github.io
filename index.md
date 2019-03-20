@@ -3,8 +3,6 @@
 
 An ultra minimal Linux distribution.
 
-| component       | program   |
-| --------------- | --------- |
-| libc            | `musl`    |
-| init            | `busybox` |
-| package manager | [custom](https://github.com/kissx/pkg) |
+- `musl` is used in place of `glibc`.
+- `busybox` acts as the `coreutils`, `shell`, `init` etc.
+- `lilo` is the bootloader.
