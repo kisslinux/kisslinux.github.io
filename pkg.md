@@ -46,6 +46,7 @@ The package manager for KISS is tiny and comes in at around `250` lines of code.
 
 - Reads the installed package's manifest.
 - Deletes all files in the manifest.
+- Deletes database entry (*it's in the manifest*).
 - Deletes all directories in the manifest (*if empty*).
 
 **List**
