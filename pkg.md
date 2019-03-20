@@ -7,7 +7,10 @@ The package manager for KISS Linux.
 - Written in POSIX `sh`.
 - Uses POSIX `coreutils`.
 - Simple
-- Tiny
-- Fast
+
+**Links**
+
+- Repository: <https://github.com/kissx/pkg>
+
 
 ## Introduction
