@@ -1,4 +1,5 @@
 theme:
+syntax_highlighter:
 compress_html:
   clippings: all
   comments: all
