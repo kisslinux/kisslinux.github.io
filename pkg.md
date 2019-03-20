@@ -19,6 +19,7 @@ The package manager for KISS Linux.
 
 * [Introduction](#introduction)
 * [Example package manifest](#example-package-manifest)
+* [Example package checksums](#example-package-checksums)
 
 <!-- vim-markdown-toc -->
 
@@ -84,4 +85,11 @@ The package manager for KISS is tiny and comes in at around `250` lines of code.
 /usr/include
 /usr/bin
 /usr
+```
+
+## Example package checksums
+
+```
+43bfea3a6b24b4e5f63190409a199bee8cb93dbea01c52ad7f017078ebdf7c9b  /var/cache/pkg/linux-headers/linux-5.0.2.tar.xz
+2715d463b92bd629da579661e3a2a19c0b87f31083bc60b7e33c380293fe10a4  /var/cache/pkg/linux-headers/patch-5.0.2.xz
 ```
