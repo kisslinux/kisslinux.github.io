@@ -30,7 +30,7 @@ An ultra minimal Linux distribution.
 
 ## Package Management
 
-Binaries are not provided, all programs must be built. KISS uses `pkg` a package manager built for the distribution in POSIX `sh`. The workflow is `pkg b` to build the package and `pkg a pkg.tar.gz` to install the package.
+Binaries are not provided, all programs must be built. KISS uses `pkg`, a package manager built for the distribution in POSIX `sh`. The workflow is `pkg b` to build the package and `pkg a pkg.tar.gz` to install the package.
 
 KISS has no system-wide repositories. Instead you fork the main repository and manage things yourself. You can add new packages and modify existing ones. A simple `git pull` will update the repository and `git` will handle any conflicts for you.
 
