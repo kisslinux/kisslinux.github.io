@@ -1,3 +1,5 @@
+<a href='/pkg'>pkg</a>
+
 # KISS
 
 An ultra minimal Linux distribution.
