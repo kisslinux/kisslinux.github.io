@@ -12,11 +12,6 @@ The package manager for KISS Linux.
 
 - Repository: <https://github.com/kissx/pkg>
 
-**Dependencies**
-
-- `busybox`
-- `fakeroot`
-
 
 ## Table of Contents
 
