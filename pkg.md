@@ -23,6 +23,7 @@ The package manager for KISS Linux.
 <!-- vim-markdown-toc GFM -->
 
 * [Introduction](#introduction)
+* [Example `pkgfile`](#example-pkgfile)
 * [Example package manifest](#example-package-manifest)
 * [Example package checksums](#example-package-checksums)
 
@@ -66,6 +67,41 @@ The package manager for KISS is tiny and comes in at around `250` lines of code.
 - Downloads all sources.
 - Generates checksums for all package sources.
 
+
+## Example `pkgfile`
+
+- The working directory starts inside the package source.
+- `$BUILD` is the destination directory (what goes in the package).
+
+```
+name=curl
+version=7.64.0
+release=1
+desc="URL retrival utility and library"
+source="https://curl.haxx.se/download/curl-$version.tar.xz"
+depends="openssl zlib autoconf automake perl"
+
+build() {
+    autoreconf -vif
+
+    ./configure \
+        --prefix=/usr \
+        --enable-ipv6 \
+        --enable-unix-sockets \
+        --enable-hidden-symbols \
+        --without-libidn \
+        --without-libidn2 \
+        --disable-manual \
+        --disable-ldap \
+        --disable-ares \
+        --without-libidn \
+        --without-librtmp \
+        --with-pic
+
+    make
+    make DESTDIR="$BUILD" install
+}
+```
 
 ## Example package manifest
 
