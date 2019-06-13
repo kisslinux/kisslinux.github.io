@@ -44,3 +44,9 @@ Source: <https://www.redhat.com/archives/fedora-devel-list/2008-January/msg00861
 Following the link and reading the replies will show a steady stream of people (many if not all of them Red Hat employees) agreeing with the idea "Linux is NOT about choice.".
 
 The number one reason I use Linux is **for** the choice it offers (or more realistically offered) over Windows or MacOS. The ability to mix and match the software you use is disappearing steadily.
+
+While majority of Linux users are fine with the current state of Linux distributions and likely don't even know about this situation. In the near future the aim is to fill this niche with a different kind of distribution.
+
+KISS by design will maximize the ability to swap out any portion of the system for something else. The base installation will be opinionated however any part of it can be replaced using the package manager.
+
+Development can be followed at <https://github.com/kissx>.
