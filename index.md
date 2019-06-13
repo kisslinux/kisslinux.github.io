@@ -18,7 +18,7 @@ An ultra minimal Linux distribution.
 
 ## Rationale
 
-KISS will go back to the notion of "Linux is about choice.". The major Linux distributions have all gone the way of Red Hat which has the following to say.
+KISS will go back to the notion of "Linux is about choice". The major Linux distributions have all gone the way of Red Hat which has the following to say.
 
 ```
 > Linux is about choice.
@@ -34,5 +34,5 @@ again.
 ...
 ```
 
-Source: https://www.redhat.com/archives/fedora-devel-list/2008-January/msg00861.html
+Source: <https://www.redhat.com/archives/fedora-devel-list/2008-January/msg00861.html>
 
