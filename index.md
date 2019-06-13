@@ -7,6 +7,7 @@ An ultra minimal Linux distribution.
 - Repository: <https://github.com/kissx/kiss>
 
 
+<!--
 ## Table of Contents
 
 <!-- vim-markdown-toc GFM -->
@@ -14,7 +15,9 @@ An ultra minimal Linux distribution.
 * [Rationale](#rationale)
 
 <!-- vim-markdown-toc -->
+>--
 
+<!--
 ## Rationale
 
 KISS will go back to the notion of "Linux is about choice". The major Linux distributions have all gone the way of the below post (from the Red Hat Development mailing list) which has the following to say.
@@ -49,3 +52,4 @@ While majority of Linux users are fine with the current state of Linux distribut
 KISS by design will maximize the ability to swap out any portion of the system for something else. The base installation will be opinionated, however any part of it can be replaced using the package manager.
 
 Development can be followed at <https://github.com/kissx>.
+-->
