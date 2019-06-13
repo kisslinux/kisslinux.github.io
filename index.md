@@ -36,3 +36,6 @@ again.
 
 Source: <https://www.redhat.com/archives/fedora-devel-list/2008-January/msg00861.html>
 
+Following the link and reading the replies will show a steady stream of people (many if not all of them Red Hat employees) agreeing with the idea "Linux is NOT about choice.".
+
+The number one reason I use Linux is **for** the choice it offers (or more realistically offered) over Windows or MacOS. The ability to mix and match the software you use is disappearing steadily.
