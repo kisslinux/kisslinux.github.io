@@ -10,6 +10,8 @@ An ultra minimal Linux distribution.
 **STATUS**: Buildable inside a `chroot`.
 
 
+## Table of Contents
+
 <!-- vim-markdown-toc GFM -->
 
 * [Rationale](#rationale)
