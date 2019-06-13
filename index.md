@@ -7,9 +7,6 @@ An ultra minimal Linux distribution.
 - Repository: <https://github.com/kissx/kiss>
 
 
-**STATUS**: Buildable inside a `chroot`.
-
-
 ## Table of Contents
 
 <!-- vim-markdown-toc GFM -->
