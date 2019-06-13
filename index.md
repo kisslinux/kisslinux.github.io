@@ -31,6 +31,11 @@ dare you change it on them you're so mean and next time I have friends
 over for Buffy night you're not invited mom he's sitting on my side
 again.
 
+As a consumer, yes, you have lots of choices in which Linux you use.
+This does not mean Linux is in any sense _about_ choice, any more than
+because there are so many kinds of cars you can buy that cars are about
+choice.
+
 ...
 ```
 
