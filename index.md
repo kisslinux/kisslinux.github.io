@@ -17,7 +17,7 @@ An ultra minimal Linux distribution.
 
 ## Rationale
 
-KISS will go back to the notion of "Linux is about choice". The major Linux distributions have all gone the way of the below post on the Red Hat Development mailing list which has the following to say.
+KISS will go back to the notion of "Linux is about choice". The major Linux distributions have all gone the way of the below post (from the Red Hat Development mailing list) which has the following to say.
 
 ```
 > Linux is about choice.
