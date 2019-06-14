@@ -2,7 +2,7 @@
 
 Website for Kiss Linux built with a miniscule `jekyll` theme which is effectively empty. Each page is as small as possible while still being accessible, responsive and pretty.
 
-![speed test](https://media.discordapp.net/attachments/443691874771927041/589095443913506817/yessss.png?width=1000&height=584)
+<img src="https://media.discordapp.net/attachments/443691874771927041/589095443913506817/yessss.png" width=300px>
 
 Example page in HTML:
 
