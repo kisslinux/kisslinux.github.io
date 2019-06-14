@@ -2,20 +2,13 @@
 
 A highly opinionated, ultra minimal, Linux distribution.
 
-**Links**
+## Index
 
 - [Repository](https://github.com/kissx/packages)
 - [Package Manager](https://github.com/kissx/kiss)
+- [Rationale](#rationale)
+- [Status](#status)
 
-
-## Index
-
-<!-- vim-markdown-toc GFM -->
-
-* [Rationale](#rationale)
-* [Status](#status)
-
-<!-- vim-markdown-toc -->
 
 ## Rationale
 
