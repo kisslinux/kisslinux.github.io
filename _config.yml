@@ -4,15 +4,8 @@ highlighter: none
 kramdown:
     input: GFM
     hard_wrap: false
-    syntax_highlighter_opts:
-        disable: true
 compress_html:
   clippings: all
   comments: all
   endings: all
   startings: [html, head, body]
-
-
-
-
-
