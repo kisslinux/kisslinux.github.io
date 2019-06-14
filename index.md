@@ -2,10 +2,8 @@
 
 A highly opinionated, ultra minimal, Linux distribution.
 
-**Links**
-
-- [Repository](https://github.com/kissx/packages)
-- [Package Manager](https://github.com/kissx/kiss)
+<a href="https://github.com/kissx/kiss"><img src="https://gh-card.dev/repos/kissx/kiss.svg" width=300px></a>
+<a href="https://github.com/kissx/packages"><img src="https://gh-card.dev/repos/kissx/packages.svg" width=300px></a>
 
 
 ## Rationale
