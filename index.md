@@ -10,7 +10,7 @@ A highly opinionated, ultra minimal, Linux distribution.
 
 ## Rationale
 
-A Linux distribution specifically for desktop that aims to be minimal, simple and hackable. KISS is meant for users with prior Linux and programming knowledge and for those who want something simple.
+A Linux distribution specifically for desktop that aims to be simple, minimal and hackable. KISS is meant for users with prior Linux and programming knowledge and for those who want something simple.
 
 The main repository will contain a minimal and curated package set. However, as a user you can easily create your own repository and package what you like. The tools are made available to you; KISS is just the base.
 
