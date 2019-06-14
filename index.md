@@ -13,3 +13,5 @@ A highly opinionated, ultra minimal, Linux distribution.
 A Linux distribution specifically for desktop that aims to be minimal in every sense of the word. KISS is meant for users with prior Linux and programming knowledge and for those who want something simple.
 
 The distribution is highly opinionated and the main repository will contain a minimal package set. However, as a user you can easily create your own repository and package what you like. The tools are made available to you, KISS is just the base.
+
+Packages in KISS employ a new concept. Instead of your typical sourceable shell scripts, multiple plain-text files are used. This new format is easily parseable in any programming language as file data is either separated by spaces or lines.
