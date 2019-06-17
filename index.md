@@ -2,6 +2,8 @@
 
 A highly opinionated, ultra minimal, Linux distribution.
 
+> Simplicity is the ultimate sophistication. Leonardo da Vinci
+
 ## Index
 
 - [Repository](https://github.com/kissx/packages)
