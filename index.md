@@ -6,10 +6,18 @@ A highly opinionated, ultra minimal, Linux distribution.
 
 ## Index
 
+- [Status](#status)
+- [Rationale](#rationale)
 - [Repository](https://github.com/kissx/packages)
 - [Package Manager](https://github.com/kissx/kiss)
-- [Rationale](#rationale)
-- [Status](#status)
+- [Init Scripts](https://github.com/kissx/kiss-init)
+- [Chroot Scripts](https://github.com/kissx/kiss-chroot)
+
+## Status
+
+The core KISS repository has been finalized and the distribution is at a stage where a functioning `chroot` can be built. The KISS `chroot` can also successfully built itself. There's no longer a reliance on another distribution.
+
+The `rc.boot` and `rc.shutdown` scripts for the init-system are complete (I am using them on hardware already). Over the next few days the default services will be written and if all goes well a VM image will be released.
 
 
 ## Rationale
@@ -21,9 +29,3 @@ The main repository will contain a minimal and curated package set. However, as 
 Packages in KISS employ a new concept. Instead of your typical sourceable shell scripts, multiple plain-text files are used. This new format is easily parseable in any programming language as file data is either separated by spaces or lines.
 
 To showcase this concept, the reference package manager is written in under 200 lines of POSIX `sh`. Nothing stops you from interfacing with the repositories outside of the base package manager. You can easily write your own tools.
-
-## Status
-
-KISS is not yet useable as a distribution, however the package manager and main repository are fully operational. I currently use a few KISS packages on my Void Linux installation.
-
-The remaining work is getting it to a TTY inside a virtual machine and later to a graphical state. This involves creating an installation method, documentation and the last remaining packages.
