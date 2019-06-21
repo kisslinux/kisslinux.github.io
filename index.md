@@ -28,4 +28,4 @@ The main repository will contain a minimal and curated package set. However, as 
 
 Packages in KISS employ a new concept. Instead of your typical sourceable shell scripts, multiple plain-text files are used. This new format is easily parseable in any programming language as file data is either separated by spaces or lines.
 
-To showcase this concept, the reference package manager is written in under 200 lines of POSIX `sh`. Nothing stops you from interfacing with the repositories outside of the base package manager. You can easily write your own tools.
+To showcase this concept, the reference package manager is written in around 200 lines of POSIX `sh`. Nothing stops you from interfacing with the repositories outside of the base package manager. You can easily write your own tools.
