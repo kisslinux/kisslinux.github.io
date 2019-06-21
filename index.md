@@ -17,7 +17,7 @@ A highly opinionated, ultra minimal, Linux distribution.
 
 First hardware boot to TTY!
 
-![First hardware boot](https://media.discordapp.net/attachments/574207845441208330/591668537152503869/JPEG_20190621_233916.jpg)
+<img src="https://media.discordapp.net/attachments/574207845441208330/591668537152503869/JPEG_20190621_233916.jpg" alt="First hardware boot!" height="300px">
 
 The core KISS repository has been finalized and the distribution is at a stage where a functioning `chroot` can be built. The KISS `chroot` can also successfully built itself. There's no longer a reliance on another distribution.
 
