@@ -19,7 +19,7 @@ You may run into an issue while following the steps in this guide. Head on over 
 <!-- vim-markdown-toc -->
 
 
-## 0 - GENESIS (Downloading KISS)
+## [0 - GENESIS (Downloading KISS)](#0---genesis-downloading-kiss)
 
 The installation is very similar to Gentoo's stage 3 `tarballs`.
 
@@ -37,4 +37,4 @@ wget https://github.com/kissx/packages/releases/download/0.0.3-musl/kiss-chroot-
 sha256sum kiss-chroot*
 ```
 
-## 1 - EXODUS
+## [1 - EXODUS](#1---exodus)
