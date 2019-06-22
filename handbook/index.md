@@ -6,6 +6,9 @@ Welcome to KISS, a new independent distribution with a focus on simplicity. This
 
 You may run into an issue while following the steps in this guide. Head on over to the [issue tracker](https://github.com/kissx/packages/issues) and open an issue. We are happy to help.
 
+**NOTE**: This guide is a work in progress and is currently incomplete. This notice will be removed once the guide is complete.
+
+
 ## Index
 
 <!-- vim-markdown-toc GFM -->
