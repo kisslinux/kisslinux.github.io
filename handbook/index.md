@@ -31,6 +31,10 @@ Download the latest release.
 
 ```
 wget https://github.com/kissx/packages/releases/download/0.0.3-musl/kiss-chroot-0.0.3.tar.xz
+
+# Verify the download.
+# Does it match '73afa29881b3189b83d4cf71ddb5e405c5943b131f4cbeee08dc0080330472c5'?
+sha256sum kiss-chroot*
 ```
 
 ## 1 - EXODUS
