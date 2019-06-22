@@ -10,9 +10,9 @@ You may run into an issue while following the steps in this guide. Head on over 
 
 <!-- vim-markdown-toc GFM -->
 
-* [0 - A baby is born](#0---a-baby-is-born)
+* [0 - GENESIS](#0---genesis)
 
 <!-- vim-markdown-toc -->
 
 
-## 0 - A baby is born
+## 0 - GENESIS
