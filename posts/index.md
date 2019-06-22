@@ -1,4 +1,7 @@
-# KISS BLOG
+
+[KISS](/)
+
+# BLOG
 
 Ramblings about Linux distribution development.
 
