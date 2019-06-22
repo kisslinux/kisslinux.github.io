@@ -1,4 +1,4 @@
-[BLOG](/posts)
+[KISS](/) / [HANDBOOK](/handbook) / [BLOG](/posts)
 
 # KISS
 
