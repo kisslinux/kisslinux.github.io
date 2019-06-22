@@ -9,7 +9,7 @@ You may run into an issue while following the steps in this guide. Head on over 
 **NOTE**: This guide is a work in progress and is currently incomplete. This notice will be removed once the guide is complete.
 
 
-## Index
+## INDEX
 
 <!-- vim-markdown-toc GFM -->
 
