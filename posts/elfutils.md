@@ -1,3 +1,3 @@
 [KISS](/) / [BLOG](/posts)
 
-# `elfutils` or why KISS uses a 6 year old release of an older library
+# elfutils
