@@ -19,7 +19,7 @@ A highly opinionated, ultra minimal, Linux distribution.
 
 Screen-shot from Virtual Machine.
 
-<img src="../images/sysinfo.jpg" alt="sysinfo">
+<img src="../images/sysinfo.png" alt="sysinfo">
 
 First hardware boot to TTY!
 
