@@ -1,3 +1,5 @@
+[BLOG](/posts)
+
 # KISS
 
 A highly opinionated, ultra minimal, Linux distribution.
