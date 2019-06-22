@@ -13,13 +13,13 @@ You may run into an issue while following the steps in this guide. Head on over 
 
 <!-- vim-markdown-toc GFM -->
 
-* [0 - GENESIS](#0---genesis)
+* [0 - GENESIS (Setting up the environment)](#0---genesis-setting-up-the-environment)
 * [1 - EXODUS](#1---exodus)
 
 <!-- vim-markdown-toc -->
 
 
-## 0 - GENESIS
+## 0 - GENESIS (Setting up the environment)
 
 The installation is very similar to Gentoo's stage 3 `tarballs`.
 
