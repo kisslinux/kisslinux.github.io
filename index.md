@@ -17,10 +17,14 @@ A highly opinionated, ultra minimal, Linux distribution.
 
 ## Status
 
+Screen-shot from Virtual Machine.
+
+<img src="../images/sysinfo.jpg" alt="sysinfo">
+
 First hardware boot to TTY!
 
 <picture>
-  <source srcset="..//images/boot.webp" type="image/webp">
+  <source srcset="../images/boot.webp" type="image/webp">
   <img src="../images/boot.jpg" alt="First hardware boot!">
 </picture>
 
