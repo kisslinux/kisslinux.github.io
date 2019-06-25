@@ -15,7 +15,6 @@ You may run into an issue while following the steps in this guide. Head on over 
 
 * [0 - GENESIS (Preamble)](#0---genesis-preamble)
 * [1 - EXODUS (Setting up disks)](#1---exodus-setting-up-disks)
-    * [Commands:](#commands)
 * [2 - LEVITICUS (Downloading KISS)](#2---leviticus-downloading-kiss)
 
 <!-- vim-markdown-toc -->
@@ -58,17 +57,10 @@ Get the disks ready for the installation. This involves creating a partition tab
 - Swap (optional)
 - Remainder of disk (up to you).
 
-### Commands:
+This guide will **not** cover this step. If you require assistance with this step; read one of the links below.
 
-```
-# Identify the disks.
-➜ fdisk -l
-
-:  Run 'fdisk' once you have identified your disks.
-
-# Example for /dev/sda.
-➜ fdisk /dev/sda
-```
+- https://wiki.gentoo.org/wiki/Handbook:AMD64/Installation/Disks
+- https://wiki.archlinux.org/index.php/Installation_guide#Partition_the_disks
 
 ## [2 - LEVITICUS (Downloading KISS)](#2---leviticus-downloading-kiss)
 
