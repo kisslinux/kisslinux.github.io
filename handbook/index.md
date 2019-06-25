@@ -69,7 +69,7 @@ Once your disks are partitioned and file-systems have been setup, they need to b
 ➜ mount /dev/sdXX /mnt
 
 # Create any remaining mount points (`/mnt/boot` for example)
-# and mount the corrosponding partitions
+# and mount the corresponding partitions
 ➜ mkdir -p /mnt/boot
 ➜ mount /dev/sdXX /mnt/boot
 ```
