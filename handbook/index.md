@@ -95,7 +95,31 @@ Enter the `chroot`.
 
 This step is **entirely optional** and you can just use the supplied binaries from the downloaded `chroot`.
 
-**NOTE**: This step has not been automated yet either and each package will need to be rebuilt one by one (`kiss install pkg`). I will be working on a "boostrap" script to completely automate this.
+Download the `bootstrap` helper script.
+
+```
+➜ wget https://raw.githubusercontent.com/kissx/kiss-bootstrap/master/kiss-bootstrap
+
+# Inspect the script before you execute it below.
+➜ vi kiss-bootstrap
+
+# Ensure the script is executable.
+➜ chmod +x kiss-bootstrap
+```
+
+Modify compiler options (optional):
+
+```
+➜ export CFLAGS=""
+➜ export CXXFLAGS=""
+➜ export MAKEFLAGS=""
+```
+
+Start rebuilding all packages:
+
+```
+➜  ./kiss-bootstrap
+```
 
 ## [4 - DEUTERONOMY (Installing `grub`)](#4---numbers-installing-grub)
 
