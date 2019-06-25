@@ -63,7 +63,7 @@ Download the latest release.
 # Verify the download.
 # Does it match?
 # 78e49b8dcd23ffcfcb940d3ec2f9cc1b293bbddc174c9d43562bcca8f512961f
-➜ sha256sum kiss-chroot.*
+➜ sha256sum kiss-chroot*
 ```
 
 Download the `chroot` helper script.
