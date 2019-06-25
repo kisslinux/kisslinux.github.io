@@ -15,7 +15,7 @@ You may run into an issue while following the steps in this guide. Head on over 
 
 * [0 - GENESIS (Preamble)](#0---genesis-preamble)
 * [1 - EXODUS (Setting up disks)](#1---exodus-setting-up-disks)
-* [2 - LEVITICUS (Downloading KISS)](#2---leviticus-downloading-kiss)
+* [2 - LEVITICUS (Install KISS)](#2---leviticus-install-kiss)
 
 <!-- vim-markdown-toc -->
 
@@ -50,7 +50,7 @@ This guide will **not** cover this step. If you require assistance with this ste
 - <https://wiki.archlinux.org/index.php/Installation_guide#Partition_the_disks>
 
 
-## [2 - LEVITICUS (Downloading KISS)](#2---leviticus-downloading-kiss)
+## [2 - LEVITICUS (Install KISS)](#2---leviticus-downloading-kiss)
 
 Download the latest release.
 
@@ -63,9 +63,9 @@ Download the latest release.
 ➜ sha256sum kiss-chroot.*
 ```
 
-Unpack the `tarball`.
+Unpack the `tarball` (Install KISS).
 
 ```
-➜ tar xvf kiss-chroot.*
+# Make sure all disks are mounted to '/mnt'.
+➜ tar xvf kiss-chroot.* -C /mnt --strip-components 1
 ```
-
