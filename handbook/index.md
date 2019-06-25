@@ -42,6 +42,21 @@ For the purpose of this guide I will be using another Linux distribution's live-
 
 ## [1 - EXODUS (Setting up disks](#1---exodus)
 
+Get the disks ready for the installation. This involves creating a partition table, partitions and the desired file-systems. This step will differ depending on whether or not you are doing a BIOS or EUFI installation.
+
+**BIOS basic requirements**
+
+- MBR partition table.
+- Swap (optional)
+- Remainder of disk (up to you).
+
+**UEFI basic requirements**
+
+- GPT partition table.
+- 256-512MiB EFI system partition (at `/dev/sdX1`).
+- Swap (optional)
+- Remainder of disk (up to you).
+
 Identify disks:
 
 ```
