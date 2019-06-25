@@ -133,6 +133,8 @@ Start rebuilding all packages:
 Build and install `grub`.
 
 ```
+➜ kiss install libffi
+➜ kiss install python
 ➜ kiss install automake
 ➜ kiss install grub
 ```
