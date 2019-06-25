@@ -130,8 +130,20 @@ Start rebuilding all packages:
 
 ## [5 - JOSHUA (Installing `grub`)](#5---joshua-installing-grub)
 
+Build and install `grub`.
+
 ```
 ➜ kiss install automake
 ➜ kiss install grub
 ```
 
+Setup `grub`.
+
+```
+# UEFI
+# Replace 'esp' with its mount point.
+grub-install --target=x86_64-efi --efi-directory=esp --bootloader-id=GRUB
+
+# BIOS
+grub-install --target=i386-pc /dev/sdX
+```
