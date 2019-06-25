@@ -17,8 +17,8 @@ You may run into an issue while following the steps in this guide. Head on over 
 * [1 - EXODUS (Setting up disks)](#1---exodus-setting-up-disks)
 * [2 - LEVITICUS (Install KISS)](#2---leviticus-install-kiss)
 * [3 - NUMBERS (Rebuild KISS)](#3---numbers-rebuild-kiss)
-* [4 - DEUTERONOMY (Installing `grub`)](#4---deuteronomy-installing-grub)
-* [5 - JOSHUA (Installing `linux`)](#5---joshua-installing-linux)
+* [4 - DEUTERONOMY (Installing `linux`)](#4---deuteronomy-installing-linux)
+* [5 - JOSHUA (Installing `grub`)](#5---joshua-installing-grub)
 
 <!-- vim-markdown-toc -->
 
@@ -121,16 +121,17 @@ Start rebuilding all packages:
 ➜  ./kiss-bootstrap -f
 ```
 
-## [4 - DEUTERONOMY (Installing `grub`)](#4---numbers-installing-grub)
+## [4 - DEUTERONOMY (Installing `linux`)](#4---deuteronomy-installing-linux)
+
+```
+➜ kiss install libelf
+➜ kiss install linux
+```
+
+## [5 - JOSHUA (Installing `grub`)](#5---joshua-installing-grub)
 
 ```
 ➜ kiss install automake
 ➜ kiss install grub
 ```
 
-## [5 - JOSHUA (Installing `linux`)](#4---numbers-installing-grub)
-
-```
-➜ kiss install libelf
-➜ kiss install linux
-```
