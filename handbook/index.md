@@ -118,7 +118,7 @@ Modify compiler options (optional):
 Start rebuilding all packages:
 
 ```
-➜  ./kiss-bootstrap
+➜  ./kiss-bootstrap -f
 ```
 
 ## [4 - DEUTERONOMY (Installing `grub`)](#4---numbers-installing-grub)
