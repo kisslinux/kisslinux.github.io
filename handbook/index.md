@@ -97,3 +97,8 @@ This step is **entirely optional** and you can just use the supplied binaries fr
 **NOTE**: This step has not been automated yet either and each package will need to be rebuilt one by one (`kiss install pkg`). I will be working on a "boostrap" script to completely automate this.
 
 ## [4 - NUMBERS (Installing `grub`)](#4---numbers-installing-grub)
+
+```
+kiss i automake
+kiss i grub
+```
