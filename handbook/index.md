@@ -62,6 +62,8 @@ This guide will **not** cover this step. If you require assistance with this ste
 - https://wiki.gentoo.org/wiki/Handbook:AMD64/Installation/Disks
 - https://wiki.archlinux.org/index.php/Installation_guide#Partition_the_disks
 
+Once your disks are partitioned and file-systems have been setup you are ready to move on to the next step.
+
 ## [2 - LEVITICUS (Downloading KISS)](#2---leviticus-downloading-kiss)
 
 Download the latest release.
