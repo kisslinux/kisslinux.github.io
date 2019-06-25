@@ -28,7 +28,17 @@ An archive is used which contains a full KISS system minus the boot-loader and k
 
 You will need an existing Linux distribution to use as a base for the installation. It does not matter what kind of distribution it is nor does it matter what `libc` it uses.
 
-For the purpose of this guide I will be using another Linux distribution's live-CD to bootstrap KISS.
+For the purpose of this guide I will be using another Linux distribution's live-CD to bootstrap KISS. The workflow for the installation roughly follows the following steps.
+
+1. Partition the disks.
+2. Download KISS.
+3. Rebuild KISS (optional)
+    - You can also just install the bootstrap.
+4. Copy KISS to `/`.
+5. `chroot` into KISS.
+6. Build the kernel.
+7. Build `grub`.
+8. Configure other little parts.
 
 ## [1 - EXODUS (Setting up disks](#1---exodus)
 
