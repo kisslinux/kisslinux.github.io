@@ -16,6 +16,8 @@ You may run into an issue while following the steps in this guide. Head on over 
 * [0 - GENESIS (Preamble)](#0---genesis-preamble)
 * [1 - EXODUS (Setting up disks)](#1---exodus-setting-up-disks)
 * [2 - LEVITICUS (Install KISS)](#2---leviticus-install-kiss)
+* [3 - NUMBERS (Rebuild KISS) (Optional)](#3---numbers-rebuild-kiss-optional)
+* [4 - NUMBERS (Installing `grub`)](#4---numbers-installing-grub)
 
 <!-- vim-markdown-toc -->
 
@@ -86,4 +88,12 @@ Enter the `chroot`.
 
 ```
 ➜ ./kiss-chroot /mnt
-``
+```
+
+## [3 - NUMBERS (Rebuild KISS) (Optional)](#3---numbers-rebuild-kiss-optional)
+
+This step is **entirely optional** and you can just use the supplied binaries from the downloaded `chroot`.
+
+**NOTE**: This step has not been automated yet either and each package will need to be rebuilt one by one (`kiss install pkg`). I will be working on a "boostrap" script to completely automate this.
+
+## [4 - NUMBERS (Installing `grub`)](#4---numbers-installing-grub)
