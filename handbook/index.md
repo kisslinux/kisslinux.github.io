@@ -42,6 +42,19 @@ For the purpose of this guide I will be using another Linux distribution's live-
 
 ## [1 - EXODUS (Setting up disks](#1---exodus)
 
+Identify disks:
+
+```
+➜ fdisk -l
+```
+
+Run `fdisk` once you have identified your disks.
+
+```
+# Example for /dev/sda.
+➜ fdisk /dev/sda
+```
+
 ## [2 - LEVITICUS (Downloading KISS)](#2---leviticus)
 
 Download the latest release.
