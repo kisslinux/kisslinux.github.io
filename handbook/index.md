@@ -14,13 +14,13 @@ You may run into an issue while following the steps in this guide. Head on over 
 <!-- vim-markdown-toc GFM -->
 
 * [0 - GENESIS (Preamble)](#0---genesis-preamble)
-* [1 - EXODUS (Setting up disks](#1---exodus-setting-up-disks)
+* [1 - EXODUS (Setting up disks)](#1---exodus-setting-up-disks)
 * [2 - LEVITICUS (Downloading KISS)](#2---leviticus-downloading-kiss)
 
 <!-- vim-markdown-toc -->
 
 
-## [0 - GENESIS (Preamble)](#0---genesis-downloading-kiss)
+## [0 - GENESIS (Preamble)](#0---genesis-preamble)
 
 The installation is very similar to Gentoo's stage 3 `tarballs`.
 
@@ -40,7 +40,7 @@ For the purpose of this guide I will be using another Linux distribution's live-
 7. Build `grub`.
 8. Configure other little parts.
 
-## [1 - EXODUS (Setting up disks](#1---exodus)
+## [1 - EXODUS (Setting up disks)](#1---exodus-setting-up-disks)
 
 Get the disks ready for the installation. This involves creating a partition table, partitions and the desired file-systems. This step will differ depending on whether or not you are doing a BIOS or EUFI installation.
 
@@ -57,7 +57,7 @@ Get the disks ready for the installation. This involves creating a partition tab
 - Swap (optional)
 - Remainder of disk (up to you).
 
-Identify disks:
+Identify the disks:
 
 ```
 ➜ fdisk -l
@@ -70,7 +70,7 @@ Run `fdisk` once you have identified your disks.
 ➜ fdisk /dev/sda
 ```
 
-## [2 - LEVITICUS (Downloading KISS)](#2---leviticus)
+## [2 - LEVITICUS (Downloading KISS)](#2---leviticus-downloading-kiss)
 
 Download the latest release.
 
