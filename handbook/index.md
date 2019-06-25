@@ -13,13 +13,14 @@ You may run into an issue while following the steps in this guide. Head on over 
 
 <!-- vim-markdown-toc GFM -->
 
-* [0 - GENESIS (Downloading KISS)](#0---genesis-downloading-kiss)
-* [1 - EXODUS](#1---exodus)
+* [0 - GENESIS (Preamble)](#0---genesis-preamble)
+* [1 - EXODUS (Setting up disks](#1---exodus-setting-up-disks)
+* [2 - LEVITICUS (Downloading KISS)](#2---leviticus-downloading-kiss)
 
 <!-- vim-markdown-toc -->
 
 
-## [0 - GENESIS (Downloading KISS)](#0---genesis-downloading-kiss)
+## [0 - GENESIS (Preamble)](#0---genesis-downloading-kiss)
 
 The installation is very similar to Gentoo's stage 3 `tarballs`.
 
@@ -28,6 +29,10 @@ An archive is used which contains a full KISS system minus the boot-loader and k
 You will need an existing Linux distribution to use as a base for the installation. It does not matter what kind of distribution it is nor does it matter what `libc` it uses.
 
 For the purpose of this guide I will be using another Linux distribution's live-CD to bootstrap KISS.
+
+## [1 - EXODUS (Setting up disks](#1---exodus)
+
+## [2 - LEVITICUS (Downloading KISS)](#2---leviticus)
 
 Download the latest release.
 
@@ -46,4 +51,3 @@ Unpack the `tarball`.
 ➜ tar xvf kiss-chroot.*
 ```
 
-## [1 - EXODUS](#1---exodus)
