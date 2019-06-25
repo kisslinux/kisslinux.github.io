@@ -62,7 +62,7 @@ Download the latest release.
 
 # Verify the download.
 # Does it match?
-# 78e49b8dcd23ffcfcb940d3ec2f9cc1b293bbddc174c9d43562bcca8f512961f
+# fa9551ebd53d84679ead838400ef4380092dafd7815a2a57b71bb9fa94babf74
 ➜ sha256sum kiss-chroot*
 ```
 
