@@ -99,6 +99,6 @@ This step is **entirely optional** and you can just use the supplied binaries fr
 ## [4 - NUMBERS (Installing `grub`)](#4---numbers-installing-grub)
 
 ```
-kiss i automake
-kiss i grub
+➜ kiss install automake
+➜ kiss install grub
 ```
