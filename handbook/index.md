@@ -59,8 +59,8 @@ Get the disks ready for the installation. This involves creating a partition tab
 
 This guide will **not** cover this step. If you require assistance with this step; read one of the links below.
 
-- https://wiki.gentoo.org/wiki/Handbook:AMD64/Installation/Disks
-- https://wiki.archlinux.org/index.php/Installation_guide#Partition_the_disks
+- <https://wiki.gentoo.org/wiki/Handbook:AMD64/Installation/Disks>
+- <https://wiki.archlinux.org/index.php/Installation_guide#Partition_the_disks>
 
 Once your disks are partitioned and file-systems have been setup you are ready to move on to the next step.
 
