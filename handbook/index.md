@@ -143,8 +143,8 @@ Setup `grub`.
 ```
 # UEFI
 # Replace 'esp' with its mount point.
-grub-install --target=x86_64-efi --efi-directory=esp --bootloader-id=GRUB
+➜ grub-install --target=x86_64-efi --efi-directory=esp --bootloader-id=GRUB
 
 # BIOS
-grub-install --target=i386-pc /dev/sdX
+➜ grub-install --target=i386-pc /dev/sdX
 ```
