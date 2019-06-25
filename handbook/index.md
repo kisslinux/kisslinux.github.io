@@ -57,6 +57,8 @@ Get the disks ready for the installation. This involves creating a partition tab
 - Swap (optional)
 - Remainder of disk (up to you).
 
+---
+
 Identify the disks:
 
 ```
