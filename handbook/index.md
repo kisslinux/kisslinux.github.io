@@ -27,14 +27,16 @@ An archive is used which contains a full KISS system minus the boot-loader and k
 
 You will need an existing Linux distribution to use as a base for the installation. It does not matter what kind of distribution it is nor does it matter what `libc` it uses.
 
+For the purpose of this guide I will be using another Linux distribution's live-CD to bootstrap KISS.
+
 Download the latest release.
 
 ```
-➜ wget https://github.com/kissx/packages/releases/download/0.0.3-musl/kiss-chroot-0.0.3.tar.xz
+➜ wget https://github.com/kissx/packages/releases/download/0.0.4-musl/kiss-chroot-0.0.4.tar.xz
 
 # Verify the download.
 # Does it match?
-# 73afa29881b3189b83d4cf71ddb5e405c5943b131f4cbeee08dc0080330472c5
+# 2c422301e710da739cd5aa8bce110f42f37739469a959fa218d8775f82b60648
 ➜ sha256sum kiss-chroot.*
 ```
 
