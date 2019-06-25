@@ -63,9 +63,27 @@ Download the latest release.
 ➜ sha256sum kiss-chroot.*
 ```
 
+Download the `chroot` helper script.
+
+```
+➜ wget https://raw.githubusercontent.com/kissx/kiss-chroot/master/kiss-chroot
+
+# Inspect the script before you execute it below.
+➜ vi kiss-chroot
+
+# Ensure the script is executable.
+➜ chmod +x kiss-chroot
+```
+
 Unpack the `tarball` (Install KISS).
 
 ```
 # Make sure all disks are mounted to '/mnt'.
 ➜ tar xvf kiss-chroot.* -C /mnt --strip-components 1
 ```
+
+Enter the `chroot`.
+
+```
+➜ ./kiss-chroot /mnt
+``
