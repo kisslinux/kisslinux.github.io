@@ -59,15 +59,12 @@ Get the disks ready for the installation. This involves creating a partition tab
 
 ---
 
-Identify the disks:
-
 ```
+# Identify the disks.
 ➜ fdisk -l
-```
 
-Run `fdisk` once you have identified your disks.
+:  Run 'fdisk' once you have identified your disks.
 
-```
 # Example for /dev/sda.
 ➜ fdisk /dev/sda
 ```
