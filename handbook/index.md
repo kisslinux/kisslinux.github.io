@@ -147,7 +147,7 @@ Build and install `grub`.
 Setup `grub`.
 
 ```
-# UEFI
+# UEFI (WIP)
 # Replace 'esp' with its mount point.
 ➜ grub-install --target=x86_64-efi --efi-directory=esp --bootloader-id=GRUB
 ➜ grub-mkconfig -o /boot/grub/grub.cfg
@@ -159,6 +159,10 @@ Setup `grub`.
 
 ## [6 - JUDGES (Install `init-scripts`)](#5---joshua-installing-grub)
 
+This is the final "mandatory" step.
+
 ```
 ➜ kiss install baseinit
 ```
+
+You should now be able to reboot into your KISS installation. Typical configuration should follow (hostname, creation of users, service configuration etc).
