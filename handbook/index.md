@@ -136,6 +136,11 @@ Build and install `grub`.
 ➜ kiss install python
 ➜ kiss install automake
 ➜ kiss install grub
+
+# Also needed for UEFI.
+➜ kiss install popt
+➜ kiss install efivar
+➜ kiss install efibootmgr
 ```
 
 Setup `grub`.
@@ -144,7 +149,9 @@ Setup `grub`.
 # UEFI
 # Replace 'esp' with its mount point.
 ➜ grub-install --target=x86_64-efi --efi-directory=esp --bootloader-id=GRUB
+➜ grub-mkconfig -o /boot/grub/grub.cfg
 
 # BIOS
 ➜ grub-install --target=i386-pc /dev/sdX
+➜ grub-mkconfig -o /boot/grub/grub.cfg
 ```
