@@ -28,7 +28,7 @@ First hardware boot to TTY!
   <img src="../images/boot.jpg" alt="First hardware boot!">
 </picture>
 
-The core KISS repository has been finalized and the distribution is at a stage where a functioning `chroot` can be built. The KISS `chroot` can also successfully built itself. There's no longer a reliance on another distribution.
+The core KISS repository has been finalized and the distribution is at a stage where a functioning `chroot` can be built. The KISS `chroot` can also successfully build itself. There's no longer a reliance on another distribution.
 
 The `rc.boot` and `rc.shutdown` scripts for the init-system are complete (I am using them on hardware already). Over the next few days the default services will be written and if all goes well a VM image will be released.
 
