@@ -19,6 +19,7 @@ You may run into an issue while following the steps in this guide. Head on over 
 * [3 - NUMBERS (Rebuild KISS)](#3---numbers-rebuild-kiss)
 * [4 - DEUTERONOMY (Installing `linux`)](#4---deuteronomy-installing-linux)
 * [5 - JOSHUA (Installing `grub`)](#5---joshua-installing-grub)
+* [6 - JUDGES (Install `init-scripts`)](#6---judges-install-init-scripts)
 
 <!-- vim-markdown-toc -->
 
@@ -154,4 +155,10 @@ Setup `grub`.
 # BIOS
 ➜ grub-install --target=i386-pc /dev/sdX
 ➜ grub-mkconfig -o /boot/grub/grub.cfg
+```
+
+## [6 - JUDGES (Install `init-scripts`)](#5---joshua-installing-grub)
+
+```
+➜ kiss install baseinit
 ```
