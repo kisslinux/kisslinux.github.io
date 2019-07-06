@@ -59,11 +59,11 @@ This guide will **not** cover this step. If you require assistance with this ste
 Download the latest release.
 
 ```
-➜ wget https://github.com/kissx/packages/releases/download/0.0.5-musl/kiss-chroot-0.0.5.tar.xz
+➜ wget https://github.com/kissx/packages/releases/download/0.0.6-musl/kiss-chroot-0.0.6.tar.xz
 
 # Verify the download.
 # Does it match?
-# fa9551ebd53d84679ead838400ef4380092dafd7815a2a57b71bb9fa94babf74
+# 62b14df28fb22ea4e37acbe7ffdcf2cff2db79a60bdee792711ecb6fd8707b52
 ➜ sha256sum kiss-chroot*
 ```
 
