@@ -125,7 +125,7 @@ Start rebuilding all packages:
 ## [4 - DEUTERONOMY (Installing `linux`)](#4---deuteronomy-installing-linux)
 
 ```
-➜ kiss install libelf
+➜ kiss build linux
 ➜ kiss install linux
 ```
 
