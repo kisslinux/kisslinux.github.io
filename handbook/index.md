@@ -83,7 +83,7 @@ Unpack the `tarball` (Install KISS).
 
 ```
 # Make sure all disks are mounted to '/mnt'.
-➜ tar xvf kiss-chroot* -C /mnt --strip-components 1
+➜ tar xvf kiss-chroot-0.0.6.tar.xz -C /mnt --strip-components 1
 ```
 
 Enter the `chroot`.
