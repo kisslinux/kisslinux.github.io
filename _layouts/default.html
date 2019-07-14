@@ -15,17 +15,17 @@ body {
 }
 
 .grid {
-    display: grid;
-    grid-template-columns: .4fr 1.6fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: '. .';
-    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
 }
 
 aside {
     background: #eee;
     padding:40px;
-    width: 100%;
+    position: sticky;
+    top: 0;
+    width: 25%;
 }
 
 main {
