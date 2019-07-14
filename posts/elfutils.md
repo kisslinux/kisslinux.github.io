@@ -1,5 +1,3 @@
-[KISS](/) / [BLOG](/posts)
-
 # elfutils
 
 KISS uses `musl` by default as the `libc` implementation. This has its pros and it has its cons. Software compiled with `musl` is smaller in size and tends to be faster. `musl` is a lot simpler than `glibc`.

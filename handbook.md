@@ -1,5 +1,3 @@
-[KISS](/) / [HANDBOOK](/handbook) / [BLOG](/posts)
-
 # HANDBOOK
 
 Welcome to KISS, a new independent distribution with a focus on simplicity. This guide will walk you through all of the required steps to install KISS on your hardware.
