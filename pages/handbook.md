@@ -15,9 +15,9 @@ You may run into an issue while following the steps in this guide. Head on over 
 * [Setting up disks](#setting-up-disks)
 * [Install KISS](#install-kiss)
 * [Rebuild KISS](#rebuild-kiss)
-* [Installing `linux`](#installing-linux)
-* [Installing `grub`](#installing-grub)
-* [Install `init-scripts`](#install-init-scripts)
+* [Install the kernel](#install-the-kernel)
+* [Install grub](#install-grub)
+* [Install init scripts](#install-init-scripts)
 
 <!-- vim-markdown-toc -->
 
@@ -120,14 +120,14 @@ Start rebuilding all packages:
 ➜  ./kiss-bootstrap -f
 ```
 
-## [Installing `linux`](#installing-linux)
+## [Install the kernel](#install-the-kernel)
 
 ```
 ➜ kiss build linux
 ➜ kiss install linux
 ```
 
-## [Installing `grub`](#installing-grub)
+## [Install grub](#install-grub)
 
 Build and install `grub`.
 
@@ -155,7 +155,7 @@ Setup `grub`.
 ➜ grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
-## [Install `init-scripts`](#install-init-scripts)
+## [Install init scripts](#install-init-scripts)
 
 This is the final "mandatory" step.
 
