@@ -32,15 +32,6 @@ You will need an existing Linux distribution to use as a base for the installati
 
 For the purpose of this guide I will be using another Linux distribution's live-CD to bootstrap KISS. The workflow for the installation roughly follows the following steps.
 
-1. Partition the disks.
-2. Download KISS.
-3. Rebuild KISS (optional)
-4. Install KISS to `/`.
-5. `chroot` into KISS.
-6. Build the kernel.
-7. Build `grub`.
-8. Install init scripts.
-
 ## Setting up disks
 
 Get the disks ready for the installation. This involves creating a partition table, partitions and the desired file-systems. This step will differ depending on whether or not you are doing a BIOS or EUFI installation.
