@@ -1,4 +1,25 @@
 ---
 layout: compress
 ---
-<!DOCTYPE html><html lang=en><head><meta name=description content="A highly opinionated, ultra minimal, Linux distribution."/><link href="data:image/png;base64," rel=icon type="image/png"><title>KISS Linux</title><meta name=viewport content="width=device-width"><style>body{padding:20px;max-width:650px;line-height:1.6;word-wrap:break-word;font-family:Baskerville,"Times New Roman",serif;font-size:1.5em;background:#fff6ea}img,body,pre>code{display:block;margin:25px auto}img{max-width:100%}pre>code{width:70ch;max-width:90vw;position:relative;left:50%;transform:translateX(-50%);background:#000;color:#fcf3e7;padding:20px;white-space:pre-wrap}h1,h2{line-height:1.2;margin-top:40px}a{color:#be0032}blockquote{border-left:7px solid #f7d09b;padding:0 14px;color:#333;margin:0}h2 a{color:#000;text-decoration:none}hr{border:3px solid #e5c08b}</style></head><body>{{content}}</body></html>
+<!DOCTYPE html><html lang=en><head><meta name=description content="A highly opinionated, ultra minimal, Linux distribution."/><link href="data:image/png;base64," rel=icon type="image/png"><title>KISS Linux</title><meta name=viewport content="width=device-width"><style>
+.grid {
+    display: grid;
+    grid-template-columns: .4fr 1.6fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: '. .';
+    height: 100vh;
+}
+
+aside {
+    background: #eee;
+    padding:40px;
+}
+
+main {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    grid-template-areas:'. .';
+    grid-template-columns: 50% 1fr;
+    margin: 0 20px;
+}
+</style></head><body><div class="grid"><aside></aside><main>{{content}}</main></div></body></html>
