@@ -57,11 +57,11 @@ This guide will **not** cover this step. If you require assistance with this ste
 Download the latest release.
 
 ```
-➜ wget https://github.com/kissx/packages/releases/download/0.0.6-musl/kiss-chroot-0.0.6.tar.xz
+➜ wget https://github.com/kissx/packages/releases/download/0.0.14-musl/kiss-chroot.tar.xz
 
 # Verify the download.
 # Does it match?
-# 62b14df28fb22ea4e37acbe7ffdcf2cff2db79a60bdee792711ecb6fd8707b52
+# c10dd20d5ae7f731c50e40daab6081cdc00ae1e3f78fe3251853d3fa24b4a01c
 ➜ sha256sum kiss-chroot*
 ```
 
@@ -81,7 +81,7 @@ Unpack the `tarball` (Install KISS).
 
 ```
 # Make sure all disks are mounted to '/mnt'.
-➜ tar xvf kiss-chroot-0.0.6.tar.xz -C /mnt --strip-components 1
+➜ tar xvf kiss-chroot.tar.xz -C /mnt --strip-components 1
 ```
 
 Enter the `chroot`.
@@ -94,18 +94,6 @@ Enter the `chroot`.
 
 This step is **entirely optional** and you can just use the supplied binaries from the downloaded `chroot`.
 
-Download the `bootstrap` helper script.
-
-```
-➜ wget https://raw.githubusercontent.com/kissx/kiss-bootstrap/master/kiss-bootstrap
-
-# Inspect the script before you execute it below.
-➜ vi kiss-bootstrap
-
-# Ensure the script is executable.
-➜ chmod +x kiss-bootstrap
-```
-
 Modify compiler options (optional):
 
 ```
@@ -117,7 +105,7 @@ Modify compiler options (optional):
 Start rebuilding all packages:
 
 ```
-➜  ./kiss-bootstrap -f
+➜  kiss build
 ```
 
 ## Install the kernel
@@ -132,13 +120,11 @@ Start rebuilding all packages:
 Build and install `grub`.
 
 ```
-➜ kiss install python
-➜ kiss install automake
+➜ kiss build grub
 ➜ kiss install grub
 
 # Also needed for UEFI.
-➜ kiss install popt
-➜ kiss install efivar
+➜ kiss build efibootmgr
 ➜ kiss install efibootmgr
 ```
 
@@ -160,6 +146,7 @@ Setup `grub`.
 This is the final "mandatory" step.
 
 ```
+➜ kiss build baseinit
 ➜ kiss install baseinit
 ```
 
