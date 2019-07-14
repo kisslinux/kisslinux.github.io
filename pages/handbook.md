@@ -35,12 +35,11 @@ For the purpose of this guide I will be using another Linux distribution's live-
 1. Partition the disks.
 2. Download KISS.
 3. Rebuild KISS (optional)
-    - You can also just install the bootstrap.
-4. Copy KISS to `/`.
+4. Install KISS to `/`.
 5. `chroot` into KISS.
 6. Build the kernel.
 7. Build `grub`.
-8. Configure other little parts.
+8. Install init scripts.
 
 ## Setting up disks
 
