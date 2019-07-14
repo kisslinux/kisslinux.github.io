@@ -1,10 +1,10 @@
 # HANDBOOK
 
-Welcome to KISS, a new independent distribution with a focus on simplicity. This guide will walk you through all of the required steps to install KISS on your hardware.
+Welcome to KISS, a new independent distribution with a focus on simplicity. This guide will walk you through the required steps to install KISS.
 
 You may run into an issue while following the steps in this guide. Head on over to the [issue tracker](https://github.com/kissx/packages/issues) and open an issue. We are happy to help.
 
-**NOTE**: This guide is a work in progress and is currently incomplete. This notice will be removed once the guide is complete.
+**NOTE**: This guide is a work in progress and is currently incomplete. This notice will be removed in due time.
 
 
 ## Index
