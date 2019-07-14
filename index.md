@@ -1,5 +1,3 @@
-[KISS](/) / [HANDBOOK](/handbook) / [BLOG](/posts)
-
 # KISS
 
 A highly opinionated, ultra minimal, Linux distribution.
