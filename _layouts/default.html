@@ -6,8 +6,11 @@ body {
     margin: 0;
     line-height: 1.6;
     word-wrap: break-word;
-    font-family: Baskerville,"Times New Roman",serif;
     font-size: 1.5em;
+}
+
+.kiss {
+    font-family: Baskerville,"Times New Roman",serif;
 }
 
 .grid {
@@ -27,6 +30,17 @@ main {
     display: block;
     margin: 0 auto;
     max-width: 65%;
+}
+
+pre>code {
+    width: 70ch;
+    max-width: 90vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #000;
+    padding: 20px;
+    white-space:pre-wrap
 }
 
 @media(max-width:1200px) {
