@@ -1,6 +1,6 @@
 ---
 title: ALL PAGES
-tags: main
+category: main
 ---
 
 <ul>
