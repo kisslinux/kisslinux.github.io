@@ -1,10 +1,10 @@
 ---
 title: ALL PAGES
-category: main
+tags: main
 ---
 
-<p>{{site.categories}}</p>
+<p>{{site.tags}}</p>
 
-{% for category in site.categories %}
+{% for category in site.tags %}
 <a href="#{{category[0]|slugify}}">{{category[0]}}</a>
 {% endfor %}
