@@ -1,5 +1,5 @@
 ---
-title: ALL PAGES
+title: INDEX
 category: main
 ---
 
