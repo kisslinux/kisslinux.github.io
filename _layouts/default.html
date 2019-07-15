@@ -11,7 +11,7 @@ Main
     <li><a href="/">KISS HOME</a></li>
 
     {% for page in site.pages %}
-    {% if page.title != 'KISS' %}
+    {% if page.category == 'main' %}
         <li><a href="{{page.url}}">{{page.title}}</a></li>
     {% endif %}
     {% endfor %}
