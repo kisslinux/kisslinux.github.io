@@ -1,5 +1,5 @@
 ---
-title: How this website works
+title: WIKI Details
 category: main
 ---
 
