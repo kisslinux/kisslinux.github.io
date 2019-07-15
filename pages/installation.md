@@ -1,5 +1,5 @@
 ---
-title: INSTALL KISS
+title: Install KISS
 category: main
 ---
 

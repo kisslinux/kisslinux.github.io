@@ -1,5 +1,5 @@
 ---
-title: INDEX
+title: Index
 category: main
 ---
 
