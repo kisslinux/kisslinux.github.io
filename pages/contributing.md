@@ -1,5 +1,5 @@
 ---
-title: CONTRIBUTING
+title: Contributing
 category: main
 ---
 
