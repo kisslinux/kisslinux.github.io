@@ -2,6 +2,7 @@
 title: ALL PAGES
 category: main
 ---
+{{site.categories}}
 
 {% for category in site.categories %}
     {{category}}
