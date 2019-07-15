@@ -1,5 +1,5 @@
 ---
-title: HANDBOOK
+title: INSTALLATION
 category: main
 ---
 
