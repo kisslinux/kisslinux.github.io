@@ -9,8 +9,6 @@ layout: compress
 Main
 
 <ul>
-    <li><a href="/">KISS</a></li>
-
     {% for page in site.pages %}
     {% if page.category == 'main' %}
         <li><a href="{{page.url}}">{{page.title}}</a></li>
