@@ -9,7 +9,10 @@ Main
 
 <ul>
     <li><a href="/">KISS HOME</a></li>
-    <li><a href="/pages/handbook">HANDBOOK</a></li>
+
+    {% for page in site.pages %}
+    <li><a href="{{page.url}}">{{page.title}}</a></li>
+    {% endfor %}
 </ul>
 
 Development
