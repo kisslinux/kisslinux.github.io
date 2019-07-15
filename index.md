@@ -1,4 +1,6 @@
-# KISS
+---
+title: KISS
+---
 
 A highly opinionated, ultra minimal, Linux distribution.
 
