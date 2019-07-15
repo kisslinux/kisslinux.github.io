@@ -4,5 +4,5 @@ category: main
 ---
 
 {% for category in site.categories %}
-    <p>{{category|first}}</p>
+<a href="#{{category[0]|slugify}}">{{category[0]}}</a>
 {% endfor %}
