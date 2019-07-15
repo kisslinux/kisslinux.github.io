@@ -3,8 +3,12 @@ title: ALL PAGES
 category: main
 ---
 
+Main
+
 <ul>
 {% for page in site.pages %}
-<li><a href="{{page.url}}">{{page.title}}</a></li>
+{% if page.category == 'main' %}
+    <li><a href="{{page.url}}">{{page.title}}</a></li>
+{% endif %}
 {% endfor %}
 </ul>
