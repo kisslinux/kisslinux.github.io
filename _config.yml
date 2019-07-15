@@ -1,3 +1,4 @@
+permalink: pretty
 theme:
 syntax_highlighter: none
 markdown: kramdown
