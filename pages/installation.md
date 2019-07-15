@@ -1,5 +1,5 @@
 ---
-title: INSTALLATION
+title: INSTALL KISS
 category: main
 ---
 
