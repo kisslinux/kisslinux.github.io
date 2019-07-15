@@ -12,8 +12,17 @@ You may run into an issue while following the steps in this guide. Head on over 
 
 ## Index
 
-{% include toc.html html=content %}
+<!-- vim-markdown-toc GFM -->
 
+* [Preamble](#preamble)
+* [Setting up disks](#setting-up-disks)
+* [Install KISS](#install-kiss)
+* [Rebuild KISS](#rebuild-kiss)
+* [Install the kernel](#install-the-kernel)
+* [Install grub](#install-grub)
+* [Install init scripts](#install-init-scripts)
+
+<!-- vim-markdown-toc -->
 
 ## Preamble
 
