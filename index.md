@@ -12,6 +12,11 @@ A highly opinionated, ultra minimal, Linux distribution.
 - Plain text, UNIX-like package format.
 - Package manager written in 500~ lines of POSIX `sh`.
 - All shell code is **safe** and passes `shellcheck`.
-- Uses `musl` instead of `glibc`.
-- Uses `busybox` instead of `GNU coreutils`.
-- Uses `libressl` instead of `openssl`.
+    - `init` scripts.
+    - Package `build` files.
+    - Package manager.
+    - Miscellaneous distribution scripts.
+- `musl` instead of `glibc`.
+- `busybox` instead of `GNU coreutils`.
+- `libressl` instead of `openssl`.
+- `busybox init` instead of `systemd`.
