@@ -3,7 +3,7 @@ title: ALL PAGES
 category: main
 ---
 
-Main
+## Main
 
 <ul>
 {% for page in site.pages %}
