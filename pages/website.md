@@ -9,4 +9,4 @@ Each page consumes a single web request. As the CSS is so minimal, it makes more
 
 Another benefit of this "system" is that each page is fully self contained. There's no dependence on external resources and you can easily download the pages for offline viewing.
 
-There is also zero analytics, `javascript`, tracking or ads on this website. It is just plain HTML+CSS at its best. Simple, documents.
+There is no analytics, `javascript`, tracking or ads on this website. It is just plain HTML+CSS at its best. Simple, documents.
