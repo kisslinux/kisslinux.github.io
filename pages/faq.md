@@ -3,6 +3,17 @@ title: FAQ
 category: main
 ---
 
+## Index
+
+<!-- vim-markdown-toc GFM -->
+
+* [Why is the distribution called "KISS"?](#why-is-the-distribution-called-kiss)
+* [Why another Linux distribution?](#why-another-linux-distribution)
+* [Why is the logo a woman?](#why-is-the-logo-a-woman)
+
+<!-- vim-markdown-toc -->
+
+
 ## Why is the distribution called "KISS"?
 
 The distribution is named after the [KISS Principle](https://en.wikipedia.org/wiki/KISS_principle); "Keep it simple stupid".
