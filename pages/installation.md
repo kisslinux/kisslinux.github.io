@@ -89,9 +89,9 @@ This step is **entirely optional** and you can just use the supplied binaries fr
 Modify compiler options (optional):
 
 ```
-➜ export CFLAGS=""
-➜ export CXXFLAGS=""
-➜ export MAKEFLAGS=""
+➜ export CFLAGS="-O3 -pipe -march=native"
+➜ export CXXFLAGS="-O3 -pipe -march=nativet"
+➜ export MAKEFLAGS="-j4"
 ```
 
 Start rebuilding all packages:
