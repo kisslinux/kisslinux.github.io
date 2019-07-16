@@ -34,4 +34,6 @@ It's small, minimal and provides nearly everything needed. It also has a really 
 
 ## What `init` system does KISS use?
 
-KISS uses `busybox init` with `runit` services which it supports. The `init` system can also be configured to use `sysvinit` style scripts or just plain shell commands if you so desire. You have options.
+KISS uses `busybox init` with `runit` services (*which it supports*). The `init` system can also be configured to use `sysvinit` style scripts or just plain shell commands if you so desire. You have options.
+
+The source for the boot scripts can be found here: <https://github.com/kissx/kiss-init>
