@@ -1,5 +1,8 @@
+url: "https://kissx.github.io"
 permalink: pretty
 theme:
+plugins:
+  - jekyll-sitemap
 syntax_highlighter: none
 markdown: kramdown
 kramdown:
