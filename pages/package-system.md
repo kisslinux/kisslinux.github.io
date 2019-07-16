@@ -6,6 +6,16 @@ category: main
 The package system that KISS employs is a new concept that came to me (*Dylan Araps*) in a dream one night. The concept is simple; a set of plain text files separated by lines and spaces. Easily parseable in any programming language or with standard tools.
 
 
+## Index
+
+<!-- vim-markdown-toc GFM -->
+
+* [The structure](#the-structure)
+* [Installation](#installation)
+
+<!-- vim-markdown-toc -->
+
+
 ## The structure
 
 ```sh
