@@ -82,4 +82,19 @@ zlib     make
 ```
 
 ## Sources
+
+The `sources` file should contain all remote and local source files required during the build process, one per line. A second column on each line is available to specify the extraction directory or location in which a source should be available.
+
+For example; this is used in `gcc`'s package to extract the source to a subdirectory called `gcc`.
+
+**Simple example**:
+
+```
+https://gcc.gnu.org/pub/gcc/releases/gcc-9.1.0/gcc-9.1.0.tar.xz gcc
+https://gmplib.org/download/gmp/gmp-6.1.2.tar.xz gcc/gmp
+http://www.mpfr.org/mpfr-4.0.2/mpfr-4.0.2.tar.xz gcc/mpfr
+https://ftp.gnu.org/gnu/mpc/mpc-1.1.0.tar.gz gcc/mpc
+files/c99
+```
+
 ## Version
