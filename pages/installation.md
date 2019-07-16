@@ -90,7 +90,7 @@ Modify compiler options (optional):
 
 ```
 ➜ export CFLAGS="-O3 -pipe -march=native"
-➜ export CXXFLAGS="-O3 -pipe -march=nativet"
+➜ export CXXFLAGS="-O3 -pipe -march=native"
 ➜ export MAKEFLAGS="-j4"
 ```
 
