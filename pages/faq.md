@@ -10,6 +10,7 @@ category: main
 * [Why is the distribution called "KISS"?](#why-is-the-distribution-called-kiss)
 * [Why another Linux distribution?](#why-another-linux-distribution)
 * [Why is the logo a woman?](#why-is-the-logo-a-woman)
+* [Why `busybox`?](#why-busybox)
 
 <!-- vim-markdown-toc -->
 
@@ -25,3 +26,7 @@ The distribution is named after the [KISS Principle](https://en.wikipedia.org/wi
 ## Why is the logo a woman?
 
 The word "kiss" has a feminine connotation (at least in the eyes of the creator) and the logo/avatars reflect this.
+
+## Why `busybox`?
+
+It's small, minimal and provides nearly everything needed. It also has a really nice feature which removes all overhead from running commands and spawning subshells. Everything is treated as a shell "builtin".
