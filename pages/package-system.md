@@ -12,6 +12,11 @@ The package system that KISS employs is a new concept that came to me (*Dylan Ar
 
 * [The structure](#the-structure)
 * [Installation](#installation)
+* [The files](#the-files)
+    * [`build`](#build)
+    * [`depends`](#depends)
+    * [`sources`](#sources)
+    * [`version`](#version)
 
 <!-- vim-markdown-toc -->
 
@@ -42,3 +47,9 @@ zlib/            # Package name.
 
 When a package is installed, this entire directory tree is copied to `/var/db/kiss` where it becomes a database entry. Listing the dependencies for a package is a simple as printing the contents of the `depends` file. Searching for which package owns a file is as simple as checking each `manifest` file.
 
+## The files
+
+### `build`
+### `depends`
+### `sources`
+### `version`
