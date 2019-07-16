@@ -51,10 +51,9 @@ Download the latest release.
 ```
 ➜ wget https://github.com/kissx/packages/releases/download/0.0.14-musl/kiss-chroot.tar.xz
 
-# Verify the download.
-# Does it match?
+# Verify the download, does it match?
 # c10dd20d5ae7f731c50e40daab6081cdc00ae1e3f78fe3251853d3fa24b4a01c
-➜ sha256sum kiss-chroot*
+➜ sha256sum kiss-chroot.tar.xz
 ```
 
 Download the `chroot` helper script.
