@@ -11,6 +11,7 @@ category: main
 * [Why another Linux distribution?](#why-another-linux-distribution)
 * [Why is the logo a woman?](#why-is-the-logo-a-woman)
 * [Why `busybox`?](#why-busybox)
+* [What `init` system does KISS use?](#what-init-system-does-kiss-use)
 
 <!-- vim-markdown-toc -->
 
@@ -30,3 +31,7 @@ The word "kiss" has a feminine connotation (at least in the eyes of the creator)
 ## Why `busybox`?
 
 It's small, minimal and provides nearly everything needed. It also has a really nice feature which removes all overhead from running commands and spawning subshells. Everything is treated as a shell "builtin".
+
+## What `init` system does KISS use?
+
+KISS uses `busybox init` with `runit` services which it supports. The `init` system can also be configured to use `sysvinit` style scripts or just plain shell commands if you so desire. You have options.
