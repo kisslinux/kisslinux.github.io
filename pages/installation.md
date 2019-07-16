@@ -96,7 +96,7 @@ Modify compiler options (optional):
 Start rebuilding all packages:
 
 ```
-➜  kiss build
+➜ kiss build
 ```
 
 ## Install the kernel
