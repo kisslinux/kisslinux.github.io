@@ -30,6 +30,6 @@ The package manager ([`kiss`](https://github.com/kissx/kiss)) is written in 500~
 
 ## History
 
-KISS was started by [Dylan Araps](https://github.com/dylanaraps) (Creator of [`neofetch`](https://github.com/dylanaraps/neofetch), [`pywal`](https://github.com/dylanaraps/pywal) and the [pure bash bible](https://github.com/dylanaraps/pure-bash-bible)) in March of 2019. A few months into the project, a long time contributor to `neofetch`, [Konimex (Muhammad Herdiansyah)](https://github.com/konimex) joined the project and brought with him additional knowledge and expertise.
+KISS was started by [Dylan Araps](https://github.com/dylanaraps) (Creator of [`neofetch`](https://github.com/dylanaraps/neofetch), [`pywal`](https://github.com/dylanaraps/pywal) and the [pure bash bible](https://github.com/dylanaraps/pure-bash-bible)) in March of 2019. A few months into the project, a long time contributor to `neofetch` and a member of [Artix Linux](https://artixlinux.org/), [Konimex (Muhammad Herdiansyah)](https://github.com/konimex) joined the project and brought with him additional knowledge and expertise.
 
 With two developers at the helm and the bouncing back and forth of ideas; development accelerated, far exceeding the original planned time frame. The project also saw external testing, ideas and bug reports from a group of people in the Discord server and GitHub repositories.
