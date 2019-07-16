@@ -50,6 +50,24 @@ When a package is installed, this entire directory tree is copied to `/var/db/ki
 ## The files
 
 ### `build`
+
+The `build` file should contain all of the steps required to patch, configure, build and install the package.
+
+The current directory of the script is the source directory of the package, there is no need to `cd` anywhere. The script is passed a single argument which points to the directory the package should be installed to (`make DESTDIR="$1" install`).
+
+**Simple example**:
+
+```
+#!/bin/sh -e
+
+./configure \
+    --prefix=/usr \
+    --sysconfdir=/etc
+
+make
+make DESTDIR="$1" install
+```
+
 ### `depends`
 ### `sources`
 ### `version`
