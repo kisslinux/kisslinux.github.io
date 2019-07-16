@@ -98,3 +98,13 @@ files/c99
 ```
 
 ## Version
+
+The `version` file should contain a single line and two columns. The first column is the upstream package's version and the second column is the version of the actually repository files.
+
+When a new version of a package is released, the first field is updated. When an update to the repository files is released the second field is updated.
+
+**Simple example**:
+
+```
+3.2.1 1
+```
