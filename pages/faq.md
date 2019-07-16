@@ -1,5 +1,5 @@
 ---
-title: Frequently Asked Questions
+title: FAQ
 category: main
 ---
 
