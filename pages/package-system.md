@@ -66,5 +66,20 @@ make DESTDIR="$1" install
 ```
 
 ## Dependencies
+
+The `depends`file should contain the package's dependencies one per line. A second column on each line is available to specify whether the dependency is needed only to build the package or if it is also required at runtime.
+
+Comments are also supported using `#` at the start of the line. This allows simple package configuration through commented dependencies.
+
+**Simple example**:
+
+```
+autoconf make
+curl
+libressl make
+perl
+zlib     make
+```
+
 ## Sources
 ## Version
