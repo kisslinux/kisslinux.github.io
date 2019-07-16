@@ -16,6 +16,7 @@ The package system that KISS employs is a new concept that came to me (*Dylan Ar
 * [Dependencies](#dependencies)
 * [Sources](#sources)
 * [Version](#version)
+* [Post Install](#post-install)
 
 <!-- vim-markdown-toc -->
 
@@ -35,7 +36,7 @@ zlib/            # Package name.
 ┘
 
 # Optional files.
-├─ post_install  # Script to run after package installation.
+├─ post-install  # Script to run after package installation.
 ├─ patches/*     # Directory to store patches.
 ├─ files/*       # Directory to misc files.
 ├─ nostrip       # Don't strip binaries for this package (empty file).
@@ -48,7 +49,7 @@ When a package is installed, this entire directory tree is copied to `/var/db/ki
 
 ## Build
 
-The `build` file should contain all of the steps required to patch, configure, build and install the package.
+The `build` file should contain all of the steps required to patch, configure, build and install the package. The file should also be executable.
 
 The current directory of the script is the source directory of the package, there is no need to `cd` anywhere. The script is passed a single argument which points to the directory the package should be installed to (`make DESTDIR="$1" install`).
 
@@ -107,4 +108,16 @@ When a new version of a package is released, the first field is updated. When an
 
 ```
 3.2.1 1
+```
+
+## Post Install
+
+The `post-install` file should contain any code that needs to be run after the installation of a package. This file should be executable. This file can be written in any programming language.
+
+**Simple example**:
+
+```
+#!/bin/sh -e
+
+/usr/sbin/update-ca-certificates --fresh
 ```
