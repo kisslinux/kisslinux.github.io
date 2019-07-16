@@ -7,5 +7,6 @@ category: main
 
 The distribution is named after the [KISS Principle](https://en.wikipedia.org/wiki/KISS_principle); "Keep it simple stupid".
 
+## Why is the logo a woman?
 
-
+The word "kiss" has a feminine connotation (at least in the eyes of the creator) and the logo/avatars reflect this.
