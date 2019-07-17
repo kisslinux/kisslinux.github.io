@@ -22,7 +22,7 @@ You may run into an issue while following the steps in this guide. Head on over 
 * [Install grub](#install-grub)
 * [Install init scripts](#install-init-scripts)
 * [Further steps](#further-steps)
-    * [Setting up the package manager.](#setting-up-the-package-manager)
+    * [Setting up the package manager](#setting-up-the-package-manager)
 
 <!-- vim-markdown-toc -->
 
@@ -149,7 +149,7 @@ This is the final "mandatory" step.
 You should now be able to reboot into your KISS installation. Typical configuration should follow (hostname, creation of users, service configuration etc).
 
 
-### Setting up the package manager.
+### Setting up the package manager
 
 Set the environment variable `KISS_PATH` to the list of repositories you want enabled. The `kiss-chroot` script used above enables all repositories with the following.
 
