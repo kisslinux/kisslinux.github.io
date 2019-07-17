@@ -21,6 +21,7 @@ You may run into an issue while following the steps in this guide. Head on over 
 * [Install the kernel](#install-the-kernel)
 * [Install grub](#install-grub)
 * [Install init scripts](#install-init-scripts)
+* [Further steps](#further-steps)
 
 <!-- vim-markdown-toc -->
 
@@ -140,5 +141,8 @@ This is the final "mandatory" step.
 ➜ kiss build baseinit
 ➜ kiss install baseinit
 ```
+
+
+## Further steps
 
 You should now be able to reboot into your KISS installation. Typical configuration should follow (hostname, creation of users, service configuration etc).
