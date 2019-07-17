@@ -25,7 +25,7 @@ The data in each file is separated by lines and spaces. The repository and packa
 
 ## Package Manager
 
-The package manager ([`kiss`](https://github.com/kissx/kiss)) is written in 500~ lines of POSIX `sh` (*excluding comments and blank lines*). The intention is to showcase the package system's simplicity.
+The package manager ([`kiss`](https://github.com/kisslinux/kiss)) is written in 500~ lines of POSIX `sh` (*excluding comments and blank lines*). The intention is to showcase the package system's simplicity.
 
 
 ## History
