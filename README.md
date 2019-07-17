@@ -1,3 +1,3 @@
-# https://kisslinux.github.io/
+# https://getkiss.org
 
 Website for Kiss Linux built with a miniscule `jekyll` theme which is effectively empty. Each page is as small as possible while still being accessible, responsive and pretty.
