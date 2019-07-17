@@ -3,6 +3,8 @@ title: Donate
 category: main
 ---
 
-You can support development of KISS by sending a donation to the link below. Donations allow me (*Dylan Araps*) to dedicate more time as well as resources to the project.
+The running costs of KISS are currently moderate. Your support however, will enable me (*Dylan Araps*) to dedicate more time, as well as resources to the project. Providing a better overall experience for all users.
+
+You can support development of KISS by sending a donation to the link below.
 
 - <https://patreon.com/dyla> (Dylan Araps)
