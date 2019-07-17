@@ -15,3 +15,9 @@ compress_html:
     comments: all
     endings: all
     startings: [html, head, body]
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
