@@ -5,7 +5,7 @@ category: main
 
 Welcome to KISS, a new independent distribution with a focus on simplicity. This guide will walk you through the required steps to install KISS.
 
-You may run into an issue while following the steps in this guide. Head on over to the [issue tracker](https://github.com/kissx/packages/issues) and open an issue. We are happy to help.
+You may run into an issue while following the steps in this guide. Head on over to the [issue tracker](https://github.com/kisslinux/packages/issues) and open an issue. We are happy to help.
 
 **NOTE**: This guide is a work in progress and is currently incomplete. This notice will be removed in due time.
 
@@ -49,7 +49,7 @@ The guide will **not** cover this step. If you require assistance with this step
 Download the latest release.
 
 ```
-➜ wget https://github.com/kissx/packages/releases/download/0.0.14-musl/kiss-chroot.tar.xz
+➜ wget https://github.com/kisslinux/packages/releases/download/0.0.14-musl/kiss-chroot.tar.xz
 
 # Verify the download, does it match?
 # c10dd20d5ae7f731c50e40daab6081cdc00ae1e3f78fe3251853d3fa24b4a01c
@@ -59,7 +59,7 @@ Download the latest release.
 Download the `chroot` helper script.
 
 ```
-➜ wget https://raw.githubusercontent.com/kissx/kiss-chroot/master/kiss-chroot
+➜ wget https://raw.githubusercontent.com/kisslinux/kiss-chroot/master/kiss-chroot
 
 # Inspect the script before you execute it below.
 ➜ vi kiss-chroot
