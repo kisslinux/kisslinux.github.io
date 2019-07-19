@@ -21,3 +21,5 @@ defaults:
       path: ""
     values:
       layout: "default"
+include:
+  - _redirects
