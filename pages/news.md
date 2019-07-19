@@ -5,6 +5,8 @@ category: main
 
 ## Status
 
+**NOTE:** Everything is currently in a transitionary state as we migrate towards a new `chroot` with a slightly different repository layout.
+
 - Working `chroot`. ✓
 - Working installation method. ✓
 - Working `xorg-server`. ✓
