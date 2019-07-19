@@ -51,7 +51,7 @@ The guide will **not** cover this step. If you require assistance with this step
 Download the latest release.
 
 ```
-➜ wget https://dl.getkiss.org/kiss
+➜ wget https://dl.getkiss.org/kiss-chroot.tar.xz
 
 # Verify the download, does it match?
 # c10dd20d5ae7f731c50e40daab6081cdc00ae1e3f78fe3251853d3fa24b4a01c
