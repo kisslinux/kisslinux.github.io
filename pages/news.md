@@ -5,11 +5,11 @@ category: main
 
 ## Status
 
-- [x] Working `chroot`.
-- [x] Working installation method.
-- [x] Working `xorg-server`.
-- [ ] Web browser.
-- [ ] `mpv`
+- Working `chroot`. ✓
+- Working installation method. ✓
+- Working `xorg-server`. ✓
+- Web browser.
+- Media player (`mpv`)
 
 
 ## Index
