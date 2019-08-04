@@ -37,6 +37,8 @@ After hours of build attempts of both Chromium and Firefox, we have successfully
 - ALSA audio support is being removed from Firefox. This includes the configure flag to enable it.
 - This will be updated as I remember things.
 
+Sources:
+
 - \[1\] <https://bugzilla.mozilla.org/show_bug.cgi?id=1377445>
 - \[2\] <https://bugzilla.mozilla.org/show_bug.cgi?id=104642>
 - \[3\] <https://bugzilla.mozilla.org/show_bug.cgi?id=297544>
