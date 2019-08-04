@@ -34,6 +34,7 @@ After hours of build attempts of both Chromium and Firefox, we have successfully
 - Chromium's build scripts require `python2` yet call `python` which points to `python3`.
 - A large number of patches were needed for both to support `musl`.
 - Both browsers depend on GTK+3 which depends on `dbus`. This dependency was removed by using a fake `atk` library.
+- ALSA audio support is being removed from Firefox. This includes the configure flag to enable it.
 - This will be updated as I remember things.
 
 - \[1\] https://bugzilla.mozilla.org/show_bug.cgi?id=1377445
