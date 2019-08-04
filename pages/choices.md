@@ -15,3 +15,7 @@ Software excluded from the official repositories. These can be packaged in perso
 - `systemd`
 - `atk-bridge-*`
 - `wayland`
+- `netctl`
+- `procps-ng`
+- `glibc`
+- `GNU coreutils`
