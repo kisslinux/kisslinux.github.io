@@ -6,16 +6,20 @@ title: Software Choices
 
 Software excluded from the official repositories. These can be packaged in personal and third-party repositories.
 
+- `GNU coreutils`
+- `acl`
+- `atk-bridge-*`
+- `attr`
 - `dbus`
 - `elfutils`
 - `gettext`
+- `glibc`
+- `gnutls`
+- `icu`
 - `intltool`
+- `netctl`
 - `pam`
 - `polkit`
-- `systemd`
-- `atk-bridge-*`
-- `wayland`
-- `netctl`
 - `procps-ng`
-- `glibc`
-- `GNU coreutils`
+- `systemd`
+- `wayland`
