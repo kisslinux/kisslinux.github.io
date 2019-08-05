@@ -9,7 +9,7 @@ category: main
 - Working installation method. ✓
 - Working `xorg-server`. ✓
 - Web browser. ✓
-- Media player (`mpv`)
+- Media player (`mpv`) ✓
 
 ## Index
 
