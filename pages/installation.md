@@ -9,6 +9,8 @@ You may run into an issue while following the steps in this guide. Head on over 
 
 **NOTE**: This guide is a work in progress and is currently incomplete. This notice will be removed in due time.
 
+**NOTE**: No `initramfs` is currently used, we are in the process of writing our own tool. To use KISS now you'd need to compile a kernel without modules.
+
 
 ## Index
 
