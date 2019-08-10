@@ -102,6 +102,10 @@ Start rebuilding all packages:
 
 ## Install the kernel
 
+**NOTE**: No `initramfs` is currently used, we are in the process of creating our own tool.
+
+**NOTE**: To boot without an `initramfs` you need to compile a tailored kernel with **ZERO** modules (all `y`).
+
 ```
 ➜ kiss build linux
 ➜ kiss install linux
