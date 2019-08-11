@@ -4,20 +4,9 @@ title: KISS
 
 A Linux distribution with a focus on simplicity and privacy. The distribution currently targets the x86-64 architecture and the English language.
 
-```
-    ___      goldie@KISS
-   (.· |     os:     KISS Linux
-   (<> |     model:  80MK Lenovo YOGA 900
-  / __  \    pkgs:   144
- ( /  \ /|   uptime: 6h 50m
-_/\ __)/_)   memory: 200MiB / 7941MiB
-\/-____\/    kernel: 5.2.1
-
-```
-
 ## Simplicity
 
-KISS is simple in its implementation, its usage and its development. This can be seen through the tiny package manager (*500~ lines of POSIX `sh`(), the UNIX-like package format (*easily parseable plain-text files*) and the curated package choices (*`musl`, `busybox`, etc*).
+KISS is simple in its implementation, its usage and its development. This can be seen through the tiny package manager (*500~ lines of POSIX `sh`*), the UNIX-like package format (*easily parseable plain-text files*) and the curated package choices (*`musl`, `busybox`, etc*).
 
 ## Privacy
 
