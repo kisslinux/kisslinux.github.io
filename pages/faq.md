@@ -10,7 +10,7 @@ category: main
 * [Why is the distribution called "KISS"?](#why-is-the-distribution-called-kiss)
 * [Why another Linux distribution?](#why-another-linux-distribution)
 * [Why is the logo a woman?](#why-is-the-logo-a-woman)
-* [Why `busybox`?](#why-busybox)
+* [What `coreutils` does KISS use?](#what-coreutils-does-kiss-use)
 * [What `libc` does KISS use?](#what-libc-does-kiss-use)
 * [What `init` system does KISS use?](#what-init-system-does-kiss-use)
 
@@ -23,15 +23,15 @@ The distribution is named after the [KISS Principle](https://en.wikipedia.org/wi
 
 ## Why another Linux distribution?
 
-> I was swapping from distribution to distribution looking for something minimal and simple. Not being satisfied by any of the existing options, I decided to swap to OpenBSD (*only to find that it did not support my hardware*). This pushed me to create my own distribution, reflecting my beliefs and desires.<br>- Dylan Araps (Creator of KISS)
+> I was swapping from distribution to distribution looking for something minimal, simple and well written. Not being satisfied by any of the existing options, I decided to swap to OpenBSD (*only to find that it did not support my hardware*). This pushed me to create my own distribution, reflecting my beliefs and desires.<br>- Dylan Araps (Creator of KISS)
 
 ## Why is the logo a woman?
 
 The word "kiss" has a feminine connotation (at least in the eyes of the creator) and the logo/avatars reflect this.
 
-## Why `busybox`?
+## What `coreutils` does KISS use?
 
-It's small, minimal and provides nearly everything needed. It also has a really nice feature which removes all overhead from running commands and spawning subshells. Everything is treated as a shell "builtin".
+KISS uses `busybox`, it is small, minimal and provides nearly everything needed. It also has a really nice feature which removes all overhead from running commands and spawning subshells. Everything is treated as a shell "builtin".
 
 ## What `libc` does KISS use?
 
