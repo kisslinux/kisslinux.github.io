@@ -14,7 +14,7 @@ category: main
 * [Software choices](#software-choices)
     * [What `coreutils` does KISS use?](#what-coreutils-does-kiss-use)
     * [What `libc` does KISS use?](#what-libc-does-kiss-use)
-    * [What `init` system does KISS use?](#what-init-system-does-kiss-use)
+    * [What `init` system and service manager does KISS use?](#what-init-system-and-service-manager-does-kiss-use)
 
 <!-- vim-markdown-toc -->
 
@@ -37,13 +37,13 @@ The word "kiss" has a feminine connotation (at least in the eyes of the creator)
 
 ### What `coreutils` does KISS use?
 
-KISS uses `busybox`, it is small, minimal and provides nearly everything needed. It also has a really nice feature which removes all overhead from running commands and spawning subshells. Everything is treated as a shell "builtin".
+KISS uses `busybox`.
 
 ### What `libc` does KISS use?
 
-KISS uses `musl`, it is small, correct and aligns with the overall views of the distribution.
+KISS uses `musl`
 
-### What `init` system does KISS use?
+### What `init` system and service manager does KISS use?
 
 KISS uses `busybox init` with `runit` services (*which it supports*). The `init` system can also be configured to use `sysvinit` style scripts or just plain shell commands if you so desire. You have options.
 
