@@ -2,21 +2,25 @@
 title: KISS
 ---
 
-A highly opinionated, ultra minimal, Linux distribution.
+A Linux distribution with a focus on simplicity and privacy. The distribution currently targets the x86-64 architecture and the English language.
 
-> “Simplicity is a great virtue but it requires hard work to achieve it and education to appreciate it. And to make matters worse: complexity sells better.” - Edsger Wybe Dijkstra
+```
+    ___      goldie@KISS
+   (.· |     os:     KISS Linux
+   (<> |     model:  80MK Lenovo YOGA 900
+  / __  \    pkgs:   144
+ ( /  \ /|   uptime: 6h 50m
+_/\ __)/_)   memory: 200MiB / 7941MiB
+\/-____\/    kernel: 5.2.1
 
+```
 
-## Differences
+## Simplicity
 
-- Plain text, UNIX-like package format.
-- Package manager written in 500~ lines of POSIX `sh`.
-- All shell code is **safe** and passes `shellcheck`.
-    - `init` scripts.
-    - Package `build` files.
-    - Package manager.
-    - Miscellaneous distribution scripts.
-- `musl` instead of `glibc`.
-- `busybox` instead of `GNU coreutils`.
-- `libressl` instead of `openssl`.
-- `busybox init` instead of `systemd`.
+KISS is simple in its implementation, its usage and its development. This can be seen through the tiny package manager (*500~ lines of POSIX `sh`(), the UNIX-like package format (*easily parseable plain-text files*) and the curated package choices (*`musl`, `busybox`, etc*).
+
+## Privacy
+
+KISS also values privacy. Packages have been chosen, compiled and patched to remove Telemetry, tracking or otherwise nasty behavior. Some "essential" packages have been excluded from the official repositories due to their nature (`dbus` for example).
+
+Open source as wonderful as it is does not always equate to the respect of your privacy. The large Linux distributions sadly fail in this regard.
