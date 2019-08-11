@@ -18,8 +18,9 @@ See the [Frequently Asked Questions](https://getkiss.org/pages/faq/) page for mo
 
 ## Minimality
 
-- Packages are built minimally.
 - No National Language support.
+- No docs (`/usr/share/doc`).
+- No info files (`/usr/share/info`).
 - No `dbus`.
 - No `systemd` (`busybox init`).
 - No `glibc` (`musl`)
