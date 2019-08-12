@@ -9,7 +9,7 @@ You may run into an issue while following the steps in this guide. Head on over 
 
 **NOTE**: This guide is a work in progress and is currently incomplete. This notice will be removed in due time.
 
-**NOTE**: No `initramfs` is currently used, we are in the process of writing our own tool. To use KISS now you'd need to compile a kernel without modules.
+**NOTE**: KISS does not currently support booting using an `initramfs`. When configuring your kernel ensure that all required file-system, disk controller and USB drivers are built with `[*]` (Yes) and **not** `[m]` (Module).
 
 
 ## Index
@@ -86,7 +86,7 @@ Enter the `chroot`.
 
 ## Rebuild KISS
 
-This step is **entirely optional** and you can just use the supplied binaries from the downloaded `chroot`.
+This step is **entirely optional** and you can just use the supplied binaries from the downloaded `chroot`. This step can also be done after the installation.
 
 Modify compiler options (optional):
 
@@ -104,9 +104,12 @@ Start rebuilding all packages:
 
 ## Install the kernel
 
-**NOTE**: No `initramfs` is currently used, we are in the process of creating our own tool.
+This step involves configuring and building your own Linux kernel. If you have not done this before, below are a few guides to get you started.
 
-**NOTE**: To boot without an `initramfs` you need to compile a tailored kernel with **ZERO** modules (all `y`).
+- <https://wiki.gentoo.org/wiki/Kernel/Gentoo_Kernel_Configuration_Guide>
+- <https://www.linuxtopia.org/online_books/linux_kernel/kernel_configuration/index.html>
+
+**NOTE**: KISS does not currently support booting using an `initramfs`. When configuring your kernel ensure that all required file-system, disk controller and USB drivers are built with `[*]` (Yes) and **not** `[m]` (Module).
 
 ```
 ➜ kiss build linux
