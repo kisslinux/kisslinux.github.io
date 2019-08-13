@@ -109,13 +109,9 @@ This step involves configuring and building your own Linux kernel. If you have n
 - <https://wiki.gentoo.org/wiki/Kernel/Gentoo_Kernel_Configuration_Guide>
 - <https://www.linuxtopia.org/online_books/linux_kernel/kernel_configuration/index.html>
 
-**NOTE**: KISS does not currently support booting using an `initramfs`. When configuring your kernel ensure that all required file-system, disk controller and USB drivers are built with `[*]` (Yes) and **not** `[m]` (Module).
+The Linux kernel is **not** managed by the package manager. The kernel is managed manually by the user.
 
-```
-# The build command will also run `make menuconfig`.
-➜ kiss build linux
-➜ kiss install linux
-```
+**NOTE**: KISS does not currently support booting using an `initramfs`. When configuring your kernel ensure that all required file-system, disk controller and USB drivers are built with `[*]` (Yes) and **not** `[m]` (Module).
 
 ## Install grub
 
