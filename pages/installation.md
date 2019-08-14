@@ -20,7 +20,7 @@ You may run into an issue while following the steps in this guide. Head on over 
 * [Setting up disks](#setting-up-disks)
 * [Install KISS](#install-kiss)
 * [Rebuild KISS](#rebuild-kiss)
-* [Install the kernel](#install-the-kernel)
+* [Configure and build the kernel](#configure-and-build-the-kernel)
 * [Install grub](#install-grub)
 * [Install init scripts](#install-init-scripts)
 * [Further steps](#further-steps)
@@ -102,7 +102,7 @@ Start rebuilding all packages:
 ➜ kiss build
 ```
 
-## Install the kernel
+## Configure and build the kernel
 
 This step involves configuring and building your own Linux kernel. If you have not done this before, below are a few guides to get you started.
 
