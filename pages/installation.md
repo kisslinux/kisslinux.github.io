@@ -5,9 +5,11 @@ category: main
 
 Welcome to KISS, a new independent distribution with a focus on simplicity. This guide will walk you through the required steps to install KISS.
 
+While this may be called a *guide* it will **not** take you through each step holding your hand along the way. A more comprehensive guide may be written in the future.
+
 You may run into an issue while following the steps in this guide. Head on over to the [issue tracker](https://github.com/kisslinux/repo/issues) and open an issue. We are happy to help.
 
-**NOTE**: This guide is a work in progress and is currently incomplete. This notice will be removed in due time.
+**NOTE**: KISS is still in its early days, tinkering, troubleshooting and general bug squashing may occur and should probably be expected at this point in time.
 
 **NOTE**: KISS does not currently support booting using an `initramfs`. When configuring your kernel ensure that all required file-system, disk controller and USB drivers are built with `[*]` (Yes) and **not** `[m]` (Module).
 
@@ -49,6 +51,8 @@ The guide will **not** cover this step. If you require assistance with this step
 
 ## Install KISS
 
+At this stage your disks should be setup and mounted to `/mnt`.
+
 Download the latest release.
 
 ```
@@ -74,7 +78,7 @@ Download the `chroot` helper script.
 Unpack the `tarball` (Install KISS).
 
 ```
-# Make sure all disks are mounted to '/mnt'.
+# Make sure disks are first mounted to '/mnt'.
 ➜ tar xvf kiss-chroot.tar.xz -C /mnt --strip-components 1
 ```
 
@@ -121,7 +125,7 @@ Build and install `grub`.
 ➜ kiss build grub
 ➜ kiss install grub
 
-# Also needed for UEFI.
+# Also needed for UEFI (WIP).
 ➜ kiss build efibootmgr
 ➜ kiss install efibootmgr
 ```
@@ -129,13 +133,13 @@ Build and install `grub`.
 Setup `grub`.
 
 ```
+# BIOS
+➜ grub-install --target=i386-pc /dev/sdX
+➜ grub-mkconfig -o /boot/grub/grub.cfg
+
 # UEFI (WIP)
 # Replace 'esp' with its mount point.
 ➜ grub-install --target=x86_64-efi --efi-directory=esp --bootloader-id=GRUB
-➜ grub-mkconfig -o /boot/grub/grub.cfg
-
-# BIOS
-➜ grub-install --target=i386-pc /dev/sdX
 ➜ grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
@@ -147,7 +151,6 @@ This is the final "mandatory" step.
 ➜ kiss build baseinit
 ➜ kiss install baseinit
 ```
-
 
 ## Further steps
 
