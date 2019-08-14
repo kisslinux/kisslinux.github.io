@@ -110,6 +110,7 @@ Start rebuilding all packages:
 
 This step involves configuring and building your own Linux kernel. If you have not done this before, below are a few guides to get you started.
 
+- <https://kernelnewbies.org/KernelBuild>
 - <https://wiki.gentoo.org/wiki/Kernel/Gentoo_Kernel_Configuration_Guide>
 - <https://www.linuxtopia.org/online_books/linux_kernel/kernel_configuration/index.html>
 
