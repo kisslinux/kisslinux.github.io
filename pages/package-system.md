@@ -46,24 +46,24 @@ zlib/            # Package name.
 
 ## Benefits of this system
 
-- No need to `source` (`eval`!!) the build script into the package manager.
+**No need to `source` (`eval`!!) the build script into the package manager.**
 
 All package managers and build tools which utilize a file full of arrays and functions (*a shell script*) to handle package information `source` this file. This is exactly the same as executing `eval` which is unknown to most.
 
 In KISS the build script is executed as if it were any other executable file, essentially just a `./build`.
 
 
-- Build scripts are language agnostic.
+**Build scripts are language agnostic.**
 
 The above benefit also allows build scripts to be written in whatever programming language you see fit!
 
 
-- Metadata files are simple to parse in any language.
+**Metadata files are simple to parse in any language.**
 
 The metadata files are separated by lines and spaces and can easily be parsed using whatever language or tools you wish.
 
 
-- The repository files double as an installed package's database entry.
+**The repository files double as an installed package's database entry.**
 
 This is further explained directly below. One cool aspect of this however is the fact that your local installed package database doubles as a local package repository!
 
