@@ -46,7 +46,7 @@ zlib/            # Package name.
 
 ## Benefits of this system
 
-**No need to `source` (`eval`!!) the build script into the package manager.**
+**No need to `source` (`eval`!!) the build script.**
 
 All package managers and build tools which utilize a file full of arrays and functions (*a shell script*) to handle package information `source` this file. This is exactly the same as executing `eval` which is unknown to most.
 
