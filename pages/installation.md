@@ -156,6 +156,9 @@ make defconfig
 
 # Open an interactive menu to edit the generated
 # config, enabling anything extra you may need.
+#
+# NOTE: You may need 'ncurses' to run 'menuconfig'.
+#       Run 'kiss build ncurses && kiss install ncurses'.
 make menuconfig
 
 # Store the generated config for reuse later.
