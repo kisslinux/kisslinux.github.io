@@ -7,11 +7,11 @@ Welcome to KISS, a new independent distribution with a focus on simplicity. This
 
 While this may be called a *guide* it will **not** take you through each step holding your hand along the way. A more comprehensive guide may be written in the future.
 
-You may run into an issue while following the steps in this guide. Head on over to the [issue tracker](https://github.com/kisslinux/repo/issues) and open an issue. We are happy to help.
-
 **NOTE**: KISS is still in its early days, tinkering, troubleshooting and general bug squashing may occur and should probably be expected at this point in time.
 
 **NOTE**: KISS does not currently support booting using an `initramfs`. When configuring your kernel ensure that all required file-system, disk controller and USB drivers are built with `[*]` (Yes) and **not** `[m]` (Module).
+
+You may run into an issue while following the steps in this guide. Head on over to the [issue tracker](https://github.com/kisslinux/repo/issues) and open an issue. We are happy to help.
 
 
 ## Index
