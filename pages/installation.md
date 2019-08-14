@@ -147,7 +147,7 @@ cd linux-5.2.8
 
 **NOTE**: If you require firmware blobs the drivers you enable must be enabled as `[m]` (modules).
 
-**NOTE**: You can install the firmware blobs by using 'kiss build linux-firmware` and `kiss install linux-firmware'
+**NOTE**: You can install the firmware blobs by using `kiss build linux-firmware && kiss install linux-firmware'
 
 ```
 # Generate a default config with *most* drivers
