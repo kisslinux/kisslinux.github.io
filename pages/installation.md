@@ -23,6 +23,7 @@ While this may be called a *guide* it will **not** take you through each step ho
 * [Install KISS](#install-kiss)
 * [Rebuild KISS](#rebuild-kiss)
 * [Configure and build the kernel](#configure-and-build-the-kernel)
+    * [Install `libelf`](#install-libelf)
     * [Download the kernel sources](#download-the-kernel-sources)
     * [Extract the kernel sources](#extract-the-kernel-sources)
     * [Configure the kernel](#configure-the-kernel)
@@ -123,6 +124,14 @@ The Linux kernel is **not** managed by the package manager. The kernel is manage
 
 **NOTE**: KISS does not currently support booting using an `initramfs`. When configuring your kernel ensure that all required file-system, disk controller and USB drivers are built with `[*]` (Yes) and **not** `[m]` (Module).
 
+### Install `libelf`
+
+The kernel requires `libelf` during the build process.
+
+```
+kiss build libelf
+kiss install libelf
+```
 
 ### Download the kernel sources
 
