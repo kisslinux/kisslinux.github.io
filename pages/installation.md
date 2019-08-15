@@ -23,7 +23,6 @@ While this may be called a *guide* it will **not** take you through each step ho
 * [Install KISS](#install-kiss)
 * [Rebuild KISS](#rebuild-kiss)
 * [Configure and build the kernel](#configure-and-build-the-kernel)
-    * [Install `libelf`](#install-libelf)
     * [Download the kernel sources](#download-the-kernel-sources)
     * [Extract the kernel sources](#extract-the-kernel-sources)
     * [Configure the kernel](#configure-the-kernel)
@@ -65,7 +64,7 @@ Download the latest release.
 ➜ wget https://dl.getkiss.org/kiss-chroot.tar.xz
 
 # Verify the download, does it match?
-# 56c06bfbfca8cee03256cfa3643fbc1b0469337a2b339d8c2ca790a57aa18199
+# ef54dcd8454c92a5f2e95422c7ce87ec782b82b1413d088f906633ebd7f30b05
 ➜ sha256sum kiss-chroot.tar.xz
 ```
 
@@ -123,15 +122,6 @@ This step involves configuring and building your own Linux kernel. If you have n
 The Linux kernel is **not** managed by the package manager. The kernel is managed manually by the user.
 
 **NOTE**: KISS does not currently support booting using an `initramfs`. When configuring your kernel ensure that all required file-system, disk controller and USB drivers are built with `[*]` (Yes) and **not** `[m]` (Module).
-
-### Install `libelf`
-
-The kernel requires `libelf` during the build process.
-
-```
-kiss build libelf
-kiss install libelf
-```
 
 ### Download the kernel sources
 
