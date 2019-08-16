@@ -114,10 +114,12 @@ Start rebuilding all packages:
 
 ## Build userspace tools
 
-The below two packages are required for a hardware installation.
-
 ```
-➜ kiss build util-linux e2fsprogs
+# Required for mounting drives.
+➜ kiss build util-linux e2fsprogs eudev
+
+# Required for connecting to WIFI.
+➜ kiss build dhcpcd wpa_supplicant
 ```
 
 ## Configure and build the kernel
