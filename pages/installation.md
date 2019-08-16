@@ -22,6 +22,7 @@ While this may be called a *guide* it will **not** take you through each step ho
 * [Setting up disks](#setting-up-disks)
 * [Install KISS](#install-kiss)
 * [Rebuild KISS](#rebuild-kiss)
+* [Build userspace tools](#build-userspace-tools)
 * [Configure and build the kernel](#configure-and-build-the-kernel)
     * [Download the kernel sources](#download-the-kernel-sources)
     * [Extract the kernel sources](#extract-the-kernel-sources)
@@ -109,6 +110,14 @@ Start rebuilding all packages:
 
 ```
 ➜ kiss build
+```
+
+## Build userspace tools
+
+The below two packages are required for a hardware installation.
+
+```
+➜ kiss build util-linux e2fsprogs
 ```
 
 ## Configure and build the kernel
