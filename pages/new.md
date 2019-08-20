@@ -25,7 +25,7 @@ Some prior knowledge of Linux (*or other UNIXY systems*) is required however, th
 
 ## Roadmap
 
-KISS is nearing a **1.0** release! The distribution is already fully functional, the issues below relate more to polish, installation and documentation.
+KISS is nearing a **1.0** release and is already fully functional! The issues below relate more to overall polish, installation and documentation.
 
 **KISS 1.0**
 
@@ -40,7 +40,7 @@ KISS is nearing a **1.0** release! The distribution is already fully functional,
 - Simplify installation.
     - Finish `kiss-initramfs`.
 
-**Future**
+**The Future**
 
 - [ ] Website.
     - [ ] Add a blog to the website.
