@@ -93,3 +93,11 @@ KISS is currently developed by the following people.
 - TODO: Ask Konimex.
 
 ## Further Reading
+
+- [Frequently Asked Questions](https://getkiss.org/pages/faq/)
+- [KISS on GitHub](https://github.com/kisslinux/)
+
+If you have any questions feel free to get in touch.
+
+- IRC: `#kisslinux` on Freenode.
+- [Discord](https://discord.gg/YRwnHgH)
