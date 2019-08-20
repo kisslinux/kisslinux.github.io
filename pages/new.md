@@ -25,6 +25,8 @@ Some prior knowledge of Linux (*or other UNIXY systems*) is required however, th
 
 ## Roadmap
 
+KISS is nearing a **1.0** release! The distribution is already fully functional, the issues below relate more to polish, installation and documentation.
+
 **KISS 1.0**
 
 - Finalize documentation.
@@ -32,7 +34,7 @@ Some prior knowledge of Linux (*or other UNIXY systems*) is required however, th
     - Repository creation.
     - Package manager.
     - Package format.
-- Packages
+- Packages.
     - Split `mesa` into separate driver packages.
     - Package remaining `xf86-video-*` drivers.
 - Simplify installation.
@@ -44,7 +46,7 @@ Some prior knowledge of Linux (*or other UNIXY systems*) is required however, th
     - [ ] Add a blog to the website.
 - [ ] Distribution.
     - [ ] Add support for encrypted drives.
-- [ ] Package Manager
+- [ ] Package Manager.
     - [ ] Add a `USE_FLAGS` type feature.
     - [ ] Add an "alternatives" system.
 
