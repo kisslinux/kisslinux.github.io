@@ -11,6 +11,7 @@ Some prior knowledge of Linux (*or other UNIXY systems*) is required however, th
 
 <!-- vim-markdown-toc GFM -->
 
+* [Overview](#overview)
 * [Package System](#package-system)
     * [Directory Structure](#directory-structure)
 * [Package Manager](#package-manager)
@@ -20,6 +21,12 @@ Some prior knowledge of Linux (*or other UNIXY systems*) is required however, th
 * [Further Reading](#further-reading)
 
 <!-- vim-markdown-toc -->
+
+## Overview
+
+- Easily parseable plain-text package system.
+- Tiny POSIX `sh`. package manager written in 500 LOC (*excluding comments and blank lines*).
+
 
 ## Package System
 
