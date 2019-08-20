@@ -8,3 +8,29 @@ Some prior knowledge of Linux (*or other UNIXY systems*) is required however, th
 
 
 ## Table of Contents
+
+<!-- vim-markdown-toc GFM -->
+
+* [Overview](#overview)
+* [Roadmap](#roadmap)
+* [Goals](#goals)
+* [Package System](#package-system)
+* [Package Manager](#package-manager)
+* [Development Team](#development-team)
+* [Further Reading](#further-reading)
+
+<!-- vim-markdown-toc -->
+
+## Overview
+
+## Roadmap
+
+## Goals
+
+## Package System
+
+## Package Manager
+
+## Development Team
+
+## Further Reading
