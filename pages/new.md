@@ -81,7 +81,7 @@ KISS is nearing a **1.0** release and is already fully functional! The issues be
 
 ## Development Team
 
-KISS is developed by the following people.
+KISS is currently developed by the following people.
 
 **Dylan Araps**
 
