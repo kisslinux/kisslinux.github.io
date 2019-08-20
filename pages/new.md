@@ -83,12 +83,12 @@ KISS is nearing a **1.0** release and is already fully functional! The issues be
 
 KISS is currently developed by the following people.
 
-**Dylan Araps**
+**Dylan Araps ([dylanaraps](https://github.com/dylanaraps))**
 
 - Creator of KISS.
 - Creator of [neofetch](https://github.com/dylanaraps/neofetch), [pywal](https://github.com/dylanaraps/pywal), [fff](https://github.com/dylanaraps/fff) and the [Pure Bash Bible](https://github.com/dylanaraps/pure-bash-bible).
 
-**Muhammad Herdiansyah (KONIMEX)**
+**Muhammad Herdiansyah ([KONIMEX](https://github.com/konimex))**
 
 - TODO: Ask Konimex.
 
