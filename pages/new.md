@@ -23,7 +23,7 @@ Some prior knowledge of Linux (*or other UNIXY systems*) is required however, th
 
 ## Package System
 
-The package system that KISS employs is based around the concept of easily parseable plain-text files - separated by lines and spaces. This format allows you to easily interface with the package system using any programming language or just basic UNIX tools.
+The package system that KISS employs is based around the concept of easily parseable plain-text files (*separated by lines and spaces*). This format allows you to effortlessly interface with the package system using any programming language or just basic UNIX tools.
 
 ### Directory Structure
 
