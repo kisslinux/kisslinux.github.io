@@ -25,7 +25,7 @@ Some prior knowledge of Linux (*or other UNIXY systems*) is required however, th
 ## Overview
 
 - Easily parseable plain-text package system.
-- Tiny POSIX `sh`. package manager written in 500 LOC (*excluding comments and blank lines*).
+- Tiny package manager written in 500 LOC (*excluding comments and blank lines*).
 
 
 ## Package System
