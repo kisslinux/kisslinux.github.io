@@ -24,8 +24,10 @@ Some prior knowledge of Linux (*or other UNIXY systems*) is required however, th
 
 ## Overview
 
+- Independent (*not based on another distribution*).
 - Easily parseable plain-text package system.
 - Tiny package manager written in 500 LOC (*excluding comments and blank lines*).
+- All shell code passes `shellcheck`.
 
 
 ## Package System
