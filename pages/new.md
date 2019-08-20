@@ -42,13 +42,13 @@ KISS is nearing a **1.0** release and is already fully functional! The issues be
 
 **The Future**
 
-- [ ] Website.
-    - [ ] Add a blog to the website.
-- [ ] Distribution.
-    - [ ] Add support for encrypted drives.
-- [ ] Package Manager.
-    - [ ] Add a `USE_FLAGS` type feature.
-    - [ ] Add an "alternatives" system.
+- Website.
+    - Add a blog to the website.
+- Distribution.
+    - Add support for encrypted drives.
+- Package Manager.
+    - Add a `USE_FLAGS` type feature.
+    - Add an "alternatives" system.
 
 ## Goals
 
@@ -57,5 +57,16 @@ KISS is nearing a **1.0** release and is already fully functional! The issues be
 ## Package Manager
 
 ## Development Team
+
+KISS is developed by the following people.
+
+**Dylan Araps**
+
+- Creator of KISS.
+- Creator of [neofetch](https://github.com/dylanaraps/neofetch), [pywal](https://github.com/dylanaraps/pywal), [fff](https://github.com/dylanaraps/fff) and the [Pure Bash Bible](https://github.com/dylanaraps/pure-bash-bible).
+
+**Muhammad Herdiansyah (KONIMEX)**
+
+- TODO: Ask Konimex.
 
 ## Further Reading
