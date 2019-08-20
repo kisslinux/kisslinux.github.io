@@ -29,6 +29,13 @@ Some prior knowledge of Linux (*or other UNIXY systems*) is required however, th
 - Tiny package manager written in 500 LOC (*excluding comments and blank lines*).
 - All shell code passes `shellcheck`.
 
+**Software Choices**
+
+- libc: [musl](https://wiki.musl-libc.org/).
+- coreutils: [busybox](https://busybox.net/).
+- init: `busybox init`.
+- services: `busybox runit`, `busybox sysvinit` or `*`.
+
 
 ## Package System
 
