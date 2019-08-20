@@ -27,16 +27,16 @@ Some prior knowledge of Linux (*or other UNIXY systems*) is required however, th
 
 **KISS 1.0**
 
-- [ ] Finalize documentation.
-    - [ ] Website.
-    - [ ] Repository creation.
-    - [ ] Package manager.
-    - [ ] Package format.
-- [ ] Packages
-    - [ ] Split `mesa` into separate driver packages.
-    - [ ] Package remaining `xf86-video-*` drivers.
-- [ ] Simplify installation.
-    - [ ] Finish `kiss-initramfs`.
+- Finalize documentation.
+    - Website.
+    - Repository creation.
+    - Package manager.
+    - Package format.
+- Packages
+    - Split `mesa` into separate driver packages.
+    - Package remaining `xf86-video-*` drivers.
+- Simplify installation.
+    - Finish `kiss-initramfs`.
 
 **Future**
 
