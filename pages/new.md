@@ -12,7 +12,7 @@ Some prior knowledge of Linux (*or other UNIXY systems*) is required however, th
 <!-- vim-markdown-toc GFM -->
 
 * [Package System](#package-system)
-    * [Directory Structure.](#directory-structure)
+    * [Directory Structure](#directory-structure)
 * [Package Manager](#package-manager)
 * [Roadmap](#roadmap)
 * [Goals](#goals)
@@ -25,7 +25,7 @@ Some prior knowledge of Linux (*or other UNIXY systems*) is required however, th
 
 The package system that KISS employs is based around the concept of easily parseable plain-text files - separated by lines and spaces.
 
-### Directory Structure.
+### Directory Structure
 
 ```sh
 zlib/            # Package name.
