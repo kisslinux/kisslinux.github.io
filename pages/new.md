@@ -25,6 +25,29 @@ Some prior knowledge of Linux (*or other UNIXY systems*) is required however, th
 
 ## Roadmap
 
+**KISS 1.0**
+
+- [ ] Finalize documentation.
+    - [ ] Website.
+    - [ ] Repository creation.
+    - [ ] Package manager.
+    - [ ] Package format.
+- [ ] Packages
+    - [ ] Split `mesa` into separate driver packages.
+    - [ ] Package remaining `xf86-video-*` drivers.
+- [ ] Simplify installation.
+    - [ ] Finish `kiss-initramfs`.
+
+**Future**
+
+- [ ] Website.
+    - [ ] Add a blog to the website.
+- [ ] Distribution.
+    - [ ] Add support for encrypted drives.
+- [ ] Package Manager
+    - [ ] Add a `USE_FLAGS` type feature.
+    - [ ] Add an "alternatives" system.
+
 ## Goals
 
 ## Package System
