@@ -18,10 +18,6 @@ Some prior knowledge of Linux (*or other UNIXY systems*) is required however, th
 * [Package System](#package-system)
     * [Directory Structure](#directory-structure)
     * [Benefits to this System](#benefits-to-this-system)
-        * [No need to `source` (`eval`) the build script](#no-need-to-source-eval-the-build-script)
-        * [Build scripts are language agnostic](#build-scripts-are-language-agnostic)
-        * [Metadata files are simple to parse in any language](#metadata-files-are-simple-to-parse-in-any-language)
-        * [The repository files double as an installed package's database entry](#the-repository-files-double-as-an-installed-packages-database-entry)
     * [`build`](#build)
     * [`depends`](#depends)
     * [`sources`](#sources)
@@ -129,7 +125,7 @@ zlib/            # Package name.
 
 ### Benefits to this System
 
-#### No need to `source` (`eval`) the build script
+**No need to `source` (`eval`) the build script**
 
 All distribution package build tools written in the shell which use an additional shell script full of variables, arrays and functions actually `eval` the latter script into the build tool's "namespace".
 
@@ -137,15 +133,15 @@ In the shell, using `source` or `.` is actually no different from using `eval`. 
 
 In KISS the build script is executed as if it were any other executable file, essentially just a `./build`. The build script has no access to the internals of the package manager.
 
-#### Build scripts are language agnostic
+**Build scripts are language agnostic**
 
 The above benefit also allows build scripts to be written in whatever programming language you see fit as they're run like a regular executable!
 
-#### Metadata files are simple to parse in any language
+**Metadata files are simple to parse in any language**
 
 The metadata files are separated by lines and spaces and can easily be parsed using whatever language or tools you wish. This makes interfacing with everything really easy!
 
-#### The repository files double as an installed package's database entry
+**The repository files double as an installed package's database entry**
 
 On a package install, the repository files listed above (in "structure") are all installed to `/var/db/kiss/installed` and act as database entries. This allows your local installed package database to double as a local package repository!
 
