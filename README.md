@@ -1,3 +1,3 @@
 # https://getkiss.org
 
-Website for Kiss Linux.
+Website for KISS.
