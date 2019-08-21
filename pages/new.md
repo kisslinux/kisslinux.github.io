@@ -17,6 +17,7 @@ Some prior knowledge of Linux (*or other UNIXY systems*) is required however, th
     * [`build`](#build)
     * [`depends`](#depends)
     * [`sources`](#sources)
+    * [`version`](#version)
 * [Package Manager](#package-manager)
 * [Roadmap](#roadmap)
 * [Goals](#goals)
@@ -122,6 +123,16 @@ https://gmplib.org/download/gmp/gmp-6.1.2.tar.xz gcc/gmp
 http://www.mpfr.org/mpfr-4.0.2/mpfr-4.0.2.tar.xz gcc/mpfr
 https://ftp.gnu.org/gnu/mpc/mpc-1.1.0.tar.gz gcc/mpc
 files/c99
+```
+
+### `version`
+
+The `version` file should contain a single line with two fields. The first field should contain the software's upstream version and the second field should contain the version number of the KISS build files themselves.
+
+**Example `version` file.**
+
+```
+1.2.3 1
 ```
 
 ## Package Manager
