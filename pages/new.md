@@ -12,6 +12,9 @@ Some prior knowledge of Linux (*or other UNIXY systems*) is required however, th
 <!-- vim-markdown-toc GFM -->
 
 * [Overview](#overview)
+* [Roadmap](#roadmap)
+* [Goals](#goals)
+* [Development Team](#development-team)
 * [Package System](#package-system)
     * [Directory Structure](#directory-structure)
     * [Benefits to this System](#benefits-to-this-system)
@@ -30,9 +33,6 @@ Some prior knowledge of Linux (*or other UNIXY systems*) is required however, th
     * [`patches/*`](#patches)
     * [`files/*`](#files)
 * [Package Manager](#package-manager)
-* [Roadmap](#roadmap)
-* [Goals](#goals)
-* [Development Team](#development-team)
 * [Further Reading](#further-reading)
 
 <!-- vim-markdown-toc -->
@@ -52,6 +52,51 @@ Some prior knowledge of Linux (*or other UNIXY systems*) is required however, th
 - services: `busybox runit`, `busybox sysvinit` or roll your own.
 
 **NOTE**: The `init` and service manager can be swapped out to use whatever you desire.
+
+
+## Roadmap
+
+KISS is nearing a **1.0** release and is already fully functional! The issues below relate more to overall polish, installation and documentation.
+
+**KISS 1.0**
+
+- Finalize documentation.
+    - Website.
+    - Repository creation.
+    - Package manager.
+    - Package format.
+- Packages.
+    - Split `mesa` into separate driver packages.
+    - Package remaining `xf86-video-*` drivers.
+- Simplify installation.
+    - Finish `kiss-initramfs`.
+
+**The Future**
+
+- Website.
+    - Add a blog to the website.
+- Distribution.
+    - Add support for encrypted drives.
+- Package Manager.
+    - Add a `USE_FLAGS` type feature.
+    - Add an "alternatives" system.
+
+## Goals
+
+TODO
+
+## Development Team
+
+KISS is currently developed by the following people.
+
+**Dylan Araps ([dylanaraps](https://github.com/dylanaraps))**
+
+- Creator of KISS.
+- Creator of [neofetch](https://github.com/dylanaraps/neofetch), [pywal](https://github.com/dylanaraps/pywal), [fff](https://github.com/dylanaraps/fff) and the [Pure Bash Bible](https://github.com/dylanaraps/pure-bash-bible).
+
+**Muhammad Herdiansyah ([KONIMEX](https://github.com/konimex))**
+
+- TODO: Ask Konimex.
 
 
 ## Package System
@@ -303,48 +348,8 @@ install -D kiss_path.sh "$1/etc/profile.d/kiss_path.sh"
 
 The package manager is tiny and written in 500~ lines (*exluding blank lines and comments*) of POSIX `sh`.
 
+TODO
 
-## Roadmap
-
-KISS is nearing a **1.0** release and is already fully functional! The issues below relate more to overall polish, installation and documentation.
-
-**KISS 1.0**
-
-- Finalize documentation.
-    - Website.
-    - Repository creation.
-    - Package manager.
-    - Package format.
-- Packages.
-    - Split `mesa` into separate driver packages.
-    - Package remaining `xf86-video-*` drivers.
-- Simplify installation.
-    - Finish `kiss-initramfs`.
-
-**The Future**
-
-- Website.
-    - Add a blog to the website.
-- Distribution.
-    - Add support for encrypted drives.
-- Package Manager.
-    - Add a `USE_FLAGS` type feature.
-    - Add an "alternatives" system.
-
-## Goals
-
-## Development Team
-
-KISS is currently developed by the following people.
-
-**Dylan Araps ([dylanaraps](https://github.com/dylanaraps))**
-
-- Creator of KISS.
-- Creator of [neofetch](https://github.com/dylanaraps/neofetch), [pywal](https://github.com/dylanaraps/pywal), [fff](https://github.com/dylanaraps/fff) and the [Pure Bash Bible](https://github.com/dylanaraps/pure-bash-bible).
-
-**Muhammad Herdiansyah ([KONIMEX](https://github.com/konimex))**
-
-- TODO: Ask Konimex.
 
 ## Further Reading
 
