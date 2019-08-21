@@ -16,6 +16,7 @@ Some prior knowledge of Linux (*or other UNIXY systems*) is required however, th
     * [Directory Structure](#directory-structure)
     * [`build`](#build)
     * [`depends`](#depends)
+    * [`sources`](#sources)
 * [Package Manager](#package-manager)
 * [Roadmap](#roadmap)
 * [Goals](#goals)
@@ -98,6 +99,29 @@ The `depends` file should contain any other packages the package depends on to f
 # Comments are also supported.
 perl make
 zlib
+```
+
+### `sources`
+
+The `sources` file should contain all remote and local files the package needs to be built. This includes the source, patches and any other miscellaneous files which may be needed.
+
+Each source should be listed one per line and an optional second field allows you to specify an extraction directory for the source. The extraction directory is relative to the build directory.
+
+**Example `sources` file.**
+
+```
+https://roy.marples.name/downloads/dhcpcd/dhcpcd-8.0.2.tar.xz
+files/dhcpcd.run
+```
+
+**Example `sources` file with optional fields.**
+
+```
+https://gcc.gnu.org/pub/gcc/releases/gcc-9.1.0/gcc-9.1.0.tar.xz gcc
+https://gmplib.org/download/gmp/gmp-6.1.2.tar.xz gcc/gmp
+http://www.mpfr.org/mpfr-4.0.2/mpfr-4.0.2.tar.xz gcc/mpfr
+https://ftp.gnu.org/gnu/mpc/mpc-1.1.0.tar.gz gcc/mpc
+files/c99
 ```
 
 ## Package Manager
