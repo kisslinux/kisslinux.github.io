@@ -20,6 +20,7 @@ Some prior knowledge of Linux (*or other UNIXY systems*) is required however, th
     * [`version`](#version)
     * [`checksums`](#checksums)
     * [`manifest`](#manifest)
+    * [`post-install`](#post-install)
 * [Package Manager](#package-manager)
 * [Roadmap](#roadmap)
 * [Goals](#goals)
@@ -189,6 +190,20 @@ Files are listed first with directories following in reverse order. This allows 
 /usr/include/zconf.h
 /usr/include/
 /usr/
+```
+
+### `post-install`
+
+The `post-install` file should contain anything that needs to be run **after** a package installation to properly setup the software.
+
+The script is language agnostic and the only requirement is that it be executable.
+
+**Example `post-install` file.**
+
+```
+#!/bin/sh -e
+
+/usr/sbin/update-ca-certificates --fresh
 ```
 
 ## Package Manager
