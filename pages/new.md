@@ -346,7 +346,7 @@ install -D kiss_path.sh "$1/etc/profile.d/kiss_path.sh"
 
 ## Package Manager
 
-The package manager is tiny and written in 500~ lines (*exluding blank lines and comments*) of POSIX `sh`.
+The package manager is tiny and written in 500~ lines (*excluding blank lines and comments*) of POSIX `sh`. The package manager is also linted with `shellcheck` and passes.
 
 ```
 ➜ kiss
@@ -359,6 +359,7 @@ The package manager is tiny and written in 500~ lines (*exluding blank lines and
 => search:    Search for a package.
 => update:    Check for updates.
 ```
+
 
 ## Further Reading
 
