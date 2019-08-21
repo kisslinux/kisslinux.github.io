@@ -15,6 +15,7 @@ Some prior knowledge of Linux (*or other UNIXY systems*) is required however, th
 * [Package System](#package-system)
     * [Directory Structure](#directory-structure)
     * [`build`](#build)
+    * [`depends`](#depends)
 * [Package Manager](#package-manager)
 * [Roadmap](#roadmap)
 * [Goals](#goals)
@@ -85,6 +86,18 @@ The script is also given a single argument (*equivalent to `script arg`*), this 
 
 make
 make DESTDIR="$1" install
+```
+
+### `depends`
+
+The `depends` file should contain any other packages the package depends on to function correctly. Each dependency should be listed one per line and an optional second field allows you to specify whether the dependency is needed for the build or at runtime.
+
+**Example `depends` file.**
+
+```
+# Comments are also supported.
+perl make
+zlib
 ```
 
 ## Package Manager
