@@ -14,6 +14,9 @@ Some prior knowledge of Linux (*or other UNIXY systems*) is required however, th
 * [Overview](#overview)
 * [Package System](#package-system)
     * [Directory Structure](#directory-structure)
+    * [Benefits to this System](#benefits-to-this-system)
+        * [No need to `source` (`eval`!!) the build script.](#no-need-to-source-eval-the-build-script)
+        * [Build scripts are language agnostic.](#build-scripts-are-language-agnostic)
     * [`build`](#build)
     * [`depends`](#depends)
     * [`sources`](#sources)
@@ -53,6 +56,7 @@ Some prior knowledge of Linux (*or other UNIXY systems*) is required however, th
 
 The package system that KISS employs is based around the concept of easily parseable plain-text files (*separated by lines and spaces*). This format allows you to effortlessly interface with the package system using any programming language or just basic UNIX tools.
 
+
 ### Directory Structure
 
 ```sh
@@ -75,6 +79,21 @@ zlib/            # Package name.
 ├─ files/*       # Directory to misc files.
 ┘
 ```
+
+### Benefits to this System
+
+#### No need to `source` (`eval`!!) the build script.
+
+All distribution package build tools written in the shell which use an additional shell script full of variables, arrays and functions actually `eval` the latter script into the build tool's "namespace".
+
+In the shell, using `source` or `.` is actually no different from using `eval`. Any code run using `source`/`.` is executed in the same running shell.
+
+In KISS the build script is executed as if it were any other executable file, essentially just a `./build`.
+
+#### Build scripts are language agnostic.
+
+The above benefit also allows build scripts to be written in whatever programming language you see fit as they're run like a regular executable!
+
 
 ### `build`
 
