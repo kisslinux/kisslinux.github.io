@@ -12,8 +12,8 @@ Some prior knowledge of Linux (*or other UNIXY systems*) is required however, th
 <!-- vim-markdown-toc GFM -->
 
 * [Overview](#overview)
+* [Aims](#aims)
 * [Roadmap](#roadmap)
-* [Goals](#goals)
 * [Development Team](#development-team)
 * [Package System](#package-system)
     * [Directory Structure](#directory-structure)
@@ -50,6 +50,13 @@ Some prior knowledge of Linux (*or other UNIXY systems*) is required however, th
 **NOTE**: The `init` and service manager can be swapped out to use whatever you desire.
 
 
+## Aims
+
+- Able to be maintained by only 1-2 people.
+- Be a simple Linux system.
+- Provide a simple packaging system.
+- Provide small and curated official repositories.
+
 ## Roadmap
 
 KISS is nearing a **1.0** release and is already fully functional! The issues below relate more to overall polish, installation and documentation.
@@ -77,13 +84,10 @@ KISS is nearing a **1.0** release and is already fully functional! The issues be
     - Add a `USE_FLAGS` type feature.
     - Add an "alternatives" system.
 
-## Goals
-
-TODO
 
 ## Development Team
 
-KISS is currently developed by the following people.
+KISS is developed by the following people.
 
 **Dylan Araps ([dylanaraps](https://github.com/dylanaraps))**
 
