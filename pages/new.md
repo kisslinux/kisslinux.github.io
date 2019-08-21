@@ -34,7 +34,9 @@ Some prior knowledge of Linux (*or other UNIXY systems*) is required however, th
 - libc: [musl](https://wiki.musl-libc.org/).
 - coreutils: [busybox](https://busybox.net/).
 - init: `busybox init`.
-- services: `busybox runit`, `busybox sysvinit` or `*`.
+- services: `busybox runit`, `busybox sysvinit` or roll your own.
+
+**NOTE**: The `init` and service manager can easily be swapped out to use whatever you desire.
 
 
 ## Package System
