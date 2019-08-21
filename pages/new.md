@@ -21,6 +21,8 @@ Some prior knowledge of Linux (*or other UNIXY systems*) is required however, th
     * [`checksums`](#checksums)
     * [`manifest`](#manifest)
     * [`post-install`](#post-install)
+    * [`nostrip`](#nostrip)
+    * [`patches/*`](#patches)
 * [Package Manager](#package-manager)
 * [Roadmap](#roadmap)
 * [Goals](#goals)
@@ -67,9 +69,9 @@ zlib/            # Package name.
 
 # Optional files.
 ├─ post-install  # Post-install script (must be executable).
+├─ nostrip       # Don't strip binaries for this package (empty file).
 ├─ patches/*     # Directory to store patches.
 ├─ files/*       # Directory to misc files.
-├─ nostrip       # Don't strip binaries for this package (empty file).
 ┘
 ```
 
@@ -204,6 +206,47 @@ The script is language agnostic and the only requirement is that it be executabl
 #!/bin/sh -e
 
 /usr/sbin/update-ca-certificates --fresh
+```
+
+### `nostrip`
+
+The `nostrip` file is an empty file which is used to tell the package manager to **not** strip the compiled package files of debug symbols etc. The only requirement is that this file exist, it doesn't need to contain any information.
+
+### `patches/*`
+
+The patches directory should contain any patches the software needs. In the `sources` file you refer to patches by using a relative path (`patches/musl.patch`).
+
+The package manager **does not** automatically apply patches. This must be done in the `build` script of the package. The build script has direct access to the patches in its current working directory.
+
+**Example `build` file with patches.**
+
+```
+#!/bin/sh -e
+
+patch -p1 < rxvt-unicode-kerning.patch
+patch -p1 < gentables.patch
+
+./configure \
+    --prefix=/usr \
+    --with-terminfo=/usr/share/terminfo \
+    --enable-256-color \
+    --enable-font-styles \
+    --enable-xim \
+    --enable-keepscrolling \
+    --enable-selectionscrolling \
+    --enable-smart-resize \
+    --enable-transparency \
+    --enable-frills \
+    --enable-perl \
+    --enable-mousewheel \
+    --enable-text-blink \
+    --enable-fading \
+    --enable-unicode3 \
+    --disable-utmp \
+    --disable-wtmp \
+    --disable-lastlog
+
+make DESTDIR="$1" install
 ```
 
 ## Package Manager
