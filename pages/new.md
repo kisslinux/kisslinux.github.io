@@ -88,9 +88,9 @@ zlib/            # Package name.
 
 All distribution package build tools written in the shell which use an additional shell script full of variables, arrays and functions actually `eval` the latter script into the build tool's "namespace".
 
-In the shell, using `source` or `.` is actually no different from using `eval`. Any code run using `source`/`.` is executed in the same running shell.
+In the shell, using `source` or `.` is actually no different from using `eval`. Any code run using `source`/`.` is executed in the same running shell (*and can modify the build tool itself*).
 
-In KISS the build script is executed as if it were any other executable file, essentially just a `./build`.
+In KISS the build script is executed as if it were any other executable file, essentially just a `./build`. The build script has no access to the internals of the package manager.
 
 #### Build scripts are language agnostic
 
