@@ -16,7 +16,7 @@ category: main
 
 ## How should I refer to the distribution?
 
-KISS is called "KISS" or "KISS Linux", refer to it as so!
+KISS is called "KISS", refer to it as so!
 
 
 ## Why is the distribution called "KISS"?
