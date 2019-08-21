@@ -14,6 +14,7 @@ Some prior knowledge of Linux (*or other UNIXY systems*) is required however, th
 * [Overview](#overview)
 * [Package System](#package-system)
     * [Directory Structure](#directory-structure)
+    * [`build`](#build)
 * [Package Manager](#package-manager)
 * [Roadmap](#roadmap)
 * [Goals](#goals)
@@ -64,6 +65,26 @@ zlib/            # Package name.
 ├─ files/*       # Directory to misc files.
 ├─ nostrip       # Don't strip binaries for this package (empty file).
 ┘
+```
+
+### `build`
+
+The `build` file should contain all of the steps necessary to patch, configure make and install (*`make install` in this context*) the package.
+
+The script is language agnostic and the only requirement is that it be executable. On execution the script will start in the directory of the package's source (*there's no need to change the working directory*).
+
+The script is also given a single argument (*equivalent to `script arg`*), this argument contains the path where the script should install the compiled files. Everything in the path is added to the package tarball and later installed to the system.
+
+**Example `build` file.**
+
+```
+#!/bin/sh -e
+
+./configure \
+    --prefix=/usr
+
+make
+make DESTDIR="$1" install
 ```
 
 ## Package Manager
