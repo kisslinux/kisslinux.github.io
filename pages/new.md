@@ -15,7 +15,7 @@ Some prior knowledge of Linux (*or other UNIXY systems*) is required however, th
 * [Package System](#package-system)
     * [Directory Structure](#directory-structure)
     * [Benefits to this System](#benefits-to-this-system)
-        * [No need to `source` (`eval`!!) the build script](#no-need-to-source-eval-the-build-script)
+        * [No need to `source` (`eval`) the build script](#no-need-to-source-eval-the-build-script)
         * [Build scripts are language agnostic](#build-scripts-are-language-agnostic)
         * [Metadata files are simple to parse in any language](#metadata-files-are-simple-to-parse-in-any-language)
         * [The repository files double as an installed package's database entry](#the-repository-files-double-as-an-installed-packages-database-entry)
@@ -84,7 +84,7 @@ zlib/            # Package name.
 
 ### Benefits to this System
 
-#### No need to `source` (`eval`!!) the build script
+#### No need to `source` (`eval`) the build script
 
 All distribution package build tools written in the shell which use an additional shell script full of variables, arrays and functions actually `eval` the latter script into the build tool's "namespace".
 
