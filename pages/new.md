@@ -23,6 +23,7 @@ Some prior knowledge of Linux (*or other UNIXY systems*) is required however, th
     * [`post-install`](#post-install)
     * [`nostrip`](#nostrip)
     * [`patches/*`](#patches)
+    * [`files/*`](#files)
 * [Package Manager](#package-manager)
 * [Roadmap](#roadmap)
 * [Goals](#goals)
@@ -247,6 +248,25 @@ patch -p1 < gentables.patch
     --disable-lastlog
 
 make DESTDIR="$1" install
+```
+
+### `files/*`
+
+The `files/` directory should contain any miscellaneous files the software needs. In the `sources` file you refer to files by using a relative path (`files/busybox.config`).
+
+The build script has direct access to the files in its current working directory.
+
+**Example `build` file with files.**
+
+```
+#!/bin/sh -e
+
+install -D kiss "$1/usr/bin/kiss"
+
+# 'kiss_path.sh' is stored in 'files/kiss_path.sh'.
+# The build script has direct access to it and it is
+# added to the final tarball under /etc/profile.d/kiss_path.sh.
+install -D kiss_path.sh "$1/etc/profile.d/kiss_path.sh"
 ```
 
 ## Package Manager
