@@ -301,6 +301,9 @@ install -D kiss_path.sh "$1/etc/profile.d/kiss_path.sh"
 
 ## Package Manager
 
+The package manager is tiny and written in 500~ lines (*exluding blank lines and comments*) of POSIX `sh`.
+
+
 ## Roadmap
 
 KISS is nearing a **1.0** release and is already fully functional! The issues below relate more to overall polish, installation and documentation.
