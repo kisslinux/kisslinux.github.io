@@ -344,8 +344,17 @@ install -D kiss_path.sh "$1/etc/profile.d/kiss_path.sh"
 
 The package manager is tiny and written in 500~ lines (*exluding blank lines and comments*) of POSIX `sh`.
 
-TODO
-
+```
+➜ kiss
+=> kiss [b|c|i|l|r|s|u] [pkg] [pkg] [pkg].
+=> build:     Build a package.
+=> checksum:  Generate checksums.
+=> install:   Install a package.
+=> list:      List installed packages.
+=> remove:    Remove a package.
+=> search:    Search for a package.
+=> update:    Check for updates.
+```
 
 ## Further Reading
 
