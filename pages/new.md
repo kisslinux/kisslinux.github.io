@@ -92,7 +92,7 @@ KISS is currently developed by the following people.
 
 **Muhammad Herdiansyah ([KONIMEX](https://github.com/konimex))**
 
-- TODO: Ask Konimex.
+- Developer.
 
 
 ## Package System
