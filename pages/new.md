@@ -34,6 +34,8 @@ Some prior knowledge of Linux (*or other UNIXY systems*) is required however, th
 * [Package Manager](#package-manager)
     * [Features](#features)
     * [Usage](#usage)
+* [KISS Utilities](#kiss-utilities)
+    * [Example `kiss-util`](#example-kiss-util)
 * [Further Reading](#further-reading)
 
 <!-- vim-markdown-toc -->
@@ -383,12 +385,14 @@ install -D kiss_path.sh "$1/etc/profile.d/kiss_path.sh"
 
 The package manager is tiny and written in 500~ lines (*excluding blank lines and comments*) of POSIX `sh`. The package manager also passes `shellcheck`'s linting.
 
+Source: <https://github.com/kisslinux/kiss>
 
 ### Features
 
 - Full dependency solver.
 - Missing dependency detection (*using `ldd`*).
 - Package conflict detection.
+- Language agnostic build scripts.
 
 
 ### Usage
@@ -403,6 +407,49 @@ The package manager is tiny and written in 500~ lines (*excluding blank lines an
 => remove:    Remove a package.
 => search:    Search for a package.
 => update:    Check for updates.
+```
+
+## KISS Utilities
+
+To keep the package manager small a lot of extra functionality was moved to a separate repository called `kiss-utils`. The utilities acts as a "contrib" project for users of KISS to contribute their own scripts for interfacing with the system.
+
+Source: <https://github.com/kisslinux/kiss-utils>
+
+The following utilities are currently provided:
+
+- `kiss-chroot`: Enter a KISS `chroot`.
+- `kiss-depends-finder`: Find missing dependencies by parsing 'ldd'.
+- `kiss-depends`: Display a package's dependencies.
+- `kiss-export`: Turn an installed package back into a KISS tarball.
+- `kiss-fetch`: Simple info tool.
+- `kiss-manifest-tree`: Display all files as a tree owned by a package.
+- `kiss-manifest`: Display all files owned by a package.
+- `kiss-orphans`: List orphaned packages.
+- `kiss-owns`: Check which package owns a file.
+- `kiss-revdepends`: Display packages which depend on package.
+- `kiss-size`: Show the size on disk for an installed package.
+
+### Example `kiss-util`
+
+```
+#!/bin/sh -e
+#
+# kiss-revdepends - Display packages which depend on package.
+
+db_dir=$KISS_ROOT/var/db/kiss/installed
+
+# Check if package is installed and exit if it is not.
+[ -d "$db_dir/${1-null}" ] || {
+    printf '%s\n' "error: '$1' not installed." >&2
+    exit 1
+}
+
+# 'cd' to the database directory as a simple way of
+# stripping the path and performing a 'basename'.
+cd "$db_dir"
+
+# Use a simple 'grep' to display packages depending on '$1'.
+grep "^$1" -- */depends
 ```
 
 
