@@ -411,7 +411,7 @@ Source: <https://github.com/kisslinux/kiss>
 
 ## KISS Utilities
 
-To keep the package manager small a lot of extra functionality was moved to a separate repository called `kiss-utils`. The utilities acts as a "contrib" project for users of KISS to contribute their own scripts for interfacing with the system.
+To keep the package manager small a lot of extra functionality was moved to a separate repository called `kiss-utils`. The utilities also act as a "contrib" project for users of KISS to contribute their own scripts.
 
 Source: <https://github.com/kisslinux/kiss-utils>
 
