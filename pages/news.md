@@ -7,11 +7,16 @@ category: main
 
 <!-- vim-markdown-toc GFM -->
 
+* [22/08/2019: KISS is now on <https://repolgy.org>!](#22082019-kiss-is-now-on-httpsrepolgyorg)
 * [11/08/2019: KISS installed on hardware.](#11082019-kiss-installed-on-hardware)
 * [04/08/2019: Firefox has been built.](#04082019-firefox-has-been-built)
 * [19/07/2019: Building a web browser.](#19072019-building-a-web-browser)
 
 <!-- vim-markdown-toc -->
+
+## 22/08/2019: KISS is now on <https://repolgy.org>!
+
+The KISS repositories were recently added to <https://repolgy.org>. You can track our packages here: https://repology.org/repository/kiss
 
 ## 11/08/2019: KISS installed on hardware.
 
