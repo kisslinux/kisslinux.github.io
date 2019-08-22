@@ -83,7 +83,7 @@ KISS uses **less** software where possible and follows the belief that the less 
 
 Some of the more notable replacements to the rather bloated distribution software stack are `musl` (replaces `glibc`) and `busybox` (replaces `systemd`, `coreutils` and many other tools).
 
-When running KISS you will find a lot of the software you're used to seeing installed absent from the repositories entirely. Software like `dbus`, `gettxt`, `polkit`, `pam`, `systemd` etc.
+When running KISS you will find a lot of the software from your typical distribution absent from the repositories entirely. Software like `dbus`, `gettxt`, `intltool`, `polkit`, `pam`, `systemd`, `pulseaudio`, etc.
 
 The absence of software from the repositories does **not** mean it cannot be installed. As a user you can package whatever you like or use a third-party repository.
 
