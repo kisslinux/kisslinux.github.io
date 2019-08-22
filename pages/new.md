@@ -54,7 +54,7 @@ Some prior knowledge of Linux (*or other UNIXY systems*) is required however, th
 - init: `busybox init`.
 - services: `busybox runit`, `busybox sysvinit` or roll your own.
 
-**NOTE**: The `init` and service manager can be swapped out to use whatever you desire.
+**NOTE**: These are just the defaults.
 
 
 ## Aims
