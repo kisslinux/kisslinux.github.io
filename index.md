@@ -102,10 +102,10 @@ KISS is nearing a **1.0** release and is already fully functional! The issues be
 **KISS 1.0**
 
 - Finalize documentation.
-    - Website.
+    - ~~Website.~~
     - Repository creation.
-    - Package manager.
-    - Package format.
+    - ~~Package manager.~~
+    - ~~Package format.~
 - Packages.
     - Split `mesa` into separate driver packages.
     - Package remaining `xf86-video-*` drivers.
