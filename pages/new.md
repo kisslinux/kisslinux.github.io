@@ -13,6 +13,8 @@ Some prior knowledge of Linux (*or other UNIXY systems*) is required however, th
 
 * [Overview](#overview)
 * [Aims](#aims)
+* [Philosophy](#philosophy)
+    * [Simplicity](#simplicity)
 * [Roadmap](#roadmap)
 * [Development Team](#development-team)
 * [Package System](#package-system)
@@ -56,6 +58,24 @@ Some prior knowledge of Linux (*or other UNIXY systems*) is required however, th
 - Be a simple Linux system.
 - Provide a simple packaging system.
 - Provide small and curated official repositories.
+
+
+## Philosophy
+
+### Simplicity
+
+KISS follows the KISS principle (*Keep it Simple Stupid*). Stupid in this context refers to the knowledge required to develop and maintain the distribution.
+
+The word "simple" has many different interpretations in this context, is the distribution simple to use, simple to develop or simple in its implementation? Further the phrase "simple to use" differs depending on the person.
+
+Users with a prior knowledge of Linux and basic programming skills will find KISS simple in all three examples given above. A user without prior knowledge may see KISS as the exact opposite.
+
+Making things "easy" through GUI configuration tools, a next-next-next installation process and other niceties cause the system to become more and more complex.
+
+The more code and documentation you add to a project, the more time it takes to maintain it and the risk of things going awry rises.
+
+KISS does away with these things which gives additional responsibility to the user while at the same time giving them increased flexibility and in the end a simpler system.
+
 
 ## Roadmap
 
