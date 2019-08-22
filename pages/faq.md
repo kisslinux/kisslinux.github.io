@@ -11,6 +11,7 @@ category: main
 * [Why is the distribution called "KISS"?](#why-is-the-distribution-called-kiss)
 * [Why another Linux distribution?](#why-another-linux-distribution)
 * [Why is the logo a woman?](#why-is-the-logo-a-woman)
+* [Why is software X not in the repositories?](#why-is-software-x-not-in-the-repositories)
 
 <!-- vim-markdown-toc -->
 
@@ -32,3 +33,12 @@ The distribution is named after the [KISS Principle](https://en.wikipedia.org/wi
 ## Why is the logo a woman?
 
 The word "kiss" has a feminine connotation (at least in the eyes of the creator) and the logo/avatars reflect this.
+
+
+## Why is software X not in the repositories?
+
+In keeping the system simple a lot of the typical software is intentionally excluded. There is no "Natural Language Support" (`gettext`, `intltool`, `ICU` etc), no `pam` or `polkit`, no `dbus`, no `pulseaudio` etc.
+
+This does **not** go on to say that these cannot be installed, they just aren't in the official repositories. KISS provides a minimal and extendible base with the belief that it is easier to **add** software than it is to **remove** it.
+
+Users can create their own repositories and track them with `git`. Other users can then enable these repositories. I envision users creating repositories for the software which won't be included in the official repositories!
