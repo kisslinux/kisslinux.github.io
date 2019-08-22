@@ -116,7 +116,8 @@ Start rebuilding all packages:
 
 ```
 # Required for mounting drives.
-➜ kiss build util-linux e2fsprogs eudev
+➜ kiss build util-linux
+➜ kiss build e2fsprogs eudev
 
 # Required for connecting to WIFI.
 ➜ kiss build dhcpcd wpa_supplicant
