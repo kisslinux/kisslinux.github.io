@@ -67,7 +67,7 @@ Some prior knowledge of Linux (*or other UNIXY systems*) is required however, th
 
 KISS follows the KISS principle (*Keep it Simple Stupid*). Stupid in this context refers to the knowledge required to develop and maintain the distribution.
 
-The word "simple" has many different interpretations in this context, is the distribution simple to use, simple to develop or simple in its implementation? Further the phrase "simple to use" differs depending on the person.
+The word "simple" has many different interpretations when talking about Linux systems, is the distribution simple to use, simple to develop or simple in its implementation? Further the phrase "simple to use" differs depending on the person.
 
 Users with a prior knowledge of Linux and basic programming skills will find KISS simple in all three examples given above. A user without prior knowledge may see KISS as the exact opposite.
 
