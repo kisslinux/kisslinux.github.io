@@ -46,6 +46,7 @@ Some prior knowledge of Linux (*or other UNIXY systems*) is required however, th
 - Easily parseable plain-text package system.
 - Tiny package manager written in 500 LOC (*excluding comments and blank lines*).
 - All shell code passes `shellcheck`.
+- Source based (*similar to CRUX or Gentoo*).
 
 **Software Choices**
 
