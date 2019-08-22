@@ -32,6 +32,8 @@ Some prior knowledge of Linux (*or other UNIXY systems*) is required however, th
     * [`patches/*`](#patches)
     * [`files/*`](#files)
 * [Package Manager](#package-manager)
+    * [Features](#features)
+    * [Usage](#usage)
 * [Further Reading](#further-reading)
 
 <!-- vim-markdown-toc -->
@@ -379,7 +381,17 @@ install -D kiss_path.sh "$1/etc/profile.d/kiss_path.sh"
 
 ## Package Manager
 
-The package manager is tiny and written in 500~ lines (*excluding blank lines and comments*) of POSIX `sh`. The package manager is also linted with `shellcheck` and passes.
+The package manager is tiny and written in 500~ lines (*excluding blank lines and comments*) of POSIX `sh`. The package manager also passes `shellcheck`'s linting.
+
+
+### Features
+
+- Full dependency solver.
+- Missing dependency detection (*using `ldd`*).
+- Package conflict detection.
+
+
+### Usage
 
 ```
 ➜ kiss
