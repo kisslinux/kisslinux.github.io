@@ -15,6 +15,7 @@ Some prior knowledge of Linux (*or other UNIXY systems*) is required however, th
 * [Aims](#aims)
 * [Philosophy](#philosophy)
     * [Simplicity](#simplicity)
+    * [Less is more](#less-is-more)
 * [Roadmap](#roadmap)
 * [Development Team](#development-team)
 * [Package System](#package-system)
@@ -75,6 +76,10 @@ Making things "easy" through GUI configuration tools, a next-next-next installat
 The more code and documentation you add to a project, the more time it takes to maintain it and the risk of things going awry rises.
 
 KISS does away with these things which gives additional responsibility to the user while at the same time giving them increased flexibility and in the end a simpler system.
+
+### Less is more
+
+KISS uses **less** software where possible and follows the belief that the less software/code running the less error prone the distribution will be overall.
 
 
 ## Roadmap
