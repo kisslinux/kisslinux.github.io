@@ -7,12 +7,21 @@ category: main
 
 <!-- vim-markdown-toc GFM -->
 
+* [23/08/2019: KISS repository split.](#23082019-kiss-repository-split)
 * [22/08/2019: KISS is now on <https://repology.org>!](#22082019-kiss-is-now-on-httpsrepologyorg)
 * [11/08/2019: KISS installed on hardware.](#11082019-kiss-installed-on-hardware)
 * [04/08/2019: Firefox has been built.](#04082019-firefox-has-been-built)
 * [19/07/2019: Building a web browser.](#19072019-building-a-web-browser)
 
 <!-- vim-markdown-toc -->
+
+## 23/08/2019: KISS repository split.
+
+The `public` repository was split from the main repositories and renamed to `community`. This change was made to reflect the split in maintainer responsibility. This repository is now disabled by default.
+
+It goes to say that the KISS developers are not solely responsible for maintaining packages in this repository. By enabling this repository you accept the risks of a curated community repository.
+
+To enable `community` follow the instructions here: <https://getkiss.org/pages/installation/#enable-the-community-repository>
 
 ## 22/08/2019: KISS is now on <https://repology.org>!
 
