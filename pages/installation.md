@@ -254,9 +254,7 @@ git clone https://github.com/kisslinux/community.git
 # above.
 #
 # NOTE: The subdirectory must also be added.
-# Example:
-# export KISS_PATH=/var/db/kiss/repo/core:/var/db/kiss/repo/extra:/var/db/kiss/repo/xorg:/path/to/community/community
-
+# Example: export KISS_PATH=/var/db/kiss/repo/core:/var/db/kiss/repo/extra:/var/db/kiss/repo/xorg:/path/to/community/community
 vi /etc/profile.d/kiss_path.sh
 
 # Spawn a new login shell to access this repository
