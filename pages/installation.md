@@ -31,6 +31,7 @@ While this may be called a *guide* it will **not** take you through each step ho
     * [Install the kernel](#install-the-kernel)
 * [Install grub](#install-grub)
 * [Install init scripts](#install-init-scripts)
+* [Enable the community repository](#enable-the-community-repository)
 * [Further steps](#further-steps)
 
 <!-- vim-markdown-toc -->
@@ -234,6 +235,28 @@ This is the final "mandatory" step.
 ```
 ➜ kiss build baseinit
 ➜ kiss install baseinit
+```
+
+## Enable the community repository
+
+The KISS community repository is maintained by users of the distribution and contains packages which aren't in the main repositories. This repository is disabled by default as it is not 100% maintained by the KISS developers as the other repositories are.
+
+```
+# Clone the repository to a location of your choosing.
+git clone https://github.com/kisslinux/community.git
+
+# Add the repository to the system-wide 'KISS_PATH'.
+# The 'KISS_PATH' variable works exactly like 'PATH'.
+# Each repository is split by ':' and is checked in
+# the order they're written.
+#
+# Add the full path to the repository you cloned
+# above.
+vi /etc/profile.d/kiss_path.sh
+
+# Spawn a new login shell to access this repository
+# immediately.
+sh -l
 ```
 
 ## Further steps
