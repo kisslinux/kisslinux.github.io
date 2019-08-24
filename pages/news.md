@@ -7,6 +7,7 @@ category: main
 
 <!-- vim-markdown-toc GFM -->
 
+* [24/08/2019: Rust update requires manual intervention.](#24082019-rust-update-requires-manual-intervention)
 * [24/08/2019: New version of KISS.](#24082019-new-version-of-kiss)
 * [24/08/2019: Manual repository fix needed.](#24082019-manual-repository-fix-needed)
 * [23/08/2019: KISS repository split.](#23082019-kiss-repository-split)
@@ -16,6 +17,10 @@ category: main
 * [19/07/2019: Building a web browser.](#19072019-building-a-web-browser)
 
 <!-- vim-markdown-toc -->
+
+## 24/08/2019: Rust update requires manual intervention.
+
+Remove `cargo` with `kiss remove cargo` before updating `rust`.
 
 ## 24/08/2019: New version of KISS.
 
