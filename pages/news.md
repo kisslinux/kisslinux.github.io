@@ -7,6 +7,7 @@ category: main
 
 <!-- vim-markdown-toc GFM -->
 
+* [24/08/2019: Manual repository fix needed.](#24082019-manual-repository-fix-needed)
 * [23/08/2019: KISS repository split.](#23082019-kiss-repository-split)
 * [22/08/2019: KISS is now on <https://repology.org>!](#22082019-kiss-is-now-on-httpsrepologyorg)
 * [11/08/2019: KISS installed on hardware.](#11082019-kiss-installed-on-hardware)
@@ -14,6 +15,16 @@ category: main
 * [19/07/2019: Building a web browser.](#19072019-building-a-web-browser)
 
 <!-- vim-markdown-toc -->
+
+## 24/08/2019: Manual repository fix needed.
+
+The repository split has caused existing repository `git pull` commands to fail. Run the following commands to fix it. Apologies.
+
+```
+cd /var/db/kiss
+rm -rf repo
+git clone https://github.com/kisslinux/repo
+```
 
 ## 23/08/2019: KISS repository split.
 
