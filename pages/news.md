@@ -7,6 +7,7 @@ category: main
 
 <!-- vim-markdown-toc GFM -->
 
+* [24/08/2019: New version of KISS.](#24082019-new-version-of-kiss)
 * [24/08/2019: Manual repository fix needed.](#24082019-manual-repository-fix-needed)
 * [23/08/2019: KISS repository split.](#23082019-kiss-repository-split)
 * [22/08/2019: KISS is now on <https://repology.org>!](#22082019-kiss-is-now-on-httpsrepologyorg)
@@ -15,6 +16,14 @@ category: main
 * [19/07/2019: Building a web browser.](#19072019-building-a-web-browser)
 
 <!-- vim-markdown-toc -->
+
+## 24/08/2019: New version of KISS.
+
+- GCC updated to 9.2.
+- All other packages updated.
+- Fixed repository pulls.
+
+Download: https://github.com/kisslinux/repo/releases/download/0.0.24-musl/kiss-chroot.tar.xz
 
 ## 24/08/2019: Manual repository fix needed.
 

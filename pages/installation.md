@@ -66,7 +66,7 @@ Download the latest release.
 ➜ wget https://dl.getkiss.org/kiss-chroot.tar.xz
 
 # Verify the download, does it match?
-# 38f18abf7777ae61f3b3a4319397fc54a408a01e16c109a3cfdb869bd432f312
+# 6845d06c3f6d1dafdb28eaf5478b650094528f3f739fe3cc30bb585503272f80
 ➜ sha256sum kiss-chroot.tar.xz
 ```
 
