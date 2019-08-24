@@ -23,7 +23,7 @@ category: main
 - All other packages updated.
 - Fixed repository pulls.
 
-Download: https://github.com/kisslinux/repo/releases/download/0.0.24-musl/kiss-chroot.tar.xz
+Download: <https://github.com/kisslinux/repo/releases/download/0.0.24-musl/kiss-chroot.tar.xz>
 
 ## 24/08/2019: Manual repository fix needed.
 
