@@ -190,8 +190,6 @@ make -j "$(nproc)"
 
 **NOTE**: This requires `root`.
 
-**NOTE**: You may need to append `-version` or `-something` to both `/boot/vmlinuz` and `/boot/System.map`. It doesn't really matter what you append, the sole purpose is for 'grub' to recognize it.
-
 ```
 # Install the built modules.
 # This installs directly to `/lib` (symlink to `/usr/lib`).
@@ -200,6 +198,11 @@ make modules_install
 # Install the built kernel.
 # This installs directly to `/boot`.
 make install
+
+# Rename the kernel.
+# Substitute VERSION for the kernel version you have built.
+mv /boot/vmlinuz /boot/vmlinuz-VERSION
+mv /boot/System.map /boot/System.map-VERSION
 ```
 
 ## Install grub
