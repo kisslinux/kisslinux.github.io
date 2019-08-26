@@ -140,16 +140,16 @@ The Linux kernel is **not** managed by the package manager. The kernel is manage
 You can find the latest version at <https://kernel.org/>.
 
 ```
-wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.2.8.tar.xz
+wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.2.10.tar.xz
 ```
 
 ### Extract the kernel sources
 
 ```
-tar xvf linux-5.2.8.tar.xz
+tar xvf linux-5.2.10.tar.xz
 
 # Change directory to the kernel sources.
-cd linux-5.2.8
+cd linux-5.2.10
 ```
 
 ### Configure the kernel
@@ -189,6 +189,8 @@ make -j "$(nproc)"
 ### Install the kernel
 
 **NOTE**: This requires `root`.
+
+**NOTE**: Ignore the LILO error, it's harmless.
 
 ```
 # Install the built modules.
