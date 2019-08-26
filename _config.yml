@@ -23,4 +23,3 @@ defaults:
       layout: "default"
 include:
   - _redirects
-  - freenode.txt
