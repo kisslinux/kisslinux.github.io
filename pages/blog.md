@@ -22,18 +22,26 @@ Firefox's build process depends on both Python 2 and Python 3. Mozilla is curren
 
 This effort only recently started and there is a long road ahead to completion.
 
-> In mozilla-central there are over **3500 Python files** (excluding third party files), comprising roughly **230k lines of code**. Additionally there are **462 repositories** labelled with Python in the Mozilla org on Github ... \[1\]
+> In mozilla-central there are over **3500 Python files** (excluding third party files), comprising roughly **230k lines of code**. Additionally there are **462 repositories** labelled with Python in the Mozilla org on Github \[...\] \[1\]
 
-On finishing by or before the deadline:
+Will Mozilla finish before the deadline? It doesn't look that way.
 
 > Do we need to be 100% migrated by Python 2’s EOL?
-> Technically, no. ... \[1\]
+> Technically, no. \[...\] \[1\]
 
 
 **NodeJS**
 
 Node is in a similar position to Mozilla, work is being done but to say it is nearing completion is an overstatement. NodeJS is closer to being Python 3 compatible than Firefox but I myself doubt that we will see a release with support by 2020.
 
+
+**The Future**
+
+It is looking more and more like we will be using Python 2 for a while longer. Despite the decade or near decade long time for transition these projects have left the transition till beyond the EOL date.
+
+Since the EOL announcement till today how much Python 2 code has been added to these two projects? A transition even 5 years ago would've been beneficial!
+
+So it looks like KISS will keep Python 2 in the official repositories past 2019 and into 2020.
 
 **Sources:**
 
