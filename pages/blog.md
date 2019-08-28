@@ -1,14 +1,28 @@
 ---
 title: Blog
+category: main
 ---
 
 ## Index
 
 <!-- vim-markdown-toc GFM -->
 
+* [28/08/2019 - Firefox 69 now unconditionally depends on `dbus`](#28082019---firefox-69-now-unconditionally-depends-on-dbus)
 * [27/08/2019 - Python 2 will never die](#27082019---python-2-will-never-die)
 
 <!-- vim-markdown-toc -->
+
+
+## 28/08/2019 - Firefox 69 now unconditionally depends on `dbus`
+
+The upcoming Firefox release now depends on `dbus` and this dependency can't be disabled. The usual `--disable-dbus` `mozconfig` option has no effect.
+
+Until this is fixed upstream or we find a way to patch this out KISS will be swapping to the next ESR release of Firefox (68.0.2 -> 68.1.0). This gives us a little over a year to sort out this situation.
+
+With the release of Firefox 70 ALSA support will also be dropped from Firefox and we will have to ship `apulse` with KISS to fix this.
+
+It seems to be getting harder and harder to run and maintain a system which doesn't follow the usual trend of software choices. Firefox even has a `dbus` dependency on FreeBSD and OpenBSD!
+
 
 ## 27/08/2019 - Python 2 will never die
 
