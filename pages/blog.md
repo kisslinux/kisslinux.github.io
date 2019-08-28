@@ -7,13 +7,13 @@ category: main
 
 <!-- vim-markdown-toc GFM -->
 
-* [28/08/2019 - Firefox 69 now unconditionally depends on `dbus`](#28082019---firefox-69-now-unconditionally-depends-on-dbus)
+* [28/08/2019 - Firefox 69 now fully depends on `dbus`](#28082019---firefox-69-now-fully-depends-on-dbus)
 * [27/08/2019 - Python 2 will never die](#27082019---python-2-will-never-die)
 
 <!-- vim-markdown-toc -->
 
 
-## 28/08/2019 - Firefox 69 now unconditionally depends on `dbus`
+## 28/08/2019 - Firefox 69 now fully depends on `dbus`
 
 The upcoming Firefox release now depends on `dbus` and this dependency can't be disabled. The usual `--disable-dbus` `mozconfig` option has no effect.
 
