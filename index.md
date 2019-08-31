@@ -394,6 +394,7 @@ Source: <https://github.com/kisslinux/kiss>
 - Missing dependency detection (*using `ldd`*).
 - Package conflict detection.
 - Language agnostic build scripts.
+- Incremental package installation.
 
 
 ### Usage
