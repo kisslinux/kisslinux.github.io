@@ -7,6 +7,7 @@ category: main
 
 <!-- vim-markdown-toc GFM -->
 
+* [31/08/2019: Removal of `ca-certificates`.](#31082019-removal-of-ca-certificates)
 * [30/08/2019: Removal of `file`.](#30082019-removal-of-file)
 * [30/08/2019: Removal of `fakeroot`.](#30082019-removal-of-fakeroot)
 * [28/08/2019: Removal of `atk-bridge-fake`.](#28082019-removal-of-atk-bridge-fake)
@@ -20,6 +21,17 @@ category: main
 * [19/07/2019: Building a web browser.](#19072019-building-a-web-browser)
 
 <!-- vim-markdown-toc -->
+
+## 31/08/2019: Removal of `ca-certificates`.
+
+KISS now uses the certificates bundled with `libressl`.
+
+Steps for removal of `ca-certificates`.
+
+- `kiss build libressl`
+- `kiss remove ca-certificates`
+- `rm -rf /etc/ssl`
+- `kiss install libressl`
 
 ## 30/08/2019: Removal of `file`.
 
