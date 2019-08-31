@@ -7,6 +7,7 @@ category: main
 
 <!-- vim-markdown-toc GFM -->
 
+* [31/08/2019: `python-setuptools` now a part of `python`.](#31082019-python-setuptools-now-a-part-of-python)
 * [31/08/2019: Removal of `ca-certificates`.](#31082019-removal-of-ca-certificates)
 * [30/08/2019: Removal of `file`.](#30082019-removal-of-file)
 * [30/08/2019: Removal of `fakeroot`.](#30082019-removal-of-fakeroot)
@@ -21,6 +22,19 @@ category: main
 * [19/07/2019: Building a web browser.](#19072019-building-a-web-browser)
 
 <!-- vim-markdown-toc -->
+
+## 31/08/2019: `python-setuptools` now a part of `python`.
+
+Steps for removal of `python-setuptools`.
+
+- If `meson` is installed: `kiss remove meson`.
+- If `python-mako` is installed: `kiss remove python-mako`.
+- `kiss remove python-setuptools`.
+- `kiss build python`
+- `kiss install python`
+- `kiss update`
+- If `meson` was installed: `kiss build meson && kiss install meson`.
+- If `python-mako` was installed: `kiss build python-mako && kiss install python-mako`.
 
 ## 31/08/2019: Removal of `ca-certificates`.
 
