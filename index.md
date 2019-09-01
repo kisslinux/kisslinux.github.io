@@ -109,15 +109,11 @@ KISS is nearing a **1.0** release and is already fully functional! The issues be
 - Packages.
     - Split `mesa` into separate driver packages.
     - Package remaining `xf86-video-*` drivers.
-- Simplify installation.
-    - Finish `kiss-initramfs`.
 
 **The Future**
 
-- Website.
-    - Add a blog to the website.
-- Distribution.
-    - Add support for encrypted drives.
+- ~~Website.~~
+    - ~~Add a blog to the website.~~
 - Package Manager.
     - Add a `USE_FLAGS` type feature.
     - Add an "alternatives" system.

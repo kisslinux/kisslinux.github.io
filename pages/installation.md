@@ -9,7 +9,7 @@ While this may be called a *guide* it will **not** take you through each step ho
 
 **NOTE**: KISS is still in its early days, tinkering, troubleshooting and general bug squashing may occur and should probably be expected at this point in time.
 
-**NOTE**: KISS does not currently support booting using an `initramfs`. When configuring your kernel ensure that all required file-system, disk controller and USB drivers are built with `[*]` (Yes) and **not** `[m]` (Module).
+**NOTE**: KISS does not support booting using an `initramfs`. When configuring your kernel ensure that all required file-system, disk controller and USB drivers are built with `[*]` (Yes) and **not** `[m]` (Module).
 
 **NOTE**: You may run into an issue while following the steps in this guide. Head on over to the [issue tracker](https://github.com/kisslinux/repo/issues) and open an issue. We are happy to help.
 
@@ -134,23 +134,23 @@ This step involves configuring and building your own Linux kernel. If you have n
 
 The Linux kernel is **not** managed by the package manager. The kernel is managed manually by the user.
 
-**NOTE**: KISS does not currently support booting using an `initramfs`. When configuring your kernel ensure that all required file-system, disk controller and USB drivers are built with `[*]` (Yes) and **not** `[m]` (Module).
+**NOTE**: KISS does not support booting using an `initramfs`. When configuring your kernel ensure that all required file-system, disk controller and USB drivers are built with `[*]` (Yes) and **not** `[m]` (Module).
 
 ### Download the kernel sources
 
 You can find the latest version at <https://kernel.org/>.
 
 ```
-wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.2.10.tar.xz
+wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.2.11.tar.xz
 ```
 
 ### Extract the kernel sources
 
 ```
-tar xvf linux-5.2.10.tar.xz
+tar xvf linux-5.2.11.tar.xz
 
 # Change directory to the kernel sources.
-cd linux-5.2.10
+cd linux-5.2.11
 ```
 
 ### Configure the kernel
