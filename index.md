@@ -116,6 +116,7 @@ KISS 1.0 has been released and we now look towards the future!
     - Add an "alternatives" system.
 - Installation.
     - Add `initramfs` support (*help wanted!*).
+        - This will also allow us to add a binary kernel package.
 
 
 ## Development Team
