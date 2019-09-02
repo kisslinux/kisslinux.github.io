@@ -3,8 +3,6 @@ description: An independent Linux® distribution with a focus on simplicity and 
 author: "Dylan Araps"
 permalink: pretty
 theme:
-plugins:
-  - jekyll-sitemap
 syntax_highlighter: none
 markdown: kramdown
 kramdown:
@@ -25,3 +23,4 @@ defaults:
       layout: "default"
 include:
   - _redirects
+  - sitemap.xml
