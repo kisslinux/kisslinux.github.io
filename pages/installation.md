@@ -204,6 +204,7 @@ make install
 
 # Rename the kernel.
 # Substitute VERSION for the kernel version you have built.
+# Example: 'vmlinuz-5.2.11'
 mv /boot/vmlinuz /boot/vmlinuz-VERSION
 mv /boot/System.map /boot/System.map-VERSION
 ```
