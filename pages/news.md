@@ -7,6 +7,7 @@ category: main
 
 <!-- vim-markdown-toc GFM -->
 
+* [02/09/2019: KISS 1.0 released!](#02092019-kiss-10-released)
 * [31/08/2019: `python-setuptools` now a part of `python`.](#31082019-python-setuptools-now-a-part-of-python)
 * [31/08/2019: Removal of `ca-certificates`.](#31082019-removal-of-ca-certificates)
 * [30/08/2019: Removal of `file`.](#30082019-removal-of-file)
@@ -22,6 +23,12 @@ category: main
 * [19/07/2019: Building a web browser.](#19072019-building-a-web-browser)
 
 <!-- vim-markdown-toc -->
+
+## 02/09/2019: KISS 1.0 released!
+
+I am happy to announce that KISS is now at a stage where a 1.0 can be released! I'd like to thank those who gave KISS a try providing valuable feedback and bug reports.
+
+Release: <https://github.com/kisslinux/repo/releases/tag/1.0.0-musl>
 
 ## 31/08/2019: `python-setuptools` now a part of `python`.
 
