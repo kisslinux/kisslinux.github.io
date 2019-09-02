@@ -8,7 +8,7 @@ Apologies if this is broken, the News page is in the process of being split into
 ## Index
 
 <ul>
-{% for page in site.pages %}
+{% for page in site.pages | reverse %}
 {% if page.category == 'news' %}
 <li>
 <a href="{{page.url}}">{{page.title}}</a>
