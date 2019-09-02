@@ -97,11 +97,11 @@ It is easier to **add** things to a system than it is to **remove** them. You do
 
 ## Roadmap
 
-KISS is nearing a **1.0** release and is already fully functional! The issues below relate more to overall polish, installation and documentation.
+KISS 1.0 has been released and we now look towards the future!
 
-**KISS 1.0**
+~~**KISS 1.0**~~
 
-- Finalize documentation.
+- ~~Finalize documentation.~~
     - ~~Website.~~
     - ~~Package manager.~~
     - ~~Package format.~~
@@ -114,6 +114,8 @@ KISS is nearing a **1.0** release and is already fully functional! The issues be
 - Package Manager.
     - Add a `USE_FLAGS` type feature.
     - Add an "alternatives" system.
+- Installation.
+    - Add `initramfs` support (*help wanted!*).
 
 
 ## Development Team
