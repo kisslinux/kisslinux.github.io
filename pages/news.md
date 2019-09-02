@@ -3,6 +3,8 @@ title: News
 category: main
 ---
 
+RSS Feed available here: <https://getkiss.org/news.xml>
+
 ## Index
 
 <ul>
