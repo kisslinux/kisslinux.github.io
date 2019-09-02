@@ -12,6 +12,7 @@ category: main
 * [Why another Linux distribution?](#why-another-linux-distribution)
 * [Why is the logo a woman?](#why-is-the-logo-a-woman)
 * [Why is software X not in the repositories?](#why-is-software-x-not-in-the-repositories)
+* [Why is there no `initramfs` support?](#why-is-there-no-initramfs-support)
 
 <!-- vim-markdown-toc -->
 
@@ -37,8 +38,14 @@ The word "kiss" has a feminine connotation (at least in the eyes of the creator)
 
 ## Why is software X not in the repositories?
 
-In keeping the system simple a lot of the typical software is intentionally excluded. There is no "Natural Language Support" (`gettext`, `intltool`, `ICU` etc), no `pam` or `polkit`, no `dbus`, no `pulseaudio` etc.
+In keeping the system simple a lot of the typical software is intentionally excluded. There is no "Natural Language Support" (`gettext`, `intltool`, `ICU` etc), no `pam` or `polkit`, no `dbus`, no `pulseaudio`, no GNOME, no KDE etc.
 
 This does **not** go on to say that these cannot be installed, they just aren't in the official repositories. KISS provides a minimal and extendible base with the belief that it is easier to **add** software than it is to **remove** it.
 
 Users can create their own repositories and track them with `git`. Other users can then enable these repositories. I envision users creating repositories for the software which won't be included in the official repositories!
+
+## Why is there no `initramfs` support?
+
+KISS is usable without one (*minus **full** disk encryption*) and in terms of simplicity it's far simpler to not include one. There was an attempt to add support for it, however we failed in doing so.
+
+This isn't to say that KISS won't ever include this functionality, pull requests will of course be accepted. If you're reading this and are willing to help out we'd appreciate it!
