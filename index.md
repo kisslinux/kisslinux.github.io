@@ -433,17 +433,9 @@ The following utilities are currently provided:
 #
 # kiss-revdepends - Display packages which depend on package.
 
-db_dir=$KISS_ROOT/var/db/kiss/installed
-
-# Check if package is installed and exit if it is not.
-[ -d "$db_dir/${1-null}" ] || {
-    printf '%s\n' "error: '$1' not installed." >&2
-    exit 1
-}
-
 # 'cd' to the database directory as a simple way of
 # stripping the path and performing a 'basename'.
-cd "$db_dir"
+cd "$KISS_ROOT/var/db/kiss/installed"
 
 # Use a simple 'grep' to display packages depending on '$1'.
 grep "^$1" -- */depends
