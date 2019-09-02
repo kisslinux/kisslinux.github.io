@@ -5,7 +5,6 @@ permalink: pretty
 theme:
 plugins:
   - jekyll-sitemap
-  - jekyll-feed
 syntax_highlighter: none
 markdown: kramdown
 kramdown:
@@ -26,6 +25,4 @@ defaults:
       layout: "default"
 include:
   - _redirects
-feed:
-  categories:
-    - news
+  - news.rss
