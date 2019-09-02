@@ -10,13 +10,16 @@ layout: null
  <ttl>1800</ttl>
 
 {% for page in site.pages reversed %}
-{% if page.category == 'news' and page.title %}
+{% if page.category == 'news' and page.title and page.url %}
 <item>
 <title>{{page.title}}</title>
 <description>{{page.description}}</description>
-<link>{{page.url}}</link>
-<guid isPermaLink="true">{{page.url}}</guid>
-<pubDate>{{post.url}}</pubDate>
+<link>{{site.url}}/{{page.url}}</link>
+<guid isPermaLink="true">{{site.url}}/{{page.url}}</guid>
+
+{% assign date = site.title| split: ":" %}
+
+<pubDate>{{date | first}}</pubDate>
 </item>
 {% endif %}
 {% endfor %}
