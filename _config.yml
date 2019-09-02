@@ -25,4 +25,4 @@ defaults:
       layout: "default"
 include:
   - _redirects
-  - news.rss
+  - news.xml
