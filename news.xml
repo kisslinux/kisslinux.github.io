@@ -13,7 +13,7 @@ layout: null
 {% if page.category == 'news' and page.title and page.url %}
 <item>
 <title>{{page.title}}</title>
-<description>{{page.excerpt}}</description>
+<description>{{page.content|strip_html|truncatewords:30}}</description>
 <link>{{site.url}}{{page.url}}</link>
 <guid isPermaLink="true">{{site.url}}{{page.url}}</guid>
 <pubDate>{{page.title| split: ":" | first | date: "%b %d, %y" | date_to_rfc822}}</pubDate>
