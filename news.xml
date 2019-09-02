@@ -16,10 +16,7 @@ layout: null
 <description>{{page.description}}</description>
 <link>{{site.url}}/{{page.url}}</link>
 <guid isPermaLink="true">{{site.url}}/{{page.url}}</guid>
-
-{% assign date = site.title| split: ":" %}
-
-<pubDate>{{date | first}}</pubDate>
+<pubDate>{{page.title| split: ":" | first}}</pubDate>
 </item>
 {% endif %}
 {% endfor %}
