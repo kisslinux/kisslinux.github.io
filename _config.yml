@@ -25,5 +25,3 @@ defaults:
       layout: "default"
 include:
   - _redirects
-  - news.xml
-  - blog.xml
