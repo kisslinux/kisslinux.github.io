@@ -1,4 +1,5 @@
 url: "https://getkiss.org"
+description: An independent Linux® distribution with a focus on simplicity and the concept of "less is more". The distribution currently targets the x86-64 architecture and the English language.
 author: "Dylan Araps"
 permalink: pretty
 theme:
