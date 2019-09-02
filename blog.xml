@@ -8,7 +8,7 @@ layout: null
  <description>{{site.description}}</description>
  <link>https://getkiss.org</link>
  <ttl>1800</ttl>
- <atom:link href="https://getkiss.org/news.xml" rel="self" type="application/rss+xml" />
+ <atom:link href="https://getkiss.org/blog.xml" rel="self" type="application/rss+xml" />
 
 {% for page in site.pages reversed %}
 {% if page.category == 'blog' and page.title and page.url %}
