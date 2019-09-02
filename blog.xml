@@ -1,0 +1,26 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+ <title>KISS Linux News</title>
+ <description>{{site.description}}</description>
+ <link>https://getkiss.org</link>
+ <ttl>1800</ttl>
+ <atom:link href="https://getkiss.org/news.xml" rel="self" type="application/rss+xml" />
+
+{% for page in site.pages reversed %}
+{% if page.category == 'blog' and page.title and page.url %}
+<item>
+<title>{{page.title}}</title>
+<description>{{page.content|strip_html|truncatewords:30}}</description>
+<link>{{site.url}}{{page.url}}</link>
+<guid isPermaLink="true">{{site.url}}{{page.url}}</guid>
+<pubDate>{{page.title|split: ":"|first|date: "%b %d, %y"|date_to_rfc822}}</pubDate>
+</item>
+{% endif %}
+{% endfor %}
+
+</channel>
+</rss>
