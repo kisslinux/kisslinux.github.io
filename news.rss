@@ -1,0 +1,25 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+ <title>KISS Linux News</title>
+ <description>{{site.description}}</description>
+ <link>https://getkiss.org</link>
+ <ttl>1800</ttl>
+
+{% for page in site.pages reversed %}
+{% if page.category == 'news' and page.title %}
+<item>
+<title>{{page.title}}</title>
+<description>{{page.description}}</description>
+<link>{{page.url}}</link>
+<guid isPermaLink="true">{{page.url}}</guid>
+<pubDate>{{post.url}}</pubDate>
+</item>
+{% endif %}
+{% endfor %}
+
+</channel>
+</rss>
