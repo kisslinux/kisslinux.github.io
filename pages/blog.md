@@ -3,7 +3,7 @@ title: Blog
 category: main
 ---
 
-RSS Feed available here: <https://getkiss.org/blog.xml>
+RSS Feed available here: <https://getkiss.org/blog/blog.xml>
 
 ## Index
 
