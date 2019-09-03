@@ -12,4 +12,4 @@ The guide will **not** cover this step. If you require assistance with this step
 
 <br>
 
-[<- **Setting up the disks**](https://getkiss.org/install/disks/)<span id=r>[**Install KISS** ->](https://getkiss.org/install/install-kiss/)</span>
+[<- **Introduction**](https://getkiss.org/install/)<span id=r>[**Install KISS** ->](https://getkiss.org/install/install-kiss/)</span>
