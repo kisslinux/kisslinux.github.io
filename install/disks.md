@@ -11,6 +11,4 @@ The guide will **not** cover this step. If you require assistance with this step
 - <https://wiki.archlinux.org/index.php/Installation_guide#Partition_the_disks>
 
 
-## Next step
-
-[Install KISS ->](https://getkiss.org/install/install-kiss/)
+[<- Setting up the disks](https://getkiss.org/install/disks/) [Install KISS ->](https://getkiss.org/install/install-kiss/)
