@@ -21,6 +21,6 @@ You will need an existing Linux distribution to use as a base for the installati
 For the purpose of this guide I will be using another Linux distribution's live-CD to bootstrap KISS. From this point on; the guide assumes you have booted a live-CD and have an **internet connection**.
 
 
-## Let's go
+<br>
 
-[Setting up the disks ->](https://getkiss.org/install/disks/)
+[**Setting up the disks** ->](https://getkiss.org/install/disks/)
