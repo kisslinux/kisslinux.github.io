@@ -14,3 +14,5 @@ category: install
 <br>
 
 [<- **Rebuild KISS**](https://getkiss.org/install/rebuild-kiss/)<span class=r>[**The Kernel** ->](https://getkiss.org/install/the-kernel/)</span>
+
+<br>
