@@ -86,3 +86,8 @@ mv /boot/vmlinuz /boot/vmlinuz-VERSION
 mv /boot/System.map /boot/System.map-VERSION
 ```
 
+<br>
+
+[<- **Userspace Tools**](https://getkiss.org/install/userspace-tools/)<span class=r>[**Building Grub** ->](https://getkiss.org/install/grub/)</span>
+
+<br>
