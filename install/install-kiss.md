@@ -43,3 +43,5 @@ Enter the `chroot`.
 <br>
 
 [<- **Setting up the disks**](https://getkiss.org/install/disks/)<span class=r>[**Rebuild KISS** ->](https://getkiss.org/install/rebuild-kiss/)</span>
+
+<br>
