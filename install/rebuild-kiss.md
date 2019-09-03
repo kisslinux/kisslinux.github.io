@@ -20,3 +20,6 @@ Start rebuilding all packages:
 ➜ kiss build
 ```
 
+<br>
+
+[<- **Install KISS**](https://getkiss.org/install/install-kiss/)<span class=r>[**Userspace Tools** ->](https://getkiss.org/install/userspace-tools/)</span>
