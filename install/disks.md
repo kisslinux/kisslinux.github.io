@@ -9,3 +9,8 @@ The guide will **not** cover this step. If you require assistance with this step
 
 - <https://wiki.gentoo.org/wiki/Handbook:AMD64/Installation/Disks>
 - <https://wiki.archlinux.org/index.php/Installation_guide#Partition_the_disks>
+
+
+## Next step
+
+[Install KISS ->](https://getkiss.org/install/install-kiss/)
