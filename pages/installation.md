@@ -1,5 +1,6 @@
 ---
 title: <b>Install KISS</b>
+category: main
 ---
 
 Welcome to KISS, a new independent distribution with a focus on simplicity. This guide will walk you through the required steps to install KISS.
