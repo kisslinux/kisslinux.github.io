@@ -23,4 +23,4 @@ For the purpose of this guide I will be using another Linux distribution's live-
 
 <br>
 
-[**Setting up the disks** ->](https://getkiss.org/install/disks/)
+<span id=r>[**Setting up the disks** ->](https://getkiss.org/install/disks/)</span>
