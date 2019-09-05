@@ -445,7 +445,6 @@ grep "^$1" -- */depends
 
 ## Further Reading
 
-- [Frequently Asked Questions](https://getkiss.org/pages/faq/)
 - [KISS on GitHub](https://github.com/kisslinux/)
 
 If you have any questions feel free to get in touch.
