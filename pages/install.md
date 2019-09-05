@@ -1,5 +1,5 @@
 ---
-title: <b>Install KISS ➜</b>
+title: <b>Install KISS</b>
 category: main
 ---
 
