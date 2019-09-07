@@ -1,5 +1,5 @@
 ---
-title: "USE_FLAGS?"
+title: "USE flags?"
 ---
 
 KISS does not use the concept of `USE_FLAGS` for package customization, instead you create your own package repository and have full control over each and every package.
