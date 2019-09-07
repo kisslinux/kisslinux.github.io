@@ -177,8 +177,6 @@ make -j "$(nproc)"
 
 ### Install the kernel
 
-**NOTE**: This requires `root`.
-
 **NOTE**: Ignore the LILO error, it's harmless.
 
 ```
@@ -234,7 +232,7 @@ This is the final "mandatory" step.
 
 ## Enable the community repository
 
-The KISS community repository is maintained by users of the distribution and contains packages which aren't in the main repositories. This repository is disabled by default as it is not 100% maintained by the KISS developers as the other repositories are.
+The KISS community repository is maintained by users of the distribution and contains packages which aren't in the main repositories. This repository is disabled by default since is not maintained by the KISS developers.
 
 ```
 # Clone the repository to a location of your choosing.
@@ -259,6 +257,6 @@ sh -l
 
 ## Further steps
 
-You should now be able to reboot into your KISS installation. Typical configuration should follow (hostname, creation of users, service configuration etc).
+You should now be able to reboot into your KISS installation. Typical configuration should follow (*hostname, creation of users, service configuration etc*).
 
-If you encountered any issues during this guide, don't hesitate to open an issue on one of our GitHub repositories or join the IRC and Discord servers. We are happy to help!
+If you encountered any issues, don't hesitate to open an issue on one of our GitHub repositories or join the IRC and Discord servers.
