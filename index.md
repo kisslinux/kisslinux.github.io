@@ -112,7 +112,6 @@ KISS 1.0 has been released and we now look towards the future!
 - ~~Website.~~
     - ~~Add a blog to the website.~~
 - Package Manager.
-    - Add a `USE_FLAGS` type feature.
     - Add an "alternatives" system.
 - Installation.
     - Add `initramfs` support (*help wanted!*).
