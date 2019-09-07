@@ -1,5 +1,5 @@
 ---
-title: Development Team
+title: Team
 category: main
 ---
 
