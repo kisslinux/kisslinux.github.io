@@ -37,12 +37,6 @@ dylan-repo/
 ├─ strace/
 │  ├─ build
 │  ├─ checksums
-│  ├─ firefox-log
-│  ├─ sources
-│  ├─ version
-├─ xinput/
-│  ├─ build
-│  ├─ checksums
 │  ├─ sources
 │  ├─ version
 └──┘
