@@ -17,8 +17,6 @@ The word "simple" has many different interpretations in this context, is the dis
 
 Users with a prior knowledge of Linux and basic programming skills will find KISS simple in all three examples given above. A user without prior knowledge may see KISS as the exact opposite.
 
-Making things "easy" through GUI configuration tools, a next-next-next installation process and other niceties cause the system to become more and more complex.
-
 The more code and documentation you add to a project, the more time it takes to maintain it and the risk of things going awry rises. Code *is* weight, we must stay light.
 
 ### Less is more
