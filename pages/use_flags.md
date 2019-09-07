@@ -6,6 +6,8 @@ KISS does not use the concept of `USE_FLAGS` for package customization, instead 
 
 This keeps the package manager and the package files themselves simple and easy to maintain as they don't have to think about conditional dependencies, a configuration file or the nitty-gritty way this system would function underneath.
 
+**NOTE**: If you are unfamiliar with the package format in KISS, I recommend reading this page: <https://getkiss.org/#package-system>
+
 
 ## Index
 
