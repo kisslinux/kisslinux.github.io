@@ -21,7 +21,7 @@ The more code and documentation you add to a project, the more time it takes to 
 
 ### Less is more
 
-The distribution uses **less** software where possible and follows the belief that the less software and code running the less error prone the system will be overall.
+The distribution uses less software where possible and follows the belief that the less software and code running the less error prone the system will be overall.
 
 The absence of software from the repositories does **not** mean it cannot be installed. As a user you can package whatever you like or use a third-party repository.
 
