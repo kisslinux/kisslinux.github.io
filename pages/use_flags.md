@@ -49,7 +49,9 @@ dylan-repo/
 
 ## How do I create a repository?
 
-Steps:
+Creating a repository for KISS is as simple as creating a directory and adding it to the `KISS_PATH` environment variable.
+
+NOTE: You can optionally fork the `community` repository to allow for merging of changes between your fork and KISS through `git`.
 
 ```
 # Create a directory (this can be anywhere on the system).
