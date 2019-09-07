@@ -10,6 +10,7 @@ category: main
 * [What `init` system is used?](#what-init-system-is-used)
 * [What `libc` is used?](#what-libc-is-used)
 * [What `coreutils` is used?](#what-coreutils-is-used)
+* [Why should I use this over X distribution?](#why-should-i-use-this-over-x-distribution)
 
 <!-- vim-markdown-toc -->
 
@@ -27,3 +28,7 @@ The default `libc` is `musl`,
 
 The default `coreutils` is `busybox`.
 
+
+## Why should I use this over X distribution?
+
+If you see no value in this distribution's philosophy, software choices and development; it isn't for you.
