@@ -2,7 +2,7 @@
 title: KISS
 ---
 
-An independent Linux® distribution with a focus on simplicity and the concept of "less is more". The distribution targets **only** the x86-64 architecture and the English language.
+An independent Linux® distribution with a focus on [simplicity](#simplicity) and the concept of ["less is more"](#less-is-more). The distribution targets **only** the x86-64 architecture and the English language.
 
 > “Simple can be harder than complex: You have to work hard to get your thinking clean to make it simple. But it's worth it in the end because once you get there, you can move mountains.” - **Steve Jobs**
 
@@ -11,13 +11,13 @@ An independent Linux® distribution with a focus on simplicity and the concept o
 
 ### Simplicity
 
-This distribution follows the [KISS principle](https://en.wikipedia.org/wiki/KISS_principle) (*Keep it Simple Stupid*). Stupid in this context refers to the knowledge required to develop and maintain the distribution and **not** those developing it.
+This distribution follows the [KISS principle](https://en.wikipedia.org/wiki/KISS_principle) (*Keep it Simple Stupid*).
 
-The word "simple" has many different interpretations in this context, is the distribution simple to use, simple to develop or simple in its implementation? Further the phrase "simple to use" differs depending on the person.
+A distribution being "simple" has many different interpretations. Is it simple to use, simple to develop or simple in its implementation? Further the phrase "simple to use" differs depending on the person.
 
-Users with a prior knowledge of Linux and basic programming skills will find this distribution simple in all three examples given above. A user without prior knowledge may see this distribution as the exact opposite.
+Users with prior knowledge of Linux and basic programming skills will find this distribution simple in all three examples given above. A user without prior knowledge may see this distribution as the exact opposite.
 
-The more code and documentation you add to a project, the more time it takes to maintain it and the risk of things going awry rises. Code *is* weight, we must stay light.
+The more code and documentation you add to a project, the more time it takes to maintain it and the risk of things going awry rises. Code *is* weight and we must stay light.
 
 ### Less is more
 
