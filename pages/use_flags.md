@@ -2,7 +2,7 @@
 title: "USE flags?"
 ---
 
-KISS does not use the concept of `USE_FLAGS` for package customization, instead you create your own package repository and have full control over each and every package.
+KISS does not use the concept of `USE` flags for package customization, instead you create your own package repository and have full control over each and every package.
 
 This keeps the package manager and the package files themselves simple and easy to maintain as they don't have to think about conditional dependencies, a configuration file or the nitty-gritty way this system would function underneath.
 
