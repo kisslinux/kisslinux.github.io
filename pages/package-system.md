@@ -1,5 +1,6 @@
 ---
 title: Package System
+category: main
 ---
 
 The distribution employs a package system based around the concept of easily parseable plain-text files (*separated by lines and spaces*). This format allows effortless interface using any programming language or just basic UNIX tools.
