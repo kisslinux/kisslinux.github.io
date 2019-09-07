@@ -10,7 +10,6 @@ category: main
 * [What `init` system is used?](#what-init-system-is-used)
 * [What `libc` is used?](#what-libc-is-used)
 * [What `coreutils` is used?](#what-coreutils-is-used)
-* [Why is the base system ~50MB?](#why-is-the-base-system-50mb)
 
 <!-- vim-markdown-toc -->
 
@@ -28,7 +27,3 @@ The default `libc` is `musl`,
 
 The default `coreutils` is `busybox`.
 
-
-## Why is the base system ~50MB?
-
-The base is large since it contains all of the software required to compile software.
