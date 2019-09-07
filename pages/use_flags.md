@@ -92,3 +92,14 @@ Copying a package to your repository.
 ```
 ➜ cp -r "$(kiss s vim)" /path/to/myrepo
 ```
+
+Turning this into a shell function for easier use.
+
+```
+pkgcp () {
+    cp -r "$(kiss s "$1")" /path/to/myrepo
+}
+
+# Usage:
+pkgcp vim
+```
