@@ -7,6 +7,16 @@ KISS does not use the concept of `USE_FLAGS` for package customization, instead 
 This keeps the package manager and the package files themselves simple and easy to maintain as they don't have to think about conditional dependencies, a configuration file or the nitty-gritty way this system would function underneath.
 
 
+## Index
+
+<!-- vim-markdown-toc GFM -->
+
+* [What is a KISS repositoy?](#what-is-a-kiss-repositoy)
+* [How do I create a repository?](#how-do-i-create-a-repository)
+
+<!-- vim-markdown-toc -->
+
+
 ## What is a KISS repositoy?
 
 A KISS repository is nothing more than a directory which you can optionally `git` track, host online and share with others.
@@ -15,11 +25,6 @@ Here's an example repository structure.
 
 ```
 dylan-repo/
-├─ gnupg/
-│  ├─ build
-│  ├─ checksums
-│  ├─ sources
-│  ├─ version
 ├─ mutt/
 │  ├─ build
 │  ├─ checksums
@@ -40,4 +45,24 @@ dylan-repo/
 │  ├─ sources
 │  ├─ version
 └──┘
+```
+
+## How do I create a repository?
+
+Steps:
+
+```
+# Create a directory (this can be anywhere on the system).
+➜ mkdir -p myrepo
+
+# Adding your repository to the repository list.
+# Put this in your `.profile` or `.shellrc` or etc.
+➜ export KISS_PATH=:/path/to/myrepo:$KISS_PATH
+
+# Forking your first package.
+➜ cp -r "$(kiss s st)" myrepo
+
+# Optionally git track it.
+cd myrepo
+git init
 ```
