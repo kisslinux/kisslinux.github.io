@@ -3,11 +3,20 @@ title: <b>Install KISS</b>
 category: main
 ---
 
+## Preamble
+
+The installation is very similar to Gentoo's stage 3 `tarballs`.
+
+An archive is used which contains a full KISS system minus the boot-loader and kernel. The provided archive contains all of the tooling needed to rebuild itself as well as the remaining packages needed for an installation.
+
+You will need an existing Linux distribution to use as a base for the installation. It does not matter what kind of distribution it is nor does it matter what `libc` it uses.
+
+For the purpose of this guide I will be using another Linux distribution's live-CD to bootstrap KISS. From this point on, the guide assumes you have booted a live-CD and have an **internet connection**.
+
 ## Index
 
 <!-- vim-markdown-toc GFM -->
 
-* [Preamble](#preamble)
 * [Setting up disks](#setting-up-disks)
 * [Install KISS](#install-kiss)
 * [Rebuild KISS](#rebuild-kiss)
@@ -24,16 +33,6 @@ category: main
 * [Further steps](#further-steps)
 
 <!-- vim-markdown-toc -->
-
-## Preamble
-
-The installation is very similar to Gentoo's stage 3 `tarballs`.
-
-An archive is used which contains a full KISS system minus the boot-loader and kernel. The provided archive contains all of the tooling needed to rebuild itself as well as the remaining packages needed for an installation.
-
-You will need an existing Linux distribution to use as a base for the installation. It does not matter what kind of distribution it is nor does it matter what `libc` it uses.
-
-For the purpose of this guide I will be using another Linux distribution's live-CD to bootstrap KISS. From this point on; the guide assumes you have booted a live-CD and have an **internet connection**.
 
 ## Setting up disks
 
