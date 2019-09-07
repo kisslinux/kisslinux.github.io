@@ -25,4 +25,4 @@ This distribution uses less software where possible and follows the belief that 
 
 The absence of software from the repositories does **not** mean it cannot be installed. As a user you can package whatever you like or use a third-party repository.
 
-It is easier to **add** things to a system than it is to **remove** them. You don't have to "de-bloat" this distribution as it provides you with a minimal base you can extend to meet your personal needs.
+It is easier to **add** things to a system than it is to **remove** them. Providing only a minimal base users can then extend this distribution to meet their individual needs.
