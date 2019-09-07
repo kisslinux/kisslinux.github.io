@@ -13,6 +13,7 @@ This keeps the package manager and the package files themselves simple and easy 
 
 * [What is a KISS repositoy?](#what-is-a-kiss-repositoy)
 * [How do I create a repository?](#how-do-i-create-a-repository)
+* [How do I copy a package into my repository?](#how-do-i-copy-a-package-into-my-repository)
 
 <!-- vim-markdown-toc -->
 
@@ -67,4 +68,27 @@ Creating a repository for KISS is as simple as creating a directory and adding i
 # Optionally git track it.
 cd myrepo
 git init
+```
+
+## How do I copy a package into my repository?
+
+The `kiss s` (or `kiss search`) operator displays the full path to the first found match of a package name. This path points to the package's repository files and allows you to easily find and view information.
+
+Examples:
+
+```
+➜ kiss s st
+/home/goldie/dylan-repo/st
+
+➜ kiss s vim
+/home/goldie/projects/kiss-new/extra/vim
+
+➜ kiss s btrfs-progs
+/home/goldie/projects/community/community/btrfs-progs
+```
+
+Copying a package to your repository.
+
+```
+➜ cp -r "$(kiss s vim)" /path/to/myrepo
 ```
