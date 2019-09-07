@@ -3,13 +3,6 @@ title: <b>Install KISS</b>
 category: main
 ---
 
-While this may be called a *guide* it will **not** take you through each step holding your hand along the way.
-
-You may run into an issue while following the steps in this guide. Head on over to the [issue tracker](https://github.com/kisslinux/repo/issues) and open an issue. We are happy to help.
-
-**NOTE**: KISS does not support booting using an `initramfs`. When configuring your kernel ensure that all required file-system, disk controller and USB drivers are built with `[*]` (Yes) and **not** `[m]` (Module).
-
-
 ## Index
 
 <!-- vim-markdown-toc GFM -->
