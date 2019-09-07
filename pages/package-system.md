@@ -63,7 +63,7 @@ zlib
 
 The `sources` file should contain all remote and local files the package needs to be built. This includes the source, patches and any other miscellaneous files which may be needed.
 
-Each source should be listed one per line and an optional second field specifies an extraction directory (*relative to the build directory*).
+Each source should be listed one per line. An optional second field specifies an extraction directory (*relative to the build directory*).
 
 **Example `sources` file.**
 
@@ -162,7 +162,7 @@ The script is language agnostic and the only requirement is that it be executabl
 
 ### `nostrip`
 
-The `nostrip` file is an empty file which is used to tell the package manager to **not** strip the compiled package files of debug symbols etc. The only requirement is that this file exist, it does not need to contain any information.
+The `nostrip` file is an empty file which is used to tell the package manager to **not** strip the compiled package files of debug symbols etc. The only requirement is that this file exist; it does not need to contain any information.
 
 ### `patches/*`
 
