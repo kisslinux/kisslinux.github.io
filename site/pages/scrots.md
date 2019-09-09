@@ -19,4 +19,4 @@ If you'd like to include a screenshot of your system in the list below [get in t
 
 - [dotfiles](https://github.com/dylanaraps/dotfiles)
 
-![dylan-araps-scrot1](https://user-images.githubusercontent.com/6799467/64507777-286df680-d2cb-11e9-9460-e91aa02467ec.jpg)
+![dylan-araps-scrot1](https://user-images.githubusercontent.com/6799467/64508868-06c23e80-d2ce-11e9-9224-803e01bc8742.jpg)
