@@ -19,7 +19,7 @@ If you'd like to include a screenshot of your system in the list below, [get in 
 
 - [dotfiles](https://github.com/dylanaraps/dotfiles)
 
-<picture>
+<p><picture>
   <source srcset="/images/dylan01.webp" type="image/webp">
   <img src="/images/dylan01.jpg" alt="dylan-01">
-</picture>
+</picture></p>
