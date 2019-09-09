@@ -2,7 +2,7 @@
 title: Screenshots
 ---
 
-This distribution has no default desktop or window manager environments. The screenshots below are each user's personal environments built on top ofKISS.
+This distribution has no default desktop or window manager environment. The screenshots below are each user's personal customizations built on top of KISS.
 
 [Get in touch](https://getkiss.org/pages/contact/) if you'd like to include a screenshot of your system in the list below.
 
