@@ -19,8 +19,6 @@ If you'd like to include a screenshot of your system in the list below, [get in 
 
 ## Dylan Araps ([dylanaraps](https://github.com/dylanaraps))
 
-- [dotfiles](https://github.com/dylanaraps/dotfiles)
-
 <p><picture>
   <source srcset="/images/dylan01.webp" type="image/webp">
   <img src="/images/dylan01.jpg" alt="dylan-01">
