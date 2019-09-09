@@ -260,3 +260,5 @@ sh -l
 You should now be able to reboot into your KISS installation. Typical configuration should follow (*hostname, creation of users, service configuration etc*).
 
 If you encountered any issues, don't hesitate to open an issue on one of our GitHub repositories or join the IRC and Discord servers.
+
+See: [Get in touch](https://getkiss.org/pages/contact/)
