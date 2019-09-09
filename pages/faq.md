@@ -12,6 +12,7 @@ category: main
 * [What `coreutils` is used?](#what-coreutils-is-used)
 * [What software is excluded?](#what-software-is-excluded)
 * [Why should I use this over X distribution?](#why-should-i-use-this-over-x-distribution)
+* [Is full disk encryption supported?](#is-full-disk-encryption-supported)
 
 <!-- vim-markdown-toc -->
 
@@ -52,3 +53,12 @@ Software absent from the official repositories includes:
 ## Why should I use this over X distribution?
 
 If you see no value in this distribution's philosophy, software choices and development, it isn't for you.
+
+## Is full disk encryption supported?
+
+Full disk encryption is supported through `dm-mod.create=`.
+
+See:
+
+- <https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/Documentation/admin-guide/device-mapper/dm-init.rst>
+- <https://cateee.net/lkddb/web-lkddb/DM_INIT.html>
