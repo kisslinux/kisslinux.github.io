@@ -145,7 +145,7 @@ cd linux-5.2.11
 
 **NOTE**: You can determine which drivers you need to enable by Googling your hardware.
 
-**NOTE**: If you require firmware blobs, the drivers you enable must be enabled as `[m]` (modules).
+**NOTE**: If you require firmware blobs, the drivers you enable must be enabled as `[m]` (modules). You can also optionally include the firmware in the kernel itself.
 
 ```
 # Install 'linux-firmware' if you require firmware
