@@ -5,7 +5,7 @@ category: main
 
 This distribution has no default desktop or window manager environment. The screenshots below are each user's personal customizations built on top of KISS.
 
-If you'd like to include a screenshot of your system in the list below, [get in touch](https://getkiss.org/pages/contact/).
+Want to include a screenshot below?, [get in touch](https://getkiss.org/pages/contact/).
 
 ## Index
 
