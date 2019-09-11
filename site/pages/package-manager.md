@@ -3,7 +3,7 @@ title: Package Manager
 category: main
 ---
 
-Source code: <https://github.com/kisslinux/kiss>
+A tiny and straightforward package manager for KISS.
 
 - Only 500~ lines of POSIX `sh` (*excluding blank lines and comments*).
 - Runtime dependency detection.
@@ -12,6 +12,8 @@ Source code: <https://github.com/kisslinux/kiss>
 - Package conflict detection.
 - Binary stripping.
 - `shellcheck` compliant.
+
+Source code: <https://github.com/kisslinux/kiss>
 
 ## Usage:
 
