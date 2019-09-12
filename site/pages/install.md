@@ -129,16 +129,16 @@ The Linux kernel is **not** managed by the package manager. The kernel is manage
 You can find the latest version at <https://kernel.org/>.
 
 ```
-wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.2.11.tar.xz
+wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.2.14.tar.xz
 ```
 
 ### Extract the kernel sources
 
 ```
-tar xvf linux-5.2.11.tar.xz
+tar xvf linux-5.2.14.tar.xz
 
 # Change directory to the kernel sources.
-cd linux-5.2.11
+cd linux-5.2.14
 ```
 
 ### Configure the kernel
@@ -190,7 +190,7 @@ make install
 
 # Rename the kernel.
 # Substitute VERSION for the kernel version you have built.
-# Example: 'vmlinuz-5.2.11'
+# Example: 'vmlinuz-5.2.14'
 mv /boot/vmlinuz /boot/vmlinuz-VERSION
 mv /boot/System.map /boot/System.map-VERSION
 ```
