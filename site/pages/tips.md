@@ -19,3 +19,5 @@ Your user must be a part of the `input` group for input devices to work.
 ```
 addgroup USER input
 ```
+
+
