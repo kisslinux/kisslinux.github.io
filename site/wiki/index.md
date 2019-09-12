@@ -1,9 +1,9 @@
 ---
-title: WIKI
+title: Wiki
 category: main
 ---
 
-Welcome to the KISS Linux WIKI.
+Welcome to the KISS Linux wiki.
 
 ## Index
 
