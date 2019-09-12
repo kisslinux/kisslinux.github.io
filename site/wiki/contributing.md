@@ -1,6 +1,6 @@
 ---
 title: Contributing to the WIKI
-category: main
+category: wiki
 ---
 
 TODO
