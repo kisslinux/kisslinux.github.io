@@ -38,15 +38,15 @@ Software absent from the official repositories includes:
 - `systemd`
 - `dbus`
 - `polkit`
-- `glibc`
-- `GNU coreutils`
+- `GNU coreutils`/`glibc`
 - `pam`
-- `pulseaudio`
-- `gettext`
-- `intltool`
+- `pulseaudio`/`pipewire`
+- `gettext`/`intltool`
 - `startup-notification`
-- `pipewire`
 - `wayland`
+- `logind`/`elogind`
+- `ConsoleKit2`
+- `GNOME`/`KDE`/`XFCE4`/`MATE`
 
 **NOTE**: This software can still be packaged by users and made available through personal or third-party repositories.
 
