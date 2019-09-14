@@ -9,7 +9,7 @@ An independent Linux® distribution with a focus on [simplicity](#simplicity) an
 
 ## Overview
 
-- Uses a plain-text [package system](https://getkiss.org/pages/package-system/) which is language agnostic and parseable with basic UNIX utilities.
+- Uses a plain-text [package system](https://getkiss.org/pages/package-system/) which is **language agnostic** and parseable with basic UNIX utilities.
 
 - Uses a [package manager](https://getkiss.org/pages/package-manager/) written in **500 lines** of POSIX sh (*excluding blank lines and comments*).
 
@@ -17,7 +17,7 @@ An independent Linux® distribution with a focus on [simplicity](#simplicity) an
 
 - All shell code is linted by and passes [shellcheck](https://www.shellcheck.net/) (*including each and every repository package*).
 
-- Package installation is source based and entirely handled by the package manager.
+- Source based package installation (*no binaries are provided*).
 
 
 ## Philosophy
