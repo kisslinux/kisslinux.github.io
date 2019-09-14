@@ -19,7 +19,7 @@ An independent Linux® distribution with a focus on [simplicity](#simplicity) an
 
 - Source based package installation (*no binaries are provided*).
 
-- Excludes the following software: dbus, systemd, polkit, gettext, intltool, pulseaudio, pam, startup-notification, wayland, logind, ConsoleKit2 and all Desktop Environments. See [Philosophy](#philosophy).
+- Excludes the following software: dbus, systemd, polkit, gettext, intltool, pulseaudio, pam, wayland, logind, ConsoleKit2 and all Desktop Environments. See [Philosophy](#philosophy).
 
 
 ## Philosophy
