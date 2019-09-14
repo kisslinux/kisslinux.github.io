@@ -13,7 +13,7 @@ An independent Linux® distribution with a focus on [simplicity](#simplicity) an
 
 - Uses a [package manager](https://getkiss.org/pages/package-manager/) written in **500 lines** of POSIX sh (*excluding blank lines and comments*).
 
-- Based on [musl libc](https://www.musl-libc.org/) and [busybox](https://busybox.net/)
+- Based on [musl libc](https://www.musl-libc.org/) and [busybox](https://busybox.net/).
 
 - Package installation is source based and entirely handled by the package manager.
 
