@@ -7,6 +7,17 @@ An independent Linux® distribution with a focus on [simplicity](#simplicity) an
 > “Simple can be harder than complex: You have to work hard to get your thinking clean to make it simple. But it's worth it in the end because once you get there, you can move mountains.” - **Steve Jobs**
 
 
+## Overview
+
+\* Uses a plain-text [package system](https://getkiss.org/pages/package-system/) which is language agnostic and parseable with basic UNIX utilities.
+
+\* Uses a [package manager](https://getkiss.org/pages/package-manager/) written in **500 lines** of POSIX sh (*excluding blank lines and comments*).
+
+\* Based on [musl libc](https://www.musl-libc.org/) and [busybox](https://busybox.net/)
+
+\* Package installation is source based and entirely handled by the package manager.
+
+
 ## Philosophy
 
 ### Simplicity
