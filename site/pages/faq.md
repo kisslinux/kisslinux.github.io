@@ -8,8 +8,6 @@ category: main
 <!-- vim-markdown-toc GFM -->
 
 * [What `init` system is used?](#what-init-system-is-used)
-* [What `libc` is used?](#what-libc-is-used)
-* [What `coreutils` is used?](#what-coreutils-is-used)
 * [What software is excluded?](#what-software-is-excluded)
 * [Why should I use this over X distribution?](#why-should-i-use-this-over-x-distribution)
 * [Is full disk encryption supported?](#is-full-disk-encryption-supported)
@@ -19,17 +17,6 @@ category: main
 ## What `init` system is used?
 
 The default `init` system is `busybox init` with `busybox runit` services.
-
-
-## What `libc` is used?
-
-The default `libc` is `musl`,
-
-
-## What `coreutils` is used?
-
-The default `coreutils` is `busybox`.
-
 
 ## What software is excluded?
 
