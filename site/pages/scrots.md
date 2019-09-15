@@ -13,7 +13,7 @@ Want to include a screenshot below?, [get in touch](https://getkiss.org/pages/co
 
 * [Dylan Araps (dylanaraps)](#dylan-araps-dylanaraps)
 * [Muhammad Herdiansyah (KONIMEX)](#muhammad-herdiansyah-konimex)
-* [Cliford Sab (linuxnoir)](#cliford-sab-linuxnoir)
+* [Cliford Sab (lieuxnoir)](#cliford-sab-lieuxnoir)
 
 <!-- vim-markdown-toc -->
 
@@ -32,7 +32,7 @@ Want to include a screenshot below?, [get in touch](https://getkiss.org/pages/co
   <img src="/images/konimex01.jpg" alt="konimex-01">
 </picture></p>
 
-## Cliford Sab ([linuxnoir](https://github.com/lieuxnoir))
+## Cliford Sab ([lieuxnoir](https://github.com/lieuxnoir))
 
 <p><picture>
   <source srcset="/images/nestman01.webp" type="image/webp">
