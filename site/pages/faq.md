@@ -11,6 +11,7 @@ category: main
 * [What software is excluded?](#what-software-is-excluded)
 * [Why should I use this over X distribution?](#why-should-i-use-this-over-x-distribution)
 * [Is full disk encryption supported?](#is-full-disk-encryption-supported)
+* [Are USE flags supported?](#are-use-flags-supported)
 
 <!-- vim-markdown-toc -->
 
@@ -49,3 +50,9 @@ See:
 
 - <https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/Documentation/admin-guide/device-mapper/dm-init.rst>
 - <https://cateee.net/lkddb/web-lkddb/DM_INIT.html>
+
+## Are USE flags supported?
+
+No.
+
+Package customization is done through local repositories which enable full flexibility while keeping the package format, package manager and package build files **simple**.
