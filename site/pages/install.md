@@ -96,6 +96,12 @@ Modify compiler options (optional):
 ➜ export MAKEFLAGS="-j4"
 ```
 
+Update all base packages to the latest versions:
+
+```
+➜ kiss update
+```
+
 Start rebuilding all packages:
 
 ```
