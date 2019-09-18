@@ -12,6 +12,7 @@ category: main
 * [Why should I use this over X distribution?](#why-should-i-use-this-over-x-distribution)
 * [Is full disk encryption supported?](#is-full-disk-encryption-supported)
 * [Are USE flags supported?](#are-use-flags-supported)
+* [How can I speed up GCC builds?](#how-can-i-speed-up-gcc-builds)
 
 <!-- vim-markdown-toc -->
 
@@ -56,3 +57,11 @@ See:
 No.
 
 Package customization is done through local repositories which enable full flexibility while keeping the package format, package manager and package build files **simple**.
+
+## How can I speed up GCC builds?
+
+If you are building an identical version of GCC or a new minor release (`9.1` -> `9.2`) you can speed up the build with the following `./configure` flag.
+
+```
+--disable-bootstrap
+```
