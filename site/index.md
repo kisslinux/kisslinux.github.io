@@ -11,7 +11,7 @@ An independent Linux® distribution with a focus on [simplicity](#simplicity) an
 
 - Uses a plain-text [package system](https://getkiss.org/pages/package-system/) which is **language agnostic** and parseable with basic UNIX utilities.
 
-- Uses a [package manager](https://getkiss.org/pages/package-manager/) written in **500~ lines** of POSIX sh (*excluding blank lines and comments*).
+- Uses a [package manager](https://getkiss.org/pages/package-manager/) written in **~500 lines** of POSIX sh (*excluding blank lines and comments*).
 
 - Based on [musl libc](https://www.musl-libc.org/), [busybox](https://busybox.net/) and the [Linux kernel](https://kernel.org).
 
@@ -38,4 +38,4 @@ This distribution uses less software where possible and follows the belief that 
 
 The absence of software from the repositories does **not** mean it cannot be installed. Any user can further package whatever is preferred, else use third-party repositories.
 
-It is easier to **add** things to a system than it is to **remove** them. Providing only a minimal base users can then extend this distribution to meet their individual needs.
+It is easier to **add** things to a system than it is to **remove** them. By only providing a minimal base, users can then extend this distribution to meet their individual needs.
