@@ -13,6 +13,7 @@ category: main
 * [Is full disk encryption supported?](#is-full-disk-encryption-supported)
 * [Are USE flags supported?](#are-use-flags-supported)
 * [How can I speed up GCC builds?](#how-can-i-speed-up-gcc-builds)
+* [How do I change the keyboard layout?](#how-do-i-change-the-keyboard-layout)
 
 <!-- vim-markdown-toc -->
 
@@ -65,3 +66,8 @@ If you are building an identical version of GCC or a new minor release (`9.1` ->
 ```
 --disable-bootstrap
 ```
+
+## How do I change the keyboard layout?
+
+- Download the desired keymap from: <https://dev.alpinelinux.org/bkeymaps/>
+- Run `loadkmap < file` to load it.
