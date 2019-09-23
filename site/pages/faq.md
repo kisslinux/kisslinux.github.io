@@ -71,3 +71,5 @@ If you are building an identical version of GCC or a new minor release (`9.1` ->
 
 - Download the desired keymap from: <https://dev.alpinelinux.org/bkeymaps/>
 - Run `loadkmap < file` to load it.
+
+**NOTE**: Put the `loadkmap` command in your `.profile` so it loads the layout on boot.
