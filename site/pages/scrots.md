@@ -15,6 +15,7 @@ Want to include a screenshot below?, [get in touch](https://getkiss.org/pages/co
 * [Muhammad Herdiansyah (KONIMEX)](#muhammad-herdiansyah-konimex)
 * [Cliford Sab (lieuxnoir)](#cliford-sab-lieuxnoir)
 * [Ominous](#ominous)
+* [Niko Tidar Lantang Perkasa (nikotidar)](#niko-tidar-lantang-perkasa-nikotidar)
 
 <!-- vim-markdown-toc -->
 
@@ -46,4 +47,11 @@ Want to include a screenshot below?, [get in touch](https://getkiss.org/pages/co
 <p><picture>
   <source srcset="/images/ominous01.webp" type="image/webp">
   <img src="/images/ominous01.jpg" alt="ominous-01">
+</picture></p>
+
+## Niko Tidar Lantang Perkasa ([nikotidar](https://github.com/nikotidar))
+
+<p><picture>
+  <source srcset="/images/niko01.webp" type="image/webp">
+  <img src="/images/niko01.jpg" alt="niko-01">
 </picture></p>
