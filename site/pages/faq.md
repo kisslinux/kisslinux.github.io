@@ -14,6 +14,7 @@ category: main
 * [Are USE flags supported?](#are-use-flags-supported)
 * [How can I speed up GCC builds?](#how-can-i-speed-up-gcc-builds)
 * [How do I change the keyboard layout?](#how-do-i-change-the-keyboard-layout)
+* [How can I easily fork a package?](#how-can-i-easily-fork-a-package)
 
 <!-- vim-markdown-toc -->
 
@@ -73,3 +74,18 @@ If you are building an identical version of GCC or a new minor release (`9.1` ->
 - Run `loadkmap < file` to load it.
 
 **NOTE**: Put the `loadkmap` command in your `.profile` so it loads the layout on boot.
+
+
+## How can I easily fork a package?
+
+```
+# Create your own repository.
+mkdir -p /path/to/myrepo
+
+# Add it to 'KISS_PATH'.
+# To make this permanent, add it to your '.profile' or '.shellrc'.
+export KISS_PATH="/path/to/myrepo:$KISS_PATH
+
+# Fork the package.
+cp -r "$(kiss s pkg_name)" /path/to/myrepo
+```
