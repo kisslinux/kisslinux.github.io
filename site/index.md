@@ -17,7 +17,7 @@ An independent Linux® distribution with a focus on [simplicity](#simplicity) an
 
 - All shell code is linted by and passes [shellcheck](https://www.shellcheck.net/) (*including each and every repository package*).
 
-- All packages are compiled from source by the package manager enabling total control over compiler flags, patches and build configuration.
+- All packages are **compiled from source** by the package manager enabling total control over compiler flags, patches and build configuration.
 
 - Explicitly **excludes** the following software: dbus, systemd, polkit, gettext, intltool, pulseaudio, pam, wayland, logind, ConsoleKit2 and all Desktop Environments. See [Philosophy](#philosophy).
 
