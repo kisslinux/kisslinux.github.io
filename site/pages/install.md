@@ -238,7 +238,7 @@ This is the final "mandatory" step.
 
 ## Enable the community repository
 
-The KISS community repository is maintained by users of the distribution and contains packages which aren't in the main repositories. This repository is disabled by default since is not maintained by the KISS developers.
+The KISS community repository is maintained by users of the distribution and contains packages which aren't in the main repositories. This repository is disabled by default since it's not maintained by the KISS developers.
 
 ```
 # Clone the repository to a location of your choosing.
