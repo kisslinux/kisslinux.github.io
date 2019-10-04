@@ -53,9 +53,17 @@ Download the latest release.
 ```
 ➜ wget https://dl.getkiss.org/kiss-chroot.tar.xz
 
+# Recommended:
+#
 # Verify the download, does it match?
-# bb14027bb1bda3c14fd8e8dd6628510f8edac8ecc6e74e98451a6116a0b1b437
+# fb323b3c22e5ef90b5cf6d20b95c9638fc67b5c02f4c1370a3262bdab79f029c
 ➜ sha256sum kiss-chroot.tar.xz
+
+# Recommended:
+#
+# Verify the download's signature.
+# note: This requires 'gpg' in the used live distribution.
+➜ gpg --verify kiss-chroot.tar.xz.asc kiss-chroot.tar.xz
 ```
 
 Download the `chroot` helper script.
