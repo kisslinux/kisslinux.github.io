@@ -58,7 +58,6 @@ Download the latest release.
 ➜ sha256sum kiss-chroot.tar.xz | diff kiss-chroot.tar.xz.sha256 - && echo good
 
 # Recommended: Verify the download's signature.
-# NOTE: This requires 'gpg' in the used live distribution.
 ➜ wget https://dl.getkiss.org/kiss-chroot.tar.xz.asc
 ➜ gpg --verify kiss-chroot.tar.xz.asc kiss-chroot.tar.xz
 ```
