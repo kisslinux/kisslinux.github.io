@@ -17,6 +17,10 @@ category: main
 
 > Keep making the biggest problem of Linux bigger, please... Yeah, this problem is "fragmentation", and it is not solved with "simplicity".
 
+> Oh this touches something deep in me.
+
 > "This distribution has no default desktop or window manager environment." - goes to prove that "simple" doesn't mean "easy to use"...
+
+> This sounds awesome and very interesting. Going to have try this on one of my spare laptops....
 
 > Just what we need, another Linux distribution. Spread the effort even more thinly.
