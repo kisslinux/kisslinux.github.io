@@ -26,3 +26,5 @@ Here's what people are saying about KISS!
 > This sounds awesome and very interesting. Going to have try this on one of my spare laptops....
 
 > Just what we need, another Linux distribution. Spread the effort even more thinly.
+
+> Saw a link for this linux distribution, and I've gotta say, the sexy logo makes this probably not appropriate for adoption in a professional environment. Nerds: read the goddamn room
