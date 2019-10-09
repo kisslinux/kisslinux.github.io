@@ -3,6 +3,8 @@ title: Testimonials
 category: main
 ---
 
+Here's what people are saying about KISS.
+
 > I just find it interesting that their version of simple includes dependency-tracking package management but excludes Spanish.
 
 <br>
