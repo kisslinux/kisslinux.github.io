@@ -4,7 +4,7 @@ layout: new
 
 An independent Linux® distribution with a focus on [simplicity](#simplicity) and the concept of ["less is more"](#less-is-more). The distribution targets **only** the x86-64 architecture and the English language.
 
-> “"It is not a daily increase, but a daily decrease. Hack away at the inessentials." - **Bruce Lee**
+> “It is not a daily increase, but a daily decrease. Hack away at the inessentials." - **Bruce Lee**
 
 
 ## Overview
