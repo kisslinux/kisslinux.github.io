@@ -13,6 +13,8 @@ category: main
 
 > New logo needed. The chopped off head is bad luck in parts of Asia.
 
+> I've got a basic installation done! It was actually quite simple! Not much is set up, but getting the base down was arguably simpler than Arch, and far simpler than Gentoo. I'm not really familiar with Busybox, or musl at all, so this should be fun!
+
 > Keep making the biggest problem of Linux bigger, please... Yeah, this problem is "fragmentation", and it is not solved with "simplicity".
 
 > "This distribution has no default desktop or window manager environment." - goes to prove that "simple" doesn't mean "easy to use"...
