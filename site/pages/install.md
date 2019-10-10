@@ -3,8 +3,6 @@ title: <b>Install KISS</b>
 category: main
 ---
 
-## Preamble
-
 The installation is very similar to Gentoo's stage 3 `tarballs`.
 
 An archive is used which contains a full KISS system minus the boot-loader and kernel. The provided archive contains all of the tooling needed to rebuild itself as well as the remaining packages needed for an installation.
