@@ -155,7 +155,13 @@ Start rebuilding all packages:
 ➜ kiss build e2fsprogs eudev
 
 # Required for connecting to WIFI.
-➜ kiss build dhcpcd wpa_supplicant
+➜ kiss build wpa_supplicant
+➜ kiss install wpa_supplicant
+
+# Required for connecting to the internet.
+# (WIFI and Ethernet) (dynamic IP addressing).
+➜ kiss build dhcpcd
+➜ kiss install dhcpcd
 ```
 
 ## Configure and build the kernel
