@@ -20,6 +20,10 @@ An independent Linux® distribution with a focus on [simplicity](#simplicity) an
 
 - Explicitly **excludes** the following software: dbus, systemd, polkit, gettext, intltool, pulseaudio, pam, wayland, logind, ConsoleKit2 and all Desktop Environments. See [Philosophy](#philosophy).
 
+- Rootless Xorg environment **without** any additional software.
+
+- Repository signing through `git` and `gnupg` (*based on signed commits and built into `git` itself*).
+
 
 ## Philosophy
 
