@@ -41,8 +41,8 @@ Get the disks ready for the installation. This involves creating a partition tab
 
 The guide will **not** cover this step. If you require assistance with this step; read one of the links below. This step is not unique to KISS and there are tried and tested resources for all kinds of disk layouts online.
 
-- <https://wiki.gentoo.org/wiki/Handbook:AMD64/Installation/Disks>
-- <https://wiki.archlinux.org/index.php/Installation_guide#Partition_the_disks>
+- [Gentoo wiki](https://wiki.gentoo.org/wiki/Handbook:AMD64/Installation/Disks>)
+- [Arch wiki](https://wiki.archlinux.org/index.php/Installation_guide#Partition_the_disks)
 
 
 ## Install KISS
@@ -162,9 +162,9 @@ Start rebuilding all packages:
 
 This step involves configuring and building your own Linux kernel. If you have not done this before, below are a few guides to get you started.
 
-- <https://kernelnewbies.org/KernelBuild>
-- <https://wiki.gentoo.org/wiki/Kernel/Gentoo_Kernel_Configuration_Guide>
-- <https://www.linuxtopia.org/online_books/linux_kernel/kernel_configuration/index.html>
+- [KernelNewbies](https://kernelnewbies.org/KernelBuild)
+- [Gentoo wiki](https://wiki.gentoo.org/wiki/Kernel/Gentoo_Kernel_Configuration_Guide)
+- [Linuxtopia](https://www.linuxtopia.org/online_books/linux_kernel/kernel_configuration/index.html)
 
 The Linux kernel is **not** managed by the package manager. The kernel is managed manually by the user.
 
