@@ -19,6 +19,7 @@ For the purpose of this guide I will be using another Linux distribution's live-
 
 * [Setting up disks](#setting-up-disks)
 * [Install KISS](#install-kiss)
+* [Enable repository signing](#enable-repository-signing)
 * [Rebuild KISS](#rebuild-kiss)
 * [Build userspace tools](#build-userspace-tools)
 * [Configure and build the kernel](#configure-and-build-the-kernel)
@@ -85,6 +86,41 @@ Enter the `chroot`.
 
 ```
 ➜ ./kiss-chroot /mnt
+```
+
+## Enable repository signing
+
+This step is **entirely optional** and can also be done after the installation. See [#60](https://github.com/kisslinux/kiss/issues/60) for more information.
+
+Build and install `gnupg1`:
+
+```
+➜ kiss build gnupg1
+➜ kiss install gnupg1
+```
+
+Import my (*Dylan Araps*) key:
+
+```
+➜ gpg --recv-key 46D62DD9F1DE636E
+```
+
+Trust my public key:
+
+```
+➜ echo trusted-key 0x46d62dd9f1de636e >> /root/.gnupg/gpg.conf
+```
+
+Go to the system-wide repository:
+
+```
+➜ cd /var/db/kiss/repo
+```
+
+Enable signature verification:
+
+```
+➜ git config merge.verifySignatures true
 ```
 
 ## Rebuild KISS
