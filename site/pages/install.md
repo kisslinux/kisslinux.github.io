@@ -139,16 +139,16 @@ The Linux kernel is **not** managed by the package manager. The kernel is manage
 You can find the latest version at <https://kernel.org/>.
 
 ```
-wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.3.tar.xz
+➜ wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.3.5.tar.xz
 ```
 
 ### Extract the kernel sources
 
 ```
-tar xvf linux-5.3.tar.xz
+➜ tar xvf linux-5.3.5.tar.xz
 
 # Change directory to the kernel sources.
-cd linux-5.3
+➜ cd linux-5.3.5
 ```
 
 ### Configure the kernel
@@ -160,29 +160,29 @@ cd linux-5.3
 ```
 # Install 'linux-firmware' if you require firmware
 # blobs for your hardware.
-kiss build linux-firmware
-kiss install linux-firmware
+➜ kiss build linux-firmware
+➜ kiss install linux-firmware
 
 # Generate a default config with *most* drivers
 # compiled as `[*]` (not modules).
-make defconfig
+➜ make defconfig
 
 # Open an interactive menu to edit the generated
 # config, enabling anything extra you may need.
 #
 # NOTE: You may need 'ncurses' to run 'menuconfig'.
 #       Run 'kiss build ncurses && kiss install ncurses'.
-make menuconfig
+➜ make menuconfig
 
 # Store the generated config for reuse later.
-cp .config /path/to/somewhere
+➜ cp .config /path/to/somewhere
 ```
 
 ### Build the kernel
 
 ```
 # '-j $(nproc)' does a parallel build using all cores.
-make -j "$(nproc)"
+➜ make -j "$(nproc)"
 ```
 
 ### Install the kernel
@@ -192,17 +192,17 @@ make -j "$(nproc)"
 ```
 # Install the built modules.
 # This installs directly to `/lib` (symlink to `/usr/lib`).
-make modules_install
+➜ make modules_install
 
 # Install the built kernel.
 # This installs directly to `/boot`.
-make install
+➜ make install
 
 # Rename the kernel.
 # Substitute VERSION for the kernel version you have built.
-# Example: 'vmlinuz-5.3'
-mv /boot/vmlinuz /boot/vmlinuz-VERSION
-mv /boot/System.map /boot/System.map-VERSION
+# Example: 'vmlinuz-5.3.5'
+➜ mv /boot/vmlinuz /boot/vmlinuz-VERSION
+➜ mv /boot/System.map /boot/System.map-VERSION
 ```
 
 ## Install grub
@@ -246,7 +246,7 @@ The KISS community repository is maintained by users of the distribution and con
 
 ```
 # Clone the repository to a location of your choosing.
-git clone https://github.com/kisslinux/community.git
+➜ git clone https://github.com/kisslinux/community.git
 
 # Add the repository to the system-wide 'KISS_PATH'.
 # The 'KISS_PATH' variable works exactly like 'PATH'.
@@ -258,11 +258,11 @@ git clone https://github.com/kisslinux/community.git
 #
 # NOTE: The subdirectory must also be added.
 # Example: export KISS_PATH=/var/db/kiss/repo/core:/var/db/kiss/repo/extra:/var/db/kiss/repo/xorg:/path/to/community/community
-vi /etc/profile.d/kiss_path.sh
+➜ vi /etc/profile.d/kiss_path.sh
 
 # Spawn a new login shell to access this repository
 # immediately.
-sh -l
+➜ sh -l
 ```
 
 ## Further steps
