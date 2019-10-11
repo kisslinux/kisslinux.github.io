@@ -29,4 +29,7 @@ cd        .www
     esac
 done
 
+cd ..
+mv .www site
+
 printf 'Build complete.\n'
