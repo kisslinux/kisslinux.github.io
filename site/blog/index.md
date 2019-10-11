@@ -1,6 +1,5 @@
 ---
 title: Blog
-category: main
 ---
 
 RSS Feed available here: <https://getkiss.org/blog/blog.xml>

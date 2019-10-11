@@ -1,6 +1,5 @@
 ---
 title: FAQ
-category: main
 ---
 
 ## Index

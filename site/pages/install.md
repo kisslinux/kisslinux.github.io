@@ -1,6 +1,5 @@
 ---
-title: <b>Install KISS</b>
-category: main
+title: Install KISS
 ---
 
 The installation is very similar to Gentoo's stage 3 `tarballs`.

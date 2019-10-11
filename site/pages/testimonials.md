@@ -1,6 +1,5 @@
 ---
 title: Testimonials
-category: main
 ---
 
 Here's what people are saying about KISS!

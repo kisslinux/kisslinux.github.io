@@ -1,6 +1,5 @@
 ---
 title: Team
-category: main
 ---
 
 This distribution is developed by the following people.
