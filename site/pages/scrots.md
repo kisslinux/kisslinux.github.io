@@ -1,6 +1,5 @@
 ---
 title: Screenshots
-category: main
 ---
 
 This distribution has no default desktop or window manager environment. The screenshots below are each user's personal customizations built on top of KISS.

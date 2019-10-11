@@ -1,6 +1,5 @@
 ---
 title: Package Manager
-category: main
 ---
 
 A tiny and straightforward package manager for KISS.
