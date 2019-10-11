@@ -27,18 +27,18 @@ The default `init` system is `busybox init` with `busybox runit` services.
 
 Software absent from the official repositories includes:
 
-- `systemd`
-- `dbus`
-- `polkit`
-- `GNU coreutils`/`glibc`
-- `pam`
-- `pulseaudio`/`pipewire`
-- `gettext`/`intltool`
-- `startup-notification`
-- `wayland`
-- `logind`/`elogind`
-- `ConsoleKit2`
-- `GNOME`/`KDE`/`XFCE4`/`MATE`
+```
+- systemd
+- dbus
+- polkit / pam
+- GNU coreutils / glibc
+- pulseaudio / pipewire
+- gettext / intltool
+- startup-notification`
+- wayland
+- ConsoleKit2 / logind / elogind
+- GNOME / KDE / XFCE4 / MATE
+```
 
 **NOTE**: This software can still be packaged by users and made available through personal or third-party repositories.
 
