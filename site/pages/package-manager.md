@@ -5,7 +5,7 @@ category: main
 
 A tiny and straightforward package manager for KISS.
 
-- Only 500~ lines of POSIX `sh` (*excluding blank lines and comments*).
+- Only 500~ lines of POSIX `sh` (*excluding blanks and comments*).
 - Runtime dependency detection.
 - Incremental package installation.
 - Fast dependency solver.
