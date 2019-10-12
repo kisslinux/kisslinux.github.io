@@ -12,8 +12,6 @@ Here's what people are saying about KISS!
 
 > I was looking for something like this actually, I thought I would finally have to warm up to BSD if I wanted an OS that I have some hope of understanding fully.
 
-> New logo needed. The chopped off head is bad luck in parts of Asia.
-
 > I've got a basic installation done! It was actually quite simple! Not much is set up, but getting the base down was arguably simpler than Arch, and far simpler than Gentoo. I'm not really familiar with Busybox, or musl at all, so this should be fun!
 
 > Keep making the biggest problem of Linux bigger, please... Yeah, this problem is "fragmentation", and it is not solved with "simplicity".
@@ -25,5 +23,3 @@ Here's what people are saying about KISS!
 > This sounds awesome and very interesting. Going to have try this on one of my spare laptops....
 
 > Just what we need, another Linux distribution. Spread the effort even more thinly.
-
-> Saw a link for this linux distribution, and I've gotta say, the sexy logo makes this probably not appropriate for adoption in a professional environment. Nerds: read the goddamn room
