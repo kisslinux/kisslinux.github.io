@@ -8,8 +8,16 @@
  <atom:link href="https://getkiss.org/news/news.xml" rel="self" type="application/rss+xml" />
 
 <item>
+<title>15/10/2019: New python release (3.8.0), manual intervention needed</title>
+<description>A new major version of python` has been released which requires a rebuild of the following packages.
+</description>
+<link>https://getkiss.org/news/20191015b/</link>
+<guid isPermaLink="true">https://getkiss.org/news/20191015b/</guid>
+<pubDate>Tue, 15 Oct 2019 00:00:00 +0000</pubDate>
+</item>
+<item>
 <title>15/10/2019: New sudo release (1.8.28), fixes CVE-2019-14287</title>
-<description>A new version of `sudo` has been updated to fix a security vulnerability, it is recommended that you update as soon as possible.
+<description>A new version of sudo has been updated to fix a security vulnerability, it is recommended that you update as soon as possible.
 </description>
 <link>https://getkiss.org/news/20191015a/</link>
 <guid isPermaLink="true">https://getkiss.org/news/20191015a/</guid>
