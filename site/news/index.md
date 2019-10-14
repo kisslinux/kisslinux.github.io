@@ -7,6 +7,7 @@ RSS Feed available here: <https://getkiss.org/news/news/news.xml>
 ## Index
 
 <ul>
+<li><a href='https://getkiss.org/news/20191015a.html'>15/10/2019: New sudo release (1.8.28), fixes CVE-2019-14287</a></li>
 <li><a href='https://getkiss.org/news/20191010a.html'>10/10/2019: Mesa 19.2.1 released, intervention may be required</a></li>
 <li><a href='https://getkiss.org/news/20190927a.html'>27/09/2019: LLVM/Rust updated, manual intervention needed</a></li>
 <li><a href='https://getkiss.org/news/20190921a.html'>21/09/2019: LLVM/Clang reverted to 8.0.1</a></li>
