@@ -180,16 +180,16 @@ The Linux kernel is **not** managed by the package manager. The kernel is manage
 You can find the latest version at <https://kernel.org/>.
 
 ```
-➜ wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.3.5.tar.xz
+➜ wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.3.6.tar.xz
 ```
 
 ### Extract the kernel sources
 
 ```
-➜ tar xvf linux-5.3.5.tar.xz
+➜ tar xvf linux-5.3.6.tar.xz
 
 # Change directory to the kernel sources.
-➜ cd linux-5.3.5
+➜ cd linux-5.3.6
 ```
 
 ### Configure the kernel
@@ -241,7 +241,7 @@ You can find the latest version at <https://kernel.org/>.
 
 # Rename the kernel.
 # Substitute VERSION for the kernel version you have built.
-# Example: 'vmlinuz-5.3.5'
+# Example: 'vmlinuz-5.3.6'
 ➜ mv /boot/vmlinuz /boot/vmlinuz-VERSION
 ➜ mv /boot/System.map /boot/System.map-VERSION
 ```
