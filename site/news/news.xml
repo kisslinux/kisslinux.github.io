@@ -8,6 +8,15 @@
  <atom:link href="https://getkiss.org/news/news.xml" rel="self" type="application/rss+xml" />
 
 <item>
+<title>15/10/2019: New sudo release (1.8.28), fixes CVE-2019-14287</title>
+<description>A new version of `sudo` has been updated to fix a security vulnerability, it is recommended that you update as soon as possible.
+</description>
+<link>https://getkiss.org/news/20191015a/</link>
+<guid isPermaLink="true">https://getkiss.org/news/20191015a/</guid>
+<pubDate>Tue, 15 Oct 2019 00:00:00 +0000</pubDate>
+</item>
+
+<item>
 <title>10/10/2019: Mesa 19.2.1 released, intervention may be required</title>
 <description>Mesa has been updated to 19.2.1 and manual intervention may be required. The following packages may need a rebuild.
 
