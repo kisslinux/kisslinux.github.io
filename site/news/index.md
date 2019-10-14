@@ -2,7 +2,7 @@
 title: News
 ---
 
-RSS Feed available here: <https://getkiss.org/news/news/news.xml>
+RSS Feed available here: <https://getkiss.org/news/news.xml>
 
 ## Index
 
