@@ -101,7 +101,7 @@ Build and install `gnupg1`:
 Import my (*Dylan Araps*) key:
 
 ```
-➜ gpg --recv-key 46D62DD9F1DE636E
+➜ gpg --keyserver keys.gnupg.net --recv-key 46D62DD9F1DE636E
 ```
 
 Trust my public key:
