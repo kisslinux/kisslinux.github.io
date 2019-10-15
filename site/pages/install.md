@@ -40,7 +40,7 @@ Get the disks ready for the installation. This involves creating a partition tab
 
 The guide will **not** cover this step. If you require assistance with this step; read one of the links below. This step is not unique to KISS and there are tried and tested resources for all kinds of disk layouts online.
 
-- [Gentoo wiki](https://wiki.gentoo.org/wiki/Handbook:AMD64/Installation/Disks>)
+- [Gentoo wiki](https://wiki.gentoo.org/wiki/Handbook:AMD64/Installation/Disks)
 - [Arch wiki](https://wiki.archlinux.org/index.php/Installation_guide#Partition_the_disks)
 
 
