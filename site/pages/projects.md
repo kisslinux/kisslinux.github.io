@@ -2,17 +2,7 @@
 title: Software
 ---
 
-Software developed alongside KISS by the developers of KISS.
-
-## Index
-
-<!-- vim-markdown-toc GFM -->
-
-* [pfetch](#pfetch)
-* [sowm](#sowm)
-
-<!-- vim-markdown-toc -->
-
+KISS software developed alongside the distribution usable on any operating system.
 
 ## pfetch
 
