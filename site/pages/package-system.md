@@ -191,7 +191,7 @@ make DESTDIR="$1" install
 
 ### `files/*`
 
-The `files/` directory should contain any miscellaneous files the software needs. In the `sources` file, files are reffered to by using a relative path (`files/busybox.config`).
+The `files/` directory should contain any miscellaneous files the software needs. In the `sources` file, files are referred to by using a relative path (`files/busybox.config`).
 
 The build script has direct access to the files in its current working directory.
 
