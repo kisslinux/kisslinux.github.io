@@ -101,6 +101,8 @@ Build and install `gnupg1`:
 Import my (*Dylan Araps*) key:
 
 ```
+# If the GNU keyserver fails, try an alternative mirror.
+# Example: pgp.mit.edu
 ➜ gpg --keyserver keys.gnupg.net --recv-key 46D62DD9F1DE636E
 ```
 
