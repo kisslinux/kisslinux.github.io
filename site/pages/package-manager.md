@@ -17,7 +17,7 @@ Source code: <https://github.com/kisslinux/kiss>
 ## Usage:
 
 ```
-➜ kiss
+-> kiss
 => kiss [b|c|i|l|r|s|u] [pkg] [pkg] [pkg]
 => build:     Build a package.
 => checksum:  Generate checksums.
