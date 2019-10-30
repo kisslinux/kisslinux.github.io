@@ -17,17 +17,13 @@ Source code: <https://github.com/kisslinux/kiss>
 ## Usage:
 
 ```
--> kiss
-=> kiss [b|c|i|l|r|s|u] [pkg] [pkg] [pkg]
-=> build:     Build a package.
-=> checksum:  Generate checksums.
-=> install:   Install a package.
-=> list:      List installed packages.
-=> remove:    Remove a package.
-=> search:    Search for a package.
-=> update:    Check for updates.
+-> kiss [b|c|i|l|r|s|u] [pkg] [pkg] [pkg]
+-> build:     Build a package
+-> checksum:  Generate checksums
+-> install:   Install a package
+-> list:      List installed packages
+-> remove:    Remove a package
+-> search:    Search for a package
+-> update:    Check for updates
+-> version:   Package manager version
 ```
-
-## Extending the package manager
-
-See: <https://github.com/kisslinux/kiss-utils>
