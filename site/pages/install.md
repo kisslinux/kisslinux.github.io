@@ -51,40 +51,40 @@ At this stage your disks should be setup and mounted to `/mnt`.
 Download the latest release.
 
 ```
-➜ wget https://dl.getkiss.org/kiss-chroot.tar.xz
+-> wget https://dl.getkiss.org/kiss-chroot.tar.xz
 
 # Recommended: Verify the download.
-➜ wget https://dl.getkiss.org/kiss-chroot.tar.xz.sha256
-➜ sha256sum kiss-chroot.tar.xz | diff kiss-chroot.tar.xz.sha256 - && echo good
+-> wget https://dl.getkiss.org/kiss-chroot.tar.xz.sha256
+-> sha256sum kiss-chroot.tar.xz | diff kiss-chroot.tar.xz.sha256 - && echo good
 
 # Recommended: Verify the download's signature.
-➜ wget https://dl.getkiss.org/kiss-chroot.tar.xz.asc
-➜ gpg --verify kiss-chroot.tar.xz.asc kiss-chroot.tar.xz
+-> wget https://dl.getkiss.org/kiss-chroot.tar.xz.asc
+-> gpg --verify kiss-chroot.tar.xz.asc kiss-chroot.tar.xz
 ```
 
 Download the `chroot` helper script.
 
 ```
-➜ wget https://dl.getkiss.org/kiss-chroot
+-> wget https://dl.getkiss.org/kiss-chroot
 
 # Inspect the script before you execute it below.
-➜ vi kiss-chroot
+-> vi kiss-chroot
 
 # Ensure the script is executable.
-➜ chmod +x kiss-chroot
+-> chmod +x kiss-chroot
 ```
 
 Unpack the `tarball` (Install KISS).
 
 ```
 # Make sure disks are first mounted to '/mnt'.
-➜ tar xvf kiss-chroot.tar.xz -C /mnt --strip-components 1
+-> tar xvf kiss-chroot.tar.xz -C /mnt --strip-components 1
 ```
 
 Enter the `chroot`.
 
 ```
-➜ ./kiss-chroot /mnt
+-> ./kiss-chroot /mnt
 ```
 
 ## Enable repository signing
@@ -94,8 +94,8 @@ This step is **entirely optional** and can also be done after the installation. 
 Build and install `gnupg1`:
 
 ```
-➜ kiss build gnupg1
-➜ kiss install gnupg1
+-> kiss build gnupg1
+-> kiss install gnupg1
 ```
 
 Import my (*Dylan Araps*) key:
@@ -103,25 +103,25 @@ Import my (*Dylan Araps*) key:
 ```
 # If the GNU keyserver fails, try an alternative mirror.
 # Example: pgp.mit.edu
-➜ gpg --keyserver keys.gnupg.net --recv-key 46D62DD9F1DE636E
+-> gpg --keyserver keys.gnupg.net --recv-key 46D62DD9F1DE636E
 ```
 
 Trust my public key:
 
 ```
-➜ echo trusted-key 0x46d62dd9f1de636e >> /root/.gnupg/gpg.conf
+-> echo trusted-key 0x46d62dd9f1de636e >> /root/.gnupg/gpg.conf
 ```
 
 Go to the system-wide repository:
 
 ```
-➜ cd /var/db/kiss/repo
+-> cd /var/db/kiss/repo
 ```
 
 Enable signature verification:
 
 ```
-➜ git config merge.verifySignatures true
+-> git config merge.verifySignatures true
 ```
 
 ## Rebuild KISS
@@ -132,37 +132,37 @@ Modify compiler options (optional):
 
 ```
 # NOTE: The 'O' in '-O3' is the letter O and NOT 0 (ZERO).
-➜ export CFLAGS="-O3 -pipe -march=native"
-➜ export CXXFLAGS="-O3 -pipe -march=native"
-➜ export MAKEFLAGS="-j4"
+-> export CFLAGS="-O3 -pipe -march=native"
+-> export CXXFLAGS="-O3 -pipe -march=native"
+-> export MAKEFLAGS="-j4"
 ```
 
 Update all base packages to the latest versions:
 
 ```
-➜ kiss update
+-> kiss update
 ```
 
 Start rebuilding all packages:
 
 ```
-➜ kiss build
+-> kiss build
 ```
 
 ## Build userspace tools
 
 ```
 # Required for mounting drives.
-➜ kiss build e2fsprogs eudev
+-> kiss build e2fsprogs eudev
 
 # Required for connecting to WIFI.
-➜ kiss build wpa_supplicant
-➜ kiss install wpa_supplicant
+-> kiss build wpa_supplicant
+-> kiss install wpa_supplicant
 
 # Required for connecting to the internet.
 # (WIFI and Ethernet) (dynamic IP addressing).
-➜ kiss build dhcpcd
-➜ kiss install dhcpcd
+-> kiss build dhcpcd
+-> kiss install dhcpcd
 ```
 
 ## Configure and build the kernel
@@ -182,16 +182,16 @@ The Linux kernel is **not** managed by the package manager. The kernel is manage
 You can find the latest version at <https://kernel.org/>.
 
 ```
-➜ wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.3.6.tar.xz
+-> wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.3.6.tar.xz
 ```
 
 ### Extract the kernel sources
 
 ```
-➜ tar xvf linux-5.3.6.tar.xz
+-> tar xvf linux-5.3.6.tar.xz
 
 # Change directory to the kernel sources.
-➜ cd linux-5.3.6
+-> cd linux-5.3.6
 ```
 
 ### Configure the kernel
@@ -203,29 +203,29 @@ You can find the latest version at <https://kernel.org/>.
 ```
 # Install 'linux-firmware' if you require firmware
 # blobs for your hardware.
-➜ kiss build linux-firmware
-➜ kiss install linux-firmware
+-> kiss build linux-firmware
+-> kiss install linux-firmware
 
 # Generate a default config with *most* drivers
 # compiled as `[*]` (not modules).
-➜ make defconfig
+-> make defconfig
 
 # Open an interactive menu to edit the generated
 # config, enabling anything extra you may need.
 #
 # NOTE: You may need 'ncurses' to run 'menuconfig'.
 #       Run 'kiss build ncurses && kiss install ncurses'.
-➜ make menuconfig
+-> make menuconfig
 
 # Store the generated config for reuse later.
-➜ cp .config /path/to/somewhere
+-> cp .config /path/to/somewhere
 ```
 
 ### Build the kernel
 
 ```
 # '-j $(nproc)' does a parallel build using all cores.
-➜ make -j "$(nproc)"
+-> make -j "$(nproc)"
 ```
 
 ### Install the kernel
@@ -235,17 +235,17 @@ You can find the latest version at <https://kernel.org/>.
 ```
 # Install the built modules.
 # This installs directly to `/lib` (symlink to `/usr/lib`).
-➜ make modules_install
+-> make modules_install
 
 # Install the built kernel.
 # This installs directly to `/boot`.
-➜ make install
+-> make install
 
 # Rename the kernel.
 # Substitute VERSION for the kernel version you have built.
 # Example: 'vmlinuz-5.3.6'
-➜ mv /boot/vmlinuz /boot/vmlinuz-VERSION
-➜ mv /boot/System.map /boot/System.map-VERSION
+-> mv /boot/vmlinuz /boot/vmlinuz-VERSION
+-> mv /boot/System.map /boot/System.map-VERSION
 ```
 
 ## Install grub
@@ -253,25 +253,25 @@ You can find the latest version at <https://kernel.org/>.
 Build and install `grub`.
 
 ```
-➜ kiss build grub
-➜ kiss install grub
+-> kiss build grub
+-> kiss install grub
 
 # Also needed for UEFI.
-➜ kiss build efibootmgr
-➜ kiss install efibootmgr
+-> kiss build efibootmgr
+-> kiss install efibootmgr
 ```
 
 Setup `grub`.
 
 ```
 # BIOS
-➜ grub-install --target=i386-pc /dev/sdX
-➜ grub-mkconfig -o /boot/grub/grub.cfg
+-> grub-install --target=i386-pc /dev/sdX
+-> grub-mkconfig -o /boot/grub/grub.cfg
 
 # UEFI
 # Replace 'esp' with its mount point.
-➜ grub-install --target=x86_64-efi --efi-directory=esp --bootloader-id=GRUB
-➜ grub-mkconfig -o /boot/grub/grub.cfg
+-> grub-install --target=x86_64-efi --efi-directory=esp --bootloader-id=GRUB
+-> grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
 ## Install init scripts
@@ -279,8 +279,8 @@ Setup `grub`.
 This is the final "mandatory" step.
 
 ```
-➜ kiss build baseinit
-➜ kiss install baseinit
+-> kiss build baseinit
+-> kiss install baseinit
 ```
 
 ## Enable the community repository
@@ -289,7 +289,7 @@ The KISS community repository is maintained by users of the distribution and con
 
 ```
 # Clone the repository to a location of your choosing.
-➜ git clone https://github.com/kisslinux/community.git
+-> git clone https://github.com/kisslinux/community.git
 
 # Add the repository to the system-wide 'KISS_PATH'.
 # The 'KISS_PATH' variable works exactly like 'PATH'.
@@ -301,11 +301,11 @@ The KISS community repository is maintained by users of the distribution and con
 #
 # NOTE: The subdirectory must also be added.
 # Example: export KISS_PATH=/var/db/kiss/repo/core:/var/db/kiss/repo/extra:/var/db/kiss/repo/xorg:/path/to/community/community
-➜ vi /etc/profile.d/kiss_path.sh
+-> vi /etc/profile.d/kiss_path.sh
 
 # Spawn a new login shell to access this repository
 # immediately.
-➜ sh -l
+-> sh -l
 ```
 
 ## Further steps
