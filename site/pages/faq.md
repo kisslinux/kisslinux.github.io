@@ -2,11 +2,13 @@
 title: FAQ
 ---
 
+May you find what you are looking for.
+
 ## Index
 
 <!-- vim-markdown-toc GFM -->
 
-* [What `init` system is used?](#what-init-system-is-used)
+* [What init system is used?](#what-init-system-is-used)
 * [What software is excluded?](#what-software-is-excluded)
 * [Why should I use this over X distribution?](#why-should-i-use-this-over-x-distribution)
 * [Is full disk encryption supported?](#is-full-disk-encryption-supported)
@@ -18,7 +20,7 @@ title: FAQ
 
 <!-- vim-markdown-toc -->
 
-## What `init` system is used?
+## What init system is used?
 
 The default `init` system is `busybox init` with `busybox runit` services.
 
