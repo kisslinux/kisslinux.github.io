@@ -27,3 +27,7 @@ Here's what people are saying about KISS!
 > Just what we need, another Linux distribution. Spread the effort even more thinly.
 
 > Saw a link for this linux distribution, and I've gotta say, the sexy logo makes this probably not appropriate for adoption in a professional environment. Nerds: read the goddamn room
+
+> I spent some time on their website, and this really is a wonder distribution.
+
+> Literally the opposite of KISS. At lest don't use hypocritical excuses for your crusades.
