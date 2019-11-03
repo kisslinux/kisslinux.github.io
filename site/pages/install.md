@@ -179,7 +179,10 @@ The Linux kernel is **not** managed by the package manager. The kernel is manage
 
 ### Download the kernel sources
 
-You can find the latest version at <https://kernel.org/>.
+You can find the latest version at:
+
+- vanilla: <https://kernel.org/>.
+- libre: <https://www.fsfla.org/ikiwiki/selibre/linux-libre/#downloads>
 
 ```
 -> wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.3.6.tar.xz
