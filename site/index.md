@@ -1,7 +1,5 @@
 An independent Linux® distribution with a focus on [simplicity](#simplicity) and the concept of ["less is more"](#less-is-more). The distribution targets **only** the x86-64 architecture and the English language.
 
-> “It is not daily increase but daily decrease, hack away the unessential. The closer to the source, the less wastage there is.” - **Bruce Lee**
-
 
 ## Overview
 
