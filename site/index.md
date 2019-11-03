@@ -1,3 +1,7 @@
+---
+title: KISS
+---
+
 An independent Linux® distribution with a focus on [simplicity](#simplicity) and the concept of ["less is more"](#less-is-more). The distribution targets **only** the x86-64 architecture and the English language.
 
 
