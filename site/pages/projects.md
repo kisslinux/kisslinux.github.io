@@ -7,14 +7,14 @@ Other software developed and maintained by myself (*Dylan Araps*).
 
 ## neofetch
 
-A command-line system information tool written in bash 3.2+
+A system information tool written in bash 3.2+
 
 **Source**: <https://github.com/dylanaraps/neofetch>
 
 
 ## pfetch
 
-A pretty system information tool written in POSIX sh.
+A system information tool written in POSIX sh.
 
 **Source**: <https://github.com/dylanaraps/pfetch>
 
@@ -45,3 +45,10 @@ An itsy bitsy floating window manager (220~ sloc / 24kb compiled!).
 A pretty system information tool written in POSIX sh.
 
 **Source**: <https://github.com/dylanaraps/pfetch>
+
+
+## pywal
+
+Generate and change color-schemes on the fly.
+
+**Source**: <https://github.com/dylanaraps/pywal>
