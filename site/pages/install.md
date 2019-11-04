@@ -32,18 +32,19 @@ From this point on, the guide assumes you have booted a live-CD and have an **in
     * [Modify compiler options (optional)](#modify-compiler-options-optional)
     * [Update all base packages to the latest versions](#update-all-base-packages-to-the-latest-versions)
     * [Rebuild all packages](#rebuild-all-packages)
-* [Build userspace tools](#build-userspace-tools)
+* [Userspace tools](#userspace-tools)
     * [Filesystems](#filesystems)
     * [Device management](#device-management)
     * [WiFi (*optional*)](#wifi-optional)
     * [Dynamic IP addressing (*optional*)](#dynamic-ip-addressing-optional)
-* [Configure and build the kernel](#configure-and-build-the-kernel)
+* [The Kernel](#the-kernel)
     * [Download the kernel sources](#download-the-kernel-sources)
-    * [Extract the kernel sources](#extract-the-kernel-sources)
     * [Configure the kernel](#configure-the-kernel)
     * [Build the kernel](#build-the-kernel)
     * [Install the kernel](#install-the-kernel)
-* [Install grub](#install-grub)
+* [The bootloader](#the-bootloader)
+    * [Build and install grub](#build-and-install-grub)
+    * [Setup grub](#setup-grub)
 * [Install init scripts](#install-init-scripts)
 * [Enable the community repository](#enable-the-community-repository)
 * [Further steps](#further-steps)
@@ -202,7 +203,7 @@ Running `kiss build` without specifying packages will start a rebuild of all ins
 -> kiss build
 ```
 
-## Build userspace tools
+## Userspace tools
 
 Each `kiss` action (build, install, etc) has a shorthand alias. From now on, `kiss b` and `kiss i` will be used in place of `kiss build` and `kiss install`.
 
@@ -238,7 +239,7 @@ Each `kiss` action (build, install, etc) has a shorthand alias. From now on, `ki
 -> kiss i dhcpcd
 ```
 
-## Configure and build the kernel
+## The Kernel
 
 This step involves configuring and building your own Linux kernel. If you have not done this before, below are a few guides to get you started.
 
@@ -248,31 +249,31 @@ This step involves configuring and building your own Linux kernel. If you have n
 
 The Linux kernel is **not** managed by the package manager. The kernel is managed manually by the user.
 
-**NOTE**: KISS does not support booting using an `initramfs`. When configuring your kernel ensure that all required file-system, disk controller and USB drivers are built with `[*]` (Yes) and **not** `[m]` (Module).
+**NOTE**: KISS does not support booting using an `initramfs`. When configuring your kernel ensure that all required file-system, disk controller and USB drivers are built with `[*]` (Yes) and not `[m]` (Module).
 
 ### Download the kernel sources
 
-You can find the latest version at:
+The following commands imply the `5.3.8` vanilla kernel. If you have chosen a different kernel, the commands are identical minus naming differences.
 
-- vanilla: <https://kernel.org/>.
-- libre: <https://www.fsfla.org/ikiwiki/selibre/linux-libre/#downloads>
+More kernel releases:
+
+- `vanilla`: <https://kernel.org/>.
+- `libre`: [https://www.fsfla.org/](https://www.fsfla.org/ikiwiki/selibre/linux-libre/#downloads)
+
+A larger list of kernels can be found on the [Arch Wiki](https://wiki.archlinux.org/index.php/Kernel).
+
 
 ```
--> wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.3.6.tar.xz
-```
+-> wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.3.8.tar.xz
 
-### Extract the kernel sources
-
-```
--> tar xvf linux-5.3.6.tar.xz
-
-# Change directory to the kernel sources.
--> cd linux-5.3.6
+# Extract the kernel sources.
+-> tar xvf linux-5.3.8.tar.xz
+-> cd linux-5.3.8
 ```
 
 ### Configure the kernel
 
-**NOTE**: You can determine which drivers you need to enable by Googling your hardware.
+You can determine which drivers you need by searching the web for your hardware and the Linux kernel.
 
 **NOTE**: If you require firmware blobs, the drivers you enable must be enabled as `[m]` (modules). You can also optionally include the firmware in the kernel itself.
 
@@ -290,7 +291,7 @@ You can find the latest version at:
 # config, enabling anything extra you may need.
 #
 # NOTE: You may need 'ncurses' to run 'menuconfig'.
-#       Run 'kiss build ncurses && kiss install ncurses'.
+#       Run 'kiss b ncurses && kiss i ncurses'.
 -> make menuconfig
 
 # Store the generated config for reuse later.
@@ -298,6 +299,8 @@ You can find the latest version at:
 ```
 
 ### Build the kernel
+
+This may take a while to complete. The compilation time depends on your hardware and kernel configuration.
 
 ```
 # '-j $(nproc)' does a parallel build using all cores.
@@ -319,49 +322,54 @@ You can find the latest version at:
 
 # Rename the kernel.
 # Substitute VERSION for the kernel version you have built.
-# Example: 'vmlinuz-5.3.6'
+# Example: 'vmlinuz-5.3.8'
 -> mv /boot/vmlinuz /boot/vmlinuz-VERSION
 -> mv /boot/System.map /boot/System.map-VERSION
 ```
 
-## Install grub
+## The bootloader
 
-Build and install `grub`.
+The default bootloader is [grub](https://www.gnu.org/software/grub/) (*though nothing prevents you from using whatever bootloader you desire*).
 
-```
--> kiss build grub
--> kiss install grub
+This bootloader was chosen as most people are *familiar* with it, both BIOS and UEFI are supported and vast amounts of documentation for it exists.
 
-# Also needed for UEFI.
--> kiss build efibootmgr
--> kiss install efibootmgr
-```
-
-Setup `grub`.
+### Build and install grub
 
 ```
-# BIOS
+-> kiss b grub
+-> kiss i grub
+
+# Required for UEFI.
+-> kiss b efibootmgr
+-> kiss i efibootmgr
+```
+
+### Setup grub
+
+```
+# BIOS.
 -> grub-install --target=i386-pc /dev/sdX
 -> grub-mkconfig -o /boot/grub/grub.cfg
 
-# UEFI
-# Replace 'esp' with its mount point.
+# UEFI (replace 'esp' with the EFI mount point).
 -> grub-install --target=x86_64-efi --efi-directory=esp --bootloader-id=GRUB
 -> grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
 ## Install init scripts
 
-This is the final "mandatory" step.
+The default `init` is `busybox init` (*though nothing ties you to it*). The below commands install the bootup and shutdown scripts as well as the default `inittab` config.
+
+Source code: <https://github.com/kisslinux/kiss-init>
 
 ```
--> kiss build baseinit
--> kiss install baseinit
+-> kiss b baseinit
+-> kiss i baseinit
 ```
 
 ## Enable the community repository
 
-The KISS community repository is maintained by users of the distribution and contains packages which aren't in the main repositories. This repository is disabled by default since it's not maintained by the KISS developers.
+The KISS community repository is maintained by users of the distribution and contains packages which aren't in the main repositories. This repository is disabled by default as it is not maintained by the KISS developers.
 
 ```
 # Clone the repository to a location of your choosing.
