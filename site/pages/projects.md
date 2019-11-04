@@ -2,7 +2,7 @@
 title: Software
 ---
 
-Other software developed and maintained by myself (*Dylan Araps*).
+Other software created by myself (*Dylan Araps*).
 
 
 ## neofetch
@@ -35,7 +35,7 @@ A collection of pure POSIX sh alternatives to external processes.
 
 ## sowm
 
-An itsy bitsy floating window manager (220~ sloc / 24kb compiled!).
+An itsy bitsy floating window manager.
 
 **Source**: <https://github.com/dylanaraps/sowm>
 
