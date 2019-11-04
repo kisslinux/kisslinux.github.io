@@ -170,7 +170,7 @@ The patches directory should contain any patches the software needs. In the `sou
 
 The package manager **does not** automatically apply patches. This must be done in the `build` script of the package. The build script has direct access to the patches in its current working directory.
 
-**Example `build` file with patches.**
+### Example build file with patches
 
 ```
 #!/bin/sh -e
