@@ -22,7 +22,7 @@ May you find what you are looking for.
 
 ## What init system is used?
 
-The default `init` system is `busybox init` with `busybox runit` services.
+The default init system is `busybox init` with `busybox runit` services.
 
 ## What software is excluded?
 
@@ -64,7 +64,7 @@ Package customization is done through local repositories which enable full flexi
 
 ## How can I speed up GCC builds?
 
-If you are building an identical version of GCC or a new minor release (`9.1` -> `9.2`) you can speed up the build with the following `./configure` flag.
+If you are building an identical version of GCC or a new minor release (9.1 -> 9.2) you can speed up the build with the following `./configure` flag.
 
 ```
 --disable-bootstrap
