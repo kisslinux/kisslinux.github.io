@@ -44,7 +44,7 @@ An itsy bitsy floating window manager.
 
 A pretty system information tool written in POSIX sh.
 
-**Source**: <https://github.com/dylanaraps/pfetch>
+**Source**: <https://github.com/dylanaraps/fff>
 
 
 ## pywal
