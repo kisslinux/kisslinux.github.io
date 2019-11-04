@@ -18,6 +18,9 @@ From this point on, the guide assumes you have booted a live-CD and have an **in
 
 * [Setting up disks](#setting-up-disks)
 * [Install KISS](#install-kiss)
+    * [Download the latest release](#download-the-latest-release)
+    * [Verify the checksums (*recommended*)](#verify-the-checksums-recommended)
+    * [Verify the signature (*recommended*)](#verify-the-signature-recommended)
 * [Enable repository signing](#enable-repository-signing)
 * [Rebuild KISS](#rebuild-kiss)
 * [Build userspace tools](#build-userspace-tools)
@@ -46,18 +49,30 @@ The guide will **not** cover this step. If you require assistance with this step
 
 ## Install KISS
 
-At this stage your disks should be setup and fully mounted to `/mnt`.
+Your disks should be setup and fully mounted to `/mnt`.
 
-Download the latest release.
+### Download the latest release
+
+The download link below will always point to the latest version of KISS. If the checksums or signature fail to verify, [contact me](/pages/contact).
 
 ```
 -> wget https://dl.getkiss.org/kiss-chroot.tar.xz
+```
 
-# Recommended: Verify the download.
+### Verify the checksums (*recommended*)
+
+This step verifies that the release matches the `checksums` generated upon its creation and also ensures that the download completed successfully. ([What are checksums?](https://en.wikipedia.org/wiki/Checksum))
+
+```
 -> wget https://dl.getkiss.org/kiss-chroot.tar.xz.sha256
 -> sha256sum kiss-chroot.tar.xz | diff kiss-chroot.tar.xz.sha256 - && echo good
+```
 
-# Recommended: Verify the download's signature.
+### Verify the signature (*recommended*)
+
+This step verifies that the release was signed by [Dylan Araps](/pages/team). If the live OS of your choice **does not** include `gpg`, this step can also be done on another machine. ([What is gpg?](https://en.wikipedia.org/wiki/GNU_Privacy_Guard))
+
+```
 -> wget https://dl.getkiss.org/kiss-chroot.tar.xz.asc
 -> gpg --verify kiss-chroot.tar.xz.asc kiss-chroot.tar.xz
 ```
