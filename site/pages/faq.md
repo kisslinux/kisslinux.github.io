@@ -8,9 +8,8 @@ May you find what you are looking for.
 
 <!-- vim-markdown-toc GFM -->
 
-* [What init system is used?](#what-init-system-is-used)
-* [What software is excluded?](#what-software-is-excluded)
 * [Why should I use this over X distribution?](#why-should-i-use-this-over-x-distribution)
+* [What init system is used?](#what-init-system-is-used)
 * [Is full disk encryption supported?](#is-full-disk-encryption-supported)
 * [Are USE flags supported?](#are-use-flags-supported)
 * [How can I speed up GCC builds?](#how-can-i-speed-up-gcc-builds)
@@ -20,32 +19,13 @@ May you find what you are looking for.
 
 <!-- vim-markdown-toc -->
 
-## What init system is used?
-
-The default init system is `busybox init` with `busybox runit` services.
-
-## What software is excluded?
-
-Software absent from the official repositories includes:
-
-```
-- systemd
-- dbus
-- polkit / pam
-- GNU coreutils / glibc
-- pulseaudio / pipewire
-- gettext / intltool
-- startup-notification`
-- wayland
-- ConsoleKit2 / logind / elogind
-- GNOME / KDE / XFCE4 / MATE
-```
-
-**NOTE**: This software can still be packaged by users and made available through personal or third-party repositories.
-
 ## Why should I use this over X distribution?
 
 If you see no value in this distribution's philosophy, software choices and development, it isn't for you.
+
+## What init system is used?
+
+The default init system is `busybox init` with `busybox runit` services.
 
 ## Is full disk encryption supported?
 
