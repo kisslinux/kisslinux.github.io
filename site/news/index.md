@@ -8,12 +8,12 @@ RSS Feed available here: <https://getkiss.org/news/news.xml>
 
 <ul style="padding:0">
 <li><a href='/news/20191031a.html'>31/10/2019: ninja replaced by samurai</a></li>
-<li><a href='/news/20191015b.html'>15/10/2019: New python release (3.8.0), manual intervention needed</a></li>
+<li><a href='/news/20191015b.html'>15/10/2019: New python release (3.8.0), intervention needed</a></li>
 <li><a href='/news/20191015a.html'>15/10/2019: New sudo release (1.8.28), fixes CVE-2019-14287</a></li>
 <li><a href='/news/20191010a.html'>10/10/2019: Mesa 19.2.1 released, intervention may be required</a></li>
 <li><a href='/news/20190927a.html'>27/09/2019: LLVM/Rust updated, manual intervention needed</a></li>
 <li><a href='/news/20190921a.html'>21/09/2019: LLVM/Clang reverted to 8.0.1</a></li>
-<li><a href='/news/20190920a.html'>20/09/2019: Mesa/Rust need to be rebuilt after LLVM/clang 9.0.0</a></li>
+<li><a href='/news/20190920a.html'>20/09/2019: Mesa/Rust need to be rebuilt</a></li>
 <li><a href='/news/20190911a.html'>11/09/2019: Please update the package manager to 0.21.0</a></li>
 <li><a href='/news/20190908a.html'>08/09/2019: The cache directory has been moved</a></li>
 <li><a href='/news/20190906a.html'>06/09/2019: Firefox updated to 69.0</a></li>
