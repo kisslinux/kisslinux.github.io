@@ -3,6 +3,7 @@
 <ul id=n><li><a href=/ id=a>KISS</a> 💋<li><a href=/>Home</a><li><a href=/news/>News</a><li><a href=/blog/>Blog</a><li><a href=/pages/install/><b>Install KISS</b></a><li><a href=/pages/faq/>FAQ</a><li><a href=/pages/scrots/>Screenshots</a><li><a href=/pages/team/>Team</a><li><a href=/pages/package-system/>Package System</a><li><a href=/pages/testimonials>Testimonials</a><li><a href=/pages/projects>Software</a><li><a href=https://github.com/kisslinux/>GitHub</a><li><a href=/pages/contact/>Contact</a><li><a href=/pages/donate/>Donate</a></ul>
 </nav>
 <main>
+    $if(date)$<br><p>Published <b>$date$</b> by <a href="https://github.com/dylanaraps">Dylan Araps</a>.</p>$endif$
 $if(title)$<h1>$title$</h1>$else$<br>$endif$$body$<br>
 <pre></pre>
 </main>
