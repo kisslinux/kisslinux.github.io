@@ -46,7 +46,7 @@ The guide will **not** cover this step. If you require assistance with this step
 
 ## Install KISS
 
-At this stage your disks should be setup and mounted to `/mnt`.
+At this stage your disks should be setup and fully mounted to `/mnt`.
 
 Download the latest release.
 
