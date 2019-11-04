@@ -21,7 +21,7 @@ An independent Linux® distribution with a focus on [simplicity](#simplicity) an
 
 - Rootless [Xorg](https://x.org) environment **without** any additional software.
 
-- Repository signing through `git` and `gnupg` (*based on signed commits and built into `git` itself*).
+- Repository signing through [git](https://git-scm.com/) and [gnupg](https://www.gnupg.org/) (*based on signed commits and built into git itself*).
 
 
 ## Philosophy
