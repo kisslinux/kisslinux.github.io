@@ -21,9 +21,22 @@ From this point on, the guide assumes you have booted a live-CD and have an **in
     * [Download the latest release](#download-the-latest-release)
     * [Verify the checksums (*recommended*)](#verify-the-checksums-recommended)
     * [Verify the signature (*recommended*)](#verify-the-signature-recommended)
+    * [Download the chroot helper](#download-the-chroot-helper)
+    * [Unpack the tarball](#unpack-the-tarball)
+    * [Enter the chroot](#enter-the-chroot)
 * [Enable repository signing](#enable-repository-signing)
+    * [Build and install gnupg1](#build-and-install-gnupg1)
+    * [Import my (*Dylan Araps*) key](#import-my-dylan-araps-key)
+    * [Enable signature verification](#enable-signature-verification)
 * [Rebuild KISS](#rebuild-kiss)
+    * [Modify compiler options (optional)](#modify-compiler-options-optional)
+    * [Update all base packages to the latest versions](#update-all-base-packages-to-the-latest-versions)
+    * [Rebuild all packages](#rebuild-all-packages)
 * [Build userspace tools](#build-userspace-tools)
+    * [Filesystems](#filesystems)
+    * [Device management](#device-management)
+    * [WiFi (*optional*)](#wifi-optional)
+    * [Dynamic IP addressing (*optional*)](#dynamic-ip-addressing-optional)
 * [Configure and build the kernel](#configure-and-build-the-kernel)
     * [Download the kernel sources](#download-the-kernel-sources)
     * [Extract the kernel sources](#extract-the-kernel-sources)
@@ -77,7 +90,9 @@ This step verifies that the release was signed by [Dylan Araps](/pages/team). If
 -> gpg --verify kiss-chroot.tar.xz.asc kiss-chroot.tar.xz
 ```
 
-Download the `chroot` helper script.
+### Download the chroot helper
+
+This is a simple script to `chroot` into `/mnt` and set up the environment for the rest of the installation. ([What is chroot?](https://en.wikipedia.org/wiki/Chroot))
 
 ```
 -> wget https://dl.getkiss.org/kiss-chroot
@@ -89,14 +104,17 @@ Download the `chroot` helper script.
 -> chmod +x kiss-chroot
 ```
 
-Unpack the `tarball` (Install KISS).
+### Unpack the tarball
+
+This step effectively **installs KISS** to `/mnt`. The tarball contains a full system minus the bootloader, kernel and optional utilities.
 
 ```
-# Make sure disks are first mounted to '/mnt'.
 -> tar xvf kiss-chroot.tar.xz -C /mnt --strip-components 1
 ```
 
-Enter the `chroot`.
+### Enter the chroot
+
+On execution of this step you will be running KISS! The next steps involve  the kernel, software compilation and system setup.
 
 ```
 -> ./kiss-chroot /mnt
@@ -106,36 +124,40 @@ Enter the `chroot`.
 
 This step is **entirely optional** and can also be done after the installation. See [#60](https://github.com/kisslinux/kiss/issues/60) for more information.
 
-Build and install `gnupg1`:
+Repository signing ensures that all updates have been signed by ([Dylan Araps](/pages/team)) and further prevents any unsigned updates from reaching your system.
+
+
+### Build and install gnupg1
+
+Welcome to the KISS package manager! These two commands are how individual packages are built and installed on a KISS system.
 
 ```
 -> kiss build gnupg1
 -> kiss install gnupg1
 ```
 
-Import my (*Dylan Araps*) key:
+### Import my (*[Dylan Araps](/pages/team)*) key
+
+If the GNU keyserver fails on your network, you can try an alternative mirror ([pgp.mit.edu](pgp.mit.edu) for example).
 
 ```
-# If the GNU keyserver fails, try an alternative mirror.
-# Example: pgp.mit.edu
+# Import my public key.
 -> gpg --keyserver keys.gnupg.net --recv-key 46D62DD9F1DE636E
-```
 
-Trust my public key:
-
-```
+# Trust my public key.
 -> echo trusted-key 0x46d62dd9f1de636e >> /root/.gnupg/gpg.conf
 ```
 
-Go to the system-wide repository:
+### Enable signature verification
+
+Repository signature verification uses a feature built into `git` itself (`merge.verifySignatures`)! ([How does it work?](https://git-scm.com/docs/git-merge#Documentation/git-merge.txt---verify-signatures))
+
+This can be disabled at any time using the inverse of the `git` command below.
+
+The same steps can also be followed with 3rd-party repositories if the owner signs their commits.
 
 ```
 -> cd /var/db/kiss/repo
-```
-
-Enable signature verification:
-
-```
 -> git config merge.verifySignatures true
 ```
 
@@ -143,22 +165,38 @@ Enable signature verification:
 
 This step is **entirely optional** and you can just use the supplied binaries from the downloaded `chroot`. This step can also be done after the installation.
 
-Modify compiler options (optional):
+### Modify compiler options (optional)
+
+These options have been tested and work with every package in the repositories. If you'd like to play it safe, use `-O2` or `-Os` instead of `-O3`.
+
+If your system has a low amount of memory, omit `-pipe`. This option speeds up compilation but may use more memory.
+
+If you intend to transfer packages between machines, omit `-march=native`. This option tells the compiler to use optimizations unique to your processor's architecture.
+
+The `-jX` option should match the number of CPU cores available. You can optionally omit this, however builds will then be limited to a single core.
 
 ```
 # NOTE: The 'O' in '-O3' is the letter O and NOT 0 (ZERO).
 -> export CFLAGS="-O3 -pipe -march=native"
 -> export CXXFLAGS="-O3 -pipe -march=native"
+
+# NOTE: '4' should be changed to match the number of CPU cores.
 -> export MAKEFLAGS="-j4"
 ```
 
-Update all base packages to the latest versions:
+### Update all base packages to the latest versions
+
+This is how updates are performed on a KISS system. This command uses `git` to pull down changes from all enabled repositories and will then optionally handle the build/install process.
 
 ```
 -> kiss update
 ```
 
-Start rebuilding all packages:
+### Rebuild all packages
+
+Running `kiss build` without specifying packages will start a rebuild of all installed packages on the system.
+
+**NOTE**: The package manager will prompt for user input on completion before installing the build packages.
 
 ```
 -> kiss build
@@ -166,18 +204,38 @@ Start rebuilding all packages:
 
 ## Build userspace tools
 
+Each `kiss` action (build, install, etc) has a shorthand alias. From now on, `kiss b` and `kiss i` will be used in place of `kiss build` and `kiss install`.
+
+### Filesystems
+
 ```
-# Required for mounting drives.
--> kiss build e2fsprogs eudev
+# Ext2, Ext3 and Ext4.
+-> kiss b e2fsprogs
+-> kiss i e2fsprogs
 
-# Required for connecting to WIFI.
--> kiss build wpa_supplicant
--> kiss install wpa_supplicant
+# Open an issue for additional filesystem support.
+# Additional filesystems will go here.
+```
 
-# Required for connecting to the internet.
-# (WIFI and Ethernet) (dynamic IP addressing).
--> kiss build dhcpcd
--> kiss install dhcpcd
+### Device management
+
+```
+-> kiss b eudev
+-> kiss i eudev
+```
+
+### WiFi (*optional*)
+
+```
+-> kiss b wpa_supplicant
+-> kiss i wpa_supplicant
+```
+
+### Dynamic IP addressing (*optional*)
+
+```
+-> kiss b dhcpcd
+-> kiss i dhcpcd
 ```
 
 ## Configure and build the kernel
