@@ -4,7 +4,6 @@
 
 mk() {
     pandoc -t html5 \
-           --from markdown-markdown_in_html_blocks-raw_html \
            "$@" \
            --strip-comments \
            --no-highlight \
@@ -35,7 +34,8 @@ rm -rf ../site/wiki/.git
             [ "${file%%.md}" = index ] || { title=${file%%.md}; wiki=1; }
 
             mk --metadata title="$(echo "$title" | sed 's/-/ /g')" \
-               --metadata wiki="$wiki"
+               --metadata wiki="$wiki" \
+               --from markdown-markdown_in_html_blocks-raw_html
         ;;
 
         *.md)
