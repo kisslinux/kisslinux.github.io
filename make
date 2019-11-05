@@ -4,6 +4,7 @@
 
 mk() {
     pandoc -t html5 \
+           --from markdown-markdown_in_html_blocks-raw_html \
            "$@" \
            --strip-comments \
            --no-highlight \
