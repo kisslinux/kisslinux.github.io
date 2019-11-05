@@ -29,7 +29,10 @@ rm -rf ../site/wiki/.git
 
     case $page in
         *wiki*.md)
-            mk --metadata pagetitle="${file%%.md}"
+            [ "${file%%.md}" = Home ] && title=Wiki
+            [ "${file%%.md}" = Home ] || title=${file%%.md}
+
+            mk --metadata title="$title"
         ;;
 
         *.md)
