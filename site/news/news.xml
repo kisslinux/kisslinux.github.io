@@ -8,8 +8,16 @@
  <atom:link href="https://getkiss.org/news/news.xml" rel="self" type="application/rss+xml" />
 
 <item>
+<title>05/11/2019: The Wiki is live</title>
+<description>The Wiki is live</description>
+<link>https://getkiss.org/news/20191105a/</link>
+<guid isPermaLink="true">https://getkiss.org/news/20191105a/</guid>
+<pubDate>Tue, 05 Nov 2019 00:00:00 +0000</pubDate>
+</item>
+
+<item>
 <title>31/10/2019: ninja replaced by samurai</title>
-<description>The build tool `ninja` has been replaced with `samurai`. 
+<description>The build tool `ninja` has been replaced with `samurai`.
 </description>
 <link>https://getkiss.org/news/20191031a/</link>
 <guid isPermaLink="true">https://getkiss.org/news/20191031a/</guid>
