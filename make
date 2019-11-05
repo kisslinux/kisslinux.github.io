@@ -21,6 +21,7 @@ cd        .www
 
 git clone --depth 1 https://github.com/kisslinux/wiki.wiki.git ../site/wiki
 
+mv -f  ../site/wiki/Home.md ../site/wiki/index.md
 rm -rf ../site/wiki/.git
 
 (cd ../site; find . -type f -a -not -path '*/\.*') | while read -r page; do
@@ -29,10 +30,10 @@ rm -rf ../site/wiki/.git
 
     case $page in
         *wiki*.md)
-            [ "${file%%.md}" = index ] && title=Wiki
-            [ "${file%%.md}" = index ] || title=${file%%.md}
+            [ "${file%%.md}" = Home ] && title=Wiki
+            [ "${file%%.md}" = Home ] || title=${file%%.md}
 
-            mk --metadata title="$title"
+            mk --metadata title="$(echo "$title" | sed 's/-/ /g')"
         ;;
 
         *.md)
