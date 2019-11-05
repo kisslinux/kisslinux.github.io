@@ -15,6 +15,7 @@ Want to include a screenshot below?, [get in touch](https://getkiss.org/pages/co
 * [Cliford Sab (lieuxnoir)](#cliford-sab-lieuxnoir)
 * [Ominous](#ominous)
 * [Niko Tidar Lantang Perkasa (nikotidar)](#niko-tidar-lantang-perkasa-nikotidar)
+* [Phillip L (p410n3)](#phillip-l-p410n3)
 
 <!-- vim-markdown-toc -->
 
@@ -53,4 +54,11 @@ Want to include a screenshot below?, [get in touch](https://getkiss.org/pages/co
 <p><picture>
   <source srcset="/images/niko01.webp" type="image/webp">
   <img src="/images/niko01.jpg" alt="niko-01">
+</picture></p>
+
+## Phillip L ([p410n3](https://github.com/p410n3))
+
+<p><picture>
+  <source srcset="/images/phillip01.webp" type="image/webp">
+  <img src="/images/phillip01.jpg" alt="phillip-01">
 </picture></p>
