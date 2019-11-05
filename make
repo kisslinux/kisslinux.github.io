@@ -30,8 +30,8 @@ rm -rf ../site/wiki/.git
 
     case $page in
         *wiki*.md)
-            [ "${file%%.md}" = Home ] && title=Wiki
-            [ "${file%%.md}" = Home ] || title=${file%%.md}
+            [ "${file%%.md}" = index ] && title=Wiki
+            [ "${file%%.md}" = index ] || title=${file%%.md}
 
             mk --metadata title="$(echo "$title" | sed 's/-/ /g')"
         ;;
