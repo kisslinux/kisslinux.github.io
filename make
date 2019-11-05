@@ -33,6 +33,8 @@ rm -rf ../site/wiki/.git
             [ "${file%%.md}" = index ] && { title=Wiki; wiki=; }
             [ "${file%%.md}" = index ] || { title=${file%%.md}; wiki=1; }
 
+            sed -i'' 's|https://github.com/kisslinux/wiki/|/|g' "../site/$page"
+
             mk --metadata title="$(echo "$title" | sed 's/-/ /g')" \
                --metadata wiki="$wiki" \
                --from markdown-markdown_in_html_blocks-raw_html
