@@ -39,6 +39,7 @@ From this point on, the guide assumes you have booted a live-CD and have an **in
     * [Dynamic IP addressing (*optional*)](#dynamic-ip-addressing-optional)
 * [The Kernel](#the-kernel)
     * [Download the kernel sources](#download-the-kernel-sources)
+    * [Download firmware blobs (*if required*)](#download-firmware-blobs-if-required)
     * [Configure the kernel](#configure-the-kernel)
     * [Build the kernel](#build-the-kernel)
     * [Install the kernel](#install-the-kernel)
@@ -271,6 +272,22 @@ A larger list of kernels can be found on the [Arch Wiki](https://wiki.archlinux.
 -> cd linux-5.3.8
 ```
 
+### Download firmware blobs (*if required*)
+
+To keep the KISS repositories entirely FOSS, the proprietary kernel firmware is omitted. This also makes sense as the kernel itself is manually managed by the user.
+
+Sources: [kernel.org](https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/)
+
+```
+# Download and extract the firmware.
+-> wget https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/snapshot/linux-firmware-20191022.tar.gz
+-> tar xvf linux-firmware-20191022.tar.gz
+
+# Copy the required drivers to '/usr/lib/firmware'.
+mkdir -p /usr/lib/firmware
+cp -R ./path/to/driver /usr/lib/firmware
+```
+
 ### Configure the kernel
 
 You can determine which drivers you need by searching the web for your hardware and the Linux kernel.
@@ -278,11 +295,6 @@ You can determine which drivers you need by searching the web for your hardware 
 **NOTE**: If you require firmware blobs, the drivers you enable must be enabled as `[m]` (modules). You can also optionally include the firmware in the kernel itself.
 
 ```
-# Install 'linux-firmware' if you require firmware
-# blobs for your hardware.
--> kiss build linux-firmware
--> kiss install linux-firmware
-
 # Generate a default config with *most* drivers
 # compiled as `[*]` (not modules).
 -> make defconfig
