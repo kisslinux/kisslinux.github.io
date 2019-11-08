@@ -276,6 +276,8 @@ A larger list of kernels can be found on the [Arch Wiki](https://wiki.archlinux.
 
 To keep the KISS repositories entirely FOSS, the proprietary kernel firmware is omitted. This also makes sense as the kernel itself is manually managed by the user.
 
+**NOTE**: This step is only required if your hardware utilizes these drivers.
+
 Sources: [kernel.org](https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/)
 
 ```
