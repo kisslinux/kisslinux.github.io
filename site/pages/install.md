@@ -410,6 +410,7 @@ The KISS community repository is maintained by users of the distribution and con
 
 You should now be able to reboot into your KISS installation. Typical configuration should follow (*hostname, creation of users, service configuration etc*).
 
-If you encountered any issues, don't hesitate to open an issue on one of our GitHub repositories or join the IRC server.
+If you encountered any issues, don't hesitate to open an issue on one of our GitHub repositories, post on the [subreddit](https://reddit.com/r/kisslinux) or join the IRC server.
 
 See: [Get in touch](https://getkiss.org/pages/contact/)
+See: [The Wiki](https://getkiss.org/wiki/)
