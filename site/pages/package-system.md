@@ -21,7 +21,6 @@ zlib/            # Package name.
 
 # Optional files.
 ├─ post-install  # Post-install script (must be executable).
-├─ nostrip       # Don't strip binaries for this package (empty file).
 ├─ patches/*     # Directory to store patches.
 ├─ files/*       # Directory to misc files.
 ┘
@@ -39,6 +38,9 @@ The script is also given a single argument (*equivalent to `script arg`*), this 
 
 ```
 #!/bin/sh -e
+
+# Disable stripping (add this line only if needed).
+:> nostrip
 
 ./configure \
     --prefix=/usr
@@ -159,10 +161,6 @@ The script is language agnostic and the only requirement is that it be executabl
 
 /usr/sbin/update-ca-certificates --fresh
 ```
-
-## nostrip
-
-The `nostrip` file is an empty file which is used to tell the package manager to **not** strip the compiled package files of debug symbols etc. The only requirement is that this file exist; it does not need to contain any information.
 
 ## patches/*
 
