@@ -19,18 +19,11 @@ A system information tool written in POSIX sh.
 **Source**: <https://github.com/dylanaraps/pfetch>
 
 
-## The Pure bash Bible
+## pash
 
-A collection of pure bash alternatives to external processes.
+A simple password manager using GPG.
 
-**Source**: <https://github.com/dylanaraps/pure-bash-bible>
-
-
-## The Pure sh Bible
-
-A collection of pure POSIX sh alternatives to external processes.
-
-**Source**: <https://github.com/dylanaraps/pure-sh-bible>
+**Source**: <https://github.com/dylanaraps/pash>
 
 
 ## sowm
@@ -45,6 +38,20 @@ An itsy bitsy floating window manager.
 A pretty system information tool written in POSIX sh.
 
 **Source**: <https://github.com/dylanaraps/fff>
+
+
+## The Pure bash Bible
+
+A collection of pure bash alternatives to external processes.
+
+**Source**: <https://github.com/dylanaraps/pure-bash-bible>
+
+
+## The Pure sh Bible
+
+A collection of pure POSIX sh alternatives to external processes.
+
+**Source**: <https://github.com/dylanaraps/pure-sh-bible>
 
 
 ## pywal
