@@ -30,10 +30,7 @@ The default init system is `busybox init` with `busybox runit` services.
 
 Full disk encryption is supported through `dm-mod.create=`.
 
-See:
-
-- <https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/Documentation/admin-guide/device-mapper/dm-init.rst>
-- <https://cateee.net/lkddb/web-lkddb/DM_INIT.html>
+See: [kernel.org](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/Documentation/admin-guide/device-mapper/dm-init.rst) and [cateee.net](https://cateee.net/lkddb/web-lkddb/DM_INIT.html)
 
 ## Are USE flags supported?
 
