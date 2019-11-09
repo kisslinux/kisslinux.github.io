@@ -40,11 +40,7 @@ Package customization is done through local repositories which enable full flexi
 
 ## How can I speed up GCC builds?
 
-If you are building an identical version of GCC or a new minor release (9.1 -> 9.2) you can speed up the build with the following `./configure` flag.
-
-```
---disable-bootstrap
-```
+If you are building an identical version of GCC or a new minor release (9.1 -> 9.2) you can speed up the build with the `--disable-bootstrap` configure flag.
 
 ## How can I easily fork a package?
 
