@@ -54,11 +54,11 @@ A collection of pure POSIX sh alternatives to external processes.
 **Source**: <https://github.com/dylanaraps/pure-sh-bible>
 
 
-## pal
+## paleta
 
 Change terminal colors on the fly.
 
-**Source**: <https://github.com/dylanaraps/pal>
+**Source**: <https://github.com/dylanaraps/paleta>
 
 
 ## pywal
