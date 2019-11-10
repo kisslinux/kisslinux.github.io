@@ -7,11 +7,9 @@ Feel free to contact me at any of the following:
 - IRC: `#kisslinux` at [freenode](https://freenode.net)
 - Reddit: [/r/kisslinux](https://reddit.com/r/kisslinux)
 
-## Send a message
+Email:
 
-<form action=/pages/form-success name=contact method=POST data-netlify=true>
-  <p><label>Your Name: <input type=text name=name/></label></p>
-  <p><label>Your Email: <input type=email name=email/></label></p>
-  <p><label>Message: <textarea name=message></textarea></label></p>
-  <p><button type=submit>Send</button></p>
-</form>
+```
+echo qlyna.nencf@tznvy.pbz | tr a-z0-9 n-za-m5-90-4
+```
+
