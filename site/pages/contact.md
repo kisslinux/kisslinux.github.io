@@ -9,7 +9,7 @@ Feel free to contact me at any of the following:
 
 ## Send a message
 
-<form name=contact method=POST data-netlify=true>
+<form action=/pages/form-success name=contact method=POST data-netlify=true>
   <p><label>Your Name: <input type=text name=name/></label></p>
   <p><label>Your Email: <input type=email name=email/></label></p>
   <p><label>Message: <textarea name=message></textarea></label></p>
