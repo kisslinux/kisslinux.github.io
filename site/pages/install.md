@@ -347,7 +347,7 @@ The default bootloader is [grub](https://www.gnu.org/software/grub/) (*though no
 
 This bootloader was chosen as most people are *familiar* with it, both BIOS and UEFI are supported and vast amounts of documentation for it exists.
 
-**NOTE**: If using UEFI the `efivars` filesystem may need to be mounted. See: [Mounting UEFI variables](/wiki/Mounting-UEFI-variables)
+**NOTE**: If using UEFI, the `efivars` filesystem may need to be mounted. See: [Mounting UEFI variables](/wiki/Mounting-UEFI-variables)
 
 ### Build and install grub
 
