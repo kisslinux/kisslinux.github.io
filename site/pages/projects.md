@@ -54,6 +54,13 @@ A collection of pure POSIX sh alternatives to external processes.
 **Source**: <https://github.com/dylanaraps/pure-sh-bible>
 
 
+## pal
+
+Change terminal colors on the fly.
+
+**Source**: <https://github.com/dylanaraps/pal>
+
+
 ## pywal
 
 Generate and change color-schemes on the fly.
