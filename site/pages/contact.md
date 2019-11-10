@@ -10,6 +10,6 @@ Feel free to contact me at any of the following:
 Email:
 
 ```
-echo qlyna.nencf@tznvy.pbz | tr a-z0-9 n-za-m5-90-4
+echo qlyna.nencf@tznvy.pbz | tr a-z n-za-m
 ```
 
