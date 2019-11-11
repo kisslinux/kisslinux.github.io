@@ -31,3 +31,5 @@ Here's what people are saying about KISS!
 > I spent some time on their website, and this really is a wonder distribution.
 
 > Literally the opposite of KISS. At lest don't use hypocritical excuses for your crusades.
+
+> Hi! I just wanted to let you know that, while the name is funny enough in English, it gets even better in Swedish: "kiss" is a synonym for "piss", and even the website translates to goatpiss.org. Have a nice day!
