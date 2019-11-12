@@ -12,7 +12,6 @@ May you find what you are looking for.
 * [What init system is used?](#what-init-system-is-used)
 * [Is full disk encryption supported?](#is-full-disk-encryption-supported)
 * [Are USE flags supported?](#are-use-flags-supported)
-* [How can I speed up GCC builds?](#how-can-i-speed-up-gcc-builds)
 * [How can I easily fork a package?](#how-can-i-easily-fork-a-package)
 
 <!-- vim-markdown-toc -->
@@ -36,10 +35,6 @@ See: [kernel.org](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux
 No.
 
 Package customization is done through local repositories which enable full flexibility while keeping the package format, package manager and package build files **simple**.
-
-## How can I speed up GCC builds?
-
-If you are building an identical version of GCC or a new minor release (9.1 -> 9.2) you can speed up the build with the `--disable-bootstrap` configure flag.
 
 ## How can I easily fork a package?
 
