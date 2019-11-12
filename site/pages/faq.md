@@ -14,7 +14,6 @@ May you find what you are looking for.
 * [Are USE flags supported?](#are-use-flags-supported)
 * [How can I speed up GCC builds?](#how-can-i-speed-up-gcc-builds)
 * [How can I easily fork a package?](#how-can-i-easily-fork-a-package)
-* [How can I load a module at boot?](#how-can-i-load-a-module-at-boot)
 
 <!-- vim-markdown-toc -->
 
@@ -54,12 +53,4 @@ export KISS_PATH="/path/to/myrepo:$KISS_PATH
 
 # Fork the package.
 cp -r "$(kiss s pkg_name)" /path/to/myrepo
-```
-
-## How can I load a module at boot?
-
-Add the following to your `/etc/inittab`.
-
-```
-::once:/bin/modprobe <module name>
 ```
