@@ -19,10 +19,10 @@ rm    -rf .www site/wiki
 mkdir -p  .www
 cd        .www
 
-git clone --depth 1 https://github.com/kisslinux/wiki.wiki.git ../site/wiki
+git clone --depth 1 https://github.com/kisslinux/wiki.wiki.git ../site/wiki ||:
 
-mv -f  ../site/wiki/Home.md ../site/wiki/index.md
-rm -rf ../site/wiki/.git
+mv -f  ../site/wiki/Home.md ../site/wiki/index.md ||:
+rm -rf ../site/wiki/.git ||:
 
 (cd ../site; find . -type f -a -not -path '*/\.*') | while read -r page; do
     mkdir -p "${page%/*}"
