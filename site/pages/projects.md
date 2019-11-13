@@ -35,7 +35,7 @@ An itsy bitsy floating window manager.
 
 ## fff
 
-A pretty system information tool written in POSIX sh.
+A simple file manager written in bash.
 
 **Source**: <https://github.com/dylanaraps/fff>
 
