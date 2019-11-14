@@ -89,6 +89,11 @@ This step verifies that the release was signed by [Dylan Araps](/pages/team). If
 
 ```
 -> wget https://dl.getkiss.org/kiss-chroot.tar.xz.asc
+
+# Import my public key.
+-> gpg --keyserver keys.gnupg.net --recv-key 46D62DD9F1DE636E
+
+# Verify the signature.
 -> gpg --verify kiss-chroot.tar.xz.asc kiss-chroot.tar.xz
 ```
 
