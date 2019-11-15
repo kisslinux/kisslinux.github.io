@@ -2,33 +2,49 @@
 #
 # Simple static site builder.
 
+# Convert the markdown page to HTML and insert it
+# into the template. Also bring in the CSS and minify
+# the HTML.
 mk() {
     pandoc -t html5 \
            "$@" \
            --strip-comments \
-           --no-highlight \
-           --template \
-           ../site/templates/* "../site/$page" |
+           --template=../site/templates/default.html \
+           -H ../site/templates/default.css.min \
+           "../site/$page" |
            sed ':a;N;$!ba;s|>\s*<|><|g' > "${page%%.md}.html"
-
 
     printf '%s\n' "CC $page"
 }
 
+# Delete the generated website.
 rm    -rf .www site/wiki
 mkdir -p  .www
 cd        .www
 
-git clone --depth 1 https://github.com/kisslinux/wiki.wiki.git ../site/wiki ||:
+# Minify the CSS using sed.
+sed ':a;N;$!ba;s/\n//g;s/: /:/g;s/ {  /{/g;s/;  /;/g;s/;}/}/g' \
+    ../site/templates/default.css > ../site/templates/default.css.min
 
-mv -f  ../site/wiki/Home.md ../site/wiki/index.md ||:
-rm -rf ../site/wiki/.git ||:
+# Pull down the latest Wiki.
+{
+    git clone --depth 1 \
+        https://github.com/kisslinux/wiki.wiki.git ../site/wiki
 
-(cd ../site; find . -type f -a -not -path '*/\.*') | while read -r page; do
+    mv -f  ../site/wiki/Home.md ../site/wiki/index.md
+    rm -rf ../site/wiki/.git
+} ||:
+
+# Iterate over each file in the source tree under /site/.
+(cd ../site; find . -type f -a -not -path '*/\.*') |
+
+while read -r page; do
     mkdir -p "${page%/*}"
     file=${page##*/}
 
     case $page in
+        # Handle Wiki pages differently. They are pulled from GitHub so
+        # we need to modify them a little to fit into the KISS website.
         *wiki*.md)
             [ "${file%%.md}" = index ] && { title=Wiki; wiki=; }
             [ "${file%%.md}" = index ] || { title=${file%%.md}; wiki=1; }
@@ -40,10 +56,9 @@ rm -rf ../site/wiki/.git ||:
                --from markdown-markdown_in_html_blocks-raw_html
         ;;
 
-        *.md)
-            mk
-        ;;
+        *.md) mk ;;
 
+        # Copy over any images or non-markdown files.
         *)
             cp "../site/$page" "$page"
 
