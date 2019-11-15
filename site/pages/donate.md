@@ -7,4 +7,4 @@ The running costs of KISS are currently moderate. Your support, however, will en
 You can support development of KISS by sending a donation to the link below.
 
 - <https://patreon.com/dyla> (Dylan Araps)
-- [Paypal (Dylan Araps)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=V7QNJNKS3WYVS)
+- [Paypal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=V7QNJNKS3WYVS) (Dylan Araps)
