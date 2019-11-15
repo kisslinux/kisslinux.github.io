@@ -12,6 +12,8 @@ Here's what people are saying about KISS!
 
 > I was looking for something like this actually, I thought I would finally have to warm up to BSD if I wanted an OS that I have some hope of understanding fully.
 
+> Ooh, this is one of those artisan, hand-crafted websites! I'll have to post this to my Instagram. I once met an old web developer in the south of France who would wash the bytes by hand before uploading them to his server. Said it was a family tradition passed down for generations.
+
 > New logo needed. The chopped off head is bad luck in parts of Asia.
 
 > I've got a basic installation done! It was actually quite simple! Not much is set up, but getting the base down was arguably simpler than Arch, and far simpler than Gentoo. I'm not really familiar with Busybox, or musl at all, so this should be fun!
