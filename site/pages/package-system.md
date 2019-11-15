@@ -6,7 +6,7 @@ The distribution employs a package system based around the concept of easily par
 
 ## Directory Structure
 
-```sh
+```
 zlib/            # Package name.
 ├─ build         # Build script (must be executable).
 ├─ depends       # Dependencies (usually required).
