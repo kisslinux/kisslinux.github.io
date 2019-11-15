@@ -9,6 +9,7 @@ mk() {
     pandoc -t html5 \
            "$@" \
            --strip-comments \
+           --no-highlight \
            --template=../site/templates/default.html \
            -H ../site/templates/default.css.min \
            "../site/$page" |
