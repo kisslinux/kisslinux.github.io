@@ -7,9 +7,9 @@ An independent Linux® distribution with a focus on [simplicity](#simplicity) an
 
 ## Overview
 
-- Uses a plain-text [package system](https://getkiss.org/pages/package-system/) which is **language agnostic** and parseable with basic UNIX utilities.
+- Uses a plain-text [package system](/pages/package-system/) which is **language agnostic** and parseable with basic UNIX utilities.
 
-- Uses a [package manager](https://getkiss.org/pages/package-manager/) written in **500~ lines** of POSIX sh (*excluding blank lines and comments*).
+- Uses a [package manager](https://github.com/kisslinux/kiss) written in **500~ lines** of POSIX sh (*excluding blank lines and comments*).
 
 - Based on [musl libc](https://www.musl-libc.org/), [busybox](https://busybox.net/) and the [Linux kernel](https://kernel.org).
 

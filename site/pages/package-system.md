@@ -22,7 +22,7 @@ zlib/            # Package name.
 # Optional files.
 ├─ post-install  # Post-install script (must be executable).
 ├─ patches/*     # Directory to store patches.
-├─ files/*       # Directory to misc files.
+├─ files/*       # Directory to store misc files.
 ┘
 ```
 
