@@ -17,9 +17,12 @@ h1,h2,h3 {
   margin-top: 40px;
 }
 
+main {
+  flex: 1;
+}
+
 pre>code,main,#m {
   display: block;
-  flex: 1;
   margin: 10px auto 40px;
   max-width: 52ch;
   padding: 0 10px;
