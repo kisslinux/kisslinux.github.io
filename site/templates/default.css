@@ -36,7 +36,7 @@ pre>code {
   position: relative;
   transform: translateX(-50%);
   white-space: pre-wrap;
-  width: 90vw;
+  width: calc(100vw - 40px);
 }
 
 code {
@@ -105,5 +105,9 @@ li+li {
 }
 
 li>ul {
-  margin-bottom: 15px;
+  margin: 5px 0 15px;
+}
+
+table {
+  width: 100%;
 }
