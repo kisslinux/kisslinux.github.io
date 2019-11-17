@@ -33,13 +33,10 @@ pre>code {
   color: #eee;
   font-family: Consolas,monospace;
   font-weight: normal;
-  left: 50%;
-  max-width: 90ch;
   padding: 20px;
-  position: relative;
-  transform: translateX(-50%);
   white-space: pre-wrap;
-  width: calc(90vw - 40px);
+  max-width: 100%;
+  margin: 0 0 40px;
 }
 
 code {
