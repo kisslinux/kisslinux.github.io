@@ -6,7 +6,6 @@ body {
   min-height: 100vh;
   overflow: hidden scroll;
   word-wrap: break-word;
-  min-width: 100%;
 }
 
 p {
@@ -18,12 +17,12 @@ h1,h2,h3 {
 }
 
 main {
-  width: 90vw;
+  flex: 1;
+  width: 90%;
 }
 
 pre>code,main,#m {
   display: block;
-  flex: 1;
   margin: 10px auto 40px;
   max-width: 52ch;
   padding: 0 10px;
