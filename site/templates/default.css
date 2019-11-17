@@ -31,7 +31,8 @@ pre>code,main,#m {
 pre>code {
   background: #000;
   color: #eee;
-  font: 100%/1.6 Consolas,monospace;
+  font-family: Consolas,monospace;
+  font-weight: normal;
   left: 50%;
   max-width: 90ch;
   padding: 20px;
