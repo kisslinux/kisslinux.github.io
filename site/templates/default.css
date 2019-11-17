@@ -39,7 +39,7 @@ pre>code {
   position: relative;
   transform: translateX(-50%);
   white-space: pre-wrap;
-  width: calc(100vw - 50px);
+  width: calc(90vw - 40px);
 }
 
 code {
