@@ -12,7 +12,6 @@ May you find what you are looking for.
 * [What init system is used?](#what-init-system-is-used)
 * [Is full disk encryption supported?](#is-full-disk-encryption-supported)
 * [Are USE flags supported?](#are-use-flags-supported)
-* [How can I easily fork a package?](#how-can-i-easily-fork-a-package)
 
 <!-- vim-markdown-toc -->
 
@@ -35,17 +34,3 @@ See: [kernel.org](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux
 No.
 
 Package customization is done through local repositories which enable full flexibility while keeping the package format, package manager and package build files **simple**.
-
-## How can I easily fork a package?
-
-```
-# Create your own repository.
-mkdir -p /path/to/myrepo
-
-# Add it to 'KISS_PATH'.
-# To make this permanent, add it to your '.profile' or '.shellrc'.
-export KISS_PATH="/path/to/myrepo:$KISS_PATH
-
-# Fork the package.
-cp -r "$(kiss s pkg_name)" /path/to/myrepo
-```
