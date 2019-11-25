@@ -37,7 +37,9 @@ sed ':a;N;$!ba;s/\n//g;s/: /:/g;s/ {  /{/g;s/;  /;/g;s/;}/}/g' \
 } ||:
 
 # Iterate over each file in the source tree under /site/.
-(cd ../site; find . -type f -a -not -path '*/\.*') |
+(cd ../site; find . -type f \
+        -a -not -path '*/\.*' \
+        -a -not -path './templates/*') |
 
 while read -r page; do
     mkdir -p "${page%/*}"
