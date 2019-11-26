@@ -259,7 +259,7 @@ The Linux kernel is **not** managed by the package manager. The kernel is manage
 
 ### Download the kernel sources
 
-The following commands imply the `5.3.10` vanilla kernel. If you have chosen a different kernel, the commands are identical minus naming differences.
+The following commands imply the `5.4` vanilla kernel. If you have chosen a different kernel, the commands are identical minus naming differences.
 
 More kernel releases:
 
@@ -270,11 +270,11 @@ A larger list of kernels can be found on the [Arch Wiki](https://wiki.archlinux.
 
 
 ```
--> wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.3.10.tar.xz
+-> wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.4.tar.xz
 
 # Extract the kernel sources.
--> tar xvf linux-5.3.10.tar.xz
--> cd linux-5.3.10
+-> tar xvf linux-5.4.tar.xz
+-> cd linux-5.4
 ```
 
 ### Download firmware blobs (*if required*)
@@ -341,7 +341,7 @@ This may take a while to complete. The compilation time depends on your hardware
 
 # Rename the kernel.
 # Substitute VERSION for the kernel version you have built.
-# Example: 'vmlinuz-5.3.10'
+# Example: 'vmlinuz-5.4'
 -> mv /boot/vmlinuz /boot/vmlinuz-VERSION
 -> mv /boot/System.map /boot/System.map-VERSION
 ```
