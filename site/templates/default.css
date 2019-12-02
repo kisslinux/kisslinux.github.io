@@ -103,3 +103,8 @@ li+li {
 li>ul {
   margin: 5px 0 15px;
 }
+
+p {
+  margin: 16px auto;
+}
+
