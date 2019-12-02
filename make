@@ -28,7 +28,7 @@ sed ':a;N;$!ba;s/\n//g;s/: /:/g;s/ {  /{/g;s/;  /;/g;s/;}/}/g' \
     ../site/templates/default.css > ../site/templates/default.css.min
 
 # Pull down the latest Wiki.
-{
+[ "$USER" = goldie ] || {
     git clone --depth 1 \
         https://github.com/kisslinux/wiki.wiki.git ../site/wiki
 
