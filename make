@@ -12,8 +12,8 @@ mk() {
            --no-highlight \
            --template=../site/templates/default.html \
            -H ../site/templates/default.css.min \
-           "../site/$page" \
-           > "${page%%.md}.html"
+           "../site/$page" |
+           sed ':a;N;$!ba;s|>\s*<|><|g' > "${page%%.md}.html"
 
     printf '%s\n' "CC $page"
 }
