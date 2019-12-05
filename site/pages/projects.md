@@ -33,11 +33,11 @@ An itsy bitsy floating window manager.
 **Source**: <https://github.com/dylanaraps/sowm>
 
 
-## fff
+## eiwd
 
-A simple file manager written in bash.
+A fork of [iwd](https://lwn.net/Articles/770991/) which runs without DBUS.
 
-**Source**: <https://github.com/dylanaraps/fff>
+**Source**: <https://github.com/dylanaraps/eiwd>>
 
 
 ## The Pure bash Bible
@@ -52,6 +52,15 @@ A collection of pure bash alternatives to external processes.
 A collection of pure POSIX sh alternatives to external processes.
 
 **Source**: <https://github.com/dylanaraps/pure-sh-bible>
+
+
+
+
+## fff
+
+A simple file manager written in bash.
+
+**Source**: <https://github.com/dylanaraps/fff>
 
 
 ## paleta
