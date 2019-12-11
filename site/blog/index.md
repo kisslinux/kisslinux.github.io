@@ -7,6 +7,7 @@ RSS Feed available here: <https://getkiss.org/blog/blog.xml>
 ## Index
 
 <ul style="padding:0">
+<li><a href="/blog/20191211a">11/12/2019: This week in KISS (#4)</a></li>
 <li><a href="/blog/20191202a">02/12/2019: This week in KISS (#3)</a></li>
 <li><a href="/blog/20191124a">24/11/2019: This week in KISS (#2)</a></li>
 <li><a href="/blog/20191117a">17/11/2019: This week in KISS (#1)</a></li>
