@@ -145,7 +145,7 @@ Welcome to the KISS package manager! These two commands are how individual packa
 
 ### Import my (*[Dylan Araps](/pages/team)*) key
 
-If the GNU keyserver fails on your network, you can try an alternative mirror ([pgp.mit.edu](pgp.mit.edu) for example).
+If the GNU keyserver fails on your network, you can try an alternative mirror ([pgp.mit.edu](http://pgp.mit.edu) for example).
 
 ```
 # Import my public key.
