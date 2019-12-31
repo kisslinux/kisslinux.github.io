@@ -354,6 +354,8 @@ This bootloader was chosen as most people are *familiar* with it, both BIOS and 
 
 **NOTE**: If using UEFI, the `efivars` filesystem may need to be mounted. See: [Mounting UEFI variables](/wiki/Mounting-UEFI-variables)
 
+**NOTE**: It is recommended to create /etc/fstab by UUID and additionally passing the PARTUUID to the kernel by adding GRUB_CMDLINE_LINUX_DEFAULT="rootroot=PARTUUID=$PARTUID_HERE" to /etc/default/grub
+
 ### Build and install grub
 
 ```
