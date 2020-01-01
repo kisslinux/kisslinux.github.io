@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
- <title>KISS Linux News</title>
- <description>An independent Linux® distribution with a focus on simplicity and the concept of "less is more". The distribution currently targets the x86-64 architecture and the English language.</description>
- <link>https://getkiss.org</link>
- <ttl>1800</ttl>
- <atom:link href="https://getkiss.org/news/news.xml" rel="self" type="application/rss+xml" />
+
+<title>KISS Linux News</title>
+<description>An independent Linux® distribution with a focus on simplicity and the concept of "less is more". The distribution currently targets the x86-64 architecture and the English language.</description>
+<link>https://getkiss.org</link>
+<ttl>1800</ttl>
+<atom:link href="https://getkiss.org/news/news.xml" rel="self" type="application/rss+xml"/>
+<item>
+<title>01/01/2020: Firefox privacy changes moved to firefox-privacy</title>
+<description>The vendor.js and policies.json files KISS uses to harden and prevent Firefox from phoning home are now opt-in and optional.</description>
+<link>https://getkiss.org/news/20200101a/</link>
+<guid isPermaLink="true">https://getkiss.org/news/20200101a/</guid>
+<pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+</item>
 
 <item>
 <title>05/11/2019: The Wiki is live</title>
