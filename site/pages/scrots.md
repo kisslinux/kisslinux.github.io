@@ -17,6 +17,7 @@ Want to include a screenshot below?, [get in touch](https://getkiss.org/pages/co
 * [Niko Tidar Lantang Perkasa (nikotidar)](#niko-tidar-lantang-perkasa-nikotidar)
 * [Phillip L (p410n3)](#phillip-l-p410n3)
 * [Adam Schaefers (a-schaefers)](#adam-schaefers-a-schaefers)
+* [Matthew W (sirtomato999)](#matthew-w-sirtomato999)
 
 <!-- vim-markdown-toc -->
 
@@ -82,5 +83,14 @@ Want to include a screenshot below?, [get in touch](https://getkiss.org/pages/co
 <p><picture>
   <source srcset="/images/adam01.webp" type="image/webp">
   <img src="/images/adam01.jpg" alt="adam01">
+</picture></p>
+</a>
+
+## Matthew W ([sirtomato999](https://github.com/sirtomato999))
+
+<a href="/images/sirtomato.jpg">
+<p><picture>
+  <source srcset="/images/sirtomato.webp" type="image/webp">
+  <img src="/images/sirtomato.jpg" alt="sirtomato">
 </picture></p>
 </a>
