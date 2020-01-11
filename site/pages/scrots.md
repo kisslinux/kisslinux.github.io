@@ -18,6 +18,7 @@ Want to include a screenshot below?, [get in touch](https://getkiss.org/pages/co
 * [Phillip L (p410n3)](#phillip-l-p410n3)
 * [Adam Schaefers (a-schaefers)](#adam-schaefers-a-schaefers)
 * [Matthew W (sirtomato999)](#matthew-w-sirtomato999)
+* [Aaron G](#aaron-g)
 
 <!-- vim-markdown-toc -->
 
@@ -92,5 +93,13 @@ Want to include a screenshot below?, [get in touch](https://getkiss.org/pages/co
 <p><picture>
   <source srcset="/images/sirtomato.webp" type="image/webp">
   <img src="/images/sirtomato.jpg" alt="sirtomato">
+</picture></p>
+</a>
+
+## Aaron G
+
+<a href="/images/aarong.png">
+<p><picture>
+  <img src="/images/aarong.png" alt="aarong">
 </picture></p>
 </a>
