@@ -109,6 +109,6 @@ Want to include a screenshot below?, [get in touch](https://getkiss.org/pages/co
 
 <a href="/images/icyphox.jpg">
 <p><picture>
-  <img src="/images/icyphox.png" alt="icyphox">
+  <img src="/images/icyphox.jpg" alt="icyphox">
 </picture></p>
 </a>
