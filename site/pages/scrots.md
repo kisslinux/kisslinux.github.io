@@ -19,6 +19,7 @@ Want to include a screenshot below?, [get in touch](https://getkiss.org/pages/co
 * [Adam Schaefers (a-schaefers)](#adam-schaefers-a-schaefers)
 * [Matthew W (sirtomato999)](#matthew-w-sirtomato999)
 * [Aaron G](#aaron-g)
+* [Anirudh (icyphox)](#anirudh-icyphox)
 
 <!-- vim-markdown-toc -->
 
@@ -101,5 +102,13 @@ Want to include a screenshot below?, [get in touch](https://getkiss.org/pages/co
 <a href="/images/aarong.png">
 <p><picture>
   <img src="/images/aarong.png" alt="aarong">
+</picture></p>
+</a>
+
+## Anirudh ([icyphox](https://icyphox.sh))
+
+<a href="/images/icyphox.jpg">
+<p><picture>
+  <img src="/images/icyphox.png" alt="icyphox">
 </picture></p>
 </a>
