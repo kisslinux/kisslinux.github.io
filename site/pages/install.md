@@ -426,7 +426,7 @@ The KISS community repository is maintained by users of the distribution and con
 
 ## Install Xorg (*optional*)
 
-To install Xorg, the input drivers and a basic default set of fonts, run the following command.
+To install Xorg, the input drivers and a basic default set of fonts, run the following commands.
 
 ```
 -> kiss b xorg-server xinit xf86-input-libinput
