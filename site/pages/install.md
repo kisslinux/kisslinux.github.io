@@ -47,7 +47,10 @@ From this point on, the guide assumes you have booted a live-CD and have an **in
     * [Build and install grub](#build-and-install-grub)
     * [Setup grub](#setup-grub)
 * [Install init scripts](#install-init-scripts)
+* [Add a normal user (*recommended*)](#add-a-normal-user-recommended)
 * [Enable the community repository](#enable-the-community-repository)
+* [Install Xorg (*optional*)](#install-xorg-optional)
+    * [Add your user to the relevant groups](#add-your-user-to-the-relevant-groups)
 * [Further steps](#further-steps)
 
 <!-- vim-markdown-toc -->
@@ -390,6 +393,12 @@ Source code: <https://github.com/kisslinux/kiss-init>
 -> kiss i baseinit
 ```
 
+## Add a normal user (*recommended*)
+
+```
+-> adduser USERNAME
+```
+
 ## Enable the community repository
 
 The KISS community repository is maintained by users of the distribution and contains packages which aren't in the main repositories. This repository is disabled by default as it is not maintained by the KISS developers.
@@ -415,9 +424,28 @@ The KISS community repository is maintained by users of the distribution and con
 -> sh -l
 ```
 
+## Install Xorg (*optional*)
+
+To install Xorg, the input drivers and a basic default set of fonts, run the following command.
+
+```
+-> kiss b xorg-server xinit xf86-input-libinput liberation-fonts
+```
+
+### Add your user to the relevant groups
+
+**NOTE**: This groups based permissions model may not be suitable if KISS will be used as a multi-seat system. Further configuration can be done at your own discretion.
+
+```
+# Replace 'USERNAME' with the name of the
+# user created above.
+-> addgroup USERNAME video
+-> addgroup USERNAME input
+```
+
 ## Further steps
 
-You should now be able to reboot into your KISS installation. Typical configuration should follow (*hostname, creation of users, service configuration etc*).
+You should now be able to reboot into your KISS installation. Typical configuration should follow (*hostname, creation of users, service configuration, installing a window manager, terminal etc*).
 
 If you encountered any issues, don't hesitate to open an issue on one of our GitHub repositories, post on the [subreddit](https://reddit.com/r/kisslinux) or join the IRC server.
 
