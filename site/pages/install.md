@@ -429,7 +429,12 @@ The KISS community repository is maintained by users of the distribution and con
 To install Xorg, the input drivers and a basic default set of fonts, run the following command.
 
 ```
--> kiss b xorg-server xinit xf86-input-libinput liberation-fonts
+-> kiss b xorg-server xinit xf86-input-libinput
+
+# Installing a base font is recommended as Xorg
+# and applications require fonts to function.
+-> kiss b liberation-fonts
+-> kiss i liberation-fonts
 ```
 
 ### Add your user to the relevant groups
