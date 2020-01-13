@@ -8,6 +8,13 @@
 <ttl>1800</ttl>
 <atom:link href="https://getkiss.org/news/news.xml" rel="self" type="application/rss+xml"/>
 <item>
+<title>14/01/2020: Firefox binaries now available</title>
+<description>Binaries for Firefox are now available in the official repositories under the package name firefox-bin.</description>
+<link>https://getkiss.org/news/20200114a/</link>
+<guid isPermaLink="true">https://getkiss.org/news/20200114a/</guid>
+<pubDate>Tue, 14 Jan 2020 00:00:00 +0000</pubDate>
+</item>
+<item>
 <title>01/01/2020: Firefox privacy changes moved to firefox-privacy</title>
 <description>The vendor.js and policies.json files KISS uses to harden and prevent Firefox from phoning home are now opt-in and optional.</description>
 <link>https://getkiss.org/news/20200101a/</link>
