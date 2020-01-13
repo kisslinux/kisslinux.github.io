@@ -7,6 +7,7 @@ RSS Feed available here: <https://getkiss.org/news/news.xml>
 ## Index
 
 <ul style="padding:0">
+<li><a href=/news/20200114a.html>14/01/2020: Firefox binaries now available</a></li>
 <li><a href=/news/20200101a.html>01/01/2020: Firefox privacy changes moved to firefox-privacy</a></li>
 <li><a href='/news/20191105a.html'>05/11/2019: The Wiki is live</a></li>
 <li><a href='/news/20191031a.html'>31/10/2019: ninja replaced by samurai</a></li>
