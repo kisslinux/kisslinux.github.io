@@ -35,3 +35,7 @@ Here's what people are saying about KISS!
 > Literally the opposite of KISS. At lest don't use hypocritical excuses for your crusades.
 
 > Hi! I just wanted to let you know that, while the name is funny enough in English, it gets even better in Swedish: "kiss" is a synonym for "piss", and even the website translates to goatpiss.org. Have a nice day!
+
+> KISS Linux is a really interesting effort and a sign, IMO, of a healthy ecosystem, so I commend Dylan and other contributors for their efforts. Great to hear about the aarch64/ppc64le support too!
+
+> Ok, what’s your point. You have have musl and libc on a system. Not to mention the developer of kids is a outspoken anti systemd fud spreader.
