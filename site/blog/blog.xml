@@ -7,6 +7,13 @@
 <ttl>1800</ttl>
 <atom:link href="https://getkiss.org/blog/blog.xml" rel="self" type="application/rss+xml" />
 <item>
+<title>18/01/2020: This week in KISS (#7)</title>
+<description>Lots of interesting changes this week. A big thank you to everyone involved.</description>
+<link>https://getkiss.org/blog/20200118a/</link>
+<guid isPermaLink="true">https://getkiss.org/blog/20200118a/</guid>
+<pubDate>Sat, 18 Jan 2020 00:00:00 +0000</pubDate>
+</item>
+<item>
 <title>11/01/2020: This week in KISS (#6)</title>
 <description>The focus this week was on increasing the portability of the boot scripts. This involved adding new "generic" hooks and removing any non-portable flags.</description>
 <link>https://getkiss.org/blog/20200111a/</link>
