@@ -46,7 +46,6 @@ Want to include a screenshot below?, [get in touch](https://getkiss.org/pages/co
 
 <a href="/images/nestman01.jpg">
 <p><picture>
-  <source srcset="/images/nestman01.webp" type="image/webp">
   <img src="/images/nestman01.jpg" alt="nestman-01">
 </picture></p>
 </a>
