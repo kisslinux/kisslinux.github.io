@@ -216,6 +216,9 @@ Running `kiss build` without specifying packages will start a rebuild of all ins
 
 Each `kiss` action (build, install, etc) has a shorthand alias. From now on, `kiss b` and `kiss i` will be used in place of `kiss build` and `kiss install`.
 
+**NOTE**: The software below is **required** unless otherwise stated.
+
+
 ### Filesystems
 
 ```
