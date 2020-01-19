@@ -39,3 +39,6 @@ Here's what people are saying about KISS!
 > KISS Linux is a really interesting effort and a sign, IMO, of a healthy ecosystem, so I commend Dylan and other contributors for their efforts. Great to hear about the aarch64/ppc64le support too!
 
 > Ok, what’s your point. You have have musl and libc on a system. Not to mention the developer of kids is a outspoken anti systemd fud spreader.
+
+> The strength of being simple and small is that I'm in control of my own system. When my package manager or init daemon is doing something wrong, or is not behaving how I expected it, I can just open the shell script and find out why in a few minutes.
+
