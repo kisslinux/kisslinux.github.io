@@ -20,7 +20,7 @@ main {
 pre>code,main,#m {
   display: block;
   margin: 10px auto 40px;
-  max-width: 52ch;
+  max-width: 60ch;
   padding: 0 10px;
 }
 
