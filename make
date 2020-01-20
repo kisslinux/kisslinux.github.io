@@ -3,15 +3,13 @@
 # Simple static site builder.
 
 # Convert the markdown page to HTML and insert it
-# into the template. Also bring in the CSS and minify
-# the HTML.
+# into the template.
 mk() {
     pandoc -t html5 \
            "$@" \
            --strip-comments \
            --no-highlight \
            --template=../site/templates/default.html \
-           -H ../site/templates/default.css.min \
            "../site/$page" |
            sed ':a;N;$!ba;s|>\s*<|><|g' > "${page%%.md}.html"
 
@@ -22,10 +20,6 @@ mk() {
 rm    -rf .www site/wiki
 mkdir -p  .www
 cd        .www
-
-# Minify the CSS using sed.
-sed ':a;N;$!ba;s/\n//g;s/: /:/g;s/ {  /{/g;s/;  /;/g;s/;}/}/g' \
-    ../site/templates/default.css > ../site/templates/default.css.min
 
 # Pull down the latest Wiki.
 [ "$USER" = goldie ] || {
