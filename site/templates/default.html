@@ -9,7 +9,7 @@
 <meta name=viewport content="width=device-width,initial-scale=1.0">
 
 <style>
-img{max-width:500px}
+img{max-width:100%}
 nav li{display:inline-block;margin-right:16px}
 body{line-height:1.6;font-family:monospace,monospace;font-size:16px}
 main,nav,img{max-width:80ch}
@@ -23,6 +23,8 @@ ul{padding:0;list-style:none}
 ul>li::before{float:left;width:1ch;margin-right:1ch;content:"-"}
 li>ul{margin-left:4ch}
 pre>code{display:block;margin-left:4ch}
+code::before,code::after{content:"`"}
+pre>code::before,pre>code::after{content:""}
 a{text-decoration:none}
 a:hover{border-bottom:1px solid}
 </style>
