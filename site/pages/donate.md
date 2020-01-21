@@ -14,5 +14,5 @@ You can support development of KISS by sending a donation to the link below.
 <a href="https://teespring.com/kiss0?pid=389">
 <img src="/images/tee.png" style='max-width:250px'>
 
-Support KISS by buying a T-shirt today!
+Support KISS by buying a T-shirt or sticker today!
 </a>
