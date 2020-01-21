@@ -16,7 +16,8 @@ main{max-width:80ch}
 h1,h2,h3{font-size:inherit}
 h1{display:table;overflow:hidden;padding-bottom:16px;position:relative}
 h1:after{content:"================================================================================";position:absolute;bottom:0;left:0;height:16px;width:100%;overflow:hidden;word-break:break-all}
-ul{padding:0}
+ul{padding:0;list-style:none}
+ul>li::before{float:left;width:1ch;margin-left:-4ch;margin-right:1ch;content:"-"}
 </style>
 
 <nav>
