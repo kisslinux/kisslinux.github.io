@@ -226,6 +226,10 @@ Each `kiss` action (build, install, etc) has a shorthand alias. From now on, `ki
 -> kiss b e2fsprogs
 -> kiss i e2fsprogs
 
+# fat, vfat and friends (Only needed for UEFI).
+-> kiss b dosfstools
+-> kiss i dosfstools
+
 # Open an issue for additional filesystem support.
 # Additional filesystems will go here.
 ```
