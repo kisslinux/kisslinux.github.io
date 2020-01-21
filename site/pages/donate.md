@@ -8,3 +8,11 @@ You can support development of KISS by sending a donation to the link below.
 
 - <https://patreon.com/dyla> (Dylan Araps)
 - [Paypal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=V7QNJNKS3WYVS) (Dylan Araps)
+
+### Merch
+
+<a href="https://teespring.com/kiss0?pid=389">
+<img src="/img/tee.png">
+
+Support KISS by buying a T-shirt today!
+</a>
