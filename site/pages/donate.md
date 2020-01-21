@@ -13,7 +13,7 @@ You can support development of KISS by sending a donation to the link below.
 
 <a href="https://teespring.com/kiss0?pid=389">
 <img src="/images/tee.png" style='max-width:250px'>
-<img src="/images/New.gif">
+<img src="https://web.archive.org/web/20000919131305/http://www.geocities.com:80/valerina_scout/img/New.gif">
 
 Support KISS by buying a T-shirt or sticker today!
 </a>
