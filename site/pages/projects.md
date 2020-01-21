@@ -37,7 +37,7 @@ An itsy bitsy floating window manager.
 
 A fork of [iwd](https://lwn.net/Articles/770991/) which runs without DBUS.
 
-**Source**: <https://github.com/dylanaraps/eiwd>>
+**Source**: <https://github.com/dylanaraps/eiwd>
 
 
 ## The Pure bash Bible
