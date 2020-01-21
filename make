@@ -5,7 +5,7 @@
 # Convert the markdown page to HTML and insert it
 # into the template.
 mk() {
-    pandoc -t html5 \
+    pandoc -f markdown-smart -t html5 \
            "$@" \
            --strip-comments \
            --no-highlight \
