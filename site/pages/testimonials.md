@@ -42,3 +42,4 @@ Here's what people are saying about KISS!
 
 > The strength of being simple and small is that I'm in control of my own system. When my package manager or init daemon is doing something wrong, or is not behaving how I expected it, I can just open the shell script and find out why in a few minutes.
 
+> One nice thing about KISS is that everything is hackable and the system is small enough, such that mere mortals can wrap their heads around it.
