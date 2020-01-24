@@ -88,9 +88,14 @@ while read -r page; do
             mk
 
             {
-                printf '<table style="width:100%%;overflow-x:auto;">'
-                printf '<tr><th>%s</th><th>%s</th><th>%s</th></tr>' \
-                    '<b>Package</b>' '<b>Version</b>' '<b>Maintainer</b>'
+cat <<EOF
+<br><table style="width:100%%;overflow-x:auto;">
+<tr>
+<th style='float:left'><b>Package</b></th>
+<th style='float:left'><b>Version</b></th>
+<th style='float:right'><b>Maintainer</b></th>
+</tr>
+EOF
 
                 sort packages/db |
 
@@ -101,7 +106,7 @@ cat <<EOF
 <tr>
 <td><a href=https://github.com/kisslinux/$repo/tree/master/$pkg>$pkg</a></td>
 <td>$(echo "$ver" | cut -c 1-10)</td>
-<td><a href='mailto:$ema'>$aut</a></td>
+<td style='float:right'><a href='mailto:$ema'>$aut</a></td>
 </tr>
 EOF
                 done
