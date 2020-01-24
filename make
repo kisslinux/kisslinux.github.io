@@ -88,7 +88,7 @@ while read -r page; do
             mk
 
             {
-                printf '<table>\n'
+                printf '<table style="width:100%%">\n'
 
                 while IFS='	' read -r pkg ver _ aut ema || [ "$pkg" ]; do
                     [ "${pkg%/*}" = community ] && repo=community || repo=repo
@@ -96,7 +96,7 @@ while read -r page; do
 cat <<EOF
 <tr>
 <td><a href=https://github.com/kisslinux/$repo/tree/master/$pkg>$pkg</a></td>
-<td>$(echo "$ver" | cut -c 1-10))</td>
+<td>$(echo "$ver" | cut -c 1-10)</td>
 <td><a href='mailto:$ema'>$aut</a></td>
 </tr>
 EOF
