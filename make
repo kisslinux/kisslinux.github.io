@@ -35,6 +35,8 @@ cd        .www
     git clone https://github.com/kisslinux/repo
     git clone https://github.com/kisslinux/community
 
+    (cd community && git fetch --unshallow)
+
     for file in repo/*/*/version; do
         printf '%s\tDylan Araps\tdylan.araps@gmail.com\n' "${file%/*}"
     done > authors
