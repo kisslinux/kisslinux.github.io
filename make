@@ -95,7 +95,7 @@ while read -r page; do
 
 cat <<EOF
 <li><a href=https://github.com/kisslinux/$repo/tree/master/$pkg>$pkg</a>
- ($ver)<span style='float:right'>$aut</span></li>
+ ($(echo "$ver" | cut -c 1-10)) $aut</li>
 EOF
                 done < packages/db
 
