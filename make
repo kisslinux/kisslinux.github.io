@@ -41,9 +41,11 @@ cd        .www
 
     for file in community/*/*/version; do
         author=$(git log -1 --format="tformat:%an	%ae" "$file")
-
+        git log -1 --format="tformat:%an	%ae" "$file" >&2
         printf '%s\t%s\n' "${file%/*}" "$author"
     done >> authors
+
+    rm -rf repo community
 } ||:
 
 # Iterate over each file in the source tree under /site/.
