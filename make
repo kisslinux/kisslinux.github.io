@@ -35,18 +35,14 @@ cd        .www
     git clone https://github.com/kisslinux/repo
     git clone https://github.com/kisslinux/community
 
-    (cd community && git fetch --unshallow)
-
     for file in repo/*/*/version; do
         printf '%s\tDylan Araps\tdylan.araps@gmail.com\n' "${file%/*}"
     done > authors
 
-    for file in community/*/*/version; do
-        printf '%s\n' "$file" >&2
-
+    (cd community; for file in */*/version; do
         author=$(git log -1 --format="tformat:%an	%ae" "$file")
         printf '%s\t%s\n' "${file%/*}" "$author"
-    done >> authors
+    done) >> authors
 
     rm -rf repo community
 } ||:
