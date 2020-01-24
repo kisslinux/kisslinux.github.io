@@ -90,11 +90,12 @@ while read -r page; do
             {
                 printf '<ul>\n'
 
-                while read -r pkg ver _ aut _ || [ "$pkg" ]; do
+                while IFS='	' read -r pkg ver _ aut _ || [ "$pkg" ]; do
                     [ "${pkg%/*}" = community ] && repo=community || repo=repo
 
 cat <<EOF
-<li><a href=https://github.com/kisslinux/$repo/tree/master/$pkg>$pkg</a>($ver) $aut</li>
+<li><a href=https://github.com/kisslinux/$repo/tree/master/$pkg>$pkg</a>
+ ($ver)<span style='float:right'>$aut</span></li>
 EOF
                 done < packages/db
 
