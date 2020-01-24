@@ -37,13 +37,13 @@ cd        .www
 
     for file in repo/*/*/version; do
         printf '%s\t%s\n' "${file%/*}" "Dylan Araps	dylan.araps@gmail.com"
-    done > authors-community
+    done > authors-repo
 
     for file in community/*/*/version; do
         author=$(git log -1 --format="tformat:%an	%ae" "$file")
 
         printf '%s\t%s\n' "${file%/*}" "$author"
-    done > authors-repo
+    done > authors-community
 }
 
 # Iterate over each file in the source tree under /site/.
