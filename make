@@ -91,8 +91,8 @@ while read -r page; do
 cat <<EOF
 <br><table style="width:100%;overflow-x:auto;">
 <tr>
-<th><b>Package</b></th>
-<th><b>Version</b></th>
+<th style='float:left'><b>Package</b></th>
+<th style='text-align:left'><b>Version</b></th>
 <th style='text-align:right'><b>Maintainer</b></th>
 </tr>
 EOF
