@@ -82,6 +82,30 @@ while read -r page; do
                --from markdown-markdown_in_html_blocks-raw_html
         ;;
 
+        # Handle the packages list differently. It requires some generation
+        # to turn the database file into HTML.
+        *packages/index.md*)
+            mk
+
+            {
+                printf '<ul>\n'
+
+                while read -r pkg ver _ aut _ || [ "$pkg" ]; do
+                    [ "${pkg%/*}" = community ] && repo=community || repo=repo
+
+cat <<EOF
+<li><a href=https://github.com/kisslinux/$repo/tree/master/$pkg>$pkg</a>($ver) $aut</li>
+EOF
+                done < packages/db
+
+                printf '</ul>\n'
+            } |
+
+            # RIP cats
+            # sed -i "s🐱%%PKG%%🐱$(cat)🐱" packages/index.html
+            sed -i '/%%PKG%%/r /dev/stdin' packages/index.html
+        ;;
+
         *.md) mk ;;
 
         # Copy over any images or non-markdown files.
