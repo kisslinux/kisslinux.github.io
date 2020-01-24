@@ -93,7 +93,7 @@ cat <<EOF
 <tr>
 <th><b>Package</b></th>
 <th><b>Version</b></th>
-<th style='float:right'><b>Maintainer</b></th>
+<th style='text-align:right'><b>Maintainer</b></th>
 </tr>
 EOF
 
@@ -106,7 +106,7 @@ cat <<EOF
 <tr>
 <td><a href=https://github.com/kisslinux/$repo/tree/master/$pkg>$pkg</a></td>
 <td>$(echo "$ver" | cut -c 1-10)</td>
-<td style='float:right'><a href='mailto:$ema'>$aut</a></td>
+<td style='text-align:right'><a href='mailto:$ema'>$aut</a></td>
 </tr>
 EOF
                 done
