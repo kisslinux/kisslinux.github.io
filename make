@@ -88,18 +88,21 @@ while read -r page; do
             mk
 
             {
-                printf '<ul>\n'
+                printf '<table>\n'
 
-                while IFS='	' read -r pkg ver _ aut _ || [ "$pkg" ]; do
+                while IFS='	' read -r pkg ver _ aut ema || [ "$pkg" ]; do
                     [ "${pkg%/*}" = community ] && repo=community || repo=repo
 
 cat <<EOF
-<li><a href=https://github.com/kisslinux/$repo/tree/master/$pkg>$pkg</a>
- ($(echo "$ver" | cut -c 1-10)) $aut</li>
+<tr>
+<td><a href=https://github.com/kisslinux/$repo/tree/master/$pkg>$pkg</a></td>
+<td>$(echo "$ver" | cut -c 1-10))</td>
+<td><a href='mailto:$ema'>$aut</a></td>
+</tr>
 EOF
                 done < packages/db
 
-                printf '</ul>\n'
+                printf '</table>\n'
             } |
 
             # RIP cats
