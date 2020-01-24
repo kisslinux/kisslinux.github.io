@@ -117,7 +117,7 @@ EOF
             sed -i '/%%PKG%%/r /dev/stdin'\
                 packages/index.html
 
-            sed -i "s/%%PKG%%/<p>Last updated: $(date)<\/p>/" \
+            sed -i "s/%%DATE%%/$(date)/;s/%%PKG%%//" \
                 packages/index.html
         ;;
 
