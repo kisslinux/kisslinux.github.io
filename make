@@ -40,8 +40,9 @@ cd        .www
     done > authors
 
     for file in community/*/*/version; do
+        printf '%s\n' "$file" >&2
+
         author=$(git log -1 --format="tformat:%an	%ae" "$file")
-        git log -1 --format="tformat:%an	%ae" "$file" >&2
         printf '%s\t%s\n' "${file%/*}" "$author"
     done >> authors
 
