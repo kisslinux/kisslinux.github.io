@@ -90,6 +90,8 @@ while read -r page; do
             {
                 printf '<table style="width:100%%">\n'
 
+                sort packages/db |
+
                 while IFS='	' read -r pkg ver _ aut ema || [ "$pkg" ]; do
                     [ "${pkg%/*}" = community ] && repo=community || repo=repo
 
@@ -100,7 +102,7 @@ cat <<EOF
 <td><a href='mailto:$ema'>$aut</a></td>
 </tr>
 EOF
-                done < packages/db
+                done
 
                 printf '</table>\n'
             } |
