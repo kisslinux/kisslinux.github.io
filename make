@@ -88,7 +88,9 @@ while read -r page; do
             mk
 
             {
-                printf '<table style="width:100%%;overflow-x:auto;">\n'
+                printf '<table style="width:100%%;overflow-x:auto;">'
+                printf '<tr><th>%s</th><th>%s</th><th>%s</th></tr>' \
+                    '<b>Package</b>' '<b>Version</b>' '<b>Maintainer</b>'
 
                 sort packages/db |
 
@@ -104,7 +106,7 @@ cat <<EOF
 EOF
                 done
 
-                printf '</table>\n'
+                printf '</table>'
             } |
 
             sed -i '/%%PKG%%/r /dev/stdin'\
