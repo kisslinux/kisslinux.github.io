@@ -17,6 +17,9 @@ mk() {
 }
 
 repo() {
+    # This function clones the desired repository and
+    # generates an easily parseable file for use in the
+    # /packages page.
     git clone "https://github.com/kisslinux/$1"
 
     (cd "$1"; for file in */*/version; do
@@ -25,7 +28,7 @@ repo() {
 
         [ -z "${source##*://*}" ] || source=null
 
-        if [ "$2" ]; then
+        if [ "$1" = repo ]; then
             author="Dylan Araps	dylan.araps@gmail.com"
         else
             author=$(git log -1 --format="tformat:%an	%ae" "$file")
@@ -43,18 +46,16 @@ rm    -rf .www site/wiki
 mkdir -p  .www
 cd        .www
 
-# Pull down the latest Wiki.
 [ "$USER" = goldie ] || {
+    # Pull down the latest Wiki. {
     git clone --depth 1 \
         https://github.com/kisslinux/wiki.wiki.git ../site/wiki
 
     mv -f  ../site/wiki/Home.md ../site/wiki/index.md
     rm -rf ../site/wiki/.git
-} ||:
 
-# Generate maintainer lists.
-[ "$USER" = goldie ] || {
-    repo repo dylan
+    # Generate maintainer lists.
+    repo repo
     repo community
 } ||:
 
