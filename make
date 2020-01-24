@@ -36,15 +36,15 @@ cd        .www
     git clone https://github.com/kisslinux/community
 
     for file in repo/*/*/version; do
-        printf '%s\t%s\n' "${file%/*}" "Dylan Araps	dylan.araps@gmail.com"
-    done > authors-repo
+        printf '%s\tDylan Araps\tdylan.araps@gmail.com\n' "${file%/*}"
+    done > authors
 
     for file in community/*/*/version; do
         author=$(git log -1 --format="tformat:%an	%ae" "$file")
 
         printf '%s\t%s\n' "${file%/*}" "$author"
-    done > authors-community
-}
+    done >> authors
+} ||:
 
 # Iterate over each file in the source tree under /site/.
 (cd ../site; find . -type f \
