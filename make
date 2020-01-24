@@ -33,7 +33,7 @@ repo() {
 
         printf '%s\t%s\t%s\t%s\n' \
             "${file%/*}" "$version" "$source" "$author"
-    done) >> packages
+    done) >> pkgdb
 
     rm -rf "$1"
 }
