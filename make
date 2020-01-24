@@ -35,9 +35,9 @@ cd        .www
     git clone https://github.com/kisslinux/repo
     git clone https://github.com/kisslinux/community
 
-    for file in repo/*/*/version; do
+    (cd repo; for file in */*/version; do
         printf '%s\tDylan Araps\tdylan.araps@gmail.com\n' "${file%/*}"
-    done > authors
+    done) > authors
 
     (cd community; for file in */*/version; do
         author=$(git log -1 --format="tformat:%an	%ae" "$file")
