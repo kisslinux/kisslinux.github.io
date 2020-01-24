@@ -89,7 +89,7 @@ while read -r page; do
 
             {
 cat <<EOF
-<br><table style="width:100%;overflow-x:auto;">
+<br><table style="width:80ch">
 <tr>
 <th style='float:left'><b>Package</b></th>
 <th style='text-align:left'><b>Version</b></th>
