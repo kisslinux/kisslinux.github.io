@@ -88,7 +88,7 @@ while read -r page; do
             mk
 
             {
-                printf '<table style="width:100%%">\n'
+                printf '<table style="width:100%%;overflow-x:auto;">\n'
 
                 sort packages/db |
 
