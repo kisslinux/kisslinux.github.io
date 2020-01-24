@@ -104,8 +104,8 @@ EOF
 
             # RIP cats
             # sed -i "s🐱%%PKG%%🐱$(cat)🐱" packages/index.html
-            sed -i '/%%PKG%%/r /dev/stdin'       packages/index.html
-            sed -i "s/%%PKG%%/Updated: $(date)/" packages/index.html
+            sed -i '/%%PKG%%/r /dev/stdin'            packages/index.html
+            sed -i "s/%%PKG%%/Last updated: $(date)/" packages/index.html
         ;;
 
         *.md) mk ;;
