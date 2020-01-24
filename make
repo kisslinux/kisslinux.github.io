@@ -30,6 +30,22 @@ cd        .www
     rm -rf ../site/wiki/.git
 } ||:
 
+# Generate maintainer lists.
+[ "$USER" = goldie ] || {
+    git clone https://github.com/kisslinux/repo
+    git clone https://github.com/kisslinux/community
+
+    for file in repo/*/*/version; do
+        printf '%s\t%s\n' "${file%/*}" "Dylan Araps	dylan.araps@gmail.com"
+    done > authors-community
+
+    for file in community/*/*/version; do
+        author=$(git log -1 --format="tformat:%an	%ae" "$file")
+
+        printf '%s\t%s\n' "${file%/*}" "$author"
+    done > authors-repo
+}
+
 # Iterate over each file in the source tree under /site/.
 (cd ../site; find . -type f \
         -a -not -path '*/\.*' \
