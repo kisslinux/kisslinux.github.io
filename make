@@ -36,14 +36,14 @@ repo() {
 
         printf '%s\t%s\t%s\t%s\n' \
             "${file%/*}" "$version" "$source" "$author"
-    done) >> pkgdb
+    done) >> packages/db
 
     rm -rf "$1"
 }
 
 # Delete the generated website.
 rm    -rf .www site/wiki
-mkdir -p  .www
+mkdir -p  .www/packages
 cd        .www
 
 [ "$USER" = goldie ] || {
