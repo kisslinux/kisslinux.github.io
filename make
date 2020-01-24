@@ -17,9 +17,11 @@ mk() {
 }
 
 repo() {
+    git clone "https://github.com/kisslinux/$1"
+
     (cd "$1"; for file in */*/version; do
-             read -r version _ < "$file"
-        IFS= read -r source    < "${file%/*}/sources"
+        read -r version _ < "$file"
+        read -r source  _ < "${file%/*}/sources"
 
         [ -z "${source##*://*}" ] || source=null
 
@@ -32,6 +34,8 @@ repo() {
         printf '%s\t%s\t%s\t%s\n' \
             "${file%/*}" "$version" "$source" "$author"
     done) >> authors
+
+    rm -rf "$1"
 }
 
 # Delete the generated website.
@@ -50,13 +54,8 @@ cd        .www
 
 # Generate maintainer lists.
 [ "$USER" = goldie ] || {
-    git clone https://github.com/kisslinux/repo
-    git clone https://github.com/kisslinux/community
-
     repo repo dylan
     repo community
-
-    rm -rf repo community
 } ||:
 
 # Iterate over each file in the source tree under /site/.
