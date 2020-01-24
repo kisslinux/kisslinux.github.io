@@ -16,6 +16,24 @@ mk() {
     printf '%s\n' "CC $page"
 }
 
+repo() {
+    (cd "$1"; for file in */*/version; do
+             read -r version _ < "$file"
+        IFS= read -r source    < "${file%/*}/sources"
+
+        [ -z "${source##*://*}" ] || source=null
+
+        if [ "$2" ]; then
+            author="Dylan Araps	dylan.araps@gmail.com"
+        else
+            author=$(git log -1 --format="tformat:%an	%ae" "$file")
+        fi
+
+        printf '%s\t%s\t%s\t%s\n' \
+            "${file%/*}" "$version" "$source" "$author"
+    done) >> authors
+}
+
 # Delete the generated website.
 rm    -rf .www site/wiki
 mkdir -p  .www
@@ -35,14 +53,8 @@ cd        .www
     git clone https://github.com/kisslinux/repo
     git clone https://github.com/kisslinux/community
 
-    (cd repo; for file in */*/version; do
-        printf '%s\tDylan Araps\tdylan.araps@gmail.com\n' "${file%/*}"
-    done) > authors
-
-    (cd community; for file in */*/version; do
-        author=$(git log -1 --format="tformat:%an	%ae" "$file")
-        printf '%s\t%s\n' "${file%/*}" "$author"
-    done) >> authors
+    repo repo dylan
+    repo community
 
     rm -rf repo community
 } ||:
