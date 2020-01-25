@@ -36,7 +36,7 @@ repo() {
 
         printf '%s\t%s\t%s\t%s\n' \
             "${file%/*}" "$version" "$source" "$author"
-    done) >> packages/db
+    done) >> packages/db.tsv
 
     rm -rf "$1"
 }
@@ -97,7 +97,7 @@ cat <<EOF
 </tr>
 EOF
 
-                sort packages/db |
+                sort packages/db.tsv |
 
                 while IFS='	' read -r pkg ver _ aut ema || [ "$pkg" ]; do
                     [ "${pkg%/*}" = community ] && repo=community || repo=repo
