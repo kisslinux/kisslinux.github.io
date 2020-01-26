@@ -67,6 +67,8 @@ The `sources` file should contain all remote and local files the package needs t
 
 Each source should be listed one per line. An optional second field specifies an extraction directory (*relative to the build directory*).
 
+Sources which pull from a `git` repository use a special syntax. An additional prefix `git+` should be added with an optional suffix `#hash` or `#branch`).
+
 ### Example sources file
 
 ```
@@ -84,9 +86,20 @@ https://ftp.gnu.org/gnu/mpc/mpc-1.1.0.tar.gz gcc/mpc
 files/c99
 ```
 
+### Example sources file using `git`.
+
+```
+git+https://github.com/dylanaraps/eiwd
+
+# Grabbing a specific commit.
+git+https://github.com/dylanaraps/eiwd#8deb4ff84e3ed7b6f4f85b1259c6a0d88e137c7d
+```
+
 ## version
 
 The `version` file should contain a single line with two fields. The first field should contain the software's upstream version and the second field should contain the version number of the repository files themselves.
+
+If the package is using a `git` source to pull down the latest commit, the version should be simply set to `git`.
 
 ### Example version file
 
