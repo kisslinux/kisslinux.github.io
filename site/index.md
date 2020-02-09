@@ -19,9 +19,9 @@ An independent Linux® distribution with a focus on [simplicity](#simplicity) an
 
 - Explicitly **excludes** the following software: dbus, systemd, polkit, gettext, intltool, pulseaudio, pam, wayland, logind, ConsoleKit2 and all Desktop Environments. See [Philosophy](#philosophy).
 
-- Rootless [Xorg](https://x.org) environment **without** any additional software.
-
 - **Choice!** The coreutils, init, device manager, compiler, shell and \* can be replaced. There's no lock-in to specific software (excluding `musl` and the kernel of course).
+
+- Rootless [Xorg](https://x.org) environment **without** any additional software.
 
 - Repository signing through [git](https://git-scm.com/) and [gnupg](https://www.gnupg.org/) (*based on signed commits and built into git itself*).
 
