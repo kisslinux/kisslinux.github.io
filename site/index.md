@@ -21,6 +21,8 @@ An independent Linux® distribution with a focus on [simplicity](#simplicity) an
 
 - Rootless [Xorg](https://x.org) environment **without** any additional software.
 
+- **Choice!** The coreutils, init, device manager, compiler, shell and \* can be replaced. There's no lock-in to specific software (excluding `musl` and the kernel of course).
+
 - Repository signing through [git](https://git-scm.com/) and [gnupg](https://www.gnupg.org/) (*based on signed commits and built into git itself*).
 
 
