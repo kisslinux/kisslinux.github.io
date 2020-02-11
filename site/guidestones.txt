@@ -90,6 +90,10 @@
 │   written in a portable way. Otherwise, the user      │
 │   will be locked into a single coreutils and shell.   │
 │                                                       │
+│ * One exception is made for 'sed -i' as it is too     │
+│   useful to let go of. The '-i' flag has rather       │
+│   good support across implementations regardless.     │
+│                                                       │
 │ * Avoid the next new shiny thing until or unless      │
 │   certain that it brings real improvements over what  │
 │   it is intended to replace.                          │
@@ -176,6 +180,8 @@
 │ * Prefer extensibility through scripts over baking    │
 │   every additional feature into the package manager.  │
 │                                                       │
+│                                                       │
+│                                                       │
 └───────────────────────────────────────────────────────┘
 
 ┌───────────────────────────────────────────────────────┐
@@ -190,6 +196,11 @@
 │   included in the official repositories as it paves   │
 │   the road for the inclusion of software that will    │
 │   explicitly depend on it.                            │
+│                                                       │
+│ * The boot and shutdown scripts shall be written in   │
+│   an init-agnostic fashion and work with all init     │
+│   systems which require it as a means of starting     │
+│   the machine.                                        │
 │                                                       │
 └───────────────────────────────────────────────────────┘
 
