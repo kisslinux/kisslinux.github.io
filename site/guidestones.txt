@@ -97,10 +97,10 @@
 │ * Avoid the next new shiny thing until or unless      │
 │   certain that it brings real improvements over what  │
 │   it is intended to replace.                          │
-|                                                       │  
-| * The above excludes versions of the same software.   |
-|   Software should always be kept up-to-date unless    │
-|   there is a blocker in doing so.                     │
+│                                                       │  
+│ * The above excludes versions of the same software.   │
+│   Software should always be kept up-to-date unless    │
+│   there is a blocker in doing so.                     │
 │                                                       │
 │ * Continue to work towards the removal of unneeded    │
 │   software, patching existing software or writing     │
@@ -203,4 +203,3 @@
 │   the machine.                                        │
 │                                                       │
 └───────────────────────────────────────────────────────┘
-
