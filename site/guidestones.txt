@@ -152,7 +152,7 @@
 
 ┌───────────────────────────────────────────────────────┐
 │                                                       │
-│                     INIT SYSTEM                       │
+│                    INIT SYSTEM                        │
 │                                                       │
 │ * The user should not be tied to a single provider    │
 │   of PID 1. No unrelated piece of software should     │
