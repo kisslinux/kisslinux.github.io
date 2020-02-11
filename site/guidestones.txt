@@ -1,6 +1,6 @@
 ┌───────────────────────────────────────────────────────┐
 │                                                       │
-│                   KISS GUIDESTONES                    │
+│                  KISS GUIDESTONES                     │
 │                                                       │
 │ * Below are a set of rules which make KISS... KISS.   │
 │   I felt the need to define in as much detail as      │
