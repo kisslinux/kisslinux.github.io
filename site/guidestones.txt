@@ -15,6 +15,36 @@
 
 ┌───────────────────────────────────────────────────────┐
 │                                                       │
+│                       USERS                           │
+│                                                       │
+│ * KISS is the vessel to shape your system in your     │
+│   own way and to optionally share your ideas with     │
+│   others.                                             │
+│                                                       │
+│ * Every user has the means to keep their entire       │
+│   system up-to-date without the need for or reliance  │
+│   on the BDFL. Every KISS install contains the        │
+│   entirety of the repositories with full history.     │           
+│                                                       │
+│ * If a piece of software is missing, package it! If   │ 
+│   it is suitable for inclusion in the repositories,   │
+│   send a pull request. If it is not, keep it in your  │
+│   own repository and/or share it with others.         │
+│                                                       │
+│ * Don't ask a question to ask a question. If you      │
+│   have a question, out with it or forever hold        │
+│   your peace.                                         │
+│                                                       │
+│ * If you have a problem, think about it first.        │
+│   Present as much information as possible and logs    │
+│   if applicable. The more information given to those  │
+│   willing to help, the higher the chance and quicker  │
+│   the speed of resolution.                            │
+│                                                       │
+└───────────────────────────────────────────────────────┘
+
+┌───────────────────────────────────────────────────────┐
+│                                                       │
 │                        KISS                           │
 │                                                       │
 │ * There must always be a sole commander-in-chief      │
@@ -135,32 +165,3 @@
 │                                                       │
 └───────────────────────────────────────────────────────┘
 
-┌───────────────────────────────────────────────────────┐
-│                                                       │
-│                       USERS                           │
-│                                                       │
-│ * KISS is the vessel to shape your system in your     │
-│   own way and to optionally share your ideas with     │
-│   others.                                             │
-│                                                       │
-│ * Every user has the means to keep their entire       │
-│   system up-to-date without the need for or reliance  │
-│   on the BDFL. Every KISS install contains the        │
-│   entirety of the repositories with full history.     │           
-│                                                       │
-│ * If a piece of software is missing, package it! If   │ 
-│   it is suitable for inclusion in the repositories,   │
-│   send a pull request. If it is not, keep it in your  │
-│   own repository and/or share it with others.         │
-│                                                       │
-│ * Don't ask a question to ask a question. If you      │
-│   have a question, out with it or forever hold        │
-│   your peace.                                         │
-│                                                       │
-│ * If you have a problem, think about it first.        │
-│   Present as much information as possible and logs    │
-│   if applicable. The more information given to those  │
-│   willing to help, the higher the chance and quicker  │
-│   the speed of resolution.                            │
-│                                                       │
-└───────────────────────────────────────────────────────┘
