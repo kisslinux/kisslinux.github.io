@@ -93,7 +93,7 @@
 
 ┌───────────────────────────────────────────────────────┐
 │                                                       │
-│                OFFICIAL REPOSITORIES                  │
+│               OFFICIAL REPOSITORIES                   │
 │                                                       │
 │ * The number of packages in the repositories shall    │
 │   never exceed that which is maintainable by a        │
@@ -132,7 +132,7 @@
 
 ┌───────────────────────────────────────────────────────┐
 │                                                       │
-│                   PACKAGE MANAGER                     │
+│                  PACKAGE MANAGER                      │
 │                                                       │
 │ * The package manager must not exceed 1000 lines of   │
 │   code. This number excludes blank lines and          │
