@@ -135,7 +135,7 @@
 │   The singular directory ensures simplicity and       │
 │   keeps KISS tooling and user scripts simple.         │
 │                                                       │
-│ * The follow list of software must never make its     │
+│ * The following list of software must never make its  │
 │   way into the repositories as their inclusion will   │
 │   pave the way for software which unoptionally        │
 │   depends on them.                                    │
