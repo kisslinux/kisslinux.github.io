@@ -2,9 +2,14 @@
 │                                                       │
 │                  KISS GUIDESTONES                     │
 │                                                       │
-│ * Below are a set of rules which make KISS... KISS.   │
+│ * Below are a set of notes which make KISS... KISS.   │
 │   I felt the need to define in as much detail as      │
 │   possible philosophy behind the distribution.        │
+│                                                       │
+│ * There is no requirement to follow or even agree     │
+│   with my words. Some of the technical details for    │
+│   how packages are written will apply to package      │
+│   inclusion in the official repositories however.     │
 │                                                       │
 │ * KISS is my gift to you from the love of what I do.  │
 │   I hope you find it as useful as I have.             │ 
@@ -96,6 +101,10 @@
 │ * Continue to work towards the removal of unneeded    │
 │   software, patching existing software or writing     │
 │   replacements if required.                           │
+│                                                       │
+│ * There shall never be rules centred around speech    │
+│   or the way in which one must carry themselves to    │
+│   communicate.                                        │  
 │                                                       │
 └───────────────────────────────────────────────────────┘
 
