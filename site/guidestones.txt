@@ -17,9 +17,9 @@
 │                                                       │
 │                       USERS                           │
 │                                                       │
-│ * KISS is the vessel to shape your system in your     │
-│   own way and to optionally share your ideas with     │
-│   others.                                             │
+│ * KISS is the vessel with which to shape your system  │
+│   in your own way and to optionally share your ideas  │
+│   with others.                                        │
 │                                                       │
 │ * Every user has the means to keep their entire       │
 │   system up-to-date without the need for or reliance  │
@@ -101,6 +101,14 @@
 │                                                       │
 │ * Any packages unsuitable for the repositories must   │
 │   be kept in user or 3rd-party repositories.          │ 
+│                                                       │
+│ * The repositories (excluding Community) must remain  │
+│   a useful base containing everything up to a         │ 
+│   Graphical session with a browser and media player.  │
+│   They shall go no further.                           │
+│                                                       │
+│ * All software in the repositories must be F(L)OSS.   │
+│   See above point if proprietary software is needed.  │
 │                                                       │
 │ * The build process of a package should not require   │
 │   a network connection, otherwise signature           │
