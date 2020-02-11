@@ -452,7 +452,6 @@ To install Xorg, the input drivers and a basic default set of fonts, run the fol
 # Replace 'USERNAME' with the name of the
 # user created above.
 -> addgroup USERNAME video
--> addgroup USERNAME input
 -> addgroup USERNAME audio
 ```
 
