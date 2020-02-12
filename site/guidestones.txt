@@ -141,6 +141,9 @@
 │   whereas a simple call to 'sed' can stand the test   │
 │   of time.                                            │
 │                                                       │
+│ * Avoid running autogen.sh or autotools in builds     │
+│   if pre-generated files already exist.               │
+│                                                       │
 │ * Sources must use HTTPS where possible. If no HTTPS  │
 │   source is available one must be sought out or       │
 │   created by the BDFL of KISS.                        │
@@ -157,6 +160,10 @@
 │ * dbus, systemd, polkit, gettext, intltool, zstd,     │
 │   pulseaudio, pipewire, pam, wayland, logind,         │
 │   ConsoleKit, libsn, electron and all DEs.            │
+│                                                       │
+│ * No package shall ship with telemetry enabled by     │
+│   default and if at all feasible it must be patched   │
+│   out entirely.                                       │
 │                                                       │
 └───────────────────────────────────────────────────────┘
 
