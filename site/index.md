@@ -28,6 +28,8 @@ An independent Linux® distribution with a focus on [simplicity](#simplicity) an
 
 ## Philosophy
 
+See: <https://getkiss.org/guidestones.txt>
+
 ### Simplicity
 
 This distribution follows the [KISS principle](https://en.wikipedia.org/wiki/KISS_principle) (*Keep it Simple Stupid*).
