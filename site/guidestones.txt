@@ -11,6 +11,10 @@
 │   how packages are written will apply to package      │
 │   inclusion in the official repositories however.     │
 │                                                       │
+│ * Bear in mind, I develop and release KISS for free.  │
+│   I owe you nothing. Any help I provide is at my      │
+│   own discretion.                                     │
+│                                                       │
 │ * KISS is my gift to you from the love of what I do.  │
 │   I hope you find it as useful as I have.             │ 
 │                                                       │
@@ -154,16 +158,40 @@
 │                                                       │
 │ * The following list of software must never make its  │
 │   way into the repositories as their inclusion will   │
-│   pave the way for software which unoptionally        │
-│   depends on them.                                    │
+│   opens the floodgates for software which             │
+│   unoptionally depends on them.                       │
 │                                                       │
 │ * dbus, systemd, polkit, gettext, intltool, zstd,     │
 │   pulseaudio, pipewire, pam, wayland, logind,         │
 │   ConsoleKit, libsn, electron and all DEs.            │
 │                                                       │
+│ * The same rules above may apply to other software    │
+│   at the discretion of the BDFL.                      │
+│                                                       │
 │ * No package shall ship with telemetry enabled by     │
 │   default and if at all feasible it must be patched   │
 │   out entirely.                                       │
+│                                                       │
+└───────────────────────────────────────────────────────┘
+
+┌───────────────────────────────────────────────────────┐
+│                                                       │
+│               COMMUNITY REPOSITORIES                  │
+│                                                       │
+│ * The community repository is maintained by the       │
+│   users of KISS. Each maintainer is responsible for   │
+│   the packages they have opted to add.                │
+│                                                       │
+│ * The BDFL's only responsibility is to review pull    │
+│   requests sent to this repository.                   │
+│                                                       │
+│ * Only the maintainer of a package is allowed to      │
+│   make any changes to said package. Don't send pull   │
+│   requests for packages you do not own.               │
+│                                                       │
+│ * Contact the maintainer of the package via their     │
+│   set git email if you would like to report an        │
+│   out-of-date package or request changes.             │
 │                                                       │
 └───────────────────────────────────────────────────────┘
 
@@ -187,8 +215,6 @@
 │                                                       │
 │ * Prefer extensibility through scripts over baking    │
 │   every additional feature into the package manager.  │
-│                                                       │
-│                                                       │
 │                                                       │
 └───────────────────────────────────────────────────────┘
 
