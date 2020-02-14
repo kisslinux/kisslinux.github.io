@@ -2,7 +2,7 @@
 title: Blog
 ---
 
-RSS Feed available here: <https://getkiss.org/blog/blog.xml>
+RSS Feed available here: <https://k1ss.org/blog/blog.xml>
 
 ## Index
 

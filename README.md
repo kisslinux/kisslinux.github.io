@@ -1,3 +1,3 @@
-# https://getkiss.org
+# https://k1ss.org
 
 Website for KISS.
