@@ -49,6 +49,8 @@ make DESTDIR="$1" install
 
 The `depends` file should contain any other packages the package depends on to function correctly. Each dependency should be listed one per line and an optional second field allows for the distinction between a compile time dependency and a run time one.
 
+**NOTE**: The depends file can be omitted entirely if the package has no dependencies.
+
 ### Example depends file
 
 ```
