@@ -10,7 +10,7 @@ You will need an existing Linux distribution to use as a base for the installati
 
 For the purpose of this guide I will be using another Linux distribution's live-CD to bootstrap KISS. The live-CD **must** include `tar` (with `xz` support), `mountpoint` and other basic utilities.
 
-From this point on, the guide assumes you have booted a live-CD and have an **internet connection**.
+From this point on, the guide assumes you have booted a live-CD, are logged in as **root** and have an **internet connection**.
 
 ## Index
 
