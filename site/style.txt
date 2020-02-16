@@ -36,6 +36,8 @@
 │     - [0001.1] Is this patch needed?                  │
 │     - [0001.2] Are these CFLAGS needed?               │
 │     - [0001.3] Is this dependency needed?             │
+│     - [0001.3] Are these configure flags needed?      │
+│     - [0001.4] ...                                    │
 │                                                       │
 │                                                       │
 │ [0002]                                                │
@@ -163,6 +165,28 @@
 │     install -D libfile.so "$1/usr/lib/libfile.so"     │
 │                                                       │
 │                                                       │
+│ [0211]                                                │
+│                                                       │
+│   Use 'install' instead of ...                        │
+│                                                       │
+│   Bad:                                                │
+│                                                       │
+│     mkdir -p "$1/usr/bin"                             │
+│     cp ls "$1/usr/bin/"                               │
+│                                                       │
+│   Good:                                               │
+│                                                       │
+│     install -Dm755 ls "$1/usr/bin/ls"                 │
+│                                                       │
+│                                                       │
+│ [0212]                                                │
+│                                                       │
+│   Prefer $CC to ...                                   │
+│                                                       │
+│   Bad:  gcc -o file file.c                            │
+│   Good: "${CC:-cc}" -o file file.c                    │
+│                                                       │
+│                                                       │
 └───────────────────────────────────────────────────────┘
 
 ┌───────────────────────────────────────────────────────┐
@@ -192,6 +216,9 @@
 │                                                       │
 │  An exception can be made for packages in which no    │
 │  such source exists.                                  │
+│                                                       │
+│  If autogen.sh or autoreconf are required, prefer     │
+│  autoreconf.                                          │
 │                                                       │
 │                                                       │
 └───────────────────────────────────────────────────────┘
@@ -393,3 +420,31 @@
 │                                                       │
 │                                                       │
 └───────────────────────────────────────────────────────┘
+
+┌───────────────────────────────────────────────────────┐
+│                                                       │
+│                      PATCHES                          │
+│                                                       │
+│                                                       │
+│ [1800]                                                │
+│                                                       │
+│   Use the following style:                            │
+│                                                       │
+│     patch -p1 < patch.patch                           │
+│                                                       │
+│     # If there is more than one patch.                │
+│     for patch in *.patch; do                          │
+│         patch -p1 < "$patch"                          │
+│     done                                              │
+│                                                       │
+│                                                       │
+│ [1801]                                                │
+│                                                       │
+│   All patches should use the same strip amount.       │
+│   If this is not possible, modify the patches.        │
+│                                                       │
+│   Strip amount is controlled by the -p flag.          │
+│                                                       │
+│                                                       │
+└───────────────────────────────────────────────────────┘
+
