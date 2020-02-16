@@ -1,3 +1,3 @@
 pre{left:50%;transform:translateX(-50%);position:absolute}
 pre::before{content:"\A                    https://k1ss.org\A\A"}
-pre::after{content:"\A\AThe registered trademark Linux® is used pursuant to a sublicense from the Linux Foundation, the exclusive licensee of Linus Torvalds, owner of the mark on a world­wide basis.\A\A© Dylan Araps 2019-2020"}
+pre::after{content:"\A\AThe registered trademark Linux® is used pursuant to a\Asublicense from the Linux Foundation, the\A exclusive licensee of Linus Torvalds, owner of the mark on a world­wide basis.\A\A© Dylan Araps 2019-2020\A\A"}
