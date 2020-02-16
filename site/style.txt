@@ -2,7 +2,7 @@
 │                                                       │
 │                  KISS STYLE GUIDE                     │
 │                                                       │
-│ * This document is a style guide which will double    │ 
+│ * This document is a style guide which will double    │
 │   as documentation for a possible linter in the       │
 │   future.                                             │
 │                                                       │
@@ -131,7 +131,7 @@
 │ [0205]                                                │
 │                                                       │
 │   All comments must start with a capital letter and   │
-│   use proper spelling, grammar and punctuation.       │  
+│   use proper spelling, grammar and punctuation.       │
 │                                                       │
 │   # This is a comment.                                │
 │                                                       │
@@ -247,7 +247,7 @@
 │  tools prior to starting the build process.           │
 │                                                       │
 │  If there are no pre-generated configure or           │
-│  Makefiles, an alternate source must be sought.       │ 
+│  Makefiles, an alternate source must be sought.       │
 │                                                       │
 │  An exception can be made for packages in which no    │
 │  such source exists.                                  │
@@ -295,7 +295,7 @@
 │       -DCMAKE_INSTALL_PREFIX=/usr \                   │
 │       -DFLAG=1                                        │
 │                                                       │
-│   cmake --build   build                               │  
+│   cmake --build   build                               │
 │   cmake --install build                               │
 │                                                       │
 │                                                       │

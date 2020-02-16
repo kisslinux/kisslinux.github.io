@@ -216,7 +216,7 @@
 │   the software needs.                                 │
 │                                                       │
 │ * In the `sources` file patches are referred to by    │
-│  using a relative path (patches/musl.patch).          │  
+│  using a relative path (patches/musl.patch).          │
 │                                                       │
 │ * The package manager does not automatically apply    │
 │   patches. This must be done in the build script      │
