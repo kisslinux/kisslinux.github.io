@@ -85,6 +85,17 @@
 │                                                       │
 │ [0009]                                                │
 │                                                       │
+│   Align arguments in blocks of command calls.         │
+│                                                       │
+│   Bad:                                                │
+│                                                       │
+│     install -D file.h "$1/usr/include/file.h"         │
+│     install -D libfile.so "$1/usr/lib/libfile.so"     │
+│                                                       │
+│   Good:                                               │
+│                                                       │
+│     install -D file.h     "$1/usr/include/file.h"     │
+│     install -D libfile.so "$1/usr/lib/libfile.so"     │
 │                                                       │
 │                                                       │
 └───────────────────────────────────────────────────────┘
@@ -165,6 +176,58 @@
 
 ┌───────────────────────────────────────────────────────┐
 │                                                       │
+│                        MAKE                           │
+│                                                       │
+│                                                       │
+│ [4000]                                                │
+│                                                       │
+│   Use one of the following style when applicable:     │
+│                                                       │
+│   make                                                │
+│   make DESTDIR="$1" PREFIX=/usr install               │
+│                                                       │
+│                                                       │
+│   make PREFIX=/usr                                    │
+│   make DESTDIR="$1" install                           │
+│                                                       │
+│                                                       │
+│   make PREFIX=/usr                                    │
+│   make DESTDIR="$1" PREFIX=/usr install               │
+│                                                       │
+│                                                       │
+│   For packages which require a few variables be       │
+│   set, prefer this style.                             │
+│                                                       │
+│   make \                                              │
+│       PREFIX=/usr \                                   │
+│       SBINDIR=/usr/bin \                              │
+│       OPT="$CFLAGS"                                   │
+│                                                       │
+│   make \                                              │
+│       DESTDIR="$1" \                                  │
+│       PREFIX=/usr \                                   │
+│       install                                         │
+│                                                       │
+│                                                       │
+│   For packages which require the variables be set     │
+│   for all calls to make, prefer this style.           │
+│                                                       │
+│   mk() {                                              │
+│       make \                                          │
+│           PREFIX=/usr \                               │
+│           DESTDIR="$1" \                              │
+│           EXAMPLE=1 \                                 │
+│           "$@"                                        │
+│   }                                                   │
+│                                                       │
+│   mk                                                  │
+│   mk install                                          │
+│                                                       │
+│                                                       │
+└───────────────────────────────────────────────────────┘
+
+┌───────────────────────────────────────────────────────┐
+│                                                       │
 │                      DEPENDS                          │
 │                                                       │
 │                                                       │
@@ -184,7 +247,9 @@
 │   assumed to always be available. This dependency     │
 │   can be removed.                                     │
 │                                                       │
-│   Examples: gcc, make, pkgconf, linux-headers.        │
+│   Examples:                                           │
+│                                                       │
+│     gcc, make, pkgconf, linux-headers, musl.          │
 │                                                       │
 │                                                       │
 └───────────────────────────────────────────────────────┘
