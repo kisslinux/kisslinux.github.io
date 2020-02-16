@@ -105,6 +105,20 @@ If the package is using a `git` source to pull down the latest commit, the versi
 1.2.3 1
 ```
 
+## pre-remove 
+
+The `pre-remove` file should contain anything that needs to be run **before** the removal of the package.
+
+The script is language agnostic and the only requirement is that it be executable.
+
+### Example pre-remove file
+
+```
+#!/bin/sh -e
+
+printf '%s\n' "No one has used this yet! I have no example"
+```
+
 ## post-install
 
 The `post-install` file should contain anything that needs to be run **after** a package installation to properly setup the software.
