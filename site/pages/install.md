@@ -74,7 +74,7 @@ Your disks should be setup and fully mounted to `/mnt`.
 The download link below will always point to the latest version of KISS. If the checksums or signature fail to verify, [contact me](/pages/contact).
 
 ```
--> wget https://dl.getkiss.org/kiss-chroot.tar.xz
+-> wget https://dl.k1ss.org/kiss-chroot.tar.xz
 ```
 
 ### Verify the checksums (*recommended*)
@@ -82,7 +82,7 @@ The download link below will always point to the latest version of KISS. If the 
 This step verifies that the release matches the `checksums` generated upon its creation and also ensures that the download completed successfully. ([What are checksums?](https://en.wikipedia.org/wiki/Checksum))
 
 ```
--> wget https://dl.getkiss.org/kiss-chroot.tar.xz.sha256
+-> wget https://dl.k1ss.org/kiss-chroot.tar.xz.sha256
 -> sha256sum kiss-chroot.tar.xz | diff kiss-chroot.tar.xz.sha256 - && echo good
 ```
 
@@ -91,7 +91,7 @@ This step verifies that the release matches the `checksums` generated upon its c
 This step verifies that the release was signed by [Dylan Araps](/pages/team). If the live OS of your choice **does not** include `gpg`, this step can also be done on another machine. ([What is gpg?](https://en.wikipedia.org/wiki/GNU_Privacy_Guard))
 
 ```
--> wget https://dl.getkiss.org/kiss-chroot.tar.xz.asc
+-> wget https://dl.k1ss.org/kiss-chroot.tar.xz.asc
 
 # Import my public key.
 -> gpg --keyserver keys.gnupg.net --recv-key 46D62DD9F1DE636E
@@ -105,7 +105,7 @@ This step verifies that the release was signed by [Dylan Araps](/pages/team). If
 This is a simple script to `chroot` into `/mnt` and set up the environment for the rest of the installation. ([What is chroot?](https://en.wikipedia.org/wiki/Chroot))
 
 ```
--> wget https://dl.getkiss.org/kiss-chroot
+-> wget https://dl.k1ss.org/kiss-chroot
 
 # Inspect the script before you execute it below.
 -> vi kiss-chroot
@@ -461,5 +461,5 @@ You should now be able to reboot into your KISS installation. Typical configurat
 
 If you encountered any issues, don't hesitate to open an issue on one of our GitHub repositories, post on the [subreddit](https://reddit.com/r/kisslinux) or join the IRC server.
 
-See: [Get in touch](https://getkiss.org/pages/contact/)
-See: [The Wiki](https://getkiss.org/wiki/)
+See: [Get in touch](https://k1ss.org/pages/contact/)
+See: [The Wiki](https://k1ss.org/wiki/)

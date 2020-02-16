@@ -28,7 +28,7 @@ An independent Linux® distribution with a focus on [simplicity](#simplicity) an
 
 ## Philosophy
 
-See: <https://getkiss.org/guidestones.txt>
+See: <https://k1ss.org/guidestones.txt>
 
 ### Simplicity
 
