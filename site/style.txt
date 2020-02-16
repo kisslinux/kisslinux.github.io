@@ -28,6 +28,16 @@
 │                                                       │
 │ [0002]                                                │
 │                                                       │
+│   Use 4 spaces for indentation.                       │
+│                                                       │
+│                                                       │
+│ [0003]                                                │
+│                                                       │
+│   Lines should not exceed 80 characters in length.    │
+│                                                       │
+│                                                       │
+│ [0004]                                                │
+│                                                       │
 │   All packages must use the POSIX shell shebang       │
 │   with '-e' to exit on error. Additionally, '-ef'     │
 │   can be used if word-splitting is required.          │
@@ -40,7 +50,7 @@
 │   # Code starts here.                                 │
 │                                                       │
 │                                                       │
-│ [0003]                                                │
+│ [0005]                                                │
 │                                                       │
 │   All comments must start with a capital letter and   │
 │   use proper spelling, grammar and punctuation.       │  
@@ -48,7 +58,7 @@
 │   # This is a comment.                                │
 │                                                       │
 │                                                       │
-│ [0004]                                                │
+│ [0006]                                                │
 │                                                       │
 │   Avoid adding braces around variables if unneeded.   │
 │                                                       │
@@ -57,7 +67,7 @@
 │   Good: printf '%s\n' "${var}.${var2}"                │
 │                                                       │
 │                                                       │
-│ [0005]                                                │
+│ [0007]                                                │
 │                                                       │
 │   Avoid quotes when unneeded.                         │
 │                                                       │
@@ -65,7 +75,7 @@
 │   Good: [ "$var" = test ]                             │
 │                                                       │
 │                                                       │
-│ [0006]                                                │
+│ [0008]                                                │
 │                                                       │
 │   Quote entire strings instead of variables.          │
 │                                                       │
@@ -73,12 +83,8 @@
 │   Good: install -Dm644 cat "$1/usr/bin/cat"           │
 │                                                       │
 │                                                       │
-│ [0007]                                                │
+│ [0009]                                                │
 │                                                       │
-│   Quote entire strings instead of variables.          │
-│                                                       │
-│   Bad:  install -Dm644 cat "$1"/usr/bin/cat           │
-│   Good: install -Dm644 cat "$1/usr/bin/cat"           │
 │                                                       │
 │                                                       │
 └───────────────────────────────────────────────────────┘
@@ -178,7 +184,7 @@
 │   assumed to always be available. This dependency     │
 │   can be removed.                                     │
 │                                                       │
-│   Examples: gcc, make, pkgconf.                       │
+│   Examples: gcc, make, pkgconf, linux-headers.        │
 │                                                       │
 │                                                       │
 └───────────────────────────────────────────────────────┘
