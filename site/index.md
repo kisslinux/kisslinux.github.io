@@ -7,7 +7,7 @@ An independent Linux® distribution with a focus on [simplicity](#simplicity) an
 
 ## Overview
 
-- Uses a plain-text [package system](/pages/package-system/) which is **language agnostic** and parseable with basic UNIX utilities.
+- Uses a plain-text [package system](/package-system.txt) which is **language agnostic** and parseable with basic UNIX utilities.
 
 - Uses a [package manager](https://github.com/kisslinux/kiss) written in **600~ lines** of POSIX sh (*excluding blank lines and comments*).
 
@@ -51,5 +51,7 @@ It is easier to **add** things to a system than it is to **remove** them. Provid
 
 ## Further reading
 
+See: <https://k1ss.org/guidestones.txt>
+
 - [Install KISS](/pages/install)
-- [Package System](/pages/package-system)
+- [Package System](/package-system.txt)
