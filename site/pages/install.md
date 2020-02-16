@@ -71,7 +71,7 @@ Your disks should be setup and fully mounted to `/mnt`.
 
 ### Download the latest release
 
-The download link below will always point to the latest version of KISS. If the checksums or signature fail to verify, [contact me](/pages/contact).
+The download link below will always point to the latest version of KISS. If the checksums or signature fail to verify, [contact me](/contact.txt).
 
 ```
 -> wget https://dl.k1ss.org/kiss-chroot.tar.xz
@@ -461,5 +461,5 @@ You should now be able to reboot into your KISS installation. Typical configurat
 
 If you encountered any issues, don't hesitate to open an issue on one of our GitHub repositories, post on the [subreddit](https://reddit.com/r/kisslinux) or join the IRC server.
 
-See: [Get in touch](https://k1ss.org/pages/contact/)
+See: [Get in touch](/contact.txt)
 See: [The Wiki](https://k1ss.org/wiki/)
