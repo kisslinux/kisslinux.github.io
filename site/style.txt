@@ -84,20 +84,73 @@
 
 ┌───────────────────────────────────────────────────────┐
 │                                                       │
-│                      DEPENDS                          │
+│                   GNU AUTOTOOLS                       │
 │                                                       │
 │                                                       │
 │ [1000]                                                │
 │                                                       │
-│   ...                                                 │
+│   Use the following style:                            │
+│                                                       │
+│   ./configure \                                       │
+│       --prefix=/usr \                                 │
+│       --more_args_here                                │
+│                                                       │
+│   make                                                │
+│   make DESTDIR="$1" install                           │
 │                                                       │
 │                                                       │
 │ [1001]                                                │
 │                                                       │
+│  Avoid running ./autogen.sh, autoreconf or similar    │
+│  tools prior to starting the build process.           │
+│                                                       │
+│  If there are no pre-generated configure or           │
+│  Makefiles, an alternate source must be sought.       │ 
+│                                                       │
+│  An exception can be made for packages in which no    │
+│  such source exists.                                  │
+│                                                       │
+│                                                       │
+└───────────────────────────────────────────────────────┘
+
+┌───────────────────────────────────────────────────────┐
+│                                                       │
+│                        MESON                          │
+│                                                       │
+│                                                       │
+│ [2000]                                                │
+│                                                       │
+│   Use the following style:                            │
+│                                                       │
+│   export DESTDIR="$1"                                 │
+│                                                       │
+│   meson \                                             │
+│       --prefix=/usr \                                 │
+│       -Dexample=false \                               │
+│       . output                                        │
+│                                                       │
+│   ninja -C output                                     │
+│   ninja -C output install                             │
+│                                                       │
+│                                                       │
+└───────────────────────────────────────────────────────┘
+
+┌───────────────────────────────────────────────────────┐
+│                                                       │
+│                      DEPENDS                          │
+│                                                       │
+│                                                       │
+│ [5000]                                                │
+│                                                       │
+│   ...                                                 │
+│                                                       │
+│                                                       │
+│ [5001]                                                │
+│                                                       │
 │   This dependency is unneeded and can be removed.     │
 │                                                       │
 │                                                       │
-│ [1002]                                                │
+│ [5002]                                                │
 │                                                       │
 │   This dependency is implicit. Some packages are      │
 │   assumed to always be available. This dependency     │
@@ -113,17 +166,17 @@
 │                      SOURCES                          │
 │                                                       │
 │                                                       │
-│ [2000]                                                │
+│ [6000]                                                │
 │                                                       │
 │   ...                                                 │
 │                                                       │
 │                                                       │
-│ [2001]                                                │
+│ [6001]                                                │
 │                                                       │
 │   Use a HTTPS source if at all possible.              │
 │                                                       │
 │                                                       │
-│ [2002]                                                │
+│ [6002]                                                │
 │                                                       │
 │   Don't specify patches remotely. Store them as a     │
 │   part of the package's repository files.             │
@@ -132,13 +185,13 @@
 │   Good: patches/fix-build.patch                       │
 │                                                       │
 │                                                       │
-│ [2003]                                                │
+│ [6003]                                                │
 │                                                       │
 │   Don't use a git repository in place of a release    │
 │   tarball unless it makes sense.                      │
 │                                                       │
 │                                                       │
-│ [2004]                                                │
+│ [6004]                                                │
 │                                                       │
 │   Drop www. and .git from all sources if possible.    │
 │                                                       │
@@ -150,7 +203,7 @@
 │                      VERSION                          │
 │                                                       │
 │                                                       │
-│ [3000]                                                │
+│ [7000]                                                │
 │                                                       │
 │   ...                                                 │
 │                                                       │
