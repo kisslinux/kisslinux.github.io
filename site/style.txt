@@ -54,6 +54,7 @@
 │                                                       │
 │   Bad:  printf '%s\n' "${var}"                        │
 │   Good: printf '%s\n' "$var"                          │
+│   Good: printf '%s\n' "${var}.${var2}"                │
 │                                                       │
 │                                                       │
 │ [0005]                                                │
