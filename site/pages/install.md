@@ -408,7 +408,7 @@ Source code: <https://github.com/kisslinux/kiss-init>
 
 ## Enable the community repository
 
-The KISS community repository is maintained by users of the distribution and contains packages which aren't in the main repositories. This repository is disabled by default as it is not maintained by the KISS developers.
+The KISS community repository is maintained by users of the distribution and contains packages which aren't in the main repositories. This repository is disabled by default.
 
 ```
 # Clone the repository to a location of your choosing.
