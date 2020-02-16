@@ -1,0 +1,158 @@
+┌───────────────────────────────────────────────────────┐
+│                                                       │
+│                  KISS STYLE GUIDE                     │
+│                                                       │
+└───────────────────────────────────────────────────────┘
+
+┌───────────────────────────────────────────────────────┐
+│                                                       │
+│                       BUILD                           │
+│                                                       │
+│                                                       │
+│ [0000]                                                │
+│                                                       │
+│   This guide should be used alongside shellcheck      │
+│   and not in place of it.                             │
+│                                                       │
+│                                                       │
+│ [0001]                                                │
+│                                                       │
+│   All shell code must pass the shellcheck linter.     │
+│   Any false-positives or intended behavior must       │
+│   have a rationale attached with the exclusion.       │
+│                                                       │
+│   # Disable warning as CFLAGS must work this way.     │
+│   # shellcheck disable=2086                           │
+│   "${CC:-cc}" $CFLAGS ...                             │
+│                                                       │
+│                                                       │
+│ [0002]                                                │
+│                                                       │
+│   All packages must use the POSIX shell shebang       │
+│   with '-e' to exit on error. Additionally, '-ef'     │
+│   can be used if word-splitting is required.          │
+│                                                       │
+│   There must also be a blank line directly below      │
+│   the shebang.                                        │
+│                                                       │
+│   #!/bin/sh -e                                        │
+│                                                       │
+│   # Code starts here.                                 │
+│                                                       │
+│                                                       │
+│ [0003]                                                │
+│                                                       │
+│   All comments must start with a capital letter and   │
+│   use proper spelling, grammar and punctuation.       │  
+│                                                       │
+│   # This is a comment.                                │
+│                                                       │
+│                                                       │
+│ [0004]                                                │
+│                                                       │
+│   Avoid adding braces around variables if unneeded.   │
+│                                                       │
+│   Bad:  printf '%s\n' "${var}"                        │
+│   Good: printf '%s\n' "$var"                          │
+│                                                       │
+│                                                       │
+│ [0005]                                                │
+│                                                       │
+│   Avoid quotes when unneeded.                         │
+│                                                       │
+│   Bad:  [ "$var" = "test" ]                           │
+│   Good: [ "$var" = test ]                             │
+│                                                       │
+│                                                       │
+│ [0006]                                                │
+│                                                       │
+│   Quote entire strings instead of variables.          │
+│                                                       │
+│   Bad:  install -Dm644 cat "$1"/usr/bin/cat           │
+│   Good: install -Dm644 cat "$1/usr/bin/cat"           │
+│                                                       │
+│                                                       │
+│ [0007]                                                │
+│                                                       │
+│   Quote entire strings instead of variables.          │
+│                                                       │
+│   Bad:  install -Dm644 cat "$1"/usr/bin/cat           │
+│   Good: install -Dm644 cat "$1/usr/bin/cat"           │
+│                                                       │
+│                                                       │
+└───────────────────────────────────────────────────────┘
+
+┌───────────────────────────────────────────────────────┐
+│                                                       │
+│                      DEPENDS                          │
+│                                                       │
+│                                                       │
+│ [1000]                                                │
+│                                                       │
+│   ...                                                 │
+│                                                       │
+│                                                       │
+│ [1001]                                                │
+│                                                       │
+│   This dependency is unneeded and can be removed.     │
+│                                                       │
+│                                                       │
+│ [1002]                                                │
+│                                                       │
+│   This dependency is implicit. Some packages are      │
+│   assumed to always be available. This dependency     │
+│   can be removed.                                     │
+│                                                       │
+│   Examples: gcc, make, pkgconf.                       │
+│                                                       │
+│                                                       │
+└───────────────────────────────────────────────────────┘
+
+┌───────────────────────────────────────────────────────┐
+│                                                       │
+│                      SOURCES                          │
+│                                                       │
+│                                                       │
+│ [2000]                                                │
+│                                                       │
+│   ...                                                 │
+│                                                       │
+│                                                       │
+│ [2001]                                                │
+│                                                       │
+│   Use a HTTPS source if at all possible.              │
+│                                                       │
+│                                                       │
+│ [2002]                                                │
+│                                                       │
+│   Don't specify patches remotely. Store them as a     │
+│   part of the package's repository files.             │
+│                                                       │
+│   Bad:  https://website.com/fix-build.patch           │
+│   Good: patches/fix-build.patch                       │
+│                                                       │
+│                                                       │
+│ [2003]                                                │
+│                                                       │
+│   Don't use a git repository in place of a release    │
+│   tarball unless it makes sense.                      │
+│                                                       │
+│                                                       │
+│ [2004]                                                │
+│                                                       │
+│   Drop www. and .git from all sources if possible.    │
+│                                                       │
+│                                                       │
+└───────────────────────────────────────────────────────┘
+
+┌───────────────────────────────────────────────────────┐
+│                                                       │
+│                      VERSION                          │
+│                                                       │
+│                                                       │
+│ [3000]                                                │
+│                                                       │
+│   ...                                                 │
+│                                                       │
+│                                                       │
+└───────────────────────────────────────────────────────┘
