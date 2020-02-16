@@ -1,1 +1,2 @@
 pre{left:50%;transform:translateX(-50%);position:absolute}
+pre::before{content:"\A                    https://k1ss.org\A\A"}
