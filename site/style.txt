@@ -10,6 +10,33 @@
 
 ┌───────────────────────────────────────────────────────┐
 │                                                       │
+│                   MAINTAINERSHIP                      │
+│                                                       │
+│ * Each package has a set maintainer stored via git    │
+│   commits. Use 'git log' or 'kiss-maintainer pkg'     │
+│   to find the maintainer's contact information.       │
+│                                                       │
+│ * Only the maintainer of a package has the ability    │
+│   to make changes to said package. Any pull           │
+│   requests by a non-maintainer for a package will     │
+│   be closed.                                          │
+│                                                       │
+│ * If you would like to make a change to an existing   │
+│   package, contact the maintainer and they will       │
+│   do so on your behalf.                               │
+│                                                       │
+│ * If the maintainer leaves a package out of date      │
+│   and does not respond in a reasonable timeframe,     │
+│   the package will be orphaned and up for grabs.      │
+│                                                       │
+│ * If no one steps forward to adopt an orphaned        │
+│   package, it will be dropped from the repository.    │
+│                                                       │
+│                                                       │
+└───────────────────────────────────────────────────────┘
+
+┌───────────────────────────────────────────────────────┐
+│                                                       │
 │                      GENERAL                          │
 │                                                       │
 │                                                       │
@@ -140,6 +167,9 @@
 │                                                       │
 │   Bad:  [ "$var" = "test" ]                           │
 │   Good: [ "$var" = test ]                             │
+│                                                       │
+│   Bad:  install -Dm755 "file" "$1/usr/bin/file"       │
+│   Good: install -Dm755 file "$1/usr/bin/file"         │
 │                                                       │
 │                                                       │
 │ [0209]                                                │
@@ -363,6 +393,11 @@
 │ [1205]                                                │
 │                                                       │
 │   The depends list must be sorted.                    │
+│                                                       │
+│                                                       │
+│ [1206]                                                │
+│                                                       │
+│   The depends file is empty and should be removed.    │
 │                                                       │
 │                                                       │
 └───────────────────────────────────────────────────────┘
