@@ -119,6 +119,8 @@ EOF
 
             sed -i "s/%%DATE%%/$(date)/;s/%%PKG%%//" \
                 packages/index.html
+
+            sort packages/db.tsv > packages.txt
         ;;
 
         *.md) mk ;;
