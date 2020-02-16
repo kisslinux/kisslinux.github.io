@@ -16,9 +16,9 @@
 │   own discretion.                                     │
 │                                                       │
 │ * KISS is my gift to you from the love of what I do.  │
-│   I hope you find it as useful as I have.             │ 
+│   I hope you find it as useful as I have.             │
 │                                                       │
-│   - Dylan Araps                                       │                    
+│   - Dylan Araps                                       │
 │                                                       │
 └───────────────────────────────────────────────────────┘
 
@@ -33,9 +33,9 @@
 │ * Every user has the means to keep their entire       │
 │   system up-to-date without the need for or reliance  │
 │   on the BDFL. Every KISS install contains the        │
-│   entirety of the repositories with full history.     │           
+│   entirety of the repositories with full history.     │
 │                                                       │
-│ * If a piece of software is missing, package it! If   │ 
+│ * If a piece of software is missing, package it! If   │
 │   it is suitable for inclusion in the repositories,   │
 │   send a pull request. If it is not, keep it in your  │
 │   own repository and/or share it with others.         │
@@ -79,7 +79,7 @@
 │   ability to go against this philosophy open to all.  │
 │                                                       │
 │ * The ends do not justify the means. A package, fix,  │
-│   feature or what have you will not be implemented    │ 
+│   feature or what have you will not be implemented    │
 │   if it requires gross hacks to accomplish.           │
 │                                                       │
 │ * Only target the English language. English is the    │
@@ -101,7 +101,7 @@
 │ * Avoid the next new shiny thing until or unless      │
 │   certain that it brings real improvements over what  │
 │   it is intended to replace.                          │
-│                                                       │  
+│                                                       │
 │ * The above excludes versions of the same software.   │
 │   Software should always be kept up-to-date unless    │
 │   there is a blocker in doing so.                     │
@@ -113,7 +113,7 @@
 │ * There shall never be rules centred around speech    │
 │   or the way in which one must carry themselves to    │
 │   communicate. Do unto others as you would have       │
-│   them do unto you.                                   │  
+│   them do unto you.                                   │
 │                                                       │
 └───────────────────────────────────────────────────────┘
 
@@ -126,10 +126,10 @@
 │   single person with minimal effort.                  │
 │                                                       │
 │ * Any packages unsuitable for the repositories must   │
-│   be kept in user or 3rd-party repositories.          │ 
+│   be kept in user or 3rd-party repositories.          │
 │                                                       │
 │ * The repositories (excluding Community) must remain  │
-│   a useful base containing everything up to a         │ 
+│   a useful base containing everything up to a         │
 │   Graphical session with a browser and media player.  │
 │   They shall go no further.                           │
 │                                                       │
