@@ -252,6 +252,22 @@
 │     gcc, make, pkgconf, linux-headers, musl.          │
 │                                                       │
 │                                                       │
+│ [5003]                                                │
+│                                                       │
+│   This dependency needs 'make' as it is only          │
+│   required during build time.                         │
+│                                                       │
+│   Common Examples:                                    │
+│                                                       │
+│     autoconf, automake, cmake, meson.                 │
+│                                                       │
+│                                                       │
+│ [5004]                                                │
+│                                                       │
+│   This dependency doesn't need 'make' as it is        │
+│   required during runtime.                            │
+│                                                       │
+│                                                       │
 └───────────────────────────────────────────────────────┘
 
 ┌───────────────────────────────────────────────────────┐
