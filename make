@@ -2,16 +2,13 @@
 #
 # Simple static site builder.
 
+ROOT=$PWD
+
 # Convert the markdown page to HTML and insert it
 # into the template.
 mk() {
-    pandoc -f markdown-smart -t html5 \
-           "$@" \
-           --strip-comments \
-           --no-highlight \
-           --template=../site/templates/default.html \
-           "../site/$page" |
-           sed ':a;N;$!ba;s|>\s*<|><|g' > "${page%%.md}.html"
+    "$ROOT/pp" ../site/templates/default.html \
+        > "${page%%.md}.html" < "../site/$page"
 
     printf '%s\n' "CC $page"
 }
@@ -85,6 +82,8 @@ while read -r page; do
         # Handle the packages list differently. It requires some generation
         # to turn the database file into HTML.
         *packages/index.md*)
+            [ "$USER" != goldie ] || continue
+
             mk
 
             {
