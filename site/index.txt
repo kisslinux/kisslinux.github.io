@@ -1,24 +1,24 @@
-┌–––––––––––––––––––––––––––––––––––––––––––––––––––––––┐
+┌───────────────────────────────────────────────────────┐
 │                                                       │
 │                        KISS                           │
 │                                                       │
 │ * An independent Linux® distribution with a focus on  │
 │   simplicity and the concept of less is more.         │
-│   The distribution targets only the x86-64            │
+│   The distribution targets only the x86─64            │
 │   architecture and the English language.              │
 │                                                       │
-└–––––––––––––––––––––––––––––––––––––––––––––––––––––––┘
+└───────────────────────────────────────────────────────┘
 
-┌–––––––––––––––––––––––––––––––––––––––––––––––––––––––┐
+┌───────────────────────────────────────────────────────┐
 │                                                       │
 │                      OVERVIEW                         │
 │                                                       │
 │ * An independent Linux® distribution with a focus on  │
 │   simplicity and the concept of less is more.         │
-│   The distribution targets only the x86-64            │
+│   The distribution targets only the x86─64            │
 │   architecture and the English language.              │
 │                                                       │
-│ * Uses a plain-text package system which is           │
+│ * Uses a plain─text package system which is           │
 │   language agnostic and parseable with basic UNIX     │
 │   utilities.                                          │
 │                                                       │
@@ -43,7 +43,7 @@
 │                                                       │
 │ * Choice! The coreutils, init, device manager,        │
 │   compiler, shell and * can be replaced. There's no   │
-│   lock-in to specific software (excluding musl and    │
+│   lock─in to specific software (excluding musl and    │
 │   the kernel of course).                              │
 │                                                       │
 │ * Rootless Xorg environment without any additional    │
@@ -53,20 +53,20 @@
 │   based on signed commits and built into git itself.  │
 │                                                       │
 │                                                       │
-└–––––––––––––––––––––––––––––––––––––––––––––––––––––––┘
+└───────────────────────────────────────────────────────┘
 
-┌–––––––––––––––––––––––––––––––––––––––––––––––––––––––┐
+┌───────────────────────────────────────────────────────┐
 │                                                       │
 │                        KISS                           │
 │                                                       │
 │ * An independent Linux® distribution with a focus on  │
 │   simplicity and the concept of less is more.         │
-│   The distribution targets only the x86-64            │
+│   The distribution targets only the x86─64            │
 │   architecture and the English language.              │
 │                                                       │
-└–––––––––––––––––––––––––––––––––––––––––––––––––––––––┘
+└───────────────────────────────────────────────────────┘
 
-┌–––––––––––––––––––––––––––––––––––––––––––––––––––––––┐
+┌───────────────────────────────────────────────────────┐
 │                                                       │
 │                   FURTHER READING                     │
 │                                                       │
@@ -74,8 +74,8 @@
 │                                                       │
 │        https://k1ss.org/guidestones                   │
 │        https://k1ss.org/install                       │
-│        https://k1ss.org/package-system                │
+│        https://k1ss.org/package─system                │
 │                                                       │
 │                                                       │
-└–––––––––––––––––––––––––––––––––––––––––––––––––––––––┘
+└───────────────────────────────────────────────────────┘
 
