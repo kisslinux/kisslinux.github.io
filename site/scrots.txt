@@ -8,7 +8,7 @@
 │   on top of KISS.                                     │
 │                                                       │
 │ * Want to include a screenshot below?,                │
-│   https://k1ss.org/contact.                           │
+│   https://k1ss.org/contact                            │
 │                                                       │
 │                                                       │
 └───────────────────────────────────────────────────────┘
