@@ -2,14 +2,25 @@
 #
 # Simple static site builder.
 
+pp=$PWD/site/bin/pp
+
 # Convert the markdown page to HTML and insert it
 # into the template.
 mk() {
+    "$pp" ../site/templates/default.html \
+        > "${page%%.txt}.html" < "../site/$page"
+
+    printf '%s\n' "CC $page"
+}
+
+# Convert the markdown page to HTML and insert it
+# into the template.
+mk2() {
     pandoc -f markdown-smart -t html5 \
            "$@" \
            --strip-comments \
            --no-highlight \
-           --template=../site/templates/default.html \
+           --template=../site/templates/old.html \
            "../site/$page" |
            sed ':a;N;$!ba;s|>\s*<|><|g' > "${page%%.md}.html"
 
@@ -77,14 +88,16 @@ while read -r page; do
 
             sed -i'' 's|https://github.com/kisslinux/wiki/|/|g' "../site/$page"
 
-            mk --metadata title="$(echo "$title" | sed 's/-/ /g')" \
-               --metadata wiki="$wiki" \
-               --from markdown-markdown_in_html_blocks-raw_html
+            mk2 --metadata title="$(echo "$title" | sed 's/-/ /g')" \
+                --metadata wiki="$wiki" \
+                --from markdown-markdown_in_html_blocks-raw_html
         ;;
 
         # Handle the packages list differently. It requires some generation
         # to turn the database file into HTML.
-        *packages/index.md*)
+        *packages/index.txt*)
+            [ "$USER" != goldie ] || continue
+
             mk
 
             {
@@ -123,7 +136,8 @@ EOF
             sort packages/db.tsv > packages.txt
         ;;
 
-        *.md) mk ;;
+        *.txt) mk ;;
+        *.md)  mk2 ;;
 
         # Copy over any images or non-markdown files.
         *)
