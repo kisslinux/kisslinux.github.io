@@ -11,6 +11,8 @@ a text-editor, pager or terminal based browser.
 https://github.com/kisslinux/website/blob/master/site/blog/20200217a.txt
 
 There may still be some bugs. There's always bugs. Let me know.
+The Wiki pages and old blog/news pages need updating too. It's
+on my TODO.
 
 I spent some time writing the KISS Guidestones and KISS Style
 documents which should answer all prior questions and speed
