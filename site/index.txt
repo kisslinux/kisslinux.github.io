@@ -2,10 +2,12 @@
 |                                                       |
 |                        KISS                           |
 |                                                       |
-| * An independent Linux® distribution with a focus on  |
-|   simplicity and the concept of less is more.         |
-|   The distribution targets only the x86-64            |
+| * An independent Linux(R) distribution with a focus   |
+|   on simplicity and the concept of less is more.      |
+|                                                       |
+| * The distribution targets only the x86-64            |
 |   architecture and the English language.              |
+|                                                       |
 |                                                       |
 +-------------------------------------------------------+
 
