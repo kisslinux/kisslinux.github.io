@@ -139,8 +139,8 @@ $   ./kiss-chroot /mnt                                          │
 │   after the installation.                                     │
 │                                                               │
 │ * Repository signing ensures that all updates have been       │
-│   signed by ([Dylan Araps](/pages/team)) and further          │
-│   prevents any unsigned updates from reaching your system.    │
+│   signed by (Dylan Araps) and further prevents any unsigned   │
+│   updates from reaching your system.                          │
 │                                                               │
 │                                                               │
 │   BUILD AND INSTALL GNUPG1                                    │

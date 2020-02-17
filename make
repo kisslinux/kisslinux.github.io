@@ -13,6 +13,20 @@ mk() {
     printf '%s\n' "CC $page"
 }
 
+# Convert the markdown page to HTML and insert it
+# into the template.
+mk2() {
+    pandoc -f markdown-smart -t html5 \
+           "$@" \
+           --strip-comments \
+           --no-highlight \
+           --template=../site/templates/old.html \
+           "../site/$page" |
+           sed ':a;N;$!ba;s|>\s*<|><|g' > "${page%%.md}.html"
+
+    printf '%s\n' "CC $page"
+}
+
 repo() {
     # This function clones the desired repository and
     # generates an easily parseable file for use in the
@@ -74,9 +88,9 @@ while read -r page; do
 
             sed -i'' 's|https://github.com/kisslinux/wiki/|/|g' "../site/$page"
 
-            mk --metadata title="$(echo "$title" | sed 's/-/ /g')" \
-               --metadata wiki="$wiki" \
-               --from markdown-markdown_in_html_blocks-raw_html
+            mk2 --metadata title="$(echo "$title" | sed 's/-/ /g')" \
+                --metadata wiki="$wiki" \
+                --from markdown-markdown_in_html_blocks-raw_html
         ;;
 
         # Handle the packages list differently. It requires some generation
@@ -123,6 +137,7 @@ EOF
         ;;
 
         *.txt) mk ;;
+        *.md)  mk2 ;;
 
         # Copy over any images or non-markdown files.
         *)
