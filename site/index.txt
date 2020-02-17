@@ -11,7 +11,7 @@
 
 ┌───────────────────────────────────────────────────────┐
 │                                                       │
-│                       OVERVIEW                        │
+│                      OVERVIEW                         │
 │                                                       │
 │ * An independent Linux® distribution with a focus on  │
 │   simplicity and the concept of less is more.         │
