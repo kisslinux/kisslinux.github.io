@@ -108,10 +108,10 @@ while read -r page; do
             {
 cat <<EOF
 <br><table style="width:70ch">
-<tr style='font-weight:normal'>
-<th style='float:left'>Package</th>
-<th style='text-align:left'>Version</th>
-<th style='text-align:right'>Maintainer</th>
+<tr>
+<th style='float:left;font-weight:normal'>Package</th>
+<th style='text-align:left;font-weight:normal'>Version</th>
+<th style='text-align:right;font-weight:normal'>Maintainer</th>
 </tr>
 EOF
 
