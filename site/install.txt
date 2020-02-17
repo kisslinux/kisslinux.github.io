@@ -31,42 +31,42 @@
 │                                                               │
 │                           INDEX                               │
 │                                                               │
-│ * #setting-up-disks                                           │
-│ * #install-kiss                                               │
-│     * #download-the-latest-release                            │
-│     * #verify-the-checksums-recommended                       │
-│     * #verify-the-signature-recommended                       │
-│     * #download-the-chroot-helper                             │
-│     * #unpack-the-tarball                                     │
-│     * #enter-the-chroot                                       │
-│ * #enable-repository-signing                                  │
-│     * #build-and-install-gnupg1                               │
-│     * #import-my-dylan-araps-key                              │
-│     * #enable-signature-verification                          │
-│ * #rebuild-kiss                                               │
-│     * #modify-compiler-options-optional                       │
-│     * #update-all-base-packages-to-the-latest-versions        │
-│     * #rebuild-all-packages                                   │
-│ * #userspace-tools                                            │
-│     * #filesystems                                            │
-│     * #device-management                                      │
-│     * #wifi-optional                                          │
-│     * #dynamic-ip-addressing-optional                         │
-│ * #the-kernel                                                 │
-│     * #download-the-kernel-sources                            │
-│     * #download-firmware-blobs-if-required                    │
-│     * #configure-the-kernel                                   │
-│     * #build-the-kernel                                       │
-│     * #install-the-kernel                                     │
-│ * #the-bootloader                                             │
-│     * #build-and-install-grub                                 │
-│     * #setup-grub                                             │
-│ * #install-init-scripts                                       │
-│ * #add-a-normal-user-recommended                              │
-│ * #enable-the-community-repository                            │
-│ * #install-xorg-optional                                      │
-│     * #add-your-user-to-the-relevant-groups                   │
-│ * #further-steps                                              │
+│ * Setting Up Disks                                            │
+│ * Install Kiss                                                │
+│     * Download The Latest Release                             │
+│     * Verify The Checksums                                    │
+│     * Verify The Signature                                    │
+│     * Download The Chroot Helper                              │
+│     * Unpack The Tarball                                      │
+│     * Enter The Chroot                                        │
+│ * Enable Repository Signing                                   │
+│     * Build And Install Gnupg1                                │
+│     * Import My Key                                           │
+│     * Enable Signature Verification                           │
+│ * Rebuild Kiss                                                │
+│     * Modify Compiler Options                                 │
+│     * Update All Base Packages To The Latest Versions         │
+│     * Rebuild All Packages                                    │
+│ * Userspace Tools                                             │
+│     * Filesystems                                             │
+│     * Device Management                                       │
+│     * Wifi                                                    │
+│     * Dynamic Ip Addressing                                   │
+│ * The Kernel                                                  │
+│     * Download The Kernel Sources                             │
+│     * Download Firmware Blobs If Required                     │
+│     * Configure The Kernel                                    │
+│     * Build The Kernel                                        │
+│     * Install The Kernel                                      │
+│ * The Bootloader                                              │
+│     * Build And Install Grub                                  │
+│     * Setup Grub                                              │
+│ * Install Init Scripts                                        │
+│ * Add A Normal User Recommended                               │
+│ * Enable The Community Repository                             │
+│ * Install Xorg                                                │
+│     * Add Your User To The Relevant Groups                    │
+│ * Further Steps                                               │
 │                                                               │
 │                                                               │
 └───────────────────────────────────────────────────────────────┘
