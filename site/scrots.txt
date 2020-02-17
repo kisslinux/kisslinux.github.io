@@ -14,23 +14,6 @@
 └───────────────────────────────────────────────────────┘
 
 
-
-INDEX
-
-* Dylan Araps (dylanaraps)
-* Muhammad Herdiansyah (KONIMEX)
-* Cliford Sab (lieuxnoir)
-* Ominous
-* Niko Tidar Lantang Perkasa (nikotidar)
-* Phillip L (p410n3)
-* Adam Schaefers (a-schaefers)
-* Matthew W (sirtomato999)
-* Aaron G
-* Anirudh (icyphox)
-
-
-
-
 Dylan Araps (https://github.com/dylanaraps)
 <a href="/images/dylan01.jpg"><picture>
   <source srcset="/images/dylan01.webp" type="image/webp">
