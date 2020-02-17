@@ -3,7 +3,7 @@
 │                       INSTALL KISS                            │
 │                                                               │
 │ * The installation is very similar to Gentoo's                │
-│   stage 3 `tarballs`.                                         │
+│   stage 3 tarballs.                                           │
 │                                                               │
 │ * An archive is used which contains a full KISS system        │
 │   minus the boot-loader and kernel. The provided archive      │
@@ -17,7 +17,7 @@
 │                                                               │
 │ * For the purpose of this guide I will be using another       │
 │   Linux distribution's live-CD to bootstrap KISS. The         │
-│   live-CD must include ta` (with xz support), mountpoint      │
+│   live-CD must include tar (with xz support), mountpoint      │
 │   and other basic utilities.                                  │
 │                                                               │
 │ * From this point on, the guide assumes you have booted       │
@@ -117,7 +117,7 @@ $   chmod +x kiss-chroot                                        │
 │   contains a full system minus the bootloader, kernel and     │
 │   optional utilities.                                         │
 │                                                               │
-$   tar xvf kiss-chroot.tar.xz -C /mnt --strip-components 1
+$   tar xvf kiss-chroot.tar.xz -C /mnt --strip-components 1     │
 │                                                               │
 │                                                               │
 │   ENTER THE CHROOT                                            │
@@ -176,8 +176,8 @@ $   echo trusted-key 0x46d62dd9f1de636e >>/root/.gnupg/gpg.conf │
 │   The same steps can also be followed with 3rd-party          │
 │   repositories if the owner signs their commits.              │
 │                                                               │
-$   cd /var/db/kiss/repo
-$   git config merge.verifySignatures true
+$   cd /var/db/kiss/repo                                        │
+$   git config merge.verifySignatures true                      │
 │                                                               │
 │                                                               │
 └───────────────────────────────────────────────────────────────┘
@@ -382,11 +382,11 @@ $   make -j "$(nproc)"                                          │
 │   Ignore the LILO error, it's harmless.                       │
 │                                                               │
 │   # Install the built modules.                                │
-│   # This installs directly to `/lib` (symlink to `/usr/lib`). │
+│   # This installs directly to /lib (symlink to /usr/lib).     │
 $   make modules_install                                        │
 │                                                               │
 │   # Install the built kernel.                                 │
-│   # This installs directly to `/boot`.                        │
+│   # This installs directly to /boot.                          │
 $   make install                                                │
 │                                                               │
 │   # Rename the kernel.                                        │
@@ -456,68 +456,96 @@ $   grub-mkconfig -o /boot/grub/grub.cfg                        │
 $   kiss b baseinit                                             │
 $   kiss i baseinit                                             │
 │                                                               │
+│                                                               │
 └───────────────────────────────────────────────────────────────┘
 
-## Add a normal user (*recommended*)
+┌───────────────────────────────────────────────────────────────┐
+│                                                               │
+│               ADD A NORMAL USER (recommended)                 │
+│                                                               │
+│                                                               │
+$   adduser USERNAME                                            │
+│                                                               │
+│                                                               │
+└───────────────────────────────────────────────────────────────┘
 
-```
--> adduser USERNAME
-```
+┌───────────────────────────────────────────────────────────────┐
+│                                                               │
+│               ENABLE THE COMMUNITY REPOSITORY                 │
+│                                                               │
+│ * The KISS community repository is maintained by users of the │
+│   distribution and contains packages which aren't in the main │
+│   repositories. This repository is disabled by default.       │
+│                                                               │
+│   # Clone the repository to a location of your choosing.      │
+$   git clone https://github.com/kisslinux/community.git        │
+│                                                               │
+│   # Add the repository to the system-wide 'KISS_PATH'.        │
+│   # The 'KISS_PATH' variable works exactly like 'PATH'.       │
+│   # Each repository is split by ':' and is checked in         │
+│   # the order they're written.                                │
+│   #                                                           │
+│   # Add the full path to the repository you cloned            │
+│   # above to the existing KISS_PATH.                          │
+│   #                                                           │
+│   # NOTE: The subdirectory must also be added.                │
+$   vi /etc/profile.d/kiss_path.sh                              │
+│                                                               │
+│   # Spawn a new login shell to access this repository         │
+│   # immediately.                                              │
+$   sh -l                                                       │
+│                                                               │
+│                                                               │
+└───────────────────────────────────────────────────────────────┘
 
-## Enable the community repository
+┌───────────────────────────────────────────────────────────────┐
+│                                                               │
+│                   INSTALL XORG (optional)                     │
+│                                                               │
+│ * To install Xorg, the input drivers and a basic default set  │
+│   of fonts, run the following commands                        │
+│                                                               │
+$   kiss b xorg-server xinit xf86-input-libinput                │
+│                                                               │
+│   # Installing a base font is recommended as Xorg             │
+│   # and applications require fonts to function.               │
+$   kiss b liberation-fonts                                     │
+$   kiss i liberation-fonts                                     │
+│                                                               │
+│                                                               │
+└───────────────────────────────────────────────────────────────┘
 
-The KISS community repository is maintained by users of the distribution and contains packages which aren't in the main repositories. This repository is disabled by default.
+┌───────────────────────────────────────────────────────────────┐
+│                                                               │
+│             Add your user to the relevant groups              │
+│                                                               │
+│ * This groups based permissions model may not be suitable if  │
+│   KISS will be used as a multi-seat system. Further           │
+│   configuration can be done at your own discretion.           │
+│                                                               │
+│   # Replace 'USERNAME' with the name of the                   │
+│   # user created above.                                       │
+$   addgroup USERNAME video                                     │
+$   addgroup USERNAME audio                                     │
+│                                                               │
+│                                                               │
+└───────────────────────────────────────────────────────────────┘
 
-```
-# Clone the repository to a location of your choosing.
--> git clone https://github.com/kisslinux/community.git
-
-# Add the repository to the system-wide 'KISS_PATH'.
-# The 'KISS_PATH' variable works exactly like 'PATH'.
-# Each repository is split by ':' and is checked in
-# the order they're written.
-#
-# Add the full path to the repository you cloned
-# above.
-#
-# NOTE: The subdirectory must also be added.
-# Example: export KISS_PATH=/var/db/kiss/repo/core:/var/db/kiss/repo/extra:/var/db/kiss/repo/xorg:/path/to/community/community
--> vi /etc/profile.d/kiss_path.sh
-
-# Spawn a new login shell to access this repository
-# immediately.
--> sh -l
-```
-
-## Install Xorg (*optional*)
-
-To install Xorg, the input drivers and a basic default set of fonts, run the following commands.
-
-```
--> kiss b xorg-server xinit xf86-input-libinput
-
-# Installing a base font is recommended as Xorg
-# and applications require fonts to function.
--> kiss b liberation-fonts
--> kiss i liberation-fonts
-```
-
-### Add your user to the relevant groups
-
-**NOTE**: This groups based permissions model may not be suitable if KISS will be used as a multi-seat system. Further configuration can be done at your own discretion.
-
-```
-# Replace 'USERNAME' with the name of the
-# user created above.
--> addgroup USERNAME video
--> addgroup USERNAME audio
-```
-
-## Further steps
-
-You should now be able to reboot into your KISS installation. Typical configuration should follow (*hostname, creation of users, service configuration, installing a window manager, terminal etc*).
-
-If you encountered any issues, don't hesitate to open an issue on one of our GitHub repositories, post on the [subreddit](https://reddit.com/r/kisslinux) or join the IRC server.
-
-See: [Get in touch](/contact.txt)
-See: [The Wiki](https://k1ss.org/wiki/)
+┌───────────────────────────────────────────────────────────────┐
+│                                                               │
+│                        Further steps                          │
+│                                                               │
+│ * You should now be able to reboot into your KISS             │
+│   installation. Typical configuration should follow           │
+│   (hostname, creation of users, service configuration,        │
+│   installing a window manager, terminal etc).                 │
+│                                                               │
+│ * If you encountered any issues, don't hesitate to open       │
+│   an issue on one of our GitHub repositories, post on         │
+│   https://reddit.com/r/kisslinux) or join the IRC server.     │
+│                                                               │
+│   See: https://k1ss/contact.txt                               │
+│   See: https://k1ss/wiki                                      │
+│                                                               │
+│                                                               │
+└───────────────────────────────────────────────────────────────┘
