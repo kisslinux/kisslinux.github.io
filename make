@@ -7,8 +7,10 @@ pp=$PWD/site/bin/pp
 # Convert the markdown page to HTML and insert it
 # into the template.
 mk() {
+    sed 's|https[:]//[^ ]*|<a href=\"\0\">\0</a>|g' "../site/$page" |
+
     "$pp" ../site/templates/default.html \
-        > "${page%%.txt}.html" < "../site/$page"
+        > "${page%%.txt}.html"
 
     printf '%s\n' "CC $page"
 }
