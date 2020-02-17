@@ -1,82 +1,81 @@
-┌───────────────────────────────────────────────────────┐
-│                                                       │
-│                        KISS                           │
-│                                                       │
-│ * An independent Linux® distribution with a focus on  │
-│   simplicity and the concept of less is more.         │
-│   The distribution targets only the x86-64            │
-│   architecture and the English language.              │
-│                                                       │
-└───────────────────────────────────────────────────────┘
+*-------------------------------------------------------*
+|                                                       |
+|                        KISS                           |
+|                                                       |
+| * An independent Linux® distribution with a focus on  |
+|   simplicity and the concept of less is more.         |
+|   The distribution targets only the x86-64            |
+|   architecture and the English language.              |
+|                                                       |
+*-------------------------------------------------------*
 
-┌───────────────────────────────────────────────────────┐
-│                                                       │
-│                      OVERVIEW                         │
-│                                                       │
-│ * An independent Linux® distribution with a focus on  │
-│   simplicity and the concept of less is more.         │
-│   The distribution targets only the x86-64            │
-│   architecture and the English language.              │
-│                                                       │
-│ * Uses a plain-text package system which is           │
-│   language agnostic and parseable with basic UNIX     │
-│   utilities.                                          │
-│                                                       │
-│ * Uses a package manager written in 600~ lines of     │
-│   POSIX sh (excluding blank lines and comments).      │
-│                                                       │
-│ * Based on musl libc, busybox and the Linux kernel.   │
-│                                                       │
-│ * All shell code is linted by and passes shellcheck   │
-│   (including each and every repository package).      │
-│                                                       │
-│ * All packages are compiled from source by the        │
-│   package manager which automatically handles         │
-│   dependencies, patches, etc.                         │
-│                                                       │
-│ * Explicitly excludes the following software:         │
-│                                                       │
-│     dbus, systemd, polkit, gettext, intltool,         │
-│     pulseaudio, pam, wayland, logind, ConsoleKit2     │
-│     and all Desktop Environments.                     │
-│                                                       │
-│                                                       │
-│ * Choice! The coreutils, init, device manager,        │
-│   compiler, shell and * can be replaced. There's no   │
-│   lock-in to specific software (excluding musl and    │
-│   the kernel of course).                              │
-│                                                       │
-│ * Rootless Xorg environment without any additional    │
-│   software.                                           │
-│                                                       │
-│ * Repository signing through git and gnupg,           │
-│   based on signed commits and built into git itself.  │
-│                                                       │
-│                                                       │
-└───────────────────────────────────────────────────────┘
+*-------------------------------------------------------*
+|                                                       |
+|                      OVERVIEW                         |
+|                                                       |
+| * An independent Linux® distribution with a focus on  |
+|   simplicity and the concept of less is more.         |
+|   The distribution targets only the x86-64            |
+|   architecture and the English language.              |
+|                                                       |
+| * Uses a plain-text package system which is           |
+|   language agnostic and parseable with basic UNIX     |
+|   utilities.                                          |
+|                                                       |
+| * Uses a package manager written in 600~ lines of     |
+|   POSIX sh (excluding blank lines and comments).      |
+|                                                       |
+| * Based on musl libc, busybox and the Linux kernel.   |
+|                                                       |
+| * All shell code is linted by and passes shellcheck   |
+|   (including each and every repository package).      |
+|                                                       |
+| * All packages are compiled from source by the        |
+|   package manager which automatically handles         |
+|   dependencies, patches, etc.                         |
+|                                                       |
+| * Explicitly excludes the following software:         |
+|                                                       |
+|     dbus, systemd, polkit, gettext, intltool,         |
+|     pulseaudio, pam, wayland, logind, ConsoleKit2     |
+|     and all Desktop Environments.                     |
+|                                                       |
+|                                                       |
+| * Choice! The coreutils, init, device manager,        |
+|   compiler, shell and * can be replaced. There's no   |
+|   lock-in to specific software (excluding musl and    |
+|   the kernel of course).                              |
+|                                                       |
+| * Rootless Xorg environment without any additional    |
+|   software.                                           |
+|                                                       |
+| * Repository signing through git and gnupg,           |
+|   based on signed commits and built into git itself.  |
+|                                                       |
+|                                                       |
+*-------------------------------------------------------*
 
-┌───────────────────────────────────────────────────────┐
-│                                                       │
-│                        KISS                           │
-│                                                       │
-│ * An independent Linux® distribution with a focus on  │
-│   simplicity and the concept of less is more.         │
-│   The distribution targets only the x86-64            │
-│   architecture and the English language.              │
-│                                                       │
-└───────────────────────────────────────────────────────┘
+*-------------------------------------------------------*
+|                                                       |
+|                        KISS                           |
+|                                                       |
+| * An independent Linux® distribution with a focus on  |
+|   simplicity and the concept of less is more.         |
+|   The distribution targets only the x86-64            |
+|   architecture and the English language.              |
+|                                                       |
+*-------------------------------------------------------*
 
-┌───────────────────────────────────────────────────────┐
-│                                                       │
-│                   FURTHER READING                     │
-│   #url                                                   │
-    # comment
-│ * See:                                                │
-│                                                       │
-│        https://k1ss.org/guidestones                   │
-│        https://k1ss.org/install                       │
-│        https://k1ss.org/package-system                │
-│                                                       │
-│                                                       │
-└───────────────────────────────────────────────────────┘
+*-------------------------------------------------------*
+|                                                       |
+|                   FURTHER READING                     |
+|                                                       |
+| * See:                                                |
+|                                                       |
+|        https://k1ss.org/guidestones                   |
+|        https://k1ss.org/install                       |
+|        https://k1ss.org/package-system                |
+|                                                       |
+|                                                       |
+*-------------------------------------------------------*
 
