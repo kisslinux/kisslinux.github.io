@@ -17,7 +17,7 @@ on my TODO.
 
 I spent some time writing the KISS Guidestones and KISS Style
 documents which should answer all prior questions and speed
-up the review process of new packages.
+up the review process of new packages. (See above nav)
 
 Otherwise it's been a quiet week. Oh yeah. Dylan Araps version
 22.02 was released this week on February 11.
