@@ -69,7 +69,8 @@
 ┌───────────────────────────────────────────────────────┐
 │                                                       │
 │                   FURTHER READING                     │
-│                                                       │
+│   #url                                                   │
+    # comment
 │ * See:                                                │
 │                                                       │
 │        https://k1ss.org/guidestones                   │
