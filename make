@@ -2,13 +2,13 @@
 #
 # Simple static site builder.
 
-ROOT=$PWD
+pp=$PWD/site/bin/pp
 
 # Convert the markdown page to HTML and insert it
 # into the template.
 mk() {
-    "$ROOT/pp" ../site/templates/default.html \
-        > "${page%%.md}.html" < "../site/$page"
+    "$pp" ../site/templates/default.html \
+        > "${page%%.txt}.html" < "../site/$page"
 
     printf '%s\n' "CC $page"
 }
@@ -81,7 +81,7 @@ while read -r page; do
 
         # Handle the packages list differently. It requires some generation
         # to turn the database file into HTML.
-        *packages/index.md*)
+        *packages/index.txt*)
             [ "$USER" != goldie ] || continue
 
             mk
@@ -122,7 +122,7 @@ EOF
             sort packages/db.tsv > packages.txt
         ;;
 
-        *.md) mk ;;
+        *.txt) mk ;;
 
         # Copy over any images or non-markdown files.
         *)

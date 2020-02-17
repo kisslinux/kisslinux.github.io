@@ -72,9 +72,9 @@
 │                                                       │
 │ * See:                                                │
 │                                                       │
-│        https://k1ss.org/guidestones.txt               │
-│        https://k1ss.org/pages/install                 │
-│        https://k1ss.org/package-system.txt            │
+│        https://k1ss.org/guidestones                   │
+│        https://k1ss.org/install                       │
+│        https://k1ss.org/package-system                │
 │                                                       │
 │                                                       │
 └───────────────────────────────────────────────────────┘

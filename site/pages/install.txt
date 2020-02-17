@@ -544,7 +544,7 @@ $   addgroup USERNAME audio                                     │
 │   an issue on one of our GitHub repositories, post on         │
 │   https://reddit.com/r/kisslinux) or join the IRC server.     │
 │                                                               │
-│   See: https://k1ss/contact.txt                               │
+│   See: https://k1ss/contact                                   │
 │   See: https://k1ss/wiki                                      │
 │                                                               │
 │                                                               │
