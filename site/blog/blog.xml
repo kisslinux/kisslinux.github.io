@@ -7,6 +7,13 @@
 <ttl>1800</ttl>
 <atom:link href="https://getkiss.org/blog/blog.xml" rel="self" type="application/rss+xml" />
 <item>
+<title>17/02/2020: This week in KISS (#11)</title>
+<description>Website redesign #1023 is complete.</description>
+<link>https://getkiss.org/blog/20200217a/</link>
+<guid isPermaLink="true">https://getkiss.org/blog/20200217a/</guid>
+<pubDate>Mon, 17 Feb 2020 00:00:00 +0000</pubDate>
+</item>
+<item>
 <title>09/02/2020: This week in KISS (#10)</title>
 <description>More package manager goodies this week.</description>
 <link>https://getkiss.org/blog/20200209a/</link>
