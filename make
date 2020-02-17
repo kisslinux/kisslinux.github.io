@@ -7,7 +7,7 @@ pp=$PWD/site/bin/pp
 # Convert the markdown page to HTML and insert it
 # into the template.
 mk() {
-    sed "s|\([^=][^\'\"]\)\(https[:]//[^ ]*\)|<a href=\"\2\">\2</a>|g" \
+    sed "s|\([^=][^\'\"]\)\(https[:]//[^ ]*\)|\1<a href=\"\2\">\2</a>|g" \
         "../site/$page" |
 
     "$pp" ../site/templates/default.html \
