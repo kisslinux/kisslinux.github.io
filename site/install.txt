@@ -31,7 +31,43 @@
 │                                                               │
 │                           INDEX                               │
 │                                                               │
-│ ...                                                           │
+│ * #setting-up-disks                                           │
+│ * #install-kiss                                               │
+│     * #download-the-latest-release                            │
+│     * #verify-the-checksums-recommended                       │
+│     * #verify-the-signature-recommended                       │
+│     * #download-the-chroot-helper                             │
+│     * #unpack-the-tarball                                     │
+│     * #enter-the-chroot                                       │
+│ * #enable-repository-signing                                  │
+│     * #build-and-install-gnupg1                               │
+│     * #import-my-dylan-araps-key                              │
+│     * #enable-signature-verification                          │
+│ * #rebuild-kiss                                               │
+│     * #modify-compiler-options-optional                       │
+│     * #update-all-base-packages-to-the-latest-versions        │
+│     * #rebuild-all-packages                                   │
+│ * #userspace-tools                                            │
+│     * #filesystems                                            │
+│     * #device-management                                      │
+│     * #wifi-optional                                          │
+│     * #dynamic-ip-addressing-optional                         │
+│ * #the-kernel                                                 │
+│     * #download-the-kernel-sources                            │
+│     * #download-firmware-blobs-if-required                    │
+│     * #configure-the-kernel                                   │
+│     * #build-the-kernel                                       │
+│     * #install-the-kernel                                     │
+│ * #the-bootloader                                             │
+│     * #build-and-install-grub                                 │
+│     * #setup-grub                                             │
+│ * #install-init-scripts                                       │
+│ * #add-a-normal-user-recommended                              │
+│ * #enable-the-community-repository                            │
+│ * #install-xorg-optional                                      │
+│     * #add-your-user-to-the-relevant-groups                   │
+│ * #further-steps                                              │
+│                                                               │
 │                                                               │
 └───────────────────────────────────────────────────────────────┘
 
