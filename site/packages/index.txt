@@ -7,7 +7,7 @@
 │                                                       │
 │ * Raw data available here: <a href='https://getkiss.org/packages/db.tsv'>db.tsv</a>                     │
 │                                                       │
-│ * Last Updated: %%DATE%%                              │
+│ * Last Updated: %%DATE%%          │
 │                                                       │
 │                                                       │
 └───────────────────────────────────────────────────────┘
