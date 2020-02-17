@@ -13,11 +13,6 @@
 |                                                       |
 |                      OVERVIEW                         |
 |                                                       |
-| * An independent Linux® distribution with a focus on  |
-|   simplicity and the concept of less is more.         |
-|   The distribution targets only the x86-64            |
-|   architecture and the English language.              |
-|                                                       |
 | * Uses a plain-text package system which is           |
 |   language agnostic and parseable with basic UNIX     |
 |   utilities.                                          |
