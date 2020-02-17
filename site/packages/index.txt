@@ -1,15 +1,15 @@
-┌───────────────────────────────────────────────────────┐
+┌────────────────────────────────────────────────────────────────────┐
+│                                                                    │
+│                             PACKAGES                               │
+│                                                                    │
+│ * This page contains every package available in the                │
+│   repositories.                                                    │
+│                                                                    │
+│ * Raw data available here: <a href='https://getkiss.org/packages/db.tsv'>db.tsv</a>                                  │
 │                                                       │
-│                      PACKAGES                         │
-│                                                       │
-│ * This page contains every package available in the   │
-│   repositories.                                       │
-│                                                       │
-│ * Raw data available here: <a href='https://getkiss.org/packages/db.tsv'>db.tsv</a>                     │
-│                                                       │
-│ * Last Updated: %%DATE%%          │
-│                                                       │
-│                                                       │
-└───────────────────────────────────────────────────────┘
+│ * Last Updated: %%DATE%%                       │
+│                                                                    │
+│                                                                    │
+└────────────────────────────────────────────────────────────────────┘
 
 <div style='overflow-x:auto'>%%PKG%%</div>
