@@ -1,17 +1,17 @@
-┌───────────────────────────────────────────────────────┐
-│                                                       │
-│                     SCREENSHOTS                       │
-│                                                       │
-│ * This distribution has no default desktop or window  │
-│   manager environment. The screenshots below are      │
-│   each user's personal customizations built           │
-│   on top of KISS.                                     │
-│                                                       │
-│ * Want to include a screenshot below?,                │
-│   https://k1ss.org/contact                            │
-│                                                       │
-│                                                       │
-└───────────────────────────────────────────────────────┘
++-------------------------------------------------------+
+|                                                       |
+|                     SCREENSHOTS                       |
+|                                                       |
+| * This distribution has no default desktop or window  |
+|   manager environment. The screenshots below are      |
+|   each user's personal customizations built           |
+|   on top of KISS.                                     |
+|                                                       |
+| * Want to include a screenshot below?,                |
+|   https://k1ss.org/contact                            |
+|                                                       |
+|                                                       |
++-------------------------------------------------------+
 
 
 Dylan Araps (https://github.com/dylanaraps)

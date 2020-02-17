@@ -1,13 +1,13 @@
-┌───────────────────────────────────────────────────────┐
-│                                                       │
-│                    GET IN TOUCH                       │
-│                                                       │
-│ * Feel free to contact me at any of the following:    │
-│                                                       │
-│   - IRC:    #kisslinux at https://freenode.net        │
-│   - Reddit: https://reddit.com/r/kisslinux            │
-│   - Email:  dylan@k1ss.org                            │
-│   - GitHub: https://github.com/kisslinux              │
-│                                                       │
-│                                                       │
-└───────────────────────────────────────────────────────┘
++-------------------------------------------------------+
+|                                                       |
+|                    GET IN TOUCH                       |
+|                                                       |
+| * Feel free to contact me at any of the following:    |
+|                                                       |
+|   - IRC:    #kisslinux at https://freenode.net        |
+|   - Reddit: https://reddit.com/r/kisslinux            |
+|   - Email:  dylan@k1ss.org                            |
+|   - GitHub: https://github.com/kisslinux              |
+|                                                       |
+|                                                       |
++-------------------------------------------------------+
