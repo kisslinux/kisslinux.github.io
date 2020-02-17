@@ -1,0 +1,98 @@
+┌───────────────────────────────────────────────────────┐
+│                                                       │
+│                     SCREENSHOTS                       │
+│                                                       │
+│ * This distribution has no default desktop or window  │
+│   manager environment. The screenshots below are      │
+│   each user's personal customizations built           │
+│   on top of KISS.                                     │
+│                                                       │
+│ * Want to include a screenshot below?,                │
+│   https://k1ss.org/contact.                           │
+│                                                       │
+│                                                       │
+└───────────────────────────────────────────────────────┘
+
+
+
+INDEX
+
+* Dylan Araps (dylanaraps)
+* Muhammad Herdiansyah (KONIMEX)
+* Cliford Sab (lieuxnoir)
+* Ominous
+* Niko Tidar Lantang Perkasa (nikotidar)
+* Phillip L (p410n3)
+* Adam Schaefers (a-schaefers)
+* Matthew W (sirtomato999)
+* Aaron G
+* Anirudh (icyphox)
+
+
+
+
+Dylan Araps (https://github.com/dylanaraps)
+<a href="/images/dylan01.jpg"><picture>
+  <source srcset="/images/dylan01.webp" type="image/webp">
+  <img src="/images/dylan01.jpg" alt="dylan-01">
+</picture></a>
+
+
+Muhammad Herdiansyah (https://github.com/konimex)
+<a href="/images/konimex01.jpg"><picture>
+  <source srcset="/images/konimex01.webp" type="image/webp">
+  <img src="/images/konimex01.jpg" alt="konimex-01">
+</picture></a>
+
+
+Cliford Sab (https://github.com/lieuxnoir)
+<a href="/images/nestman01.jpg"><picture>
+  <img src="/images/nestman01.jpg" alt="nestman-01">
+</picture></a>
+
+
+Ominous
+<a href="/images/ominous01.jpg"><picture>
+  <source srcset="/images/ominous01.webp" type="image/webp">
+  <img src="/images/ominous01.jpg" alt="ominous-01">
+</picture></a>
+
+
+Niko Tidar Lantang Perkasa (https://github.com/nikotidar)
+<a href="/images/niko01.jpg"><picture>
+  <source srcset="/images/niko01.webp" type="image/webp">
+  <img src="/images/niko01.jpg" alt="niko-01">
+</picture></a>
+
+
+Phillip L (https://github.com/p410n3)
+<a href="/images/phillip01.jpg"><picture>
+  <source srcset="/images/phillip01.webp" type="image/webp">
+  <img src="/images/phillip01.jpg" alt="phillip-01">
+</picture></a>
+
+
+Adam Schaefers (https://github.com/a-schaefers)
+<a href="/images/adam01.jpg"><picture>
+  <source srcset="/images/adam01.webp" type="image/webp">
+  <img src="/images/adam01.jpg" alt="adam01">
+</picture></a>
+
+
+Matthew W (https://github.com/sirtomato999)
+<a href="/images/sirtomato.jpg"><picture>
+  <source srcset="/images/sirtomato.webp" type="image/webp">
+  <img src="/images/sirtomato.jpg" alt="sirtomato">
+</picture></a>
+
+
+Aaron G
+<a href="/images/aarong.png"><picture>
+  <img src="/images/aarong.png" alt="aarong">
+</picture></a>
+
+
+Anirudh (https://icyphox.sh)
+<a href="/images/icyphox.jpg"><picture>
+  <img src="/images/icyphox.jpg" alt="icyphox">
+</picture></a>
