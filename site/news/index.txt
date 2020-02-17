@@ -1,13 +1,13 @@
-┌───────────────────────────────────────────────────────┐
-│                                                       │
-│                       NEWS                            │
-│                                                       │
-│ * RSS Feed available here:                            │
-│                                                       │
-│   - https://k1ss.org/news/news.xml                    │
-│                                                       │
-│                                                       │
-└───────────────────────────────────────────────────────┘
++-------------------------------------------------------+
+|                                                       |
+|                       NEWS                            |
+|                                                       |
+| * RSS Feed available here:                            |
+|                                                       |
+|   - https://k1ss.org/news/news.xml                    |
+|                                                       |
+|                                                       |
++-------------------------------------------------------+
 
 - <a href=/news/20200114a.html>14/01/2020: Firefox binaries now available</a>
 - <a href=/news/20200101a.html>01/01/2020: Firefox privacy changes moved</a>
