@@ -9,6 +9,7 @@
 |                                                       |
 +-------------------------------------------------------+
 
+- <a href=/blog/20200218a.html>18/02/2020: k1ss.org</a>
 - <a href=/blog/20200217a.html>17/02/2020: This week in KISS (#11)</a>
 - <a href=/blog/20200209a.html>09/02/2020: This week in KISS (#10)</a>
 - <a href=/blog/20200202a.html>02/02/2020: This week in KISS (#9)</a>
