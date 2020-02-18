@@ -21,7 +21,7 @@ mk() {
 }
 
 # Delete the generated website.
-rm    -rf docs
+rm    -f  docs/*.txt docs/*.html
 mkdir -p  docs
 cd        docs
 
