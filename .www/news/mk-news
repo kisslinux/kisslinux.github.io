@@ -1,0 +1,43 @@
+#!/bin/sh -e
+
+date=$(date +%Y%m%d)a
+date2=$(date +%d/%m/%Y)
+date3=$(date '+%a, %d %h %Y')
+index=$(printf %d '"a')
+
+while [ -f "$date" ]; do
+    index=$((index + 1))
+    date=${date%%?}$(printf %b "$(printf \\x%x "$index")")
+done
+
+cat > "$date.md" <<EOF
+---
+title: "$date2: $1"
+---
+EOF
+
+rss="<item>
+<title>$date2: $1</title>
+<description></description>
+<link>https://getkiss.org/news/$date/</link>
+<guid isPermaLink=\"true\">https://getkiss.org/news/$date/</guid>
+<pubDate>$date3 00:00:00 +0000</pubDate>
+</item>"
+
+entry="<li><a href=/news/$date.html>$date2: $1</a></li>"
+
+while read -r line; do
+    printf '%s\n' "$line"
+
+    case $line in *'<atom'*) printf '%s\n' "$rss"; esac
+done < news.xml > news.xml.new
+
+mv -f news.xml.new news.xml
+
+while read -r line; do
+    printf '%s\n' "$line"
+
+    case $line in *'<ul'*) printf '%s\n' "$entry"; esac
+done < index.md > index.md.new
+
+mv -f index.md.new index.md
