@@ -47,4 +47,5 @@ done
 
 cd ..
 git add .www
+git commit -m "docs: update"
 git subtree push -P .www origin gh-pages
