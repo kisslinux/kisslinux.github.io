@@ -46,4 +46,5 @@ while read -r page; do
 done
 
 cd ..
+git add .www
 git subtree push -P .www origin gh-pages
