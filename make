@@ -21,9 +21,9 @@ mk() {
 }
 
 # Delete the generated website.
-rm    -rf .www
-mkdir -p  .www
-cd        .www
+rm    -rf dist
+mkdir -p  dist
+cd        dist
 
 # Iterate over each file in the source tree under /site/.
 (cd ../site; find . -type f \
@@ -44,8 +44,3 @@ while read -r page; do
         ;;
     esac
 done
-
-cd ..
-git add .www
-git commit -m "docs: update" ||:
-git subtree push -P .www origin gh-pages
