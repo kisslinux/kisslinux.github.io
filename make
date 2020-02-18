@@ -21,9 +21,9 @@ mk() {
 }
 
 # Delete the generated website.
-rm    -rf dist
-mkdir -p  dist
-cd        dist
+rm    -rf docs
+mkdir -p  docs
+cd        docs
 
 # Iterate over each file in the source tree under /site/.
 (cd ../site; find . -type f \
