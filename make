@@ -15,6 +15,8 @@ mk() {
     "$pp" ../site/templates/default.html \
         > "${page%%.txt}.html"
 
+    cp -f "../site/$page" "$page"
+
     printf '%s\n' "CC $page"
 }
 
