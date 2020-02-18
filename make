@@ -20,20 +20,6 @@ mk() {
     printf '%s\n' "CC $page"
 }
 
-# Convert the markdown page to HTML and insert it
-# into the template.
-mk2() {
-    pandoc -f markdown-smart -t html5 \
-           "$@" \
-           --strip-comments \
-           --no-highlight \
-           --template=../site/templates/old.html \
-           "../site/$page" |
-           sed ':a;N;$!ba;s|>\s*<|><|g' > "${page%%.md}.html"
-
-    printf '%s\n' "CC $page"
-}
-
 repo() {
     # This function clones the desired repository and
     # generates an easily parseable file for use in the
@@ -60,22 +46,9 @@ repo() {
 }
 
 # Delete the generated website.
-rm    -rf .www site/wiki
-mkdir -p  .www/packages
+rm    -rf .www
+mkdir -p  .www
 cd        .www
-
-[ "$USER" = goldie ] || {
-    # Pull down the latest Wiki. {
-    git clone --depth 1 \
-        https://github.com/kisslinux/wiki.wiki.git ../site/wiki
-
-    mv -f  ../site/wiki/Home.md ../site/wiki/index.md
-    rm -rf ../site/wiki/.git
-
-    # Generate maintainer lists.
-    repo repo
-    repo community
-} ||:
 
 # Iterate over each file in the source tree under /site/.
 (cd ../site; find . -type f \
@@ -87,64 +60,7 @@ while read -r page; do
     file=${page##*/}
 
     case $page in
-        # Handle Wiki pages differently. They are pulled from GitHub so
-        # we need to modify them a little to fit into the KISS website.
-        *wiki*.md)
-            [ "${file%%.md}" = index ] && { title=Wiki; wiki=; }
-            [ "${file%%.md}" = index ] || { title=${file%%.md}; wiki=1; }
-
-            sed -i'' 's|https://github.com/kisslinux/wiki/|/|g' "../site/$page"
-
-            mk2 --metadata title="$(echo "$title" | sed 's/-/ /g')" \
-                --metadata wiki="$wiki" \
-                --from markdown-markdown_in_html_blocks-raw_html
-        ;;
-
-        # Handle the packages list differently. It requires some generation
-        # to turn the database file into HTML.
-        *packages/index.txt*)
-            [ "$USER" != goldie ] || continue
-
-            mk
-
-            {
-cat <<EOF
-<br><table style="width:70ch">
-<tr>
-<th style='float:left;font-weight:normal'>Package</th>
-<th style='text-align:left;font-weight:normal'>Version</th>
-<th style='text-align:right;font-weight:normal'>Maintainer</th>
-</tr>
-EOF
-
-                sort packages/db.tsv |
-
-                while IFS='	' read -r pkg ver _ aut ema || [ "$pkg" ]; do
-                    [ "${pkg%/*}" = community ] && repo=community || repo=repo
-
-cat <<EOF
-<tr>
-<td><a href=https://github.com/kisslinux/$repo/tree/master/$pkg>$pkg</a></td>
-<td>$(echo "$ver" | cut -c 1-10)</td>
-<td style='text-align:right'><a href='mailto:$ema'>$aut</a></td>
-</tr>
-EOF
-                done
-
-                printf '</table>'
-            } |
-
-            sed -i '/%%PKG%%/r /dev/stdin'\
-                packages/index.html
-
-            sed -i "s/%%DATE%%/$(date)/;s/%%PKG%%//" \
-                packages/index.html
-
-            sort packages/db.tsv > packages.txt
-        ;;
-
         *.txt) mk ;;
-        *.md)  mk2 ;;
 
         # Copy over any images or non-markdown files.
         *)
@@ -155,4 +71,4 @@ EOF
     esac
 done
 
-printf 'Build complete.\n'
+git subtree push -P .www origin gh-pages
