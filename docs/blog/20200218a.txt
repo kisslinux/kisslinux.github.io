@@ -1,1 +1,97 @@
-../site/./blog/20200218a.txt
+Subject	https://k1ss.org
+From	Dylan Araps &lt;dylan@k1ss.org&gt;
+Date	Mon, 18 Feb 2020 14:15:27 +0100
+
+
+I wrote a little about the new website in my weekly post
+yesterday but felt the need to write something in depth
+about it.
+
+Each blog post will now be formatted as if it were taken
+from a mailing list archive. Why? It's fun and familiar.
+
+
+HOW ARE PAGES WRITTEN?
+
+The new site doesn't use Markdown or any other kind of
+Markup language. Instead each page is written in plain
+text with the ability to use HTML tags if needed.
+
+The entire page is wrapped in pre tags with the .txt file
+inserted in-between at "compile" time. Mimicking how a
+browser displays a .txt file (to some extent).
+
+Writing posts is as simple as writing a .txt file. All
+line breaks and white-space add spacing
+(they also aren't condensed into a singular break).
+
+There's no need to worry about formatting, typography,
+layout, etc as it will display exactly how it is written.
+
+I can forget about everything and just write!
+
+
+PORTABILITY
+
+The website should display perfectly in text-based
+browsers, browsers like netsurf or dillo and modern
+browsers such as Firefox or Chromium.
+
+It can also be viewed using your pager and curl by
+appending .txt to each URL which will download the plain
+text version (as I wrote it in my text editor).
+
+This entire site will also serve as local documentation for
+the distribution through storing the txt files in
+/usr/share/doc/kiss.
+
+A Ctrl+A allows you to copy the entire page as plain-text
+as another means of locally storing the contents as they
+are displayed.
+
+
+PERFORMANCE
+
+Each page takes up a single 3-10KB~ network request when
+there are no images on the page.
+
+The content of each page makes up the majority of the size
+so the exact number differs based on how much is written.
+
+Each page is so small that caching the CSS and any other
+resources doesn't make sense at all. The overhead of the
+surrounding boilerplate is < 1KB in size.
+
+There is no Javascript, analytics or what have you on this
+site. It's simply text with the occasional image where
+appropriate.
+
+
+CUSTOMIZATION
+
+The reader has the ability to customize the font and font
+sizing through their browser settings as this website will
+use whatever the browser settings are.
+
+There is also a tiny amount of CSS to enable a dark theme
+if the user's device sends 'prefers-color-scheme:dark'.
+
+@media (prefers-color-scheme:dark) {
+  body {
+    background: #000;
+    color: #fff;
+  }
+
+  a {
+    color: #6CF
+  }
+}
+
+The idea is that one can digest the information here in
+whatever way they please. Through a terminal browser,
+regular browser, text-editor, pager, etc.
+
+
+THE END
+
+        Dylan
