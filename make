@@ -2,8 +2,8 @@
 #
 # Simple static site builder.
 
-# Convert the markdown page to HTML and insert it
-# into the template.
+# Insert the txt file into the template and turn
+# URLS into html links.
 mk() {
     sed "s|\([^=][^\'\"]\)\(https[:]//[^ \)]*\)|\1<a href=\"\2\">\2</a>|g" \
         "../site/$page" |
@@ -36,7 +36,7 @@ while read -r page; do
     case $page in
         *.txt) mk ;;
 
-        # Copy over any images or non-markdown files.
+        # Copy over any images or non-txt files.
         *)
             cp "../site/$page" "$page"
 
