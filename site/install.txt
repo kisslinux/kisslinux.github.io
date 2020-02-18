@@ -350,7 +350,7 @@ $   kiss i dhcpcd                                               |
 |   - https://www.fsfla.org/                                    |
 |                                                               |
 |   A larger list of kernels can be found on the                |
-|   https://wiki.archlinux.org/index.php/Kernel.                |
+|   https://wiki.archlinux.org/index.php/Kernel                 |
 |                                                               |
 $   wget KERNEL_SOURCE_URL                                      |
 |                                                               |
@@ -580,8 +580,8 @@ $   addgroup USERNAME audio                                     |
 |   an issue on one of our GitHub repositories, post on         |
 |   https://reddit.com/r/kisslinux) or join the IRC server.     |
 |                                                               |
-|   See: https://k1ss/contact                                   |
-|   See: https://k1ss/wiki                                      |
+|   See: https://k1ss.org/contact                               |
+|   See: https://k1ss.org/wiki                                  |
 |                                                               |
 |                                                               |
 +---------------------------------------------------------------+
