@@ -71,4 +71,5 @@ while read -r page; do
     esac
 done
 
+cd ..
 git subtree push -P .www origin gh-pages
