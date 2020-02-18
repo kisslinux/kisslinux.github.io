@@ -1,0 +1,15 @@
++-------------------------------------------------------+
+|                                                       |
+|                        TEAM                           |
+|                                                       |
+| * This distribution is developed by:                  |
+|                                                       |
++-------------------------------------------------------+
+
+
+## Dylan Araps (https://github.com/dylanaraps)
+
+- Creator of KISS.
+- Creator of neofetch, pfetch, pywal, fff, Pure Bash Bible.
+
+<img style='width:20ch' src=/images/me.jpg>
