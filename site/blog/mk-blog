@@ -37,7 +37,7 @@ mv -f blog.xml.new blog.xml
 while read -r line; do
     printf '%s\n' "$line"
 
-    case $line in *'<ul'*) printf '%s\n' "$entry"; esac
-done < index.txt > index.txt.new
+    case $line in -*) printf '%s\n' "$entry"; esac
+done < ../blog.txt > ../blog.txt.new
 
-mv -f index.txt.new index.txt
+mv -f ../blog.txt.new ../blog.txt
