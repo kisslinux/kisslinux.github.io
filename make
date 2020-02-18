@@ -11,7 +11,6 @@ mk() {
         "../site/$page" |
 
     sed "s|^\(https[:]//[^ \)]\{50\}\)\([^ \)]*\)|<a href=\"\0\">\1</a>|g" |
-    sed "s|\( \)\(\#[^ ][a-zA-Z0-9_-]*\)| <a href=\2>\2</a>|g" |
 
     "$pp" ../site/templates/default.html \
         > "${page%%.txt}.html"
