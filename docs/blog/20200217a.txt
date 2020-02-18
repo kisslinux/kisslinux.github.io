@@ -1,1 +1,251 @@
-../site/./blog/20200217a.txt
+Subject	This week in KISS (#11)
+From	Dylan Araps &lt;dylan@k1ss.org&gt;
+Date	Mon, 17 Feb 2020 14:07:09 +0100
+
+
+Website redesign #1023 is complete.
+
+With this new design, all pages are now written as plain .txt
+files. Each page can easily be downloaded and viewed locally in
+a text-editor, pager or terminal based browser.
+
+https://github.com/kisslinux/website/blob/master/site/blog/20200217a.txt
+
+There may still be some bugs. There's always bugs. Let me know.
+The Wiki pages and old blog/news pages need updating too. It's
+on my TODO.
+
+I spent some time writing the KISS Guidestones and KISS Style
+documents which should answer all prior questions and speed
+up the review process of new packages. (See above nav)
+
+Otherwise it's been a quiet week. Oh yeah. Dylan Araps version
+22.02 was released this week on February 11.
+
+            Dylan
+
+---
+
+Aaron G (1):
+      Change maintainer for packages (#381)
+
+Adam Schaefers (36):
+      Keep Add gpg symlinks sans "2" for alternatives (#323)
+      netsurf: add gperf to make depends, fixes #320 (#322)
+      emacs: remove non-default settings (#325)
+      emacs-nox: remove non-default settings (#324)
+      new package: emacs27-git (#326)
+      new package: tcl 8.6.10 (#330)
+      new package: expect 5.45.4 (#329)
+      new package: wget 1.20.3 (#331)
+      new package: gnu-netcat 0.7.1 (#344)
+      new package: ed 1.15 (#343)
+      new package: sed 4.8 (#341)
+      new package: lzip 1.21 (#342)
+      new package: iproute2 5.5.0 (#337)
+      new package: shadow 4.8.1 (#346)
+      new package: bc 1.07 (#352)
+      new package: kmod 26 (#354)
+      tcl: fix symlink after install (#353)
+      bc: static (#357)
+      netcat: static (#356)
+      sed: static (#355)
+      gtar: remove FORCE_UNSAFE_CONFIGURE (#360)
+      coreutils: remove FORCE_UNSAFE_CONFIGURE (#359)
+      bc: bump to 1.07.1 (#361)
+      tcl: use system sqlite, symlink lib, install macros (#370)
+      new package: gmp 6.2.0 (#363)
+      new package: libunistring 0.9.1 (#365)
+      new package: gc 8.0.4 (#364)
+      new package: guile 2.2.6 (#366)
+      tcl: fix build (#378)
+      various packages: new maintainer (#392)
+      emacs: remove systemd cruft, sort depends (#391)
+      emacs-nox: remove systemd cruft, sort depends (#390)
+      emacs-git: remove systemd cruft, sort depends (#389)
+      pciutils: fixes #395 (#402)
+      new package: libcap 2.31 (#404)
+      new package: iputils 20190709 (#406)
+
+Anirudh Oppiliappan (2):
+      gdb: bump to 9.1 (#382)
+      gdb: fix build (#401)
+
+Artem Kobets (3):
+      oath-toolkit: fix build/depends (#334)
+      xmlsec1: fix build (#335)
+      less: new package at 551 (#336)
+
+Cem Keylan (8):
+      lazygit: bump to 0.14.2 (#327)
+      sinit: fix ubase-getty call (#328)
+      lazygit: bump to 0.14.3 (#348)
+      runit: new package at 2.1.2 (#333)
+      parted: remove gnu prefix for alternatives (#350)
+      webkit2gtk: bump to 2.26.4 (#394)
+      various packages: new maintainer (#396)
+      boost: new package at 1.72.0 (#410)
+
+Cliford Sab (1):
+      nnn: bump to 3.0 (#349)
+
+Dylan Araps (124):
+      grub: Fix build after GCC changes
+      cbindgen: bump to 0.13.1
+      x265: Fix sources. Closes #144
+      liberation-fonts: bump to 2.1.0
+      xauth: new package at 1.1
+      xinit: Make xauth runtime optional
+      kiss: bump to 1.4.2
+      kiss-utils: bump to 1.4.2
+      xinput: Fix depends
+      kiss: bump to 1.4.3
+      kiss-utils: bump to 1.4.3
+      kiss: bump to 1.4.4
+      kiss-utils: bump to 1.4.4
+      kiss: bump to 1.5.0
+      kiss-utils: bump to 1.5.0
+      util-linux: fix broken --sbindir
+      alsa-utils: Fix sbin dir
+      zlib: compile -fPIE
+      mandoc: Fix build and sbindir
+      openresolv: Fix sbindir
+      openssh: fix sbindir
+      cryptsetup: Fix sbindir
+      dosfstools: Fix sbindir
+      eudev: Fix sbindir
+      gcc: Revert static-pie fix.
+      zlib: revert pie fixes
+      mandoc: revert pie fixes
+      grub: revert pie fixes
+      docs: update
+      firefox: bump to 68.5.0esr
+      kiss: bump to 1.5.1
+      kiss-utils: bump to 1.5.1
+      grub: Disable -march=.*
+      firefox-bin: bump to 68.5.0esr
+      lvm2: bump to 2.03.08
+      xf86-video-amdgpu: Fix rootless xorg
+      lvm2: Fixed from @ioraff
+      gcc: Add version 10 to testing
+      kiss: bump to 1.5.2
+      kiss-utils: bump to 1.5.2
+      rsync: Fix depends
+      mandoc: Fix build with GCC 10
+      openresolv: move to extra
+      libxcb: fix depends
+      gnupg1: Fix build with GCC 10
+      libarchive: bump to 3.4.2
+      bzip2: Use cc @konimex
+      linux-headers: Use cc @konimex
+      perl: use cc @konimex
+      efibootmgr: Use cc @konimex
+      efivar: clean up and use cc
+      shared-mime-info: Use cc @konimex
+      tzdata: Use cc @konimex
+      zip: use cc @konimex
+      ffmpeg: use cc @konimex
+      eiwd: Fix depends
+      kiss: bump to 1.5.3
+      kiss-utils: bump to 1.5.3
+      kiss: bump to 1.5.4
+      kiss-utils: bump to 1.5.4
+      libwebp: Fix depends
+      kiss: bump to 1.5.5
+      kiss-utils: bump to 1.5.5
+      ncurses: bump to 6.2
+      util-linux: Don't exclude utils
+      lvm2,libaio.popt,cryptsetup: move to community
+      shared-mime-info: Drop from repos
+      libnl,mandoc,util-linux,wpa_supplicant: Move to extra
+      eudev: move to extra
+      libarchive: Move to community
+      efibootmgr: Swap source to pull fixes. Closes #148
+      libressl: Fix source
+      bison: bump to 3.5.2
+      mesa: bump to 19.3.4
+      popt: move to extra
+      falkon: move to community
+      qt5: move to community
+      docs: update
+      baseinit: use cc @konimex
+      mandoc: use cc @konimex
+      baseinit: remove post-install
+      kiss-utils: Merge into kiss package
+      musl: clean up
+      acpid: clean build
+      cmake: clean build
+      efibootmgr: Remove popt dependency
+      popt: move to community
+      openssh: clean up
+      pango: clean up
+      sqlite: clean up
+      wpa_supplicant: clean up
+      zip: clean up
+      xf86-video-ati: clean up
+      openssh: bump to 8.2p1
+      gcc: setup lto. Closes #153
+      ncurses: Add pc file.
+      xsel: Fixes
+      i3: new package at 4.17.1
+      icu: Fix sbindir
+      ncdu: bump to 1.14.2
+      go: bump to 1.13.8
+      pcre: bump to 8.44
+      community: Remove abduco, joe
+      lvm2,libaio,popt,cryptsetup: Add to community
+      libarchive: Move to community
+      bash: static
+      ubase: Remove stat. Closes #362
+      docs: update
+      popt: move to extra
+      falkon: move to community
+      qt5: Move to community
+      nss: move to community
+      docs: update
+      popt: move to community
+      docs: update
+      imagemagick: fix source
+      imagemagick: bump to 7.0.9-23
+      docs: update
+      community: test linter
+      community: test linter
+      community: test linter
+      community: test linter
+      pandoc-bin: bump to 2.9.2
+      docs: update
+
+James Davies (2):
+      dosbox (#321)
+      Fix build: disable OpenGL support (#403)
+
+M. Herdiansyah (3):
+      picom: remove pcre (#375)
+      various packages: new maintainer (#383)
+      picom dependencies: new maintainer (#416)
+
+Matthew (1):
+      hsetroot: new pkg at 1.0.5 (#393)
+
+Owen Rafferty (11):
+      isync: new package at 1.3.1 (#371)
+      flac: new package at 1.3.3 (#369)
+      opusfile: new package at 0.11 (#372)
+      tk: new package at 8.6.10 (#368)
+      irssi: new package at 1.2.2 (#386)
+      zathura-pdf-mupdf: new package at 0.3.5 (#377)
+      libmupdf: new package at 1.16.1 (#376)
+      transmission-daemon: new package at 2.94 (#387)
+      xwallpaper: new package at 0.6.2 (#385)
+      neovim, popt, tcl: change maintainer (#399)
+      urlview: new package at 0.9-21 (#388)
+
+dzove855 (1):
+      Change maintainer (#398)
+
+matthew w (1):
+      screen: new package at 4.8.0 (#407)
+
+periish (2):
+      Added custard, a window manager by Sweets. (#397)
+      mg added (#400)
