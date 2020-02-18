@@ -46,7 +46,7 @@ while read -r page; do
             sed '/%%CONTENT%%/r /dev/stdin' /tmp/meow |
             sed '/%%CONTENT%%/d' > "${page%%.txt}.html"
 
-            cp -f "../site/$page" "$page"
+            ln -sf "../site/$page" "$page"
 
             printf '%s\n' "CC $page"
         ;;
