@@ -2,8 +2,6 @@
 #
 # Simple static site builder.
 
-pp=$PWD/site/bin/pp
-
 # Convert the markdown page to HTML and insert it
 # into the template.
 mk() {
@@ -12,8 +10,10 @@ mk() {
 
     sed "s|^\(https[:]//[^ \)]\{50\}\)\([^ \)]*\)|<a href=\"\0\">\1</a>|g" |
 
-    "$pp" ../site/templates/default.html \
-        > "${page%%.txt}.html"
+    sed '/%%CONTENT%%/r /dev/stdin' \
+        ../site/templates/default.html |
+
+    sed '/%%CONTENT%%/d' > "${page%%.txt}.html"
 
     cp -f "../site/$page" "$page"
 
