@@ -32,6 +32,7 @@
 |                           INDEX                               |
 |                                                               |
 | * Setting Up Disks                                            |
+|                                                               |
 | * Install Kiss                                                |
 |     * Download The Latest Release                             |
 |     * Verify The Checksums                                    |
@@ -39,33 +40,41 @@
 |     * Download The Chroot Helper                              |
 |     * Unpack The Tarball                                      |
 |     * Enter The Chroot                                        |
+|                                                               |
 | * Enable Repository Signing                                   |
 |     * Build And Install Gnupg1                                |
 |     * Import My Key                                           |
 |     * Enable Signature Verification                           |
+|                                                               |
 | * Rebuild Kiss                                                |
 |     * Modify Compiler Options                                 |
-|     * Update All Base Packages To The Latest Versions         |
+|     * Update All Base Packages                                |
 |     * Rebuild All Packages                                    |
+|                                                               |
 | * Userspace Tools                                             |
 |     * Filesystems                                             |
 |     * Device Management                                       |
 |     * Wifi                                                    |
-|     * Dynamic Ip Addressing                                   |
+|     * Dynamic IP Addressing                                   |
+|                                                               |
 | * The Kernel                                                  |
 |     * Download The Kernel Sources                             |
-|     * Download Firmware Blobs If Required                     |
+|     * Download Firmware Blobs                                 |
 |     * Configure The Kernel                                    |
 |     * Build The Kernel                                        |
 |     * Install The Kernel                                      |
+|                                                               |
 | * The Bootloader                                              |
 |     * Build And Install Grub                                  |
 |     * Setup Grub                                              |
+|                                                               |
 | * Install Init Scripts                                        |
-| * Add A Normal User Recommended                               |
+| * Add A Normal User                                           |
 | * Enable The Community Repository                             |
+|                                                               |
 | * Install Xorg                                                |
 |     * Add Your User To The Relevant Groups                    |
+|                                                               |
 | * Further Steps                                               |
 |                                                               |
 |                                                               |
