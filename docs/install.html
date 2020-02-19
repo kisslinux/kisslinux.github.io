@@ -122,8 +122,7 @@
 |   version of KISS. If the checksums or signature fail         |
 |   to verify, contact me.                                      |
 |                                                               |
-$   url=github.com/kisslinux/repo/releases/download/1.9.0       |
-$   wget "$url/kiss-chroot.tar.xz"                              |
+$   wget <a href='https://dl.k1ss.org/kiss-chroot.tar.xz'>https://dl.k1ss.org/kiss-chroot.tar.xz</a>                 |
 |                                                               |
 |                                                               |
 |   VERIFY THE CHECKSUMS (recommended)                          |
@@ -132,7 +131,7 @@ $   wget "$url/kiss-chroot.tar.xz"                              |
 |   generated upon its creation and also ensures that the       |
 |   download completed successfully.                            |
 |                                                               |
-$   wget "$url/kiss-chroot.tar.xz.sha256"                       |
+$   wget <a href='https://dl.k1ss.org/kiss-chroot.tar.xz.sha256'>https://dl.k1ss.org/kiss-chroot.tar.xz.sha256</a>          |
 $   sha1sum -c < kiss-chroot.tar.xz.sha256                      |
 |                                                               |
 |                                                               |
@@ -143,7 +142,7 @@ $   sha1sum -c < kiss-chroot.tar.xz.sha256                      |
 |   include gpg, this step can also be done on another          |
 |   machine.                                                    |
 |                                                               |
-$   wget "$url/kiss-chroot.tar.xz.asc"                          |
+$   wget <a href='https://dl.k1ss.org/kiss-chroot.tar.xz.asc'>https://dl.k1ss.org/kiss-chroot.tar.xz.asc</a>             |
 |                                                               |
 |   # Import my public key.                                     |
 $   gpg --keyserver keys.gnupg.net --recv-key 46D62DD9F1DE636E  |
@@ -157,8 +156,7 @@ $   gpg --verify kiss-chroot.tar.xz.asc kiss-chroot.tar.xz      |
 |   This is a simple script to chroot into /mnt and set up the  |
 |   environment for the rest of the installation.               |
 |                                                               |
-$   url=raw.githubusercontent.com/kisslinux/kiss/master/contrib |
-$   wget "$url/kiss-chroot"                                     |
+$   wget <a href='https://dl.k1ss.org/kiss-chroot'>https://dl.k1ss.org/kiss-chroot</a>                        |
 |                                                               |
 |   # Inspect the script before you execute it below.           |
 $   vi kiss-chroot                                              |

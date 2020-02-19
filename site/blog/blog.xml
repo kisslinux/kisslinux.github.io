@@ -3,130 +3,130 @@
 <channel>
 <title>KISS Linux Blog</title>
 <description>An independent Linux® distribution with a focus on simplicity and the concept of "less is more". The distribution currently targets the x86-64 architecture and the English language.</description>
-<link>https://getkiss.org</link>
+<link>https://k1ss.org</link>
 <ttl>1800</ttl>
-<atom:link href="https://getkiss.org/blog/blog.xml" rel="self" type="application/rss+xml" />
+<atom:link href="https://k1ss.org/blog/blog.xml" rel="self" type="application/rss+xml" />
 <item>
 <title>18/02/2020: k1ss.org</title>
 <description>I wrote a little about the new website in my weekly post
 yesterday but felt the need to write something in depth
 about it.</description>
-<link>https://getkiss.org/blog/20200218a/</link>
-<guid isPermaLink="true">https://getkiss.org/blog/20200218a/</guid>
+<link>https://k1ss.org/blog/20200218a/</link>
+<guid isPermaLink="true">https://k1ss.org/blog/20200218a/</guid>
 <pubDate>Tue, 18 Feb 2020 00:00:00 +0000</pubDate>
 </item>
 <item>
 <title>17/02/2020: This week in KISS (#11)</title>
 <description>Website redesign #1023 is complete.</description>
-<link>https://getkiss.org/blog/20200217a/</link>
-<guid isPermaLink="true">https://getkiss.org/blog/20200217a/</guid>
+<link>https://k1ss.org/blog/20200217a/</link>
+<guid isPermaLink="true">https://k1ss.org/blog/20200217a/</guid>
 <pubDate>Mon, 17 Feb 2020 00:00:00 +0000</pubDate>
 </item>
 <item>
 <title>09/02/2020: This week in KISS (#10)</title>
 <description>More package manager goodies this week.</description>
-<link>https://getkiss.org/blog/20200209a/</link>
-<guid isPermaLink="true">https://getkiss.org/blog/20200209a/</guid>
+<link>https://k1ss.org/blog/20200209a/</link>
+<guid isPermaLink="true">https://k1ss.org/blog/20200209a/</guid>
 <pubDate>Sun, 09 Feb 2020 00:00:00 +0000</pubDate>
 </item>
 <item>
 <title>02/02/2020: This week in KISS (#9)</title>
 <description>Alternatives!</description>
-<link>https://getkiss.org/blog/20200202a/</link>
-<guid isPermaLink="true">https://getkiss.org/blog/20200202a/</guid>
+<link>https://k1ss.org/blog/20200202a/</link>
+<guid isPermaLink="true">https://k1ss.org/blog/20200202a/</guid>
 <pubDate>Sun, 02 Feb 2020 00:00:00 +0000</pubDate>
 </item>
 <item>
 <title>25/01/2020: This week in KISS (#8)</title>
 <description>More fun stuff this week.</description>
-<link>https://getkiss.org/blog/20200125a/</link>
-<guid isPermaLink="true">https://getkiss.org/blog/20200125a/</guid>
+<link>https://k1ss.org/blog/20200125a/</link>
+<guid isPermaLink="true">https://k1ss.org/blog/20200125a/</guid>
 <pubDate>Sat, 25 Jan 2020 00:00:00 +0000</pubDate>
 </item>
 <item>
 <title>18/01/2020: This week in KISS (#7)</title>
 <description>Lots of interesting changes this week. A big thank you to everyone involved.</description>
-<link>https://getkiss.org/blog/20200118a/</link>
-<guid isPermaLink="true">https://getkiss.org/blog/20200118a/</guid>
+<link>https://k1ss.org/blog/20200118a/</link>
+<guid isPermaLink="true">https://k1ss.org/blog/20200118a/</guid>
 <pubDate>Sat, 18 Jan 2020 00:00:00 +0000</pubDate>
 </item>
 <item>
 <title>11/01/2020: This week in KISS (#6)</title>
 <description>The focus this week was on increasing the portability of the boot scripts. This involved adding new "generic" hooks and removing any non-portable flags.</description>
-<link>https://getkiss.org/blog/20200111a/</link>
-<guid isPermaLink="true">https://getkiss.org/blog/20200111a/</guid>
+<link>https://k1ss.org/blog/20200111a/</link>
+<guid isPermaLink="true">https://k1ss.org/blog/20200111a/</guid>
 <pubDate>Sat, 11 Jan 2020 00:00:00 +0000</pubDate>
 </item>
 
 <item>
 <title>02/01/2020: This week in KISS (#5)</title>
 <description></description>
-<link>https://getkiss.org/blog/20200102a/</link>
-<guid isPermaLink="true">https://getkiss.org/blog/20200102a/</guid>
+<link>https://k1ss.org/blog/20200102a/</link>
+<guid isPermaLink="true">https://k1ss.org/blog/20200102a/</guid>
 <pubDate>Thu, 02 Jan 2020 00:00:00 +0000</pubDate>
 </item>
 
 <item>
 <title>11/12/2019: This week in KISS (#4)</title>
 <description>Another quiet week.</description>
-<link>https://getkiss.org/blog/20191211a/</link>
-<guid isPermaLink="true">https://getkiss.org/blog/20191211a/</guid>
+<link>https://k1ss.org/blog/20191211a/</link>
+<guid isPermaLink="true">https://k1ss.org/blog/20191211a/</guid>
 <pubDate>Wed, 11 Dec 2019 00:00:00 +0000</pubDate>
 </item>
 
 <item>
 <title>02/12/2019: This week in KISS (#3)</title>
 <description>Another quiet week.</description>
-<link>https://getkiss.org/blog/20191202a/</link>
-<guid isPermaLink="true">https://getkiss.org/blog/20191202a/</guid>
+<link>https://k1ss.org/blog/20191202a/</link>
+<guid isPermaLink="true">https://k1ss.org/blog/20191202a/</guid>
 <pubDate>Mon, 02 Dec 2019 00:00:00 +0000</pubDate>
 </item>
 
 <item>
 <title>24/11/2019: This week in KISS (#2)</title>
 <description>This was a relatively quiet week. I took a much needed break and focused solely on updating packages.</description>
-<link>https://getkiss.org/blog/20191124a/</link>
-<guid isPermaLink="true">https://getkiss.org/blog/20191124a/</guid>
+<link>https://k1ss.org/blog/20191124a/</link>
+<guid isPermaLink="true">https://k1ss.org/blog/20191124a/</guid>
 <pubDate>Mon, 24 Nov 2019 00:00:00 +0000</pubDate>
 </item>
 
 <item>
 <title>17/11/2019: This week in KISS (#1)</title>
 <description>Welcome to the first "This week in KISS"! The aim of these posts will be to highlight the development of KISS week by week to hopefully give a better look at the overall status of the project.</description>
-<link>https://getkiss.org/blog/20191117a/</link>
-<guid isPermaLink="true">https://getkiss.org/blog/20191117a/</guid>
+<link>https://k1ss.org/blog/20191117a/</link>
+<guid isPermaLink="true">https://k1ss.org/blog/20191117a/</guid>
 <pubDate>Mon, 17 Nov 2019 00:00:00 +0000</pubDate>
 </item>
 
 <item>
 <title>04/10/2019: I've gone to great lengths for this silence</title>
 <description>I’ve spent a lot of time ensuring this website remains small, simple and fast. To quote Futurama “When You Do Things Right, People Won’t Be Sure You’ve Done Anything at All”. I’ve gone to great lengths for this silence.</description>
-<link>https://getkiss.org/blog/20191004a/</link>
-<guid isPermaLink="true">https://getkiss.org/blog/20191004a/</guid>
+<link>https://k1ss.org/blog/20191004a/</link>
+<guid isPermaLink="true">https://k1ss.org/blog/20191004a/</guid>
 <pubDate>Mon, 04 Nov 2019 00:00:00 +0000</pubDate>
 </item>
 
 <item>
 <title>28/08/2019: Why does GTK3 Firefox require GTK2?</title>
 <description>Firefox only supports Linux builds with GTK3 for some time now, however GTK2 is still a mandatory dependency. It turns out that GTK2 is required for NPAPI plugins and the...</description>
-<link>https://getkiss.org/blog/20190828b/</link>
-<guid isPermaLink="true">https://getkiss.org/blog/20190828b/</guid>
+<link>https://k1ss.org/blog/20190828b/</link>
+<guid isPermaLink="true">https://k1ss.org/blog/20190828b/</guid>
 <pubDate>Wed, 28 Aug 2019 00:00:00 +0000</pubDate>
 </item>
 
 <item>
 <title>28/08/2019: Firefox 69 now fully depends on dbus</title>
 <description>The upcoming Firefox release now depends on dbus and this dependency can’t be disabled. The usual --disable-dbus mozconfig option has no effect. Until this is fixed upstream or we find...</description>
-<link>https://getkiss.org/blog/20190828a/</link>
-<guid isPermaLink="true">https://getkiss.org/blog/20190828a/</guid>
+<link>https://k1ss.org/blog/20190828a/</link>
+<guid isPermaLink="true">https://k1ss.org/blog/20190828a/</guid>
 <pubDate>Wed, 28 Aug 2019 00:00:00 +0000</pubDate>
 </item>
 
 <item>
 <title>27/08/2019: Python 2 will never die</title>
 <description>When developing KISS I wanted to ship Python 3 and try to avoid the dependence on Python 2. This ended up becoming an impossibility due to two offending packages, Firefox...</description>
-<link>https://getkiss.org/blog/20190827a/</link>
-<guid isPermaLink="true">https://getkiss.org/blog/20190827a/</guid>
+<link>https://k1ss.org/blog/20190827a/</link>
+<guid isPermaLink="true">https://k1ss.org/blog/20190827a/</guid>
 <pubDate>Tue, 27 Aug 2019 00:00:00 +0000</pubDate>
 </item>
 
