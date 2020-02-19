@@ -4,29 +4,29 @@
 
 <title>KISS Linux News</title>
 <description>An independent Linux® distribution with a focus on simplicity and the concept of "less is more". The distribution currently targets the x86-64 architecture and the English language.</description>
-<link>https://getkiss.org</link>
+<link>https://k1ss.org</link>
 <ttl>1800</ttl>
-<atom:link href="https://getkiss.org/news/news.xml" rel="self" type="application/rss+xml"/>
+<atom:link href="https://k1ss.org/news/news.xml" rel="self" type="application/rss+xml"/>
 <item>
 <title>14/01/2020: Firefox binaries now available</title>
 <description>Binaries for Firefox are now available in the official repositories under the package name firefox-bin.</description>
-<link>https://getkiss.org/news/20200114a/</link>
-<guid isPermaLink="true">https://getkiss.org/news/20200114a/</guid>
+<link>https://k1ss.org/news/20200114a/</link>
+<guid isPermaLink="true">https://k1ss.org/news/20200114a/</guid>
 <pubDate>Tue, 14 Jan 2020 00:00:00 +0000</pubDate>
 </item>
 <item>
 <title>01/01/2020: Firefox privacy changes moved to firefox-privacy</title>
 <description>The vendor.js and policies.json files KISS uses to harden and prevent Firefox from phoning home are now opt-in and optional.</description>
-<link>https://getkiss.org/news/20200101a/</link>
-<guid isPermaLink="true">https://getkiss.org/news/20200101a/</guid>
+<link>https://k1ss.org/news/20200101a/</link>
+<guid isPermaLink="true">https://k1ss.org/news/20200101a/</guid>
 <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
 </item>
 
 <item>
 <title>05/11/2019: The Wiki is live</title>
 <description>The Wiki is live</description>
-<link>https://getkiss.org/news/20191105a/</link>
-<guid isPermaLink="true">https://getkiss.org/news/20191105a/</guid>
+<link>https://k1ss.org/news/20191105a/</link>
+<guid isPermaLink="true">https://k1ss.org/news/20191105a/</guid>
 <pubDate>Tue, 05 Nov 2019 00:00:00 +0000</pubDate>
 </item>
 
@@ -34,8 +34,8 @@
 <title>31/10/2019: ninja replaced by samurai</title>
 <description>The build tool `ninja` has been replaced with `samurai`.
 </description>
-<link>https://getkiss.org/news/20191031a/</link>
-<guid isPermaLink="true">https://getkiss.org/news/20191031a/</guid>
+<link>https://k1ss.org/news/20191031a/</link>
+<guid isPermaLink="true">https://k1ss.org/news/20191031a/</guid>
 <pubDate>Tue, 31 Oct 2019 00:00:00 +0000</pubDate>
 </item>
 
@@ -43,8 +43,8 @@
 <title>15/10/2019: New python release (3.8.0), manual intervention needed</title>
 <description>A new major version of python` has been released which requires a rebuild of the following packages.
 </description>
-<link>https://getkiss.org/news/20191015b/</link>
-<guid isPermaLink="true">https://getkiss.org/news/20191015b/</guid>
+<link>https://k1ss.org/news/20191015b/</link>
+<guid isPermaLink="true">https://k1ss.org/news/20191015b/</guid>
 <pubDate>Tue, 15 Oct 2019 00:00:00 +0000</pubDate>
 </item>
 
@@ -52,8 +52,8 @@
 <title>15/10/2019: New sudo release (1.8.28), fixes CVE-2019-14287</title>
 <description>A new version of sudo has been updated to fix a security vulnerability, it is recommended that you update as soon as possible.
 </description>
-<link>https://getkiss.org/news/20191015a/</link>
-<guid isPermaLink="true">https://getkiss.org/news/20191015a/</guid>
+<link>https://k1ss.org/news/20191015a/</link>
+<guid isPermaLink="true">https://k1ss.org/news/20191015a/</guid>
 <pubDate>Tue, 15 Oct 2019 00:00:00 +0000</pubDate>
 </item>
 
@@ -72,8 +72,8 @@ pango
 xorg-server
 
 </description>
-<link>https://getkiss.org/news/20191010a/</link>
-<guid isPermaLink="true">https://getkiss.org/news/20191010a/</guid>
+<link>https://k1ss.org/news/20191010a/</link>
+<guid isPermaLink="true">https://k1ss.org/news/20191010a/</guid>
 <pubDate>Thu, 10 Oct 2019 00:00:00 +0000</pubDate>
 </item>
 
@@ -81,16 +81,16 @@ xorg-server
 <title>27/09/2019: LLVM/Rust updated, manual intervention needed</title>
 <description>LLVM and Clang have been updated which requires an update to rust 1.38.0 and a rebuild of mesa. Update llvm, then update clang, update rust and finally rebuild mesa.
 </description>
-<link>https://getkiss.org/news/20190927a/</link>
-<guid isPermaLink="true">https://getkiss.org/news/20190927a/</guid>
+<link>https://k1ss.org/news/20190927a/</link>
+<guid isPermaLink="true">https://k1ss.org/news/20190927a/</guid>
 <pubDate>Fri, 27 Sep 2019 00:00:00 +0000</pubDate>
 </item>
 
 <item>
 <title>21/09/2019: LLVM/Clang reverted to 8.0.1</title>
 <description>Rust is not yet compatible with LLVM/Clang 9.0.0 so the update to them has been reverted for the time being. The next version of Rust is due on the 26th...</description>
-<link>https://getkiss.org/news/20190921a/</link>
-<guid isPermaLink="true">https://getkiss.org/news/20190921a/</guid>
+<link>https://k1ss.org/news/20190921a/</link>
+<guid isPermaLink="true">https://k1ss.org/news/20190921a/</guid>
 <pubDate>Sat, 21 Sep 2019 00:00:00 +0000</pubDate>
 </item>
 
@@ -98,80 +98,80 @@ xorg-server
 <title>20/09/2019: Mesa/Rust need to be rebuilt after LLVM/clang 9.0.0</title>
 <description>Due to the major version bump 8 -&gt; 9 with LLVM and Clang, rust and mesa need to be rebuilt in existing KISS installations.
 </description>
-<link>https://getkiss.org/news/20190920a/</link>
-<guid isPermaLink="true">https://getkiss.org/news/20190920a/</guid>
+<link>https://k1ss.org/news/20190920a/</link>
+<guid isPermaLink="true">https://k1ss.org/news/20190920a/</guid>
 <pubDate>Fri, 20 Sep 2019 00:00:00 +0000</pubDate>
 </item>
 
 <item>
 <title>11/09/2019: Please update the package manager to 0.21.0</title>
 <description>The previous package manager version had a bug which sometimes added a package’s repository files to ‘/’. The directories added to ‘/’ by the bug are harmless and safe to...</description>
-<link>https://getkiss.org/news/20190911a/</link>
-<guid isPermaLink="true">https://getkiss.org/news/20190911a/</guid>
+<link>https://k1ss.org/news/20190911a/</link>
+<guid isPermaLink="true">https://k1ss.org/news/20190911a/</guid>
 <pubDate>Wed, 11 Sep 2019 00:00:00 +0000</pubDate>
 </item>
 
 <item>
 <title>08/09/2019: The cache directory has been moved</title>
 <description>NOTE: This only affects existing installations. Starting from version 0.12.0 of the package manager, the cache directory is now located at $XDG_CACHE_HOME/kiss (~/.cache/kiss if the $XDG_CACHE_HOME variable is unset). This...</description>
-<link>https://getkiss.org/news/20190908a/</link>
-<guid isPermaLink="true">https://getkiss.org/news/20190908a/</guid>
+<link>https://k1ss.org/news/20190908a/</link>
+<guid isPermaLink="true">https://k1ss.org/news/20190908a/</guid>
 <pubDate>Sun, 08 Sep 2019 00:00:00 +0000</pubDate>
 </item>
 
 <item>
 <title>06/09/2019: Firefox updated to 69.0</title>
 <description>I thought Firefox 69.0 would not be possible on KISS due to the new unconditional dependency on dbus. I have written a patch which removes this dependency and allows us...</description>
-<link>https://getkiss.org/news/20190906a/</link>
-<guid isPermaLink="true">https://getkiss.org/news/20190906a/</guid>
+<link>https://k1ss.org/news/20190906a/</link>
+<guid isPermaLink="true">https://k1ss.org/news/20190906a/</guid>
 <pubDate>Fri, 06 Sep 2019 00:00:00 +0000</pubDate>
 </item>
 
 <item>
 <title>02/09/2019: KISS 1.0 released</title>
 <description>I am happy to announce that KISS is now at a stage where a 1.0 can be released! I’d like to thank those who gave KISS a try providing valuable...</description>
-<link>https://getkiss.org/news/20190902a/</link>
-<guid isPermaLink="true">https://getkiss.org/news/20190902a/</guid>
+<link>https://k1ss.org/news/20190902a/</link>
+<guid isPermaLink="true">https://k1ss.org/news/20190902a/</guid>
 <pubDate>Mon, 02 Sep 2019 00:00:00 +0000</pubDate>
 </item>
 
 <item>
 <title>31/08/2019: python-setuptools now a part of python</title>
 <description>Steps for removal of python-setuptools. If meson is installed: kiss remove meson. If python-mako is installed: kiss remove python-mako. kiss remove python-setuptools. kiss build python kiss install python kiss update...</description>
-<link>https://getkiss.org/news/20190831b/</link>
-<guid isPermaLink="true">https://getkiss.org/news/20190831b/</guid>
+<link>https://k1ss.org/news/20190831b/</link>
+<guid isPermaLink="true">https://k1ss.org/news/20190831b/</guid>
 <pubDate>Sat, 31 Aug 2019 00:00:00 +0000</pubDate>
 </item>
 
 <item>
 <title>31/08/2019: Removal of ca-certificates</title>
 <description>KISS now uses the certificates bundled with libressl. Steps for removal of ca-certificates. kiss build libressl kiss remove ca-certificates rm -rf /etc/ssl kiss install libressl Update: A script is also...</description>
-<link>https://getkiss.org/news/20190831a/</link>
-<guid isPermaLink="true">https://getkiss.org/news/20190831a/</guid>
+<link>https://k1ss.org/news/20190831a/</link>
+<guid isPermaLink="true">https://k1ss.org/news/20190831a/</guid>
 <pubDate>Sat, 31 Aug 2019 00:00:00 +0000</pubDate>
 </item>
 
 <item>
 <title>30/08/2019: Removal of file</title>
 <description>The file package is no longer used by the package manager and file has been moved to community. Steps for removal of file (for those who don’t need it). Update...</description>
-<link>https://getkiss.org/news/20190830b/</link>
-<guid isPermaLink="true">https://getkiss.org/news/20190830b/</guid>
+<link>https://k1ss.org/news/20190830b/</link>
+<guid isPermaLink="true">https://k1ss.org/news/20190830b/</guid>
 <pubDate>Fri, 30 Aug 2019 00:00:00 +0000</pubDate>
 </item>
 
 <item>
 <title>30/08/2019: Removal of fakeroot</title>
 <description>The fakeroot package is no longer used by the package manager. Instead each package is built and archived with the ownership of whatever user ran the package manager. On installation...</description>
-<link>https://getkiss.org/news/20190830a/</link>
-<guid isPermaLink="true">https://getkiss.org/news/20190830a/</guid>
+<link>https://k1ss.org/news/20190830a/</link>
+<guid isPermaLink="true">https://k1ss.org/news/20190830a/</guid>
 <pubDate>Fri, 30 Aug 2019 00:00:00 +0000</pubDate>
 </item>
 
 <item>
 <title>28/08/2019: Removal of atk-bridge-fake</title>
 <description>This package was used to patch out the dbus requirement from GTK2/3, I have found a simpler way of accomplishing the same goal without the need for a fake library!...</description>
-<link>https://getkiss.org/news/20190828a/</link>
-<guid isPermaLink="true">https://getkiss.org/news/20190828a/</guid>
+<link>https://k1ss.org/news/20190828a/</link>
+<guid isPermaLink="true">https://k1ss.org/news/20190828a/</guid>
 <pubDate>Wed, 28 Aug 2019 00:00:00 +0000</pubDate>
 </item>
 
@@ -179,8 +179,8 @@ xorg-server
 <title>24/08/2019: Rust update requires manual intervention</title>
 <description>Remove cargo with kiss remove cargo before updating rust.
 </description>
-<link>https://getkiss.org/news/20190824b/</link>
-<guid isPermaLink="true">https://getkiss.org/news/20190824b/</guid>
+<link>https://k1ss.org/news/20190824b/</link>
+<guid isPermaLink="true">https://k1ss.org/news/20190824b/</guid>
 <pubDate>Sat, 24 Aug 2019 00:00:00 +0000</pubDate>
 </item>
 
@@ -193,16 +193,16 @@ rm -rf repo
 git clone https://github.com/kisslinux/repo
 
 </description>
-<link>https://getkiss.org/news/20190824a/</link>
-<guid isPermaLink="true">https://getkiss.org/news/20190824a/</guid>
+<link>https://k1ss.org/news/20190824a/</link>
+<guid isPermaLink="true">https://k1ss.org/news/20190824a/</guid>
 <pubDate>Sat, 24 Aug 2019 00:00:00 +0000</pubDate>
 </item>
 
 <item>
 <title>23/08/2019: KISS repository split</title>
 <description>The public repository was split from the main repositories and renamed to community. This change was made to reflect the split in maintainer responsibility. This repository is now disabled by...</description>
-<link>https://getkiss.org/news/20190823a/</link>
-<guid isPermaLink="true">https://getkiss.org/news/20190823a/</guid>
+<link>https://k1ss.org/news/20190823a/</link>
+<guid isPermaLink="true">https://k1ss.org/news/20190823a/</guid>
 <pubDate>Fri, 23 Aug 2019 00:00:00 +0000</pubDate>
 </item>
 
@@ -211,32 +211,32 @@ git clone https://github.com/kisslinux/repo
 <description>The KISS repositories were recently added to https://repology.org. You can track our packages here: https://repology.org/repository/kiss
 
 </description>
-<link>https://getkiss.org/news/20190822a/</link>
-<guid isPermaLink="true">https://getkiss.org/news/20190822a/</guid>
+<link>https://k1ss.org/news/20190822a/</link>
+<guid isPermaLink="true">https://k1ss.org/news/20190822a/</guid>
 <pubDate>Thu, 22 Aug 2019 00:00:00 +0000</pubDate>
 </item>
 
 <item>
 <title>11/08/2019: KISS installed on hardware</title>
 <description>KISS has been successfully installed on hardware! This includes a working Firefox and Xorg server. A number of issues have sprung up as expected and these will be ironed out...</description>
-<link>https://getkiss.org/news/20190811a/</link>
-<guid isPermaLink="true">https://getkiss.org/news/20190811a/</guid>
+<link>https://k1ss.org/news/20190811a/</link>
+<guid isPermaLink="true">https://k1ss.org/news/20190811a/</guid>
 <pubDate>Sun, 11 Aug 2019 00:00:00 +0000</pubDate>
 </item>
 
 <item>
 <title>04/08/2019: Firefox has been built</title>
 <description>After hours of build attempts of both Chromium and Firefox, we have successfully packaged Firefox. Chromium is a story for another time. The build systems for these two browsers border...</description>
-<link>https://getkiss.org/news/20190804a/</link>
-<guid isPermaLink="true">https://getkiss.org/news/20190804a/</guid>
+<link>https://k1ss.org/news/20190804a/</link>
+<guid isPermaLink="true">https://k1ss.org/news/20190804a/</guid>
 <pubDate>Sun, 04 Aug 2019 00:00:00 +0000</pubDate>
 </item>
 
 <item>
 <title>19/07/2019: Building a web browser</title>
 <description>We are busy at work packaging a browser for KISS. To begin with, a single browser will be packaged with the sole purpose of making KISS “usable”. The chosen starting...</description>
-<link>https://getkiss.org/news/20190719a/</link>
-<guid isPermaLink="true">https://getkiss.org/news/20190719a/</guid>
+<link>https://k1ss.org/news/20190719a/</link>
+<guid isPermaLink="true">https://k1ss.org/news/20190719a/</guid>
 <pubDate>Fri, 19 Jul 2019 00:00:00 +0000</pubDate>
 </item>
 
