@@ -124,7 +124,7 @@ $   wget "$url/kiss-chroot.tar.xz"                              |
 |   download completed successfully.                            |
 |                                                               |
 $   wget "$url/kiss-chroot.tar.xz.sha256"                       |
-$   sha1sum -c < kiss-chroot.tar.xz.sha256                      |
+$   sha256sum -c < kiss-chroot.tar.xz.sha256                    |
 |                                                               |
 |                                                               |
 |   VERIFY THE SIGNATURE (recommended)                          |
