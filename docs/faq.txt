@@ -5,6 +5,12 @@
 +-------------------------------------------------------------------+
 
 
++-------------------------------------------------------------------+
+|                                                                   |
+|                            SOFTWARE                               |
+|                                                                   |
++-------------------------------------------------------------------+
+
 * What init does KISS use?
 
   KISS uses busybox init by default. There is however, no lock-in and
@@ -28,3 +34,29 @@
     others.
 
 
++-------------------------------------------------------------------+
+|                                                                   |
+|                             KERNEL                                |
+|                                                                   |
++-------------------------------------------------------------------+
+
+* Why doesn't my kernel boot?
+
+  The kernel not booting can be a variety of issues. This is almost
+  always related to a configuration issue in the kernel, /etc/fstab
+  or the bootloader.
+
+  KISS doesn't use an initramfs so the configuration of the kernel
+  may have different requirements to other distributions.
+
+  1. The drivers for your disk controller, drives and filesystems
+     must not be built as kernel modules. They should be set to =y
+     in your .config or [*] when using make menuconfig.
+
+     Essentially, every driver the kernel requires to detect and
+     mount the drive containing the root filesystem, must be built
+     as a part of the kernel binary.
+
+  2. Multi-drive systems must use PARTUUID or UUID in place of
+     /dev/sdXX in the bootloader configuration to ensure that the
+     kernel will find the right drive.
