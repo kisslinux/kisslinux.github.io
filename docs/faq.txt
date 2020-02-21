@@ -66,6 +66,19 @@
   GNU's set of core utilities.
 
 
+* Why doesn't KISS support initramfs?
+
+  KISS technically supports booting via an initramfs, it just doesn't
+  require or provide one. As a user you have the means to set this up
+  yourself for your system.
+
+  Full disk encryption is also possible without the use of an
+  initramfs in modern kernels (see dm-mod.create).
+
+  The initramfs concept is an ugly, complicated and largely optional
+  mess. Thank god it isn't a requirement.
+
+
 +-------------------------------------------------------------------+
 |                                                                   |
 |                             KERNEL                                |
