@@ -4,6 +4,16 @@
 |                                                                   |
 +-------------------------------------------------------------------+
 
+* Why should I use KISS?
+
+  That's up to you to decide.
+
+  I'm not going to try and sell you something I'm giving away for
+  free. Have a read of the website and its wealth of information,
+  try KISS in a virtual machine (a chroot is also an option) and
+  come to your own conclusions.
+
+
 * What does KISS mean?
 
   KISS is an acronym for "Keep it simple stupid" (notice _no_ comma).
