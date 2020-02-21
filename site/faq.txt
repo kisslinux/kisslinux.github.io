@@ -92,3 +92,19 @@
   2. Multi-drive systems must use PARTUUID or UUID in place of
      /dev/sdXX in the bootloader configuration to ensure that the
      kernel will find the right drive.
+
+
++-------------------------------------------------------------------+
+|                                                                   |
+|                              GCC                                  |
+|                                                                   |
++-------------------------------------------------------------------+
+
+* C compiler cannot create executables.
+
+  This is almost always an error in your CFLAGS/CXXFLAGS. Ensure that
+  you have used -ONUM (CAPITAL O) and not (lowercase o) or (zero 0).
+
+  If the above doesn't fix the issue, try building the package with
+  CFLAGS= CXXFLAGS= LDFLAGS= kiss b pkg. You'll then be able to
+  discern whether or not this was the issue.
