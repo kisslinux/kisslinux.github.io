@@ -1,0 +1,30 @@
++-------------------------------------------------------------------+
+|                                                                   |
+|                    FREQUENTLY ASKED QUESTIONS                     |
+|                                                                   |
++-------------------------------------------------------------------+
+
+
+* What init does KISS use?
+
+  KISS uses busybox init by default. There is however, no lock-in and
+  the user may use whatever they like. The distribution's boot up
+  scripts are written in an init-agnostic way and act as a base for
+  every init to use.
+
+
+* What coreutils does KISS use?
+
+  KISS uses busybox coreutils by default. There is however, no
+  lock-in and the user may use whatever they like. All shell code is
+  written in portable POSIX shell and coreutils invocations.
+
+  * One exception is made for 'sed -i' which isn't POSIX but is far
+    too useful to do away with. Many sed implementations include -i
+    so this is more of a non-issue.
+
+  * The tar command has no standard interface, however support is
+    included for busybox tar, libarchive tar (bsdtar), GNU tar and
+    others.
+
+
