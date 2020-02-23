@@ -79,3 +79,14 @@ Anirudh (https://icyphox.sh)
 <a href="/images/icyphox.jpg"><picture>
   <img src="/images/icyphox.jpg" alt="icyphox">
 </picture></a>
+
+
+Kiëd Llaentenn (https://github.com/kiedtl)
+<a href="/images/kiedtl01.jpg"><picture>
+  <img src="/images/kiedtl01.jpg" alt="kiedtl">
+</picture></a>
+
+Mike Emanuelli
+<a href="/images/mike01.jpg"><picture>
+  <img src="/images/mike01.jpg" alt="Mike">
+</picture></a>
