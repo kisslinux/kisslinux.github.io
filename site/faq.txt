@@ -36,6 +36,16 @@
 |                                                                   |
 +-------------------------------------------------------------------+
 
+* Why isn't SOFTWARE packaged?
+
+  No one has packaged it yet.
+
+
+* Can you package SOFTWARE for me?
+
+  Do it yourself.
+
+
 * What init does KISS use?
 
   KISS uses busybox init by default. There is however, no lock-in and
@@ -66,19 +76,6 @@
   GNU's set of core utilities.
 
 
-* Why doesn't KISS support initramfs?
-
-  KISS technically supports booting via an initramfs, it just doesn't
-  require or provide one. As a user you have the means to set this up
-  yourself for your system.
-
-  Full disk encryption is also possible without the use of an
-  initramfs in modern kernels (see dm-mod.create).
-
-  The initramfs concept is an ugly, complicated and largely optional
-  mess. Thank god it isn't a requirement.
-
-
 +-------------------------------------------------------------------+
 |                                                                   |
 |                             KERNEL                                |
@@ -107,6 +104,85 @@
      kernel will find the right drive.
 
 
+* Why doesn't KISS support initramfs?
+
+  KISS technically supports booting via an initramfs, it just doesn't
+  require or provide one. As a user you have the means to set this up
+  yourself for your system.
+
+  Full disk encryption is also possible without the use of an
+  initramfs in modern kernels (see dm-mod.create).
+
+  The initramfs concept is an ugly, complicated and largely optional
+  mess. Thank god it isn't a requirement.
+
+
+* Why must I compile my own kernel?
+
+  The kernel must be compiled by the user for a variety of reasons.
+
+  1. The user maintains full control over all aspects of their kernel
+     and further, their entire system. There is no lock-in into a
+     specific set of kernel sources, version, use of proprietary
+     firmware, patches, config, etc.
+
+     The user decides:
+
+     - Which kernel to use (sources and version).
+     - When to update their kernel.
+     - Whether to use proprietary firmware blobs.
+     - Which patches to use (if any).
+     - How the kernel is configured (endless options).
+     - How many kernels they'd like to keep.
+     - Compiler options (-O3, -march=native, etc).
+
+     You as a user might actually learn something too. You may come
+     to understand your hardware, what drivers it needs, how the
+     kernel works from a configuration perspective, etc.
+
+     You should have a better understanding of this part of the
+     system afterwards and you'll be able fix any issues at this
+     level with relative ease.
+
+     Remember, it's only hard the first time. Once a working config
+     is created, no further work should need to be done each time you
+     update your kernel.
+
+     If the new kernel version has an issue with your hardware,
+     simply boot another from your backups. If new hardware was
+     added, simply run 'make menuconfig' and add what is needed.
+
+     I'll say what I always say. Nothing prevents anyone from
+     providing kernel binaries and an initramfs generation tool for
+     KISS. Just don't wait on the BDFL to do it for you.
+
+  2. Eases distribution maintenance for the BDFL. Shipping a generic
+     kernel demands a humongous, module heavy kernel with support for
+     everything under the sun. An initramfs is then a requirement to
+     boot this damn monstrosity.
+
+     There is then a need for a _portable_ initramfs generation tool
+     which to my knowledge doesn't exist. There can't be a dependence
+     on bash or anything outside of core. All initramfs tools are
+     either distribution-specific or non-portable to KISS.
+
+     Then there'd be endless support requests for tweaks, additions
+     and removals to the distribution config and the burden of
+     updating the kernel on every release.
+
+     Does KISS ship the latest kernel? The long term support kernel?
+     Both? Some users require firmware so we'd need two separate
+     binaries, one for linux-libre and another for regular linux.
+
+     What if the latest kernel has issues on some hardware? New
+     builds and binaries must be released with backported patches.
+
+     It's a large maintenance burden for something which can simply
+     be solved by the user doing this themselves. The user maintains
+     full control over every aspect of their kernel and is solely
+     responsible for it.
+
+
 +-------------------------------------------------------------------+
 |                                                                   |
 |                              GCC                                  |
@@ -121,3 +197,7 @@
   If the above doesn't fix the issue, try building the package with
   CFLAGS= CXXFLAGS= LDFLAGS= kiss b pkg. You'll then be able to
   discern whether or not this was the issue.
+
+
+
+
