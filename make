@@ -49,7 +49,7 @@ while read -r page; do
             sed '/%%CONTENT%%/r /dev/stdin' /tmp/meow |
             sed '/%%CONTENT%%/d' |
 
-            sed "s	%%SOURCE%%	$page	" \
+            sed "s	%%SOURCE%%	/${page##./}	" \
                 > "${page%%.txt}.html"
 
             ln -f "../site/$page" "$page"
