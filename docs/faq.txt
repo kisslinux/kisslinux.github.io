@@ -183,6 +183,11 @@
      responsible for it.
 
 
+* Why doesn't KISS provide kernel sources as a package?
+
+  Why should it? See above.
+
+
 +-------------------------------------------------------------------+
 |                                                                   |
 |                              GCC                                  |
