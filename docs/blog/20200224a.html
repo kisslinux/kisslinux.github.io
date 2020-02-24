@@ -1,0 +1,212 @@
+<!doctype html><html lang=en><link href='data:image/gif;base64,R0lGODlhEAAQAPH/AAAAAP8AAP8AN////yH5BAUAAAQALAAAAAAQABAAAAM2SLrc/jA+QBUFM2iqA2bAMHSktwCCWJIYEIyvKLOuJt+wV69ry5cfwu7WCVp2RSPoUpE4n4sEADs=' rel=icon><title>KISS</title><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1.0"><meta name=Description content="An independent Linux® distribution with a focus on simplicity and the concept of less is more."><style>body{text-align:center;overflow-y:scroll;font:16px monospace}pre pre{text-align:left;display:inline-block}img{max-width:57ch;display:block;height:auto;width:100%}@media(prefers-color-scheme:dark){body{background:#000;color:#fff}a{color:#6CF}}</style><pre>
+
+<a href=/><b>KISS</b></a><span style='color:#e60000'> 💋</span>  <a href=/news>News</a>  <a href=/blog>Blog</a>  <a href=/install>Install KISS</a>  <a href=/team>Team</a>  <a href=/guidestones>Guidestones</a>
+
+<a href=/scrots>Screenshots</a>  <a href=/package-system>Package System</a>  <a href=/testimonials>Testimonials</a>  <a href=/style>Style</a>
+
+<a href=/faq>FAQ</a>  <a href=/projects>Software</a>  <a href=/contact>Contact</a>  <a href=/donate>Donate</a>  <a href=https://github.com/kisslinux/wiki/wiki>Wiki -&gt;</a>  <a href=https://github.com/kisslinux/>GitHub -&gt;</a>
+
+<pre>
+Subject	This week in KISS (#12)
+From	Dylan Araps &lt;dylan@k1ss.org&gt;
+Date	Mon, 24 Feb 2020 15:07:09 +0100
+
+
+A thankfully quiet week this one was. The regular old package updates
+and a lot of new documentation. Thanks to the ease of the new site
+I'm actually enjoying the writing process now.
+
+<a href="/images/weekly/1.jpg">
+    <img src="/images/weekly/1.jpg" alt="week-1">
+</a>
+
+Expect a large influx of documentation over the coming weeks. There's
+a new "Frequently Asked Questions" page which I am writing as
+questions coming in (rather than preempting what I _think_ will be
+asked).
+
+
+WEBSITE CHANGES
+
+The website is now hosted on GitHub pages due to Netlify's new
+build minutes policy and KISS' lack of eligibility for their open
+source offering.
+
+We lose out on nice features such as control over redirects, the
+hook features which enabled Wiki mirroring etc though I'm not too
+worried about it. It is what it is.
+
+The website sources are now a lot simpler than they were. Builds now
+take less than a second to complete and there's a lot less
+boilerplate tying the whole thing together.
+
+The 'docs' directory contains the compiled version of the site and
+the 'site' directory contains the sources.
+
+Sources: <a href='https://github.com/kisslinux/website'>https://github.com/kisslinux/website</a>
+
+
+LAPTOP TROUBLES
+
+The charger for my laptop decided it didn't want to live anymore.
+With hope and a roll of tape I managed to get it running again
+(within a day) while I awaited a new charger which just arrived
+(a day later).
+
+Shipping here (Greece) is wonderful. Cash on delivery as an option
+instead of a card (or Paypal/equivalent) and next day delivery with
+a courier.
+
+I'm on an island so the next day delivery was a shock. There's no
+address where I live either so the courier delivers  the package
+wherever you are at that moment.
+
+Think of it as delivery to a name (or person) instead of to a
+defined (and mappable) location.
+
+
+THANKS AND WELCOME
+
+I'd like to thank everyone for their continue support. I hope you're
+all enjoying KISS. I'll also give a big welcome to the influx of new
+users this week. Enjoy your stay and let it be a long one.
+
+Onward to greater things.
+
+        Dylan
+
+
+Dylan Araps (62):
+      git: bump to 2.25.1
+      gcc: Latest snapshot
+      intel-vaapi-driver: Fix build with GCC 10
+      mesa: Fix build with GCC 10
+      xf86-video-intel: Fix build with GCC 10
+      gtk+3: bump to 3.24.14
+      ffmpeg: properly use CC/CXX. @konimex. Closes #154
+      e2fsprogs: Provide libs. Closes #155
+      kiss: bump to 1.5.6
+      x265: bump to 3.3
+      xf86-video-intel: Swap to meson. @konimex Closes #156
+      nodejs: bump to 13.9.0
+      docs: update
+      kiss: bump to 1.6.0
+      kiss: bump to 1.6.1
+      alsa-lib: bump to 1.2.2
+      baselayout: Fix URL
+      alsa-utils: bump to 1.2.2
+      libinput: bump to 1.15.2
+      eiwd: Fix depends
+      sowm: bump to 1.5
+      busybox: fix adduser and enable util-linux utils
+      eudev: remove util-linux hard depend
+      libSM: Fix depends
+      busybox: Add fsck fix for uuid
+      xkbcomp: bump to 1.4.3
+      musl: bump to 1.2.0
+      kiss: bump to 1.7.0
+      grub: Fix Ryzen issue
+      grub: Fix Ryzen issue
+      grub: Remove pointless line
+      kiss: Fix man page perms. Closes #158
+      xcb-proto: bump to 1.14
+      libxcb: bump to 1.14
+      busybox: enable USE_PORTABLE_CODE. Closes #157
+      busybox: Use portable cc. Closes #157
+      docs: update
+      pandoc-bin: bump to 2.9.2
+      docs: update
+      imagemagick: bump to 7.0.9-24
+      btrfs-progs: drop from community
+      haserl: Drop from community
+      mini_httpd: drop from community
+      docs: update
+      tig: Drop from community
+      merge
+      xorriso: drop from community
+      man-pages*: drop from community
+      ethtool: new package at 5.4
+      imagemagick: bump to 7.0.9-25
+      imagemagick: bump to 7.0.9-26
+
+
+Adam Schaefers (8):
+      new package: libcap 2.31 (#404)
+      new package: iputils 20190709 (#406)
+      libcap: bump version to 2.32 (#430)
+      kmod: bump version to 27 (#429)
+      new package: readline 8.0p004 (#433)
+      emacs-git: update sources using '@' to specify branch (#432)
+      readline: remove extra space (#434)
+      ed: bump version to 1.16 closes #444 (#445)
+
+Artem Kobets (5):
+      xkb-switch: new package at 1.6.0 (#435)
+      man-pages-posix: new package at 2013a (#437)
+      man-pages: new package at 5.05 (#436)
+      man-pages-posix: new package at 2013a (#447)
+      man-pages: new package at 5.05 (#446)
+
+Cem Keylan (7):
+      boost: new package at 1.72.0 (#410)
+      mpc: new package at 0.33 (#413)
+      libmpdclient: new package at 2.18 (#412)
+      mpd: new package at 0.21.20 (#411)
+      vimpc: new package at 0.09.2 (#414)
+      mpd: require boost as a make dependency (#424)
+      uemacs: add new package at git to community (#438)
+
+Dilyn Corner (2):
+      Adoption (#451)
+      Adoption (#453)
+
+James Davies (1):
+      Fix build: disable OpenGL support (#403)
+
+Kiëd Llaentenn (8):
+      fd: new maintainer (#422)
+      ripgrep: new maintainer (#423)
+      exa: new package at 0.9.0 (#439)
+      tokei: new package at v10.1.2 (#441)
+      xmodmap: new package at v1.0.10 (#442)
+      hyperfine: new package at v1.9.0 (#443)
+      hexyl: new package at v0.6.0 (#448)
+      rage: new package at v0.3.1 (#449)
+
+Kris Heck (1):
+      tor: bump to 0.4.2.6 (#420)
+
+M. Herdiansyah (2):
+      picom dependencies: new maintainer (#416)
+      weechat: update to 2.7.1 (#450)
+
+Owen Rafferty (3):
+      urlview: new package at 0.9-21 (#388)
+      libmupdf: fixing zathura-pdf-mupdf linking (#426)
+      pcre: change maintainer (#431)
+
+matthew w (3):
+      screen: new package at 4.8.0 (#407)
+      finished pkg (#418)
+      i3/i3-gaps: bump packages to 4.18 (#427)
+
+penguin-ff (1):
+      mutt: update to 1.13.4 (#425)
+
+periish (1):
+      Added wmutils (#428)
+
+
+
+The registered trademark Linux(R) is used pursuant to a
+sublicense from the Linux Foundation, the exclusive
+licensee of Linus Torvalds, owner of the mark on a
+world­wide basis.
+
+(C) Dylan Araps 2019-2020
+
+
+<a href="./blog/20200224a.txt">View page source</a>
+
+
+</pre></pre>

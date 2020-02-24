@@ -15,78 +15,78 @@
 
 
 Dylan Araps (https://github.com/dylanaraps)
-<a href="/images/dylan01.jpg"><picture>
-  <source srcset="/images/dylan01.webp" type="image/webp">
-  <img src="/images/dylan01.jpg" alt="dylan-01">
+<a href="/images/scrots/dylan01.jpg"><picture>
+  <source srcset="/images/scrots/dylan01.webp" type="image/webp">
+  <img src="/images/scrots/dylan01.jpg" alt="dylan-01">
 </picture></a>
 
 
 Muhammad Herdiansyah (https://github.com/konimex)
-<a href="/images/konimex01.jpg"><picture>
-  <source srcset="/images/konimex01.webp" type="image/webp">
-  <img src="/images/konimex01.jpg" alt="konimex-01">
+<a href="/images/scrots/konimex01.jpg"><picture>
+  <source srcset="/images/scrots/konimex01.webp" type="image/webp">
+  <img src="/images/scrots/konimex01.jpg" alt="konimex-01">
 </picture></a>
 
 
 Cliford Sab (https://github.com/lieuxnoir)
-<a href="/images/nestman01.jpg"><picture>
-  <img src="/images/nestman01.jpg" alt="nestman-01">
+<a href="/images/scrots/nestman01.jpg"><picture>
+  <img src="/images/scrots/nestman01.jpg" alt="nestman-01">
 </picture></a>
 
 
 Ominous
-<a href="/images/ominous01.jpg"><picture>
-  <source srcset="/images/ominous01.webp" type="image/webp">
-  <img src="/images/ominous01.jpg" alt="ominous-01">
+<a href="/images/scrots/ominous01.jpg"><picture>
+  <source srcset="/images/scrots/ominous01.webp" type="image/webp">
+  <img src="/images/scrots/ominous01.jpg" alt="ominous-01">
 </picture></a>
 
 
 Niko Tidar Lantang Perkasa (https://github.com/nikotidar)
-<a href="/images/niko01.jpg"><picture>
-  <source srcset="/images/niko01.webp" type="image/webp">
-  <img src="/images/niko01.jpg" alt="niko-01">
+<a href="/images/scrots/niko01.jpg"><picture>
+  <source srcset="/images/scrots/niko01.webp" type="image/webp">
+  <img src="/images/scrots/niko01.jpg" alt="niko-01">
 </picture></a>
 
 
 Phillip L (https://github.com/p410n3)
-<a href="/images/phillip01.jpg"><picture>
-  <source srcset="/images/phillip01.webp" type="image/webp">
-  <img src="/images/phillip01.jpg" alt="phillip-01">
+<a href="/images/scrots/phillip01.jpg"><picture>
+  <source srcset="/images/scrots/phillip01.webp" type="image/webp">
+  <img src="/images/scrots/phillip01.jpg" alt="phillip-01">
 </picture></a>
 
 
 Adam Schaefers (https://github.com/a-schaefers)
-<a href="/images/adam01.jpg"><picture>
-  <source srcset="/images/adam01.webp" type="image/webp">
-  <img src="/images/adam01.jpg" alt="adam01">
+<a href="/images/scrots/adam01.jpg"><picture>
+  <source srcset="/images/scrots/adam01.webp" type="image/webp">
+  <img src="/images/scrots/adam01.jpg" alt="adam01">
 </picture></a>
 
 
 Matthew W (https://github.com/sirtomato999)
-<a href="/images/sirtomato.jpg"><picture>
-  <source srcset="/images/sirtomato.webp" type="image/webp">
-  <img src="/images/sirtomato.jpg" alt="sirtomato">
+<a href="/images/scrots/sirtomato.jpg"><picture>
+  <source srcset="/images/scrots/sirtomato.webp" type="image/webp">
+  <img src="/images/scrots/sirtomato.jpg" alt="sirtomato">
 </picture></a>
 
 
 Aaron G
-<a href="/images/aarong.png"><picture>
-  <img src="/images/aarong.png" alt="aarong">
+<a href="/images/scrots/aarong.png"><picture>
+  <img src="/images/scrots/aarong.png" alt="aarong">
 </picture></a>
 
 
 Anirudh (https://icyphox.sh)
-<a href="/images/icyphox.jpg"><picture>
-  <img src="/images/icyphox.jpg" alt="icyphox">
+<a href="/images/scrots/icyphox.jpg"><picture>
+  <img src="/images/scrots/icyphox.jpg" alt="icyphox">
 </picture></a>
 
 
 Kiëd Llaentenn (https://github.com/kiedtl)
-<a href="/images/kiedtl01.jpg"><picture>
-  <img src="/images/kiedtl01.jpg" alt="kiedtl">
+<a href="/images/scrots/kiedtl01.jpg"><picture>
+  <img src="/images/scrots/kiedtl01.jpg" alt="kiedtl">
 </picture></a>
 
 Mike Emanuelli
-<a href="/images/mike01.jpg"><picture>
-  <img src="/images/mike01.jpg" alt="Mike">
+<a href="/images/scrots/mike01.jpg"><picture>
+  <img src="/images/scrots/mike01.jpg" alt="Mike">
 </picture></a>
