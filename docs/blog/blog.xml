@@ -7,6 +7,13 @@
 <ttl>1800</ttl>
 <atom:link href="https://k1ss.org/blog/blog.xml" rel="self" type="application/rss+xml" />
 <item>
+<title>24/02/2020: This week in KISS (#12)</title>
+<description>A thankfully quiet week this one was. The regular old package updates and a lot of new documentation.</description>
+<link>https://k1ss.org/blog/20200224a/</link>
+<guid isPermaLink="true">https://k1ss.org/blog/20200224a/</guid>
+<pubDate>Mon, 24 Feb 2020 00:00:00 +0000</pubDate>
+</item>
+<item>
 <title>18/02/2020: k1ss.org</title>
 <description>I wrote a little about the new website in my weekly post
 yesterday but felt the need to write something in depth
