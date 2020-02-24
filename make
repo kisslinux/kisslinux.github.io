@@ -22,6 +22,10 @@ world­wide basis.
 
 (C) Dylan Araps 2019-2020
 
+
+<a href="%%SOURCE%%">View page source</a>
+
+
 </pre></pre>
 EOF
 
@@ -44,7 +48,9 @@ while read -r page; do
 
             sed -E "s|^(https[:]//[^ )]{50})([^ )]*)|<a href='\0'>\1</a>|g" |
             sed '/%%CONTENT%%/r /dev/stdin' /tmp/meow |
-            sed '/%%CONTENT%%/d' > "${page%%.txt}.html"
+            sed '/%%CONTENT%%/d' |
+            sed "s	%%SOURCE%%	$page	" \
+                > "${page%%.txt}.html"
 
             ln -f "../site/$page" "$page"
 
