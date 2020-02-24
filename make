@@ -34,9 +34,7 @@ mkdir -p  docs
 cd        docs
 
 # Iterate over each file in the source tree under /site/.
-(cd ../site; find . -type f \
-        -a -not -path '*/\.*' \
-        -a -not -path './templates/*') |
+(cd ../si*; find . -type f -a -not -path \*/\.\* -a -not -path ./templates/\*) |
 
 while read -r page; do
     mkdir -p "${page%/*}"
@@ -47,8 +45,10 @@ while read -r page; do
                 "../site/$page" |
 
             sed -E "s|^(https[:]//[^ )]{50})([^ )]*)|<a href='\0'>\1</a>|g" |
+
             sed '/%%CONTENT%%/r /dev/stdin' /tmp/meow |
             sed '/%%CONTENT%%/d' |
+
             sed "s	%%SOURCE%%	$page	" \
                 > "${page%%.txt}.html"
 
