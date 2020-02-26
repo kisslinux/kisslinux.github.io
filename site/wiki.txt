@@ -9,10 +9,10 @@ away from GitHub and to the website. Some links will not work during
 the transition.
 
 - General
-    - <a href=/wiki/Simple-software>Simple Software</a>
-    - <a href=/wiki/Managing-services>Managing Services</a>
-    - <a href=/wiki/Replacing-udev>Replacing eudev with mdev (or another device manager</a>
-    - <a href=/wiki/fde.txt>Full disk encryption</a>
+    - <a href=/wiki/Simple-Software>Simple Software</a>
+    - <a href=/wiki/Managing-Services>Managing Services</a>
+    - <a href=/wiki/Replacing-eudev>Replacing eudev with mdev (or another device manager</a>
+    - <a href=/wiki/Full-Disk-Encryption.txt>Full disk encryption</a>
 
 - Boot
     - [Loading a module at boot](https://github.com/kisslinux/wiki/wiki/Loading-a-module-at-boot)
