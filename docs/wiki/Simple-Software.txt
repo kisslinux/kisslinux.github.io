@@ -1,0 +1,69 @@
++-------------------------------------------------------------------+
+|                                                                   |
+|                      WIKI - Simple Software                       |
+|                                                                   |
++-------------------------------------------------------------------+
+
+A list of simpler alternatives to popular software.
+
+
+PASSWORD MANAGERS
+
+Alternatives to pass and keepass.
+
+- pash (https://github.com/dylanaraps/pash)
+    - Only 100 lines of code.
+    - Built around GnuPG.
+    - Requires only gpg and POSIX coreutils.
+    - Written in POSIX sh.
+
+
+FILE MANAGERS
+
+Alternatives to ranger, mc, thunar and pcmanfm.
+
+- fff (https://github.com/dylanaraps/fff)
+    - Only 700 lines of code.
+    - Requires only bash.
+
+- nnn (https://github.com/jarun/nnn)
+    - Requires only curses.
+
+
+SYSTEM INFORMATION
+
+Alternatives to neofetch and screenfetch.
+
+- pfetch (https://github.com/dylanaraps/pfetch)
+    - Only 700 lines of code.
+    - Doesn't require bash.
+
+
+TERMINAL EMULATORS
+
+Alternatives to urxvt, xterm, termite, alacritty and kitty.
+
+- st (https://st.suckless.org/)
+    - "Terminal emulation doesn't need to be so complex."
+
+
+WINDOW MANAGERS
+
+Alternatives to openbox, i3 and friends.
+
+- sowm (https://github.com/dylanaraps/sowm/) (*floating*)
+    - Only 220 lines of code.
+
+- dwm (https://dwm.suckless.org/) (*dynamic*)
+    - Absolutely beautiful and full of features.
+
+- catwm (https://github.com/pyknite/catwm) (*tiling*)
+    - Made by cat... for cat.
+
+
+DYNAMIC MENUS
+
+Alternatives to rofi.
+
+- shmenu (https://github.com/Crestwave/shmenu) (*terminal*)
+- dmenu (https://tools.suckless.org/dmenu/) (*xorg*)
