@@ -7,24 +7,32 @@
 <a href=/faq>FAQ</a>  <a href=/projects>Software</a>  <a href=/contact>Contact</a>  <a href=/donate>Donate</a>  <a href=https://github.com/kisslinux/wiki/wiki>Wiki -&gt;</a>  <a href=https://github.com/kisslinux/>GitHub -&gt;</a>
 
 <pre>
-+-------------------------------------------------------+
-|                                                       |
-|                        TEAM                           |
-|                                                       |
-| * This distribution is developed by:                  |
-|                                                       |
-|                                                       |
-|   Dylan Araps (<a href='https://github.com/dylanaraps'>https://github.com/dylanaraps</a>)         |
-|                                                       |
-|   - Creator of KISS.                                  |
-|   - Creator of neofetch, pfetch, pywal, fff,          |
-|   - Creator of the pure ba[sh] bible.                 |
-|                                                       |
-|                                                       |
-+-------------------------------------------------------+
++-------------------------------------------------------------------+
+|                                                                   |
+|             WIKI - Set color temperature with Xrandr              |
+|                                                                   |
++-------------------------------------------------------------------+
+
+One can use xrandr to set the color temperature of the display. 
+
+* Day mode
+
+  $ xrandr --output LVDS1 --gamma 1:1:1
 
 
+* Night mode
 
+  Red tint:    
+
+    $ xrandr --output LVDS1 --gamma 1.1:0.8:0.7
+
+  Orange tint: 
+
+    $ xrandr --output LVDS1 --gamma 1:1:0.7 --brightness 0.9
+
+
+NOTE: Edit the --output, --gamma, and --brightness flags to 
+      suit your needs.
 
 
 The registered trademark Linux(R) is used pursuant to a
@@ -35,7 +43,7 @@ world­wide basis.
 (C) Dylan Araps 2019-2020
 
 
-<a href="/team.txt">View page source</a>
+<a href="/wiki/Set-color-temperature-with-xrandr.txt">View page source</a>
 
 
 </pre></pre>
