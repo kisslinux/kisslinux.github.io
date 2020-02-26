@@ -7,24 +7,54 @@
 <a href=/faq>FAQ</a>  <a href=/projects>Software</a>  <a href=/contact>Contact</a>  <a href=/donate>Donate</a>  <a href=https://github.com/kisslinux/wiki/wiki>Wiki -&gt;</a>  <a href=https://github.com/kisslinux/>GitHub -&gt;</a>
 
 <pre>
-+-------------------------------------------------------+
-|                                                       |
-|                        TEAM                           |
-|                                                       |
-| * This distribution is developed by:                  |
-|                                                       |
-|                                                       |
-|   Dylan Araps (<a href='https://github.com/dylanaraps'>https://github.com/dylanaraps</a>)         |
-|                                                       |
-|   - Creator of KISS.                                  |
-|   - Creator of neofetch, pfetch, pywal, fff,          |
-|   - Creator of the pure ba[sh] bible.                 |
-|                                                       |
-|                                                       |
-+-------------------------------------------------------+
++-------------------------------------------------------------------+
+|                                                                   |
+|              WIKI - Setting the keyboard layout in X              |
+|                                                                   |
++-------------------------------------------------------------------+
+
+USING COMMAND LINE OR SCRIPTS
+
+Use setxkbmap to set keyboard layout preferences.
+
+* Build and install setxkbmap.
+
+  $ kiss b setxkbmap
+  $ kiss i setxkbmap
 
 
+* Now keyboard layout settings can be set from command line.
 
+  $ setxkbmap latam
+
+* Or from a script. For example, put the command in ~/.xinitrc so it 
+  loads when an X session is started:
+
+  setxkbmap ru
+  exec dwm
+
+Further reading/More information: man setxkbmap
+
+
+EXITING XORG CONFIGURATION FILES
+
+* Create a file called 00-keyboard.conf in /etc/X11/xorg.conf.d/.
+
+  Section "InputClass"
+      Identifier          "system-keyboard"
+      MatchIsKeyboard     "on"
+      Option "XkbLayout"  "de"
+      Option "XkbModel"   "pc105"
+      Option "XkbVariant" ",qwertz"
+      Option "XkbOptions" "grp:alt_shift_toggle"
+  EndSection
+
+
+* Edit Xkb* to suit your needs.
+
+Further reading/More information: 
+
+  - <a href='https://www.x.org/releases/X11R7.5/doc/input/XKB-Config.html'>https://www.x.org/releases/X11R7.5/doc/input/XKB-Config.html</a>
 
 
 The registered trademark Linux(R) is used pursuant to a
@@ -35,7 +65,7 @@ world­wide basis.
 (C) Dylan Araps 2019-2020
 
 
-<a href="/team.txt">View page source</a>
+<a href="/wiki/Setting-the-keyboard-layout-in-X.txt">View page source</a>
 
 
 </pre></pre>

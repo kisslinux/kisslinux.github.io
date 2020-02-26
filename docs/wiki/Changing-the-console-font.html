@@ -7,24 +7,34 @@
 <a href=/faq>FAQ</a>  <a href=/projects>Software</a>  <a href=/contact>Contact</a>  <a href=/donate>Donate</a>  <a href=https://github.com/kisslinux/wiki/wiki>Wiki -&gt;</a>  <a href=https://github.com/kisslinux/>GitHub -&gt;</a>
 
 <pre>
-+-------------------------------------------------------+
-|                                                       |
-|                        TEAM                           |
-|                                                       |
-| * This distribution is developed by:                  |
-|                                                       |
-|                                                       |
-|   Dylan Araps (<a href='https://github.com/dylanaraps'>https://github.com/dylanaraps</a>)         |
-|                                                       |
-|   - Creator of KISS.                                  |
-|   - Creator of neofetch, pfetch, pywal, fff,          |
-|   - Creator of the pure ba[sh] bible.                 |
-|                                                       |
-|                                                       |
-+-------------------------------------------------------+
++-------------------------------------------------------------------+
+|                                                                   |
+|                WIKI - Changing the console font                   |
+|                                                                   |
++-------------------------------------------------------------------+
+
+The Linux console font can be changed using the setfont utility 
+(part of busybox and installed by default). 
 
 
+FONTS
 
+Currently packaged Linux console fonts.
+
+- terminus-font (Community).
+
+
+CHANGING THE CONSOLE FONT
+
+Add the following line to your .profile (current user) or 
+/etc/profile (system-wide).
+
+# Substitute FONT_NAME with the font of your choosing.
+[ "$DISPLAY" ] || setfont /usr/share/consolefonts/FONT_NAME.gz
+
+
+TIP: The same setfont command can be used to temporarily set the 
+     font for the current session. 
 
 
 The registered trademark Linux(R) is used pursuant to a
@@ -35,7 +45,7 @@ world­wide basis.
 (C) Dylan Araps 2019-2020
 
 
-<a href="/team.txt">View page source</a>
+<a href="/wiki/Changing-the-console-font.txt">View page source</a>
 
 
 </pre></pre>

@@ -7,24 +7,27 @@
 <a href=/faq>FAQ</a>  <a href=/projects>Software</a>  <a href=/contact>Contact</a>  <a href=/donate>Donate</a>  <a href=https://github.com/kisslinux/wiki/wiki>Wiki -&gt;</a>  <a href=https://github.com/kisslinux/>GitHub -&gt;</a>
 
 <pre>
-+-------------------------------------------------------+
-|                                                       |
-|                        TEAM                           |
-|                                                       |
-| * This distribution is developed by:                  |
-|                                                       |
-|                                                       |
-|   Dylan Araps (<a href='https://github.com/dylanaraps'>https://github.com/dylanaraps</a>)         |
-|                                                       |
-|   - Creator of KISS.                                  |
-|   - Creator of neofetch, pfetch, pywal, fff,          |
-|   - Creator of the pure ba[sh] bible.                 |
-|                                                       |
-|                                                       |
-+-------------------------------------------------------+
++-------------------------------------------------------------------+
+|                                                                   |
+|                  WIKI - Load a module at boot                     |
+|                                                                   |
++-------------------------------------------------------------------+
+
+USING /etc/inittab (busybox-init)
+
+A module can be loaded at boot by adding a single line to 
+your /etc/inittab.
+
+::once:/bin/modprobe <module name>
 
 
+USING /etc/rc.d (all inits)
 
+A module can be loaded at boot by adding a boot hook to your 
+/etc/rc.d folder. The file must end with `*.boot`. Assume that the 
+file is named /etc/rc.d/load-modules.boot.
+
+/bin/modprobe <module name>
 
 
 The registered trademark Linux(R) is used pursuant to a
@@ -35,7 +38,7 @@ world­wide basis.
 (C) Dylan Araps 2019-2020
 
 
-<a href="/team.txt">View page source</a>
+<a href="/wiki/Load-a-module-at-boot.txt">View page source</a>
 
 
 </pre></pre>

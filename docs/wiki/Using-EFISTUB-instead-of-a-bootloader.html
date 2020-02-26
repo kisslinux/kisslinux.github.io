@@ -1,0 +1,103 @@
+<!doctype html><html lang=en><link href='data:image/gif;base64,R0lGODlhEAAQAPH/AAAAAP8AAP8AN////yH5BAUAAAQALAAAAAAQABAAAAM2SLrc/jA+QBUFM2iqA2bAMHSktwCCWJIYEIyvKLOuJt+wV69ry5cfwu7WCVp2RSPoUpE4n4sEADs=' rel=icon><title>KISS</title><meta charset=utf-8><meta name=Description content="An independent Linux® distribution with a focus on simplicity and the concept of less is more."><style>body{text-align:center;overflow-y:scroll;font:calc(0.75em + 1vmin) monospace}pre pre{text-align:left;display:inline-block}img{max-width:57ch;display:block;height:auto;width:100%}@media(prefers-color-scheme:dark){body{background:#000;color:#fff}a{color:#6CF}}</style><pre>
+
+<a href=/><b>KISS</b></a><span style='color:#e60000'> 💋</span>  <a href=/news>News</a>  <a href=/blog>Blog</a>  <a href=/install>Install KISS</a>  <a href=/team>Team</a>  <a href=/guidestones>Guidestones</a>
+
+<a href=/scrots>Screenshots</a>  <a href=/package-system>Package System</a>  <a href=/testimonials>Testimonials</a>  <a href=/style>Style</a>  <a href=/wiki>Wiki</a>
+
+<a href=/faq>FAQ</a>  <a href=/projects>Software</a>  <a href=/contact>Contact</a>  <a href=/donate>Donate</a>  <a href=https://github.com/kisslinux/wiki/wiki>Wiki -&gt;</a>  <a href=https://github.com/kisslinux/>GitHub -&gt;</a>
+
+<pre>
++-------------------------------------------------------------------+
+|                                                                   |
+|            WIKI - Using EFISTUB instead of a bootloader           |
+|                                                                   |
++-------------------------------------------------------------------+
+
+For some UEFI users, the Linux kernel has the ability to act as an 
+EFI executable, which simplifies the boot process by removing the 
+need for a bootloader.
+
+PREREQUISITES
+
+* Install efibootmgr
+
+  $ kiss b efibootmgr && kiss i efibootmgr
+
+
+* Mount efivarfs
+
+  See <a href='https://k1ss.org/wiki/mounting-uefi-variables'>https://k1ss.org/wiki/mounting-uefi-variables</a>).
+
+
+* Enable EFISTUB support in the kernel
+
+  In the kernel configuration, enable CONFIG_EFI_STUB=y.
+
+  In menuconfig, this is located at:
+
+  Processor type and features  --->
+      [*] EFI runtime service support
+      [*]   EFI stub support
+
+  Then recompile and install the kernel. Keep the kernel's name as 
+  vmlinuz, and not vmlinuz-VERSION otherwise the boot entry will 
+  have to be updated for every new kernel update.
+
+
+CREATING A UEFI BOOT ENTRY
+
+$ efibootmgr --disk /dev/sdX \
+             --part N \
+             --create "KISS Linux" \
+             --loader '/vmlinuz' \
+             --unicode 'root=/dev/sdYM' \
+             --verbose
+
+Where /dev/sdXN is your EFI system partition and /dev/sdYM is your 
+root partition.
+
+Check to see that the entry was added with 'efibootmgr --verbose'.
+
+Find the entry's boot number XXXX, and the other entry's boot 
+numbers (YYYY, ZZZZ, and so on), and set it as the first in the boot 
+order with:
+
+$ efibootmgr --bootorder XXXX,YYYY,ZZZZ --verbose
+
+
+* Specifying root by PARTUUID
+
+  The root partition can also be referred to by its partition UUID:
+
+  --unicode 'root=PARTUUID=aaaaaaaa-aaaa-4aaa-aaa-aaaaaaaaaaaa'
+
+  The root partition's UUID can be found using blkid.
+
+
+* Kernel parameters
+
+  In the above command, the --unicode option specifies the parameters 
+  passed to the kernel. If you require other parameters to boot your 
+  system, pass them here.
+
+
+REMOVING A UEFI BOOT ENTRY
+
+Find your entry's boot number XXXX using 'efibootmgr --verbose' 
+and run:
+
+$ efibootmgr --bootnum XXXX --delete-bootnum
+
+
+The registered trademark Linux(R) is used pursuant to a
+sublicense from the Linux Foundation, the exclusive
+licensee of Linus Torvalds, owner of the mark on a
+world­wide basis.
+
+(C) Dylan Araps 2019-2020
+
+
+<a href="/wiki/Using-EFISTUB-instead-of-a-bootloader.txt">View page source</a>
+
+
+</pre></pre>

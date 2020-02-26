@@ -9,39 +9,84 @@
 <pre>
 +-------------------------------------------------------------------+
 |                                                                   |
-|                     WIKI - Managing Services                      |
+|        WIKI - [acpid] Handle all events in a single script        |
 |                                                                   |
 +-------------------------------------------------------------------+
 
-KISS by default uses busybox init with busybox runit for services.
-udevd is used as an example service for this page as it is typically
-the first service a user will want to enable.
+PREREQUISITES
+
+* Make sure that all ACPI-related kernel options are enabled. 
+  More info: <a href='https://wiki.gentoo.org/wiki/ACPI#Kernel'>https://wiki.gentoo.org/wiki/ACPI#Kernel</a>
 
 
-ENABLING A SERVICE
+IDENTIFYING ACPI EVENTS
 
-$ ln -s /etc/sv/udevd/ /var/service
+* Enable acpid.
 
-
-DISABLING A SERVICE
-
-$ unlink /var/service/udevd
+  $ ln -s /etc/sv/acpid/ /var/service/
 
 
-STOPPING A SERVICE
+* Run acpi_listen. This waits for ACPI events and outputs them.
 
-$ sv down udevd
+  # For this example, pressing the volume mute button will print 
+    something like:
 
-
-STARTING A SERVICE
-
-$ sv up udevd
+  $ button/mute MUTE 00000080 00000000 K
 
 
-FULL USAGE
+NOTE: Some 'Fn + *' keys might not appear as they are hardware-bound 
+      (e.g. WLAN toggle). Just test them all and see what works. For 
+      most laptops, this will also detect lid events 
+      (e.g. opening or closing).
 
-Refer to the 'sv' help output for further commands.
 
+READ ALL EVENTS
+
+* Create a file under /etc/acpi/events/ (just create these 
+  directories if they are missing) containing the following:
+
+  # /etc/acpi/events/anything
+  event=.*
+  action=/etc/acpi/handler.sh %e
+
+
+* This will match any detected event and run the action 
+  file (see below).
+
+
+THE HANDLER SCRIPT
+
+* During an event, acpid will run a corresponding action which can 
+  now be handled by a single script. This is possible as the events 
+  are passed literally as multiple parameters into the script. As 
+  for our example:
+
+  button/mute MUTE 00000080 00000000 K
+  $1=button/mute
+  $2=MUTE
+  $3=00000080
+  $4=00000000
+  $5=K
+
+* Here's a very simple script:
+
+  # /etc/acpi/handler.sh
+
+  #!/bin/sh
+
+  case $1 in
+      button/mute)
+          amixer sset Master toggle
+      ;;
+  esac
+
+  # Don't forget to make this file executable
+  $ chmod +x /etc/acpi/handler.sh
+
+
+* Restart `acpid`.
+
+  $ sv restart acpid
 
 
 The registered trademark Linux(R) is used pursuant to a
@@ -52,7 +97,7 @@ world­wide basis.
 (C) Dylan Araps 2019-2020
 
 
-<a href="/wiki/Managing-Services.txt">View page source</a>
+<a href="/wiki/[acpid]-Handle-all-events-in-a-single-script.txt">View page source</a>
 
 
 </pre></pre>
