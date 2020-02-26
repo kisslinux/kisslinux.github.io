@@ -14,7 +14,7 @@ cat <<EOF > /tmp/meow
 <pre>
 %%CONTENT%%
 
-
+<div style='height:200px'>
 The registered trademark Linux(R) is used pursuant to a
 sublicense from the Linux Foundation, the exclusive
 licensee of Linus Torvalds, owner of the mark on a
