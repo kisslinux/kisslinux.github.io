@@ -1,0 +1,125 @@
++-------------------------------------------------------------------+
+|                                                                   |
+|                    WIKI - Full Disk Encryption                    |
+|                                                                   |
++-------------------------------------------------------------------+
+
+KISS, by default, does not support the use of an initramfs, which are 
+typically necessary to mount an encrypted rootfs. An encrypted 
+rootfs can instead be mounted by the kernel command line parameter 
+dm-mod.create="...".
+
+CAVEATS
+
+- The (LUKS master) key must be specified in dm-mod.create="...". 
+  This exposes the key in e.g. /proc/cmdline, which is accessible by 
+  any program or user.
+
+- For any security whatsoever, GRUB 2 is required, as it can boot 
+  from an encrypted volume. This is explained further in the guide 
+  below.
+
+
+GUIDE
+
+* Disk and volume setup
+
+  For the purposes of this guide, the partition to be mounted at / 
+  will be referred to as /dev/sda1. BIOS boot partitions and EFI 
+  system partitions are irrelevant to the specifics of this guide, 
+  and should be created and mounted as usual. 
+
+  For simplicity's sake, the use of LVM logical volumes other than 
+  dm-crypt is beyond the scope of this guide, which will only cover 
+  mounting a LUKS1 volume directly to /.
+
+  Create a partition table with at least one partition. Unlike 
+  typical full-disk encryption, it is not necessary to create a 
+  separate, unencrypted partition for /boot, as GRUB can boot 
+  encrypted (LUKS1) partitions.
+
+  # fdisk /dev/sda
+
+
+* Create a LUKS1 volume on the root partition:
+
+  # cryptsetup luksFormat [desired options] --type luks1 /dev/sda1
+
+
+* Open the LUKS container (here named cryptroot):
+
+  # cryptsetup open /dev/sda1 cryptroot
+
+
+* Mount the volume to /mnt
+
+  # mount /dev/mapper/cryptroot /mnt
+
+  Mount other partitions and enable swap as desired. If another 
+  partition or volume is encrypted separately from the root 
+  partition, it should be configured in /etc/crypttab, where it will 
+  be unlocked in the init scripts.
+
+  Continue with installation as installation as normal.
+
+
+KERNEL CONFIGURATION
+
+To enable dm-crypt targets and the dm-mod.create= parameter, the 
+following kernel parameters need to be set:
+
+CONFIG_BLK_DEV_DM=y
+CONFIG_DM_CRYPT=y
+CONFIG_DM_INIT=y
+CONFIG_DM_UEVENT=y
+CONFIG_CRYPTO_USER_API_HASH=y
+CONFIG_CRYPTO_USER_API_SKCIPHER=y
+
+If you are using default encryption parameters with 
+'crypsetup luksFormat', the following options also need to be set:
+
+CONFIG_CRYPTO_XTS=y
+CONFIG_CRYPTO_SHA256=y
+CONFIG_CRYPTO_AES=y
+
+To keep the encryption key from being exposed as plain text in 
+grub.cfg, the dm-mod.create="..." parameter should be built into the 
+kernel. To do so, set the following:
+
+CONFIG_CMDLINE_BOOL=y
+CONFIG_CMDLINE="dm-mod.create=\"...\" root=/dev/dm-X"
+
+NOTE: if configuring these options in e.g. 'make nconfig', do not 
+      include the backslashes.
+
+So long as CONFIG_CMDLINE_OVERRIDE is not set, other kernel 
+parameters can be either built-in or specified in GRUB. root= needs 
+to be built-in as GRUB will autodetect root AFTER it is relocated by 
+uevents to e.g. /dev/mapper/cryptroot.
+
+The argument for dm-mod.create="..." is given by (assuming the 
+cryptroot target name):
+
+# dmsetup table --concise --showkeys cryptroot
+
+and the X in root=/dev/dm-0 is given by e.g.
+
+# dmsetup table --concise cryptroot | awk -F, '{ print $3 }'
+
+
+GRUB CONFIGURATION
+
+To allow booting from encrypted /boot, add the following to 
+/etc/default/grub and then install GRUB as usual:
+
+GRUB_ENABLE_CRYPTODISK=y
+
+
+INSTALL USERSPACE TOOLS
+
+If you haven't, build and install cryptsetup (which will pull all 
+other necessary tools as dependencies):
+
+$ kiss b cryptsetup
+$ kiss i cryptsetup
+
