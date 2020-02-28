@@ -87,6 +87,31 @@
 
 +-------------------------------------------------------------------+
 |                                                                   |
+|                        PACKAGE MANAGEMENT                         |
+|                                                                   |
++-------------------------------------------------------------------+
+
+* How do I remove a package and all of its dependencies?
+
+  Short answer: With one command? You can't.
+
+  The package manager does not do recursive dependency removal on
+  removal of a package. This error-prone automation will not be
+  added to the package manager.
+
+  Instead, the workflow is to remove the single package and then look 
+  at the output of the 'kiss-orphans' command to see what can now be 
+  removed. This command will list all packages which have no 
+  relationship with other packages, otherwise known as orphans. 
+
+  This list may include Firefox and other "end" software so a brain 
+  is required when parsing the list. You'll come to learn the 
+  relationships between packages and their dependencies and this will 
+  eventually become effortless.
+
+
++-------------------------------------------------------------------+
+|                                                                   |
 |                             KERNEL                                |
 |                                                                   |
 +-------------------------------------------------------------------+
@@ -262,11 +287,15 @@
      as well which is finicky but doable.
 
 
+* How do I take a screenshot?
 
+  Most users will typically use 'ffmpeg' as their screenshot tool as
+  they'll already have ffmpeg installed for MPV or Firefox. Other 
+  options include 'imlib2' or 'imagemagick' (import). 
 
-
-
-
+  If you'd like to use another tool, package it yourself. Remember,
+  if no one has packaged something it means that no one has needed
+  said package. It is up to you.
 
 
 <div style='height:200px'>
