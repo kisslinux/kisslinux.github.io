@@ -24,14 +24,19 @@ GUIDE
 
 * Disk and volume setup
 
-  For the purposes of this guide, the partition to be mounted at / 
-  will be referred to as /dev/sda1. BIOS boot partitions and EFI 
+  For the purposes of this guide, the partition to be mounted at '/' 
+  will be referred to as '/dev/sda1'. BIOS boot partitions and EFI 
   system partitions are irrelevant to the specifics of this guide, 
   and should be created and mounted as usual. 
 
-  For simplicity's sake, the use of LVM logical volumes other than 
-  dm-crypt is beyond the scope of this guide, which will only cover 
-  mounting a LUKS1 volume directly to /.
+  BIOS vs EFI will differ in the partition table at the beginning of 
+  this guide and at the installation of grub near the end. For 
+  simplicity's sake, the use of LVM logical volumes other than 
+  'dm-crypt' is beyond the scope of this guide, which will only 
+   cover mounting a LUKS1 volume directly to '/'. 
+
+  For more information on FDE setups including using LVM within 
+  LUKS, etc. please see the ArchLinux and Gentoo Wikis.
 
   Create a partition table with at least one partition. Unlike 
   typical full-disk encryption, it is not necessary to create a 
