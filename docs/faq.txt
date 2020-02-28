@@ -204,5 +204,50 @@
   discern whether or not this was the issue.
 
 
++-------------------------------------------------------------------+
+|                                                                   |
+|                             XORG                                  |
+|                                                                   |
++-------------------------------------------------------------------+
+
+* Why can't I start Xorg as a normal user?
+
+  This is likely due to you running 'modprobe amdgpu' or equivalent
+  post (or late) boot which causes udev to miss setting up the GPU
+  device in /dev/dri.
+
+  There are three separate solutions ranging from easy to hard. 
+  Either of the three will solve the issue.
+
+  1. Start the udevd service.
+
+     This will keep udevd alive and ensure that it does its thing
+     when it detects that the GPU driver has loaded.
+
+     Enabling the service also turns on device hotplug and other
+     features. This isn't the default as there's no need for the
+     daemon to run on a static system.
+
+     $ ln -s /etc/sv/udevd/ /var/service
 
 
+  2. Run 'modprobe' earlier in the boot process.
+
+     Running 'modprobe' in your inittab or in rc.d will result in it
+     executing _after_ udevd has finished setting up devices.
+
+     By moving 'modprobe' to /etc/rc.conf, it will load the driver
+     before udevd executes which will allow it to detect and setup
+     the device.
+
+
+  3. Compile the GPU driver and firmware into the kernel.
+
+     This is trickier but the best solution overall. Instead of using
+     modules, compile the firmware into the kernel.
+
+     You'll then not have to worry about udevd/modprobe as the kernel
+     will automatically load the driver as early as possible.
+
+     This may include compiling proprietary firmware into the kernel
+     as well which is finicky but doable.
