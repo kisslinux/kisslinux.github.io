@@ -576,7 +576,7 @@ $   kiss i liberation-fonts                                     |
 
 +---------------------------------------------------------------+
 |                                                               |
-|             Add your user to the relevant groups              |
+|             ADD YOUR USER TO THE RELEVANT GROUPS              |
 |                                                               |
 | * This groups based permissions model may not be suitable if  |
 |   KISS will be used as a multi-seat system. Further           |
@@ -592,7 +592,7 @@ $   addgroup USERNAME audio                                     |
 
 +---------------------------------------------------------------+
 |                                                               |
-|                        Further steps                          |
+|                        FURTHER STEPS                          |
 |                                                               |
 | * You should now be able to reboot into your KISS             |
 |   installation. Typical configuration should follow           |

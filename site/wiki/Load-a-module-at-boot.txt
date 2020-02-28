@@ -4,6 +4,12 @@
 |                                                                   |
 +-------------------------------------------------------------------+
 
+NOTE: Enable the udevd service if you opt to load a module at boot
+      as the daemon is needed to setup whatever drivers you load.
+
+      SEE: https://k1ss.org/wiki/Managing-Services
+
+
 USING /etc/inittab (busybox-init)
 
 A module can be loaded at boot by adding a single line to 
