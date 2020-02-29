@@ -7,7 +7,7 @@
 |                                                       |
 |   Dylan Araps (https://github.com/dylanaraps)         |
 |                                                       |
-|   - Creator of KISS.                                  |
+|   - Creator and BDFL of KISS.                         |
 |   - Creator of neofetch, pfetch, pywal, fff,          |
 |   - Creator of the pure ba[sh] bible.                 |
 |                                                       |
