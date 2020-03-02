@@ -65,3 +65,7 @@ while read -r page; do
         ;;
     esac
 done
+
+# Workaround for broken repology link.
+mkdir -p package-system
+ln -s ../package-system.html package-system/index.html
