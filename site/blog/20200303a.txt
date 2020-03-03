@@ -45,7 +45,7 @@ To quote the README:
  "Wyverkiss is an alternative rootfs for KISS Linux. If KISS goes 
   GNU, we go the opposite."
 
-https://github.com/wyvertux/wyverkiss/releases/tag/0.0.2
+Source: https://github.com/wyvertux/wyverkiss/releases/tag/0.0.2
 
 
 DOCS
@@ -123,7 +123,7 @@ Lots of fun to be had.
 I know I'll get this question: "Why bash?". I'll answer as simply as
 possible. It's fun and challenging!
 
-https://github.com/dylanaraps/birch
+Source: https://github.com/dylanaraps/birch
 
 
 POW
@@ -147,7 +147,7 @@ again.
 As an example, you could pair this with acpid to automatically run it
 on specific events. I hope you find some use out of it, I have!
 
-https://github.com/dylanaraps/pow
+Source: https://github.com/dylanaraps/pow
 
 
 SOWM
