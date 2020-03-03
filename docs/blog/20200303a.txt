@@ -78,6 +78,22 @@ person. You have the right and means as a user to drop the dependence
 on me at any time.
 
 
+SYSMGR
+
+Cem Keylan, (the creator of Carbs Linux (a distro based on KISS)) has
+released a simple system supervisor. The project was written with
+KISS Linux an Carbs Linux in mind and Cem is calling for testers.
+
+The project is written in POSIX shell and should require no 
+additional dependencies. If you are interested, please try it out. 
+
+I am yet to use it though it's always good to have options. I thought
+I'd post about this as it's a minimal alternative for those using 
+KISS who are looking to move away from busybox init.
+
+Source: https://github.com/cemkeylan/sysmgr
+
+
 BIRCH
 
 I spent some time working on my IRC client as well. I rewrote it from
