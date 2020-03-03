@@ -130,7 +130,7 @@
 |   version of KISS. If the checksums or signature fail         |
 |   to verify, contact me.                                      |
 |                                                               |
-$   url=github.com/kisslinux/repo/releases/download/1.9.0       |
+$   url=github.com/kisslinux/repo/releases/download/1.9.9       |
 $   wget "$url/kiss-chroot.tar.xz"                              |
 |                                                               |
 |                                                               |
@@ -374,6 +374,17 @@ $   kiss i dhcpcd                                               |
 |   with [*] (Yes) and not [m] (Module).                        |
 |                                                               |
 |                                                               |
+|   INSTALL REQUIRED PACKAGES                                   |
+|                                                               |
+|   # Needed for 'make menuconfig'.                             |
+$   kiss b ncurses                                              |
+$   kiss i ncurses                                              |
+|                                                               |
+|   # Needed for build_OID_registry (TLDR, install perl).       |
+$   kiss b perl                                                 |
+$   kiss i perl                                                 |
+|                                                               |
+|                                                               |
 |   DOWNLOAD THE KERNEL SOURCES                                 |
 |                                                               |
 |   Kernel releases:                                            |
@@ -427,9 +438,6 @@ $   make defconfig                                              |
 |                                                               |
 |   # Open an interactive menu to edit the generated            |
 |   # config, enabling anything extra you may need.             |
-|   #                                                           |
-|   # NOTE: You may need 'ncurses' to run 'menuconfig'.         |
-|   #       Run 'kiss b ncurses && kiss i ncurses'.             |
 $   make menuconfig                                             |
 |                                                               |
 |   # Store the generated config for reuse later.               |
