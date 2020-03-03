@@ -86,7 +86,13 @@ Kiëd Llaentenn (https://github.com/kiedtl)
   <img src="/images/scrots/kiedtl01.jpg" alt="kiedtl">
 </picture></a>
 
+
 Mike Emanuelli
 <a href="/images/scrots/mike01.jpg"><picture>
   <img src="/images/scrots/mike01.jpg" alt="Mike">
+</picture></a>
+
+Kris Heck
+<a href="/images/scrots/kris01.jpg"><picture>
+  <img src="/images/scrots/kris01.jpg" alt="Kris">
 </picture></a>
