@@ -35,9 +35,9 @@ done < blog.xml > blog.xml.new
 mv -f blog.xml.new blog.xml
 
 while read -r line; do
-    printf '%s\n' "$line"
+    [ "$yup" ] || case $line in -*) printf '%s\n' "$entry"; yup=1; esac
 
-    case $line in -*) printf '%s\n' "$entry"; esac
+    printf '%s\n' "$line"
 done < ../blog.txt > ../blog.txt.new
 
 mv -f ../blog.txt.new ../blog.txt
