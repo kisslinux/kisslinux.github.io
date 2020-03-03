@@ -259,7 +259,7 @@
 | * In the sources file, files are referred to by       |
 |   using a relative path (files/busybox.config).       |
 |                                                       |
-| * The build script has direct access to the patches   |
+| * The build script has direct access to the files     |
 |   in its current working directory.                   |
 |                                                       |
 |                                                       |
