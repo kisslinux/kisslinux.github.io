@@ -376,13 +376,24 @@ $   kiss i dhcpcd                                               |
 |                                                               |
 |   INSTALL REQUIRED PACKAGES                                   |
 |                                                               |
-|   # Needed for 'make menuconfig'.                             |
+|   ncurses is needed for 'make menuconfig' and can be          |
+|   skipped if you will not be using it.                        |
+|                                                               |
 $   kiss b ncurses                                              |
 $   kiss i ncurses                                              |
 |                                                               |
-|   # Needed for build_OID_registry (TLDR, install perl).       |
+|   Perl is needed by the build_OID_registry script which will  |
+|   be executed during your kernel build 99.9% of the time.     |
+|   What this means is that perl is *required*.                 |
+|                                                               |
 $   kiss b perl                                                 |
 $   kiss i perl                                                 |
+|                                                               |
+|   Perl _can_ be avoided by applying the following patch to    |
+|   the kernel sources. The patch replaces the perl script with |
+|   an implementation in POSIX shell (Thanks @E5ten).           |
+|                                                               |
+|   Apply: <a href='https://k1ss.org/dist/kernel-no-perl.patch'>https://k1ss.org/dist/kernel-no-perl.patch</a>           |
 |                                                               |
 |                                                               |
 |   DOWNLOAD THE KERNEL SOURCES                                 |
