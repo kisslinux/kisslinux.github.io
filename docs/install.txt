@@ -121,7 +121,7 @@
 |   version of KISS. If the checksums or signature fail         |
 |   to verify, contact me.                                      |
 |                                                               |
-$   url=github.com/kisslinux/repo/releases/download/1.9.10      |
+$   url=github.com/kisslinux/repo/releases/download/1.9.11      |
 $   wget "$url/kiss-chroot.tar.xz"                              |
 |                                                               |
 |                                                               |
@@ -366,6 +366,11 @@ $   kiss i dhcpcd                                               |
 |                                                               |
 |                                                               |
 |   INSTALL REQUIRED PACKAGES                                   |
+|                                                               |
+|   libelf is required in most if not all cases.                |
+|                                                               |
+$   kiss b libelf                                               |
+$   kiss i libelf                                               |
 |                                                               |
 |   ncurses is needed for 'make menuconfig' and can be          |
 |   skipped if you will not be using it.                        |
