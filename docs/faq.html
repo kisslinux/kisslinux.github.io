@@ -55,6 +55,73 @@
   provides you with an always up-to-date repository pool.
 
 
+* Something something BUS factor of ONE.
+
+  Every user of the distribution owns their system in its entirety.
+  The management of the distribution which extends to the management
+  of updates to the user's system is entirely optional.
+
+  All KISS systems contain the full sources for the distribution and
+  each user has the means of managing and maintaining their machine
+  on their lonesome (or by forming a collective and secondary 
+  "upstream").
+
+  This includes:
+
+  - The repositories with full git history.
+
+    The repository updates are simply a 'git pull' which results in
+    each user having a full copy of the git repositories on their
+    machine at /var/db/kiss/.
+
+  - The package manager and the kiss-* scripts.
+
+    As these are all simple shell scripts, the installed "binaries" 
+    _are_ the unchanged source code. All of these are self-contained
+    and separate programs.
+
+    The 'kiss-outdated' script allows one to check their system for
+    outdated packages against the repology.org database independent
+    of whether or not repology has support for KISS itself.
+
+    The 'kiss-export' script allows one to convert an installed
+    package back into a redistributable and installable binary 
+    tarball. Simply run 'kiss-export pkg_name' and a tarball will be 
+    created in the current directory. 
+
+  - The distribution's documentation. 
+
+    As the website sources are merely plain .txt files, the docs are 
+    available in /usr/share/doc/kiss and are readable in less, 
+    vim or the program of your choosing.
+
+  - The init scripts.
+
+    In addition to the reasoning given for the package manager above,
+    KISS has no lock-in regarding how the machine boots. Were the
+    init scripts to disappear, there would be no real loss.
+
+    To continue further, the init scripts need not change. There is
+    no need to update them. Any extensions to them can be made via
+    the /etc/rc.d directory or the /etc/rc.conf file. 
+     
+  What all of this means is that were the GitHub or website to go 
+  down, there would be no loss in code, documentation or the 
+  distribution itself.
+
+  It also extends to each user having everything they will need to
+  continue the distribution for themselves or for other users. A
+  change of git remote is all that is needed in the latter case.
+
+  KISS was designed to be maintainable by a single person. The
+  repositories are kept small and focused. There is no requirement 
+  or _need_ for infrastructure of any kind.
+
+  A user today could choose to go their own way with their system. 
+  Everything they need is already in the existing system. The power 
+  is in your hands. You are free.
+
+
 +-------------------------------------------------------------------+
 |                                                                   |
 |                            SOFTWARE                               |
