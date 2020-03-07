@@ -142,10 +142,10 @@
 |   git+https://github.com/dylanaraps/eiwd              |
 |                                                       |
 |   # Grabbing a specific branch.                       |
-|   git+https://github.com/dylanaraps/eiwd#branch       |
+|   git+https://github.com/dylanaraps/eiwd@branch       |
 |                                                       |
 |   # Grabbing a specific commit.                       |
-|   git+https://github.com/dylanaraps/eiwd#hash         |
+|   git+https://github.com/dylanaraps/eiwd#commit       |
 |                                                       |
 |                                                       |
 +-------------------------------------------------------+
