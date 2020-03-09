@@ -20,7 +20,6 @@ CAVEATS
         - dm-crypt targets are fully functional when lvm2 is 
           configured without --enable-udev_sync and 
           --enable-udev_rules.
-    - xf86-video-nouveau (*investigation and testing needed*)
     - xf86-video-amdgpu (*investigation and testing needed*)
 
 
