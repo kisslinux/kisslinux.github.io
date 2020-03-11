@@ -1,5 +1,5 @@
---- lib/Makefile
-+++ lib/Makefile
+--- a/lib/Makefile
++++ b/lib/Makefile
 @@ -271,7 +271,7 @@
  	$(call cmd,build_OID_registry)
  
@@ -9,8 +9,8 @@
  
  clean-files	+= oid_registry_data.c
  
---- build_OID_registry
-+++ build_OID_registry
+--- a/lib/build_OID_registry
++++ b/lib/build_OID_registry
 @@ -1,4 +1,4 @@
 -#!/usr/bin/perl -w
 +#!/bin/sh
