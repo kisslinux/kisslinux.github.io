@@ -1,0 +1,441 @@
+<!doctype html><html lang=en><link href='data:image/gif;base64,R0lGODlhEAAQAPH/AAAAAP8AAP8AN////yH5BAUAAAQALAAAAAAQABAAAAM2SLrc/jA+QBUFM2iqA2bAMHSktwCCWJIYEIyvKLOuJt+wV69ry5cfwu7WCVp2RSPoUpE4n4sEADs=' rel=icon><title>KISS</title><meta charset=utf-8><meta name=Description content="An independent Linux® distribution with a focus on simplicity and the concept of less is more."><style>body{text-align:center;overflow-y:scroll;font:calc(0.75em + 1vmin) monospace}pre pre{text-align:left;display:inline-block}img{max-width:57ch;display:block;height:auto;width:100%}@media(prefers-color-scheme:dark){body{background:#000;color:#fff}a{color:#6CF}}</style><pre>
+
+<a href=/><b>KISS</b></a><span style='color:#e60000'> 💋</span>  <a href=/news>News</a>  <a href=/blog>Blog</a>  <a href=/install>Install KISS</a>  <a href=/team>Team</a>  <a href=/guidestones>Guidestones</a>
+
+<a href=/scrots>Screenshots</a>  <a href=/package-system>Package System</a>  <a href=/testimonials>Testimonials</a>  <a href=/style>Style</a>
+
+<a href=/faq>FAQ</a>  <a href=/projects>Software</a>  <a href=/contact>Contact</a>  <a href=/donate>Donate</a>  <a href=/wiki>Wiki</a>  <a href=https://github.com/kisslinux/>GitHub -&gt;</a>
+
+<pre>
+Subject	This week in KISS (#15)
+From	Dylan Araps &lt;dylan@k1ss.org&gt;
+Date	Tue, 16 Mar 2020 15:07:09 +0100
+
+Hello.
+
+It's been a weird week.
+
+All stores (excluding Super Markets, Pharmacies, etc) have been
+closed here. People are keeping their distance and most people have
+decided to not leave the confines of their homes/yards (me included).
+
+<a href="/images/weekly/4.jpg">
+    <img src="/images/weekly/4.jpg" alt="dylan">
+</a>
+
+The repositories are now ready for GCC 10. Each package has been
+tested and fixes have been made to any with issues. GCC 10 snapshots
+are available in the testing repository for those wanting to dive
+in early.
+
+The perl dependency has been removed from libvpx. Perl was required
+solely for the generation of four header files. The package now
+simply includes these header files in generated form.
+
+Firefox is now the only package with a dependency on perl. This is
+also only a build dependency meaning that there is no runtime
+dependency on perl anywhere in the system.
+
+Our gzip implementation has been changed to pigz which is a parallel
+version of gzip. Expect speedups when working with large gzipped
+sources (depends on your core count of course).
+
+
+PACKAGE MANAGER
+
+The compression method used for KISS packages is now configurable via
+the KISS_COMPRESS environment variable. The current valid values are
+gz, xz and bz2.
+
+This same code is shared by the source extraction function which has
+the upside of making our tar command usage more portable between tari
+implementations.
+
+The final step for maximal tar portability is the removal of the
+'--strip-components' flag which limits our compatibility to busybox
+tar, libarchive tar (bsdtar) and GNU tar. This is tricky to solve,
+any suggestions welcome.
+
+
+KISS-FORK and KISS-LINK
+
+I added two new utilities which aid in the forking and linking of
+packages between repositories.
+
+'kiss-fork <pkg>' will copy the package's repository directory into
+your current directory.
+
+'kiss-link <file>' will link a package's repository file to the next
+repository in KISS_PATH.
+
+Example:
+
+-> ls
+LICENSE.md  README.md  libsass  mesa  pp  sassc  st  wine
+
+-> kiss-fork libdrm
+forked package to /home/goldie/dylan-repo/libdrm
+
+-> cd libdrm
+-> ls
+build      checksums  depends    sources    version
+
+-> kiss-link checksums
+linked checksums to /home/goldie/projects/kiss-new/extra/./libdrm
+-> kiss-link depends
+linked depends to /home/goldie/projects/kiss-new/extra/./libdrm
+-> kiss-link sources
+linked sources to /home/goldie/projects/kiss-new/extra/./libdrm
+-> kiss-link version
+linked version to /home/goldie/projects/kiss-new/extra/./libdrm
+
+-> lsl
+build
+checksums -> /home/goldie/projects/kiss-new/extra/./libdrm/checksums
+depends   -> /home/goldie/projects/kiss-new/extra/./libdrm/depends
+sources   -> /home/goldie/projects/kiss-new/extra/./libdrm/sources
+version   -> /home/goldie/projects/kiss-new/extra/./libdrm/version
+
+
+The result is a fork of the libdrm package to the user's repository
+with every file (except for build) symlinked to the repository
+containing libdrm.
+
+This allows the user to make changes to the build process of libdrm
+without having to maintain the entire package. The rest of the files
+are linked to the official libdrm so any version updates trickle
+down.
+
+
+REMOVING THE NETWORK REQUIREMENT FROM A RUST PACKAGE
+
+First some context. The KISS repositories (excluding community) have
+the requirement that no package require an internet connection during
+the build process.
+
+What this means is that all network connections made by the package
+manager should only be to the static list of sources defined for the
+package.
+
+This allows the sources list to be signed via GPG and further allows
+the package manager to verify the checksums of everything downloaded.
+This finally allows the sources to be cached.
+
+In short, no package should download random stuff during builds. The
+package manager should handle this.
+
+Enter cbindgen.
+
+Some packages make this a very difficult thing to pull off. Most
+notably Rust and cbindgen. The latter being the package I will talk
+about in this post.
+
+The cbindgen package requires a total of 35 crates. This results in
+35 additional source downloads we need checksums for. I've come
+across packages requiring 200+ crates in my travels.
+
+The process looks like this:
+
+1. Generate a list of each required crate and the required versions
+   of each crate. This must be done for the whole dependency chain.
+
+2. Turn the generated list into a list of download URLs for each
+   crate. (<a href='https://static.crates.io/crates/atty/atty-0.2.13.crate'>https://static.crates.io/crates/atty/atty-0.2.13.crate</a>)
+
+3. Append the URL list to the sources file. Each crate source should
+   also be copied to 'vendor/' so the second field of each source
+   must include it.
+
+4. Set the 'CARGO_HOME' environment variable's value to '$PWD' to
+   prevent cargo from accessing the user's home directory. We need to
+   contain things to the package manager's domain.
+
+5. Extract each crate (really tarballs in disguise). Cargo expects
+   them to all be unpacked prior to 'cargo build'.
+
+6. Generate a '.cargo-checksum.json' file for each of the extracted
+   crates. The checksum should be of the unextracted crate.
+
+7. Create the '.cargo' directory in '$PWD'. We need to create a cargo
+   configuration file for the build to work.
+
+8. Create a configuration file called 'config' in '.cargo'. This file
+   will instruct cargo to avoid crates.io when looking for crates and
+   to instead look in 'vendor/'.
+
+9. Use the '--frozen' argument with 'cargo build' to prevent cargo
+   from accessing the network to look for new crate versions.
+
+
+Yes. This is the only way to remove the network requirement from a
+build of anything using cargo.
+
+If you'd like to see what the resulting package looks like, the
+source is available below (comments included!).
+
+NOTE: The maintainer of the software _could_ distribute tarballs
+      which include all of the crates via 'cargo vendor' though this
+      isn't a common practice from what I've seen.
+
+Source: <a href='https://github.com/kisslinux/repo/tree/master/extra/cbindgen'>https://github.com/kisslinux/repo/tree/master/extra/cbindgen</a>
+
+
+REMOVING DBUS FROM IWD (AGAIN)
+
+I posted a while ago about my fork of iwd called 'eiwd'. What it is,
+is a fork of iwd with the dbus requirement removed. I decided to
+start again this week with the intention of handling things
+differently the second time around.
+
+The new eiwd touches as little existing code as possible and is
+merely a series of '#ifdef HAVE_DBUS' throughout the codebase. I've
+also added the '--disable-dbus' configure flag.
+
+It is now possible to use the eiwd sources as a drop-in replacement
+for iwd in distributions wanting to optionally enable dbus based on
+some kind of conditional (Gentoo USE flags as an example).
+
+The daemon is fully functional and I will _eventually_ get around to
+writing a new client to work without dbus.
+
+Source: <a href='https://github.com/dylanaraps/eiwd'>https://github.com/dylanaraps/eiwd</a>
+
+
+KISS AND BEDROCK LINUX
+
+A KISS user has successfully run Bedrock Linux with KISS as a strata.
+
+<a href="/images/weekly/bedrock.jpg">
+    <img src="/images/weekly/bedrock.jpg" alt="bedrock linux">
+</a>
+
+Bedrock's handling of the system boot/shutdown also uncovered two
+minor issues with KISS' init process which have now been fixed.
+
+A big thank you to Bedrock Linux creator Paradigm for helping myself
+and the mentioned user to solve any issues.
+
+A full album of images can be seen here: <a href='https://imgur.com/a/vgf6pGU'>https://imgur.com/a/vgf6pGU</a>
+
+
+NOTABLE USER REPOSITORIES
+
+kiss-games
+
+kiss-games is a user repository for KISS which includes a long list
+of games and emulators. Any user can add the repository to gain
+access to its list of packages.
+
+Source: <a href='https://github.com/sdsddsd1/kiss-games'>https://github.com/sdsddsd1/kiss-games</a>
+
+mywayland
+
+This repository brings Wayland to KISS. It includes Sway, wlroots and
+other required packages. Same as above, any user is able to enable
+this repository to start running Wayland.
+
+Source: <a href='https://github.com/sdsddsd1/mywayland'>https://github.com/sdsddsd1/mywayland</a>
+
+
+This is what I was hoping for when creating the repository system and
+the imposed limits to the size of the official repositories.
+
+An "ecosystem" of repositories (by users!) which complement and
+extend the base system.
+
+I can't wait to see where this will go.
+
+
+A LITTLE ABOUT MYSELF
+
+KISS has attracted a lot of new users recently. As distributions are
+more or less centred around trust, I thought I'd end this week's post
+by taking a moment to introduce myself.
+
+* I was born February of 1998 in Melbourne, Australia. Both of my
+  parents are of Greek descent. I grew up living with my Mother
+  and grandparents. I am 22 years of age.
+
+* I don't own a phone of any kind. The only piece of technology I own
+  is my laptop which runs KISS and which I use to work on my
+  software. When I leave the house, I'm completely disconnected.
+
+* I've always had an affinity for computers and have tinkered with
+  them from a young age. Building my own PCs, messing with console
+  homebrew, iPod jailbreaks (what fun they were), etc.
+
+* I dropped out of High School at the age of 13 (after the first
+  year) and dedicated all of my time to technology. I was in an
+  "accelerated learning" class for my only year.
+
+* I started making websites at 13 from my PC which still ran Windows.
+  This progressed to making websites for local businesses.
+
+* I first tried Linux when Valve ran the Tux promotion for Team
+  Fortress 2 (<a href='https://wiki.teamfortress.com/wiki/Tux'>https://wiki.teamfortress.com/wiki/Tux</a>). I kept using
+  Linux from this point on.
+
+* My first Linux project came late 2015 when I released the first
+  versions of Neofetch (a system information tool).
+
+* Since 2015 I've written a lot of software. wal/Pywal, the Pure bash
+  bible, the pure sh bible, fff, pfetch, sowm, KISS Linux etc.
+
+* I started university in 2016 and turned 18 during the first month
+  or so. I did two years of a Bachelor's in computer something
+  something before transferring to a Journalism bachelor and then
+  finally dropping out of that.
+
+* I moved to Greece in 2018 with my Grandmother, Mother, Brother and
+  Cousin. I still live here. I didn't speak the language and couldn't
+  read/write it either. My Grandfather passed two months prior to us
+  leaving.
+
+* I've been homeless two times in my life. Once as a child and the
+  second time in 2018 prior to the Greece move. Funny enough we went
+  from homelessness in Australia to homelessness in Greece before
+  finally setting in somewhere.
+
+* KISS Linux was started from a single room in which myself, my
+  brother, cousin, grandmother and mother lived at that time. The
+  WiFi came from a cafe across the road, 3 floors down.
+
+  To complicate things further, my grandmother was also dying at this
+  time (after having a stroke) and a stray cat had birthed kittens in
+  this same room.
+
+  My Grandmother made a recovery though we had another scare in
+  January of this current year (2020).
+
+  I now have a permanent place to live and one which I won't jokingly
+  call a "Human rights violation". I am still living out of a single
+  suitcase though.
+
+* If I were to count the total "house moves" I've made throughout my
+  life, I'd end up with a number around 40. 2018 alone had me move
+  around 10 or so times.
+
+It's been a wild ride so far, full of its ups and downs. I've omitted
+quite a lot as I'll probably write something more in depth elsewhere
+(at a later stage). Some things should also probably be left unsaid.
+
+This wasn't meant as a sob story or anything of that nature. Just
+a loose and rough timeline of events somewhat related to my Open
+Source work. I'm very happy and wouldn't have my life any other way.
+
+I hope this gave you a clearer picture of who I am and more
+importantly, why I am.
+
+
+    Dylan
+
+---
+
+
+Dylan Araps (55):
+      atk: Don't build tests
+      firefox: Fix error in dash
+      eiwd,openresolv: Move to extra
+      eiwd: bump to 1.5-1
+      curl: bump to 7.69.1
+      firefox-bin: Fix update issue
+      eiwd: bump to 1.5-2
+      eiwd: bump to 1.5-3
+      glib: bump to 2.64.1
+      eiwd: bump to 1.5-4
+      openesolv: Fix sysconfdir @konimex. Closes #168
+      kiss: bump to 1.7.8
+      gcc: latest snapshot
+      nodejs: bump to 13.11.0
+      cbindgen: Remove network requirement
+      kiss: bump to 1.7.9
+      gcc: bump to 9.3.0
+      rust: bump to 1.42.0
+      libdrm: GCC 10 fix
+      flex: Fix depends
+      flex: Make m4 make
+      binutils: Fix depends
+      binutils: Fix depends
+      bison: Fix depends
+      grub: Fix depends
+      cmake: Remove unneeded configure flags
+      glib: Don't build fuzzing stuff
+      libxkbcommon: Fix depends
+      xcb-util-wm: Fix depends
+      xcb-util-cursor: Fix depends
+      xf86-video-ati: GCC 10 fixes
+      xf86-video-amdgpu: GCC 10 fixes
+      xf86-video-intel: Fix LDFLAGS
+      xf86-video-nouveau: GCC 10 fixes
+      gcc: Fix depends
+      perl: bump to 5.30.2
+      baseinit: bump to 0.7.1
+      kiss: bump to 1.7.10
+      kiss: bump to 1.8.0
+      gzip: swap implementation to pigz
+      sudo: bump to 1.8.31p1
+      binutils: Fix depends
+      glib: Fix no libelf
+      firefox-bin: Fix naming issue. Closes #172
+      kiss: bump to 1.8.1
+      ccache: bump to 3.7.8
+      pfetch: bump to 0.5.0
+      ne: drop from community
+      eiwd,openresolv: Move to extra
+      gmp: new package at 6.2.0
+      mpfr: new package at 4.0.2
+      pfetch: bump to 0.6.0
+      icu: bump to 66.1
+      icu: Fix url. Closes #528
+      imagemagick: bump to 7.0.10-1
+
+Adam Schaefers (1):
+      libcap: add perl dep, closes #544 (#546)
+
+Anirudh Oppiliappan (1):
+      radare2: new package at 4.3.1 (#538)
+
+Cem Keylan (2):
+      boost: don't link statically (#525)
+      libsoup: bump to 2.70.0 (#531)
+
+Dilyn Corner (1):
+      extra-cmake-modules bumped to 5.68.0 (#519)
+
+Eudald Gubert i Roldan (5):
+      btpd: new package at 0.16 (#520)
+      ledger: new package at 3.1.3 (#526)
+      font-awesome: new package at 5.12.1 (#530)
+      sc: new package at 7.16_1.1.2 (#535)
+      sc-im: new package at 0.7.0 (#536)
+
+James Davies (1):
+      Fix qemu (#539)
+
+Kiëd Llaentenn (1):
+      hexyl: v0.6.0 => v0.7.0 (#532)
+
+Kris Heck (1):
+      jbig2dec: bump to 0.18 (#540)
+
+M. Herdiansyah (2):
+      cryptsetup: update to 2.3.1 (#534)
+      lvm2: patch the bashism @ioraff (#533)
+
+dzove855 (1):
+      dump xtrlock to 2.13 (#545)
+
+
+<div style='height:200px'>
+The registered trademark Linux(R) is used pursuant to a
+sublicense from the Linux Foundation, the exclusive
+licensee of Linus Torvalds, owner of the mark on a
+world­wide basis.
+
+(C) Dylan Araps 2019-2020
+
+
+<a href="/blog/20200316a.txt">View page source</a>
+
+
+</pre></pre>
