@@ -9,6 +9,7 @@
 |                                                       |
 +-------------------------------------------------------+
 
+- <a href=/blog/20200316a>16/03/2020: This week in KISS (#15)</a>
 - <a href=/blog/20200309a>09/03/2020: This week in KISS (#14)</a>
 - <a href=/blog/20200303a>03/03/2020: This week in KISS (#13)</a>
 - <a href=/blog/20200224a>24/02/2020: This week in KISS (#12)</a>
