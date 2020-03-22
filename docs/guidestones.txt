@@ -168,7 +168,7 @@
 |   opens the floodgates for software which             |
 |   unoptionally depends on them.                       |
 |                                                       |
-| * dbus, systemd, polkit, gettext, intltool, zstd,     |
+| * dbus, systemd, polkit, gettext, intltool,           |
 |   pulseaudio, pipewire, pam, wayland, logind,         |
 |   ConsoleKit, libsn, electron and all DEs.            |
 |                                                       |

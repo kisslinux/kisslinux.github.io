@@ -48,9 +48,8 @@
 |   Examples:                                           |
 |                                                       |
 |     dbus, systemd, polkit, gettext, intltool,         |
-|     zstd, pulseaudio, pipewire, pam, wayland,         |
-|     logind, ConsoleKit, libsn, electron and           |
-|     all DEs.                                          |
+|     pulseaudio, pipewire, pam, wayland, logind,       |
+|     ConsoleKit, libsn, electron and all DEs.          |
 |                                                       |
 |   The same rules above may apply to other software    |
 |   at the discretion of the BDFL.                      |
