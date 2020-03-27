@@ -7,6 +7,13 @@
 <ttl>1800</ttl>
 <atom:link href="https://k1ss.org/blog/blog.xml" rel="self" type="application/rss+xml" />
 <item>
+<title>25/03/2020: This week in KISS (#16)</title>
+<description>Hello all</description>
+<link>https://k1ss.org/blog/20200325a</link>
+<guid isPermaLink="true">https://k1ss.org/blog/20200325a/</guid>
+<pubDate>Wed, 25 Mar 2020 00:00:00 +0000</pubDate>
+</item>
+<item>
 <title>16/03/2020: This week in KISS (#15)</title>
 <description>It's been a weird week.</description>
 <link>https://k1ss.org/blog/20200316a</link>
