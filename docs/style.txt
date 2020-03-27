@@ -473,7 +473,7 @@
 |   Don't specify patches remotely. Store them as a     |
 |   part of the package's repository files.             |
 |                                                       |
-|   Bad:  https://website.com/fix-build.patch           |
+|   Bad:  https://example.com/fix-build.patch           |
 |   Good: patches/fix-build.patch                       |
 |                                                       |
 |                                                       |
