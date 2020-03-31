@@ -625,7 +625,7 @@ $   addgroup USERNAME audio                                     |
 |                                                               |
 | * If you encountered any issues, don't hesitate to open       |
 |   an issue on one of our GitHub repositories, post on         |
-|   https://reddit.com/r/kisslinux) or join the IRC server.     |
+|   https://reddit.com/r/kisslinux or join the IRC server.      |
 |                                                               |
 |   See: https://k1ss.org/contact                               |
 |   See: https://github.com/kisslinux/wiki/wiki                 |
