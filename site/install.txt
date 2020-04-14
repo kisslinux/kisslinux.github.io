@@ -493,7 +493,7 @@ $   mv /boot/System.map /boot/System.map-VERSION                |
 |   amounts of documentation for it exists                      |
 |                                                               |
 | * If using UEFI, the efivars filesystem may need to be        |
-|   mounted. See: <a href='https://github.com/kisslinux/wiki/wiki/Mounting-UEFI-variables'>Mounting UEFI variables</a>                       |
+|   mounted. See: <a href='https://k1ss.org/wiki/Mounting-UEFI-variables'>Mounting UEFI variables</a>                       |
 |                                                               |
 |   RECOMMENDED                                                 |
 |                                                               |
@@ -628,7 +628,7 @@ $   addgroup USERNAME audio                                     |
 |   https://reddit.com/r/kisslinux or join the IRC server.      |
 |                                                               |
 |   See: https://k1ss.org/contact                               |
-|   See: https://github.com/kisslinux/wiki/wiki                 |
+|   See: https://k1ss.org/wiki                                  |
 |                                                               |
 |                                                               |
 +---------------------------------------------------------------+
