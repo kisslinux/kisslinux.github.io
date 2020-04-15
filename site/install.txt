@@ -289,7 +289,7 @@ $   kiss update                                                 |
 |   Note: The package manager will prompt for user input on     |
 |         completion before installing the build packages.      |
 |                                                               |
-$   kiss build                                                  |
+$   cd /var/db/kiss/installed && kiss build *                   |
 |                                                               |
 |                                                               |
 +---------------------------------------------------------------+
