@@ -6,74 +6,81 @@
 
 PREREQUISITES
 
-- Make sure your interface shows up in 'ip link'. See:
-    - https://k1ss.org/install
-    - https://k1ss.org/wiki/Loading-a-module-at-boot
+* Make sure your interface shows up in 'ip link'. See:
+
+  https://k1ss.org/install
+  https://k1ss.org/wiki/Loading-a-module-at-boot
 
 
-* Bring your interface up.
+* Bring the interface up.
 
-  $ ip link set <interface> up
+  -> ip link set &lt;interface&gt; up
 
 
 * Create a configuration file for the wireless access point.
 
-  $ wpa_passphrase SSID password > \
-    /etc/wpa_supplicant/wpa_supplicant-<interface>.conf
+  -> wpa_passphrase SSID password \
+         > /etc/wpa_supplicant/wpa_supplicant-&lt;interface&gt;.conf
 
-NOTE: A complete documentation of all the possible options can be 
-      found here: <a href="https://w1.fi/cgit/hostap/tree/wpa_supplicant/wpa_supplicant.conf">wpa_supplicant.conf</a>
+
+NOTE: A complete documentation of all possible options can be found
+      here: <a href="https://w1.fi/cgit/hostap/plain/wpa_supplicant/wpa_supplicant.conf">wpa_supplicant.conf</a>
 
 
 USING A SCRIPT
 
-* Start wpa_supplicant in the foreground to make sure the connection 
+* Start wpa_supplicant in the foreground to make sure the connection
   succeeds.
 
-  $ wpa_supplicant \
-        -i <interface> \
-        -c /etc/wpa_supplicant/wpa_supplicant-<interface>.conf
+  -> wpa_supplicant \
+         -c /etc/wpa_supplicant/wpa_supplicant-&lt;interface&gt;.conf \
+         -i &lt;interface&gt;
 
 
-* If all is well, run it as a daemon in the background by adding the 
-  -B option.
+* If all goes well, run it as a background daemon by adding the -B
+  option.
 
-  $ wpa_supplicant -B \
-        -i <interface> \
-        -c /etc/wpa_supplicant/wpa_supplicant-<interface>.conf
+  -> wpa_supplicant \
+         -B \
+         -c /etc/wpa_supplicant/wpa_supplicant-&lt;interface&gt;.conf \
+         -i &lt;interface&gt;
 
 
 * Start the interface with dhcpcd.
 
-  $ dhcpcd <interface>
+  -> dhcpcd &lt;interface&gt;
 
 
-* Check your connection.
+* Test the connection.
 
-  $ ping k1ss.org
+  -> ping k1ss.org
 
 
-* A way of automation could be to put this in a shell script.
+* Create a shell script to automate the entire process.
 
   #!/bin/sh
-  wpa_supplicant -B \
-      -i <interface> \
-      -c /etc/wpa_supplicant/wpa_supplicant-<interface>.conf
 
-  dhcpcd <interface>
+  wpa_supplicant \
+      -B \
+      -c /etc/wpa_supplicant/wpa_supplicant-&lt;interface&gt;.conf \
+      -i &lt;interface&gt;
+
+  dhcpcd &lt;interface&gt;
 
 
 USING DHCPCD HOOKS
 
 * Create the necessary symbolic link.
 
-  ln -s /usr/share/dhcpcd/hooks/10-wpa_supplicant \
-        /usr/libexec/dhcpcd-hooks/
+  -> ln -s /usr/share/dhcpcd/hooks/10-wpa_supplicant \
+           /usr/libexec/dhcpcd-hooks/
 
-* Start the dhcpcd service. 
 
-  See https://k1ss.org/wiki/Managing-Services
+* Start the dhcpcd service. See:
 
-* Check your connection.
+  https://k1ss.org/wiki/Managing-Services
 
-  $ ping k1ss.org
+
+* Test the connection.
+
+  -> ping k1ss.org
