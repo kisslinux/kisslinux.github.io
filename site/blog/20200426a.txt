@@ -27,6 +27,9 @@ to be what I describe above.
 KISS saw a large influx of users while I was away and I'd like to formally
 welcome everyone. o/
 
+(KISS has also recently been added to DistroWatch!
+ https://distrowatch.com/table.php?distribution=kiss)
+
 
 
 NEW LAPTOP
@@ -69,7 +72,6 @@ Odd/Interesting things:
 - The laptop charges (with fast charging) over USB-C. I'm really happy with this
   as my last laptop had its own special charger and replacements were nigh
   impossible to find.
-
 
 
 PACKAGE MANAGER CHANGES
