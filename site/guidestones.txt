@@ -223,6 +223,9 @@
 | * Prefer extensibility through scripts over baking    |
 |   every additional feature into the package manager.  |
 |                                                       |
+| * Circular dependencies are a bug and not a feature.  |
+|   See: freetype-harfbuzz                              |
+|                                                       |
 +-------------------------------------------------------+
 
 +-------------------------------------------------------+
