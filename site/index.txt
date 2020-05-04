@@ -74,6 +74,7 @@
 |        https://k1ss.org/guidestones                   |
 |        https://k1ss.org/install                       |
 |        https://k1ss.org/package-system                |
+|        https://k1ss.org/community                     |
 |                                                       |
 |                                                       |
 +-------------------------------------------------------+
