@@ -13,10 +13,10 @@
 +-------------------------------------------------------+
 
 
-aarch64
+aarch64:
  - https://github.com/jedavies-dev/kiss-aarch64
 
-ppc64le
+ppc64le:
  - https://github.com/jedavies-dev/kiss-ppc64le
 
 i686:
