@@ -134,6 +134,44 @@
         of 'baseinit'.
 
 
++-------------------------------------------------------------------+
+|                                                                   |
+|                              XORG                                 |
+|                                                                   |
++-------------------------------------------------------------------+
+
+* Starting Xorg without xinit (ie, startx).
+
+A little known fact about the 'startx' utility is that it's merely
+a sample script. System administrators are strongly urged to write
+their own. To quote the source:
+
+> This is just a sample implementation of a slightly less primitive
+> interface than xinit. [...] Site administrators are STRONGLY urged
+> to write nicer versions.
+
+Various alternative implementations of 'xinit'/'startx' exist and
+can be used as more or less drop-in replacements to xinit.
+
+- <a href='https://github.com/Earnestly/sx'>https://github.com/Earnestly/sx</a> (support for xauth)
+
+The absolute bare minimum (without support for xauth) is something
+along these lines:
+
+    #!/bin/sh
+
+    xinitrc() {
+       export DISPLAY=:0
+
+       exec sowm
+    }
+
+    trap xinitrc USR1
+
+    (trap '' USR1; X -nolisten tcp :0 vt1 -quiet) &
+
+    wait
+
 <div style='height:200px'>
 The registered trademark Linux(R) is used pursuant to a
 sublicense from the Linux Foundation, the exclusive
