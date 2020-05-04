@@ -117,3 +117,16 @@
 |    support for LUKS, LVM, mdev, mdevd, udev, etc.           |
 |                                                             |
 +-------------------------------------------------------------+
+|                                                             |
+| * SYSMGR (https://github.com/cemkeylan/sysmgr)              |
+|                                                             |
+|   A simplistic system-supervisor.                           |
+|                                                             |
++-------------------------------------------------------------+
+|                                                             |
+| * SHINIT (https://github.com/cemkeylan/shinit)              |
+|                                                             |
+|   Basic init daemon in POSIX sh with only 5 lines of code.  |
+|   It supports acting upon signals.                          |
+|                                                             |
++-------------------------------------------------------------+
