@@ -1,0 +1,77 @@
++-------------------------------------------------------------------+
+|                                                                   |
+|                         POST INSTALLATION                         |
+|                                                                   |
+| * Hello new KISS user. I hope the installation went well. Did you |
+|   run into any issues? I sure did my first time. We've all been   |
+|   there.                                                          |
+|                                                                   |
+| * The installation guide merely covers.. well.. the installation. |
+|   You're probably wondering how to get your WiFi working and what |
+|   not.                                                            |
+|                                                                   |
+| * Fear not my friend. This page will cover everything from        |
+|   timezones to system optimization. The TTY abyss just got a      |
+|   little bit brighter.                                            |
+|                                                                   |
++-------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------+
+|                                                                   |
+|                           DATE AND TIME                           |
+|                                                                   |
++-------------------------------------------------------------------+
+
+* Setting the time zone.
+
+  The system time zone can be set via the 'tzdata' package. This
+  installs the time zone database and once your timezone is set,
+  can be removed from the system.
+
+  The 'tzdata' package sees periodic updates to reflect political
+  changes to time zones, daylight savings and UTC offsets.
+
+  The source code is a goldmine of historical information and is
+  well worth the read. https://github.com/eggert/tz
+
+  # Install the tzdata package.
+  $ kiss b tzdata && kiss i tzdata
+
+  # Link your desired timezone to /etc/localtime.
+  $ ln -s /usr/share/zoneinfo/Europe/Rome /etc/localtime
+
+  # Optional: Remove the tzdata package.
+  $ kiss r tzdata
+
+
++-------------------------------------------------------------------+
+|                                                                   |
+|                              SOUND                                |
+|                                                                   |
++-------------------------------------------------------------------+
+
+* Setting up audio (ALSA).
+
+  The system's volume is muted by default and is a common cause of
+  "My sound doesn't work". In most cases, the only setup ALSA needs
+  is a simple unmute of the Master volume.
+
+  # Unmute the audio.
+  $ amixer sset Master unmute
+
+  If the system still has no audio, have a look at your soundcard(s).
+  Is the right one the default? Another common issue is the default
+  device being set to a virtual HDMI/HD audio output.
+
+  If sound only works as root, your user is most likely not in the
+  audio group. A logout/login (or a reboot) is needed for the changes
+  to take affect.
+
+  # Add USERNAME to the audio group.
+  $ addgroup USERNAME audio
+
+  For further troubleshooting, refer to the Arch Linux Wiki. It's a
+  great resource for audio related issues.
+
+  <a href="https://wiki.archlinux.org/index.php/Advanced_Linux_Sound_Architecture/Troubleshooting">ALSA/Troubleshooting</a>
