@@ -5,7 +5,7 @@
 | * An independent Linux(R) distribution with a focus   |
 |   on simplicity and the concept of less is more.      |
 |                                                       |
-| * The distribution targets only the x86-64            |
+| * The distribution targets only the x86-64<a href=/ports>**</a>          |
 |   architecture and the English language.              |
 |                                                       |
 |                                                       |
@@ -23,7 +23,7 @@
 |   POSIX sh (excluding blank lines and comments).      |
 |                                                       |
 | * Based on musl libc, busybox and the Linux kernel.   |
-
+|                                                       |
 | * Every installation of the distribution contains the |
 |   full sources (of the distribution) with git history |
 |   attached.                                           |
