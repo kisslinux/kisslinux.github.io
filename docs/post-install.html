@@ -116,6 +116,24 @@
   # Bypass login by using agetty.
   tty1::respawn:/bin/agetty --autologin user --noclear %I 38400 linux
 
+
+* Keeping service output out of TTY1.
+
+  This issue can be solved by simply staggering the TTYs in your
+  /etc/inittab. The following is an example configuration which is
+  free of the aforementioned issue.
+
+  tty1::respawn:/bin/getty 38400 tty2
+  tty2::respawn:/bin/getty 38400 tty3
+  tty3::respawn:/bin/getty 38400 tty4
+  tty4::respawn:/bin/getty 38400 tty5
+  tty5::respawn:/bin/getty 38400 tty6
+
+  NOTE: Future installations of KISS using busybox runit will not
+        have this issue. A fix will be available in the next release
+        of 'baseinit'.
+
+
 <div style='height:200px'>
 The registered trademark Linux(R) is used pursuant to a
 sublicense from the Linux Foundation, the exclusive
