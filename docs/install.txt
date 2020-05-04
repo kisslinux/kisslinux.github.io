@@ -628,7 +628,6 @@ $   addgroup USERNAME audio                                     |
 |   https://reddit.com/r/kisslinux or join the IRC server.      |
 |                                                               |
 |   See: https://k1ss.org/contact                               |
-|   See: https://k1ss.org/wiki                                  |
 |                                                               |
 |                                                               |
 +---------------------------------------------------------------+
