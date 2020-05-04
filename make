@@ -11,6 +11,8 @@ ln -sf ../package-system.html docs/package-system/index.html
 (cd site && find . -type f) | while read -r page; do
     mkdir -p "docs/${page%/*}"
 
+    printf '%s\n' "CC $page"
+
     case $page in
         *.txt)
             # Useless use of cat solely so that the first 'sed' doesn't exceed
@@ -32,15 +34,11 @@ ln -sf ../package-system.html docs/package-system/index.html
 
             # Hardlink all .txt files to the docs/ directory.
             ln -f "site/$page" "docs/$page"
-
-            printf '%s\n' "CC $page"
         ;;
 
         # Copy over any images or non-txt files.
         *)
             cp -f "site/$page" "docs/$page"
-
-            printf '%s\n' "CP $page"
         ;;
     esac
 done
