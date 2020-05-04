@@ -75,3 +75,34 @@
   great resource for audio related issues.
 
   <a href="https://wiki.archlinux.org/index.php/Advanced_Linux_Sound_Architecture/Troubleshooting">ALSA/Troubleshooting</a>
+
++-------------------------------------------------------------------+
+|                                                                   |
+|                               TTY                                 |
+|                                                                   |
++-------------------------------------------------------------------+
+
+* Auto login to TTY.
+
+  There are multiple avenues for enabling auto login to the TTY.
+
+  The default 'getty' implementation has no support for bypassing
+  login. This leaves one solution which works without the use of
+  additional software.
+
+  In your '/etc/inittab', instead of spawning a getty on a TTY, one
+  can spawn 'login -f' with the desired username. This can be
+  undesirable as the getty is removed from the equation.
+
+  If a getty of some kind must remain, 'agetty' (from util-linux)
+  can be used in place of regular 'getty'. This getty implementation
+  has support for auto-login.
+
+  # The default getty (with password login).
+  tty1::respawn:/bin/getty 38400 tty2
+
+  # Bypass login by skipping the getty (via 'login -f').
+  tty1::respawn:/bin/login -f dylan
+
+  # Bypass login by using agetty.
+  tty1::respawn:/bin/agetty --autologin user --noclear %I 38400 linux
