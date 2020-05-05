@@ -1,0 +1,12 @@
+Subject	Firefox package changes
+From	Dylan Araps &lt;dylan@k1ss.org&gt;
+Date	Wed, 6 May 2020 01:05:09 +0100
+
+The 'firefox' package will now follow the latest release instead of
+the ESR. The ESR version of Firefox is additionally available via 
+the 'firefox-esr' package for those wanting a browser with less
+surprises..
+
+To complement the changes, 'firefox-bin' now provides the latest
+release and 'firefox-bin-esr', the ESR release. The '-bin' packages 
+are in the process of being built and will be released shortly.

@@ -8,6 +8,13 @@
 <ttl>1800</ttl>
 <atom:link href="https://k1ss.org/news/news.xml" rel="self" type="application/rss+xml"/>
 <item>
+<title>06/05/2020: </title>
+<description></description>
+<link>https://k1ss.org/news/20200506a/</link>
+<guid isPermaLink="true">https://k1ss.org/news/20200506a/</guid>
+<pubDate>Wed, 06 May 2020 00:00:00 +0000</pubDate>
+</item>
+<item>
 <title>14/01/2020: Firefox binaries now available</title>
 <description>Binaries for Firefox are now available in the official repositories under the package name firefox-bin.</description>
 <link>https://k1ss.org/news/20200114a</link>
