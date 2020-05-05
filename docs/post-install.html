@@ -172,6 +172,14 @@ along these lines:
 
     wait
 
+
+Or alternatively:
+
+    #!/bin/sh
+    ( exec X -keeptty :0 vt1 ;) &
+    DISPLAY=:0 "$HOME/.xinitrc"
+    wait
+
 <div style='height:200px'>
 The registered trademark Linux(R) is used pursuant to a
 sublicense from the Linux Foundation, the exclusive

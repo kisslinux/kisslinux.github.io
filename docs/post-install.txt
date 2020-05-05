@@ -162,3 +162,11 @@ along these lines:
     (trap '' USR1; X -nolisten tcp :0 vt1 -quiet) &
 
     wait
+
+
+Or alternatively:
+
+    #!/bin/sh
+    ( exec X -keeptty :0 vt1 ;) &
+    DISPLAY=:0 "$HOME/.xinitrc"
+    wait
