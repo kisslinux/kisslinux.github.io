@@ -39,7 +39,7 @@
   $ kiss b tzdata && kiss i tzdata
 
   # Link your desired timezone to /etc/localtime.
-  $ ln -s /usr/share/zoneinfo/Europe/Rome /etc/localtime
+  $ cp -f /usr/share/zoneinfo/Europe/Rome /etc/localtime
 
   # Optional: Remove the tzdata package.
   $ kiss r tzdata
