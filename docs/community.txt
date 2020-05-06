@@ -130,3 +130,9 @@
 |   It supports acting upon signals.                           |
 |                                                              |
 +--------------------------------------------------------------+
+|                                                              |
+| * TUITUBE (https://github.com/djt3/tuitube/)                 |
+|                                                              |
+|   A minimal tui youtube (invidious) frontend made in c++.    |
+|                                                              |
++--------------------------------------------------------------+
