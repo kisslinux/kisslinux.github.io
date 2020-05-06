@@ -7,8 +7,8 @@ A thankfully quiet week this one was. The regular old package updates
 and a lot of new documentation. Thanks to the ease of the new site
 I'm actually enjoying the writing process now.
 
-<a href="/images/weekly/1.jpg">
-    <img src="/images/weekly/1.jpg" alt="week-1">
+<a href="https://user-images.githubusercontent.com/6799467/81232045-dc5f8700-8ffc-11ea-9c30-c2769b790b66.jpg">
+    <img src="https://user-images.githubusercontent.com/6799467/81232045-dc5f8700-8ffc-11ea-9c30-c2769b790b66.jpg" alt="week-1">
 </a>
 
 Expect a large influx of documentation over the coming weeks. There's

@@ -12,8 +12,8 @@ reduction of packages and general bug fixes. The package manager has
 also received new features and an overall reduction in size
 (now 650~ LOC).
 
-<a href="/images/weekly/5.jpg">
-    <img src="/images/weekly/5.jpg" alt="dylan">
+<a href="https://user-images.githubusercontent.com/6799467/81232172-13359d00-8ffd-11ea-9cc8-ef7bad053da5.jpg">
+    <img src="https://user-images.githubusercontent.com/6799467/81232172-13359d00-8ffd-11ea-9cc8-ef7bad053da5.jpg" alt="dylan">
 </a>
 
 LLVM and Clang 10.0.0 are now available in the repositories.

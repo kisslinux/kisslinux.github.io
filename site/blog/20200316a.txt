@@ -10,8 +10,8 @@ All stores (excluding Super Markets, Pharmacies, etc) have been
 closed here. People are keeping their distance and most people have
 decided to not leave the confines of their homes/yards (me included).
 
-<a href="/images/weekly/4.jpg">
-    <img src="/images/weekly/4.jpg" alt="dylan">
+<a href="https://user-images.githubusercontent.com/6799467/81232157-09ac3500-8ffd-11ea-89c1-00153db00616.jpg">
+    <img src="https://user-images.githubusercontent.com/6799467/81232157-09ac3500-8ffd-11ea-89c1-00153db00616.jpg" alt="dylan">
 </a>
 
 The repositories are now ready for GCC 10. Each package has been
@@ -196,8 +196,8 @@ KISS AND BEDROCK LINUX
 
 A KISS user has successfully run Bedrock Linux with KISS as a strata.
 
-<a href="/images/weekly/bedrock.jpg">
-    <img src="/images/weekly/bedrock.jpg" alt="bedrock linux">
+<a href="https://user-images.githubusercontent.com/6799467/81232208-29435d80-8ffd-11ea-87a2-6c87a18702a8.jpg">
+    <img src="https://user-images.githubusercontent.com/6799467/81232208-29435d80-8ffd-11ea-87a2-6c87a18702a8.jpg" alt="bedrock linux">
 </a>
 
 Bedrock's handling of the system boot/shutdown also uncovered two
