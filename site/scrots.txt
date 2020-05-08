@@ -8,7 +8,7 @@
 |   on top of KISS.                                     |
 |                                                       |
 | * Want to include a screenshot below?,                |
-|   https://github.com/kisslinux/website/issues/52      |
+|   https://k1ss.org/contact                            |
 |                                                       |
 |                                                       |
 +-------------------------------------------------------+
