@@ -16,7 +16,15 @@ benefit of new users.
 
 Patch: <a href="https://git.kernel.org/pub/scm/linux/kernel/git/tip/tip.git/patch/?id=f670269a42bfdd2c83a1118cc3d1b475547eac22">f670269a42bfdd2c83a1118cc3d1b475547eac22</a>
 
+Commit: <a href="https://git.kernel.org/pub/scm/linux/kernel/git/tip/tip.git/commit/?id=f670269a42bfdd2c83a1118cc3d1b475547eac22">git.kernel.org</a>
 
     Dylan
 
 ---
+
+
+Notes:
+
+- Reported to apply cleanly to kernel version 5.6.11.
+- Hop on IRC, Reddit or send me an email (dylan@k1ss.org) if you
+  require any assistance. I'm here to help.
