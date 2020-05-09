@@ -10,7 +10,7 @@ while [ -f "$date" ]; do
     date=${date%%?}$(printf %b "$(printf \\x%x "$index")")
 done
 
-cat > "$date.md" <<EOF
+cat > "$date.txt" <<EOF
 ---
 title: "$date2: $1"
 ---
@@ -19,12 +19,12 @@ EOF
 rss="<item>
 <title>$date2: $1</title>
 <description></description>
-<link>https://k1ss.org/news/$date/</link>
+<link>https://k1ss.org/news/$date</link>
 <guid isPermaLink=\"true\">https://k1ss.org/news/$date/</guid>
 <pubDate>$date3 00:00:00 +0000</pubDate>
 </item>"
 
-entry="<li><a href=/news/$date.html>$date2: $1</a></li>"
+entry="- <a href=/news/$date>$date2: $1</a>"
 
 while read -r line; do
     printf '%s\n' "$line"
@@ -35,9 +35,9 @@ done < news.xml > news.xml.new
 mv -f news.xml.new news.xml
 
 while read -r line; do
+    [ "$yup" ] || case $line in -*) printf '%s\n' "$entry"; yup=1; esac
+
     printf '%s\n' "$line"
+done < ../news.txt > ../news.txt.new
 
-    case $line in *'<ul'*) printf '%s\n' "$entry"; esac
-done < index.md > index.md.new
-
-mv -f index.md.new index.md
+mv -f ../news.txt.new ../news.txt

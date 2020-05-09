@@ -8,6 +8,13 @@
 <ttl>1800</ttl>
 <atom:link href="https://k1ss.org/news/news.xml" rel="self" type="application/rss+xml"/>
 <item>
+<title>09/05/2020: GCC 10.1.0 kernel issue</title>
+<description>The kernel compiled with GCC 10.1.0 may crash on boot.</description>
+<link>https://k1ss.org/news/20200509a</link>
+<guid isPermaLink="true">https://k1ss.org/news/20200509a/</guid>
+<pubDate>Sat, 09 May 2020 00:00:00 +0000</pubDate>
+</item>
+<item>
 <title>06/05/2020: </title>
 <description></description>
 <link>https://k1ss.org/news/20200506a/</link>

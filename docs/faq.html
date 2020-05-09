@@ -63,7 +63,7 @@
 
   All KISS systems contain the full sources for the distribution and
   each user has the means of managing and maintaining their machine
-  on their lonesome (or by forming a collective and secondary 
+  on their lonesome (or by forming a collective and secondary
   "upstream").
 
   This includes:
@@ -76,7 +76,7 @@
 
   - The package manager and the kiss-* scripts.
 
-    As these are all simple shell scripts, the installed "binaries" 
+    As these are all simple shell scripts, the installed "binaries"
     _are_ the unchanged source code. All of these are self-contained
     and separate programs.
 
@@ -85,14 +85,14 @@
     of whether or not repology has support for KISS itself.
 
     The 'kiss-export' script allows one to convert an installed
-    package back into a redistributable and installable binary 
-    tarball. Simply run 'kiss-export pkg_name' and a tarball will be 
-    created in the current directory. 
+    package back into a redistributable and installable binary
+    tarball. Simply run 'kiss-export pkg_name' and a tarball will be
+    created in the current directory.
 
-  - The distribution's documentation. 
+  - The distribution's documentation.
 
-    As the website sources are merely plain .txt files, the docs are 
-    available in /usr/share/doc/kiss and are readable in less, 
+    As the website sources are merely plain .txt files, the docs are
+    available in /usr/share/doc/kiss and are readable in less,
     vim or the program of your choosing.
 
   - The init scripts.
@@ -103,10 +103,10 @@
 
     To continue further, the init scripts need not change. There is
     no need to update them. Any extensions to them can be made via
-    the /etc/rc.d directory or the /etc/rc.conf file. 
-     
-  What all of this means is that were the GitHub or website to go 
-  down, there would be no loss in code, documentation or the 
+    the /etc/rc.d directory or the /etc/rc.conf file.
+
+  What all of this means is that were the GitHub or website to go
+  down, there would be no loss in code, documentation or the
   distribution itself.
 
   It also extends to each user having everything they will need to
@@ -114,11 +114,11 @@
   change of git remote is all that is needed in the latter case.
 
   KISS was designed to be maintainable by a single person. The
-  repositories are kept small and focused. There is no requirement 
+  repositories are kept small and focused. There is no requirement
   or _need_ for infrastructure of any kind.
 
-  A user today could choose to go their own way with their system. 
-  Everything they need is already in the existing system. The power 
+  A user today could choose to go their own way with their system.
+  Everything they need is already in the existing system. The power
   is in your hands. You are free.
 
 
@@ -182,15 +182,20 @@
   removal of a package. This error-prone automation will not be
   added to the package manager.
 
-  Instead, the workflow is to remove the single package and then look 
-  at the output of the 'kiss-orphans' command to see what can now be 
-  removed. This command will list all packages which have no 
-  relationship with other packages, otherwise known as orphans. 
+  Instead, the workflow is to remove the single package and then look
+  at the output of the 'kiss-orphans' command to see what can now be
+  removed. This command will list all packages which have no
+  relationship with other packages, otherwise known as orphans.
 
-  This list may include Firefox and other "end" software so a brain 
-  is required when parsing the list. You'll come to learn the 
-  relationships between packages and their dependencies and this will 
+  This list may include Firefox and other "end" software so a brain
+  is required when parsing the list. You'll come to learn the
+  relationships between packages and their dependencies and this will
   eventually become effortless.
+
+
+* "fatal: Commit 83a1ad7f does not have a GPG signature."
+
+    TODO
 
 
 +-------------------------------------------------------------------+
@@ -323,12 +328,12 @@
   Here's an excerpt from the kernel's documentation which may
   explain the situation better than I.
 
-  > Kernel headers are backwards compatible, but not forwards 
-    compatible. This means that a program built against a C library 
-    using older kernel headers should run on a newer kernel (although 
-    it may not have access to new features), but a program built 
+  > Kernel headers are backwards compatible, but not forwards
+    compatible. This means that a program built against a C library
+    using older kernel headers should run on a newer kernel (although
+    it may not have access to new features), but a program built
     against newer kernel headers may not work on an older kernel.
-   
+
   <a href='https://www.kernel.org/doc/Documentation/kbuild/headers_install.txt'>https://www.kernel.org/doc/Documentation/kbuild/headers_install.txt</a>
 
 
@@ -360,7 +365,7 @@
   post (or late) boot which causes udev to miss setting up the GPU
   device in /dev/dri.
 
-  There are three separate solutions ranging from easy to hard. 
+  There are three separate solutions ranging from easy to hard.
   Either of the three will solve the issue.
 
   1. Start the udevd service.
@@ -400,8 +405,8 @@
 * How do I take a screenshot?
 
   Most users will typically use 'ffmpeg' as their screenshot tool as
-  they'll already have ffmpeg installed for MPV or Firefox. Other 
-  options include 'imlib2' or 'imagemagick' (import). 
+  they'll already have ffmpeg installed for MPV or Firefox. Other
+  options include 'imlib2' or 'imagemagick' (import).
 
   If you'd like to use another tool, package it yourself. Remember,
   if no one has packaged something it means that no one has needed

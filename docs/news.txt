@@ -9,6 +9,7 @@
 |                                                       |
 +-------------------------------------------------------+
 
+- <a href=/news/20200509a>09/05/2020: GCC 10.1.0 kernel issue</a>
 - <a href='/news/20200506a'>05/06/2020: Firefox package changes</a>
 - <a href='/news/20200114a'>14/01/2020: Firefox binaries now available</a>
 - <a href='/news/20200101a'>01/01/2020: Firefox privacy changes moved</a>
