@@ -1,0 +1,77 @@
+<!doctype html><html lang=en><link href='data:image/gif;base64,R0lGODlhEAAQAPH/AAAAAP8AAP8AN////yH5BAUAAAQALAAAAAAQABAAAAM2SLrc/jA+QBUFM2iqA2bAMHSktwCCWJIYEIyvKLOuJt+wV69ry5cfwu7WCVp2RSPoUpE4n4sEADs=' rel=icon><title>KISS</title><meta charset=utf-8><meta name=Description content="An independent Linux® distribution with a focus on simplicity and the concept of less is more."><style>body{text-align:center;overflow-y:scroll;font:calc(0.75em + 1vmin) monospace}pre pre{text-align:left;display:inline-block}img{max-width:57ch;display:block;height:auto;width:100%}@media(prefers-color-scheme:dark){body{background:#000;color:#fff}a{color:#6CF}}</style><pre>KISS TURNS 1 YEAR OLD - A big thank you to everyone. <3
+
+<a href=/><b>KISS</b></a><span style='color:#e60000'> 💋</span>  <a href=/news>News</a>  <a href=/blog>Blog</a>  <a href=/install>Install KISS</a>  <a href=/team>Team</a>  <a href=/guidestones>Guidestones</a>  <a href=/faq>FAQ</a>
+
+<a href=/community>Community (<b>NEW</b>)</a>  <a href=/scrots>Scrots</a>  <a href=/package-system>Package System</a>  <a href=/testimonials>Testimonials</a>  <a href=/style>Style</a>
+
+<a href=/ports>Ports (non-x86-64)</a>  <a href=/projects>Software</a>  <a href=/contact>Contact</a>  <a href=/donate>Donate</a>  <a href=https://github.com/kisslinux/>GitHub -&gt;</a>
+
+<pre>
+Subject	Encryption support moved outside init
+From	Dylan Araps &lt;dylan@k1ss.org&gt;
+Date	Wed, 11 May 2020 03:21:09 +0100
+
+Encryption support in the init scripts will be moved to an external
+project. Development will happen at a quicker pace and be done by
+members of the community (those who use encryption themselves).
+
+This change also allows me to step back from writing/maintaining this
+code. I don't personally use encryption (only on external drives) so
+it's been a little tricky for me to approve changes by the community,
+test changes, reproduce bugs, etc.
+
+Supporting encryption is trickier than one would think. There's a lot
+to support and hardly anyone supports the entire specification (most
+likely only systemd).
+
+The encryption code is now in good hands. The new maintainer really
+cares about the boot-up/shutdown process as a whole. A large number of
+improvements have come from his ideas (a lot of bug fixes too).
+
+What this entails as a user of encryption is fairly simple (though
+manual). Install the `kiss-encryption` package in a week's time when
+the update will be released.
+
+At the same time, the `baseinit` package will receive an update so be
+sure to update the system prior to installing the package.
+
+This manual process is why I have decided to delay the update and
+inform users beforehand. Apologies for the inconvenience.
+
+The `baseinit` update will also include some nice improvements to the
+boot up process. Messages from the boot process will now be logged
+to dmesg, the boot duration will be displayed at the end of the boot
+process ("Boot completed in 2s...") and a myriad of bug fixes.
+
+The source for the encryption code now lives here:
+
+https://github.com/illiliti/kiss-encryption
+
+
+Dylan
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style='height:200px'>
+The registered trademark Linux(R) is used pursuant to a
+sublicense from the Linux Foundation, the exclusive
+licensee of Linus Torvalds, owner of the mark on a
+world­wide basis.
+
+(C) Dylan Araps 2019-2020
+
+
+<a href="/news/20200511a.txt">View page source</a>
+
+
+</pre></pre>
