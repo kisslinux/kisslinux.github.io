@@ -18,6 +18,17 @@ Patch: <a href="https://git.kernel.org/pub/scm/linux/kernel/git/tip/tip.git/patc
 
 Commit: <a href="https://git.kernel.org/pub/scm/linux/kernel/git/tip/tip.git/commit/?id=f670269a42bfdd2c83a1118cc3d1b475547eac22">git.kernel.org</a>
 
+
+UPDATE:
+
+Another alternative is to simply disable the stack protector in your
+kernel configuration. This will also fix the kernel crashing during
+the boot up process.
+
+    CONFIG_STACKPROTECTOR=n
+    CONFIG_STACKPROTECTOR_STRONG=n
+
+
     Dylan
 
 ---
