@@ -498,8 +498,6 @@ $   mv /boot/System.map /boot/System.map-VERSION                |
 |   with it, both BIOS and UEFI are supported and vast          |
 |   amounts of documentation for it exists                      |
 |                                                               |
-| * If using UEFI, the efivars filesystem may need to be        |
-|   mounted. See: <a href='https://k1ss.org/wiki/Mounting-UEFI-variables'>Mounting UEFI variables</a>                       |
 |                                                               |
 |   RECOMMENDED                                                 |
 |                                                               |
