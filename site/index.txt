@@ -19,8 +19,9 @@
 |   language agnostic and parseable with basic UNIX     |
 |   utilities.                                          |
 |                                                       |
-| * Uses a package manager written in 600~ lines of     |
-|   POSIX sh (excluding blank lines and comments).      |
+| * Uses a package manager written in less than 1000    |
+|   lines of POSIX sh (excluding blank lines and        |
+|   comments).                                          |
 |                                                       |
 | * Based on musl libc, busybox and the Linux kernel.   |
 |                                                       |
