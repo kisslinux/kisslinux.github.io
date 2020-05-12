@@ -101,10 +101,22 @@
 |   Flatpak and friends.                                       |
 |                                                              |
 +--------------------------------------------------------------+
+|                                                              |
+| * KISS-XFCE4 (https://github.com/periish/kiss-xfce4)         |
+|                                                              |
+|   XFCE4 desktop environment for KISS Linux.                  |
+|                                                              |
++--------------------------------------------------------------+
+|                                                              |
+| * KISS-RICING (https://github.com/periish/kiss-ricing)       |
+|                                                              |
+|   Tools to help your KISS install look nice.                 |
+|                                                              |
++--------------------------------------------------------------+
 
 +--------------------------------------------------------------+
 |                                                              |
-                          SOFTWARE                             |
+|                         SOFTWARE                             |
 |                                                              |
 | * Software created by users of KISS, many of which are       |
 |   portable to multiple distributions.                        |
