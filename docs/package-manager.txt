@@ -1,0 +1,204 @@
++-------------------------------------------------------+
+|                                                       |
+|                 KISS PACKAGE MANAGER                  |
+|                                                       |
+| * The KISS package manager is a self-contained POSIX  |
+|   shell script which is written in a highly portable  |
+|   way.                                                |
+|                                                       |
+| * The entire utility comes in at under 1000 lines of  |
+|   code (excluding blank lines/comments of which there |
+|   are many).                                          |
+|                                                       |
+| * The package manager is merely an implementation of  |
+|   the package format, its requirements and some sugar |
+|   on top.                                             |
+|                                                       |
++-------------------------------------------------------+
+
++-------------------------------------------------------+
+|                                                       |
+|                        USAGE                          |
+|                                                       |
+| -> kiss [a|b|c|i|l|r|s|u|v] [pkg]...                  |
+| -> alternatives   List and swap to alternatives       |
+| -> build          Build a package                     |
+| -> checksum       Generate checksums                  |
+| -> install        Install a package                   |
+| -> list           List installed packages             |
+| -> remove         Remove a package                    |
+| -> search         Search for a package                |
+| -> update         Update the system                   |
+| -> version        Package manager version             |
+|                                                       |
++-------------------------------------------------------+
+
++-------------------------------------------------------+
+|                                                       |
+|                    DEPENDENCIES                       |
+|                                                       |
+|  * POSIX utilities are used where appropriate _and_   |
+|    where they exist to solve a particular problem.    |
+|                                                       |
+|  * Utilities of which there is only a single and      |
+|    cross-platform implementation are considered       |
+|    "portable" (git, curl, etc)                        |
+|                                                       |
+|  * If a dependency can be made optional, it will be   |
+|    made so. Dependencies are also kept to a minimum   |
+|    (though we must also remain realistic).            |
+|                                                       |
+|                                                       |
+|       Dependency | Reason for use          | Required |
+| ---------------- | ----------------------- | -------- |
+|  POSIX utilities | Used throughout         | Yes      |
+|              git | Remote repositories and | Yes [1]  |
+|                  | package git sources     |          |
+|             curl | Source downloads        | Yes      |
+|     gpg1 or gpg2 | Repository signing      | No       |
+|        sha256sum | Checksums               | Yes [2]  |
+|              tar | Sources, packages, etc  | Yes [3]  |
+|            unzip | Zip sources (very rare) | No       |
+|                  |                         |          |
+|                  |                         |          |
+|      Compression |                         |          |
+| ---------------- | ----------------------- | -------- |
+| gzip, bzip2, xz  | Tarball compression     | Yes [4]  |
+| zstd, lzma, lzip | Tarball compression     | No       |
+|                  |                         |          |
+|                  |                         |          |
+|       Privileges |                         |          |
+| ---------------- | ----------------------- | -------- |
+| su | sudo | doas | Privilege escalation    | No [5]   |
+|                  |                         |          |
+|                  |                         |          |
+|         Binutils |                         |          |
+| ---------------- | ----------------------- | -------- |
+|              ldd | Dependency fixer        | No       |
+|          readelf | Binary Stripping        | No       |
+|            strip | Binary Stripping        | No       |
+|                  |                         |          |
+|                                                       |
+|                                                       |
+| [1] Git is also required for contribution to the      |
+|     distribution itself. Strictly speaking, nothing   |
+|     forces you to use git. Remote repositories and    |
+|     git based sources will simply become unusable.    |
+|                                                       |
+| [2] There is no standard utility for the generation   |
+|     of sha256 checksums. While sha256sum is listed    |
+|     above, the package manager also supports sha256,  |
+|     shasum and openssl as fallbacks.                  |
+|                                                       |
+| [3] The tar command has no standard! This came as a   |
+|     shock. The POSIX equivalent is "pax" though this  |
+|     isn't in wide use (on Linux).                     |
+|                                                       |
+|     Our usage of tar is merely, -cf, -xf and -tf with |
+|     support for cf, xf and tf as fallbacks. Not all   |
+|     tar implementations support both input types.     |
+|                                                       |
+|     Our usage of tar cannot become any more basic     |
+|     than it is now. Portability should no longer be   |
+|     a concern.                                        |
+|                                                       |
+|     Tested tar implementations include: busybox,      |
+|     toybox, sbase, GNU and libarchive (though all tar |
+|     implementations should work).                     |
+|                                                       |
+| [4] These three compression methods are required as   |
+|     pretty much every package source uses them as the |
+|     tarball compression method.                       |
+|                                                       |
+|     The other compression methods are optional as no  |
+|     package sources (in the official repositories)    |
+|     make use of them.                                 |
+|                                                       |
+|     If a compression method has 1-3 uses (hasn't yet  |
+|     happened), the compression method will simply     |
+|     become a 'make' dependency of the package until   |
+|     usage increases to a "normality".                 |
+|                                                       |
+| [5] A privilege escalation utility is only needed     |
+|     when using the package manager as a normal user   |
+|     for system-wide package installation.             |
+|                                                       |
+|     Installation to a user-writable directory does    |
+|     not require root access.                          |
+|                                                       |
+|     Root usage of the package manager (chroot usage   |
+|     for example) does not require these utilities.    |
+|                                                       |
++-------------------------------------------------------+
+
++-------------------------------------------------------+
+|                                                       |
+|                 INTERESTING FEATURES                  |
+|                                                       |
+| * Runtime dependency detector built around 'ldd'.     |
+|                                                       |
+|   Dynamic dependencies brought in by build systems    |
+|   (which are missing from the package's dependency    |
+|   list) are fixed on-the-fly by checking which        |
+|   libraries link to the package's files.              |
+|                                                       |
+|   This prevents an incomplete dependency list from    |
+|   causing system breakage as the package manager is   |
+|   able to complete the list.                          |
+|                                                       |
+|   A lot of packages make use of this "implicit" to    |
+|   "explicit" dependency list "conversion" to provide  |
+|   optional dependencies.                              |
+|                                                       |
+|   Example output:                                     |
+|                                                       |
+|   -> libXmu Checking for missing dependencies         |
+|   --- /home/dylan/conf/cache/kiss/build-4477/d        |
+|   +++ depends                                         |
+|   @@ -1,3 +1,8 @@                                     |
+|   +libX11                                             |
+|   +libXau                                             |
+|    libXext                                            |
+|    libXt                                              |
+|   +libxcb                                             |
+|    xorg-util-macros make                              |
+|                                                       |
+|                                                       |
+| * Fully dynamic (and automatic) alternatives system.  |
+|                                                       |
+|   Any file conflicts between two packages             |
+|   automatically become choices in the alternatives    |
+|   system.                                             |
+|                                                       |
+|   This allows one to swap providers of files without  |
+|   needing to explicitly tell the package manager      |
+|   that two packages conflict, provide the same        |
+|   utilities, etc.                                     |
+|                                                       |
+|   In other words, no changes need to be made to       |
+|   packages. In fact, nothing needs to be done at all. |
+|   It's entirely automatic.                            |
+|                                                       |
+|   # List available alternatives.                      |
+|   # ('a' is an alias to 'alternatives')               |
+|   $ kiss a                                            |
+|   gnugrep /usr/bin/fgrep                              |
+|   ncurses /usr/bin/clear                              |
+|                                                       |
+|   # Swap to GNU grep.                                 |
+|   $ kiss a gnugrep /usr/bin/grep                      |
+|   -> Swapping '/usr/bin/grep' from busybox to gnugrep |
+|                                                       |
+|   # Swap back to busybox grep.                        |
+|   $ kiss a busybox /usr/bin/grep                      |
+|                                                       |
+|   # Swap to all alternatives for a given package.     |
+|   $ kiss a | grep ^sbase | kiss a -                   |
+|                                                       |
+|   The above command works as the output of the        |
+|   alternatives listing is directly usable as input    |
+|   to 'kiss a'.                                        |
+|                                                       |
+| * TODO                                                |
+|                                                       |
++-------------------------------------------------------+
