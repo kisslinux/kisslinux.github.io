@@ -92,11 +92,11 @@
 |                                                       |
 | [3] The tar command has no standard! This came as a   |
 |     shock. The POSIX equivalent is "pax" though this  |
-|     isn't in wide use (on Linux).                     |
+|     isn't in wide use (at least on Linux).            |
 |                                                       |
-|     Our usage of tar is merely, -cf, -xf and -tf with |
-|     support for cf, xf and tf as fallbacks. Not all   |
-|     tar implementations support both input types.     |
+|     Our usage of tar is merely, cf, xf and tf. A      |
+|     patch is applied to sbase's tar so that it        |
+|     supports "dashless" arguments (as all others do). |
 |                                                       |
 |     Our usage of tar cannot become any more basic     |
 |     than it is now. Portability should no longer be   |
