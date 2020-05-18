@@ -1,7 +1,7 @@
-<!doctype html><html lang=en><link href='data:image/gif;base64,R0lGODlhEAAQAPH/AAAAAP8AAP8AN////yH5BAUAAAQALAAAAAAQABAAAAM2SLrc/jA+QBUFM2iqA2bAMHSktwCCWJIYEIyvKLOuJt+wV69ry5cfwu7WCVp2RSPoUpE4n4sEADs=' rel=icon><title>KISS</title><meta charset=utf-8><meta name=Description content="An independent Linux® distribution with a focus on simplicity and the concept of less is more."><style>body{overflow-y:scroll;font:calc(0.75em + 1vmin) monospace;margin:0}img{max-width:57ch;display:block;height:auto;width:100%}@media(prefers-color-scheme:dark){body{background:#000;color:#fff}a{color:#6CF}}
+<!doctype html><html lang=en><link href='data:image/gif;base64,R0lGODlhEAAQAPH/AAAAAP8AAP8AN////yH5BAUAAAQALAAAAAAQABAAAAM2SLrc/jA+QBUFM2iqA2bAMHSktwCCWJIYEIyvKLOuJt+wV69ry5cfwu7WCVp2RSPoUpE4n4sEADs=' rel=icon><title>KISS</title><meta charset=utf-8><meta name=Description content="An independent Linux® distribution with a focus on simplicity and the concept of less is more."><style>body{overflow-y:scroll;font:calc(0.75em + 1vmin) monospace;margin:0 2ch 2ch}img{max-width:57ch;display:block;height:auto;width:100%}@media(prefers-color-scheme:dark){body{background:#000;color:#fff}a{color:#6CF}}
 </style>
 <table style='width:100%'><tbody><tr style='vertical-align:top'>
-<td><pre>
+<td style='width:27ch'><pre>
 +------------------------+
 | <a href=/ style='text-decoration:none'> _    _                |
 | | | _(_)___ ___        |
@@ -20,7 +20,7 @@
 | <a href=/guidestones>Guidestones</a>            |
 | <a href=/style>Style</a>                  |
 |                        |
-| <a href=/community>Community (<b>NEW</b>)</a>        |
+| <a href=/community>Community</a>              |
 | <a href=/ports>Ports (non-x86-64)</a>     |
 | <a href=/projects>Software</a>               |
 |                        |
@@ -34,9 +34,25 @@
 | <a href=https://github.com/kisslinux/>GitHub -&gt;</a>              |
 |                        |
 +------------------------+
+
++------------------------+
+|                        |
+| The registered         |
+| trademark Linux(R) is  |
+| used persuant to a     |
+| sublicense from LMI,   |
+| the exclusive licensee |
+| of Linus Torvalds,     |
+| owner of the mark on a |
+| worldwide bases.       |
+|                        |
+| (C) Dylan Araps 2020   |
+|                        |
++------------------------+
 </pre></td>
 
-<td><pre>
+<td><pre style='margin-left:2ch'>
+
 Subject	This month in KISS (#1)
 From	Dylan Araps &lt;dylan@k1ss.org&gt;
 Date	Tue, 25 Apr 2020 12:07:09 +0100
@@ -48,16 +64,16 @@ laptop of four years decided to never again turn on. The model (Lenovo Yoga 900)
 is plagued with power issues which I came to know very well.
 
 This caused me to take a temporary leave from my usual post until a replacement
-laptop could arrive. I was gone a total of 18 days, I believe. I would like to 
+laptop could arrive. I was gone a total of 18 days, I believe. I would like to
 thank the community and all users for keeping things going while I was gone.
 
 I was able to replace the laptop in a timely manner due to three very generous
 donations which I received out of the blue. I can't even begin to thank you,
 your kindness left me over the moon.
 
-From now on, these posts will be written and published monthly (instead of 
+From now on, these posts will be written and published monthly (instead of
 weekly). This will make the posts fuller, more interesting and allow me to
-spend more time writing them. 
+spend more time writing them.
 
 Seeing as I was inactive for a good part of this month, this post will be
 smaller than what I envisioned for "This Month in KISS". Expect the next one
@@ -105,7 +121,7 @@ Odd/Interesting things:
 - The FN key is more like Caps Lock than Shift (a toggle). I don't know if this
   is something uncommon but I've never personally come across it.
 
-- The power button is a fingerprint reader. While I'm no longer taping my 
+- The power button is a fingerprint reader. While I'm no longer taping my
   webcam, I'm now taping over my power button.
 
 - The laptop charges (with fast charging) over USB-C. I'm really happy with this
@@ -118,7 +134,7 @@ PACKAGE MANAGER CHANGES
 A lot of smaller changes have been made and a myriad of bugs fixed. I'll stick
 to mentioning the interesting or major changes as this post will be rather long.
 
-The package manager no longer uses 'rsync' to handle transfers during 
+The package manager no longer uses 'rsync' to handle transfers during
 installation and instead handles everything using basic utilities (cp, etc).
 In other words; if you do not personally use rsync, you may now remove it!
 
@@ -221,11 +237,11 @@ KISS PORTED TO i586
 KISS has been ported to i586 by a user. The author of the port can explain
 things better than I:
 
-> I found this machine and would have probably thrown it away, but I decided 
+> I found this machine and would have probably thrown it away, but I decided
 > to wrap my head around porting KISS to another architecture and show this old
 >  metal some love.
 
-> Xserver, ffmpeg + mpv and webkit2gtk are running. Webkit2gtk takes more than 
+> Xserver, ffmpeg + mpv and webkit2gtk are running. Webkit2gtk takes more than
 > overnight to compile :D . Gcc takes ~6h.
 
 > I have released a chroot in my repo. Its still WIP!
@@ -244,7 +260,7 @@ A user by the name of Perish has created a KISS repository which provides dbus
 and any related software with the goal to also provide Bluez for working
 Bluetooth support.
 
-Any KISS user can simply clone this repository, add it to their `KISS_PATH` and 
+Any KISS user can simply clone this repository, add it to their `KISS_PATH` and
 install dbus (eventually Bluez too).
 
 Source: <a href='https://github.com/periish/kiss-dbus'>https://github.com/periish/kiss-dbus</a>
@@ -495,17 +511,4 @@ periish (3):
 sdsddsd1 (1):
       wyebadblock: new package at git-version (#728)
 
-
-<div style='height:200px'>
-The registered trademark Linux(R) is used pursuant to a
-sublicense from the Linux Foundation, the exclusive
-licensee of Linus Torvalds, owner of the mark on a
-world­wide basis.
-
-(C) Dylan Araps 2019-2020
-
-
-<a href="/blog/20200426a.txt">View page source</a>
-
-
-</div></pre></td></tbody></table>
+</pre></td></tbody></table>

@@ -1,3 +1,4 @@
+
 Subject	This week in KISS (#16)
 From	Dylan Araps &lt;dylan@k1ss.org&gt;
 Date	Tue, 25 Mar 2020 12:07:09 +0100
@@ -7,7 +8,7 @@ Hello,
 Apologies for the delay. I'm under full lock-down now and things have
 been odd to say the least. I and those around me are well.
 
-This week was a quiet one with my focus being on further size 
+This week was a quiet one with my focus being on further size
 reduction of packages and general bug fixes. The package manager has
 also received new features and an overall reduction in size
 (now 650~ LOC).
@@ -20,16 +21,16 @@ LLVM and Clang 10.0.0 are now available in the repositories.
 Everything is tested and ready for GCC 10 with the final packages
 seeing fixes.
 
-The Python package saw a 90-100MB size reduction thanks to the 
-removal of unneeded (and what I can only call) "stuff". Python 2 
+The Python package saw a 90-100MB size reduction thanks to the
+removal of unneeded (and what I can only call) "stuff". Python 2
 received a near identical "stuff" removal.
 
 The package manager will soon (once a release is made) show you a
 more detailed output when the dependency finder/fixer and the binary
-stripper do their thing. 
+stripper do their thing.
 
 eiwd (iwd without dbus) 1.6-1 has been released with the changes from
-upstream being pulled in. No new developments in the new client just 
+upstream being pulled in. No new developments in the new client just
 yet sadly!
 
     Dylan

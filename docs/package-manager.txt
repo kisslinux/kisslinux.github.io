@@ -1,5 +1,3 @@
-  NOTE: This page is still a work in progress.
-
 +-------------------------------------------------------+
 |                                                       |
 |                 KISS PACKAGE MANAGER                  |

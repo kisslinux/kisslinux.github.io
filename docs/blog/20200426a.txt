@@ -1,3 +1,4 @@
+
 Subject	This month in KISS (#1)
 From	Dylan Araps &lt;dylan@k1ss.org&gt;
 Date	Tue, 25 Apr 2020 12:07:09 +0100
@@ -9,16 +10,16 @@ laptop of four years decided to never again turn on. The model (Lenovo Yoga 900)
 is plagued with power issues which I came to know very well.
 
 This caused me to take a temporary leave from my usual post until a replacement
-laptop could arrive. I was gone a total of 18 days, I believe. I would like to 
+laptop could arrive. I was gone a total of 18 days, I believe. I would like to
 thank the community and all users for keeping things going while I was gone.
 
 I was able to replace the laptop in a timely manner due to three very generous
 donations which I received out of the blue. I can't even begin to thank you,
 your kindness left me over the moon.
 
-From now on, these posts will be written and published monthly (instead of 
+From now on, these posts will be written and published monthly (instead of
 weekly). This will make the posts fuller, more interesting and allow me to
-spend more time writing them. 
+spend more time writing them.
 
 Seeing as I was inactive for a good part of this month, this post will be
 smaller than what I envisioned for "This Month in KISS". Expect the next one
@@ -66,7 +67,7 @@ Odd/Interesting things:
 - The FN key is more like Caps Lock than Shift (a toggle). I don't know if this
   is something uncommon but I've never personally come across it.
 
-- The power button is a fingerprint reader. While I'm no longer taping my 
+- The power button is a fingerprint reader. While I'm no longer taping my
   webcam, I'm now taping over my power button.
 
 - The laptop charges (with fast charging) over USB-C. I'm really happy with this
@@ -79,7 +80,7 @@ PACKAGE MANAGER CHANGES
 A lot of smaller changes have been made and a myriad of bugs fixed. I'll stick
 to mentioning the interesting or major changes as this post will be rather long.
 
-The package manager no longer uses 'rsync' to handle transfers during 
+The package manager no longer uses 'rsync' to handle transfers during
 installation and instead handles everything using basic utilities (cp, etc).
 In other words; if you do not personally use rsync, you may now remove it!
 
@@ -182,11 +183,11 @@ KISS PORTED TO i586
 KISS has been ported to i586 by a user. The author of the port can explain
 things better than I:
 
-> I found this machine and would have probably thrown it away, but I decided 
+> I found this machine and would have probably thrown it away, but I decided
 > to wrap my head around porting KISS to another architecture and show this old
 >  metal some love.
 
-> Xserver, ffmpeg + mpv and webkit2gtk are running. Webkit2gtk takes more than 
+> Xserver, ffmpeg + mpv and webkit2gtk are running. Webkit2gtk takes more than
 > overnight to compile :D . Gcc takes ~6h.
 
 > I have released a chroot in my repo. Its still WIP!
@@ -205,7 +206,7 @@ A user by the name of Perish has created a KISS repository which provides dbus
 and any related software with the goal to also provide Bluez for working
 Bluetooth support.
 
-Any KISS user can simply clone this repository, add it to their `KISS_PATH` and 
+Any KISS user can simply clone this repository, add it to their `KISS_PATH` and
 install dbus (eventually Bluez too).
 
 Source: https://github.com/periish/kiss-dbus

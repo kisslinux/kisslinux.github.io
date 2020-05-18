@@ -1,3 +1,4 @@
+
 Subject	This week in KISS (#14)
 From	Dylan Araps &lt;dylan@k1ss.org&gt;
 Date	Tue, 9 Mar 2020 14:07:09 +0100
@@ -44,8 +45,8 @@ Grub no longer requires Python during the build process. It
 turns out that it isn't actually needed at all. Through two
 small 'sed' calls, this "false" requirement has been removed.
 
-Grub requires Python to generate some files for the build but 
-as it turns out, these files already exist in the release 
+Grub requires Python to generate some files for the build but
+as it turns out, these files already exist in the release
 tarballs. The build system just forces you to generate them
 _again_.
 
