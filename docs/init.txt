@@ -16,6 +16,8 @@
 +-------------------------------------------------------+
 | rc.boot (runs during system boot)                     |
 +-------------------------------------------------------+
+|                                                       |
+|                                                       |
 | - Mounts pseudo-filesystems (/dev, /proc, /sys, etc). |
 | - Starts a device manager (udev, mdev, etc) before    |
 |   handing off to the service manager.                 |
