@@ -93,6 +93,11 @@
 |   neckbeards complaining about software evolving in   |
 |   the last 20 years.                                  |
 |                                                       |
+| > Because of how simple KISS Linux it is, being       |
+|   written completely on POSIX shell and all. The      |
+|   entire distro is able to live in just one directory |
+|   in /var. That allows me to base my entire system on |
+|   literally anything I want.                          |
 |                                                       |
 +-------------------------------------------------------+
 
