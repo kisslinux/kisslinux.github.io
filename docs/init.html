@@ -56,17 +56,56 @@
 +-------------------------------------------------------+
 | rc.boot (runs during system boot)                     |
 +-------------------------------------------------------+
+| Boot process in order:                                |
+| - Mount pseudo-filesystems (/dev, /proc, etc).        |
+| - Load /etc/rc.conf (configuration file).             |
+| - Start a device manager (udev, mdev, etc) [1].       |
+| - Remount rootfs read-only.                           |
+| - Run fsck on all local filesystems.                  |
+| - Remount rootfs read-write.                          |
+| - Mount all local filesystems.                        |
+| - Enable swap (if applicable).                        |
+| - Seed random.                                        |
+| - Bring up the loopback device.                       |
+| - Set the hostname.                                   |
+| - Load all sysctl settings.                           |
+| - Kill the device manager. [2]                        |
+| - Run all boot hooks.                                 |
 |                                                       |
+| [1] Only udev and mdev are currently supported as     |
+|     each device manager must be manually added to the |
+|     rc.boot file.                                     |
 |                                                       |
-| - Mounts pseudo-filesystems (/dev, /proc, /sys, etc). |
-| - Starts a device manager (udev, mdev, etc) before    |
-|   handing off to the service manager.                 |
-| - Mounts all local filesystems.                       |
-| - Enables swap (if applicable).                       |
-| - Seeds random.                                       |
-| - Brings the loopback network device online.          |
-| - Sets the system's hostname.                         |
-| - Loads all sysctl settings.                          |
-| - Starts any services (if enabled).                   |
+|     There hasn't yet been an interest in supporting   |
+|     others yet. Contributions are welcome!            |
+|                                                       |
+| [2] The device manager is killed so that the service  |
+|     manager can take over. It's needed early on in    |
+|     the boot process and prior to when services are   |
+|     started.                                          |
+|                                                       |
++-------------------------------------------------------+
+
++-------------------------------------------------------+
+| rc.shutdown (runs during shutdown and reboot)         |
++-------------------------------------------------------+
+| - Load /etc/rc.conf (configuration file).             |
+| - Run all pre-shutdown hooks.                         |
+| - Stop all services.                                  |
+| - Save the random seed.                               |
+| - Send TERM signal to all running processes.          |
+| - Sleep a little (to allow processes to cleanly die). |
+| - Send KILL signal to all running processes.          |
+| - Turn off swap (if applicable).                      |
+| - Unmount all filesystems.                            |
+| - Remount the rootfs read-only.                       |
+| - Sync the disks.                                     |
+| - Run all post-shutdown hooks.                        |
+| - Run kpow to shutdown/reboot. [1]                    |
+|                                                       |
+| [1] 'kpow' is a tiny C utility to tell the kernel to  |
+|     shutdown or reboot the machine. This is an "init  |
+|     agnostic" method of shutting down the machine.    |
+|                                                       |
 +-------------------------------------------------------+
 </pre></td></tbody></table>
