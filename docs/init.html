@@ -1,0 +1,70 @@
+<!doctype html><html lang=en><link href='data:image/gif;base64,R0lGODlhEAAQAPH/AAAAAP8AAP8AN////yH5BAUAAAQALAAAAAAQABAAAAM2SLrc/jA+QBUFM2iqA2bAMHSktwCCWJIYEIyvKLOuJt+wV69ry5cfwu7WCVp2RSPoUpE4n4sEADs=' rel=icon><title>KISS</title><meta charset=utf-8><meta name=Description content="An independent Linux® distribution with a focus on simplicity and the concept of less is more."><style>body{overflow-y:scroll;font:calc(0.75em + 1vmin) monospace;margin:0 2ch 2ch}img{max-width:57ch;display:block;height:auto;width:100%}table{margin:0 auto}@media(prefers-color-scheme:dark){body{background:#000;color:#fff}a{color:#6CF}}@media (max-width:999px){.s{position:static}}.s{position:fixed;overflow-y:auto;height:100%}.l{text-decoration:none;color:red}</style><table><tbody><tr>
+<td style='min-width:27ch' valign=top><pre class=s>
++------------------------+
+| <a href=/ class=l> _    _                </a>|
+| <a href=/ class=l>| | _(_)___ ___        </a>|
+| <a href=/ class=l>| |/ / / __/ __|       </a>|
+| <a href=/ class=l>|   &lt;| \__ \__ \       </a>|
+| <a href=/ class=l>|_|\_\_|___/___/</a>       |
+|                        |
+| <a href=/news>News</a>                   |
+| <a href=/blog>Blog</a>                   |
+| <a href=/install>Install KISS</a>           |
+| <a href=/faq>FAQ</a>                    |
+|                        |
+| <a href=/package-system>Package System</a>         |
+| <a href=/package-manager>Package Manager</a>        |
+|                        |
+| <a href=/guidestones>Guidestones</a>            |
+| <a href=/style>Style</a>                  |
+|                        |
+| <a href=/community>Community</a>              |
+| <a href=/ports>Ports (non-x86-64)</a>     |
+| <a href=/projects>Software</a>               |
+|                        |
+| <a href=/testimonials>Testimonials</a>           |
+| <a href=/scrots>Screenshots</a>            |
+| <a href=/team>Team</a>                   |
+|                        |
+| <a href=/contact>Contact</a>                |
+| <a href=/donate>Donate</a>                 |
+|                        |
+| <a href=https://github.com/kisslinux/>GitHub -&gt;</a>              |
+|                        |
+|                        |
+| (C) Dylan Araps 2020   |
+|                        |
++------------------------+
+</pre></td>
+
+<td><pre style='margin-left:1ch'>
++-------------------------------------------------------+
+|                                                       |
+|                     KISS INIT                         |
+|                                                       |
+| * The KISS init "framework" is written in POSIX       |
+|   compliant shell with a tiny amount of C where       |
+|   needed. Its purpose is to act as a portable base    |
+|   for use with each and every init system.            |
+|                                                       |
+| * The framework handles the boot-up and shutdown      |
+|   process. It mounts pseudo-filesystems, disks,       |
+|   "seeds random", etc.                                |
+|                                                       |
++-------------------------------------------------------+
+
++-------------------------------------------------------+
+| rc.boot (runs during system boot)                     |
++-------------------------------------------------------+
+| - Mounts pseudo-filesystems (/dev, /proc, /sys, etc). |
+| - Starts a device manager (udev, mdev, etc) before    |
+|   handing off to the service manager.                 |
+| - Mounts all local filesystems.                       |
+| - Enables swap (if applicable).                       |
+| - Seeds random.                                       |
+| - Brings the loopback network device online.          |
+| - Sets the system's hostname.                         |
+| - Loads all sysctl settings.                          |
+| - Starts any services (if enabled).                   |
++-------------------------------------------------------+
+</pre></td></tbody></table>

@@ -1,0 +1,29 @@
++-------------------------------------------------------+
+|                                                       |
+|                     KISS INIT                         |
+|                                                       |
+| * The KISS init "framework" is written in POSIX       |
+|   compliant shell with a tiny amount of C where       |
+|   needed. Its purpose is to act as a portable base    |
+|   for use with each and every init system.            |
+|                                                       |
+| * The framework handles the boot-up and shutdown      |
+|   process. It mounts pseudo-filesystems, disks,       |
+|   "seeds random", etc.                                |
+|                                                       |
++-------------------------------------------------------+
+
++-------------------------------------------------------+
+| rc.boot (runs during system boot)                     |
++-------------------------------------------------------+
+| - Mounts pseudo-filesystems (/dev, /proc, /sys, etc). |
+| - Starts a device manager (udev, mdev, etc) before    |
+|   handing off to the service manager.                 |
+| - Mounts all local filesystems.                       |
+| - Enables swap (if applicable).                       |
+| - Seeds random.                                       |
+| - Brings the loopback network device online.          |
+| - Sets the system's hostname.                         |
+| - Loads all sysctl settings.                          |
+| - Starts any services (if enabled).                   |
++-------------------------------------------------------+
