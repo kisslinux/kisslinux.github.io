@@ -161,8 +161,11 @@
 |                                                       |
 | * Sources which pull from a git repository use a      |
 |   special syntax. An additional prefix 'git+' should  |
-|   be added with an optional suffix #hash or #branch). |
+|   be added with an optional suffix #hash or @branch). |
 |                                                       |
+| * Adding a suffix of '?no-extract' to the source url  |
+|   will prevent the package manager from automatically |
+|   extracting the source (if a tarball or zip).        |
 |                                                       |
 |   EXAMPLE                                             |
 |                                                       |
@@ -170,7 +173,7 @@
 |   files/dhcpcd.run                                    |
 |                                                       |
 |                                                       |
-|   EXAMPLE (WITH SECOND FIELD)                         |
+|   EXAMPLE (with second field)                         |
 |                                                       |
 |   <a href='https://example.com/gcc-9.1.0.tar.xz'>https://example.com/gcc-9.1.0.tar.xz</a>  gcc           |
 |   <a href='https://example.com/gmp-6.1.2.tar.xz'>https://example.com/gmp-6.1.2.tar.xz</a>  gcc/gmp       |
@@ -178,7 +181,7 @@
 |   <a href='https://example.com/mpc-1.1.0.tar.gz'>https://example.com/mpc-1.1.0.tar.gz</a>  gcc/mpc       |
 |                                                       |
 |                                                       |
-|   EXAMPLE (GIT)                                       |
+|   EXAMPLE (Git)                                       |
 |                                                       |
 |   git+<a href='https://github.com/dylanaraps/eiwd'>https://github.com/dylanaraps/eiwd</a>              |
 |                                                       |
@@ -188,6 +191,10 @@
 |   # Grabbing a specific commit.                       |
 |   git+<a href='https://github.com/dylanaraps/eiwd#commit'>https://github.com/dylanaraps/eiwd#commit</a>       |
 |                                                       |
+|                                                       |
+|   EXAMPLE (Automatic extraction disabled)             |
+|                                                       |
+|   <a href='https://example.com/zlib-1.2.0.tar.xz?no-extract'>https://example.com/zlib-1.2.0.tar.xz?no-extract</a>    |
 |                                                       |
 +-------------------------------------------------------+
 
@@ -205,13 +212,17 @@
 |                                                       |
 | * If the package is using a git source to pull        |
 |   down the latest commit, the version should be       |
-|   simply set to git.                                  |
+|   simply set to 'git'.                                |
 |                                                       |
 |                                                       |
 |   EXAMPLE                                             |
 |                                                       |
 |   1.2.3 1                                             |
 |                                                       |
+|                                                       |
+|   EXAMPLE (Git)                                       |
+|                                                       |
+|   git 1                                               |
 |                                                       |
 +-------------------------------------------------------+
 
@@ -252,7 +263,7 @@
 |                                                       |
 |   #!/bin/sh -e                                        |
 |                                                       |
-|   /usr/sbin/update-ca-certificates --fresh            |
+|   fc-cache -f                                         |
 |                                                       |
 |                                                       |
 +-------------------------------------------------------+
@@ -265,7 +276,7 @@
 |   the software needs.                                 |
 |                                                       |
 | * In the `sources` file patches are referred to by    |
-|  using a relative path (patches/musl.patch).          |
+|   using a relative path (patches/musl.patch).         |
 |                                                       |
 | * The package manager does not automatically apply    |
 |   patches. This must be done in the build script      |
