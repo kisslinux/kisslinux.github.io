@@ -1,150 +1,150 @@
-+--------------------------------------------------------------+
-|                                                              |
-|                       KISS COMMUNITY                         |
-|                                                              |
-| * Projects, repositories, information and anything else      |
-|   related to KISS by users of KISS.                          |
-|                                                              |
-| * A big thank you to everyone. I never imagined that I'd     |
-|   see the community grow so big in so little time.           |
-|                                                              |
-| * Also see: https://github.com/kisslinux/community           |
-|                                                              |
-+--------------------------------------------------------------+
++-------------------------------------------------------------+
+|                                                             |
+|                       KISS COMMUNITY                        |
+|                                                             |
+| * Projects, repositories, information and anything else     |
+|   related to KISS by users of KISS.                         |
+|                                                             |
+| * A big thank you to everyone. I never imagined that I'd    |
+|   see the community grow so big in so little time.          |
+|                                                             |
+| * Also see: https://github.com/kisslinux/community          |
+|                                                             |
++-------------------------------------------------------------+
 
-+--------------------------------------------------------------+
-|                                                              |
-|          PORTS OF KISS TO DIFFERENT ARCHITECTURES            |
-|                                                              |
-| * Members of the community have ported KISS to a myriad of   |
-|   architectures. See https://k1ss.org/ports                  |
-|                                                              |
-+--------------------------------------------------------------+
++-------------------------------------------------------------+
+|                                                             |
+|          PORTS OF KISS TO DIFFERENT ARCHITECTURES           |
+|                                                             |
+| * Members of the community have ported KISS to a myriad of  |
+|   architectures. See https://k1ss.org/ports                 |
+|                                                             |
++-------------------------------------------------------------+
 
-+--------------------------------------------------------------+
-|                                                              |
-|                       FORKS OF KISS                          |
-|                                                              |
-| * Members of the community have forked KISS to create their  |
-|   own distributions with differing software, ideas, goals,   |
-|   etc.                                                       |
-|                                                              |
-+--------------------------------------------------------------+
-|                                                              |
-| * WYVERTUX (https://github.com/wyvertux/wyvertux)            |
-|                                                              |
-|   Wyvertux is an experimental Linux distribution that aims   |
-|   to completely remove GNU utilities (if it's even           |
-|   possible) from the Linux build system.                     |
-|                                                              |
-+--------------------------------------------------------------+
-|                                                              |
-| * CARBS LINUX (https://carbslinux.org/)                      |
-|                                                              |
-|   Carbs Linux is an in-development Linux® distribution with  |
-|   a suckless mindset. The base system will consist of only   |
-|   the necessary programs to create a Linux distribution.     |
-|                                                              |
-+--------------------------------------------------------------+
++-------------------------------------------------------------+
+|                                                             |
+|                       FORKS OF KISS                         |
+|                                                             |
+| * Members of the community have forked KISS to create their |
+|   own distributions with differing software, ideas, goals,  |
+|   etc.                                                      |
+|                                                             |
++-------------------------------------------------------------+
+|                                                             |
+| * WYVERTUX (https://github.com/wyvertux/wyvertux)           |
+|                                                             |
+|   Wyvertux is an experimental Linux distribution that aims  |
+|   to completely remove GNU utilities (if it's even          |
+|   possible) from the Linux build system.                    |
+|                                                             |
++-------------------------------------------------------------+
+|                                                             |
+| * CARBS LINUX (https://carbslinux.org/)                     |
+|                                                             |
+|   Carbs Linux is an in-development Linux® distribution with |
+|   a suckless mindset. The base system will consist of only  |
+|   the necessary programs to create a Linux distribution.    |
+|                                                             |
++-------------------------------------------------------------+
 
-+--------------------------------------------------------------+
-|                                                              |
-|                    THEMED REPOSITORIES                       |
-|                                                              |
-| * The following list of repositories follow a specific       |
-|   "theme" and fulfil a singular purpose.                     |
-|                                                              |
-+--------------------------------------------------------------+
-|                                                              |
-| * MYWAYLAND (https://github.com/sdsddsd1/mywayland)          |
-|                                                              |
-|   Wayland and friends.                                       |
-|                                                              |
-+--------------------------------------------------------------+
-|                                                              |
-| * KISS-DBUS (https://github.com/periish/kiss-dbus)           |
-|                                                              |
-|   DBus and software that depends on it. Includes Bluez,      |
-|   dunst, libnotify, tiramisu and more.                       |
-|                                                              |
-+--------------------------------------------------------------+
-|                                                              |
-| * KISS-GAMES (https://github.com/sdsddsd1/kiss-games)        |
-|                                                              |
-|   50+ open source games from a myriad of genres.             |
-|                                                              |
-+--------------------------------------------------------------+
-|                                                              |
-| * KISS-LLVM (https://github.com/konimex/kiss-llvm)           |
-|                                                              |
-|   A kiss-repo structure to build standalone LLVM.            |
-|                                                              |
-+--------------------------------------------------------------+
-|                                                              |
-| * KISS-ZFS (https://github.com/jedavies-dev/kiss-zfs)        |
-|                                                              |
-|   This repo contains KISS build files for ZFS on Linux.      |
-|   Package contains userland utilities and kernel modules.    |
-|   It also contains the ZFS event daemon (zed).               |
-|                                                              |
-+--------------------------------------------------------------+
-|                                                              |
-| * WYVERKISS (https://github.com/wyvertux/wyverkiss)          |
-|                                                              |
-|   Wyverkiss is an alternative rootfs for KISS Linux. If      |
-|   KISS goes GNU, we go the opposite.                         |
-|                                                              |
-+--------------------------------------------------------------+
-|                                                              |
-| * KISS-FLATPAK (https://github.com/dylanaraps/kiss-flatpak)  |
-|                                                              |
-|   Flatpak and friends.                                       |
-|                                                              |
-+--------------------------------------------------------------+
-|                                                              |
-| * KISS-XFCE4 (https://github.com/periish/kiss-xfce4)         |
-|                                                              |
-|   XFCE4 desktop environment for KISS Linux.                  |
-|                                                              |
-+--------------------------------------------------------------+
-|                                                              |
-| * KISS-RICING (https://github.com/periish/kiss-ricing)       |
-|                                                              |
-|   Tools to help your KISS install look nice.                 |
-|                                                              |
-+--------------------------------------------------------------+
++-------------------------------------------------------------+
+|                                                             |
+|                    THEMED REPOSITORIES                      |
+|                                                             |
+| * The following list of repositories follow a specific      |
+|   "theme" and fulfil a singular purpose.                    |
+|                                                             |
++-------------------------------------------------------------+
+|                                                             |
+| * MYWAYLAND (https://github.com/sdsddsd1/mywayland)         |
+|                                                             |
+|   Wayland and friends.                                      |
+|                                                             |
++-------------------------------------------------------------+
+|                                                             |
+| * KISS-DBUS (https://github.com/periish/kiss-dbus)          |
+|                                                             |
+|   DBus and software that depends on it. Includes Bluez,     |
+|   dunst, libnotify, tiramisu and more.                      |
+|                                                             |
++-------------------------------------------------------------+
+|                                                             |
+| * KISS-GAMES (https://github.com/sdsddsd1/kiss-games)       |
+|                                                             |
+|   50+ open source games from a myriad of genres.            |
+|                                                             |
++-------------------------------------------------------------+
+|                                                             |
+| * KISS-LLVM (https://github.com/konimex/kiss-llvm)          |
+|                                                             |
+|   A kiss-repo structure to build standalone LLVM.           |
+|                                                             |
++-------------------------------------------------------------+
+|                                                             |
+| * KISS-ZFS (https://github.com/jedavies-dev/kiss-zfs)       |
+|                                                             |
+|   This repo contains KISS build files for ZFS on Linux.     |
+|   Package contains userland utilities and kernel modules.   |
+|   It also contains the ZFS event daemon (zed).              |
+|                                                             |
++-------------------------------------------------------------+
+|                                                             |
+| * WYVERKISS (https://github.com/wyvertux/wyverkiss)         |
+|                                                             |
+|   Wyverkiss is an alternative rootfs for KISS Linux. If     |
+|   KISS goes GNU, we go the opposite.                        |
+|                                                             |
++-------------------------------------------------------------+
+|                                                             |
+| * KISS-FLATPAK (https://github.com/dylanaraps/kiss-flatpak) |
+|                                                             |
+|   Flatpak and friends.                                      |
+|                                                             |
++-------------------------------------------------------------+
+|                                                             |
+| * KISS-XFCE4 (https://github.com/periish/kiss-xfce4)        |
+|                                                             |
+|   XFCE4 desktop environment for KISS Linux.                 |
+|                                                             |
++-------------------------------------------------------------+
+|                                                             |
+| * KISS-RICING (https://github.com/periish/kiss-ricing)      |
+|                                                             |
+|   Tools to help your KISS install look nice.                |
+|                                                             |
++-------------------------------------------------------------+
 
-+--------------------------------------------------------------+
-|                                                              |
-|                         SOFTWARE                             |
-|                                                              |
-| * Software created by users of KISS, many of which are       |
-|   portable to multiple distributions.                        |
-|                                                              |
-+--------------------------------------------------------------+
-|                                                              |
-| * TINYRAMFS (https://github.com/illiliti/tinyramfs)          |
-|                                                              |
-|   A tiny initramfs generator written in POSIX shell with     |
-|    support for LUKS, LVM, mdev, mdevd, udev, etc.            |
-|                                                              |
-+--------------------------------------------------------------+
-|                                                              |
-| * SYSMGR (https://github.com/cemkeylan/sysmgr)               |
-|                                                              |
-|   A simplistic system-supervisor.                            |
-|                                                              |
-+--------------------------------------------------------------+
-|                                                              |
-| * SHINIT (https://github.com/cemkeylan/shinit)               |
-|                                                              |
-|   Basic init daemon in POSIX sh with only 5 lines of code.   |
-|   It supports acting upon signals.                           |
-|                                                              |
-+--------------------------------------------------------------+
-|                                                              |
-| * TUITUBE (https://github.com/djt3/tuitube/)                 |
-|                                                              |
-|   A minimal tui youtube (invidious) frontend made in c++.    |
-|                                                              |
-+--------------------------------------------------------------+
++-------------------------------------------------------------+
+|                                                             |
+|                         SOFTWARE                            |
+|                                                             |
+| * Software created by users of KISS, many of which are      |
+|   portable to multiple distributions.                       |
+|                                                             |
++-------------------------------------------------------------+
+|                                                             |
+| * TINYRAMFS (https://github.com/illiliti/tinyramfs)         |
+|                                                             |
+|   A tiny initramfs generator written in POSIX shell with    |
+|    support for LUKS, LVM, mdev, mdevd, udev, etc.           |
+|                                                             |
++-------------------------------------------------------------+
+|                                                             |
+| * SYSMGR (https://github.com/cemkeylan/sysmgr)              |
+|                                                             |
+|   A simplistic system-supervisor.                           |
+|                                                             |
++-------------------------------------------------------------+
+|                                                             |
+| * SHINIT (https://github.com/cemkeylan/shinit)              |
+|                                                             |
+|   Basic init daemon in POSIX sh with only 5 lines of code.  |
+|   It supports acting upon signals.                          |
+|                                                             |
++-------------------------------------------------------------+
+|                                                             |
+| * TUITUBE (https://github.com/djt3/tuitube/)                |
+|                                                             |
+|   A minimal tui youtube (invidious) frontend made in c++.   |
+|                                                             |
++-------------------------------------------------------------+
