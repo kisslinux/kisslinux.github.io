@@ -459,4 +459,28 @@
 |                                                       |
 |                                                       |
 +-------------------------------------------------------+
+
++-------------------------------------------------------+
+|                                                       |
+|                       TRIVIA                          |
+|                                                       |
+| * The package manager makes zero attempt to compare   |
+|   version numbers to distinguish whether or not one   |
+|   version is newer than another.                      |
+|                                                       |
+|   Instead, it simply checks to see if the old version |
+|   differs to the new one. If it does, it's considered |
+|   an available update.                                |
+|                                                       |
+|   This has the added benefit of making downgrades no  |
+|   different to upgrades. In effect, just a simple:    |
+|                                                       |
+|   # Example pseudo code.                              |
+|   [ "$old_ver" != "$new_ver" ] && update_available    |
+|                                                       |
+|                                                       |
+| * The package manager was originally called 'puke'    |
+|   and was later changed to 'kiss'.                    |
+|                                                       |
++-------------------------------------------------------+
 </pre></td></tbody></table>
