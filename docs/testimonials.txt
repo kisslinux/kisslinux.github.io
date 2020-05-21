@@ -99,5 +99,8 @@
 |   in /var. That allows me to base my entire system on |
 |   literally anything I want.                          |
 |                                                       |
+| >  Well all I can say is grandma won't be installing  |
+|     kiss any time soon, looking at the instructions.  |
+|                                                       |
 +-------------------------------------------------------+
 
