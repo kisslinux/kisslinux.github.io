@@ -364,8 +364,8 @@ $   kiss i dhcpcd                                               |
 |   file-system, disk controller and USB drivers are built      |
 |   with [*] (Yes) and not [m] (Module).                        |
 |                                                               |
-| * NOTE: A patch is required for all kernels when built with   |
-|         GCC 10.1.0. Please read the link below (and the       |
+| * NOTE: A patch may be required for some kernels when built   |
+|         with GCC 10.1.0. Please read the link below (and the  |
 |         patch itself for more information).                   |
 |                                                               |
 |         https://k1ss.org/news/20200509a                       |
