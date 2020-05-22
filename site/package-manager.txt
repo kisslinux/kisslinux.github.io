@@ -352,6 +352,10 @@
 |               | by bypassing dependency checks, etc.  |
 |               | Set to '1' to enable.                 |
 |               |                                       |
+|   KISS_CHOICE | Set to '0' to disable the             |
+|               | alternatives system and error on any  |
+|               | detected file conflicts.              |
+|               |                                       |
 |     KISS_HOOK | Hook into the package manager.        |
 |               | See above: "interesting features".    |
 |               | Set to the full path to the script.   |
