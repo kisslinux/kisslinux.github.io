@@ -69,6 +69,12 @@
 |                                                             |
 +-------------------------------------------------------------+
 |                                                             |
+| * KISS-KDE (https://github.com/dilyn-corner/KISS-kde)       |
+|                                                             |
+|   A KISS repository for KDE and friends.                    |
+|                                                             |
++-------------------------------------------------------------+
+|                                                             |
 | * KISS-GAMES (https://github.com/sdsddsd1/kiss-games)       |
 |                                                             |
 |   50+ open source games from a myriad of genres.            |
