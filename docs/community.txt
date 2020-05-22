@@ -37,7 +37,6 @@
 |   to completely remove GNU utilities (if it's even          |
 |   possible) from the Linux build system.                    |
 |                                                             |
-+-------------------------------------------------------------+
 |                                                             |
 | * CARBS LINUX (https://carbslinux.org/)                     |
 |                                                             |
@@ -60,32 +59,27 @@
 |                                                             |
 |   Wayland and friends.                                      |
 |                                                             |
-+-------------------------------------------------------------+
 |                                                             |
 | * KISS-DBUS (https://github.com/periish/kiss-dbus)          |
 |                                                             |
 |   DBus and software that depends on it. Includes Bluez,     |
 |   dunst, libnotify, tiramisu and more.                      |
 |                                                             |
-+-------------------------------------------------------------+
 |                                                             |
 | * KISS-KDE (https://github.com/dilyn-corner/KISS-kde)       |
 |                                                             |
 |   A KISS repository for KDE and friends.                    |
 |                                                             |
-+-------------------------------------------------------------+
 |                                                             |
 | * KISS-GAMES (https://github.com/sdsddsd1/kiss-games)       |
 |                                                             |
 |   50+ open source games from a myriad of genres.            |
 |                                                             |
-+-------------------------------------------------------------+
 |                                                             |
 | * KISS-LLVM (https://github.com/konimex/kiss-llvm)          |
 |                                                             |
 |   A kiss-repo structure to build standalone LLVM.           |
 |                                                             |
-+-------------------------------------------------------------+
 |                                                             |
 | * KISS-ZFS (https://github.com/jedavies-dev/kiss-zfs)       |
 |                                                             |
@@ -93,32 +87,27 @@
 |   Package contains userland utilities and kernel modules.   |
 |   It also contains the ZFS event daemon (zed).              |
 |                                                             |
-+-------------------------------------------------------------+
 |                                                             |
 | * WYVERKISS (https://github.com/wyvertux/wyverkiss)         |
 |                                                             |
 |   Wyverkiss is an alternative rootfs for KISS Linux. If     |
 |   KISS goes GNU, we go the opposite.                        |
 |                                                             |
-+-------------------------------------------------------------+
 |                                                             |
 | * KISS-FLATPAK (https://github.com/dylanaraps/kiss-flatpak) |
 |                                                             |
 |   Flatpak and friends.                                      |
 |                                                             |
-+-------------------------------------------------------------+
 |                                                             |
 | * KISS-XFCE4 (https://github.com/periish/kiss-xfce4)        |
 |                                                             |
 |   XFCE4 desktop environment for KISS Linux.                 |
 |                                                             |
-+-------------------------------------------------------------+
 |                                                             |
 | * KISS-RICING (https://github.com/periish/kiss-ricing)      |
 |                                                             |
 |   Tools to help your KISS install look nice.                |
 |                                                             |
-+-------------------------------------------------------------+
 |                                                             |
 | * KISS-FONTS (https://github.com/Himmalerin/kiss-fonts)     |
 |                                                             |
@@ -140,20 +129,17 @@
 |   A tiny initramfs generator written in POSIX shell with    |
 |    support for LUKS, LVM, mdev, mdevd, udev, etc.           |
 |                                                             |
-+-------------------------------------------------------------+
 |                                                             |
 | * SYSMGR (https://github.com/cemkeylan/sysmgr)              |
 |                                                             |
 |   A simplistic system-supervisor.                           |
 |                                                             |
-+-------------------------------------------------------------+
 |                                                             |
 | * SHINIT (https://github.com/cemkeylan/shinit)              |
 |                                                             |
 |   Basic init daemon in POSIX sh with only 5 lines of code.  |
 |   It supports acting upon signals.                          |
 |                                                             |
-+-------------------------------------------------------------+
 |                                                             |
 | * TUITUBE (https://github.com/djt3/tuitube/)                |
 |                                                             |
