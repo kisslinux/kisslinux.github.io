@@ -173,6 +173,16 @@
 | [6] If these are missing, binary stripping and/or     |
 |     the dependency fixer will simply be disabled.     |
 |                                                       |
+|     Regarding 'strip'; It has a POSIX specification,  |
+|     though the spec doesn't contain any arguments     |
+|     whatsoever.                                       |
+|                                                       |
+|     This makes our usage of 'strip' non-POSIX. That   |
+|     being said, our usage is compatible with these    |
+|     'strip' implementations.                          |
+|                                                       |
+|     binutils, elfutils, elftoolchain, llvm, etc.      |
+|                                                       |
 +-------------------------------------------------------+
 
 +-------------------------------------------------------+
