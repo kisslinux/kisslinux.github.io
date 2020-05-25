@@ -73,10 +73,10 @@ for Flash support (can't _yet_ be disabled...).
 | Total:                | 463 packages |
 +-----------------------+--------------+
 
-The repositories have seen countless contributions from people all
+The repositories have seen a heap of contributions from people all
 over the globe. The total number of contributors for the year is 64!
-As for how many users KISS has... I have no idea! No data is collected
-whatsoever (and it will forever stay this way).
+As for how many users KISS has... I have no idea! No data is
+collected whatsoever (and it will forever stay this way).
 
 +--------------------------------------------------------------+
 |                   Summary of contributors                    |
