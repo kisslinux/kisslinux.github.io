@@ -7,6 +7,15 @@
 <ttl>1800</ttl>
 <atom:link href="https://k1ss.org/blog/blog.xml" rel="self" type="application/rss+xml" />
 <item>
+<title>25/05/2020: This month in KISS (#2)</title>
+<description>Welcome to the second monthly update for KISS. This post will be
+quite a long one, we've seen some nice changes this month and some
+great work by the Community.</description>
+<link>https://k1ss.org/blog/20200525a</link>
+<guid isPermaLink="true">https://k1ss.org/blog/20200525a/</guid>
+<pubDate>Mon, 25 May 2020 00:00:00 +0000</pubDate>
+</item>
+<item>
 <title>09/05/2020: KISS turns 1!</title>
 <description>Today marks one year since the first commit to the KISS repositories.</description>
 <link>https://k1ss.org/blog/20200509a</link>
