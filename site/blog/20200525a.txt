@@ -340,9 +340,9 @@ system, service manager, device manager, coreutils, etc, etc.
   do less during boot.
 
 * Encryption support has been removed from the baseinit project and
-  is now maintained the Community. I don't personally use encryption
-  (for my system drives) so it was difficult for me to maintain the
-  code, ensure it works and most importantly... test it.
+  is now maintained by the Community. I don't personally use
+  encryption (for my system drives) so it was difficult for me to
+  maintain the code, ensure it works and most importantly... test it.
 
   It's now in very good hands. The user in charge cares deeply about
   the boot process and has contributed many of the fixes I have
