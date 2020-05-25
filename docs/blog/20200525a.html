@@ -420,341 +420,360 @@ the work by Michael Forney.
 
 DESKTOP ENVIRONMENTS
 
-Two desktop environments have been ported to KISS by members of the
-Community. This is a huge effort and it's really nice to see
-projects of this scale popping up.
+Two desktop environments (XFCE4 and KDE) have been ported to KISS by
+members of the Community. This is a huge effort and it's really nice
+to see projects of this scale popping up.
 
 Source: <a href='https://github.com/periish/kiss-xfce4'>https://github.com/periish/kiss-xfce4</a>
 Source: <a href='https://github.com/dilyn-corner/KISS-kde'>https://github.com/dilyn-corner/KISS-kde</a>
 
--------
 
-Dylan Araps (171):
-      kiss: bump to 1.12.2
-      eiwd: Add runit service
-      meson: bump to 0.54.1
-      xf86-video-intel: Bump to latest commit
-      linux-headers: Drop rsync
-      git: install manual pages
-      xfsprogs: bump to 5.6.0
-      xfsprogs: Reduce long line
-      bzip2: Revert to prior build method
-      st: bump to 0.8.3
-      doas: Install config with 644
-      gtk+3: bump to 3.24.20
-      tzdata: Fix sbindir
-      opendoas: Use 600 for config file
-      opendoas: bump rel
-      dhcpcd: Fix bug with privsep value
-      cmake: bump to 3.17.2
-      baseinit: bump to 0.7.4
-      ccache: Drop clang (for now)
-      kiss: bump to 1.12.3
-      curl: bump to 7.70.0
-      bison: bump to 3.5.91
-      nodejs: Bump to 14.1.0
-      mesa: bump to 20.0.6
-      bison: revert to previous version (was beta)
-      gcc [testing]: Latest snapshot
-      rust: Move latest to testing
-      cbindgen: bump to 0.14.2
-      gcc: Fix broken LTO symlink
-      gtk+3: Minor fixes
-      various: Add linux-headers (make) dependencies.
-      openssh: Clean up post-install file
-      rust: Fix white-space
-      e2fsprogs: Fix depends
-      various: Fix trailing white-space
-      busybox: Drop halt as it is not portable across inits
-      xkeyboard-config: Fix checksums. Closes #186
-      readme: Fix broken links
-      vim: Disable nls
-      ffmpeg: various changes. Enable libressl. Disable libtheora.
-      llvm: Remove leftover shell
-      firefox-esr: New package at 68.8.0esr
-      kiss: bump to 1.13.0
-      firefox: bump to 76.0
-      rust: bump to 1.43.0
-      rust: move from testing
-      nodejs: bump to 14.2.0
-      firefox: Simpler build process
-      firefox: further tweaks
-      firefox: drop V=0
-      gcc [testing]: bump to latest snapshot
-      firefox: Disable DOH
-      firefox-esr-bin: New package at 68.8.0esr
-      firefox-bin: bump to 76.0
-      firefox: build tweaks
-      libogg: Fix sources
-      libvorbis: Fix source.
-      kiss: bump to 1.13.1
-      kiss: bump to 1.13.2
-      plzip: new package at 1.8
-      kiss: bump to 1.13.3
-      gcc: bump to 10.1.0
-      testing: Move gcc to core
-      kiss: bump to 1.13.4
-      kiss: bimp to 1.13.5
-      sudo: Disable nls
-      dhcpcd: Move files to /usr/lib/dhcpcd
-      rust: bump to 1.43.1
-      git: Install files to /usr/lib/git-core
-      sudo: minor fixes
-      libinput: Install files to /usr/lib/libinput
-      gcc: minor tweaks
-      clang: Fix libexec directory location
-      openssh: Fix libexec location
-      gnupg1: Fix libexec location
-      firefox: bump to 76.0.1
-      gcc: Fix LTO location
-      mesa: Drop -fcommon
-      bison: bump to 3.6
-      xf86-video-intel: Drop -fcommon
-      firefox-bin: bump to 76.0.1
-      freetype-harfbuzz: bump to 2.10.2+2.6.5
-      bison: bump to 3.6.1
-      binutils: Use /lib
-      gcc: Skip bootstrap if we are able
-      various: Delete info pages.
-      libwebp: Fix source
-      gtk+3: Remove unneeded files
-      glib,meson: Remove unneeded files
-      freetype-harfbuzz: bump to 2.10.2+2.6.6
-      baselayout: Drop unneeded depends
-      sudo: bump to 1.9.0
-      kiss: bump to 2.0.0
-      kiss: bump to 2.0.1
-      kiss: bump to 2.0.2
-      kiss: bump to 2.0.3
-      opendoas: Fix config
-      xfsprogs: Fix build when bash isn't installed. Closes #190
-      python: bump to 3.8.3
-      mesa: bump to 20.0.7
-      libressl: bump to 3.1.1
-      git: bump rel for libressl
-      various: Drop unneeded rm
-      glib: Remove unneeded rm
-      meson: drop unneeded rm
-      gtk+3: Remove unneeded rm
-      meson: bump to 0.54.2
-      gcc: unhardcode version
-      curl: drop duplicate configure flag
-      libressl: Remove useless comment from certdata.sh
-      libressl: Fix checksums. Closes #191
-      grub: Drop non-posix -a flag
-      busybox: Move mkdir to build file
-      kiss: bump to 2.0.5
-      various: Minor fixes
-      bison: bump to 3.6.2
-      libressl: Better curl command
-      rust: Update for libressl 3.1.1
-      libXext: Fix depends
-      kiss: bump to 2.0.6
-      opendoas: Update config file
-      sudo: Added post-install message
-      baseinit: bump to 1.0
-      busybox: Use sha256 as default password algo.
-      kiss: bump to 2.0.7
-      baseinit: bump to 1.0.1'
-      baseinit: Added post-install message
-      baseinit: bump to 1.0.2
-      xf86-input-libinput: bump to 0.30.0
-      musl: Add getent
-      nodejs: bump to 14.3.0
-      glib: bump to 2.64.3
-      util-linux: bump to 2.35.2
-      libressl: bump to 3.1.2
-      ffmpeg: bump to 4.2.3
-      zstd: bump to 1.4.5
-      sqlite: bump to 3.32.0
-      kiss: bump to 2.1.0
-      pkgconf: bump to 1.7.0
-      kiss: bump to 2.1.1
-      python: Add back 2to3
-      kiss: bump to 2.1.2
-      libXrandr: Fix depends
-      imagemagick: bump to 7.0.10-8
-      imagemagick: bump to 7.0.10-9
-      libtool: Fix depends
-      giblib: Fix checksums. Closes #712
-      imagemagick: bump to 7.0.10-10
-      icu: bump to 67.1
-      cython: bump to 0.29.17
-      xwallpaper: bump to 0.6.5
-      transmission: Renamed from -daemon. Closes #695
-      weechat,torsocks,transmission-daemon*: removals
-      youtube-dl: bump to 2020.05.03 (on behalf of maintainer ioraff)
-      openbox: Move files to /usr/lib/openbox
-      youtube-dl: bump to 2020.05.08
-      imagemagick: bump to 7.0.10-11
-      harfbuzz-icu: bump to 2.6.6
-      neovim: Fix build. Closes #803
-      various: bumps for libressl
-      ethtool: bump to 5.6
-      transmission: bump to 3.00
-      sfeed: bump to 0.9.17
-      libmupdf: bump to 1.17.0
-      imagemagick: bump to 7.0.10-12
-      zathura-pdf-mupdf: Add patch to fix build with mupdf 1.17
-      imagemagick: bump to 7.0.10-13
-      cython: bump to 0.29.18
-      cython: bump to 0.29.19
-      imagemagick: bump to 7.0.10-14
+REPOSITORIES
 
-6ZMQa2ND2KwrX2Z8JZcRzyQgDjP38g8V2BdX7NX (2):
-      torsocks: new package at 2.3.0 (#736)
-      weechat: new package at 2.8 (#738)
+This is the full Git log with merge commits removed for the official
+repositories and Community. This is simply 'git shortlog' from two
+Git repositories merged together.
 
-Aaron G (3):
-      socat: bump release (rebuild for libressl) (#672)
-      oed: update to 6.7 (#844)
-      oksh: new package at 6.7 (#845)
+For a much better look at the state of package versions and for what
+is available in the repositories, see:
 
-Adam Schaefers (5):
-      readline: fix linking issue, closes #734 (#742)
-      nettle: bump to 3.6 (#767)
-      nettle: remove autoconf automake depends, closes #781 (#798)
-      libcap: bump to 2.34 (#797)
-      mksh: bump to R59b (#822)
+- Official:  <a href='https://repology.org/repository/kiss_main'>https://repology.org/repository/kiss_main</a>
+- Community: <a href='https://repology.org/repository/kiss_community'>https://repology.org/repository/kiss_community</a>
 
-Artem Kobets (2):
-      xmlsec1: update to 1.2.30 (#757)
-      xmlsec1: bump release (#659)
+---
 
-Bridouz (1):
-      syncthing: update to 1.4.2 (#744)
+    Dylan Araps (171):
+          kiss: bump to 1.12.2
+          eiwd: Add runit service
+          meson: bump to 0.54.1
+          xf86-video-intel: Bump to latest commit
+          linux-headers: Drop rsync
+          git: install manual pages
+          xfsprogs: bump to 5.6.0
+          xfsprogs: Reduce long line
+          bzip2: Revert to prior build method
+          st: bump to 0.8.3
+          doas: Install config with 644
+          gtk+3: bump to 3.24.20
+          tzdata: Fix sbindir
+          opendoas: Use 600 for config file
+          opendoas: bump rel
+          dhcpcd: Fix bug with privsep value
+          cmake: bump to 3.17.2
+          baseinit: bump to 0.7.4
+          ccache: Drop clang (for now)
+          kiss: bump to 1.12.3
+          curl: bump to 7.70.0
+          bison: bump to 3.5.91
+          nodejs: Bump to 14.1.0
+          mesa: bump to 20.0.6
+          bison: revert to previous version (was beta)
+          gcc [testing]: Latest snapshot
+          rust: Move latest to testing
+          cbindgen: bump to 0.14.2
+          gcc: Fix broken LTO symlink
+          gtk+3: Minor fixes
+          various: Add linux-headers (make) dependencies.
+          openssh: Clean up post-install file
+          rust: Fix white-space
+          e2fsprogs: Fix depends
+          various: Fix trailing white-space
+          busybox: Drop halt as it is not portable across inits
+          xkeyboard-config: Fix checksums. Closes #186
+          readme: Fix broken links
+          vim: Disable nls
+          ffmpeg: various changes.
+          llvm: Remove leftover shell
+          firefox-esr: New package at 68.8.0esr
+          kiss: bump to 1.13.0
+          firefox: bump to 76.0
+          rust: bump to 1.43.0
+          rust: move from testing
+          nodejs: bump to 14.2.0
+          firefox: Simpler build process
+          firefox: further tweaks
+          firefox: drop V=0
+          gcc [testing]: bump to latest snapshot
+          firefox: Disable DOH
+          firefox-esr-bin: New package at 68.8.0esr
+          firefox-bin: bump to 76.0
+          firefox: build tweaks
+          libogg: Fix sources
+          libvorbis: Fix source.
+          kiss: bump to 1.13.1
+          kiss: bump to 1.13.2
+          plzip: new package at 1.8
+          kiss: bump to 1.13.3
+          gcc: bump to 10.1.0
+          testing: Move gcc to core
+          kiss: bump to 1.13.4
+          kiss: bimp to 1.13.5
+          sudo: Disable nls
+          dhcpcd: Move files to /usr/lib/dhcpcd
+          rust: bump to 1.43.1
+          git: Install files to /usr/lib/git-core
+          sudo: minor fixes
+          libinput: Install files to /usr/lib/libinput
+          gcc: minor tweaks
+          clang: Fix libexec directory location
+          openssh: Fix libexec location
+          gnupg1: Fix libexec location
+          firefox: bump to 76.0.1
+          gcc: Fix LTO location
+          mesa: Drop -fcommon
+          bison: bump to 3.6
+          xf86-video-intel: Drop -fcommon
+          firefox-bin: bump to 76.0.1
+          freetype-harfbuzz: bump to 2.10.2+2.6.5
+          bison: bump to 3.6.1
+          binutils: Use /lib
+          gcc: Skip bootstrap if we are able
+          various: Delete info pages.
+          libwebp: Fix source
+          gtk+3: Remove unneeded files
+          glib,meson: Remove unneeded files
+          freetype-harfbuzz: bump to 2.10.2+2.6.6
+          baselayout: Drop unneeded depends
+          sudo: bump to 1.9.0
+          kiss: bump to 2.0.0
+          kiss: bump to 2.0.1
+          kiss: bump to 2.0.2
+          kiss: bump to 2.0.3
+          opendoas: Fix config
+          xfsprogs: Fix build when bash isn't installed.
+          python: bump to 3.8.3
+          mesa: bump to 20.0.7
+          libressl: bump to 3.1.1
+          git: bump rel for libressl
+          various: Drop unneeded rm
+          glib: Remove unneeded rm
+          meson: drop unneeded rm
+          gtk+3: Remove unneeded rm
+          meson: bump to 0.54.2
+          gcc: unhardcode version
+          curl: drop duplicate configure flag
+          libressl: Remove useless comment from certdata.sh
+          libressl: Fix checksums. Closes #191
+          grub: Drop non-posix -a flag
+          busybox: Move mkdir to build file
+          kiss: bump to 2.0.5
+          various: Minor fixes
+          bison: bump to 3.6.2
+          libressl: Better curl command
+          rust: Update for libressl 3.1.1
+          libXext: Fix depends
+          kiss: bump to 2.0.6
+          opendoas: Update config file
+          sudo: Added post-install message
+          baseinit: bump to 1.0
+          busybox: Use sha256 as default password algo.
+          kiss: bump to 2.0.7
+          baseinit: bump to 1.0.1'
+          baseinit: Added post-install message
+          baseinit: bump to 1.0.2
+          xf86-input-libinput: bump to 0.30.0
+          musl: Add getent
+          nodejs: bump to 14.3.0
+          glib: bump to 2.64.3
+          util-linux: bump to 2.35.2
+          libressl: bump to 3.1.2
+          ffmpeg: bump to 4.2.3
+          zstd: bump to 1.4.5
+          sqlite: bump to 3.32.0
+          kiss: bump to 2.1.0
+          pkgconf: bump to 1.7.0
+          kiss: bump to 2.1.1
+          python: Add back 2to3
+          kiss: bump to 2.1.2
+          libXrandr: Fix depends
+          imagemagick: bump to 7.0.10-8
+          imagemagick: bump to 7.0.10-9
+          libtool: Fix depends
+          giblib: Fix checksums. Closes #712
+          imagemagick: bump to 7.0.10-10
+          icu: bump to 67.1
+          cython: bump to 0.29.17
+          xwallpaper: bump to 0.6.5
+          transmission: Renamed from -daemon. Closes #695
+          weechat,torsocks,transmission-daemon*: removals
+          youtube-dl: bump to 2020.05.03
+          openbox: Move files to /usr/lib/openbox
+          youtube-dl: bump to 2020.05.08
+          imagemagick: bump to 7.0.10-11
+          harfbuzz-icu: bump to 2.6.6
+          neovim: Fix build. Closes #803
+          various: bumps for libressl
+          ethtool: bump to 5.6
+          transmission: bump to 3.00
+          sfeed: bump to 0.9.17
+          libmupdf: bump to 1.17.0
+          imagemagick: bump to 7.0.10-12
+          zathura-pdf-mupdf: Fix build with mupdf 1.17
+          imagemagick: bump to 7.0.10-13
+          cython: bump to 0.29.18
+          cython: bump to 0.29.19
+          imagemagick: bump to 7.0.10-14
 
-Camille (11):
-      fish: update to version 3.1.2 (#763)
-      freerdp: update to 2.0.0 (#773)
-      slop: use included glm (#772)
-      pcre2: update to 10.35 (#792)
-      freerdp: update to 2.1.0 (#791)
-      caddy: new package at 2.0.0 (#821)
-      lilo: new package at 24.2 (#824)
-      lilo: some fixes from gentoo (#830)
-      goimport: new package at git (#831)
-      golangci-lint-bin: new package at 1.27.0 (#832)
-      caddy: fix service file (#841)
+    6ZMQa2ND2KwrX2Z8JZcRzyQgDjP38g8V2BdX7NX (2):
+          torsocks: new package at 2.3.0
+          weechat: new package at 2.8
 
-Cem Keylan (17):
-      bkeymaps: add colemak (#735)
-      webkit2gtk: bump release number (#722)
-      libps: bump release number (#723)
-      boost: bump to 1.73.0 (#745)
-      sinit: bump to 1.1 (#747)
-      webkit2gtk: full fledged build (#750)
-      mpd-libmpdclient: fix circular dependency (#758)
-      gstreamer gst-plugins: add missing dependencies (#775)
-      9base: prefix change, source change, and fixes (#786)
-      sbase: do not unlink tar (#807)
-      libedit: add new package at 20191231-3.1 (#805)
-      glib-networking: bump release number (#670)
-      ruby: bump release number (#813)
-      sbase: apply patch for dashless tar usage (#825)
-      distcc: add new package at 3.3.3 (#833)
-      distcc: docstring (#834)
-      boost: add missing linux-headers dependency (#835)
+    Aaron G (3):
+          socat: bump release (rebuild for libressl)
+          oed: update to 6.7
+          oksh: new package at 6.7
 
-Cédric (10):
-      zathura: file dependency added (#764)
-      msmtp: update to version 1.8.10 (#766)
-      poppler: update to version 0.88.0:w (#765)
-      poppler: option DENABLE-CPP=ON for cups-filters (#784)
-      qpdf: new package at 10.0.1 (#785)
-      ghostscript: new package at version 9.52 (#787)
-      cups: new package at 2.3.3 (#789)
-      cups-filters: new package at 1.27.4 (#790)
-      cups-filters: dependency dejavu-ttf removed (#806)
-      zathura: fix issue 838 (#839)
+    Adam Schaefers (5):
+          readline: fix linking issue, closes #734
+          nettle: bump to 3.6
+          nettle: remove autoconf automake depends
+          libcap: bump to 2.34
+          mksh: bump to R59b
 
-Devon Morris (2):
-      zsh: new package at 5.8 (#740)
-      mit-scheme: new package at 10.1.10 (#769)
+    Artem Kobets (2):
+          xmlsec1: update to 1.2.30
+          xmlsec1: bump release
 
-Dilyn Corner (7):
-      qt5-declarative requires python to make (#755)
-      falkon: rename qt.conf to falkon.conf to fix issue with qmake
-      extra-cmake-modules bumped to 5.70.0 (#783)
-      lz4 added at 1.9.2 (#793)
-      qt5-webengine build fix for GCC 10 (#804)
-      qt5{-webengine} updated deps (#837)
-      Falkon fix v2 (#840)
+    Bridouz (1):
+          syncthing: update to 1.4.2
 
-Eudald Gubert i Roldan (3):
-      ledger: bump to 3.2.0 (#778)
-      dejavu-ttf: new package at 2.37 (#800)
-      ledger: bump to 3.2.1 (#828)
+    Camille (11):
+          fish: update to version 3.1.2
+          freerdp: update to 2.0.0
+          slop: use included glm
+          pcre2: update to 10.35
+          freerdp: update to 2.1.0
+          caddy: new package at 2.0.0
+          lilo: new package at 24.2
+          lilo: some fixes from gentoo
+          goimport: new package at git
+          golangci-lint-bin: new package at 1.27.0
+          caddy: fix service file
 
-Himmalerin (1):
-      mercurial: new package at 5.4 (#799)
+    Cem Keylan (17):
+          bkeymaps: add colemak
+          webkit2gtk: bump release number
+          libps: bump release number
+          boost: bump to 1.73.0
+          sinit: bump to 1.1
+          webkit2gtk: full fledged build
+          mpd-libmpdclient: fix circular dependency
+          gstreamer gst-plugins: add missing dependencies
+          9base: prefix change, source change, and fixes
+          sbase: do not unlink tar
+          libedit: add new package at 20191231-3.1
+          glib-networking: bump release number
+          ruby: bump release number
+          sbase: apply patch for dashless tar usage
+          distcc: add new package at 3.3.3
+          distcc: docstring
+          boost: add missing linux-headers dependency
 
-James Davies (1):
-      Update qemu (#753)
+    Cédric (10):
+          zathura: file dependency added
+          msmtp: update to version 1.8.10
+          poppler: update to version 0.88.0:w
+          poppler: option DENABLE-CPP=ON for cups-filters
+          qpdf: new package at 10.0.1
+          ghostscript: new package at version 9.52
+          cups: new package at 2.3.3
+          cups-filters: new package at 1.27.4
+          cups-filters: dependency dejavu-ttf removed
+          zathura: fix issue 838
 
-Jonathan Dahan (1):
-      osh: bump to 0.8.pre4 (#754)
+    Devon Morris (2):
+          zsh: new package at 5.8
+          mit-scheme: new package at 10.1.10
 
-Kiëd Llaentenn (3):
-      fd: update to v8.0.0 (#770)
-      tokei: update v11.1.0 => v11.1.1 (#815)
-      ripgrep: update v12.0.1 => v12.1.0 (#814)
+    Dilyn Corner (7):
+          qt5-declarative requires python to make
+          falkon: Fix issue with qmake
+          extra-cmake-modules bumped to 5.70.0
+          lz4 added at 1.9.2
+          qt5-webengine build fix for GCC 10
+          qt5{-webengine} updated deps
+          Falkon fix v2
 
-Kris Heck (4):
-      wireguard-tools: bump to 1.0.20200510 (#795)
-      tor: bump release for libressl (#729)
-      tor: bump to 0.4.3.5 (#817)
-      wireguard-tools: bump to 1.0.20200513 (#816)
+    Eudald Gubert i Roldan (3):
+          ledger: bump to 3.2.0
+          dejavu-ttf: new package at 2.37
+          ledger: bump to 3.2.1
 
-M. Herdiansyah (10):
-      picom: update to 8 (#746)
-      tmux: update to 3.1a (#760)
-      json-c: update to 0.14 (#776)
-      cryptsetup: update to 2.3.2 (#777)
-      irssi: bump rel (#658)
-      go: update to 1.14.3 (#811)
-      tmux: update to 3.1b (#810)
-      unifont: update to 13.0.02 (#809)
-      libarchive: update to 3.4.3 (#843)
-      libexif: update to 0.6.22 (#842)
+    Himmalerin (1):
+          mercurial: new package at 5.4
 
-Michael Ablassmeier (1):
-      entr: bump version to 4.5 (#743)
+    James Davies (1):
+          Update qemu
 
-Michael Czigler (1):
-      scroll: new package at 0.1 (#818)
+    Jonathan Dahan (1):
+          osh: bump to 0.8.pre4
 
-Timothy Robert Bednarzyk (3):
-      gocloc: new package at 0.3.3 (#739)
-      ccls: bump to version 20190823.6 (#752)
-      w3m: bump release (rebuild for libressl) (#703)
+    Kiëd Llaentenn (3):
+          fd: update to v8.0.0
+          tokei: update v11.1.0 => v11.1.1
+          ripgrep: update v12.0.1 => v12.1.0
 
-bit6tream (2):
-      bitfetch: new package at 2.3 (#808)
-      bitfetch: bump to 3.0 (#829)
+    Kris Heck (4):
+          wireguard-tools: bump to 1.0.20200510
+          tor: bump release for libressl
+          tor: bump to 0.4.3.5
+          wireguard-tools: bump to 1.0.20200513
 
-djt3 (6):
-      curlpp: new package at 0.8.1 (#749)
-      tuitube: new package at 0.1.2 (#761)
-      tuitube: change to git release (#762)
-      tuitube: bump relative version (#771)
-      tuitube: bump relative version to 3 (#782)
-      tuitube: bump relative version to 4 (#802)
+    M. Herdiansyah (10):
+          picom: update to 8
+          tmux: update to 3.1a
+          json-c: update to 0.14
+          cryptsetup: update to 2.3.2
+          irssi: bump rel
+          go: update to 1.14.3
+          tmux: update to 3.1b
+          unifont: update to 13.0.02
+          libarchive: update to 3.4.3
+          libexif: update to 0.6.22
 
-illiliti (1):
-      kiss-encryption: new package at git 1 (#788)
+    Michael Ablassmeier (1):
+          entr: bump version to 4.5
 
-penguin-ff (3):
-      cyrus-sasl: bump release for libressl  (#737)
-      mutt: update to 1.14.1 (#827)
-      cyrus-sasl: install to /usr/bin (#826)
+    Michael Czigler (1):
+          scroll: new package at 0.1
 
-periish (2):
-      Remove package wmutils-core, create package wmutils. (#733)
-      nss: update to 3.5.1 (#751)
+    Timothy Robert Bednarzyk (3):
+          gocloc: new package at 0.3.3
+          ccls: bump to version 20190823.6
+          w3m: bump release (rebuild for libressl)
 
-sdsddsd1 (2):
-      wyeb: new version at git (#801)
-      sdl2: add missing linux-headers dependency (#836)
+    bit6tream (2):
+          bitfetch: new package at 2.3
+          bitfetch: bump to 3.0
 
+    djt3 (6):
+          curlpp: new package at 0.8.1
+          tuitube: new package at 0.1.2
+          tuitube: change to git release
+          tuitube: bump relative version
+          tuitube: bump relative version to 3
+          tuitube: bump relative version to 4
+
+    illiliti (1):
+          kiss-encryption: new package at git 1
+
+    penguin-ff (3):
+          cyrus-sasl: bump release for libressl
+          mutt: update to 1.14.1
+          cyrus-sasl: install to /usr/bin
+
+    periish (2):
+          Remove package wmutils-core, create package wmutils.
+          nss: update to 3.5.1
+
+    sdsddsd1 (2):
+          wyeb: new version at git
+          sdl2: add missing linux-headers dependency
+
+
+---
+
+Until next time,
+
+Dylan
 </pre></td></tbody></table>
