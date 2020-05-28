@@ -23,7 +23,12 @@
 |   lines of POSIX sh (excluding blank lines and        |
 |   comments).                                          |
 |                                                       |
-| * Based on musl libc, busybox and the Linux kernel.   |
+| * Based on musl libc and the Linux kernel.            |
+|                                                       |
+| * Choice! The shell, coreutils, init, device manager, |
+|   compiler, shell and * can be replaced. There's no   |
+|   lock-in to specific software (excluding musl and    |
+|   the kernel of course).                              |
 |                                                       |
 | * Every installation of the distribution contains the |
 |   full sources (of the distribution) with git history |
@@ -51,11 +56,6 @@
 |     pulseaudio, pam, wayland, logind, ConsoleKit2     |
 |     and all Desktop Environments.                     |
 |                                                       |
-|                                                       |
-| * Choice! The coreutils, init, device manager,        |
-|   compiler, shell and * can be replaced. There's no   |
-|   lock-in to specific software (excluding musl and    |
-|   the kernel of course).                              |
 |                                                       |
 | * Rootless Xorg environment without any additional    |
 |   software.                                           |
