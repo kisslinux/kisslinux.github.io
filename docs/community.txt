@@ -66,22 +66,22 @@
 |   dunst, libnotify, tiramisu and more.                      |
 |                                                             |
 |                                                             |
-| * KISS-KDE (https://github.com/dilyn-corner/KISS-kde)       |
+| * KDE (https://github.com/dilyn-corner/KISS-kde)            |
 |                                                             |
 |   A KISS repository for KDE and friends.                    |
 |                                                             |
 |                                                             |
-| * KISS-GAMES (https://github.com/sdsddsd1/kiss-games)       |
+| * GAMES (https://github.com/sdsddsd1/kiss-games)            |
 |                                                             |
 |   50+ open source games from a myriad of genres.            |
 |                                                             |
 |                                                             |
-| * KISS-LLVM (https://github.com/konimex/kiss-llvm)          |
+| * LLVM (https://github.com/konimex/kiss-llvm)               |
 |                                                             |
 |   A kiss-repo structure to build standalone LLVM.           |
 |                                                             |
 |                                                             |
-| * KISS-ZFS (https://github.com/jedavies-dev/kiss-zfs)       |
+| * ZFS (https://github.com/jedavies-dev/kiss-zfs)            |
 |                                                             |
 |   This repo contains KISS build files for ZFS on Linux.     |
 |   Package contains userland utilities and kernel modules.   |
@@ -94,24 +94,29 @@
 |   KISS goes GNU, we go the opposite.                        |
 |                                                             |
 |                                                             |
-| * KISS-FLATPAK (https://github.com/dylanaraps/kiss-flatpak) |
+| * FLATPAK (https://github.com/dylanaraps/kiss-flatpak)      |
 |                                                             |
 |   Flatpak and friends.                                      |
 |                                                             |
 |                                                             |
-| * KISS-XFCE4 (https://github.com/periish/kiss-xfce4)        |
+| * XFCE4 (https://github.com/periish/kiss-xfce4)             |
 |                                                             |
 |   XFCE4 desktop environment for KISS Linux.                 |
 |                                                             |
 |                                                             |
-| * KISS-RICING (https://github.com/periish/kiss-ricing)      |
+| * RICING (https://github.com/periish/kiss-ricing)           |
 |                                                             |
 |   Tools to help your KISS install look nice.                |
 |                                                             |
 |                                                             |
-| * KISS-FONTS (https://github.com/Himmalerin/kiss-fonts)     |
+| * FONTS (https://github.com/Himmalerin/kiss-fonts)          |
 |                                                             |
 |   Fonts packaged for KISS Linux.                            |
+|                                                             |
+|                                                             |
+| * PULSEAUDIO (https://github.com/periish/kiss-pulseaudio)   |
+|                                                             |
+|   Pulseaudio and libsndfile for KISS.                       |
 |                                                             |
 +-------------------------------------------------------------+
 
