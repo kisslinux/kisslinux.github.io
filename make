@@ -35,7 +35,7 @@ ln -sf ../package-system.html docs/package-system/index.html
             {
                 [ "${page##*/}" == index.txt ] ||
                 cat <<EOF
-<a href=/wiki>&lt;- Back to the Wiki</a>                                            <a href="https://github.com/kisslinux/wiki/edit/master/${page##*wiki/}">Edit this page -&gt;</a>
+<a href=/wiki>&lt;- Back to the Wiki</a>                                           <a href="https://github.com/kisslinux/wiki/edit/master/${page##*wiki/}">Edit this page -&gt;</a>
 
 $(git submodule foreach --quiet git log -1 --format='Edited (<a href="https://github.com/kisslinux/wiki/commit/%H">%h</a>) at %as by %an' "${page##*wiki/}")
 
