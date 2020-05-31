@@ -36,6 +36,7 @@ ln -sf ../package-system.html docs/package-system/index.html
                 [ "${page##*/}" == index.txt ] ||
                 cat <<EOF
 <a href=/wiki>&lt;- Back to the Wiki</a>
+_______________________________________________________________________________
 
 EOF
                 cat "site/$page"
