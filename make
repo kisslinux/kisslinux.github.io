@@ -35,7 +35,10 @@ ln -sf ../package-system.html docs/package-system/index.html
             {
                 [ "${page##*/}" == index.txt ] ||
                 cat <<EOF
-<a href=/wiki>&lt;- Back to the Wiki</a>  $(git log -1 --format='Edited (<a href="https://github.com/kisslinux/wiki/commit/%h">%h</a>) by %an at %as' "site/$page")
+<a href=/wiki>&lt;- Back to the Wiki</a>
+
+$(git log -1 --format='Edited (<a href="https://github.com/kisslinux/wiki/commit/%h">%h</a>) at %as by %an' "site/$page")
+
 
 EOF
                 cat "site/$page"
