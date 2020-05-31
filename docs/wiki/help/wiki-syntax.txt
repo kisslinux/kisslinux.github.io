@@ -1,0 +1,22 @@
+WIKI SYNTAX
+_______________________________________________________________________________
+
+This Wiki is generated from plain .txt files and supports some basic formatting
+options. Any formatting is simply substituted using a call to 'sed' during site
+generation.
+
+The custom syntax is designed to be unobtrusive as white-space controls layout.
+Full HTML is also supported in pages though it should only be used if really
+necessary.
+
+
+RELATIVE LINKS
+_______________________________________________________________________________
+
+Links to other wiki pages can be written in the following way:
+
+    \@/help/wiki-syntax
+
+Which is turned into:
+
+    &lt;a href="/wiki/help/wiki-syntax"&gt;wiki-syntax&lt;/a&gt;
