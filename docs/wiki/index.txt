@@ -5,7 +5,7 @@
 |                 | ' < | |\__ \__ \  \ \/\/ / | || ' < | |                   |
 |                 |_|\_\___|___/___/   \_/\_/ |___|_|\_\___|                  |
 |                                                                             |
-|          Welcome to the KISS WIKI. Documentation and information            |
+|          Welcome to the KISS WIKI. Documentation and information
 |          about KISS and Linux in general. Written by the Community.         |
 |                                                                             |
 |                                                                             |
@@ -23,9 +23,9 @@
 |                                     | |                                     |
 | THE DISTRIBUTION                    | | THE WIKI                            |
 |                                     | |                                     |
-| - @/kiss-vs-the-world               | | - @/wiki-syntax                     |
-| - TODO                              | | - @/about-this-wiki                 |
-| - TODO                              | | - @/page-template                   |
+| - @/kiss-vs-the-world               | | - @/help/wiki-syntax                |
+| - TODO                              | | - @/help/about-this-wiki            |
+| - TODO                              | | - @/help/page-template              |
 | - TODO                              | |                                     |
 |                                     | |                                     |
 +-------------------------------------+ +-------------------------------------+
