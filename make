@@ -14,6 +14,8 @@ ln -sf ../package-system.html docs/package-system/index.html
     printf '%s\n' "CC $page"
 
     case $page in
+        */.git/*) continue ;;
+
         *.txt)
             # Useless use of cat solely so that the first 'sed' doesn't exceed
             # the line limit. (/dev/null simply silences shellcheck) Fight me.
