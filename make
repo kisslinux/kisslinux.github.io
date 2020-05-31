@@ -37,7 +37,7 @@ ln -sf ../package-system.html docs/package-system/index.html
                 cat <<EOF
 <a href=/wiki>&lt;- Back to the Wiki</a>
 
-$(git log -1 --format='Edited (<a href="https://github.com/kisslinux/wiki/commit/%h">%h</a>) at %as by %an' "site/$page")
+$(git log -1 --format='Edited (<a href="https://github.com/kisslinux/wiki/commit/%H">%h</a>) at %as by %an' "site/$page")
 
 
 EOF
