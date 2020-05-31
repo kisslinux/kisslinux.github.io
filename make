@@ -44,3 +44,6 @@ ln -sf ../package-system.html docs/package-system/index.html
         ;;
     esac
 done
+
+# Ensure this never exists.
+rm -rf docs/wiki/.git
