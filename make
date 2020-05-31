@@ -42,6 +42,8 @@ EOF
                 cat "site/$page"
             } |
 
+            sed -E 's|@/([^ ]*)|<a href="/wiki/\1">\1</a>|g' |
+
             format_page > "docs/${page%%.txt}.html"
 
             # Hardlink all .txt files to the docs/ directory.
