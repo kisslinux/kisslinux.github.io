@@ -94,44 +94,44 @@
 |       Dependency | Reason for use          | Required |
 | ---------------- | ----------------------- | -------- |
 |  POSIX utilities | Used throughout         | Yes      |
-|              git | Remote repositories and | Yes [1]<a href="#[1]">[1]</a>  |
+|              git | Remote repositories and | Yes <a href="#[1]">[1]</a>  |
 |                  | package git sources     |          |
 |             curl | Source downloads        | Yes      |
 |     gpg1 or gpg2 | Repository signing      | No       |
-|        sha256sum | Checksums               | Yes [2]<a href="#[2]">[2]</a>  |
-|              tar | Sources, packages, etc  | Yes [3]<a href="#[3]">[3]</a>  |
+|        sha256sum | Checksums               | Yes <a href="#[2]">[2]</a>  |
+|              tar | Sources, packages, etc  | Yes <a href="#[3]">[3]</a>  |
 |            unzip | Zip sources (very rare) | No       |
 |                  |                         |          |
 |                  |                         |          |
 |      Compression |                         |          |
 | ---------------- | ----------------------- | -------- |
-| gzip, bzip2, xz  | Tarball compression     | Yes [4]<a href="#[4]">[4]</a>  |
+| gzip, bzip2, xz  | Tarball compression     | Yes <a href="#[4]">[4]</a>  |
 | zstd, lzma, lzip | Tarball compression     | No       |
 |                  |                         |          |
 |                  |                         |          |
 |       Privileges |                         |          |
 | ---------------- | ----------------------- | -------- |
-| su | sudo | doas | Privilege escalation    | No [5]<a href="#[5]">[5]</a>   |
+| su | sudo | doas | Privilege escalation    | No <a href="#[5]">[5]</a>   |
 |                  |                         |          |
 |                  |                         |          |
 |         Binutils |                         |          |
 | ---------------- | ----------------------- | -------- |
-|              ldd | Dependency fixer        | No [6]<a href="#[6]">[6]</a>   |
-|            strip | Binary Stripping        | No [6]<a href="#[6]">[6]</a>   |
+|              ldd | Dependency fixer        | No <a href="#[6]">[6]</a>   |
+|            strip | Binary Stripping        | No <a href="#[6]">[6]</a>   |
 |                  |                         |          |
 |                                                       |
 |                                                       |
-| [1]<a href="#[1]">[1]</a> Git is also required for contribution to the      |
+| <a href="#[1]">[1]</a> Git is also required for contribution to the      |
 |     distribution itself. Strictly speaking, nothing   |
 |     forces you to use git. Remote repositories and    |
 |     git based sources will simply become unusable.    |
 |                                                       |
-| [2]<a href="#[2]">[2]</a> There is no standard utility for the generation   |
+| <a href="#[2]">[2]</a> There is no standard utility for the generation   |
 |     of sha256 checksums. While sha256sum is listed    |
 |     above, the package manager also supports sha256,  |
 |     shasum and openssl as fallbacks.                  |
 |                                                       |
-| [3]<a href="#[3]">[3]</a> The tar command has no standard! This came as a   |
+| <a href="#[3]">[3]</a> The tar command has no standard! This came as a   |
 |     shock. The POSIX equivalent is "pax" though this  |
 |     isn't in wide use (at least on Linux).            |
 |                                                       |
@@ -147,7 +147,7 @@
 |     toybox, sbase, GNU and libarchive (though all tar |
 |     implementations should work).                     |
 |                                                       |
-| [4]<a href="#[4]">[4]</a> These three compression methods are required as   |
+| <a href="#[4]">[4]</a> These three compression methods are required as   |
 |     pretty much every package source uses them as the |
 |     tarball compression method.                       |
 |                                                       |
@@ -160,7 +160,7 @@
 |     become a 'make' dependency of the package until   |
 |     usage increases to a "normality".                 |
 |                                                       |
-| [5]<a href="#[5]">[5]</a> A privilege escalation utility is only needed     |
+| <a href="#[5]">[5]</a> A privilege escalation utility is only needed     |
 |     when using the package manager as a normal user   |
 |     for system-wide package installation.             |
 |                                                       |
@@ -170,7 +170,7 @@
 |     Root usage of the package manager (chroot usage   |
 |     for example) does not require these utilities.    |
 |                                                       |
-| [6]<a href="#[6]">[6]</a> If these are missing, binary stripping and/or     |
+| <a href="#[6]">[6]</a> If these are missing, binary stripping and/or     |
 |     the dependency fixer will simply be disabled.     |
 |                                                       |
 |     Regarding 'strip'; It has a POSIX specification,  |
