@@ -47,6 +47,13 @@ wiki_nav() {
     # edit page link. Wiki page length is always 80 columns.
     nav="$nav$(printf '%*s' "$((80 - ${#nar} - 14))" "")"
     nav="$nav<a href='$wiki_url/edit/master/${page##*wiki/}'>Edit this page</a>"
+
+    # Add the last edited information below.
+    nav="$nav
+
+$(git submodule foreach --quiet git log -1 \
+    --format="Edited (<a href=\"$wiki_url/commit/%H\">%h</a>) at %as by %an" \
+    "${page##*wiki/}")"
 }
 
 page() {
@@ -59,19 +66,14 @@ page() {
             txt2html < "site/$page" > "docs/${page%%.txt}.html"
         ;;
 
-        # Messy, but what can you do?
         */wiki/*.txt)
             wiki_nav
 
-            cat - "site/$page" <<EOF | txt2html > "docs/${page%%.txt}.html"
-$nav
-
-$(git submodule foreach --quiet git log -1 \
-    --format="Edited (<a href=\"$wiki_url/commit/%H\">%h</a>) at %as by %an" \
-    "${page##*wiki/}")
+            cat - "site/$page" <<-EOF | txt2html > "docs/${page%%.txt}.html"
+				$nav
 
 
-EOF
+			EOF
         ;;
 
         # Generate HTML from txt files.
