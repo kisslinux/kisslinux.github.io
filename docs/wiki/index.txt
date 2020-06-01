@@ -24,7 +24,7 @@
 |                                     |  |                                     |
 | THE DISTRIBUTION                    |  | THE WIKI                            |
 |                                     |  |                                     |
-| - @/kiss-vs-the-world               |  | - @/help/about-this-wiki            |
+| - @/kiss/kiss-vs-the-world          |  | - @/help/about-this-wiki            |
 | - TODO                              |  | - @/help/page-template              |
 | - TODO                              |  |                                     |
 | - TODO                              |  |                                     |

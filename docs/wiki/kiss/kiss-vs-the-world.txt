@@ -1,0 +1,13 @@
+KISS VS THE WORLD
+________________________________________________________________________________
+
+How does KISS compare to other Linux distributions? A fairly common question by
+those coming across KISS in their travels. To answer this questions we must dig
+a little below the surface.
+
+
+References
+________________________________________________________________________________
+
+[0]
+
