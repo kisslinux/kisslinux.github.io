@@ -34,6 +34,18 @@ Which is turned into:
     &lt;a href="/wiki/help/wiki-syntax"&gt;wiki-syntax&lt;/a&gt;
 
 
+REFERENCE LINKS
+________________________________________________________________________________
+
+Adding [0] to some text will create an anchor link to a corresponding reference.
+This corresponding reference must also be created by the writer of the document.
+The build system will merely link them together for you. [1]
+
+[0] Clicking the above reference will scroll the page to these anchor links.
+
+[1] Links such as this one must start a column zero.
+
+
 LINKS TO GITHUB
 ________________________________________________________________________________
 
