@@ -30,11 +30,15 @@ txt2html() {
 }
 
 wiki_nav() {
+    # Generate the navigation bar and edit information for each Wiki page.
+
     # Split the path on '/'.
     # shellcheck disable=2086
-    set -f; IFS=/
-    set +f ${page##./}
-    unset IFS
+    {
+        set -f; IFS=/
+        set +f ${page##./}
+        unset IFS
+    }
 
     # '$nar' contains the generated nav without HTML additions for use in
     # length calculations below.
@@ -53,7 +57,9 @@ wiki_nav() {
 
 $(git submodule foreach --quiet git log -1 \
     --format="Edited (<a href=\"$wiki_url/commit/%H\">%h</a>) at %as by %an" \
-    "${page##*wiki/}")"
+    "${page##*wiki/}")
+
+"
 }
 
 page() {
@@ -71,8 +77,6 @@ page() {
 
             cat - "site/$page" <<-EOF | txt2html > "docs/${page%%.txt}.html"
 				$nav
-
-
 			EOF
         ;;
 
