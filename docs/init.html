@@ -59,7 +59,7 @@
 | Boot process in order:                                |
 | - Mount pseudo-filesystems (/dev, /proc, etc).        |
 | - Load /etc/rc.conf (configuration file).             |
-| - Start a device manager (udev, mdev, etc)<a href="#[1]">[1]</a>.       |
+| - Start a device manager (udev, mdev, etc) [1]<a href="#[1]">[1]</a>.       |
 | - Remount rootfs read-only.                           |
 | - Run fsck on all local filesystems.                  |
 | - Remount rootfs read-write.                          |
@@ -69,17 +69,17 @@
 | - Bring up the loopback device.                       |
 | - Set the hostname.                                   |
 | - Load all sysctl settings.                           |
-| - Kill the device manager.<a href="#[2]">[2]</a>                        |
+| - Kill the device manager. [2]<a href="#[2]">[2]</a>                        |
 | - Run all boot hooks.                                 |
 |                                                       |
-|<a href="#[1]">[1]</a> Only udev and mdev are currently supported as     |
+| [1]<a href="#[1]">[1]</a> Only udev and mdev are currently supported as     |
 |     each device manager must be manually added to the |
 |     rc.boot file.                                     |
 |                                                       |
 |     There hasn't yet been an interest in supporting   |
 |     others yet. Contributions are welcome!            |
 |                                                       |
-|<a href="#[2]">[2]</a> The device manager is killed so that the service  |
+| [2]<a href="#[2]">[2]</a> The device manager is killed so that the service  |
 |     manager can take over. It's needed early on in    |
 |     the boot process and prior to when services are   |
 |     started.                                          |
@@ -101,9 +101,9 @@
 | - Remount the rootfs read-only.                       |
 | - Sync the disks.                                     |
 | - Run all post-shutdown hooks.                        |
-| - Run kpow to shutdown/reboot.<a href="#[1]">[1]</a>                    |
+| - Run kpow to shutdown/reboot. [1]<a href="#[1]">[1]</a>                    |
 |                                                       |
-|<a href="#[1]">[1]</a> 'kpow' is a tiny C utility to tell the kernel to  |
+| [1]<a href="#[1]">[1]</a> 'kpow' is a tiny C utility to tell the kernel to  |
 |     shutdown or reboot the machine. This is an "init  |
 |     agnostic" method of shutting down the machine.    |
 |                                                       |
