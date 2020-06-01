@@ -1,6 +1,3 @@
-HELP
+ADDING A PAGE
 ________________________________________________________________________________
 
-- @/about-this-wiki
-- @/adding-a-page
-- @/page-template
