@@ -1,5 +1,5 @@
 WIKI SYNTAX
-_______________________________________________________________________________
+-_______________________________________________________________________________
 
 This Wiki is generated from plain .txt files and supports some basic formatting
 options. Any formatting is simply substituted using a call to 'sed' during site
@@ -11,7 +11,7 @@ necessary.
 
 
 RELATIVE LINKS
-_______________________________________________________________________________
+-_______________________________________________________________________________
 
 Links to other wiki pages can be written in the following way:
 
@@ -23,3 +23,16 @@ Which is turned into:
     # The two characters taken up by the '@' and '/' are also taken into
     # account (two spaces inserted post-link).
     &lt;a href="/wiki/help/wiki-syntax"&gt;wiki-syntax&lt;/a&gt;
+
+
+
+HTML
+-_______________________________________________________________________________
+
+Writing HTML directly is also supported as these .txt files will be inserted
+into a HTML template during the build process. Usage of HTML should be avoided
+as it makes the plain text files themselves less readable.
+
+When writing the greater-than or less-than characters, use the HTML entities in
+place of
+

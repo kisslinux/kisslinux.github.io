@@ -40,11 +40,11 @@
 <td><pre style='margin-left:1ch'>
 <a href=/wiki>&lt;- Back to the Wiki</a>                                           <a href="https://github.com/kisslinux/wiki/edit/master/help/wiki-syntax.txt">Edit this page -&gt;</a>
 
-Edited (<a href="https://github.com/kisslinux/wiki/commit/e06b364982bbff621f60f7416dae6392e8f59e01">e06b364</a>) at 2020-05-31 by Dylan Araps
+Edited (<a href="https://github.com/kisslinux/wiki/commit/2066c2b1156a3436337eaf77e43a2f213dd3f605">2066c2b</a>) at 2020-06-01 by Dylan Araps
 
 
 WIKI SYNTAX
-_______________________________________________________________________________
+-_______________________________________________________________________________
 
 This Wiki is generated from plain .txt files and supports some basic formatting
 options. Any formatting is simply substituted using a call to 'sed' during site
@@ -56,7 +56,7 @@ necessary.
 
 
 RELATIVE LINKS
-_______________________________________________________________________________
+-_______________________________________________________________________________
 
 Links to other wiki pages can be written in the following way:
 
@@ -68,4 +68,17 @@ Which is turned into:
     # The two characters taken up by the '@' and '/' are also taken into
     # account (two spaces inserted post-link).
     &lt;a href="/wiki/help/wiki-syntax"&gt;wiki-syntax&lt;/a&gt;
+
+
+
+HTML
+-_______________________________________________________________________________
+
+Writing HTML directly is also supported as these .txt files will be inserted
+into a HTML template during the build process. Usage of HTML should be avoided
+as it makes the plain text files themselves less readable.
+
+When writing the greater-than or less-than characters, use the HTML entities in
+place of
+
 </pre></td></tbody></table>
