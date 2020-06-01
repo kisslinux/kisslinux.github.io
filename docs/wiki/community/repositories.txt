@@ -6,76 +6,100 @@ These repositories are treated no different to the official repositories by the
 package manager and are treated as first-class citizens.
 
 
-MYWAYLAND ($/sdsddsd1/mywayland)
+MYWAYLAND
 ________________________________________________________________________________
 
 Wayland and friends.
 
+Source: ($/sdsddsd1/mywayland)
 
-KISS-DBUS ($/periish/kiss-dbus)
+
+DBUS
 ________________________________________________________________________________
 
-DBus and software that depends on it. Includes Bluez, dunst, libnotify,
-tiramisu and more.
+DBus and software that depends on it. Includes Bluez, dunst, libnotify, tiramisu
+and more.
+
+Source: $/periish/kiss-dbus
 
 
-KDE ($/dilyn-corner/KISS-kde)
+KDE
 ________________________________________________________________________________
 
 A KISS repository for KDE and friends.
 
+Source: $/dilyn-corner/KISS-kde
 
-GAMES ($/sdsddsd1/kiss-games)
+
+GAMES
 ________________________________________________________________________________
 
 50+ open source games from a myriad of genres.
 
+Source: $/sdsddsd1/kiss-games
 
-LLVM ($/konimex/kiss-llvm)
+
+LLVM
 ________________________________________________________________________________
 
 A kiss-repo structure to build standalone LLVM.
 
+Source: $/konimex/kiss-llvm
 
-ZFS ($/jedavies-dev/kiss-zfs)
+
+ZFS
 ________________________________________________________________________________
 
 This repo contains KISS build files for ZFS on Linux. Package contains userland
 utilities and kernel modules. It also contains the ZFS event daemon (zed).
 
+Source: $/jedavies-dev/kiss-zfs
 
-WYVERKISS ($/wyvertux/wyverkiss)
+
+WYVERKISS
 ________________________________________________________________________________
 
 Wyverkiss is an alternative rootfs for KISS Linux. If KISS goes GNU, we go the
 opposite.
 
+Source: $/wyvertux/wyverkiss
 
-FLATPAK ($/dylanaraps/kiss-flatpak)
+
+FLATPAK
 ________________________________________________________________________________
 
 Flatpak and friends.
 
+Source: $/dylanaraps/kiss-flatpak
 
-XFCE4 ($/periish/kiss-xfce4)
+
+XFCE4
 ________________________________________________________________________________
 
 XFCE4 desktop environment for KISS Linux.
 
+Source: $/periish/kiss-xfce4
 
-RICING ($/periish/kiss-ricing)
+
+RICING
 ________________________________________________________________________________
 
 Tools to help your KISS install look nice.
 
+Source: $/periish/kiss-ricing
 
-FONTS ($/Himmalerin/kiss-fonts)
+
+FONTS
 ________________________________________________________________________________
 
 Fonts packaged for KISS Linux.
 
+Source: $/Himmalerin/kiss-fonts
 
-PULSEAUDIO ($/periish/kiss-pulseaudio)
+
+PULSEAUDIO
 ________________________________________________________________________________
 
 Pulseaudio and libsndfile for KISS.
+
+Source: $/periish/kiss-pulseaudio

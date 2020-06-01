@@ -14,7 +14,7 @@ GNU utilities (if it's even possible) from the Linux build system.
 Source: $/wyvertux/wyvertux
 
 
-CARBS LINUX ()
+CARBS LINUX
 ________________________________________________________________________________
 
 Carbs Linux is an in-development Linux® distribution with a suckless mindset.
