@@ -1,5 +1,5 @@
 WIKI SYNTAX
--_______________________________________________________________________________
+________________________________________________________________________________
 
 This Wiki is generated from plain .txt files and supports some basic formatting
 options. Any formatting is simply substituted using a call to 'sed' during site
@@ -11,7 +11,7 @@ necessary.
 
 
 RELATIVE LINKS
--_______________________________________________________________________________
+________________________________________________________________________________
 
 Links to other wiki pages can be written in the following way:
 
@@ -27,7 +27,7 @@ Which is turned into:
 
 
 HTML
--_______________________________________________________________________________
+________________________________________________________________________________
 
 Writing HTML directly is also supported as these .txt files will be inserted
 into a HTML template during the build process. Usage of HTML should be avoided
