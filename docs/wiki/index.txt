@@ -24,10 +24,10 @@
 |                                     |  |                                     |
 | THE DISTRIBUTION                    |  | THE WIKI                            |
 |                                     |  |                                     |
-| - @/kiss/kiss-vs-the-world          |  | - @/help/about-this-wiki            |
-| - TODO                              |  | - @/help/adding-a-page              |
-| - TODO                              |  | - @/help/page-template              |
-| - TODO                              |  |                                     |
+| @/kiss/kiss-vs-the-world            |  | @/help/about-this-wiki              |
+| TODO                                |  | @/help/adding-a-page                |
+| TODO                                |  | @/help/page-template                |
+| TODO                                |  |                                     |
 |                                     |  |                                     |
 +-------------------------------------+  +-------------------------------------+
 
@@ -45,9 +45,9 @@
 |                                     |  |                                     |
 | XORG                                |  | WAYLAND                             |
 |                                     |  |                                     |
-| - TODO                              |  | - TODO                              |
-| - TODO                              |  | - TODO                              |
-| - TODO                              |  | - TODO                              |
-| - TODO                              |  |                                     |
+| TODO                                |  | TODO                                |
+| TODO                                |  | TODO                                |
+| TODO                                |  | TODO                                |
+| TODO                                |  |                                     |
 |                                     |  |                                     |
 +-------------------------------------+  +-------------------------------------+
