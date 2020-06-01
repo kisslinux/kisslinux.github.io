@@ -8,7 +8,7 @@
 |   - IRC:    #kisslinux at https://freenode.net        |
 |   - Reddit: https://reddit.com/r/kisslinux            |
 |   - Email:  dylan@k1ss.org                            |
-|   - GitHub: https://github.com/kisslinux              |
+|   - GitHub: $/kisslinux                               |
 |                                                       |
 |                                                       |
 +-------------------------------------------------------+

@@ -14,12 +14,12 @@
 
 
 aarch64:
- - https://github.com/jedavies-dev/kiss-aarch64
+ - $/jedavies-dev/kiss-aarch64
 
 ppc64le:
- - https://github.com/jedavies-dev/kiss-ppc64le
+ - $/jedavies-dev/kiss-ppc64le
 
 i686:
- - https://github.com/arvl130/kiss32-repo        (musl)
- - https://github.com/arvl130/kiss32-uclibc-repo (uclibc)
- - https://github.com/arvl130/kiss32-glibc-repo  (glibc)
+ - $/arvl130/kiss32-repo        (musl)
+ - $/arvl130/kiss32-uclibc-repo (uclibc)
+ - $/arvl130/kiss32-glibc-repo  (glibc)

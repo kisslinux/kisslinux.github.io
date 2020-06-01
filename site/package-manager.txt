@@ -14,7 +14,7 @@
 |   the package format, its requirements and some sugar |
 |   on top.                                             |
 |                                                       |
-| * Source: https://github.com/kisslinux/kiss           |
+| * Source: $/kisslinux/kiss                            |
 |                                                       |
 +-------------------------------------------------------+
 
