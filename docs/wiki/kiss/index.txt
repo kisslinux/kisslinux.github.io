@@ -1,5 +1,5 @@
 kiss
 ________________________________________________________________________________
 
-- @/kiss/index.txt
-- @/kiss/kiss-vs-the-world.txt
+- @/index.txt
+- @/kiss-vs-the-world.txt
