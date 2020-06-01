@@ -46,10 +46,10 @@ page() {
                 nav="<a href=\"/$1\">$1</a>" nar=$1
 
                 [ "$2" ] &&
-                    nav="$nav / <a href=\"/$1/$2\">$2</a>" nar=$nar/$2
+                    nav="$nav / <a href=\"/$1/$2\">$2</a>" nar="$nar / $2"
 
                 [ "${3#index.txt}" ] &&
-                    nav="$nav / ${3%%.txt}" nar=$nar/${3%%.txt}
+                    nav="$nav / ${3%%.txt}" nar="$nar / ${3%%.txt}"
 
                 unset IFS
             }
