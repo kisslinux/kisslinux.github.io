@@ -46,9 +46,9 @@
 |                                     |  |                                     |
 | XORG                                |  | WAYLAND                             |
 |                                     |  |                                     |
-| - @/you-dont-need-xinit             |  | - @/swapping-to-wayland             |
-| - TODO                              |  | - @/wayland-software                |
-| - TODO                              |  | - @/firefox-hw-accel                |
+| - TODO                              |  | - TODO                              |
+| - TODO                              |  | - TODO                              |
+| - TODO                              |  | - TODO                              |
 | - TODO                              |  |                                     |
 |                                     |  |                                     |
 +-------------------------------------+  +-------------------------------------+
