@@ -4,7 +4,7 @@
 |                                                       |
 | * RSS Feed available here:                            |
 |                                                       |
-|   - https://k1ss.org/blog/blog.xml                    |
+|   - @/blog/blog.xml                                   |
 |                                                       |
 |                                                       |
 +-------------------------------------------------------+

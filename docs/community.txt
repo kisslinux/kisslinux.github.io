@@ -17,7 +17,7 @@
 |          PORTS OF KISS TO DIFFERENT ARCHITECTURES           |
 |                                                             |
 | * Members of the community have ported KISS to a myriad of  |
-|   architectures. See https://k1ss.org/ports                 |
+|   architectures. See @/ports                                |
 |                                                             |
 +-------------------------------------------------------------+
 

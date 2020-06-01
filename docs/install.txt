@@ -365,10 +365,8 @@ $   kiss i dhcpcd                                               |
 |   with [*] (Yes) and not [m] (Module).                        |
 |                                                               |
 | * NOTE: A patch may be required for some kernels when built   |
-|         with GCC 10.1.0. Please read the link below (and the  |
-|         patch itself for more information).                   |
-|                                                               |
-|         https://k1ss.org/news/20200509a                       |
+|         with GCC 10.1.0. Please read the link (and the patch  |
+|         itself for more information). @/news/20200509a        |
 |                                                               |
 |                                                               |
 |   INSTALL REQUIRED PACKAGES                                   |
@@ -395,7 +393,7 @@ $   kiss i perl                                                 |
 |   the kernel sources. The patch replaces the perl script with |
 |   an implementation in POSIX shell (Thanks @E5ten).           |
 |                                                               |
-|   Apply: https://k1ss.org/dist/kernel-no-perl.patch           |
+|   Apply: @/dist/kernel-no-perl.patch                          |
 |                                                               |
 |                                                               |
 |   DOWNLOAD THE KERNEL SOURCES                                 |
@@ -631,7 +629,7 @@ $   addgroup USERNAME audio                                     |
 |   an issue on one of our GitHub repositories, post on         |
 |   https://reddit.com/r/kisslinux or join the IRC server.      |
 |                                                               |
-|   See: https://k1ss.org/contact                               |
+|   See: @/contact                                              |
 |                                                               |
 |                                                               |
 +---------------------------------------------------------------+
