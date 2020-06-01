@@ -25,7 +25,7 @@
 | THE DISTRIBUTION                    |  | THE WIKI                            |
 |                                     |  |                                     |
 | - @/kiss/kiss-vs-the-world          |  | - @/help/about-this-wiki            |
-| - TODO                              |  | - @/help/page-template              |
+| - @/kiss/faq                        |  | - @/help/page-template              |
 | - TODO                              |  |                                     |
 | - TODO                              |  |                                     |
 |                                     |  |                                     |
@@ -33,10 +33,10 @@
 
 +------------------------------------------------------------------------------+
 |                                                                              |
-| POST INSTALLATION                                                            |
+| THE KERNEL                                                                   |
 |                                                                              |
 | - TODO                                   - TODO                              |
-| - TODO                                   - TODO                              |
+| - @/kernel/faq                           - TODO                              |
 | - TODO                                   - TODO                              |
 | - TODO                                   - TODO                              |
 |                                                                              |
