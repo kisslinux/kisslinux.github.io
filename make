@@ -43,8 +43,8 @@ page() {
                 set -f; IFS=/
                 set +f ${page##./}
                 nav="/ <a href=\"/$1\">$1</a>"
-                [ "$2" ] && nav=" / $nav<a href=\"/$1/$2\">$2</a>"
-                [ "$3" ] && nav=" / $nav<a href=\"/$1/$2/$3\">$3</a>"
+                [ "$2" ] && nav="$nav / <a href=\"/$1/$2\">$2</a>"
+                [ "$3" ] && nav="$nav / <a href=\"/$1/$2/$3\">$3</a>"
                 unset IFS
             }
 
