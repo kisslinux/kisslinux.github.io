@@ -38,8 +38,18 @@ page() {
 
         # Messy, but what can you do?
         */wiki/*.txt)
+            # shellcheck disable=2086
+            {
+                set -f; IFS=/
+                set +f ${page##./}
+                nav="/ <a href=\"/$1\">$1</a> / "
+                [ "$2" ] && nav="$nav <a href=\"/$1/$2\">$2</a> / "
+                [ "$3" ] && nav="$nav <a href=\"/$1/$2/$3\">$3</a>"
+                unset IFS
+            }
+
             cat - "site/$page" <<EOF | txt2html > "docs/${page%%.txt}.html"
-<a href=/wiki>&lt;- Back to the Wiki</a>                                               <a href="$wiki_url/edit/master/${page##*wiki/}">Edit this page</a>
+$nav                                               <a href="$wiki_url/edit/master/${page##*wiki/}">Edit this page</a>
 
 $(git submodule foreach --quiet git log -1 \
     --format="Edited (<a href=\"$wiki_url/commit/%H\">%h</a>) at %as by %an" \
@@ -69,6 +79,7 @@ EOF
 main() {
     wiki_url=https://github.com/kisslinux/wiki
 
+    # Generate index pages for the Wiki.
     (cd site && find wiki -type d) | while read -r page; do
         case $page in
             wiki/*)
