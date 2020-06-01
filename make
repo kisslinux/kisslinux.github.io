@@ -102,14 +102,10 @@ main() {
 
     # Generate index pages for the Wiki.
     (cd site && find wiki -type d) | while read -r page; do
-        case $page in
-            wiki/*)
-                printf '%s\n________________________________________________________________________________\n\n' "${page##*/}" > "site/$page/index.txt"
-
-                for p in "site/$page/"*.txt; do p=${p##site/wiki/*/}
-                    [ "${p##*/}" = index.txt ] || printf '%s\n' "- @/${p%%.txt}"
-                done >> "site/$page/index.txt"
-            ;;
+        case $page in wiki/*)
+            for p in "site/$page/"*.txt; do p=${p##site/wiki/*/}
+                [ "${p##*/}" = index.txt ] || printf '%s\n' "- @/${p%%.txt}"
+            done >> "site/$page/index.txt"
         esac
     done
 
