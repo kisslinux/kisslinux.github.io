@@ -1,0 +1,31 @@
+COMMUNITY PROJECTS
+________________________________________________________________________________
+
+Software created by users of KISS, many of which are portable to multiple
+distributions.
+
+
+TINYRAMFS ($/illiliti/tinyramfs)
+________________________________________________________________________________
+
+A tiny initramfs generator written in POSIX shell with support for LUKS, LVM,
+mdev, mdevd, udev, etc.
+
+
+SYSMGR ($/cemkeylan/sysmgr)
+________________________________________________________________________________
+
+A simplistic system-supervisor.
+
+
+SHINIT ($/cemkeylan/shinit)
+________________________________________________________________________________
+
+Basic init daemon in POSIX sh with only 5 lines of code. It supports acting upon
+signals.                          |
+
+
+TUITUBE ($/djt3/tuitube/)
+________________________________________________________________________________
+
+A minimal tui youtube (invidious) frontend made in c++.

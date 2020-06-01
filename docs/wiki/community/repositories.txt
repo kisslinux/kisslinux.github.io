@@ -1,0 +1,81 @@
+COMMUNITY REPOSITORIES
+________________________________________________________________________________
+
+Software repositories created and maintained by members of the KISS Community.
+These repositories are treated no different to the official repositories by the
+package manager and are treated as first-class citizens.
+
+
+MYWAYLAND ($/sdsddsd1/mywayland)
+________________________________________________________________________________
+
+Wayland and friends.
+
+
+KISS-DBUS ($/periish/kiss-dbus)
+________________________________________________________________________________
+
+DBus and software that depends on it. Includes Bluez, dunst, libnotify,
+tiramisu and more.
+
+
+KDE ($/dilyn-corner/KISS-kde)
+________________________________________________________________________________
+
+A KISS repository for KDE and friends.
+
+
+GAMES ($/sdsddsd1/kiss-games)
+________________________________________________________________________________
+
+50+ open source games from a myriad of genres.
+
+
+LLVM ($/konimex/kiss-llvm)
+________________________________________________________________________________
+
+A kiss-repo structure to build standalone LLVM.
+
+
+ZFS ($/jedavies-dev/kiss-zfs)
+________________________________________________________________________________
+
+This repo contains KISS build files for ZFS on Linux. Package contains userland
+utilities and kernel modules. It also contains the ZFS event daemon (zed).
+
+
+WYVERKISS ($/wyvertux/wyverkiss)
+________________________________________________________________________________
+
+Wyverkiss is an alternative rootfs for KISS Linux. If KISS goes GNU, we go the
+opposite.
+
+
+FLATPAK ($/dylanaraps/kiss-flatpak)
+________________________________________________________________________________
+
+Flatpak and friends.
+
+
+XFCE4 ($/periish/kiss-xfce4)
+________________________________________________________________________________
+
+XFCE4 desktop environment for KISS Linux.
+
+
+RICING ($/periish/kiss-ricing)
+________________________________________________________________________________
+
+Tools to help your KISS install look nice.
+
+
+FONTS ($/Himmalerin/kiss-fonts)
+________________________________________________________________________________
+
+Fonts packaged for KISS Linux.
+
+
+PULSEAUDIO ($/periish/kiss-pulseaudio)
+________________________________________________________________________________
+
+Pulseaudio and libsndfile for KISS.
