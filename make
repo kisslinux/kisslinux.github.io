@@ -65,6 +65,7 @@ page() {
 
             cat - "site/$page" <<EOF | txt2html > "docs/${page%%.txt}.html"
 $nav
+
 $(git submodule foreach --quiet git log -1 \
     --format="Edited (<a href=\"$wiki_url/commit/%H\">%h</a>) at %as by %an" \
     "${page##*wiki/}")
