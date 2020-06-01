@@ -194,8 +194,8 @@ ________________________________________________________________________________
 
 * Other device managers
 
-  Open an issue in https://github.com/kisslinux/init as the init
-  scripts will need support for other device managers.
+  Open an issue in $/kisslinux/init as the init scripts will need support for
+  other device managers.
 
 
 REBOOT

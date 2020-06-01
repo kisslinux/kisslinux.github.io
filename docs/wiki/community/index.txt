@@ -1,4 +1,6 @@
-DEVICE MANAGERS
+THE COMMUNITY
 ________________________________________________________________________________
 
-- @/replacing-udev
+- @/repositories
+- @/projects
+- @/ports
