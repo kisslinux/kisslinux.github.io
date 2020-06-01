@@ -12,6 +12,10 @@ txt2html() {
     sed -E "s|[^\\]@/([^ ]*)| <a href=\"${page_parent##.}/\1\">\1</a>  |g" |
     sed -E "s|[^\\]\\$/([^ ]*)| <a href=\"https://github.com/\1\">\1</a>  |g" |
 
+    # Convert [0] into HTML links.
+    sed -E "s|.(\[[0-9]*\])|<a href=\"#\1\">\1</a>|g" |
+    sed -E "s|^\[[0-9]*\]|<span id=\"\0\">\0</span>|g" |
+
     # Insert the page into the template.
     sed -E '/%%CONTENT%%/r /dev/stdin' template.html |
 
