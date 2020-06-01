@@ -69,10 +69,25 @@ EOF
 main() {
     wiki_url=https://github.com/kisslinux/wiki
 
+    (cd site && find wiki -type d) | while read -r page; do
+        case $page in
+            wiki/*)
+                printf '%s\n________________________________________________________________________________\n\n' "${page##*/}" > "site/$page/index.txt"
+
+                for p in "site/$page/"*.txt; do
+                    printf '%s\n' "- @/${p##site/wiki/}"
+                done >> "site/$page/index.txt"
+            ;;
+        esac
+    done
+
     (cd site && find . -type f) | while read -r page; do
         printf '%s\n' "CC $page"
         page "$page"
     done
+
+    # Let's not dirty the submodule.
+    rm -f site/wiki/*/index.txt
 }
 
 main "$@"

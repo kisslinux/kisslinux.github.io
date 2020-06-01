@@ -1,0 +1,6 @@
+help
+________________________________________________________________________________
+
+- @/help/about-this-wiki.txt
+- @/help/index.txt
+- @/help/page-template.txt
