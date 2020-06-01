@@ -6,7 +6,7 @@ txt2html() {
     # Convert all plain-text links to HTML links (<a href="X">X</a>).
     sed -E "s|([^=][^\'\"])(https[:]//[^ )]*)|\1<a href='\2'>\2</a>|g" |
     sed -E "s|^(https[:]//[^ )]{50})([^ )]*)|<a href='\0'>\1</a>|g" |
-    sed -E 's|[^\\]@/([^ ]*)| <a href="/wiki/\1">\1</a>  |g' |
+    sed -E "s|[^\\]@/([^ ]*)| <a href=\"${page_parent##.}/\1\">\1</a>  |g" |
 
     # Insert the page into the template.
     sed -E '/%%CONTENT%%/r /dev/stdin' template.html |
@@ -19,7 +19,8 @@ txt2html() {
 }
 
 page() {
-    mkdir -p "docs/${page%/*}"
+    page_parent=${page%/*}
+    mkdir -p "docs/$page_parent"
 
     case $page in
         # Generate HTML from Wiki pages.
