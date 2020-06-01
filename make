@@ -85,8 +85,8 @@ main() {
             wiki/*)
                 printf '%s\n________________________________________________________________________________\n\n' "${page##*/}" > "site/$page/index.txt"
 
-                for p in "site/$page/"*.txt; do
-                    printf '%s\n' "- @/${p##site/wiki/*/}"
+                for p in "site/$page/"*.txt; do p=${p##site/wiki/*/}
+                    printf '%s\n' "- @/${p%%.txt}"
                 done >> "site/$page/index.txt"
             ;;
         esac
