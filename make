@@ -42,14 +42,20 @@ page() {
             {
                 set -f; IFS=/
                 set +f ${page##./}
-                nav="<a href=\"/$1\">$1</a>"
-                [ "$2" ] && nav="$nav/<a href=\"/$1/$2\">$2</a>"
-                [ "${3#index.txt}" ] && nav="$nav/${3%%.txt}"
+
+                nav="<a href=\"/$1\">$1</a>" nar=$1
+
+                [ "$2" ] &&
+                    nav="$nav / <a href=\"/$1/$2\">$2</a>" nar=$nar/$2
+
+                [ "${3#index.txt}" ] &&
+                    nav="$nav / ${3%%.txt}" nar=$nar/${3%%.txt}
+
                 unset IFS
             }
 
             cat - "site/$page" <<EOF | txt2html > "docs/${page%%.txt}.html"
-$nav                                               <a href="$wiki_url/edit/master/${page##*wiki/}">Edit this page</a>
+$nav$(printf '%*s' "$((80 - ${#nar} - 14))" "")<a href="$wiki_url/edit/master/${page##*wiki/}">Edit this page</a>
 
 $(git submodule foreach --quiet git log -1 \
     --format="Edited (<a href=\"$wiki_url/commit/%H\">%h</a>) at %as by %an" \
@@ -86,7 +92,7 @@ main() {
                 printf '%s\n________________________________________________________________________________\n\n' "${page##*/}" > "site/$page/index.txt"
 
                 for p in "site/$page/"*.txt; do p=${p##site/wiki/*/}
-                    printf '%s\n' "- @/${p%%.txt}"
+                    [ "${p##*/}" = index.txt ] || printf '%s\n' "- @/${p%%.txt}"
                 done >> "site/$page/index.txt"
             ;;
         esac
