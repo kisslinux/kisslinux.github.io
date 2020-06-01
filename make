@@ -2,10 +2,11 @@
 #
 # Simple static site builder.
 
-format_page() {
+txt2html() {
     # Convert all plain-text links to HTML links (<a href="X">X</a>).
     sed -E "s|([^=][^\'\"])(https[:]//[^ )]*)|\1<a href='\2'>\2</a>|g" |
     sed -E "s|^(https[:]//[^ )]{50})([^ )]*)|<a href='\0'>\1</a>|g" |
+    sed -E 's|[^\\]@/([^ ]*)| <a href="/wiki/\1">\1</a>  |g' |
 
     # Insert the page into the template.
     sed -E '/%%CONTENT%%/r /dev/stdin' template.html |
@@ -17,58 +18,52 @@ format_page() {
     sed -E "s	%%SOURCE%%	${page##.}	"
 }
 
-mkdir -p docs/package-system
-
-# Workaround for broken repology link.
-ln -sf ../package-system.html docs/package-system/index.html
-
-# Iterate over each file in the source tree under /site/.
-(cd site && find . -type f) | while read -r page; do
+page() {
     mkdir -p "docs/${page%/*}"
 
-    printf '%s\n' "CC $page"
-
     case $page in
-        */.git/*) continue ;;
+        # Generate HTML from Wiki pages.
+        */wiki/index.txt)
+            txt2html < "site/$page" > "docs/${page%%.txt}.html"
+        ;;
 
+        # Messy, but what can you do?
         */wiki/*.txt)
-            {
-                [ "${page##*/}" == index.txt ] ||
-                cat <<EOF
-<a href=/wiki>&lt;- Back to the Wiki</a>                                           <a href="https://github.com/kisslinux/wiki/edit/master/${page##*wiki/}">Edit this page -&gt;</a>
+            cat - "site/$page" <<EOF | txt2html > "docs/${page%%.txt}.html"
+<a href=/wiki>&lt;- Back to the Wiki</a>                                           <a href="$wiki_url/edit/master/${page##*wiki/}">Edit this page -&gt;</a>
 
-$(git submodule foreach --quiet git log -1 --format='Edited (<a href="https://github.com/kisslinux/wiki/commit/%H">%h</a>) at %as by %an' "${page##*wiki/}")
+$(git submodule foreach --quiet git log -1 \
+    --format="Edited (<a href=\"$wiki_url/commit/%H\">%h</a>) at %as by %an" \
+    "${page##*wiki/}")
 
 
 EOF
-                cat "site/$page"
-            } |
-
-            sed -E 's|[^\\]@/([^ ]*)| <a href="/wiki/\1">\1</a>  |g' |
-
-            format_page > "docs/${page%%.txt}.html"
-
-            # Hardlink all .txt files to the docs/ directory.
-            ln -f "site/$page" "docs/$page"
         ;;
 
+        # Generate HTML from txt files.
         *.txt)
-            # Useless use of cat solely so that the first 'sed' doesn't exceed
-            # the line limit. (/dev/null simply silences shellcheck) Fight me.
-            cat "site/$page" /dev/null |
-
-            format_page > "docs/${page%%.txt}.html"
-
-            # Hardlink all .txt files to the docs/ directory.
-            ln -f "site/$page" "docs/$page"
+            txt2html < "site/$page" > "docs/${page%%.txt}.html"
         ;;
 
-        # Copy over any images or non-txt files.
+        # Copy over any non-txt files.
         *)
             cp -f "site/$page" "docs/$page"
         ;;
     esac
-done
 
-# Ensure this never exists.
-rm -rf docs/wiki/.git
+    case $page in
+        # Hardlink all .txt files to the docs/ directory.
+        *.txt) ln -f "site/$page" "docs/$page" ;;
+    esac
+}
+
+main() {
+    wiki_url=https://github.com/kisslinux/wiki
+
+    (cd site && find . -type f) | while read -r page; do
+        printf '%s\n' "CC $page"
+        page "$page"
+    done
+}
+
+main "$@"
