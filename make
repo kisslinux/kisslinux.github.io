@@ -42,7 +42,7 @@ page() {
             {
                 set -f; IFS=/
                 set +f ${page##./}
-                nav="/ <a href=\"/$1\">$1</a>"
+                nav="<a href=\"/$1\">$1</a>"
                 [ "$2" ] && nav="$nav / <a href=\"/$1/$2\">$2</a>"
                 [ "${3#index.txt}" ] && nav="$nav / ${3%%.txt}"
                 unset IFS
