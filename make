@@ -35,7 +35,7 @@ page() {
         # Messy, but what can you do?
         */wiki/*.txt)
             cat - "site/$page" <<EOF | txt2html > "docs/${page%%.txt}.html"
-<a href=/wiki>&lt;- Back to the Wiki</a>                                              <a href="$wiki_url/edit/master/${page##*wiki/}">Edit this page</a>
+<a href=/wiki>&lt;- Back to the Wiki</a>                                               <a href="$wiki_url/edit/master/${page##*wiki/}">Edit this page</a>
 
 $(git submodule foreach --quiet git log -1 \
     --format="Edited (<a href=\"$wiki_url/commit/%H\">%h</a>) at %as by %an" \
