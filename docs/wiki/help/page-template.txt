@@ -6,6 +6,8 @@ substantial degree of flexibility by specifying parameters on command line,
 including the ability to invoke a third-party utility to manipulate the
 resulting screenshot.
 
+TIP: Append '.txt' to the URL to see the page source. (@/page-template.txt)
+
 
 Description
 ________________________________________________________________________________
