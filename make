@@ -24,8 +24,8 @@ txt2html() {
     sed -E '/%%CONTENT%%/d' |
 
     # Calculate font scaling.
-    sed -E "s|%%FONT%%|$len|" |
-    sed -E "s|%%SIZE%%|$((max + 27))|" |
+    sed -E "s|%%FONT%%|$len|g" |
+    sed -E "s|%%SIZE%%|$((max + 27))|g" |
 
     # Insert the page path into the source URL.
     sed -E "s	%%SOURCE%%	${page##.}	"
