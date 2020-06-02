@@ -40,10 +40,46 @@
 <td><pre style='margin-left:1ch'>
 <a href="/wiki">wiki</a> / <a href='/wiki/help'>help</a> / adding-a-page                                       <a href='https://github.com/kisslinux/wiki/edit/master/help/adding-a-page.txt'>Edit this page</a>
 
-Edited (<a href="https://github.com/kisslinux/wiki/commit/950b2419a33ae6ff1c03321c332e91b2f9ea66ba">950b241</a>) at 2020-06-01 by Dylan Araps
+Edited (<a href="https://github.com/kisslinux/wiki/commit/94f2f09a972e5d307007cc0d24f8640cc7359e46">94f2f09</a>) at 2020-06-02 by Dylan Araps
 
 
 ADDING A PAGE
 ________________________________________________________________________________
 
+Adding a page to the Wiki and integrating it into the home page /listing pages
+is rather simple (albeit manual for the time being). This may be automated (to
+a realistic extent) over time.
+
+Copy an existing page or start from the template  <a href="/wiki/help/page-template.txt)">page-template.txt)</a>   and begin
+writing. When you're ready to submit your page, the following steps must be
+followed.
+
+
+Adding a new category:
+________________________________________________________________________________
+
+$ cd wiki
+$ mkdir -p category
+$ cp help/index.txt category
+
+# Rewrite the index to match the new category.
+$ vi category/index.txt
+
+
+Page Creation
+________________________________________________________________________________
+
+Adding a new page:
+
+$ cd wiki
+$ cp help/page-template.txt category/page-name.txt
+
+# Start writing your page.
+$ vi category/page-name.txt
+
+# Update the category's index.txt to include the new page.
+$ vi category/index.txt
+
+# Update the Wiki's home page to include the new page.
+$ vi index.txt
 </pre></td></tbody></table>
