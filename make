@@ -113,9 +113,6 @@ main() {
         printf '%s\n' "CC $page"
         page "$page"
     done
-
-    # Let's not dirty the submodule.
-    rm -f site/wiki/*/index.txt
 }
 
 main "$@"
