@@ -23,6 +23,10 @@ txt2html() {
     sed -E '/%%CONTENT%%/r /dev/stdin' template.html |
     sed -E '/%%CONTENT%%/d' |
 
+    # Calculate font scaling.
+    sed -E "s|%%FONT%%|$len|" |
+    sed -E "s|%%SIZE%%|$((max + 27))|" |
+
     # Insert the page path into the source URL.
     sed -E "s	%%SOURCE%%	${page##.}	"
 }
@@ -60,6 +64,20 @@ page() {
     page_parent=${page%/*}
     mkdir -p "docs/$page_parent"
 
+    # PRE-GENERATION STEP.
+    case $page in
+        *.txt)
+            max=
+
+            while read -r line; do case $line in *[\<\>]*) ;;
+                *) max=$((${#line} > max ? ${#line} : max))
+            esac; done < "site/$page"
+
+            len=$(printf 'scale=2;160 / %s - 0.01' "$max" | bc -l)
+        ;;
+    esac
+
+    # GENERATION STEP.
     case $page in
         # Generate HTML from Wiki pages.
         */wiki/index.txt)
@@ -81,6 +99,7 @@ page() {
         ;;
     esac
 
+    # POST-GENERATION STEP.
     case $page in
         # Hardlink all .txt files to the docs/ directory.
         *.txt) ln -f "site/$page" "docs/$page" ;;
