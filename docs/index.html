@@ -1,4 +1,4 @@
-<!doctype html><html lang=en><link href='data:image/gif;base64,R0lGODlhEAAQAPH/AAAAAP8AAP8AN////yH5BAUAAAQALAAAAAAQABAAAAM2SLrc/jA+QBUFM2iqA2bAMHSktwCCWJIYEIyvKLOuJt+wV69ry5cfwu7WCVp2RSPoUpE4n4sEADs=' rel=icon><title>KISS</title><meta charset=utf-8><meta name=Description content="An independent Linux® distribution with a focus on simplicity and the concept of less is more."><meta name=viewport content="width=device-width,initial-scale=1"><style>body{margin:0;overflow-y:scroll;font:16px monospace,monospace}img{max-width:57ch;display:block;height:auto;width:100%}@media(prefers-color-scheme:dark){body{background:#000;color:#fff}a{color:#6CF}}.l{text-decoration:none;color:red}#w{max-width:85ch;margin:0 auto}#s{min-width:25ch;position:fixed;top:2ch;margin:0;overflow-y:auto}#m{margin: 2ch 0 0 28ch;}@media(max-width:calc(85ch + 25ch)){body{font-size:2.79vw}#s{position:static}#s,#m{margin-left:1ch}}</style><div id=w><pre id=s>
+<!doctype html><html lang=en><link href='data:image/gif;base64,R0lGODlhEAAQAPH/AAAAAP8AAP8AN////yH5BAUAAAQALAAAAAAQABAAAAM2SLrc/jA+QBUFM2iqA2bAMHSktwCCWJIYEIyvKLOuJt+wV69ry5cfwu7WCVp2RSPoUpE4n4sEADs=' rel=icon><title>KISS</title><meta charset=utf-8><meta name=Description content="An independent Linux® distribution with a focus on simplicity and the concept of less is more."><meta name=viewport content="width=device-width,initial-scale=1"><style>body{margin:0;overflow-y:scroll;font:16px monospace,monospace}img{max-width:80ch;display:block;height:auto;width:100%}@media(prefers-color-scheme:dark){body{background:#000;color:#fff}a{color:#6CF}}.l{text-decoration:none;color:red}#w{max-width:108ch;margin:0 auto}#s{min-width:25ch;position:fixed;top:2ch;margin:0;overflow-y:auto}#m{margin: 2ch 0 0 28ch;}@media(max-width:calc(108ch + 25ch)){body{font-size:1.99vw}#s{position:static}#s,#m{margin-left:1ch}}</style><div id=w><pre id=s>
 +-----------------------+
 | <a href=/ class=l> _    _               </a>|
 | <a href=/ class=l>| | _(_)___ ___       </a>|
@@ -35,86 +35,67 @@
 </pre>
 
 <pre id=m>
-+-------------------------------------------------------+
-|                                                       |
-|                        KISS                           |
-|                                                       |
-| * An independent Linux(R) distribution with a focus   |
-|   on simplicity and the concept of less is more.      |
-|                                                       |
-| * The distribution targets only the x86-64<a href=/wiki/community/ports>**</a>          |
-|   architecture and the English language.              |
-|                                                       |
-|                                                       |
-+-------------------------------------------------------+
+KISS
+________________________________________________________________________________
 
-+-------------------------------------------------------+
-|                                                       |
-|                      OVERVIEW                         |
-|                                                       |
-| * Uses a plain-text package system which is           |
-|   language agnostic and parseable with basic UNIX     |
-|   utilities.                                          |
-|                                                       |
-| * Uses a package manager written in less than 1000    |
-|   lines of POSIX sh (excluding blank lines and        |
-|   comments).                                          |
-|                                                       |
-| * Based on musl libc and the Linux kernel.            |
-|                                                       |
-| * Choice! The shell, coreutils, init, device manager, |
-|   compiler, shell and * can be replaced. There's no   |
-|   lock-in to specific software (excluding musl and    |
-|   the kernel of course).                              |
-|                                                       |
-| * Every installation of the distribution contains the |
-|   full sources (of the distribution) with git history |
-|   attached.                                           |
-|                                                       |
-| * Is simple and small enough to be maintainable in    |
-|   its entirety by a single person with little effort. |
-|                                                       |
-| * There is no "backend". This distribution is merely  |
-|   a few git repositories.                             |
-|                                                       |
-| * Has a "Bus factor" of N/A (0?) thanks to the above  |
-|   points. Full power to the users and the community.  |
-|                                                       |
-| * All shell code is linted by and passes shellcheck   |
-|   (including each and every repository package).      |
-|                                                       |
-| * All packages are compiled from source by the        |
-|   package manager which automatically handles         |
-|   dependencies, patches, etc.                         |
-|                                                       |
-| * Explicitly excludes the following software:         |
-|                                                       |
-|     dbus, systemd, polkit, gettext, intltool,         |
-|     pulseaudio, pam, wayland, logind, ConsoleKit2     |
-|     and all Desktop Environments.                     |
-|                                                       |
-|                                                       |
-| * Rootless Xorg environment without any additional    |
-|   software.                                           |
-|                                                       |
-| * Repository signing through git and gnupg,           |
-|   based on signed commits and built into git itself.  |
-|                                                       |
-|                                                       |
-+-------------------------------------------------------+
+An independent Linux(R) distribution with a focus on simplicity and the concept
+of less is more. The distribution targets only the x86_64 <a href="#[0]">[0]</a> architecture and
+the English language.
 
-+-------------------------------------------------------+
-|                                                       |
-|                   FURTHER READING                     |
-|                                                       |
-| * See:                                                |
-|                                                       |
-|        <a href="/guidestones">guidestones</a>                                    |
-|        <a href="/install">install</a>                                        |
-|        <a href="/package-system">package-system</a>                                 |
-|        <a href="/community">community</a>                                      |
-|                                                       |
-|                                                       |
-+-------------------------------------------------------+
+<span id="[0]">[0]</span> Ports of the distribution to different architectures have been created by
+    the Community. See <a href="/wiki/community/ports">wiki/community/ports</a>   for more information.
+
+
+
+OVERVIEW
+________________________________________________________________________________
+
+* Uses a plain-text package system which is language agnostic and parseable
+  with basic UNIX utilities.
+
+* Uses a package manager written in less than 1000 lines of POSIX sh (excluding
+  blank lines and comments).
+
+* Choice! The shell, coreutils, init, device manager, compiler, shell and * can
+  be replaced. There's no lock-in to specific software (excluding the kernel of
+  course).
+
+* Every installation of the distribution contains the full sources (of the
+  distribution) with git history attached.
+
+* Is simple and small enough to be maintainable in its entirety by a single
+  person with little effort.
+
+* There is no "backend". This distribution is merely a few git repositories.
+
+* Has a "Bus factor" of N/A (0?) thanks to the above points. Full power is in
+  the hands of the users and the Community.
+
+* All shell code is linted by and passes shellcheck (including each and every
+  repository package).
+
+* All packages are compiled from source by the package manager which
+  automatically handles updates, dependencies, patches, stripping, etc.
+
+* Explicitly excludes the following software:
+
+    dbus, systemd, polkit, gettext, intltool, pulseaudio, pam, wayland, logind,
+    ConsoleKit2 and all Desktop Environments.
+
+* Rootless Xorg environment without any additional software.
+
+* Repository signing through git and gnupg, based on signed commits and built
+  into git itself.
+
+
+
+FURTHER READING
+________________________________________________________________________________
+
+See: <a href="/guidestones">guidestones</a>  
+     <a href="/install">install</a>  
+     <a href="/package-system">package-system</a>  
+     <a href="/community">community</a>  
+
 
 </pre></div>

@@ -1,82 +1,63 @@
-+-------------------------------------------------------+
-|                                                       |
-|                        KISS                           |
-|                                                       |
-| * An independent Linux(R) distribution with a focus   |
-|   on simplicity and the concept of less is more.      |
-|                                                       |
-| * The distribution targets only the x86-64<a href=/wiki/community/ports>**</a>          |
-|   architecture and the English language.              |
-|                                                       |
-|                                                       |
-+-------------------------------------------------------+
+KISS
+________________________________________________________________________________
 
-+-------------------------------------------------------+
-|                                                       |
-|                      OVERVIEW                         |
-|                                                       |
-| * Uses a plain-text package system which is           |
-|   language agnostic and parseable with basic UNIX     |
-|   utilities.                                          |
-|                                                       |
-| * Uses a package manager written in less than 1000    |
-|   lines of POSIX sh (excluding blank lines and        |
-|   comments).                                          |
-|                                                       |
-| * Based on musl libc and the Linux kernel.            |
-|                                                       |
-| * Choice! The shell, coreutils, init, device manager, |
-|   compiler, shell and * can be replaced. There's no   |
-|   lock-in to specific software (excluding musl and    |
-|   the kernel of course).                              |
-|                                                       |
-| * Every installation of the distribution contains the |
-|   full sources (of the distribution) with git history |
-|   attached.                                           |
-|                                                       |
-| * Is simple and small enough to be maintainable in    |
-|   its entirety by a single person with little effort. |
-|                                                       |
-| * There is no "backend". This distribution is merely  |
-|   a few git repositories.                             |
-|                                                       |
-| * Has a "Bus factor" of N/A (0?) thanks to the above  |
-|   points. Full power to the users and the community.  |
-|                                                       |
-| * All shell code is linted by and passes shellcheck   |
-|   (including each and every repository package).      |
-|                                                       |
-| * All packages are compiled from source by the        |
-|   package manager which automatically handles         |
-|   dependencies, patches, etc.                         |
-|                                                       |
-| * Explicitly excludes the following software:         |
-|                                                       |
-|     dbus, systemd, polkit, gettext, intltool,         |
-|     pulseaudio, pam, wayland, logind, ConsoleKit2     |
-|     and all Desktop Environments.                     |
-|                                                       |
-|                                                       |
-| * Rootless Xorg environment without any additional    |
-|   software.                                           |
-|                                                       |
-| * Repository signing through git and gnupg,           |
-|   based on signed commits and built into git itself.  |
-|                                                       |
-|                                                       |
-+-------------------------------------------------------+
+An independent Linux(R) distribution with a focus on simplicity and the concept
+of less is more. The distribution targets only the x86_64 [0] architecture and
+the English language.
 
-+-------------------------------------------------------+
-|                                                       |
-|                   FURTHER READING                     |
-|                                                       |
-| * See:                                                |
-|                                                       |
-|        @/guidestones                                  |
-|        @/install                                      |
-|        @/package-system                               |
-|        @/community                                    |
-|                                                       |
-|                                                       |
-+-------------------------------------------------------+
+[0] Ports of the distribution to different architectures have been created by
+    the Community. See @/wiki/community/ports for more information.
+
+
+
+OVERVIEW
+________________________________________________________________________________
+
+* Uses a plain-text package system which is language agnostic and parseable
+  with basic UNIX utilities.
+
+* Uses a package manager written in less than 1000 lines of POSIX sh (excluding
+  blank lines and comments).
+
+* Choice! The shell, coreutils, init, device manager, compiler, shell and * can
+  be replaced. There's no lock-in to specific software (excluding the kernel of
+  course).
+
+* Every installation of the distribution contains the full sources (of the
+  distribution) with git history attached.
+
+* Is simple and small enough to be maintainable in its entirety by a single
+  person with little effort.
+
+* There is no "backend". This distribution is merely a few git repositories.
+
+* Has a "Bus factor" of N/A (0?) thanks to the above points. Full power is in
+  the hands of the users and the Community.
+
+* All shell code is linted by and passes shellcheck (including each and every
+  repository package).
+
+* All packages are compiled from source by the package manager which
+  automatically handles updates, dependencies, patches, stripping, etc.
+
+* Explicitly excludes the following software:
+
+    dbus, systemd, polkit, gettext, intltool, pulseaudio, pam, wayland, logind,
+    ConsoleKit2 and all Desktop Environments.
+
+* Rootless Xorg environment without any additional software.
+
+* Repository signing through git and gnupg, based on signed commits and built
+  into git itself.
+
+
+
+FURTHER READING
+________________________________________________________________________________
+
+See: @/guidestones
+     @/install
+     @/package-system
+     @/community
+
 

@@ -1,4 +1,4 @@
-<!doctype html><html lang=en><link href='data:image/gif;base64,R0lGODlhEAAQAPH/AAAAAP8AAP8AN////yH5BAUAAAQALAAAAAAQABAAAAM2SLrc/jA+QBUFM2iqA2bAMHSktwCCWJIYEIyvKLOuJt+wV69ry5cfwu7WCVp2RSPoUpE4n4sEADs=' rel=icon><title>KISS</title><meta charset=utf-8><meta name=Description content="An independent Linux® distribution with a focus on simplicity and the concept of less is more."><meta name=viewport content="width=device-width,initial-scale=1"><style>body{margin:0;overflow-y:scroll;font:16px monospace,monospace}img{max-width:57ch;display:block;height:auto;width:100%}@media(prefers-color-scheme:dark){body{background:#000;color:#fff}a{color:#6CF}}.l{text-decoration:none;color:red}#w{max-width:85ch;margin:0 auto}#s{min-width:25ch;position:fixed;top:2ch;margin:0;overflow-y:auto}#m{margin: 2ch 0 0 28ch;}@media(max-width:calc(85ch + 25ch)){body{font-size:2.79vw}#s{position:static}#s,#m{margin-left:1ch}}</style><div id=w><pre id=s>
+<!doctype html><html lang=en><link href='data:image/gif;base64,R0lGODlhEAAQAPH/AAAAAP8AAP8AN////yH5BAUAAAQALAAAAAAQABAAAAM2SLrc/jA+QBUFM2iqA2bAMHSktwCCWJIYEIyvKLOuJt+wV69ry5cfwu7WCVp2RSPoUpE4n4sEADs=' rel=icon><title>KISS</title><meta charset=utf-8><meta name=Description content="An independent Linux® distribution with a focus on simplicity and the concept of less is more."><meta name=viewport content="width=device-width,initial-scale=1"><style>body{margin:0;overflow-y:scroll;font:16px monospace,monospace}img{max-width:80ch;display:block;height:auto;width:100%}@media(prefers-color-scheme:dark){body{background:#000;color:#fff}a{color:#6CF}}.l{text-decoration:none;color:red}#w{max-width:108ch;margin:0 auto}#s{min-width:25ch;position:fixed;top:2ch;margin:0;overflow-y:auto}#m{margin: 2ch 0 0 28ch;}@media(max-width:calc(108ch + 25ch)){body{font-size:1.99vw}#s{position:static}#s,#m{margin-left:1ch}}</style><div id=w><pre id=s>
 +-----------------------+
 | <a href=/ class=l> _    _               </a>|
 | <a href=/ class=l>| | _(_)___ ___       </a>|
@@ -35,464 +35,387 @@
 </pre>
 
 <pre id=m>
-+-------------------------------------------------------+
-|                                                       |
-|                 KISS PACKAGE MANAGER                  |
-|                                                       |
-| * The KISS package manager is a self-contained POSIX  |
-|   shell script which is written in a highly portable  |
-|   way.                                                |
-|                                                       |
-| * The entire utility comes in at under 1000 lines of  |
-|   code (excluding blank lines/comments of which there |
-|   are many).                                          |
-|                                                       |
-| * The package manager is merely an implementation of  |
-|   the package format, its requirements and some sugar |
-|   on top.                                             |
-|                                                       |
-| * Source: <a href="https://github.com/kisslinux/kiss">kisslinux/kiss</a>                              |
-|                                                       |
-+-------------------------------------------------------+
+KISS PACKAGE MANAGER
+________________________________________________________________________________
 
-+-------------------------------------------------------+
-|                                                       |
-|                        USAGE                          |
-|                                                       |
-| -> kiss [a|b|c|i|l|r|s|u|v] [pkg]...                  |
-| -> alternatives   List and swap to alternatives       |
-| -> build          Build a package                     |
-| -> checksum       Generate checksums                  |
-| -> install        Install a package                   |
-| -> list           List installed packages             |
-| -> remove         Remove a package                    |
-| -> search         Search for a package                |
-| -> update         Update the system                   |
-| -> version        Package manager version             |
-|                                                       |
-+-------------------------------------------------------+
+The KISS package manager is a self-contained POSIX shell script which is written
+in a highly portable way. The entire utility comes in at under 1000 lines of
+code (excluding blank lines/comments of which there are many).
 
-+-------------------------------------------------------+
-|                                                       |
-|                     DEPENDENCIES                      |
-|                                                       |
-|  * POSIX utilities are used where appropriate _and_   |
-|    where they exist to solve a particular problem.    |
-|                                                       |
-|  * Utilities of which there is only a single and      |
-|    cross-platform implementation are considered       |
-|    "portable" (git, curl, etc)                        |
-|                                                       |
-|  * If a dependency can be made optional, it will be   |
-|    made so. Dependencies are also kept to a minimum   |
-|    (though we must also remain realistic).            |
-|                                                       |
-|                                                       |
-|       Dependency | Reason for use          | Required |
-| ---------------- | ----------------------- | -------- |
-|  POSIX utilities | Used throughout         | Yes      |
-|              git | Remote repositories and | Yes <a href="#[1]">[1]</a>  |
-|                  | package git sources     |          |
-|             curl | Source downloads        | Yes      |
-|     gpg1 or gpg2 | Repository signing      | No       |
-|        sha256sum | Checksums               | Yes <a href="#[2]">[2]</a>  |
-|              tar | Sources, packages, etc  | Yes <a href="#[3]">[3]</a>  |
-|            unzip | Zip sources (very rare) | No       |
-|                  |                         |          |
-|                  |                         |          |
-|      Compression |                         |          |
-| ---------------- | ----------------------- | -------- |
-| gzip, bzip2, xz  | Tarball compression     | Yes <a href="#[4]">[4]</a>  |
-| zstd, lzma, lzip | Tarball compression     | No       |
-|                  |                         |          |
-|                  |                         |          |
-|       Privileges |                         |          |
-| ---------------- | ----------------------- | -------- |
-| su | sudo | doas | Privilege escalation    | No <a href="#[5]">[5]</a>   |
-|                  |                         |          |
-|                  |                         |          |
-|         Binutils |                         |          |
-| ---------------- | ----------------------- | -------- |
-|              ldd | Dependency fixer        | No <a href="#[6]">[6]</a>   |
-|            strip | Binary Stripping        | No <a href="#[6]">[6]</a>   |
-|                  |                         |          |
-|                                                       |
-|                                                       |
-| <a href="#[1]">[1]</a> Git is also required for contribution to the      |
-|     distribution itself. Strictly speaking, nothing   |
-|     forces you to use git. Remote repositories and    |
-|     git based sources will simply become unusable.    |
-|                                                       |
-| <a href="#[2]">[2]</a> There is no standard utility for the generation   |
-|     of sha256 checksums. While sha256sum is listed    |
-|     above, the package manager also supports sha256,  |
-|     shasum and openssl as fallbacks.                  |
-|                                                       |
-| <a href="#[3]">[3]</a> The tar command has no standard! This came as a   |
-|     shock. The POSIX equivalent is "pax" though this  |
-|     isn't in wide use (at least on Linux).            |
-|                                                       |
-|     Our usage of tar is merely, cf, xf and tf. A      |
-|     patch is applied to sbase's tar so that it        |
-|     supports "dashless" arguments (as all others do). |
-|                                                       |
-|     Our usage of tar cannot become any more basic     |
-|     than it is now. Portability should no longer be   |
-|     a concern.                                        |
-|                                                       |
-|     Tested tar implementations include: busybox,      |
-|     toybox, sbase, GNU and libarchive (though all tar |
-|     implementations should work).                     |
-|                                                       |
-| <a href="#[4]">[4]</a> These three compression methods are required as   |
-|     pretty much every package source uses them as the |
-|     tarball compression method.                       |
-|                                                       |
-|     The other compression methods are optional as no  |
-|     package sources (in the official repositories)    |
-|     make use of them.                                 |
-|                                                       |
-|     If a compression method has 1-3 uses (hasn't yet  |
-|     happened), the compression method will simply     |
-|     become a 'make' dependency of the package until   |
-|     usage increases to a "normality".                 |
-|                                                       |
-| <a href="#[5]">[5]</a> A privilege escalation utility is only needed     |
-|     when using the package manager as a normal user   |
-|     for system-wide package installation.             |
-|                                                       |
-|     Installation to a user-writable directory does    |
-|     not require root access.                          |
-|                                                       |
-|     Root usage of the package manager (chroot usage   |
-|     for example) does not require these utilities.    |
-|                                                       |
-| <a href="#[6]">[6]</a> If these are missing, binary stripping and/or     |
-|     the dependency fixer will simply be disabled.     |
-|                                                       |
-|     Regarding 'strip'; It has a POSIX specification,  |
-|     though the spec doesn't contain any arguments     |
-|     whatsoever.                                       |
-|                                                       |
-|     This makes our usage of 'strip' non-POSIX. That   |
-|     being said, our usage is compatible with these    |
-|     'strip' implementations.                          |
-|                                                       |
-|     binutils, elfutils, elftoolchain, llvm, etc.      |
-|                                                       |
-+-------------------------------------------------------+
+The package manager is merely an implementation of the package format, its
+requirements and some added sugar on top.
 
-+-------------------------------------------------------+
-|                                                       |
-|                 INTERESTING FEATURES                  |
-|                                                       |
-| * Runtime dependency detector built around 'ldd'.     |
-|                                                       |
-|   Dynamic dependencies brought in by build systems    |
-|   (which are missing from the package's dependency    |
-|   list) are fixed on-the-fly by checking which        |
-|   libraries link to the package's files.              |
-|                                                       |
-|   This prevents an incomplete dependency list from    |
-|   causing system breakage as the package manager is   |
-|   able to complete the list.                          |
-|                                                       |
-|   A lot of packages make use of this "implicit" to    |
-|   "explicit" dependency list "conversion" to provide  |
-|   optional dependencies.                              |
-|                                                       |
-|   Example output:                                     |
-|                                                       |
-|   -> libXmu Checking for missing dependencies         |
-|   --- /home/dylan/conf/cache/kiss/build-4477/d        |
-|   +++ depends                                         |
-|   @@ -1,3 +1,8 @@                                     |
-|   +libX11                                             |
-|   +libXau                                             |
-|    libXext                                            |
-|    libXt                                              |
-|   +libxcb                                             |
-|    xorg-util-macros make                              |
-|                                                       |
-|                                                       |
-| * Fully dynamic (and automatic) alternatives system.  |
-|                                                       |
-|   Any file conflicts between two packages             |
-|   automatically become choices in the alternatives    |
-|   system.                                             |
-|                                                       |
-|   This allows one to swap providers of files without  |
-|   needing to explicitly tell the package manager      |
-|   that two packages conflict, provide the same        |
-|   utilities, etc.                                     |
-|                                                       |
-|   In other words, no changes need to be made to       |
-|   packages. In fact, nothing needs to be done at all. |
-|   It's entirely automatic.                            |
-|                                                       |
-|   # List available alternatives.                      |
-|   # ('a' is an alias to 'alternatives')               |
-|   $ kiss a                                            |
-|   gnugrep /usr/bin/fgrep                              |
-|   ncurses /usr/bin/clear                              |
-|                                                       |
-|   # Swap to GNU grep.                                 |
-|   $ kiss a gnugrep /usr/bin/grep                      |
-|   -> Swapping '/usr/bin/grep' from busybox to gnugrep |
-|                                                       |
-|   # Swap back to busybox grep.                        |
-|   $ kiss a busybox /usr/bin/grep                      |
-|                                                       |
-|   # Swap to all alternatives for a given package.     |
-|   $ kiss a | grep ^sbase | kiss a -                   |
-|                                                       |
-|   The above command works as the output of the        |
-|   alternatives listing is directly usable as input    |
-|   to 'kiss a'.                                        |
-|                                                       |
-|                                                       |
-| * 3-way handshake for files in /etc/.                 |
-|                                                       |
-|   Files in /etc/ are handled differently to those     |
-|   elsewhere on the system. A re-installation or       |
-|   update to a package will not always overwrite       |
-|   these files.                                        |
-|                                                       |
-|   Instead, a 3-way handshake happens during           |
-|   installation to determine how the new /etc/ file    |
-|   should be handled.                                  |
-|                                                       |
-|   If the user has made modifications to the file and  |
-|   those modifications differ to the to-be-installed   |
-|   package's file, the file is installed as file.new.  |
-|                                                       |
-|   If the user hasn't touched the file, it will be     |
-|   automatically overwritten by the package manager as |
-|   it will contain updated/new contents..              |
-|                                                       |
-|   If the user has touched the file but the file has   |
-|   not changed between package versions, it will       |
-|   simply be skipped over.                             |
-|                                                       |
-|   Example (with sha256 checksums truncated to fit):   |
-|                                                       |
-|   -> opendoas Doing 3-way handshake for etc/doas.conf |
-|   Previous: 677b59e  etc/doas.conf                    |
-|   System:   dc5ab2b  etc/doas.conf                    |
-|   New:      677b59e  etc/doas.conf                    |
-|   -> Skipping etc/doas.conf                           |
-|                                                       |
-|                                                       |
-| * Extensible via hooks ($KISS_HOOK).                  |
-|                                                       |
-|   One can control the package manager via various     |
-|   hooks and a simple script. Control can also be      |
-|   per-package. The one requirement is that it be a    |
-|   POSIX shell script.                                 |
-|                                                       |
-|   Currently supported hooks:                          |
-|                                                       |
-|   - pre-build, post-build. build-fail.                |
-|   - pre-install, post-install.                        |
-|                                                       |
-|   The script is given the following environment:      |
-|                                                       |
-|   - $TYPE: The hook type.                             |
-|   - $PKG:  The name of the current package.           |
-|   - $DEST: The destination directory for the package. |
-|                                                       |
-|   Example script:                                     |
-|                                                       |
-|   case $TYPE in                                       |
-|       pre-build)                                      |
-|           case $PKG in                                |
-|               zlib) export CFLAGS="$CFLAGS -O2"       |
-|               curl) export CFLAGS="$CFLAGS -static"   |
-|           esac                                        |
-|       ;;                                              |
-|                                                       |
-|       post-build)                                     |
-|           : "${DEST:?DEST is unset}"                  |
-|                                                       |
-|           rm -rf "$DEST/usr/share/info"               |
-|           rm -rf "$DEST/usr/share/gettext"            |
-|           rm -rf "$DEST/usr/share/doc"                |
-|       ;;                                              |
-|   esac                                                |
-|                                                       |
-|                                                       |
-| * Extensible via 'kiss-*' utilities.                  |
-|                                                       |
-|   Anything in the user's '$PATH' which matches the    |
-|   glob 'kiss-*' will be directly usable via the       |
-|   package manager.                                    |
-|                                                       |
-|   For example, 'kiss-size' is also usable as          |
-|   'kiss size' (and even 'kiss si') (shortest          |
-|   available alias).                                   |
-|                                                       |
-|   The detected 'kiss-*' utilities will appear in the  |
-|   package manager's help output with the second line  |
-|   in the script acting as a doc-string.               |
-|                                                       |
-|   Example help output:                                |
-|                                                       |
-|   -> Installed extensions (kiss-* in $PATH)           |
-|   -> chbuild    Create/destroy temporary chroots      |
-|   -> chroot     Enter a kiss chroot                   |
-|   -> depends    Display a package's dependencies      |
-|   -> export     Installed package to tarball          |
-|   -> fork       Fork a package into the current dir   |
-|   -> link       Link a repo file to another repo      |
-|   -> maintainer Find the maintainer of a package      |
-|   -> manifest   Display all files owned by a package  |
-|   -> new        Create a boilerplate package          |
-|   -> orphans    List orphaned packages                |
-|   -> outdated   Check repository packages for updates |
-|   -> owns       Check which package owns a file       |
-|   -> reset      Remove all packages but base          |
-|   -> revdepends Packages which depend on package      |
-|   -> size       Show the size on disk for a package   |
-|                                                       |
-|   These are in effect, optional utilities which       |
-|   interact with the package system in one way or      |
-|   another.                                            |
-|                                                       |
-|   My hope behind them is to act as an example as to   |
-|   how easy it is to interface with the plain-text     |
-|   and "static" package system.                        |
-|                                                       |
-+-------------------------------------------------------+
+Source: <a href="https://github.com/kisslinux/kiss">kisslinux/kiss</a>  
 
-+-------------------------------------------------------+
-|                                                       |
-|                    CONFIGURATION                      |
-|                                                       |
-| * The package manager has no configuration files and  |
-|   no changes need to be made to the system prior to   |
-|   its use.                                            |
-|                                                       |
-|   While there is no configuration file, this does not |
-|   mean that there is no possibility for               |
-|   configuration.                                      |
-|                                                       |
-| * The package manager can be configured via the use   |
-|   of environment variables. I believe this to be the  |
-|   best configuration method (where realistic).        |
-|                                                       |
-|   Environment variables can be set system-wide,       |
-|   per-user, conditionally, for a single invocation,   |
-|   etc, etc.                                           |
-|                                                       |
-|   They also require little to no extra code in the    |
-|   package manager to support them.                    |
-|                                                       |
-|                                                       |
-|      Variable | Description                           |
-| ------------- | ------------------------------------- |
-|     KISS_PATH | List of repositories. This works      |
-|               | exactly like '$PATH' (a colon         |
-|               | separated list of paths.              |
-|               |                                       |
-|    KISS_FORCE | Force installation/removal of package |
-|               | by bypassing dependency checks, etc.  |
-|               | Set to '1' to enable.                 |
-|               |                                       |
-|   KISS_CHOICE | Set to '0' to disable the             |
-|               | alternatives system and error on any  |
-|               | detected file conflicts.              |
-|               |                                       |
-|     KISS_HOOK | Hook into the package manager.        |
-|               | See above: "interesting features".    |
-|               | Set to the full path to the script.   |
-|               |                                       |
-|     KISS_ROOT | Where installed packages will go.     |
-|               | Can be used to install packages to    |
-|               | somewhere other than '/'.             |
-|               |                                       |
-|    KISS_COLOR | Enable/Disable colors in output.      |
-|               | Set to '0' to disable colors.         |
-|               |                                       |
-|   KISS_PROMPT | Skip all prompts.                     |
-|               | Set to '0' to say 'yes' to all        |
-|               | prompts from the package manager.     |
-|               |                                       |
-| KISS_COMPRESS | Compression method to use for built   |
-|               | package tarballs (default to 'gz').   |
-|               | Valid: bz2, gz, lzma, lz, xz, zst     |
-|               |                                       |
-|       KISS_SU | Force usage of a different sudo tool. |
-|               | Valid: su, sudo, doas                 |
-|               |                                       |
-|    KISS_DEBUG | Keep temporary directories around for |
-|               | debugging purposes. Set to '1' to     |
-|               | enable.                               |
-|               |                                       |
-|  KISS_KEEPLOG | Keep build logs around for successful |
-|               | builds and not just failing ones. Set |
-|               | to '1' to enable.                     |
-|               |                                       |
-|   KISS_TMPDIR | Temporary directory for builds. Can   |
-|               | be set to a tmpfs so builds happen in |
-|               | memory.                               |
-|               |                                       |
-|      KISS_PID | Use a reproducible cache naming       |
-|               | scheme instead of 'build-$pid'. If    |
-|               | set to 'test', the result will be     |
-|               | 'build-test'.                         |
-|               |                                       |
-|                                                       |
-|                                                       |
-| * There's also a myriad of "3rd-party" environment    |
-|   variables which control GCC, Make, cmake, etc.      |
-|`                                                      |
-|`  These aren't used by the package manager. They're   |
-|   used by the tools called by the package's build     |
-|   script.                                             |
-|                                                       |
-|    Variable      | Description                        |
-| ---------------- | ---------------------------------- |
-|   XDG_CACHE_HOME | Cache directory location.          |
-|                  |                                    |
-|               CC | C   compiler.                      |
-|              CXX | C++ compiler.                      |
-|               AR | Archive tool.                      |
-|               NM | Symbol  tool.                      |
-|           RANLIB | Index   tool.                      |
-|                  |                                    |
-|           CFLAGS | C   compiler flags.                |
-|         CXXFLAGS | C++ compiler flags.                |
-|          LDFLAGS | Linker flags.                      |
-|        MAKEFLAGS | Make flags.                        |
-|        SAMUFLAGS | Samurai (Ninja) flags.             |
-|        RUSTFLAGS | Rust compiler flags.               |
-|                  |                                    |
-|  CMAKE_GENERATOR | 'Unix Makefiles' or 'Ninja'.       |
-|                                                       |
-|                                                       |
-+-------------------------------------------------------+
 
-+-------------------------------------------------------+
-|                                                       |
-|                       TRIVIA                          |
-|                                                       |
-| * The package manager makes zero attempt to compare   |
-|   version numbers to distinguish whether or not one   |
-|   version is newer than another.                      |
-|                                                       |
-|   Instead, it simply checks to see if the old version |
-|   differs to the new one. If it does, it's considered |
-|   an available update.                                |
-|                                                       |
-|   This has the added benefit of making downgrades no  |
-|   different to upgrades. In effect, just a simple:    |
-|                                                       |
-|   # Example pseudo code.                              |
-|   [ "$old_ver" != "$new_ver" ] && update_available    |
-|                                                       |
-|                                                       |
-| * The package manager was originally called 'puke'    |
-|   and was later changed to 'kiss'.                    |
-|                                                       |
-+-------------------------------------------------------+
+USAGE
+________________________________________________________________________________
+
+-> kiss [a|b|c|i|l|r|s|u|v] [pkg]...
+-> alternatives   List and swap to alternatives
+-> build          Build a package
+-> checksum       Generate checksums
+-> install        Install a package
+-> list           List installed packages
+-> remove         Remove a package
+-> search         Search for a package
+-> update         Update the system
+-> version        Package manager version
+
+
+DEPENDENCIES
+________________________________________________________________________________
+
+POSIX utilities are used where appropriate _and_ where they exist to solve a
+particular problem. Utilities of which there is only a single and cross-platform
+implementation are considered "portable" (git, curl, etc)
+
+If a dependency can be made optional, it will be made so. Dependencies are also
+kept to a minimum (though we must also remain realistic).
+
++------------------------------------------------------------------------------+
+| Dependency       | Reason for use                                 | Required |
+|------------------+------------------------------------------------+----------|
+| POSIX utilities  | Used throughout                                | Yes      |
+| git              | Remote repositories and                        | Yes <a href="#[1]">[1]</a>  |
+|                  | package git sources                            |          |
+| curl             | Source downloads                               | Yes      |
+| gpg1 or gpg2     | Repository signing                             | No       |
+| sha256sum        | Checksums                                      | Yes <a href="#[2]">[2]</a>  |
+| tar              | Sources, packages, etc                         | Yes <a href="#[3]">[3]</a>  |
+| unzip            | Zip sources (very rare)                        | No       |
+|                  |                                                |          |
+|                  |                                                |          |
+|------------------+------------------------------------------------+----------|
+| Compression      |                                                |          |
+|------------------+------------------------------------------------+----------|
+| gzip, bzip2, xz  | Tarball compression                            | Yes <a href="#[4]">[4]</a>  |
+| zstd, lzma, lzip | Tarball compression                            | No       |
+|                  |                                                |          |
+|                  |                                                |          |
+|------------------+------------------------------------------------+----------|
+| Privileges       |                                                |          |
+|------------------+------------------------------------------------+----------|
+| su | sudo | doas | Privilege escalation                           | No <a href="#[5]">[5]</a>   |
+|                  |                                                |          |
+|                  |                                                |          |
+|------------------+------------------------------------------------+----------|
+| Binutils         |                                                |          |
+|------------------+------------------------------------------------+----------|
+| ldd              | Dependency Fixer                               | No <a href="#[6]">[6]</a>   |
+| strip            | Binary Stripping                               | No <a href="#[6]">[6]</a>   |
+|                  |                                                |          |
++------------------+------------------------------------------------+----------+
+
+<span id="[1]">[1]</span> Git is also required for contribution to the distribution itself. Strictly
+    speaking, nothing forces you to use git. Remote repositories and git based
+    sources will simply become unusable.
+
+<span id="[2]">[2]</span> There is no standard utility for the generation of sha256 checksums. While
+    sha256sum is listed above, the package manager also supports sha256, shasum
+    and openssl as fallbacks.
+
+<span id="[3]">[3]</span> The tar command has no standard! This came as a shock. The POSIX equivalent
+    is "pax" though this isn't in wide use (at least on Linux).
+
+    Our usage of tar is merely, cf, xf and tf. A patch is applied to sbase's
+    tar so that it supports "dashless" arguments (as all others do). Our usage
+    of tar cannot become any more basic than it is now. Portability should no
+    longer be a concern.
+
+    Tested tar implementations include: busybox, toybox, sbase, GNU and
+    libarchive (though all tar implementations should work in theory).
+
+<span id="[4]">[4]</span> These three compression methods are required as pretty much every package
+    source uses them as the tarball compression method.
+
+    The other compression methods are optional as no package sources (in the
+    official repositories) make use of them.
+
+    If a compression method has 1-3 uses (hasn't yet happened), the compression
+    method will simply become a 'make' dependency of the package until usage
+    increases to a "normality".
+
+<span id="[5]">[5]</span> A privilege escalation utility is only needed when using the package
+    manager as a normal user for system-wide package installation.
+
+    Installation to a user-writable directory does not require root access.
+
+    Root usage of the package manager (chroot usage for example) does not
+    require these utilities.
+
+<span id="[6]">[6]</span> If these are missing, binary stripping and/or the dependency fixer will
+    simply be disabled.
+
+    Regarding 'strip'; It has a POSIX specification, though the spec doesn't
+    contain any arguments whatsoever.
+
+    This makes our usage of 'strip' non-POSIX. That being said, our usage is
+    compatible with these 'strip' implementations.
+
+    strips: binutils, elfutils, elftoolchain, llvm, etc.
+
+
+
+INTERESTING FEATURES
+________________________________________________________________________________
+
+* Runtime dependency detector built around 'ldd'.
+
+  Dynamic dependencies brought in by build systems (which are missing from the
+  package's dependency list) are fixed on-the-fly by checking which libraries
+  link to the package's files.
+
+  This prevents an incomplete dependency list from causing system breakage as
+  the package manager is able to complete the list.
+
+  A lot of packages make use of this "implicit" to "explicit" dependency list
+  "conversion" to provide optional dependencies.
+
+  Example output:
+
+      -> libXmu Checking for missing dependencies
+      --- /home/dylan/conf/cache/kiss/build-4477/d
+       depends
+      @@ -1,3 +1,8 @@
+      +libX11
+      +libXau
+       libXext
+       libXt
+      +libxcb
+       xorg-util-macros make
+
+
+* Fully dynamic (and automatic) alternatives system.
+
+  Any file conflicts between two packages automatically become choices in the
+  alternatives system.
+
+  This allows one to swap providers of files without needing to explicitly tell
+  the package manager that two packages conflict, provide the same utilities,
+  etc.
+
+  In other words, no changes need to be made to packages. In fact, nothing
+  needs to be done at all. It's entirely automatic.
+
+      # List available alternatives.
+      # ('a' is an alias to 'alternatives')
+      $ kiss a
+      gnugrep /usr/bin/fgrep
+      ncurses /usr/bin/clear
+
+      # Swap to GNU grep.
+      $ kiss a gnugrep /usr/bin/grep
+      -> Swapping '/usr/bin/grep' from busybox to gnugrep
+
+      # Swap back to busybox grep.
+      $ kiss a busybox /usr/bin/grep
+
+      # Swap to all alternatives for a given package.
+      $ kiss a | grep ^sbase | kiss a -
+
+  The above command works as the output of the alternatives listing is directly
+  usable as input to 'kiss a'.
+
+
+* 3-way handshake for files in /etc/.
+
+  Files in /etc/ are handled differently to those elsewhere on the system. A
+  re-installation or update to a package will not always overwrite these files.
+
+  Instead, a 3-way handshake happens during installation to determine how the
+  new /etc/ file should be handled.
+
+  If the user has made modifications to the file and those modifications differ
+  to the to-be-installed package's file, the file is installed as file.new.
+
+  If the user hasn't touched the file, it will be automatically overwritten by
+  the package manager as it will contain updated/new contents..
+
+  If the user has touched the file but the file has not changed between package
+  versions, it will simply be skipped over.
+
+  Example (with sha256 checksums truncated to fit):
+
+      -> opendoas Doing 3-way handshake for etc/doas.conf
+      Previous: 677b59e  etc/doas.conf
+      System:   dc5ab2b  etc/doas.conf
+      New:      677b59e  etc/doas.conf
+      -> Skipping etc/doas.conf
+
+
+* Extensible via hooks ($KISS_HOOK).
+
+  One can control the package manager via various hooks and a simple script.
+  Control can also be per-package. The one requirement is that it be a POSIX
+  shell script.
+
+  Currently supported hooks:
+
+      - pre-build, post-build. build-fail.
+      - pre-install, post-install.
+
+  The script is given the following environment:
+
+      - $TYPE: The hook type.
+      - $PKG:  The name of the current package.
+      - $DEST: The destination directory for the package.
+
+  Example script:
+
+      case $TYPE in
+          pre-build)
+              case $PKG in
+                  zlib) export CFLAGS="$CFLAGS -O2"
+                  curl) export CFLAGS="$CFLAGS -static"
+              esac
+          ;;
+
+          post-build)
+              : "${DEST:?DEST is unset}"
+
+              rm -rf "$DEST/usr/share/info"
+              rm -rf "$DEST/usr/share/gettext"
+              rm -rf "$DEST/usr/share/doc"
+          ;;
+      esac
+
+
+* Extensible via 'kiss-*' utilities.
+
+  Anything in the user's '$PATH' which matches the glob 'kiss-*' will be
+  directly usable via the package manager.
+
+  For example, 'kiss-size' is also usable as 'kiss size' (and even 'kiss si')
+  (shortest available alias).
+
+  The detected 'kiss-*' utilities will appear in the package manager's help
+  output with the second line in the script acting as a doc-string.
+
+  Example help output:
+
+      -> Installed extensions (kiss-* in $PATH)
+      -> chbuild    Create/destroy temporary chroots
+      -> chroot     Enter a kiss chroot
+      -> depends    Display a package's dependencies
+      -> export     Installed package to tarball
+      -> fork       Fork a package into the current dir
+      -> link       Link a repo file to another repo
+      -> maintainer Find the maintainer of a package
+      -> manifest   Display all files owned by a package
+      -> new        Create a boilerplate package
+      -> orphans    List orphaned packages
+      -> outdated   Check repository packages for updates
+      -> owns       Check which package owns a file
+      -> reset      Remove all packages but base
+      -> revdepends Packages which depend on package
+      -> size       Show the size on disk for a package
+
+  These are in effect, optional utilities which interact with the package
+  system in one way or another.
+
+  My hope behind them is to act as an example as to how easy it is to interface
+  with the plain-text and "static" package system.
+
+
+CONFIGURATION
+________________________________________________________________________________
+
+The package manager has no configuration files and no changes need to be made to
+the system prior to its use. While there is no configuration file, this does not
+mean that there is no possibility for configuration.
+
+The package manager can be configured via the use of environment variables. I
+believe this to be the best configuration method (where realistic). Environment
+variables can be set system-wide, per-user, conditionally, for a single
+invocation, etc, etc.
+
+They require little to no extra code in the package manager to support them.
+
+
+Variable         | Description
+-----------------+--------------------------------------------------------------
+KISS_PATH        | List of repositories. This works exactly like '$PATH'
+                 | (a colon separated list of paths).
+                 |
+KISS_FORCE       | Force installation/removal of package by bypassing dependency
+                 | checks, etc. Set to '1' to enable.
+                 |
+KISS_CHOICE      | Set to '0' to disable the alternatives system and error on
+                 | any detected file conflicts.
+                 |
+KISS_HOOK        | Hook into the package manager. Set to the full path to the
+                 | script. See above: "interesting features".
+                 |
+KISS_ROOT        | Where installed packages will go. Can be used to install
+                 | packages to somewhere other than '/'.
+                 |
+KISS_COLOR       | Enable/Disable colors. Set to '0' to disable colors.
+                 |
+KISS_PROMPT      | Skip all prompts. Set to '0' to say 'yes' to all prompts from
+                 | the package manager.
+                 |
+KISS_COMPRESS    | Compression method to use for built package tarballs
+                 | (defaults to 'gz'). Valid: bz2, gz, lzma, lz, xz, zst
+                 |
+KISS_SU          | Force usage of a different sudo tool. Valid: su, sudo, doas
+                 |
+KISS_DEBUG       | Keep temporary directories around for debugging purposes.
+                 | Set to '1' to enable.
+                 |
+KISS_KEEPLOG     | Keep build logs around for successful builds and not just
+                 | failing ones. Set to '1' to enable.
+                 |
+KISS_TMPDIR      | Temporary directory for builds. Can be set to a tmpfs so
+                 | builds happen in memory.
+                 |
+KISS_PID         | Use a reproducible cache naming scheme instead of build-$pid.
+                 | If set to 'test', the result will be build-test.
+                 |
+
+
+There are also a myriad of "3rd-party" environment variables which control GCC,
+Make, CMake, etc. These aren't used by the package manager. They're used by the
+tools called by the package's build script.
+
+Variable         | Description
+-----------------+--------------------------------------------------------------
+XDG_CACHE_HOME   | Cache directory location.
+                 |
+CC               | C   compiler.
+CXX              | C++ compiler.
+AR               | Archive tool.
+NM               | Symbol  tool.
+RANLIB           | Index   tool.
+                 |
+CFLAGS           | C   compiler flags.
+CXXFLAGS         | C++ compiler flags.
+LDFLAGS          | Linker flags.
+MAKEFLAGS        | Make flags.
+SAMUFLAGS        | Samurai flags.
+RUSTFLAGS        | Rust compiler flags.
+                 |
+CMAKE_GENERATOR  | 'Unix Makefiles' or 'Ninja'.
+                 |
+
+
+TRIVIA
+________________________________________________________________________________
+
+* The package manager makes zero attempt to compare version numbers to
+  distinguish whether or not one version is newer than another.
+
+  Instead, it simply checks to see if the old version differs to the new one.
+  If it does, it's considered an available update.
+
+  This has the added benefit of making downgrades no different to upgrades. In
+  effect, just a simple:
+
+      # Example pseudo code.
+      [ "$old_ver" != "$new_ver" ] && update_available
+
+
+* The package manager was originally called puke and was later changed to kiss.
+
+
 </pre></div>
