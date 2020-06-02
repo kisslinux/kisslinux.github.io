@@ -70,46 +70,46 @@ NOTE: Don't blindly follow the steps here. Know what you're doing and put some
 ________________________________________________________________________________
 
 * Install Kiss                                                             <a href="#[2]">[2]</a>
-    * Download The Latest Release                                          [2.1]
-    * Verify The Checksums                                                 [2.2]
-    * Verify The Signature                                                 [2.3]
-    * Download The Chroot Helper                                           [2.4]
-    * Unpack The Tarball                                                   [2.5]
-    * Enter The Chroot                                                     [2.6]
+    * Download The Latest Release                                          <a href="#[2.1]">[2.1]</a>
+    * Verify The Checksums                                                 <a href="#[2.2]">[2.2]</a>
+    * Verify The Signature                                                 <a href="#[2.3]">[2.3]</a>
+    * Download The Chroot Helper                                           <a href="#[2.4]">[2.4]</a>
+    * Unpack The Tarball                                                   <a href="#[2.5]">[2.5]</a>
+    * Enter The Chroot                                                     <a href="#[2.6]">[2.6]</a>
 
 * Enable Repository Signing                                                <a href="#[3]">[3]</a>
-    * Build And Install Gnupg1                                             [3.1]
-    * Import My Key                                                        [3.2]
-    * Enable Signature Verification                                        [3.3]
+    * Build And Install Gnupg1                                             <a href="#[3.1]">[3.1]</a>
+    * Import My Key                                                        <a href="#[3.2]">[3.2]</a>
+    * Enable Signature Verification                                        <a href="#[3.3]">[3.3]</a>
 
 * Rebuild Kiss                                                             <a href="#[4]">[4]</a>
-    * Modify Compiler Options                                              [4.1]
-    * Update All Base Packages                                             [4.2]
-    * Rebuild All Packages                                                 [4.3]
+    * Modify Compiler Options                                              <a href="#[4.1]">[4.1]</a>
+    * Update All Base Packages                                             <a href="#[4.2]">[4.2]</a>
+    * Rebuild All Packages                                                 <a href="#[4.3]">[4.3]</a>
 
 * Userspace Tools                                                          <a href="#[5]">[5]</a>
-    * Filesystems                                                          [5.1]
-    * Device Management                                                    [5.2]
-    * Wifi                                                                 [5.3]
-    * Dynamic IP Addressing                                                [5.4]
+    * Filesystems                                                          <a href="#[5.1]">[5.1]</a>
+    * Device Management                                                    <a href="#[5.2]">[5.2]</a>
+    * Wifi                                                                 <a href="#[5.3]">[5.3]</a>
+    * Dynamic IP Addressing                                                <a href="#[5.4]">[5.4]</a>
 
 * The Kernel                                                               <a href="#[6]">[6]</a>
-    * Download The Kernel Sources                                          [6.1]
-    * Download Firmware Blobs                                              [6.2]
-    * Configure The Kernel                                                 [6.3]
-    * Build The Kernel                                                     [6.4]
-    * Install The Kernel                                                   [6.5]
+    * Download The Kernel Sources                                          <a href="#[6.1]">[6.1]</a>
+    * Download Firmware Blobs                                              <a href="#[6.2]">[6.2]</a>
+    * Configure The Kernel                                                 <a href="#[6.3]">[6.3]</a>
+    * Build The Kernel                                                     <a href="#[6.4]">[6.4]</a>
+    * Install The Kernel                                                   <a href="#[6.5]">[6.5]</a>
 
 * The Bootloader                                                           <a href="#[7]">[7]</a>
-    * Build And Install Grub                                               [7.1]
-    * Setup Grub                                                           [7.2]
+    * Build And Install Grub                                               <a href="#[7.1]">[7.1]</a>
+    * Setup Grub                                                           <a href="#[7.2]">[7.2]</a>
 
 * Install Init Scripts                                                     <a href="#[8]">[8]</a>
 * Add A Normal User                                                        <a href="#[9]">[9]</a>
 * Enable The Community Repository                                         <a href="#[10]">[10]</a>
 
 * Install Xorg                                                            <a href="#[11]">[11]</a>
-    * Add Your User To The Relevant Groups                                [11.1]
+    * Add Your User To The Relevant Groups                                <a href="#[11.1]">[11.1]</a>
 
 * Further Steps                                                           <a href="#[12]">[12]</a>
 
@@ -120,14 +120,14 @@ ________________________________________________________________________________
 Your disks should be setup and fully mounted to /mnt.
 
 
-    [2.1] DOWNLOAD THE LATEST RELEASE
+    <a href="#[2.1]">[2.1]</a> DOWNLOAD THE LATEST RELEASE
     ____________________________________________________________________________
 
     $ url=<a href='https://github.com/kisslinux/repo/releases/download/1.10.0'>https://github.com/kisslinux/repo/releases/download/1.10.0</a>
     $ wget "$url/kiss-chroot.tar.xz"
 
 
-    [2.2] VERIFY THE CHECKSUMS (recommended)
+    <a href="#[2.2]">[2.2]</a> VERIFY THE CHECKSUMS (recommended)
     ____________________________________________________________________________
 
     This step verifies that the release matches the checksums generated upon
@@ -137,7 +137,7 @@ Your disks should be setup and fully mounted to /mnt.
     $ sha256sum -c < kiss-chroot.tar.xz.sha256
 
 
-    [2.3] VERIFY THE SIGNATURE (recommended)
+    <a href="#[2.3]">[2.3]</a> VERIFY THE SIGNATURE (recommended)
     ____________________________________________________________________________
 
     This step verifies that the release was signed by Dylan Araps. If the live
@@ -153,7 +153,7 @@ Your disks should be setup and fully mounted to /mnt.
     $ gpg --verify kiss-chroot.tar.xz.asc kiss-chroot.tar.xz
 
 
-    [2.4] DOWNLOAD THE CHROOT HELPER
+    <a href="#[2.4]">[2.4]</a> DOWNLOAD THE CHROOT HELPER
     ____________________________________________________________________________
 
     This is a simple script to chroot into /mnt and set up the environment for
@@ -169,7 +169,7 @@ Your disks should be setup and fully mounted to /mnt.
     $ chmod +x kiss-chroot
 
 
-    [2.5] UNPACK THE TARBALL
+    <a href="#[2.5]">[2.5]</a> UNPACK THE TARBALL
     ____________________________________________________________________________
 
     This step effectively installs KISS to /mnt. The tarball contains a full
@@ -178,7 +178,7 @@ Your disks should be setup and fully mounted to /mnt.
     $ tar xvf kiss-chroot.tar.xz -C /mnt --strip-components 1
 
 
-    [2.6] ENTER THE CHROOT
+    <a href="#[2.6]">[2.6]</a> ENTER THE CHROOT
     ____________________________________________________________________________
 
     On execution of this step you will be running KISS! The next steps involve
@@ -196,7 +196,7 @@ Repository signing ensures that all updates have been signed by (Dylan Araps)
 and further prevents any unsigned updates from reaching your system.
 
 
-    [3.1] BUILD AND INSTALL GNUPG1
+    <a href="#[3.1]">[3.1]</a> BUILD AND INSTALL GNUPG1
     ____________________________________________________________________________
 
     Welcome to the KISS package manager! These two commands are how individual
@@ -206,7 +206,7 @@ and further prevents any unsigned updates from reaching your system.
     $ kiss install gnupg1
 
 
-    [3.2] IMPORT MY (DYLAN ARAPS) KEY
+    <a href="#[3.2]">[3.2]</a> IMPORT MY (DYLAN ARAPS) KEY
     ____________________________________________________________________________
 
     If the GNU keyserver fails on your network, you can try an alternative
@@ -219,7 +219,7 @@ and further prevents any unsigned updates from reaching your system.
     $ echo trusted-key 0x46d62dd9f1de636e >>/root/.gnupg/gpg.conf
 
 
-    [3.3] ENABLE SIGNATURE VERIFICATION
+    <a href="#[3.3]">[3.3]</a> ENABLE SIGNATURE VERIFICATION
     ____________________________________________________________________________
 
     Repository signature verification uses a feature built into git itself
@@ -240,7 +240,7 @@ This step is entirely optional and you can just use the supplied binaries from
 the downloaded chroot. This step can also be done after the installation.
 
 
-    [4.1] MODIFY COMPILER OPTIONS (optional)
+    <a href="#[4.1]">[4.1]</a> MODIFY COMPILER OPTIONS (optional)
     ____________________________________________________________________________
 
     These options have been tested and work with every package in the
@@ -264,7 +264,7 @@ the downloaded chroot. This step can also be done after the installation.
     $ export MAKEFLAGS="-j4"
 
 
-    [4.2] UPDATE ALL BASE PACKAGES TO THE LATEST VERSION
+    <a href="#[4.2]">[4.2]</a> UPDATE ALL BASE PACKAGES TO THE LATEST VERSION
     ____________________________________________________________________________
 
     This is how updates are performed on a KISS system. This command uses git
@@ -274,7 +274,7 @@ the downloaded chroot. This step can also be done after the installation.
     $ kiss update
 
 
-    [4.3] REBUILD ALL PACKAGES
+    <a href="#[4.3]">[4.3]</a> REBUILD ALL PACKAGES
     ____________________________________________________________________________
 
     We simply cd to the installed packages database and use a glob to grab the
@@ -293,7 +293,7 @@ Each kiss action (build, install, etc) has a shorthand alias. From now on,
 The software below is required unless stated otherwise.
 
 
-    [5.1] FILESYSTEMS
+    <a href="#[5.1]">[5.1]</a> FILESYSTEMS
     ____________________________________________________________________________
 
     # Ext2, Ext3 and Ext4.
@@ -312,7 +312,7 @@ The software below is required unless stated otherwise.
     # Additional filesystems will go here.
 
 
-    [5.2] DEVICE MANAGEMENT
+    <a href="#[5.2]">[5.2]</a> DEVICE MANAGEMENT
     ____________________________________________________________________________
 
     # Needed for blkid support in eudev.
@@ -323,14 +323,14 @@ The software below is required unless stated otherwise.
     $ kiss i eudev
 
 
-    [5.3] WIFI (optional)
+    <a href="#[5.3]">[5.3]</a> WIFI (optional)
     ____________________________________________________________________________
 
     $ kiss b wpa_supplicant
     $ kiss i wpa_supplicant
 
 
-    [5.4] DYNAMIC IP ADDRESSING (optional)
+    <a href="#[5.4]">[5.4]</a> DYNAMIC IP ADDRESSING (optional)
     ____________________________________________________________________________
 
     $ kiss b dhcpcd
@@ -358,7 +358,7 @@ A patch may be required for some kernels when built with GCC 10.1.0. Please
 read the link (and the patch itself for more information). <a href="/news/20200509a">news/20200509a</a>  
 
 
-    [6.1] INSTALL REQUIRED PACKAGES
+    <a href="#[6.1]">[6.1]</a> INSTALL REQUIRED PACKAGES
     ____________________________________________________________________________
 
     libelf is required in most if not all cases.
@@ -386,7 +386,7 @@ read the link (and the patch itself for more information). <a href="/news/202005
     Apply: <a href="/dist/kernel-no-perl.patch">dist/kernel-no-perl.patch</a>  
 
 
-    [6.2] DOWNLOAD THE KERNEL SOURCES
+    <a href="#[6.2]">[6.2]</a> DOWNLOAD THE KERNEL SOURCES
     ____________________________________________________________________________
 
     Kernel releases:
@@ -409,7 +409,7 @@ read the link (and the patch itself for more information). <a href="/news/202005
     $ cd linux-*
 
 
-    [6.3] DOWNLOAD FIRMWARE BLOBS (if required)
+    <a href="#[6.3]">[6.3]</a> DOWNLOAD FIRMWARE BLOBS (if required)
     ____________________________________________________________________________
 
     To keep the KISS repositories entirely FOSS, the proprietary kernel
@@ -429,7 +429,7 @@ read the link (and the patch itself for more information). <a href="/news/202005
     $ cp -R ./path/to/driver /usr/lib/firmware
 
 
-    [6.4] CONFIGURE THE KERNEL
+    <a href="#[6.4]">[6.4]</a> CONFIGURE THE KERNEL
     ____________________________________________________________________________
 
     You can determine which drivers you need by searching the web for your
@@ -451,7 +451,7 @@ read the link (and the patch itself for more information). <a href="/news/202005
     $ cp .config /path/to/somewhere
 
 
-    [6.5] BUILD THE KERNEL
+    <a href="#[6.5]">[6.5]</a> BUILD THE KERNEL
     ____________________________________________________________________________
 
     This may take a while to complete. The compilation time depends on your
@@ -461,7 +461,7 @@ read the link (and the patch itself for more information). <a href="/news/202005
     $ make -j "$(nproc)"
 
 
-    [6.6] INSTALL THE KERNEL
+    <a href="#[6.6]">[6.6]</a> INSTALL THE KERNEL
     ____________________________________________________________________________
 
     Ignore the LILO error, it's harmless.
@@ -490,13 +490,13 @@ with it, both BIOS and UEFI are supported and vast amounts of documentation for
 it exists
 
 
-    [7.1] RECOMMENDED
+    <a href="#[7.1]">[7.1]</a> RECOMMENDED
     ____________________________________________________________________________
 
     Have an /etc/fstab file ready.
 
 
-    [7.2] BUILD AND INSTALL GRUB
+    <a href="#[7.2]">[7.2]</a> BUILD AND INSTALL GRUB
     ____________________________________________________________________________
 
     $ kiss b grub
@@ -507,7 +507,7 @@ it exists
     $ kiss i efibootmgr
 
 
-    [7.3] SETUP GRUB
+    <a href="#[7.3]">[7.3]</a> SETUP GRUB
     ____________________________________________________________________________
 
     # BIOS.
