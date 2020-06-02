@@ -16,10 +16,9 @@ txt2html() {
     sed -E "s|[^\\]\\$/([^ ]*)| <a href=\"https://github.com/\1\">\1</a>  |g" |
 
     # Convert [0] into HTML links.
-    sed -E "s|^( +)(\[[0-9\.]*\])|\1<span id=\"#\2\">\2</span>|g" |
-    sed -E "s|^\[[0-9\.]*\]|<span id=\"\0\">\0</span>|g" |
-    sed -E "s|([^\"\> ]*)(\[[0-9\.]*\])$|\1<a href=\"#\2\">\2</a>|g" |
-    sed -E "s|([^\"\> ]*)(\[[0-9\.]*\])([^\"\>])|\1<a href=\"#\2\">\2</a>|g" |
+    # sed -E "s|^( +)(\[[0-9\.]*\])|\1<span id=\"#\2\">\2</span>|g" |
+    sed -E "s|(.)(\[[0-9]*\])|\1<a href=\"#\2\">\2</a>|g" |
+    sed -E "s|^\[[0-9]*\]|<span id=\"\0\">\0</span>|g" |
 
     # Insert the page into the template.
     sed -E '/%%CONTENT%%/r /dev/stdin' template.html |
@@ -27,7 +26,7 @@ txt2html() {
 
     # Calculate font scaling.
     sed -E "s|%%FONT%%|$len|g" |
-    sed -E "s|%%SIZE%%|$((max + 28))|g" |
+    sed -E "s|%%SIZE%%|$((max + 27))|g" |
 
     # Insert the page path into the source URL.
     sed -E "s	%%SOURCE%%	${page##.}	"
