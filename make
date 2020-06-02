@@ -12,8 +12,10 @@ txt2html() {
 
     # Convert @/words to relative HTML links.
     # Convert $/words to GitHub URLs.
-    sed -E "s|[^\\]@/([^ ]*)| <a href=\"${page_parent##.}/\1\">\1</a>  |g" |
-    sed -E "s|[^\\]\\$/([^ ]*)| <a href=\"https://github.com/\1\">\1</a>  |g" |
+    sed -E "s|([^\\])@/([^ ]*)(\))|\1<a href=\"${pp##.}/\2\">\2</a>)  |g" |
+    sed -E "s|([^\\])@/([^ \)]*)|\1<a href=\"${pp##.}/\2\">\2</a>  |g" |
+    sed -E "s|([^\\])\\$/([^ ]*)(\))|\1<a href=\"$repo_url/\2\">\2</a>)  |g" |
+    sed -E "s|([^\\])\\$/([^ ]*)|\1<a href=\"$repo_url/\2\">\2</a>  |g" |
 
     # Convert [0] into HTML links.
     sed -E "s|^( *)(\[[0-9\.]*\])|\1<span id=\"\2\">\2</span>|g" |
@@ -62,8 +64,8 @@ wiki_nav() {
 }
 
 page() {
-    page_parent=${page%/*}
-    mkdir -p "docs/$page_parent"
+    pp=${page%/*}
+    mkdir -p "docs/$pp"
 
     # PRE-GENERATION STEP.
     case $page in
@@ -109,6 +111,7 @@ page() {
 
 main() {
     wiki_url=https://github.com/kisslinux/wiki
+    repo_url=https://github.com
 
     (cd site && find . -type f) | while read -r page; do
         printf '%s\n' "CC $page"
