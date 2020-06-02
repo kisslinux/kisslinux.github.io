@@ -5,9 +5,25 @@ Adding a page to the Wiki and integrating it into the home page /listing pages
 is rather simple (albeit manual for the time being). This may be automated (to
 a realistic extent) over time.
 
-Copy an existing page or start from the template (@/page-template.txt) and begin
-writing. When you're ready to submit your page, the following steps must be
-followed.
+Copy an existing page or start from the @/page-template.txt and begin writing.
+When you're ready to submit your page, the following steps must be followed.
+
+
+Syntax
+________________________________________________________________________________
+
+1. Lines must not exceed 80 columns in width. This is a comfortable size for
+   reading while not being too narrow for writing. This is a nice sweet spot.
+
+2. Pages must be written in English and without error. If this Wiki would like
+   to one day be known as a high quality resource, we must write to the best
+   of our ability.
+
+3. Include references where applicable. [0]
+
+
+[0] References work like this. Square brackets and a number in two locations.
+    The build system will automatically link these together (via an anchor).
 
 
 Adding a new category:
