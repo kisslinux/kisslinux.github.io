@@ -1,16 +1,13 @@
-+-------------------------------------------------------+
-|                                                       |
-|                        TEAM                           |
-|                                                       |
-+-------------------------------------------------------+
+TEAM
+________________________________________________________________________________
 
-* This distribution is developed by:
+This distribution is developed by:
 
-  Dylan Araps ($/dylanaraps)
+Dylan Araps ($/dylanaraps)
 
-  - Creator and BDFL of KISS.
-  - Creator of neofetch, pfetch, pywal, fff,
-  - Creator of the pure ba[sh] bible.
+- Creator and BDFL of KISS.
+- Creator of neofetch, pfetch, pywal, fff,
+- Creator of the pure ba[sh] bible.
 
 
 

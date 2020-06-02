@@ -1,35 +1,29 @@
-+-------------------------------------------------------+
-|                                                       |
-|                       BLOG                            |
-|                                                       |
-| * RSS Feed available here:                            |
-|                                                       |
-|   - @/blog/blog.xml                                   |
-|                                                       |
-|                                                       |
-+-------------------------------------------------------+
+BLOG
+________________________________________________________________________________
 
-- <a href=/blog/20200525a>25/05/2020: This month in KISS (#2)</a>
-- <a href=/blog/20200509a>09/05/2020: KISS turns 1!</a>
-- <a href=/blog/20200426a>26/04/2020: This month in KISS (#1)</a>
-- <a href=/blog/20200325a>25/03/2020: This week in KISS (#16)</a>
-- <a href=/blog/20200316a>16/03/2020: This week in KISS (#15)</a>
-- <a href=/blog/20200309a>09/03/2020: This week in KISS (#14)</a>
-- <a href=/blog/20200303a>03/03/2020: This week in KISS (#13)</a>
-- <a href=/blog/20200224a>24/02/2020: This week in KISS (#12)</a>
-- <a href=/blog/20200218a>18/02/2020: k1ss.org</a>
-- <a href=/blog/20200217a>17/02/2020: This week in KISS (#11)</a>
-- <a href=/blog/20200209a>09/02/2020: This week in KISS (#10)</a>
-- <a href=/blog/20200202a>02/02/2020: This week in KISS (#9)</a>
-- <a href=/blog/20200125a>25/01/2020: This week in KISS (#8)</a>
-- <a href=/blog/20200118a>18/01/2020: This week in KISS (#7)</a>
-- <a href=/blog/20200111a>11/01/2020: This week in KISS (#6)</a>
-- <a href=/blog/20200102a>02/01/2020: This week in KISS (#5)</a>
-- <a href="/blog/20191211a">11/12/2019: This week in KISS (#4)</a>
-- <a href="/blog/20191202a">02/12/2019: This week in KISS (#3)</a>
-- <a href="/blog/20191124a">24/11/2019: This week in KISS (#2)</a>
-- <a href="/blog/20191117a">17/11/2019: This week in KISS (#1)</a>
-- <a href="/blog/20191004a">04/10/2019: I've gone to great lengths for this silence</a>
-- <a href="/blog/20190828b">28/08/2019: Why does GTK3 Firefox require GTK2?</a>
-- <a href="/blog/20190828a">28/08/2019: Firefox 69 now fully depends on dbus</a>
-- <a href="/blog/20190827a">27/08/2019: Python 2 will never die</a>
+RSS Feed available here: @/blog/blog.xml
+
+- @/blog/20200525a This month in KISS (#2)
+- @/blog/20200509a KISS turns 1!
+- @/blog/20200426a This month in KISS (#1)
+- @/blog/20200325a This week in KISS (#16)
+- @/blog/20200316a This week in KISS (#15)
+- @/blog/20200309a This week in KISS (#14)
+- @/blog/20200303a This week in KISS (#13)
+- @/blog/20200224a This week in KISS (#12)
+- @/blog/20200218a k1ss.org
+- @/blog/20200217a This week in KISS (#11)
+- @/blog/20200209a This week in KISS (#10)
+- @/blog/20200202a This week in KISS (#9)
+- @/blog/20200125a This week in KISS (#8)
+- @/blog/20200118a This week in KISS (#7)
+- @/blog/20200111a This week in KISS (#6)
+- @/blog/20200102a This week in KISS (#5)
+- @/blog/20191211a This week in KISS (#4)
+- @/blog/20191202a This week in KISS (#3)
+- @/blog/20191124a This week in KISS (#2)
+- @/blog/20191117a This week in KISS (#1)
+- @/blog/20191004a I've gone to great lengths for this silence
+- @/blog/20190828b Why does GTK3 Firefox require GTK2?
+- @/blog/20190828a Firefox 69 now fully depends on dbus
+- @/blog/20190827a Python 2 will never die

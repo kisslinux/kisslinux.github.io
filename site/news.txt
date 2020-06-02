@@ -1,40 +1,34 @@
-+-------------------------------------------------------+
-|                                                       |
-|                       NEWS                            |
-|                                                       |
-| * RSS Feed available here:                            |
-|                                                       |
-|   - @/news/news.xml                                   |
-|                                                       |
-|                                                       |
-+-------------------------------------------------------+
+NEWS
+________________________________________________________________________________
 
-- <a href=/news/20200511a>11/05/2020: Encryption support moved outside init</a>
-- <a href=/news/20200509a>09/05/2020: GCC 10.1.0 kernel issue</a>
-- <a href='/news/20200506a'>05/06/2020: Firefox package changes</a>
-- <a href='/news/20200114a'>14/01/2020: Firefox binaries now available</a>
-- <a href='/news/20200101a'>01/01/2020: Firefox privacy changes moved</a>
-- <a href='/news/20191105a'>05/11/2019: The Wiki is live</a>
-- <a href='/news/20191031a'>31/10/2019: ninja replaced by samurai</a>
-- <a href='/news/20191015b'>15/10/2019: New python release (3.8.0)</a>
-- <a href='/news/20191015a'>15/10/2019: New sudo release (1.8.28)</a>
-- <a href='/news/20191010a'>10/10/2019: Mesa 19.2.1 released</a>
-- <a href='/news/20190927a'>27/09/2019: LLVM/Rust updated</a>
-- <a href='/news/20190921a'>21/09/2019: LLVM/Clang reverted to 8.0.1</a>
-- <a href='/news/20190920a'>20/09/2019: Mesa/Rust need to be rebuilt</a>
-- <a href='/news/20190911a'>11/09/2019: Please update the package manager</a>
-- <a href='/news/20190908a'>08/09/2019: The cache directory has moved</a>
-- <a href='/news/20190906a'>06/09/2019: Firefox updated to 69.0</a>
-- <a href='/news/20190902a'>02/09/2019: KISS 1.0 released</a>
-- <a href='/news/20190831b'>31/08/2019: python-setuptools now a part of python</a>
-- <a href='/news/20190831a'>31/08/2019: Removal of ca-certificates</a>
-- <a href='/news/20190830b'>30/08/2019: Removal of file</a>
-- <a href='/news/20190830a'>30/08/2019: Removal of fakeroot</a>
-- <a href='/news/20190828a'>28/08/2019: Removal of atk-bridge-fake</a>
-- <a href='/news/20190824b'>24/08/2019: Rust update requires manual intervention</a>
-- <a href='/news/20190824a'>24/08/2019: Manual repository fix needed</a>
-- <a href='/news/20190823a'>23/08/2019: KISS repository split</a>
-- <a href='/news/20190822a'>22/08/2019: KISS is now on https://repology.org</a>
-- <a href='/news/20190811a'>11/08/2019: KISS installed on hardware</a>
-- <a href='/news/20190804a'>04/08/2019: Firefox has been built</a>
-- <a href='/news/20190719a'>19/07/2019: Building a web browser</a>
+RSS Feed available here: @/news/news.xml
+
+- @/news/20200511a Encryption support moved outside init
+- @/news/20200509a GCC 10.1.0 kernel issue
+- @/news/20200506a Firefox package changes
+- @/news/20200114a Firefox binaries now available
+- @/news/20200101a Firefox privacy changes moved
+- @/news/20191105a The Wiki is live
+- @/news/20191031a ninja replaced by samurai
+- @/news/20191015b New python release (3.8.0)
+- @/news/20191015a New sudo release (1.8.28)
+- @/news/20191010a Mesa 19.2.1 released
+- @/news/20190927a LLVM/Rust updated
+- @/news/20190921a LLVM/Clang reverted to 8.0.1
+- @/news/20190920a Mesa/Rust need to be rebuilt
+- @/news/20190911a Please update the package manager
+- @/news/20190908a The cache directory has moved
+- @/news/20190906a Firefox updated to 69.0
+- @/news/20190902a KISS 1.0 released
+- @/news/20190831b python-setuptools now a part of python
+- @/news/20190831a Removal of ca-certificates
+- @/news/20190830b Removal of file
+- @/news/20190830a Removal of fakeroot
+- @/news/20190828a Removal of atk-bridge-fake
+- @/news/20190824b Rust update requires manual intervention
+- @/news/20190824a Manual repository fix needed
+- @/news/20190823a KISS repository split
+- @/news/20190822a KISS is now on https://repology.org
+- @/news/20190811a KISS installed on hardware
+- @/news/20190804a Firefox has been built
+- @/news/20190719a Building a web browser

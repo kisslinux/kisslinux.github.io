@@ -1,80 +1,84 @@
-+-------------------------------------------------------+
-|                                                       |
-|                      SOFTWARE                         |
-|                                                       |
-|    Other software created by myself (Dylan Araps).    |
-|                                                       |
-|                                                       |
-| * neofetch                                            |
-|                                                       |
-|   A system information tool written in bash 3.2+      |
-|                                                       |
-|   URL: $/dylanaraps/neofetch                          |
-|                                                       |
-|                                                       |
-| * pfetch                                              |
-|                                                       |
-|   A system information tool written in POSIX sh.      |
-|                                                       |
-|   URL: $/dylanaraps/pfetch                            |
-|                                                       |
-|                                                       |
-| * pash                                                |
-|                                                       |
-|   A simple password manager using GPG.                |
-|                                                       |
-|   URL: $/dylanaraps/pash                              |
-|                                                       |
-|                                                       |
-| * sowm                                                |
-|                                                       |
-|   An itsy bitsy floating window manager.              |
-|                                                       |
-|   URL: $/dylanaraps/sowm                              |
-|                                                       |
-|                                                       |
-| * eiwd                                                |
-|                                                       |
-|   A fork of iwd which runs without DBUS.              |
-|                                                       |
-|   URL: $/dylanaraps/eiwd                              |
-|                                                       |
-|                                                       |
-| * The Pure bash Bible                                 |
-|                                                       |
-|   A collection of pure bash alternatives to           |
-|   external processes.                                 |
-|                                                       |
-|   URL: $/dylanaraps/pure-bash-bible                   |
-|                                                       |
-|                                                       |
-| * The Pure sh Bible                                   |
-|                                                       |
-|   A collection of pure POSIX sh alternatives to       |
-|   external processes.                                 |
-|                                                       |
-|   URL: $/dylanaraps/pure-sh-bible                     |
-|                                                       |
-|                                                       |
-| * fff                                                 |
-|                                                       |
-|   A simple file manager written in bash.              |
-|                                                       |
-|   URL: $/dylanaraps/fff                               |
-|                                                       |
-|                                                       |
-| * paleta                                              |
-|                                                       |
-|   Change terminal colors on the fly.                  |
-|                                                       |
-|   URL: $/dylanaraps/paleta                            |
-|                                                       |
-|                                                       |
-| * pywal                                               |
-|                                                       |
-|   Generate and change color-schemes on the fly.       |
-|                                                       |
-|   URL: $/dylanaraps/pywal                             |
-|                                                       |
-|                                                       |
-+-------------------------------------------------------+
+SOFTWARE
+________________________________________________________________________________
+
+Other software created by myself (Dylan Araps).
+
+
+neofetch
+________________________________________________________________________________
+
+A system information tool written in bash 3.2+
+
+Source: $/dylanaraps/neofetch
+
+
+pfetch
+________________________________________________________________________________
+
+A system information tool written in POSIX sh.
+
+Source: $/dylanaraps/pfetch
+
+
+pash
+________________________________________________________________________________
+
+A simple password manager using GPG.
+
+Source: $/dylanaraps/pash
+
+
+sowm
+________________________________________________________________________________
+
+An itsy bitsy floating window manager.
+
+Source: $/dylanaraps/sowm
+
+
+eiwd
+________________________________________________________________________________
+
+A fork of iwd which runs without DBUS.
+
+Source: $/dylanaraps/eiwd
+
+
+The Pure bash Bible
+________________________________________________________________________________
+
+A collection of pure bash alternatives to external processes.
+
+Source: $/dylanaraps/pure-bash-bible
+
+
+The Pure sh Bible
+________________________________________________________________________________
+
+A collection of pure POSIX sh alternatives to external processes.
+
+Source: $/dylanaraps/pure-sh-bible
+
+
+fff
+________________________________________________________________________________
+
+A simple file manager written in bash.
+
+Source: $/dylanaraps/fff
+
+
+paleta
+________________________________________________________________________________
+
+Change terminal colors on the fly.
+
+Source: $/dylanaraps/paleta
+
+
+pywal
+________________________________________________________________________________
+
+Generate and change color-schemes on the fly.
+
+Source: $/dylanaraps/pywal
