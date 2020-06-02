@@ -21,8 +21,6 @@ txt2html() {
 
     # Insert the page into the template.
     sed -E '/%%CONTENT%%/r /dev/stdin' template.html |
-
-    # Remove the placeholder.
     sed -E '/%%CONTENT%%/d' |
 
     # Insert the page path into the source URL.
@@ -52,14 +50,10 @@ wiki_nav() {
     nav="$nav$(printf '%*s' "$((80 - ${#nar} - 14))" "")"
     nav="$nav<a href='$wiki_url/edit/master/${page##*wiki/}'>Edit this page</a>"
 
-    # Add the last edited information below.
-    nav="$nav
-
-$(git submodule foreach --quiet git log -1 \
-    --format="Edited (<a href=\"$wiki_url/commit/%H\">%h</a>) at %as by %an" \
-    "${page##*wiki/}")
-
-"
+    printf '%s\n\n%s\n\n\n' "$nav" \
+        "$(git submodule foreach --quiet git log -1 \
+        --format="Edited (<a href='$wiki_url/commit/%H'>%h</a>) at %as by %an" \
+        "${page##*wiki/}")"
 }
 
 page() {
@@ -73,11 +67,7 @@ page() {
         ;;
 
         */wiki/*.txt)
-            wiki_nav
-
-            cat - "site/$page" <<-EOF | txt2html > "docs/${page%%.txt}.html"
-				$nav
-			EOF
+            wiki_nav | cat - "site/$page" | txt2html > "docs/${page%%.txt}.html"
         ;;
 
         # Generate HTML from txt files.
