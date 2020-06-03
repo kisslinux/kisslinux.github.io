@@ -34,7 +34,7 @@
 
 </pre><pre id=m>
 
-<span id="[0]">[0]</span> INSTALL KISS
+<span id="[0.0]">[0.0]</span> INSTALL KISS
 ________________________________________________________________________________
 
 Welcome to the installation guide for KISS Linux.
@@ -65,10 +65,10 @@ NOTE: Don't blindly follow the steps here. Know what you're doing and put some
       to you.
 
 
-<span id="[1]">[1]</span> THE PROCESS
+<span id="[1.0]">[1.0]</span> THE PROCESS
 ________________________________________________________________________________
 
-* Install Kiss                                                             <a href="#[2]">[2]</a>
+* Install Kiss                                                             <a href="#[2.0]">[2.0]</a>
     * Download The Latest Release                                          <a href="#[2.1]">[2.1]</a>
     * Verify The Checksums                                                 <a href="#[2.2]">[2.2]</a>
     * Verify The Signature                                                 <a href="#[2.3]">[2.3]</a>
@@ -76,44 +76,44 @@ ________________________________________________________________________________
     * Unpack The Tarball                                                   <a href="#[2.5]">[2.5]</a>
     * Enter The Chroot                                                     <a href="#[2.6]">[2.6]</a>
 
-* Enable Repository Signing                                                <a href="#[3]">[3]</a>
+* Enable Repository Signing                                                <a href="#[3.0]">[3.0]</a>
     * Build And Install Gnupg1                                             <a href="#[3.1]">[3.1]</a>
     * Import My Key                                                        <a href="#[3.2]">[3.2]</a>
     * Enable Signature Verification                                        <a href="#[3.3]">[3.3]</a>
 
-* Rebuild Kiss                                                             <a href="#[4]">[4]</a>
+* Rebuild Kiss                                                             <a href="#[4.0]">[4.0]</a>
     * Modify Compiler Options                                              <a href="#[4.1]">[4.1]</a>
     * Update All Base Packages                                             <a href="#[4.2]">[4.2]</a>
     * Rebuild All Packages                                                 <a href="#[4.3]">[4.3]</a>
 
-* Userspace Tools                                                          <a href="#[5]">[5]</a>
+* Userspace Tools                                                          <a href="#[5.0]">[5.0]</a>
     * Filesystems                                                          <a href="#[5.1]">[5.1]</a>
     * Device Management                                                    <a href="#[5.2]">[5.2]</a>
     * Wifi                                                                 <a href="#[5.3]">[5.3]</a>
     * Dynamic IP Addressing                                                <a href="#[5.4]">[5.4]</a>
 
-* The Kernel                                                               <a href="#[6]">[6]</a>
+* The Kernel                                                               <a href="#[6.0]">[6.0]</a>
     * Download The Kernel Sources                                          <a href="#[6.1]">[6.1]</a>
     * Download Firmware Blobs                                              <a href="#[6.2]">[6.2]</a>
     * Configure The Kernel                                                 <a href="#[6.3]">[6.3]</a>
     * Build The Kernel                                                     <a href="#[6.4]">[6.4]</a>
     * Install The Kernel                                                   <a href="#[6.5]">[6.5]</a>
 
-* The Bootloader                                                           <a href="#[7]">[7]</a>
+* The Bootloader                                                           <a href="#[7.0]">[7.0]</a>
     * Build And Install Grub                                               <a href="#[7.1]">[7.1]</a>
     * Setup Grub                                                           <a href="#[7.2]">[7.2]</a>
 
-* Install Init Scripts                                                     <a href="#[8]">[8]</a>
-* Add A Normal User                                                        <a href="#[9]">[9]</a>
-* Enable The Community Repository                                         <a href="#[10]">[10]</a>
+* Install Init Scripts                                                     <a href="#[8.0]">[8.0]</a>
+* Add A Normal User                                                        <a href="#[9.0]">[9.0]</a>
+* Enable The Community Repository                                         <a href="#[10.0]">[10.0]</a>
 
-* Install Xorg                                                            <a href="#[11]">[11]</a>
+* Install Xorg                                                            <a href="#[11.0]">[11.0]</a>
     * Add Your User To The Relevant Groups                                <a href="#[11.1]">[11.1]</a>
 
-* Further Steps                                                           <a href="#[12]">[12]</a>
+* Further Steps                                                           <a href="#[12.0]">[12.0]</a>
 
 
-<span id="[2]">[2]</span> INSTALL KISS
+<span id="[2.0]">[2.0]</span> INSTALL KISS
 ________________________________________________________________________________
 
 Your disks should be setup and fully mounted to /mnt.
@@ -186,7 +186,7 @@ Your disks should be setup and fully mounted to /mnt.
     $ ./kiss-chroot /mnt
 
 
-<span id="[3]">[3]</span> ENABLE REPOSITORY SIGNING
+<span id="[3.0]">[3.0]</span> ENABLE REPOSITORY SIGNING
 ________________________________________________________________________________
 
 This step is _entirely optional_ and can also be done after the installation.
@@ -232,7 +232,7 @@ and further prevents any unsigned updates from reaching your system.
     $ git config merge.verifySignatures true
 
 
-<span id="[4]">[4]</span> REBUILD KISS
+<span id="[4.0]">[4.0]</span> REBUILD KISS
 ________________________________________________________________________________
 
 This step is entirely optional and you can just use the supplied binaries from
@@ -283,7 +283,7 @@ the downloaded chroot. This step can also be done after the installation.
     $ cd /var/db/kiss/installed && kiss build *
 
 
-<span id="[5]">[5]</span> USERSPACE TOOLS
+<span id="[5.0]">[5.0]</span> USERSPACE TOOLS
 ________________________________________________________________________________
 
 Each kiss action (build, install, etc) has a shorthand alias. From now on,
@@ -336,7 +336,7 @@ The software below is required unless stated otherwise.
     $ kiss i dhcpcd
 
 
-<span id="[6]">[6]</span> THE KERNEL
+<span id="[6.0]">[6.0]</span> THE KERNEL
 ________________________________________________________________________________
 
 This step involves configuring and building your own Linux kernel. If you have
@@ -480,7 +480,7 @@ read the link (and the patch itself for more information). <a href="/news/202005
     $ mv /boot/System.map /boot/System.map-VERSION
 
 
-<span id="[7]">[7]</span> THE BOOTLOADER
+<span id="[7.0]">[7.0]</span> THE BOOTLOADER
 ________________________________________________________________________________
 
 The default bootloader is grub (though nothing prevents you from using whatever
@@ -518,7 +518,7 @@ it exists
     $ grub-mkconfig -o /boot/grub/grub.cfg
 
 
-<span id="[8]">[8]</span> INSTALL INIT SCRIPTS
+<span id="[8.0]">[8.0]</span> INSTALL INIT SCRIPTS
 ________________________________________________________________________________
 
 The default init is busybox init (though nothing ties you to it). The below
@@ -531,13 +531,13 @@ $ kiss b baseinit
 $ kiss i baseinit
 
 
-<span id="[9]">[9]</span> ADD A NORMAL USER (recommended)
+<span id="[9.0]">[9.0]</span> ADD A NORMAL USER (recommended)
 ________________________________________________________________________________
 
 $ adduser USERNAME
 
 
-<span id="[10]">[10]</span> ENABLE THE COMMUNITY REPOSITORY
+<span id="[10.0]">[10.0]</span> ENABLE THE COMMUNITY REPOSITORY
 ________________________________________________________________________________
 
 The KISS community repository is maintained by users of the distribution and
@@ -559,7 +559,7 @@ $ vi /etc/profile.d/kiss_path.sh
 $ sh -l
 
 
-<span id="[11]">[11]</span> INSTALL XORG (optional)
+<span id="[11.0]">[11.0]</span> INSTALL XORG (optional)
 ________________________________________________________________________________
 
 To install Xorg, the input drivers and a basic default set of fonts, run the
@@ -584,7 +584,7 @@ $ kiss i liberation-fonts
     $ addgroup USERNAME audio
 
 
-<span id="[12]">[12]</span> FURTHER STEPS
+<span id="[12.0]">[12.0]</span> FURTHER STEPS
 ________________________________________________________________________________
 
 You should now be able to reboot into your KISS installation. Typical
