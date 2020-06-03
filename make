@@ -26,10 +26,6 @@ txt2html() {
     sed -E '/%%CONTENT%%/r /dev/stdin' template.html |
     sed -E '/%%CONTENT%%/d' |
 
-    # Calculate font scaling.
-    sed -E "s|%%FONT%%|$len|g" |
-    sed -E "s|%%SIZE%%|$((max + 27))|g" |
-
     # Insert the page path into the source URL.
     sed -E "s	%%SOURCE%%	${page##.}	"
 }
@@ -66,19 +62,6 @@ wiki_nav() {
 page() {
     pp=${page%/*}
     mkdir -p "docs/$pp"
-
-    # PRE-GENERATION STEP.
-    case $page in
-        *.txt)
-            max=
-
-            while read -r line; do case $line in *[\<\>]*) ;;
-                *) max=$((${#line} > max ? ${#line} : max))
-            esac; done < "site/$page"
-
-            len=$(printf 'scale=2;160 / %s - 0.01' "$max" | bc -l)
-        ;;
-    esac
 
     # GENERATION STEP.
     case $page in
