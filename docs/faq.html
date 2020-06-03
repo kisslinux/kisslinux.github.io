@@ -143,289 +143,292 @@ they need is already in the existing system. The power is in your hands.
 You are free.
 
 
-________________________________________________________________________________
-
 SOFTWARE
 ________________________________________________________________________________
 
 
-Why isn't SOFTWARE packaged?
-________________________________________________________________________________
+    Why isn't SOFTWARE packaged?
+    ____________________________________________________________________________
 
-No one has packaged it yet.
-
-
-Can you package SOFTWARE for me?
-________________________________________________________________________________
-
-Do it yourself.
+    No one has packaged it yet.
 
 
-What init does KISS use?
-________________________________________________________________________________
+    Can you package SOFTWARE for me?
+    ____________________________________________________________________________
 
-KISS uses busybox init by default. There is however, no lock-in and the user may
-use whatever they like. The distribution's boot up scripts are written in an
-init-agnostic way and act as a base for every init to use.
+    Do it yourself.
 
 
-What coreutils does KISS use?
-________________________________________________________________________________
+    What init does KISS use?
+    ____________________________________________________________________________
 
-KISS uses busybox coreutils by default. There is however, no lock-in and the
-user may use whatever they like. All shell code is written in portable POSIX
-shell and coreutils invocations.
-
-* One exception is made for 'sed -i' which isn't POSIX but is far too useful to
-  do away with. Many sed implementations include -i so this is more of a
-  non-issue.
-
-* The tar command has no standard interface, however support is included for
-  busybox tar, libarchive tar (bsdtar), GNU tar and others.
-
-* Some utilities have no standard specification and where their use is required,
-  we adhere to common options between implementations.
-
-Barring the above exceptions, users are running KISS without the use of busybox.
-Popular alternatives are Suckless' sbase/ubase and GNU's set of core utilities.
+    KISS uses busybox init by default. There is however, no lock-in and the user
+    may use whatever they like. The distribution's boot up scripts are written
+    in an init-agnostic way and act as a base for every init to use.
 
 
-________________________________________________________________________________
+    What coreutils does KISS use?
+    ____________________________________________________________________________
+
+    KISS uses busybox coreutils by default. There is however, no lock-in and the
+    user may use whatever they like. All shell code is written in portable POSIX
+    shell and coreutils invocations.
+
+    * One exception is made for 'sed -i' which isn't POSIX but is far too useful
+      to do away with. Many sed implementations include -i so this is more of a
+      non-issue.
+
+    * The tar command has no standard interface, however support is included for
+      busybox tar, libarchive tar (bsdtar), GNU tar and others.
+
+    * Some utilities have no standard specification and where their use is
+      required, we adhere to common options between implementations.
+
+    Barring the above exceptions, users are running KISS without the use of
+    busybox. Popular alternatives are Suckless' sbase/ubase and GNU's set of
+    core utilities.
+
+
 
 PACKAGE MANAGEMENT
 ________________________________________________________________________________
 
 
-How do I remove a package and all of its dependencies?
-________________________________________________________________________________
+    How do I remove a package and all of its dependencies?
+    ____________________________________________________________________________
 
-Short answer: With one command? You can't.
+    Short answer: With one command? You can't.
 
-The package manager does not do recursive dependency removal on removal of a
-package. This error-prone automation will not be added to the package manager.
+    The package manager does not do recursive dependency removal on removal of
+    a package. This error-prone automation will not be added to the package
+    manager.
 
-Instead, the workflow is to remove the single package and then look at the
-output of the 'kiss-orphans' command to see what can now be removed. This
-command will list all packages which have no relationship with other packages,
-otherwise known as orphans.
+    Instead, the workflow is to remove the single package and then look at the
+    output of the 'kiss-orphans' command to see what can now be removed. This
+    command will list all packages which have no relationship with other
+    packages, otherwise known as orphans.
 
-This list may include Firefox and other "end" software so a brain is required
-when parsing the list. You'll come to learn the relationships between packages
-and their dependencies and this will eventually become effortless.
+    This list may include Firefox and other "end" software so a brain is
+    required when parsing the list. You'll come to learn the relationships
+    between packages and their dependencies and this will eventually become
+    effortless.
 
 
-________________________________________________________________________________
 
 KERNEL
 ________________________________________________________________________________
 
 
-Why doesn't my kernel boot?
-________________________________________________________________________________
+    Why doesn't my kernel boot?
+    ____________________________________________________________________________
 
-The kernel not booting can be a variety of issues. This is almost always
-related to a configuration issue in the kernel, /etc/fstab or the bootloader.
+    The kernel not booting can be a variety of issues. This is almost always
+    related to a configuration issue in the kernel, /etc/fstab or the
+    bootloader.
 
-KISS doesn't use an initramfs so the configuration of the kernel may have
-different requirements to other distributions.
+    KISS doesn't use an initramfs so the configuration of the kernel may have
+    different requirements to other distributions.
 
-1. The drivers for your disk controller, drives and filesystems must not be
-   built as kernel modules. They should be set to =y in your .config or [*]
-   when using make menuconfig.
+    1. The drivers for your disk controller, drives and filesystems must not be
+       built as kernel modules. They should be set to =y in your .config or [*]
+       when using make menuconfig.
 
-   Essentially, every driver the kernel requires to detect and mount the drive
-   containing the root filesystem, must be built as a part of the kernel binary.
+       Essentially, every driver the kernel requires to detect and mount the
+       drive containing the root filesystem, must be built as a part of the
+       kernel binary.
 
-2. Multi-drive systems must use PARTUUID or UUID in place of /dev/sdXX in the
-   bootloader configuration to ensure that the kernel will find the right drive.
-
-
-Why doesn't KISS support initramfs?
-________________________________________________________________________________
-
-KISS technically supports booting via an initramfs, it just doesn't require or
-provide one. As a user you have the means to set this up yourself for your
-system.
-
-Full disk encryption is also possible without the use of an initramfs in modern
-kernels (see dm-mod.create).
-
-The initramfs concept is an ugly, complicated and largely optional mess. Thank
-god it isn't a requirement.
+    2. Multi-drive systems must use PARTUUID or UUID in place of /dev/sdXX in
+       the bootloader configuration to ensure that the kernel will find the
+       right drive.
 
 
-Why must I compile my own kernel?
-________________________________________________________________________________
+    Why doesn't KISS support initramfs?
+    ____________________________________________________________________________
 
-The kernel must be compiled by the user for a variety of reasons.
+    KISS technically supports booting via an initramfs, it just doesn't require
+    or provide one. As a user you have the means to set this up yourself for
+    your system.
 
-1. The user maintains full control over all aspects of their kernel and further,
-   their entire system. There is no lock-in into a specific set of kernel
-   sources, version, use of proprietary firmware, patches, config, etc.
+    Full disk encryption is also possible without the use of an initramfs in
+    modern kernels (see dm-mod.create).
 
-   The user decides:
-
-   - Which kernel to use (sources and version).
-   - When to update their kernel.
-   - Whether to use proprietary firmware blobs.
-   - Which patches to use (if any).
-   - How the kernel is configured (endless options).
-   - How many kernels they'd like to keep.
-   - Compiler options (-O3, -march=native, etc).
-
-   You as a user might actually learn something too. You may come to understand
-   your hardware, what drivers it needs, how the kernel works from a
-   configuration perspective, etc.
-
-   You should have a better understanding of this part of the system afterwards
-   and you'll be able fix any issues at this level with relative ease.
-
-   Remember, it's only hard the first time. Once a working config is created,
-   no further work should need to be done each time you update your kernel.
-
-   If the new kernel version has an issue with your hardware, simply boot
-   another from your backups. If new hardware was added, simply run
-   'make menuconfig' and add what is needed.
-
-   I'll say what I always say. Nothing prevents anyone from providing kernel
-   binaries and an initramfs generation tool for KISS. Just don't wait on the
-   BDFL to do it for you.
-
-2. Eases distribution maintenance for the BDFL. Shipping a generic kernel
-   demands a humongous, module heavy kernel with support for everything under
-   the sun. An initramfs is then a requirement to boot this damn monstrosity.
-
-   There is then a need for a _portable_ initramfs generation tool which to my
-   knowledge doesn't exist. There can't be a dependence on bash or anything
-   outside of core. All initramfs tools are either distribution-specific or
-   non-portable to KISS.
-
-   Then there'd be endless support requests for tweaks, additions and removals
-   to the distribution config and the burden of updating the kernel on every
-   release.
-
-   Does KISS ship the latest kernel? The long term support kernel? Both? Some
-   users require firmware so we'd need two separate binaries, one for
-   linux-libre and another for regular linux.
-
-   What if the latest kernel has issues on some hardware? New builds and
-   binaries must be released with backported patches.
-
-   It's a large maintenance burden for something which can simply be solved by
-   the user doing this themselves. The user maintains full control over every
-   aspect of their kernel and is solely responsible for it.
+    The initramfs concept is an ugly, complicated and largely optional mess.
+    Thank god it isn't a requirement.
 
 
-Why doesn't KISS provide kernel sources as a package?
-________________________________________________________________________________
+    Why must I compile my own kernel?
+    ____________________________________________________________________________
 
-Why should it? See above.
+    The kernel must be compiled by the user for a variety of reasons.
+
+    1. The user maintains full control over all aspects of their kernel and
+       further, their entire system. There is no lock-in into a specific set of
+       kernel sources, version, use of proprietary firmware, patches, config,
+       etc.
+
+       The user decides:
+
+       - Which kernel to use (sources and version).
+       - When to update their kernel.
+       - Whether to use proprietary firmware blobs.
+       - Which patches to use (if any).
+       - How the kernel is configured (endless options).
+       - How many kernels they'd like to keep.
+       - Compiler options (-O3, -march=native, etc).
+
+       You as a user might actually learn something too. You may come to
+       understand your hardware, what drivers it needs, how the kernel works
+       from a configuration perspective, etc.
+
+       You should have a better understanding of this part of the system
+       afterwards and you'll be able fix any issues at this level with relative
+       ease.
+
+       Remember, it's only hard the first time. Once a working config is
+       created, no further work should need to be done each time you update
+       your kernel.
+
+       If the new kernel version has an issue with your hardware, simply boot
+       another from your backups. If new hardware was added, simply run
+       'make menuconfig' and add what is needed.
+
+       I'll say what I always say. Nothing prevents anyone from providing kernel
+       binaries and an initramfs generation tool for KISS. Just don't wait on
+       the BDFL to do it for you.
+
+    2. Eases distribution maintenance for the BDFL. Shipping a generic kernel
+       demands a humongous, module heavy kernel with support for everything
+       under the sun. An initramfs is then a requirement to boot this damn
+       monstrosity.
+
+       There is then a need for a _portable_ initramfs generation tool which to
+       my knowledge doesn't exist. There can't be a dependence on bash or
+       anything outside of core. All initramfs tools are either
+       distribution-specific or non-portable to KISS.
+
+       Then there'd be endless support requests for tweaks, additions and
+       removals to the distribution config and the burden of updating the kernel
+       on every release.
+
+       Does KISS ship the latest kernel? The long term support kernel? Both?
+       Some users require firmware so we'd need two separate binaries, one for
+       linux-libre and another for regular linux.
+
+       What if the latest kernel has issues on some hardware? New builds and
+       binaries must be released with backported patches.
+
+       It's a large maintenance burden for something which can simply be solved
+       by the user doing this themselves. The user maintains full control over
+       every aspect of their kernel and is solely responsible for it.
 
 
-Must I keep the linux-headers package in sync with my kernel's version to
-maintain a working system?
-________________________________________________________________________________
+    Why doesn't KISS provide kernel sources as a package?
+    ____________________________________________________________________________
 
-The kernel headers in KISS are pinned to an LTS kernel version and are only
-updated when there are changes of interest in the kernel or headers themselves
-(usually by users requesting new features available in the newer headers).
-
-The headers are backwards compatible and are fully usable with a matching or
-NEWER kernel version. There are two cases where you'd be required to update
-the headers yourself.
-
-1. To run a kernel _older_ than the default headers.
-2. To make use of features in your _newer_ kernel version.
-
-Here's an excerpt from the kernel's documentation which may explain the
-situation better than I.
-
-> Kernel headers are backwards compatible, but not forwards compatible. This
-  means that a program built against a C library using older kernel headers
-  should run on a newer kernel (although it may not have access to new
-  features), but a program built against newer kernel headers may not work on
-  an older kernel.
-
-  Source: <a href='https://www.kernel.org/doc/Documentation/kbuild/headers_install.txt'>https://www.kernel.org/doc/Documentation/kbuild/headers_install.txt</a>
+    Why should it? See above.
 
 
-________________________________________________________________________________
+    Must I keep the linux-headers package in sync with my kernel's version to
+    maintain a working system?
+    ____________________________________________________________________________
+
+    The kernel headers in KISS are pinned to an LTS kernel version and are only
+    updated when there are changes of interest in the kernel or headers
+    themselves (usually by users requesting new features available in the newer
+    headers).
+
+    The headers are backwards compatible and are fully usable with a matching or
+    NEWER kernel version. There are two cases where you'd be required to update
+    the headers yourself.
+
+    1. To run a kernel _older_ than the default headers.
+    2. To make use of features in your _newer_ kernel version.
+
+    Here's an excerpt from the kernel's documentation which may explain the
+    situation better than I.
+
+    > Kernel headers are backwards compatible, but not forwards compatible. This
+      means that a program built against a C library using older kernel headers
+      should run on a newer kernel (although it may not have access to new
+      features), but a program built against newer kernel headers may not work
+      on an older kernel.
+
+      From: <a href='https://www.kernel.org/doc/Documentation/kbuild/headers_install.txt'>https://www.kernel.org/doc/Documentation/kbuild/headers_install.txt</a>
+
+
 
 GCC
 ________________________________________________________________________________
 
 
-C compiler cannot create executables.
-________________________________________________________________________________
+    C compiler cannot create executables.
+    ____________________________________________________________________________
 
-This is almost always an error in your CFLAGS/CXXFLAGS. Ensure that you have
-used -ONUM (CAPITAL O) and not (lowercase o) or (zero 0).
+    This is almost always an error in your CFLAGS/CXXFLAGS. Ensure that you have
+    used -ONUM (CAPITAL O) and not (lowercase o) or (zero 0).
 
-If the above doesn't fix the issue, try building the package with:
+    If the above doesn't fix the issue, try building the package with:
 
-    $ CFLAGS= CXXFLAGS= LDFLAGS= kiss b pkg
+        $ CFLAGS= CXXFLAGS= LDFLAGS= kiss b pkg
 
-You'll then be able to discern whether or not this was the issue.
+    You'll then be able to discern whether or not this was the issue.
 
 
-________________________________________________________________________________
 
 XORG
 ________________________________________________________________________________
 
 
-Why can't I start Xorg as a normal user?
-________________________________________________________________________________
+    Why can't I start Xorg as a normal user?
+    ____________________________________________________________________________
 
-This is likely due to you running 'modprobe amdgpu' or equivalent post (or late)
-boot which causes udev to miss setting up the GPU device in /dev/dri.
+    This is likely due to you running 'modprobe amdgpu' or equivalent post (or
+    late) boot which causes udev to miss setting up the GPU device in /dev/dri.
 
-There are three separate solutions ranging from easy to hard. Either of the
-three will solve the issue.
+    There are three separate solutions ranging from easy to hard. Either of the
+    three will solve the issue.
 
-1. Start the udevd service.
+    1. Start the udevd service.
 
-   This will keep udevd alive and ensure that it does its thing when it detects
-   that the GPU driver has loaded.
+       This will keep udevd alive and ensure that it does its thing when it
+       detects that the GPU driver has loaded.
 
-   Enabling the service also turns on device hotplug and other features. This
-   isn't the default as there's no need for the daemon to run on a static
-   system.
+       Enabling the service also turns on device hotplug and other features.
+       This isn't the default as there's no need for the daemon to run on a
+       static system.
 
-   $ ln -s /etc/sv/udevd/ /var/service
+       $ ln -s /etc/sv/udevd/ /var/service
 
+    2. Run 'modprobe' earlier in the boot process.
 
-2. Run 'modprobe' earlier in the boot process.
+       Running 'modprobe' in your inittab or in rc.d will result in it executing
+       _after_ udevd has finished setting up devices.
 
-   Running 'modprobe' in your inittab or in rc.d will result in it executing
-   _after_ udevd has finished setting up devices.
+       By moving 'modprobe' to /etc/rc.conf, it will load the driver before
+       udevd executes which will allow it to detect and setup the device.
 
-   By moving 'modprobe' to /etc/rc.conf, it will load the driver before udevd
-   executes which will allow it to detect and setup the device.
+    3. Compile the GPU driver and firmware into the kernel.
 
+       This is trickier but the best solution overall. Instead of using modules,
+       compile the firmware into the kernel.
 
-3. Compile the GPU driver and firmware into the kernel.
+       You'll then not have to worry about udevd/modprobe as the kernel will
+       automatically load the driver as early as possible.
 
-   This is trickier but the best solution overall. Instead of using modules,
-   compile the firmware into the kernel.
-
-   You'll then not have to worry about udevd/modprobe as the kernel will
-   automatically load the driver as early as possible.
-
-   This may include compiling proprietary firmware into the kernel as well
-   which is a little bit finicky but doable.
+       This may include compiling proprietary firmware into the kernel as well
+       which is a little bit finicky but doable.
 
 
-How do I take a screenshot?
-________________________________________________________________________________
+    How do I take a screenshot?
+    ____________________________________________________________________________
 
-Most users will typically use 'ffmpeg' as their screenshot tool as they'll
-already have ffmpeg installed for MPV or Firefox. Other options include
-'scrot', 'imlib2' or 'imagemagick' (import).
+    Most users will typically use 'ffmpeg' as their screenshot tool as they'll
+    already have ffmpeg installed for MPV or Firefox. Other options include
+    'scrot', 'imlib2' or 'imagemagick' (import).
 
-If you'd like to use another tool, package it yourself. Remember, if no one has
-packaged something it means that no one has needed said package.
-It is up to you.
+    If you'd like to use another tool, package it yourself. Remember, if no one
+    has packaged something it means that no one has needed said package. It is
+    up to you.
 
 ________________________________________________________________________________
 
