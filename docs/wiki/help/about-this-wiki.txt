@@ -24,8 +24,7 @@ ________________________________________________________________________________
 
 Links to other wiki pages can be written in the following way:
 
-    # Backslash inserted to prevent formatting the example.
-    \@/help/wiki-syntax
+    @/help/wiki-syntax
 
 Which is turned into:
 
@@ -52,9 +51,9 @@ ________________________________________________________________________________
 Links to GitHub repositories can be written in the following way:
 
     # Backslash inserted to prevent formatting the example.
-    \$/username
-    \$/username/repo
-    \$/username/repo/commits/etc
+    $/username
+    $/username/repo
+    $/username/repo/commits/etc
 
 Which is turned into:
 
