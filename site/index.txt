@@ -55,6 +55,10 @@ ________________________________________________________________________________
 FURTHER READING
 ________________________________________________________________________________
 
-See: @/wiki @/guidestones @/package-system @/package-manager @/install
+- @/wiki
+- @/guidestones
+- @/package-system
+- @/package-manager
+- @/install
 
 
