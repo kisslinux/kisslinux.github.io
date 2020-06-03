@@ -6,8 +6,8 @@ This distribution is developed by:
 Dylan Araps ($/dylanaraps)
 
 - Creator and BDFL of KISS.
-- Creator of neofetch, pfetch, pywal, fff,
-- Creator of the pure ba[sh] bible.
+- Creator of neofetch, pfetch, pywal, fff, sowm and many more.
+- Creator of the pure bash and pure sh bibles.
 
 
 
