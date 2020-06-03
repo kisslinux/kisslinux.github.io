@@ -17,8 +17,7 @@ txt2html() {
 
     # Convert [0] into HTML links.
     sed -E "s|^( *)(\[[0-9\.]*\])|\1<span id=\"\2\">\2</span>|g" |
-    sed -E "s|(.)(\[[0-9\.]+\])( *\w?)([^\"\<])|\1<a href=\"#\2\">\2</a>\3\4|g" |
-    sed -E "s|(.)(\[[0-9\.]+\])( *\w?)$|\1<a href=\"#\2\">\2</a>\3|g" |
+    sed -E "s|([^\"])(\[[0-9\.]*\])|\1<a href=\"#\2\">\2</a>|g" |
 
     # Insert the page into the template.
     sed -E '/%%CONTENT%%/r /dev/stdin' template.html |

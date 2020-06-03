@@ -106,15 +106,15 @@ kept to a minimum (though we must also remain realistic).
 |                  |                                                |          |
 +------------------+------------------------------------------------+----------+
 
-<span id="[1]">[1]</span> Git is also required for contribution to the distribution itself. Strictly
+<span id="[1]"><a href="#[1]">[1]</a></span> Git is also required for contribution to the distribution itself. Strictly
     speaking, nothing forces you to use git. Remote repositories and git based
     sources will simply become unusable.
 
-<span id="[2]">[2]</span> There is no standard utility for the generation of sha256 checksums. While
+<span id="[2]"><a href="#[2]">[2]</a></span> There is no standard utility for the generation of sha256 checksums. While
     sha256sum is listed above, the package manager also supports sha256, shasum
     and openssl as fallbacks.
 
-<span id="[3]">[3]</span> The tar command has no standard! This came as a shock. The POSIX equivalent
+<span id="[3]"><a href="#[3]">[3]</a></span> The tar command has no standard! This came as a shock. The POSIX equivalent
     is "pax" though this isn't in wide use (at least on Linux).
 
     Our usage of tar is merely, cf, xf and tf. A patch is applied to sbase's
@@ -125,7 +125,7 @@ kept to a minimum (though we must also remain realistic).
     Tested tar implementations include: busybox, toybox, sbase, GNU and
     libarchive (though all tar implementations should work in theory).
 
-<span id="[4]">[4]</span> These three compression methods are required as pretty much every package
+<span id="[4]"><a href="#[4]">[4]</a></span> These three compression methods are required as pretty much every package
     source uses them as the tarball compression method.
 
     The other compression methods are optional as no package sources (in the
@@ -135,7 +135,7 @@ kept to a minimum (though we must also remain realistic).
     method will simply become a 'make' dependency of the package until usage
     increases to a "normality".
 
-<span id="[5]">[5]</span> A privilege escalation utility is only needed when using the package
+<span id="[5]"><a href="#[5]">[5]</a></span> A privilege escalation utility is only needed when using the package
     manager as a normal user for system-wide package installation.
 
     Installation to a user-writable directory does not require root access.
@@ -143,7 +143,7 @@ kept to a minimum (though we must also remain realistic).
     Root usage of the package manager (chroot usage for example) does not
     require these utilities.
 
-<span id="[6]">[6]</span> If these are missing, binary stripping and/or the dependency fixer will
+<span id="[6]"><a href="#[6]">[6]</a></span> If these are missing, binary stripping and/or the dependency fixer will
     simply be disabled.
 
     Regarding 'strip'; It has a POSIX specification, though the spec doesn't
