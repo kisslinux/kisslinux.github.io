@@ -27,428 +27,441 @@ ________________________________________________________________________________
   the repositories.
 
 
-
 GENERAL
 ________________________________________________________________________________
 
-[0000]--------------------------------------------------------------------------
 
-Package is not suitable for inclusion in the Community repository. The same
-rules above may apply to other software at the discretion of the BDFL.
+    [0000]----------------------------------------------------------------------
 
-Examples: dbus, systemd, polkit, gettext, intltool, pulseaudio, pipewire,
-          pam, wayland, logind, ConsoleKit, libsn, electron and all
-          Desktop Environments.
+    Package is not suitable for inclusion in the Community repository. The same
+    rules above may apply to other software at the discretion of the BDFL.
 
-
-[0001]--------------------------------------------------------------------------
-
-No new packages shall use GTK2 as it will be removed once Firefox drops it as a
-dependency.
+    Examples: dbus, systemd, polkit, gettext, intltool, pulseaudio, pipewire,
+              pam, wayland, logind, ConsoleKit, libsn, electron and all
+              Desktop Environments.
 
 
-[0002]--------------------------------------------------------------------------
+    [0001]----------------------------------------------------------------------
 
-No new packages shall use Python 2 as it will be removed once Firefox drops it
-as a dependency.
+    No new packages shall use GTK2 as it will be removed once Firefox drops it
+    as a dependency.
 
 
-[0003]--------------------------------------------------------------------------
+    [0002]----------------------------------------------------------------------
 
-Packages which are binaries should contain the suffix '-bin' to reflect this
-fact. Similarly, packages which pull from git should contain the suffix '-git'.
-The version of git packages should also be set to 'git'.
+    No new packages shall use Python 2 as it will be removed once Firefox drops
+    it as a dependency.
+
+
+    [0003]----------------------------------------------------------------------
+
+    Packages which are binaries should contain the suffix '-bin' to reflect
+    this fact. Similarly, packages which pull from git should contain the
+    suffix '-git'. The version of git packages should also be set to 'git'.
 
 
 
 BUILD
 ________________________________________________________________________________
 
-[0200]--------------------------------------------------------------------------
 
-This guide should be used alongside shellcheck and not in place of it.
+    [0200]----------------------------------------------------------------------
+
+    This guide should be used alongside shellcheck and not in place of it.
 
 
-[0201]--------------------------------------------------------------------------
+    [0201]----------------------------------------------------------------------
 
-All shell code must pass the shellcheck linter. Any false-positives or intended
-behavior must have a rationale attached with the exclusion.
+    All shell code must pass the shellcheck linter. Any false-positives or
+    intended behavior must have a rationale attached with the exclusion.
 
     # Disable warning as CFLAGS must work this way.
     # shellcheck disable=2086
     "${CC:-cc}" $CFLAGS ...
 
 
-[0202]--------------------------------------------------------------------------
+    [0202]----------------------------------------------------------------------
 
-Use 4 spaces for indentation.
-
-
-[0203]--------------------------------------------------------------------------
-
-Lines should not exceed 80 characters in length.
+    Use 4 spaces for indentation.
 
 
-[0204]--------------------------------------------------------------------------
+    [0203]----------------------------------------------------------------------
 
-All packages must use the POSIX shell shebang with '-e' to exit on error.
-Additionally, '-ef' can be used if word-splitting is required.
-
-There must also be a blank line directly below the shebang.
-
-   #!/bin/sh -e
-
-   # Code starts here.
+    Lines should not exceed 80 characters in length.
 
 
-[0205]--------------------------------------------------------------------------
+    [0204]----------------------------------------------------------------------
 
-All comments must start with a capital letter and use proper spelling, grammar
-and punctuation.
+    All packages must use the POSIX shell shebang with '-e' to exit on error.
+    Additionally, '-ef' can be used if word-splitting is required.
 
-   # This is a comment.
+    There must also be a blank line directly below the shebang.
+
+    #!/bin/sh -e
+
+    # Code starts here.
 
 
-[0206]--------------------------------------------------------------------------
+    [0205]----------------------------------------------------------------------
 
-Leave comments to explain *why* the code is needed and not *what* it does.
+    All comments must start with a capital letter and use proper spelling,
+    grammar and punctuation.
 
-Bad:
+    # This is a comment.
+
+
+    [0206]----------------------------------------------------------------------
+
+    Leave comments to explain *why* the code is needed and not *what* it does.
+
+    Bad:
 
     # Create a directory.
     mkdir -p "$1/usr/bin"
 
-Good:
+    Good:
 
     # 'make install' doesn't create the directory.
     mkdir -p "$1/usr/bin"
 
 
-[0207]--------------------------------------------------------------------------
+    [0207]----------------------------------------------------------------------
 
-Avoid adding braces around variables if unneeded.
+    Avoid adding braces around variables if unneeded.
 
-Bad:  printf '%s\n' "${var}"
-Good: printf '%s\n' "$var"
-Good: printf '%s\n' "${var}.${var2}"
-
-
-[0208]--------------------------------------------------------------------------
-
-Avoid quotes when unneeded.
-
-Bad:  [ "$var" = "test" ]
-Good: [ "$var" = test ]
-
-Bad:  install -Dm755 "file" "$1/usr/bin/file"
-Good: install -Dm755 file "$1/usr/bin/file"
+    Bad:  printf '%s\n' "${var}"
+    Good: printf '%s\n' "$var"
+    Good: printf '%s\n' "${var}.${var2}"
 
 
-[0209]--------------------------------------------------------------------------
+    [0208]----------------------------------------------------------------------
 
-Quote entire strings instead of variables.
+    Avoid quotes when unneeded.
 
-Bad:  install -Dm644 cat "$1"/usr/bin/cat
-Good: install -Dm644 cat "$1/usr/bin/cat"
+    Bad:  [ "$var" = "test" ]
+    Good: [ "$var" = test ]
+
+    Bad:  install -Dm755 "file" "$1/usr/bin/file"
+    Good: install -Dm755 file "$1/usr/bin/file"
 
 
-[0210]--------------------------------------------------------------------------
+    [0209]----------------------------------------------------------------------
 
-Align arguments in blocks of command calls.
+    Quote entire strings instead of variables.
 
-Bad:
+    Bad:  install -Dm644 cat "$1"/usr/bin/cat
+    Good: install -Dm644 cat "$1/usr/bin/cat"
+
+
+    [0210]----------------------------------------------------------------------
+
+    Align arguments in blocks of command calls.
+
+    Bad:
 
     install -D file.h "$1/usr/include/file.h"
     install -D libfile.so "$1/usr/lib/libfile.so"
 
-Good:
+    Good:
 
     install -D file.h     "$1/usr/include/file.h"
     install -D libfile.so "$1/usr/lib/libfile.so"
 
 
-[0211]--------------------------------------------------------------------------
+    [0211]----------------------------------------------------------------------
 
-Use 'install' instead of ...
+    Use 'install' instead of ...
 
-Bad:
+    Bad:
 
     mkdir -p "$1/usr/bin"
     cp ls "$1/usr/bin/"
 
-Good:
+    Good:
 
     install -Dm755 ls "$1/usr/bin/ls"
 
 
-[0212]--------------------------------------------------------------------------
+    [0212]----------------------------------------------------------------------
 
-Prefer $CC to ...
+    Prefer $CC to ...
 
-Bad:  gcc -o file file.c
-Good: "${CC:-cc}" -o file file.c
+    Bad:  gcc -o file file.c
+    Good: "${CC:-cc}" -o file file.c
 
 
-[0213]--------------------------------------------------------------------------
+    [0213]----------------------------------------------------------------------
 
-Always use '-p' with 'mkdir'.
+    Always use '-p' with 'mkdir'.
 
 
 
 GNU AUTOTOOLS
 ________________________________________________________________________________
 
-[0400]--------------------------------------------------------------------------
 
-Use the following style:
+    [0400]----------------------------------------------------------------------
 
-   ./configure \
-       --prefix=/usr \
-       --more_args_here
+    Use the following style:
 
-   make
-   make DESTDIR="$1" install
+       ./configure \
+           --prefix=/usr \
+           --more_args_here
+
+       make
+       make DESTDIR="$1" install
 
 
-[0401]--------------------------------------------------------------------------
+    [0401]----------------------------------------------------------------------
 
-Avoid running ./autogen.sh, autoreconf or similar tools prior to starting the
-build process. If there are no pre-generated configure or Makefiles, an
-alternate source must be sought.
+    Avoid running ./autogen.sh, autoreconf or similar tools prior to starting
+    the build process. If there are no pre-generated configure or Makefiles, an
+    alternate source must be sought.
 
-An exception can be made for packages in which no such source exists. If
-autogen.sh or autoreconf are required, prefer autoreconf.
+    An exception can be made for packages in which no such source exists. If
+    autogen.sh or autoreconf are required, prefer autoreconf.
 
 
 
 MESON
 ________________________________________________________________________________
 
-[0600]--------------------------------------------------------------------------
 
-Use the following style:
+    [0600]----------------------------------------------------------------------
 
-   export DESTDIR="$1"
+    Use the following style:
 
-   meson \
-       --prefix=/usr \
-       -Dexample=false \
-       . output
+       export DESTDIR="$1"
 
-   ninja -C output
-   ninja -C output install
+       meson \
+           --prefix=/usr \
+           -Dexample=false \
+           . output
+
+       ninja -C output
+       ninja -C output install
 
 
 
 CMAKE
 ________________________________________________________________________________
 
-[0800]--------------------------------------------------------------------------
 
-Use the following style:
+    [0800]----------------------------------------------------------------------
 
-   export DESTDIR="$1"
+    Use the following style:
 
-   cmake -B build \
-       -DCMAKE_INSTALL_PREFIX=/usr \
-       -DFLAG=1
+       export DESTDIR="$1"
 
-   cmake --build   build
-   cmake --install build
+       cmake -B build \
+           -DCMAKE_INSTALL_PREFIX=/usr \
+           -DFLAG=1
+
+       cmake --build   build
+       cmake --install build
 
 
 
 MAKE
 ________________________________________________________________________________
 
-[1000]--------------------------------------------------------------------------
 
-Use one of the following style when applicable:
+    [1000]----------------------------------------------------------------------
 
-   make
-   make DESTDIR="$1" PREFIX=/usr install
+    Use one of the following style when applicable:
 
-
-   make PREFIX=/usr
-   make DESTDIR="$1" install
+       make
+       make DESTDIR="$1" PREFIX=/usr install
 
 
-   make PREFIX=/usr
-   make DESTDIR="$1" PREFIX=/usr install
+       make PREFIX=/usr
+       make DESTDIR="$1" install
 
 
-For packages which require a few variables be set, prefer this style.
-
-   make \
-       PREFIX=/usr \
-       SBINDIR=/usr/bin \
-       OPT="$CFLAGS"
-
-   make \
-       DESTDIR="$1" \
-       PREFIX=/usr \
-       install
+       make PREFIX=/usr
+       make DESTDIR="$1" PREFIX=/usr install
 
 
-For packages which require the variables be set for all calls to make,
-prefer this style.
+    For packages which require a few variables be set, prefer this style.
 
-   mk() {
        make \
            PREFIX=/usr \
-           DESTDIR="$1" \
-           EXAMPLE=1 \
-           "$@"
-   }
+           SBINDIR=/usr/bin \
+           OPT="$CFLAGS"
 
-   mk
-   mk install
+       make \
+           DESTDIR="$1" \
+           PREFIX=/usr \
+           install
+
+
+    For packages which require the variables be set for all calls to make,
+    prefer this style.
+
+       mk() {
+           make \
+               PREFIX=/usr \
+               DESTDIR="$1" \
+               EXAMPLE=1 \
+               "$@"
+       }
+
+       mk
+       mk install
 
 
 
 RUST
 ________________________________________________________________________________
 
-[1050]--------------------------------------------------------------------------
 
-Use the following style:
+    [1050]----------------------------------------------------------------------
 
-   cargo build --release
+    Use the following style:
 
-   install -Dm755 target/release/rg "$1/usr/bin/rg"
+       cargo build --release
+
+       install -Dm755 target/release/rg "$1/usr/bin/rg"
 
 
 
 GO
 ________________________________________________________________________________
 
-[1100]--------------------------------------------------------------------------
 
-Use the following style:
+    [1100]----------------------------------------------------------------------
 
-   go build
+    Use the following style:
 
-   install -Dm755 lazygit "$1/usr/bin/lazygit"
+       go build
+
+       install -Dm755 lazygit "$1/usr/bin/lazygit"
+
 
 
 PYTHON
 ________________________________________________________________________________
 
-[1150]--------------------------------------------------------------------------
 
-Use the following style:
+    [1150]----------------------------------------------------------------------
 
-   python setup.py build
-   python setup.py install --prefix=/usr --root="$1"
+    Use the following style:
+
+       python setup.py build
+       python setup.py install --prefix=/usr --root="$1"
 
 
 
 DEPENDS
 ________________________________________________________________________________
 
-[1201]--------------------------------------------------------------------------
 
-This dependency is unneeded and can be removed.
+    [1201]----------------------------------------------------------------------
 
-
-[1202]--------------------------------------------------------------------------
-
-This dependency is implicit. Some packages are assumed to always be available.
-This dependency can be removed.
-
-Examples: gcc, make, pkgconf, musl.
+    This dependency is unneeded and can be removed.
 
 
-[1203]--------------------------------------------------------------------------
+    [1202]----------------------------------------------------------------------
 
-This dependency needs 'make' as it is only required during build time.
+    This dependency is implicit. Some packages are assumed to always be
+    available. This dependency can be removed.
 
-Common Examples: autoconf, automake, cmake, meson.
-
-
-[1204]--------------------------------------------------------------------------
-
-This dependency doesn't need 'make' as it is required during runtime.
+    Examples: gcc, make, pkgconf, musl.
 
 
-[1205]--------------------------------------------------------------------------
+    [1203]----------------------------------------------------------------------
 
-The depends list must be sorted.
+    This dependency needs 'make' as it is only required during build time.
+
+    Common Examples: autoconf, automake, cmake, meson.
 
 
-[1206]--------------------------------------------------------------------------
+    [1204]----------------------------------------------------------------------
 
-The depends file is empty and should be removed.
+    This dependency doesn't need 'make' as it is required during runtime.
+
+
+    [1205]----------------------------------------------------------------------
+
+    The depends list must be sorted.
+
+
+    [1206]----------------------------------------------------------------------
+
+    The depends file is empty and should be removed.
 
 
 
 SOURCES
 ________________________________________________________________________________
 
-[1401]--------------------------------------------------------------------------
 
-Use a HTTPS source if at all possible.
+    [1401]----------------------------------------------------------------------
 
-
-[1402]--------------------------------------------------------------------------
-
-Don't specify patches remotely. Store them as a part of the package's
-repository files.
-
-Bad:  https://example.com/fix-build.patch
-Good: patches/fix-build.patch
+    Use a HTTPS source if at all possible.
 
 
-[1403]--------------------------------------------------------------------------
+    [1402]----------------------------------------------------------------------
 
-Don't use a git repository in place of a release tarball unless it makes sense.
+    Don't specify patches remotely. Store them as a part of the package's
+    repository files.
+
+    Bad:  https://example.com/fix-build.patch
+    Good: patches/fix-build.patch
 
 
-[1404]--------------------------------------------------------------------------
+    [1403]----------------------------------------------------------------------
 
-Drop www. and .git from all sources if possible.
+    Don't use a git repository in place of a release tarball unless it makes
+    sense to do so.
+
+
+    [1404]----------------------------------------------------------------------
+
+    Drop www. and .git from all sources if possible.
 
 
 
 VERSION
 ________________________________________________________________________________
 
-[1601]--------------------------------------------------------------------------
 
-Version doesn't match upstream.
+    [1601]----------------------------------------------------------------------
 
-
-[1602]--------------------------------------------------------------------------
-
-Use 'git' in place of '9999'.
+    Version doesn't match upstream.
 
 
-[1603]--------------------------------------------------------------------------
+    [1602]----------------------------------------------------------------------
 
-Missing relative version number.
+    Use 'git' in place of '9999'.
 
-Bad:  1.0.0
-Good: 1.0.0 1
+
+    [1603]----------------------------------------------------------------------
+
+    Missing relative version number.
+
+    Bad:  1.0.0
+    Good: 1.0.0 1
 
 
 
 PATCHES
 ________________________________________________________________________________
 
-[1800]--------------------------------------------------------------------------
 
-Use the following style:
+    [1800]----------------------------------------------------------------------
 
-     patch -p1 < patch.patch
+    Use the following style:
 
-     # If there is more than one patch.
-     for patch in *.patch; do
-         patch -p1 < "$patch"
-     done
+         patch -p1 < patch.patch
+
+         # If there is more than one patch.
+         for patch in *.patch; do
+             patch -p1 < "$patch"
+         done
 
 
-[1801]--------------------------------------------------------------------------
+    [1801]----------------------------------------------------------------------
 
-All patches should use the same strip amount. If this is not possible, modify
-the patches. Strip amount is controlled by the -p flag.
-
+    All patches should use the same strip amount. If this is not possible,
+    modify the patches. Strip amount is controlled by the -p flag.
