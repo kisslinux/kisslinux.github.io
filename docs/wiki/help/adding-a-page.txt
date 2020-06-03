@@ -1,9 +1,9 @@
 ADDING A PAGE
 ________________________________________________________________________________
 
-Adding a page to the Wiki and integrating it into the home page /listing pages
-is rather simple (albeit manual for the time being). This may be automated (to
-a realistic extent) over time.
+Adding a page to the Wiki and integrating it into the home page/listing pages is
+rather simple (albeit manual for the time being). This may be automated (to a
+realistic extent) over time.
 
 Copy an existing page or start from the @/page-template.txt and begin writing.
 When you're ready to submit your page, the following steps must be followed.

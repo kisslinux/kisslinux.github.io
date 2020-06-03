@@ -1,0 +1,83 @@
+MANAGING REPOSITORIES
+________________________________________________________________________________
+
+Repository management in KISS is very simple. Repositories are configurable via
+an environment variable. This environment variable can be set system-wide,
+per-user, conditionally (via a script or program), for a single invocation, etc.
+
+The environment variable is called '$KISS_PATH' and is functionally identical to
+the '$PATH' variable. A colon separated list of paths in other words.
+
+Example: KISS_PATH=/var/db/kiss/repo/core:/var/db/kiss/repo/extra
+
+In the above example, two repositories are enabled (Core and Extra). The package
+manager will search this list for packages in the order it is written.
+
+Repositories can live anywhere on the system. In your '$HOME' directory,
+somewhere system-wide in '/', etc. The only requirement is that a full path be
+used.
+
+
+WHAT IS A REPOSITORY?
+________________________________________________________________________________
+
+A KISS repository is simply a directory of directories. The quickest way to get
+started is as follows.
+
+$ mkdir -p repo
+$ cd repo
+
+# Let's 'fork' a few packages into our new repository.
+$ kiss fork curl
+$ kiss fork xz
+$ kiss fork zlib
+
+This is now a fully usable repository and it can be added to your '$KISS_PATH'.
+
+
+ADDING THE COMMUNITY REPOSITORY
+________________________________________________________________________________
+
+Let's assume that our '$KISS_PATH' matches the above example (Core and Extra).
+Enabling the Community repository is as follows.
+
+$ git clone https://github.com/kisslinux/community
+$ export KISS_PATH=$KISS_PATH:/path/to/community/community
+
+
+PREVENT A PACKAGE FROM RECEIVING UPDATES
+________________________________________________________________________________
+
+Preventing a package from being updated is as simple as creating a repository
+and adding it to the start of your '$KISS_PATH'. The package manager will search
+the repositories (in order), find the new repository first, see that the package
+is already up-to-date and ignore it.
+
+
+PACKAGE FALLBACKS
+________________________________________________________________________________
+
+If you'd like to package something in your own repository but would like the
+package manager to prefer other repositories before yours, simply add your
+repository to the end of '$KISS_PATH'.
+
+The moment that your package is available elsewhere, the package manager will
+prefer the new location to yours. The list is searched (in order) and the first
+match is picked.
+
+
+BYPASSING KISS_PATH
+________________________________________________________________________________
+
+There is a special case where one can bypass the regular '$KISS_PATH' for a
+single invocation of the package manager. This has been called "CRUX-like usage"
+by users.
+
+$ cd /path/to/myrepo/firefox
+$ kiss b
+$ kiss i
+
+As seen above, various package manager commands will work without arguments,
+so long as you are in a package's repository directory. This will prepend the
+current directory to '$KISS_PATH' _only_ for this invocation.
+
