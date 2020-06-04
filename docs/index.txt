@@ -1,13 +1,24 @@
-KISS
-________________________________________________________________________________
-
-An independent Linux(R) distribution with a focus on simplicity and the concept
-of less is more. The distribution targets only the x86_64 [0] architecture and
-the English language.
-
-[0] Ports of the distribution to different architectures have been created by
-    the Community. See @/wiki/community/ports for more information.
-
++------------------------------------------------------------------------------+
+|                                                                              |
+|                   __  __     __     ______     ______                        |
+|                  /\ \/ /    /\ \   /\  ___\   /\  ___\                       |
+|                  \ \  _"-.  \ \ \  \ \___  \  \ \___  \                      |
+|                   \ \_\ \_\  \ \_\  \/\_____\  \/\_____\                     |
+|                    \/_/\/_/   \/_/   \/_____/   \/_____/                     |
+|                                                                              |
+|          Welcome to KISS. An independent Linux(R) distribution with          |
+|          a focus on simplicity and the concept of less is more.              |
+|                                                                              |
+|                                                                              |
+|          .--------------------------------------------------------.          |
+|          |                                                        |          |
+|          | The new Wiki is live! @/wiki                           |          |
+|          |                                                        | .--.     |
+|          '-------------------------------------------------------\\|o_o |    |
+|                                                                    |:_/ |    |
+|                                                                   //   \ \   |
+|                                                                  (|     | )  |
++------------------------------------------------------------------------------+
 
 
 OVERVIEW
