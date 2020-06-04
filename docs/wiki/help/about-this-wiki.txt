@@ -28,9 +28,7 @@ Links to other wiki pages can be written in the following way:
 
 Which is turned into:
 
-    # The two characters taken up by the '@' and '/' are also taken into
-    # account (two spaces inserted post-link).
-    &lt;a href="/wiki/help/wiki-syntax"&gt;wiki-syntax&lt;/a&gt;
+    @/&lt;a href="/wiki/help/wiki-syntax"&gt;wiki-syntax&lt;/a&gt;
 
 
 REFERENCE LINKS
@@ -59,7 +57,7 @@ Which is turned into:
 
     # The two characters taken up by the '@' and '/' are also taken into
     # account (two spaces inserted post-link).
-    &lt;a href="https://github.com/username"&gt;username&lt;/a&gt;
+    $/&lt;a href="https://github.com/username"&gt;username&lt;/a&gt;
 
 
 HTML

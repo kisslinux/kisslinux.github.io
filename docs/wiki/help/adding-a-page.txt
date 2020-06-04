@@ -9,21 +9,30 @@ Copy an existing page or start from the @/page-template.txt and begin writing.
 When you're ready to submit your page, the following steps must be followed.
 
 
-Syntax
+Requirements
 ________________________________________________________________________________
 
 1. Lines must not exceed 80 columns in width. This is a comfortable size for
    reading while not being too narrow for writing. This is a nice sweet spot.
 
-2. Pages must be written in English and without error. If this Wiki would like
-   to one day be known as a high quality resource, we must write to the best
-   of our ability.
+2. Include references where applicable. [0]
 
-3. Include references where applicable. [0]
+3. Pages must be written in English and without error. If this Wiki would like
+   to one day be known as a high quality resource, we must write to the best
+   of our ability. [1]
+
+4. Don't submit pull requests with spelling mistakes. These will be immediately
+   closed. Do spend a minute spell checking your work prior. [2]
 
 
 [0] References work like this. Square brackets and a number in two locations.
     The build system will automatically link these together (via an anchor).
+
+[1] Fixes to existing pages and suggestions are welcome. If you see anything
+    low-quality, incorrect or in need of fixing, please submit edits.
+
+[2] Exceptions are made for words which only exist in this technological bubble
+    of ours. This is common sense.
 
 
 Adding a new category:
