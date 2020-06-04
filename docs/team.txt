@@ -1,9 +1,11 @@
 TEAM
 ________________________________________________________________________________
 
-This distribution is developed by:
+Meet the team:
+
 
 Dylan Araps ($/dylanaraps)
+________________________________________________________________________________
 
 - Creator and BDFL of KISS.
 - Creator of neofetch, pfetch, pywal, fff, sowm and many more.
