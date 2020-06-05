@@ -7,8 +7,7 @@ txt2html() {
     # Right now this only does some URL transformations.
 
     # Convert all plain-text links to HTML links (<a href="X">X</a>).
-    sed -E "s|([^=][^\'\"])(https[:]//[^ )]*)|\1<a href='\2'>\2</a>|g" |
-    sed -E "s|^(https[:]//[^ )]{50})([^ )]*)|<a href='\0'>\1</a>|g" |
+    sed -E "s|([^\"\'\>])(http[s]?://[^[:space:]\)]*)|\1<a href='\2'>\2</a>|g" |
 
     # Convert @/words to relative HTML links.
     # Convert $/words to GitHub URLs.
