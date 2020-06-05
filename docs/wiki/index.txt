@@ -59,7 +59,7 @@
 |                                     |  |                                     |
 | XORG                                |  | WAYLAND                             |
 |                                     |  |                                     |
-| TODO                                |  | TODO                                |
+| @/xorg/x11-forwarding               |  | TODO                                |
 | TODO                                |  | TODO                                |
 | TODO                                |  | TODO                                |
 | TODO                                |  |                                     |
