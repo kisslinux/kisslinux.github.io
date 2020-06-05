@@ -1,0 +1,117 @@
+X11-FORWARDING
+________________________________________________________________________________
+
+X11-Forwarding is a secure shell feature, which allows one to forward/tunnel
+X11 connections through an existing SSH session. This is used to run X11 
+programs on a server while the ssh-client displays the graphical window through 
+the user's X11-server. [0]
+
+
+Server Configuration
+________________________________________________________________________________
+
+In most cases, you will already have the required dependencies. At minimum, 
+ensure that you have the following installed:
+
+$ kiss b xorg-server && kiss i xorg-server
+$ kiss b xauth && kiss i xauth
+
+
+Remote Server Configuration
+________________________________________________________________________________
+
+Configuring X11-Forwarding for a remote server is straightfoward and, once 
+completed, a viable alternative to most opensource VNC and RDP server options. 
+All that is required are a few modifications to configuration files that exist 
+on your remote X server:
+
+$ echo "XauthLocation /usr/bin/xauth" >> /etc/ssh/sshd_config
+$ echo "X11Fordwarding yes" >> /etc/ssh/sshd_config
+
+At this point you are ready to test your server!
+
+
+Client Settings
+________________________________________________________________________________
+
+In order to connect to your remote server, you will need an SSH client that 
+supports X11-Forwarding, as well as an X server running on the same client. Some
+popular cross-platform options include the following:
+
+* vcxsrv (recommended, server only) [1]
+* MobaXterm (both SSH client and X server, for Windows only) [2]
+* Xming (server only) [3]
+* X410 (server only) [4]
+
+From the client side, connect to the server via SSH through your favorite 
+terminal application while passing the "-X" switch. Pay attention to any 
+errors that may occur on connection. More verbose output can be achieved by 
+passing the "-v" switch:
+
+$ ssh -X -v user@localhost
+
+You can now start any X program on the remote server, the output will be 
+forwarded to your local session:
+
+$ xclock
+
+This should create a new window with the xclock application on your client side 
+X server.
+
+Use an "&" at the end of the command to prevent tying up the terminal in 
+question:
+
+$ xclock &
+
+
+Tips and Tricks
+________________________________________________________________________________
+
+* If your connection is slow, try enabling SSH compression by passing the "-C" 
+  switch.
+
+  $ ssh -X -C user@localhost
+
+* You can further improve your connection speed by using a cypher to connect to 
+  the remove server. This can be passed as an argument using the "-c" switch 
+  at the initialization of a new SSH connection. [5]
+
+  $ ssh -X -C -c aes256-ctr user@localhost
+
+* Your remote system most likely has many cypher options already available for 
+  you to choose from (es128-ctr, aes192-ctr, aes256-ctr, arcfour256, arcfour128, 
+  aes128-cbc, 3des-cbc, blowfish-cbc, cast128-cbc, aes192-cbc, aes256-cbc, 
+  arcfour, etc.) and each will vary in performance and security. Check out 
+  websites that benchmark the various security cyphers and choose the one that 
+  works best for you. [6]
+
+* Can you forward an entire desktop session?  Why yes, you can! Instructions for 
+  doing so vary per client, server configuration, and platform [7]. If you chose 
+  vcxsrv as your client on a Windows host, then I would recommend checking out 
+  the following youtube video:
+
+  "Linux and Windows | X11 Forwarding with SSH | VNC Alternative" by knary
+  https://www.youtube.com/watch?v=UWlsS6Jaibc
+
+
+References
+________________________________________________________________________________
+
+[0] https://wiki.archlinux.org/index.php/OpenSSH#X11_forwarding
+
+[1] https://sourceforge.net/projects/vcxsrv/
+
+[2] https://mobaxterm.mobatek.net/
+
+[3] http://www.straightrunning.com/XmingNotes/
+
+[4] https://x410.dev
+
+[5] https://www.cyberciti.biz/faq/speeding-up-ssh-x11-forwarding-with-unix-osx-
+    linux-bsd/
+
+[6] https://blog.famzah.net/2010/06/11/openssh-ciphers-performance-benchmark/
+
+[7] https://blog.warbel.net/index.php/2018/02/21/using-xnest-or-putty-vcxsrv-to-
+    start-a-full-remote-session/
+    
