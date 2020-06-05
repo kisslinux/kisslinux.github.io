@@ -25,7 +25,7 @@
 | THE DISTRIBUTION                    |  | THE WIKI                            |
 |                                     |  |                                     |
 | @/kiss/managing-repositories        |  | @/help/about-this-wiki              |
-| TODO                                |  | @/help/adding-a-page                |
+| @/kiss/style-guide                  |  | @/help/adding-a-page                |
 | TODO                                |  | @/help/page-template                |
 | TODO                                |  |                                     |
 |                                     |  |                                     |

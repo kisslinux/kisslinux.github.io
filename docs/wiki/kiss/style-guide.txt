@@ -1,4 +1,4 @@
-KISS STYLE GUIDE
+PACKAGE STYLE GUIDE
 ________________________________________________________________________________
 
 This document is a style guide which will double as documentation for a possible
