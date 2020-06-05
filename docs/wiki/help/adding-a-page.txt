@@ -21,8 +21,12 @@ ________________________________________________________________________________
    to one day be known as a high quality resource, we must write to the best
    of our ability. [1]
 
-4. Don't submit pull requests with spelling mistakes. These will be immediately
+4. Do not submit pull requests with spelling mistakes. These will be immediately
    closed. Do spend a minute spell checking your work prior. [2]
+
+5. One space after each sentence.
+
+6. Use only the 128 ASCII characters. [3]
 
 
 [0] References work like this. Square brackets and a number in two locations.
@@ -33,6 +37,8 @@ ________________________________________________________________________________
 
 [2] Exceptions are made for words which only exist in this technological bubble
     of ours. This is common sense.
+
+[3] https://en.wikipedia.org/wiki/ASCII
 
 
 Adding a new category:

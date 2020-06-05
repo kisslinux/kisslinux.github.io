@@ -32,14 +32,14 @@
 
 <a href="/wiki">wiki</a> / <a href='/wiki/dev'>dev</a> / replacing-udev                                       <a href='https://github.com/kisslinux/wiki/edit/master/dev/replacing-udev.txt'>Edit this page</a>
 
-Edited (<a href='https://github.com/kisslinux/wiki/commit/8ba53a722066b253d4f09ac62452a466dc509172'>8ba53a7</a>) at 2020-06-01 by Dylan Araps
+Edited (<a href='https://github.com/kisslinux/wiki/commit/4d8c87fe6dace19c9a0bbd68fb3eca393c6bf303'>4d8c87f</a>) at 2020-06-05 by Dylan Araps
 
 
 REPLACING UDEV
 ________________________________________________________________________________
 
-As of the 20/01/2020, it is now possible to replace udev with the device
-manager of your choosing. This Wiki page will cover replacing udev with
+As of the 20/01/2020, it is now possible to replace eudev with the device
+manager of your choosing. This Wiki page will cover replacing eudev with
 busybox mdev, however the steps are more or less the same for all other device
 managers (smdev, vdev, ...).
 
@@ -51,7 +51,7 @@ ________________________________________________________________________________
 - Libinput will be unable to use its quirks system.
 
 - Some packages have an eudev dependency which cannot be removed.
-    - lvm2 (Remove --enable-udev_sync and --enable-udev_rules)
+    - lvm2 (Compile _without_ --enable-udev_sync and --enable-udev_rules)
 
 
 BENEFITS
@@ -65,18 +65,18 @@ ________________________________________________________________________________
 PREPARATION
 ________________________________________________________________________________
 
-1. Make note of your current XKB rules, model and layout
+1. Make note of your current XKB rules, model and layout.
 
-   Xorg compiled without udev may require manual configuration to correctly set
+   Xorg compiled without eudev may require manual configuration to correctly set
    the keyboard's layout and other settings. The following command can be used
-   to detect the current config from a working machine.
+   to detect the current configuration from a working machine.
 
        $ setxkbmap -query
          rules:      evdev
          model:      pc105
          layout:     us
 
-2. Make note of your keyboard and mouse's /dev/input/event* entries
+2. Make note of your keyboard and mouse's /dev/input/event* entries.
 
    We also need to point Xorg to the input device's device entries in
    /dev/input. The following command lists all current input devices.
@@ -90,8 +90,8 @@ ________________________________________________________________________________
            | keyboard0                       id=7    [slave  keyboard (3)]
 
 
-   My keyboard has the ID '7'. The following command prints its
-   information including the needed device node location.
+   My keyboard has the ID '7'. The following command prints its information
+   including the needed device node location.
 
        $ xinput --list-props 7
        Device 'keyboard0':
@@ -103,7 +103,7 @@ ________________________________________________________________________________
        Device Product ID (320):        1, 1
 
 
-   The "Device Node (XXX):" line displays the location in /dev of my keyboard
+   The "Device Node (XXX):" line displays the location in /dev/ of my keyboard
    and is the value we will use when configuring Xorg. My keyboard is located
    at /dev/input/event4. This command should be repeated for any other input
    devices.
@@ -112,7 +112,7 @@ ________________________________________________________________________________
 CONFIGURING XORG
 ________________________________________________________________________________
 
-When Xorg is built without udev, Xorg will be unable to automatically find and
+When Xorg is built without eudev, Xorg will be unable to automatically find and
 use input devices. This requires the use of a "static" configuration using
 .conf files.
 

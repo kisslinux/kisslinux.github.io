@@ -17,8 +17,8 @@ Source: $/wyvertux/wyvertux
 CARBS LINUX
 ________________________________________________________________________________
 
-Carbs Linux is an in-development Linux® distribution with a suckless mindset.
-The base system will consist of only the necessary programs to create a Linux
+Carbs Linux is an in-development Linux distribution with a suckless mindset. The
+base system will consist of only the necessary programs to create a Linux
 distribution.
 
 Source: https://carbslinux.org/

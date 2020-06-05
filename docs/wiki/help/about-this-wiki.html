@@ -32,7 +32,7 @@
 
 <a href="/wiki">wiki</a> / <a href='/wiki/help'>help</a> / about-this-wiki                                     <a href='https://github.com/kisslinux/wiki/edit/master/help/about-this-wiki.txt'>Edit this page</a>
 
-Edited (<a href='https://github.com/kisslinux/wiki/commit/7f0ccabefa355567963a613b61cf0e9e6ac67773'>7f0ccab</a>) at 2020-06-03 by Dylan Araps
+Edited (<a href='https://github.com/kisslinux/wiki/commit/4d8c87fe6dace19c9a0bbd68fb3eca393c6bf303'>4d8c87f</a>) at 2020-06-05 by Dylan Araps
 
 
 ABOUT THIS WIKI
@@ -43,15 +43,15 @@ options. Any formatting is simply substituted using a call to 'sed' during site
 generation.
 
 The custom syntax is designed to be unobtrusive as white-space controls layout.
-Full HTML is also supported in pages though it should only be used if really
+Full HTML is also supported in pages though it should only be used if 100%
 necessary.
 
 
 REPOSITORY LAYOUT
 ________________________________________________________________________________
 
-The Wiki lives in a separate repository (kisslinux/wiki). It is then imported
-as a submodule inside of the website's repository (kisslinux/website). This
+The Wiki lives in a separate repository ($/<a href="https://github.com/kisslinux/wiki">kisslinux/wiki</a>). It is then imported
+as a submodule inside of the website's repository ($kisslinux/website). This
 keeps things neat and tidy. It also makes contribution easier as it's less
 daunting compared to nesting it inside the website's tree.
 
@@ -73,7 +73,7 @@ ________________________________________________________________________________
 
 Adding <a href="#[0]">[0]</a> to some text will create an anchor link to a corresponding reference.
 This corresponding reference must also be created by the writer of the document.
-The build system will merely link them together for you. <a href="#[1]">[1]</a>
+The build system will simply link them together for you. <a href="#[1]">[1]</a>
 
 <span id="[0]"><a href="#[0]">[0]</a></span> Clicking the above reference will scroll the page to these anchor links.
 
@@ -85,15 +85,12 @@ ________________________________________________________________________________
 
 Links to GitHub repositories can be written in the following way:
 
-    # Backslash inserted to prevent formatting the example.
     $/<a href="https://github.com/username">username</a>
     $/<a href="https://github.com/username/repo">username/repo</a>
     $/<a href="https://github.com/username/repo/commits/etc">username/repo/commits/etc</a>
 
 Which is turned into:
 
-    # The two characters taken up by the '@' and '/' are also taken into
-    # account (two spaces inserted post-link).
     $/<a href="https://github.com/&lt;a">&lt;a</a> href="https://github.com/username"&gt;username&lt;/a&gt;
 
 
@@ -105,8 +102,7 @@ into a HTML template during the build process. Usage of HTML should be avoided
 as it makes the plain text files themselves less readable.
 
 When writing the greater-than or less-than characters, use the HTML entities in
-place of the characters themselves to prevent them being interpreted as HTML.
-
+place of the characters to prevent them being interpreted as HTML.
 
 ________________________________________________________________________________
 

@@ -1,8 +1,7 @@
 COMMUNITY PROJECTS
 ________________________________________________________________________________
 
-Software created by users of KISS, many of which are portable to multiple
-distributions.
+Software created by the Community.
 
 
 TINYRAMFS
@@ -34,6 +33,6 @@ Source: $/cemkeylan/shinit
 TUITUBE
 ________________________________________________________________________________
 
-A minimal tui youtube (invidious) frontend made in c++.
+A minimal TUI YouTube (invidious) frontend made in c++.
 
 Source: $/djt3/tuitube

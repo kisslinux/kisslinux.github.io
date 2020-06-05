@@ -2,8 +2,6 @@ COMMUNITY REPOSITORIES
 ________________________________________________________________________________
 
 Software repositories created and maintained by members of the KISS Community.
-These repositories are treated no different to the official repositories by the
-package manager and are treated as first-class citizens.
 
 
 MYWAYLAND
@@ -50,8 +48,8 @@ Source: $/konimex/kiss-llvm
 ZFS
 ________________________________________________________________________________
 
-This repo contains KISS build files for ZFS on Linux. Package contains userland
-utilities and kernel modules. It also contains the ZFS event daemon (zed).
+This repository provides ZFS on Linux and contains the userland, utilities,
+kernel modules and event daemon (zed).
 
 Source: $/jedavies-dev/kiss-zfs
 

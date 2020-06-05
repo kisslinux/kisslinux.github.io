@@ -24,6 +24,7 @@ ________________________________________________________________________________
 A KISS repository is simply a directory of directories. The quickest way to get
 started is as follows.
 
+# Create the repository.
 $ mkdir -p repo
 $ cd repo
 
@@ -48,17 +49,30 @@ $ export KISS_PATH=$KISS_PATH:/path/to/community/community
 PREVENT A PACKAGE FROM RECEIVING UPDATES
 ________________________________________________________________________________
 
-Preventing a package from being updated is as simple as creating a repository
-and adding it to the start of your '$KISS_PATH'. The package manager will search
-the repositories (in order), find the new repository first, see that the package
-is already up-to-date and ignore it.
+Preventing a package from receiving updates can be accomplished in a myriad of
+different ways. The easiest method is to leverage a user repository.
+
+# Create a new repository.
+$ mkdir -p no_updates
+$ cd no_updates
+
+# Copy the package you would like to prevent from updating to the
+# new repository.
+$ cp -r /var/db/kiss/installed/<pkg_name> /path/to/no_updates
+
+# Add the new repository to the _start_ of your $KISS_PATH.
+$ export KISS_PATH=/path/to/no_updates:$KISS_PATH
+
+The package manager will search KISS_PATH in order. It will see that the
+no_updates repository provides <pkg_name> and the version matches that which
+is installed. No updates will again happen for the package.
 
 
 PACKAGE FALLBACKS
 ________________________________________________________________________________
 
-If you'd like to package something in your own repository but would like the
-package manager to prefer other repositories before yours, simply add your
+If you would like to package something in your own repository but would like
+the package manager to prefer other repositories before yours, simply add your
 repository to the end of '$KISS_PATH'.
 
 The moment that your package is available elsewhere, the package manager will
