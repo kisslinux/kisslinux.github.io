@@ -19,10 +19,6 @@ txt2html() {
     sed -E "s|^( *)(\[[0-9\.]*\])|\1<span id=\"\2\">\2</span>|g" |
     sed -E "s|([^\"])(\[[0-9\.]*\])|\1<a href=\"#\2\">\2</a>|g" |
 
-    # Convert logo to link.
-    sed -E "s#\|/   #<a href=/ class=l>|/</a>   #" |
-    sed -E "s#\|\\\ISS#<a href=/ class=l>|\\\ISS</a>#" |
-
     # Insert the page into the template.
     sed -E '/%%CONTENT%%/r /dev/stdin' template.html |
     sed -E '/%%CONTENT%%/d' |
