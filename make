@@ -23,7 +23,7 @@ txt2html() {
     sed -E '/%%CONTENT%%/d' |
 
     # Insert the page path into the source URL.
-    sed -E "s	%%TITLE%%	${page##*/}	"
+    sed -E "s	%%TITLE%%	$title	"
 }
 
 wiki_nav() {
@@ -56,8 +56,14 @@ wiki_nav() {
 }
 
 page() {
-    pp=${page%/*}
+    pp=${page%/*} title=${page##*/} title=${title%%.txt}
+
     mkdir -p "docs/$pp"
+
+    # If the title is index.txt, set it to the parent directory name.
+    # Example: /wiki/index.txt (index) -> (wiki).
+    case $title in index) title=${pp##*/} ;; esac
+    case $title in .)     title=home ;; esac
 
     # GENERATION STEP.
     case $page in
