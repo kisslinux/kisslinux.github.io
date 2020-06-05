@@ -58,13 +58,13 @@ $ cd no_updates
 
 # Copy the package you would like to prevent from updating to the
 # new repository.
-$ cp -r /var/db/kiss/installed/<pkg_name> /path/to/no_updates
+$ cp -r /var/db/kiss/installed/PKG_NAME /path/to/no_updates
 
 # Add the new repository to the _start_ of your $KISS_PATH.
 $ export KISS_PATH=/path/to/no_updates:$KISS_PATH
 
 The package manager will search KISS_PATH in order. It will see that the
-no_updates repository provides <pkg_name> and the version matches that which
+no_updates repository provides PKG_NAME and the version matches that which
 is installed. No updates will again happen for the package.
 
 

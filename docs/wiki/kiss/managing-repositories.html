@@ -29,7 +29,7 @@
 
 <a href="/wiki">wiki</a> / <a href='/wiki/kiss'>kiss</a> / managing-repositories                               <a href='https://github.com/kisslinux/wiki/edit/master/kiss/managing-repositories.txt'>Edit this page</a>
 
-Edited (<a href='https://github.com/kisslinux/wiki/commit/9b6863c382f8177de5eaabbae3fbd6d96dafb59f'>9b6863c</a>) at 2020-06-05 by Dylan Araps
+Edited (<a href='https://github.com/kisslinux/wiki/commit/fb3c1fa4dc78c3269b16888750da7fb32b283431'>fb3c1fa</a>) at 2020-06-05 by Dylan Araps
 
 
 MANAGING REPOSITORIES
@@ -92,13 +92,13 @@ $ cd no_updates
 
 # Copy the package you would like to prevent from updating to the
 # new repository.
-$ cp -r /var/db/kiss/installed/<pkg_name> /path/to/no_updates
+$ cp -r /var/db/kiss/installed/PKG_NAME /path/to/no_updates
 
 # Add the new repository to the _start_ of your $KISS_PATH.
 $ export KISS_PATH=/path/to/no_updates:$KISS_PATH
 
 The package manager will search KISS_PATH in order. It will see that the
-no_updates repository provides <pkg_name> and the version matches that which
+no_updates repository provides PKG_NAME and the version matches that which
 is installed. No updates will again happen for the package.
 
 
