@@ -12,11 +12,11 @@ ________________________________________________________________________________
 |---------+--------------------------------------------------------------------|
 | List    | $ ls /etc/sv/                                                      |
 |         |                                                                    |
-| Enable  | $ ln -s /etc/sv/<service_name>/ /var/service                       |
-| Disable | $ unlink /var/service/<service_name>                               |
+| Enable  | $ ln -s /etc/sv/SERVICE_NAME/ /var/service                         |
+| Disable | $ unlink /var/service/SERVICE_NAME                                 |
 |         |                                                                    |
-| Stop    | $ sv down <service_name>                                           |
-| Start   | $ sv up   <service_name>                                           |
+| Stop    | $ sv down SERVICE_NAME                                             |
+| Start   | $ sv up   SERVICE_NAME                                             |
 |         |                                                                    |
 +---------+--------------------------------------------------------------------+
 
