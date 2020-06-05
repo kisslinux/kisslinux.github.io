@@ -29,7 +29,7 @@
 
 <a href="/wiki">wiki</a> / <a href='/wiki/kiss'>kiss</a> / managing-repositories                               <a href='https://github.com/kisslinux/wiki/edit/master/kiss/managing-repositories.txt'>Edit this page</a>
 
-Edited (<a href='https://github.com/kisslinux/wiki/commit/4d8c87fe6dace19c9a0bbd68fb3eca393c6bf303'>4d8c87f</a>) at 2020-06-05 by Dylan Araps
+Edited (<a href='https://github.com/kisslinux/wiki/commit/9b6863c382f8177de5eaabbae3fbd6d96dafb59f'>9b6863c</a>) at 2020-06-05 by Dylan Araps
 
 
 MANAGING REPOSITORIES
@@ -52,7 +52,7 @@ somewhere system-wide in '/', etc. The only requirement is that a full path be
 used.
 
 
-WHAT IS A REPOSITORY?
+What is a repository?
 ________________________________________________________________________________
 
 A KISS repository is simply a directory of directories. The quickest way to get
@@ -70,7 +70,7 @@ $ kiss fork zlib
 This is now a fully usable repository and it can be added to your '$KISS_PATH'.
 
 
-ADDING THE COMMUNITY REPOSITORY
+Enabling the Community repository
 ________________________________________________________________________________
 
 Let's assume that our '$KISS_PATH' matches the above example (Core and Extra).
@@ -80,7 +80,7 @@ $ git clone <a href='https://github.com/kisslinux/community'>https://github.com/
 $ export KISS_PATH=$KISS_PATH:/path/to/community/community
 
 
-PREVENT A PACKAGE FROM RECEIVING UPDATES
+Preventing a package from receiving updates
 ________________________________________________________________________________
 
 Preventing a package from receiving updates can be accomplished in a myriad of
@@ -102,7 +102,7 @@ no_updates repository provides <pkg_name> and the version matches that which
 is installed. No updates will again happen for the package.
 
 
-PACKAGE FALLBACKS
+Package fallbacks
 ________________________________________________________________________________
 
 If you would like to package something in your own repository but would like
@@ -114,7 +114,7 @@ prefer the new location to yours. The list is searched (in order) and the first
 match is picked.
 
 
-BYPASSING KISS_PATH
+Bypassing KISS_PATH
 ________________________________________________________________________________
 
 There is a special case where one can bypass the regular '$KISS_PATH' for a
