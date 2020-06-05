@@ -24,7 +24,7 @@ txt2html() {
     sed -E '/%%CONTENT%%/d' |
 
     # Insert the page path into the source URL.
-    sed -E "s	%%SOURCE%%	${page##.}	"
+    sed -E "s	%%TITLE%%	${page##*/}	"
 }
 
 wiki_nav() {
