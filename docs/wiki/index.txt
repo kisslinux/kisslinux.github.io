@@ -49,7 +49,7 @@
 |                       |  |                        |  |                       |
 | DEVICE MANAGERS       |  | INIT SYSTEMS           |  | TODO                  |
 |                       |  |                        |  |                       |
-| @/dev/replacing-udev  |  | TODO                   |  | TODO                  |
+| @/dev/replacing-udev  |  | @/init/busybox         |  | TODO                  |
 |                       |  |                        |  |                       |
 |                       |  |                        |  |                       |
 |                       |  |                        |  |                       |

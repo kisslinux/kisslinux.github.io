@@ -1,0 +1,23 @@
+MANAGING SERVICES WITH BUSYBOX
+________________________________________________________________________________
+
+KISS uses busybox's init with busybox's runit utilities for services by default.
+
+
+Basic usage
+________________________________________________________________________________
+
++---------+--------------------------------------------------------------------+
+| Action  | Command                                                            |
+|---------+--------------------------------------------------------------------|
+| List    | $ ls /etc/sv/                                                      |
+|         |                                                                    |
+| Enable  | $ ln -s /etc/sv/<service_name>/ /var/service                       |
+| Disable | $ unlink /var/service/<service_name>                               |
+|         |                                                                    |
+| Stop    | $ sv down <service_name>                                           |
+| Start   | $ sv up   <service_name>                                           |
+|         |                                                                    |
++---------+--------------------------------------------------------------------+
+
+See https://git.busybox.net/busybox/tree/runit/sv.c for full usage.
