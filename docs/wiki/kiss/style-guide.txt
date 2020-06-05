@@ -21,7 +21,7 @@ ________________________________________________________________________________
   maintainer and they will do so on your behalf.
 
 * If the maintainer leaves a package out of date and does not respond in a
-  reasonable timeframe, the package will be orphaned and up for grabs.
+  reasonable time frame, the package will be orphaned and up for grabs.
 
 * If no one steps forward to adopt an orphaned package, it will be dropped from
   the repositories.
