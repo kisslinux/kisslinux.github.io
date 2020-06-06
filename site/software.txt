@@ -18,7 +18,7 @@ to the official repositories as the Community make KISS boundless.
 ________________________________________________________________________________
 
 - The Defaults                                                             [1.0]
-    - C/POSIX Libraru                                                      [1.1]
+    - C/POSIX Library                                                      [1.1]
     - Core Utilities and Shell                                             [1.2]
     - Init System and Service Manager                                      [1.3]
     - SSL Library                                                          [1.4]
