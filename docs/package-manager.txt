@@ -183,7 +183,7 @@ ________________________________________________________________________________
     # List available alternatives.
     # ('a' is an alias to 'alternatives')
     $ kiss a
-    gnugrep /usr/bin/fgrep
+    gnugrep /usr/bin/grep
     ncurses /usr/bin/clear
 
     # Swap to GNU grep.
