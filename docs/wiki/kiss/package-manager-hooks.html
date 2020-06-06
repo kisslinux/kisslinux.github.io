@@ -29,7 +29,7 @@
 
 <a href="/wiki">wiki</a> / <a href='/wiki/kiss'>kiss</a> / package-manager-hooks                               <a href='https://github.com/kisslinux/wiki/edit/master/kiss/package-manager-hooks.txt'>Edit this page</a>
 
-Edited (<a href='https://github.com/kisslinux/wiki/commit/7bf3eeaae310f9ce19740e85a4ec7201f1c5f313'>7bf3eea</a>) at 2020-06-06 by Dylan Araps
+Edited (<a href='https://github.com/kisslinux/wiki/commit/0da935d7f78d07fd53d16f9fbdd1bfa252702296'>0da935d</a>) at 2020-06-06 by Dylan Araps
 
 
 PACKAGE MANAGER HOOKS
@@ -50,8 +50,9 @@ ________________________________________________________________________________
 
 - Usage                                                                    <a href="#[1.0]">[1.0]</a>
 - Examples                                                                 <a href="#[2.0]">[2.0]</a>
-    - Building some packages in memory (tmpfs)                             <a href="#[2.1]">[2.1]</a>
-    - Logging build duration                                               <a href="#[2.2]">[2.2]</a>
+    - Removing unneeded files from packages                                <a href="#[2.1]">[2.1]</a>
+    - Building some packages in memory (tmpfs)                             <a href="#[2.2]">[2.2]</a>
+    - Logging build duration                                               <a href="#[2.3]">[2.3]</a>
 
 
 
@@ -85,7 +86,29 @@ Here are some interesting extensions to the package manager. These are usable
 as-is and they can also be combined together.
 
 
-    <span id="[2.1]"><a href="#[2.1]">[2.1]</a></span> Building some packages in memory (tmpfs)
+    <span id="[2.1]"><a href="#[2.1]">[2.1]</a></span> Removing unneeded files from packages
+    ____________________________________________________________________________
+
+    Packages can contain files which you will have no use for. A simple hook can
+    be defined to remove them from packages.
+
+    NOTE: This is the default 'KISS_HOOK' script. If defining your own, be sure
+          to include this if you would like to continue to remove these files.
+
+    case $TYPE in
+        post-build)
+            # Ensure that '$DEST' is set.
+            : "${DEST:?DEST is unset}"
+
+            rm -rf "$DEST/usr/share/gettext" \
+                   "$DEST/usr/share/polkit-1" \
+                   "$DEST/usr/share/locale" \
+                   "$DEST/usr/share/info"
+        ;;
+    esac
+
+
+    <span id="[2.2]"><a href="#[2.2]">[2.2]</a></span> Building some packages in memory (tmpfs)
     ____________________________________________________________________________
 
     This hook runs on pre-extract and conditionally runs the source extraction,
@@ -117,7 +140,7 @@ as-is and they can also be combined together.
     esac
 
 
-    <span id="[2.2]"><a href="#[2.2]">[2.2]</a></span> Logging build duration
+    <span id="[2.3]"><a href="#[2.3]">[2.3]</a></span> Logging build duration
     ____________________________________________________________________________
 
     This hook adds a new message post-build with the total build duration in a

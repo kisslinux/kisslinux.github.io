@@ -16,8 +16,9 @@ ________________________________________________________________________________
 
 - Usage                                                                    [1.0]
 - Examples                                                                 [2.0]
-    - Building some packages in memory (tmpfs)                             [2.1]
-    - Logging build duration                                               [2.2]
+    - Removing unneeded files from packages                                [2.1]
+    - Building some packages in memory (tmpfs)                             [2.2]
+    - Logging build duration                                               [2.3]
 
 
 
@@ -51,7 +52,29 @@ Here are some interesting extensions to the package manager. These are usable
 as-is and they can also be combined together.
 
 
-    [2.1] Building some packages in memory (tmpfs)
+    [2.1] Removing unneeded files from packages
+    ____________________________________________________________________________
+
+    Packages can contain files which you will have no use for. A simple hook can
+    be defined to remove them from packages.
+
+    NOTE: This is the default 'KISS_HOOK' script. If defining your own, be sure
+          to include this if you would like to continue to remove these files.
+
+    case $TYPE in
+        post-build)
+            # Ensure that '$DEST' is set.
+            : "${DEST:?DEST is unset}"
+
+            rm -rf "$DEST/usr/share/gettext" \
+                   "$DEST/usr/share/polkit-1" \
+                   "$DEST/usr/share/locale" \
+                   "$DEST/usr/share/info"
+        ;;
+    esac
+
+
+    [2.2] Building some packages in memory (tmpfs)
     ____________________________________________________________________________
 
     This hook runs on pre-extract and conditionally runs the source extraction,
@@ -83,7 +106,7 @@ as-is and they can also be combined together.
     esac
 
 
-    [2.2] Logging build duration
+    [2.3] Logging build duration
     ____________________________________________________________________________
 
     This hook adds a new message post-build with the total build duration in a
