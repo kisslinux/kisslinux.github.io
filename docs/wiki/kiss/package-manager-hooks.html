@@ -1,0 +1,162 @@
+<!doctype html><html lang=en><link href='data:image/gif;base64,R0lGODlhEAAQAPH/AAAAAP8AAP8AN////yH5BAUAAAQALAAAAAAQABAAAAM2SLrc/jA+QBUFM2iqA2bAMHSktwCCWJIYEIyvKLOuJt+wV69ry5cfwu7WCVp2RSPoUpE4n4sEADs=' rel=icon><title>KISS - package-manager-hooks</title><meta charset=utf-8><meta name=Description content="An independent Linux® distribution with a focus on simplicity and the concept of less is more."><meta name=viewport content="width=device-width,initial-scale=1"><style>body{margin:0 0 4ch;overflow-y:scroll;font:16px monospace,monospace}img{max-width:80ch;display:block;height:auto}@media(prefers-color-scheme:dark){body{background:#000;color:#fff}a{color:#6CF}}.l{text-decoration:none;color:#a00}#w{max-width:104ch;margin:0 auto;overflow-x:hidden}#s{min-width:24ch;position:fixed;top:2ch;margin:0;overflow-y:auto;user-select:none}#m{margin:2ch 0 0 24ch}@media(max-width:130ch){body{font-size:1.941vw}#s{position:static}#s,#m{margin-left:1ch}}</style><div id=w><pre id=s>
+<a href=/ class=l>
+|/
+|\ISS
+</a>
+<a href=/news>News</a>
+<a href=/blog>Blog</a>
+
+<a href=/wiki>Wiki (NEW!)</a>
+
+<a href=/install>Install KISS</a>
+<a href=/faq>FAQ</a>
+
+<a href=/package-system>Package System</a>
+<a href=/package-manager>Package Manager</a>
+
+<a href=/guidestones>Guidestones</a>
+
+<a href=/testimonials>Testimonials</a>
+<a href=/screenshots>Screenshots</a>
+<a href=/team>Team</a>
+
+<a href=/contact>Contact</a>
+<a href=/donate>Donate</a>
+
+<a href=https://github.com/kisslinux/>GitHub -&gt;</a>
+
+</pre><pre id=m>
+
+<a href="/wiki">wiki</a> / <a href='/wiki/kiss'>kiss</a> / package-manager-hooks                               <a href='https://github.com/kisslinux/wiki/edit/master/kiss/package-manager-hooks.txt'>Edit this page</a>
+
+Edited (<a href='https://github.com/kisslinux/wiki/commit/7bf3eeaae310f9ce19740e85a4ec7201f1c5f313'>7bf3eea</a>) at 2020-06-06 by Dylan Araps
+
+
+PACKAGE MANAGER HOOKS
+________________________________________________________________________________
+
+KISS' package manager is extensible via hooks which fire at various different
+places inside the utility. Hooks allow the user to modify behavior, add new
+features or conditionally do things on a per-package basis.
+
+This setting is controlled by the '$KISS_HOOK' environment variable which takes
+the full path to a POSIX shell script as its value.
+
+Example: export KISS_HOOK=$HOME/.local/bin/kiss-hook
+
+
+<span id="[0.0]"><a href="#[0.0]">[0.0]</a></span> Index
+________________________________________________________________________________
+
+- Usage                                                                    <a href="#[1.0]">[1.0]</a>
+- Examples                                                                 <a href="#[2.0]">[2.0]</a>
+    - Building some packages in memory (tmpfs)                             <a href="#[2.1]">[2.1]</a>
+    - Logging build duration                                               <a href="#[2.2]">[2.2]</a>
+
+
+
+<span id="[1.0]"><a href="#[1.0]">[1.0]</a></span> Usage
+________________________________________________________________________________
+
+The script is sourced at each hook and is given three variables as input. POSIX
+shell does not allow sourced scripts to receive arguments, these variables are
+instead defined via the script's environment.
+
+- '$PKG':  The name of the current package.
+- '$TYPE': The type of hook.
+- '$DEST': The location where 'make install' will put files.
+
+Valid values for '$TYPE' include:
+
+    pre-build,   post-build,   build-fail,
+    pre-install, post-install, pre-extract,
+    post-package.
+
+
+As the hook script is sourced (instead of being executed in its own shell), the
+script has the ability to override package manager internals and the package
+manager's environment.
+
+
+<span id="[2.0]"><a href="#[2.0]">[2.0]</a></span> Examples
+________________________________________________________________________________
+
+Here are some interesting extensions to the package manager. These are usable
+as-is and they can also be combined together.
+
+
+    <span id="[2.1]"><a href="#[2.1]">[2.1]</a></span> Building some packages in memory (tmpfs)
+    ____________________________________________________________________________
+
+    This hook runs on pre-extract and conditionally runs the source extraction,
+    package build process and resulting tarball creation in memory. The benefit
+    of this is a nice speedup throughout (especially when used alongside
+    ccache <a href="#[0]">[0]</a>).
+
+    NOTE: '/tmp' must be mounted as 'tmpfs' for this to work.
+
+    case $TYPE in
+        pre-extract)
+            case $PKG in
+                # Run everything on disk for these memory hungry packages.
+                firefox|firefox-esr|rust|llvm|clang)
+                    mak_dir=$KISS_TMPDIR/build-$pid
+                    pkg_dir=$KISS_TMPDIR/pkg-$pid
+                ;;
+
+                *)
+                    log "$PKG" "Activating tmpfs"
+
+                    mak_dir=/tmp/build-$pid
+                    pkg_dir=/tmp/pkg-$pid
+                ;;
+            esac
+
+            mkdir -p "$mak_dir" "$pkg_dir/$PKG/var/db/kiss/installed"
+        ;;
+    esac
+
+
+    <span id="[2.2]"><a href="#[2.2]">[2.2]</a></span> Logging build duration
+    ____________________________________________________________________________
+
+    This hook adds a new message post-build with the total build duration in a
+    human readable format (00h 00m). Similar code is used in the boot process
+    of the system to calculate boot time.
+
+
+    case $TYPE in
+        pre-build)
+            IFS=. read -r _start _ < /proc/uptime
+        ;;
+
+        post-build)
+            IFS=. read -r _end _ < /proc/uptime
+
+            (
+                _s=$((_end - _start))
+                _h=$((_s / 60 / 60 % 24))
+                _m=$((_s / 60 % 60))
+
+                [ "$_h" = 0 ] || _u="${_u}${_h}h "
+                [ "$_m" = 0 ] || _u="${_u}${_m}m "
+
+                log "$PKG" "Build finished in ${_u:-${_s}s}"
+            )
+        ;;
+    esac
+
+
+References
+________________________________________________________________________________
+
+<span id="[0]"><a href="#[0]">[0]</a></span> <a href='https://ccache.dev/'>https://ccache.dev/</a>
+
+
+________________________________________________________________________________
+
+Dylan Araps (C) 2019-2020
+
+Linux(R) is the registered trademark of Linus Torvalds in the U.S. and
+other countries.
+</pre></div>

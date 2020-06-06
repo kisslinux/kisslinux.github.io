@@ -26,7 +26,7 @@
 |                                     |  |                                     |
 | @/kiss/managing-repositories        |  | @/help/about-this-wiki              |
 | @/kiss/style-guide                  |  | @/help/adding-a-page                |
-| TODO                                |  | @/help/page-template                |
+| @/kiss/package-manager-hooks        |  | @/help/page-template                |
 | TODO                                |  |                                     |
 |                                     |  |                                     |
 +-------------------------------------+  +-------------------------------------+
