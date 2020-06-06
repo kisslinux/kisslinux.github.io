@@ -59,7 +59,7 @@ ________________________________________________________________________________
 
   Less software is better than more software. As the amount of running software
   increases, as does the risk of bugs, security issues and things going awry.
-  A system with less moving parts is also far easier to understand.
+  A system with less moving parts is also far easier to wholly understand.
 
   More information: @/software
 
