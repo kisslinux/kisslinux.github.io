@@ -40,7 +40,23 @@ requirements and some added sugar on top.
 Source: $/<a href="https://github.com/kisslinux/kiss">kisslinux/kiss</a>
 
 
-USAGE
+<span id="[0.0]"><a href="#[0.0]">[0.0]</a></span> Index
+________________________________________________________________________________
+
+- Usage                                                                    <a href="#[1.0]">[1.0]</a>
+- Dependencies                                                             <a href="#[2.0]">[2.0]</a>
+
+- Interesting Features                                                     <a href="#[3.0]">[3.0]</a>
+    - Runtime dependency detector built around 'ldd'                       <a href="#[3.1]">[3.1]</a>
+    - Fully dynamic (and automatic) alternatives system                    <a href="#[3.2]">[3.2]</a>
+    - 3-way handshake for files in /etc/                                   <a href="#[3.3]">[3.3]</a>
+    - Extensible via hooks ($KISS_HOOK)                                    <a href="#[3.4]">[3.4]</a>
+    - Extensible via 'kiss-*' utilities                                    <a href="#[3.5]">[3.5]</a>
+
+- Configuration                                                            <a href="#[4.0]">[4.0]</a>
+
+
+<span id="[1.0]"><a href="#[1.0]">[1.0]</a></span> Usage
 ________________________________________________________________________________
 
 -> kiss [a|b|c|i|l|r|s|u|v] [pkg]...
@@ -55,7 +71,7 @@ ________________________________________________________________________________
 -> version        Package manager version
 
 
-DEPENDENCIES
+<span id="[2.0]"><a href="#[2.0]">[2.0]</a></span> Dependencies
 ________________________________________________________________________________
 
 POSIX utilities are used where appropriate _and_ where they exist to solve a
@@ -149,168 +165,143 @@ kept to a minimum (though we must also remain realistic).
 
 
 
-INTERESTING FEATURES
+<span id="[3.0]"><a href="#[3.0]">[3.0]</a></span> Interesting Features
 ________________________________________________________________________________
 
-* Runtime dependency detector built around 'ldd'.
 
-  Dynamic dependencies brought in by build systems (which are missing from the
-  package's dependency list) are fixed on-the-fly by checking which libraries
-  link to the package's files.
+    <span id="[3.1]"><a href="#[3.1]">[3.1]</a></span> Runtime dependency detector built around 'ldd'
+    ____________________________________________________________________________
 
-  This prevents an incomplete dependency list from causing system breakage as
-  the package manager is able to complete the list.
+    Dynamic dependencies brought in by build systems (which are missing from the
+    package's dependency list) are fixed on-the-fly by checking which libraries
+    link to the package's files.
 
-  A lot of packages make use of this "implicit" to "explicit" dependency list
-  "conversion" to provide optional dependencies.
+    This prevents an incomplete dependency list from causing system breakage as
+    the package manager is able to complete the list.
 
-  Example output:
+    A lot of packages make use of this "implicit" to "explicit" dependency list
+    "conversion" to provide optional dependencies.
 
-      -> libXmu Checking for missing dependencies
-      --- /home/dylan/conf/cache/kiss/build-4477/d
-       depends
-      @@ -1,3 +1,8 @@
-      +libX11
-      +libXau
-       libXext
-       libXt
-      +libxcb
-       xorg-util-macros make
+    Example output:
 
-
-* Fully dynamic (and automatic) alternatives system.
-
-  Any file conflicts between two packages automatically become choices in the
-  alternatives system.
-
-  This allows one to swap providers of files without needing to explicitly tell
-  the package manager that two packages conflict, provide the same utilities,
-  etc.
-
-  In other words, no changes need to be made to packages. In fact, nothing
-  needs to be done at all. It's entirely automatic.
-
-      # List available alternatives.
-      # ('a' is an alias to 'alternatives')
-      $ kiss a
-      gnugrep /usr/bin/fgrep
-      ncurses /usr/bin/clear
-
-      # Swap to GNU grep.
-      $ kiss a gnugrep /usr/bin/grep
-      -> Swapping '/usr/bin/grep' from busybox to gnugrep
-
-      # Swap back to busybox grep.
-      $ kiss a busybox /usr/bin/grep
-
-      # Swap to all alternatives for a given package.
-      $ kiss a | grep ^sbase | kiss a -
-
-  The above command works as the output of the alternatives listing is directly
-  usable as input to 'kiss a'.
+        -> libXmu Checking for missing dependencies
+        --- /home/dylan/conf/cache/kiss/build-4477/d
+         depends
+        @@ -1,3 +1,8 @@
+        +libX11
+        +libXau
+         libXext
+         libXt
+        +libxcb
+         xorg-util-macros make
 
 
-* 3-way handshake for files in /etc/.
+    <span id="[3.2]"><a href="#[3.2]">[3.2]</a></span> Fully dynamic (and automatic) alternatives system
+    ____________________________________________________________________________
 
-  Files in /etc/ are handled differently to those elsewhere on the system. A
-  re-installation or update to a package will not always overwrite these files.
+    Any file conflicts between two packages automatically become choices in the
+    alternatives system.
 
-  Instead, a 3-way handshake happens during installation to determine how the
-  new /etc/ file should be handled.
+    This allows one to swap providers of files without needing to explicitly
+    tell the package manager that two packages conflict, provide the same
+    utilities, etc.
 
-  If the user has made modifications to the file and those modifications differ
-  to the to-be-installed package's file, the file is installed as file.new.
+    In other words, no changes need to be made to packages. In fact, nothing
+    needs to be done at all. It's entirely automatic.
 
-  If the user hasn't touched the file, it will be automatically overwritten by
-  the package manager as it will contain updated/new contents..
+    # List available alternatives.
+    # ('a' is an alias to 'alternatives')
+    $ kiss a
+    gnugrep /usr/bin/fgrep
+    ncurses /usr/bin/clear
 
-  If the user has touched the file but the file has not changed between package
-  versions, it will simply be skipped over.
+    # Swap to GNU grep.
+    $ kiss a gnugrep /usr/bin/grep
+    -> Swapping '/usr/bin/grep' from busybox to gnugrep
 
-  Example (with sha256 checksums truncated to fit):
+    # Swap back to busybox grep.
+    $ kiss a busybox /usr/bin/grep
 
-      -> opendoas Doing 3-way handshake for etc/doas.conf
-      Previous: 677b59e  etc/doas.conf
-      System:   dc5ab2b  etc/doas.conf
-      New:      677b59e  etc/doas.conf
-      -> Skipping etc/doas.conf
+    # Swap to all alternatives for a given package.
+    $ kiss a | grep ^sbase | kiss a -
 
-
-* Extensible via hooks ($KISS_HOOK).
-
-  One can control the package manager via various hooks and a simple script.
-  Control can also be per-package. The one requirement is that it be a POSIX
-  shell script.
-
-  Currently supported hooks:
-
-      - pre-build, post-build. build-fail.
-      - pre-install, post-install.
-
-  The script is given the following environment:
-
-      - $TYPE: The hook type.
-      - $PKG:  The name of the current package.
-      - $DEST: The destination directory for the package.
-
-  Example script:
-
-      case $TYPE in
-          pre-build)
-              case $PKG in
-                  zlib) export CFLAGS="$CFLAGS -O2"
-                  curl) export CFLAGS="$CFLAGS -static"
-              esac
-          ;;
-
-          post-build)
-              : "${DEST:?DEST is unset}"
-
-              rm -rf "$DEST/usr/share/info"
-              rm -rf "$DEST/usr/share/gettext"
-              rm -rf "$DEST/usr/share/doc"
-          ;;
-      esac
+    The above command works as the output of the alternatives listing is
+    directly usable as input to 'kiss a'.
 
 
-* Extensible via 'kiss-*' utilities.
+    <span id="[3.3]"><a href="#[3.3]">[3.3]</a></span> 3-way handshake for files in /etc/
+    ____________________________________________________________________________
 
-  Anything in the user's '$PATH' which matches the glob 'kiss-*' will be
-  directly usable via the package manager.
+    Files in /etc/ are handled differently to those elsewhere on the system. A
+    reinstallation or update to a package will not always overwrite these files.
 
-  For example, 'kiss-size' is also usable as 'kiss size' (and even 'kiss si')
-  (shortest available alias).
+    Instead, a 3-way handshake happens during installation to determine how the
+    new /etc/ file should be handled.
 
-  The detected 'kiss-*' utilities will appear in the package manager's help
-  output with the second line in the script acting as a doc-string.
+    If the user has made modifications to the file and those modifications
+    differ to the to-be-installed package's file, the file is installed with the
+    suffix '.new'
 
-  Example help output:
+    If the user hasn't touched the file, it will be automatically overwritten by
+    the package manager as it will contain updated/new contents..
 
-      -> Installed extensions (kiss-* in $PATH)
-      -> chbuild    Create/destroy temporary chroots
-      -> chroot     Enter a kiss chroot
-      -> depends    Display a package's dependencies
-      -> export     Installed package to tarball
-      -> fork       Fork a package into the current dir
-      -> link       Link a repo file to another repo
-      -> maintainer Find the maintainer of a package
-      -> manifest   Display all files owned by a package
-      -> new        Create a boilerplate package
-      -> orphans    List orphaned packages
-      -> outdated   Check repository packages for updates
-      -> owns       Check which package owns a file
-      -> reset      Remove all packages but base
-      -> revdepends Packages which depend on package
-      -> size       Show the size on disk for a package
+    If the user has touched the file but the file has not changed between
+    package versions, it will simply be skipped over.
 
-  These are in effect, optional utilities which interact with the package
-  system in one way or another.
+    Example (with sha256 checksums truncated to fit):
 
-  My hope behind them is to act as an example as to how easy it is to interface
-  with the plain-text and "static" package system.
+    -> opendoas Doing 3-way handshake for etc/doas.conf
+    Previous: 677b59e  etc/doas.conf
+    System:   dc5ab2b  etc/doas.conf
+    New:      677b59e  etc/doas.conf
+    -> Skipping etc/doas.conf
 
 
-CONFIGURATION
+    <span id="[3.4]"><a href="#[3.4]">[3.4]</a></span> Extensible via hooks ($KISS_HOOK)
+    ____________________________________________________________________________
+
+    See: @/<a href="/wiki/kiss/package-manager-hooks">wiki/kiss/package-manager-hooks</a>
+
+
+    <span id="[3.5]"><a href="#[3.5]">[3.5]</a></span> Extensible via 'kiss-*' utilities
+    ____________________________________________________________________________
+
+    Anything in the user's '$PATH' which matches the glob 'kiss-*' will be
+    directly usable via the package manager.
+
+    For example, 'kiss-size' is also usable as 'kiss size' (and even 'kiss si')
+    (shortest available alias).
+
+    The detected 'kiss-*' utilities will appear in the package manager's help
+    output with the second line in the script acting as a doc-string.
+
+    Example help output:
+
+    -> Installed extensions (kiss-* in $PATH)
+    -> chbuild    Create/destroy temporary chroots
+    -> chroot     Enter a kiss chroot
+    -> depends    Display a package's dependencies
+    -> export     Installed package to tarball
+    -> fork       Fork a package into the current dir
+    -> link       Link a repo file to another repo
+    -> maintainer Find the maintainer of a package
+    -> manifest   Display all files owned by a package
+    -> new        Create a boilerplate package
+    -> orphans    List orphaned packages
+    -> outdated   Check repository packages for updates
+    -> owns       Check which package owns a file
+    -> reset      Remove all packages but base
+    -> revdepends Packages which depend on package
+    -> size       Show the size on disk for a package
+
+    These are in effect, optional utilities which interact with the package
+    system in one way or another.
+
+    My hope behind them is to act as an example as to how easy it is to
+    interface with the plain-text and "static" package system.
+
+
+<span id="[4.0]"><a href="#[4.0]">[4.0]</a></span> Configuration
 ________________________________________________________________________________
 
 The package manager has no configuration files and no changes need to be made to
@@ -337,7 +328,7 @@ KISS_CHOICE      | Set to '0' to disable the alternatives system and error on
                  | any detected file conflicts.
                  |
 KISS_HOOK        | Hook into the package manager. Set to the full path to the
-                 | script. See above: "interesting features".
+                 | script. See @/<a href="/wiki/kiss/package-manager-hooks">wiki/kiss/package-manager-hooks</a>
                  |
 KISS_ROOT        | Where installed packages will go. Can be used to install
                  | packages to somewhere other than '/'.
@@ -389,27 +380,6 @@ RUSTFLAGS        | Rust compiler flags.
                  |
 CMAKE_GENERATOR  | 'Unix Makefiles' or 'Ninja'.
                  |
-
-
-TRIVIA
-________________________________________________________________________________
-
-* The package manager makes zero attempt to compare version numbers to
-  distinguish whether or not one version is newer than another.
-
-  Instead, it simply checks to see if the old version differs to the new one.
-  If it does, it's considered an available update.
-
-  This has the added benefit of making downgrades no different to upgrades. In
-  effect, just a simple:
-
-      # Example pseudo code.
-      [ "$old_ver" != "$new_ver" ] && update_available
-
-
-* The package manager was originally called puke and was later changed to kiss.
-
-
 
 
 ________________________________________________________________________________

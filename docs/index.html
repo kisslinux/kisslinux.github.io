@@ -56,55 +56,60 @@
 OVERVIEW
 ________________________________________________________________________________
 
-* Uses a plain-text package system which is language agnostic and parseable
-  with basic UNIX utilities.
 
-* Uses a package manager written in less than 1000 lines of POSIX sh (excluding
-  blank lines and comments).
+* STATIC PACKAGING SYSTEM
 
-* Choice! The shell, coreutils, init, device manager, compiler, shell and * can
-  be replaced. There's no lock-in to specific software (excluding the kernel of
-  course).
+  The package format is entirely static. A series of plain-text files with
+  fields separated by lines and spaces. Easily parseable via any programming
+  language or with basic UNIX utilities.
 
-* Every installation of the distribution contains the full sources (of the
-  distribution) with git history attached.
+  More information: @/<a href="/package-system">package-system</a>
 
-* Is simple and small enough to be maintainable in its entirety by a single
-  person with little effort.
 
-* There is no "backend". This distribution is merely a few git repositories.
+* PORTABLE PACKAGE MANAGER
 
-* Has a "Bus factor" of N/A (0?) thanks to the above points. Full power is in
-  the hands of the users and the Community.
+  The package manager is written in less than 1000 lines of POSIX shell with
+  a large emphasis on portability. The only requirements are a POSIX compliant
+  environment, curl and git.
 
-* All shell code is linted by and passes shellcheck (including each and every
-  repository package).
+  More information: @/<a href="/package-manager">package-manager</a> $/<a href="https://github.com/kisslinux/kiss">kisslinux/kiss</a>
 
-* All packages are compiled from source by the package manager which
-  automatically handles updates, dependencies, patches, stripping, etc.
 
-* Explicitly excludes the following software:
+* BUS FACTOR OF ZERO
 
-    dbus, systemd, polkit, gettext, intltool, pulseaudio, pam, wayland, logind,
-    ConsoleKit2 and all Desktop Environments.
+  The distribution is designed to be maintainable by a single person. There is
+  no infrastructure and the entire distribution is merely a few Git
+  repositories. The distribution's upstream is entirely optional.
 
-* Rootless Xorg environment without any additional software.
+  More information: @/<a href="/faq#<a href="#[4.0]">[4.0]</a>">faq#<a href="#[4.0]">[4.0]</a></a>
 
-* Repository signing through git and gnupg, based on signed commits and built
-  into git itself.
 
+* LESS SOFTWARE
+
+  Less software is better than more software. As the amount of running software
+  increases, as does the risk of bugs, security issues and things going awry.
+  A system with less moving parts is also far easier to understand.
+
+  More information: @/<a href="/software">software</a>
+
+
+* USER CHOICE
+
+  There is no lock-in to specific software. The user has the ability to mix and
+  match any shell, core utilities, init system, device manager and more. The
+  alternatives system enables this down to file level.
+
+  More information: @/<a href="/package-manager#<a href="#[3.2]">[3.2]</a>">package-manager#<a href="#[3.2]">[3.2]</a></a> @/<a href="/wiki/community/repositories">wiki/community/repositories</a>
 
 
 FURTHER READING
 ________________________________________________________________________________
 
-- @/<a href="/wiki">wiki</a>
-- @/<a href="/guidestones">guidestones</a>
-- @/<a href="/package-system">package-system</a>
-- @/<a href="/package-manager">package-manager</a>
+- @/<a href="/testimonials">testimonials</a>
 - @/<a href="/install">install</a>
-
-
+- @/<a href="/faq">faq</a>
+- @/<a href="/guidestones">guidestones</a>
+- @/<a href="/wiki">wiki</a>
 
 
 ________________________________________________________________________________

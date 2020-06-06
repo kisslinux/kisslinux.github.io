@@ -1,8 +1,42 @@
 FREQUENTLY ASKED QUESTIONS
 ________________________________________________________________________________
 
+May you find what you seek.
 
-Why should I use KISS?
+
+[0.0] Index
+________________________________________________________________________________
+
+- Why should I use KISS?                                                   [1.0]
+- What does KISS mean?                                                     [2.0]
+- Is KISS rolling release or stable?                                       [3.0]
+- Something something BUS factor of ONE.                                   [4.0]
+
+- Software                                                                 [5.0]
+    - Why isn't SOFTWARE packaged?                                         [5.1]
+    - Can you package SOFTWARE for me?                                     [5.2]
+    - What init does KISS use?                                             [5.3]
+    - What coreutils does KISS use?                                        [5.4]
+
+- Package Management                                                       [6.0]
+    - How do I remove a package and all of its dependencies?               [6.1]
+
+- Kernel                                                                   [7.0]
+    - Why doesn't my kernel boot?                                          [7.1]
+    - Why doesn't KISS support initramfs?                                  [7.2]
+    - Why must I compile my own kernel?                                    [7.3]
+    - Why doesn't KISS provide kernel sources as a package?                [7.4]
+      Must I keep the kernel headers package in sync with my kernel?       [7.5]
+
+- GCC                                                                      [8.0]
+    - C compiler cannot create executables.                                [8.1]
+
+- XORG                                                                     [9.0]
+    - Why can't I start Xorg as a normal user?                             [9.1]
+    - How do I take a screenshot?                                          [9.2]
+
+
+[1.0] Why should I use KISS?
 ________________________________________________________________________________
 
 That's up to you to decide.
@@ -12,7 +46,7 @@ read of the website and its wealth of information, try KISS in a virtual
 machine (a chroot is also an option) and come to your own conclusions.
 
 
-What does KISS mean?
+[2.0] What does KISS mean?
 ________________________________________________________________________________
 
 KISS is an acronym for "Keep it simple stupid" (notice _no_ comma).
@@ -28,7 +62,7 @@ Stupid does not refer to the user. To quote Wikipedia:
   and the sophistication available to repair them.
 
 
-Is KISS rolling release or stable?
+[3.0] Is KISS rolling release or stable?
 ________________________________________________________________________________
 
 Packages are updated as quickly as possible while at the same time tested to
@@ -44,7 +78,7 @@ prefer. Total control is in your hands. KISS merely provides you with an always
 up-to-date repository pool.
 
 
-Something something BUS factor of ONE.
+[4.0] Something something BUS factor of ONE.
 ________________________________________________________________________________
 
 Every user of the distribution owns their system in its entirety. The management
@@ -107,23 +141,23 @@ they need is already in the existing system. The power is in your hands.
 You are free.
 
 
-SOFTWARE
+[5.0] SOFTWARE
 ________________________________________________________________________________
 
 
-    Why isn't SOFTWARE packaged?
+    [5.1] Why isn't SOFTWARE packaged?
     ____________________________________________________________________________
 
     No one has packaged it yet.
 
 
-    Can you package SOFTWARE for me?
+    [5.2] Can you package SOFTWARE for me?
     ____________________________________________________________________________
 
     Do it yourself.
 
 
-    What init does KISS use?
+    [5.3] What init does KISS use?
     ____________________________________________________________________________
 
     KISS uses busybox init by default. There is however, no lock-in and the user
@@ -131,7 +165,7 @@ ________________________________________________________________________________
     in an init-agnostic way and act as a base for every init to use.
 
 
-    What coreutils does KISS use?
+    [5.4] What coreutils does KISS use?
     ____________________________________________________________________________
 
     KISS uses busybox coreutils by default. There is however, no lock-in and the
@@ -154,11 +188,11 @@ ________________________________________________________________________________
 
 
 
-PACKAGE MANAGEMENT
+[6.0] Package Management
 ________________________________________________________________________________
 
 
-    How do I remove a package and all of its dependencies?
+    [6.1] How do I remove a package and all of its dependencies?
     ____________________________________________________________________________
 
     Short answer: With one command? You can't.
@@ -179,11 +213,11 @@ ________________________________________________________________________________
 
 
 
-KERNEL
+[7.0] Kernel
 ________________________________________________________________________________
 
 
-    Why doesn't my kernel boot?
+    [7.1] Why doesn't my kernel boot?
     ____________________________________________________________________________
 
     The kernel not booting can be a variety of issues. This is almost always
@@ -206,7 +240,7 @@ ________________________________________________________________________________
        right drive.
 
 
-    Why doesn't KISS support initramfs?
+    [7.2] Why doesn't KISS support initramfs?
     ____________________________________________________________________________
 
     KISS technically supports booting via an initramfs, it just doesn't require
@@ -220,7 +254,7 @@ ________________________________________________________________________________
     Thank god it isn't a requirement.
 
 
-    Why must I compile my own kernel?
+    [7.3] Why must I compile my own kernel?
     ____________________________________________________________________________
 
     The kernel must be compiled by the user for a variety of reasons.
@@ -286,14 +320,14 @@ ________________________________________________________________________________
        every aspect of their kernel and is solely responsible for it.
 
 
-    Why doesn't KISS provide kernel sources as a package?
+    [7.4] Why doesn't KISS provide kernel sources as a package?
     ____________________________________________________________________________
 
     Why should it? See above.
 
 
-    Must I keep the linux-headers package in sync with my kernel's version to
-    maintain a working system?
+    [7.5] Must I keep the linux-headers package in sync with my kernel's
+          version to maintain a working system?
     ____________________________________________________________________________
 
     The kernel headers in KISS are pinned to an LTS kernel version and are only
@@ -321,11 +355,11 @@ ________________________________________________________________________________
 
 
 
-GCC
+[8.0] GCC
 ________________________________________________________________________________
 
 
-    C compiler cannot create executables.
+    [8.1] C compiler cannot create executables.
     ____________________________________________________________________________
 
     This is almost always an error in your CFLAGS/CXXFLAGS. Ensure that you have
@@ -339,11 +373,11 @@ ________________________________________________________________________________
 
 
 
-XORG
+[9.0] XORG
 ________________________________________________________________________________
 
 
-    Why can't I start Xorg as a normal user?
+    [9.1] Why can't I start Xorg as a normal user?
     ____________________________________________________________________________
 
     This is likely due to you running 'modprobe amdgpu' or equivalent post (or
@@ -383,7 +417,7 @@ ________________________________________________________________________________
        which is a little bit finicky but doable.
 
 
-    How do I take a screenshot?
+    [9.2] How do I take a screenshot?
     ____________________________________________________________________________
 
     Most users will typically use 'ffmpeg' as their screenshot tool as they'll
