@@ -52,7 +52,7 @@ ________________________________________________________________________________
   no infrastructure and the entire distribution is merely a few Git
   repositories. The distribution's upstream is entirely optional.
 
-  More information: @/faq#[4.0]
+  More information: @/faq#4.0
 
 
 * LESS SOFTWARE
@@ -70,7 +70,7 @@ ________________________________________________________________________________
   match any shell, core utilities, init system, device manager and more. The
   alternatives system enables this down to file level.
 
-  More information: @/package-manager#[3.2] @/wiki/community/repositories
+  More information: @/package-manager#3.2 @/wiki/community/repositories
 
 
 FURTHER READING

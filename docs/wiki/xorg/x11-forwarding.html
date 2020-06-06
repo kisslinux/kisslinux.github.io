@@ -39,7 +39,7 @@ ________________________________________________________________________________
 X11-Forwarding is a secure shell feature, which allows one to forward/tunnel
 X11 connections through an existing SSH session. This is used to run X11
 programs on a server while the ssh-client displays the graphical window through
-the user's X11-server. <a href="#[0]">[0]</a>
+the user's X11-server. <a href="#0">[0]</a>
 
 
 Server Configuration
@@ -73,10 +73,10 @@ In order to connect to your remote server, you will need an SSH client that
 supports X11-Forwarding, as well as an X server running on the same client. Some
 popular cross-platform options include the following:
 
-* vcxsrv (recommended, server only) <a href="#[1]">[1]</a>
-* MobaXterm (both SSH client and X server, for Windows only) <a href="#[2]">[2]</a>
-* Xming (server only) <a href="#[3]">[3]</a>
-* X410 (server only) <a href="#[4]">[4]</a>
+* vcxsrv (recommended, server only) <a href="#1">[1]</a>
+* MobaXterm (both SSH client and X server, for Windows only) <a href="#2">[2]</a>
+* Xming (server only) <a href="#3">[3]</a>
+* X410 (server only) <a href="#4">[4]</a>
 
 From the client side, connect to the server via SSH through your favorite
 terminal application while passing the "-X" switch. Pay attention to any
@@ -109,7 +109,7 @@ ________________________________________________________________________________
 
 * You can further improve your connection speed by using a cypher to connect to
   the remove server. This can be passed as an argument using the "-c" switch
-  at the initialization of a new SSH connection. <a href="#[5]">[5]</a>
+  at the initialization of a new SSH connection. <a href="#5">[5]</a>
 
   $ ssh -X -C -c aes256-ctr user@localhost
 
@@ -118,10 +118,10 @@ ________________________________________________________________________________
   aes128-cbc, 3des-cbc, blowfish-cbc, cast128-cbc, aes192-cbc, aes256-cbc,
   arcfour, etc.) and each will vary in performance and security. Check out
   websites that benchmark the various security cyphers and choose the one that
-  works best for you. <a href="#[6]">[6]</a>
+  works best for you. <a href="#6">[6]</a>
 
 * Can you forward an entire desktop session?  Why yes, you can! Instructions for
-  doing so vary per client, server configuration, and platform <a href="#[7]">[7]</a>. If you chose
+  doing so vary per client, server configuration, and platform <a href="#7">[7]</a>. If you chose
   vcxsrv as your client on a Windows host, then I would recommend checking out
   the following youtube video:
 
@@ -132,21 +132,21 @@ ________________________________________________________________________________
 References
 ________________________________________________________________________________
 
-<span id="[0]"><a href="#[0]">[0]</a></span> <a href='https://wiki.archlinux.org/index.php/OpenSSH#X11_forwarding'>https://wiki.archlinux.org/index.php/OpenSSH#X11_forwarding</a>
+<span id="0"><a href="#0">[0]</a></span> <a href='https://wiki.archlinux.org/index.php/OpenSSH#X11_forwarding'>https://wiki.archlinux.org/index.php/OpenSSH#X11_forwarding</a>
 
-<span id="[1]"><a href="#[1]">[1]</a></span> <a href='https://sourceforge.net/projects/vcxsrv/'>https://sourceforge.net/projects/vcxsrv/</a>
+<span id="1"><a href="#1">[1]</a></span> <a href='https://sourceforge.net/projects/vcxsrv/'>https://sourceforge.net/projects/vcxsrv/</a>
 
-<span id="[2]"><a href="#[2]">[2]</a></span> <a href='https://mobaxterm.mobatek.net/'>https://mobaxterm.mobatek.net/</a>
+<span id="2"><a href="#2">[2]</a></span> <a href='https://mobaxterm.mobatek.net/'>https://mobaxterm.mobatek.net/</a>
 
-<span id="[3]"><a href="#[3]">[3]</a></span> <a href='http://straightrunning.com/XmingNotes/'>http://straightrunning.com/XmingNotes/</a>
+<span id="3"><a href="#3">[3]</a></span> <a href='http://straightrunning.com/XmingNotes/'>http://straightrunning.com/XmingNotes/</a>
 
-<span id="[4]"><a href="#[4]">[4]</a></span> <a href='https://x410.dev'>https://x410.dev</a>
+<span id="4"><a href="#4">[4]</a></span> <a href='https://x410.dev'>https://x410.dev</a>
 
-<span id="[5]"><a href="#[5]">[5]</a></span> <a href='https://cyberciti.biz/faq/speeding-up-ssh-x11-forwarding-with-unix-osx-linux-bsd/'>https://cyberciti.biz/faq/speeding-up-ssh-x11-forwarding-with-unix-osx-linux-bsd/</a>
+<span id="5"><a href="#5">[5]</a></span> <a href='https://cyberciti.biz/faq/speeding-up-ssh-x11-forwarding-with-unix-osx-linux-bsd/'>https://cyberciti.biz/faq/speeding-up-ssh-x11-forwarding-with-unix-osx-linux-bsd/</a>
 
-<span id="[6]"><a href="#[6]">[6]</a></span> <a href='https://blog.famzah.net/2010/06/11/openssh-ciphers-performance-benchmark/'>https://blog.famzah.net/2010/06/11/openssh-ciphers-performance-benchmark/</a>
+<span id="6"><a href="#6">[6]</a></span> <a href='https://blog.famzah.net/2010/06/11/openssh-ciphers-performance-benchmark/'>https://blog.famzah.net/2010/06/11/openssh-ciphers-performance-benchmark/</a>
 
-<span id="[7]"><a href="#[7]">[7]</a></span> <a href='https://blog.warbel.net/index.php/2018/02/21/using-xnest-or-putty-vcxsrv-to-start-a-full-remote-session/'>https://blog.warbel.net/index.php/2018/02/21/using-xnest-or-putty-vcxsrv-to-start-a-full-remote-session/</a>
+<span id="7"><a href="#7">[7]</a></span> <a href='https://blog.warbel.net/index.php/2018/02/21/using-xnest-or-putty-vcxsrv-to-start-a-full-remote-session/'>https://blog.warbel.net/index.php/2018/02/21/using-xnest-or-putty-vcxsrv-to-start-a-full-remote-session/</a>
 
 
 

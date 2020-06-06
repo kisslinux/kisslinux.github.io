@@ -46,18 +46,18 @@ the full path to a POSIX shell script as its value.
 Example: export KISS_HOOK=$HOME/.local/bin/kiss-hook
 
 
-<span id="[0.0]"><a href="#[0.0]">[0.0]</a></span> Index
+<span id="0.0"><a href="#0.0">[0.0]</a></span> Index
 ________________________________________________________________________________
 
-- Usage                                                                    <a href="#[1.0]">[1.0]</a>
-- Examples                                                                 <a href="#[2.0]">[2.0]</a>
-    - Removing unneeded files from packages                                <a href="#[2.1]">[2.1]</a>
-    - Building some packages in memory (tmpfs)                             <a href="#[2.2]">[2.2]</a>
-    - Logging build duration                                               <a href="#[2.3]">[2.3]</a>
+- Usage                                                                    <a href="#1.0">[1.0]</a>
+- Examples                                                                 <a href="#2.0">[2.0]</a>
+    - Removing unneeded files from packages                                <a href="#2.1">[2.1]</a>
+    - Building some packages in memory (tmpfs)                             <a href="#2.2">[2.2]</a>
+    - Logging build duration                                               <a href="#2.3">[2.3]</a>
 
 
 
-<span id="[1.0]"><a href="#[1.0]">[1.0]</a></span> Usage
+<span id="1.0"><a href="#1.0">[1.0]</a></span> Usage
 ________________________________________________________________________________
 
 The script is sourced at each hook and is given three variables as input. POSIX
@@ -80,14 +80,14 @@ script has the ability to override package manager internals and the package
 manager's environment.
 
 
-<span id="[2.0]"><a href="#[2.0]">[2.0]</a></span> Examples
+<span id="2.0"><a href="#2.0">[2.0]</a></span> Examples
 ________________________________________________________________________________
 
 Here are some interesting extensions to the package manager. These are usable
 as-is and they can also be combined together.
 
 
-    <span id="[2.1]"><a href="#[2.1]">[2.1]</a></span> Removing unneeded files from packages
+    <span id="2.1"><a href="#2.1">[2.1]</a></span> Removing unneeded files from packages
     ____________________________________________________________________________
 
     Packages can contain files which you will have no use for. A simple hook can
@@ -109,13 +109,13 @@ as-is and they can also be combined together.
     esac
 
 
-    <span id="[2.2]"><a href="#[2.2]">[2.2]</a></span> Building some packages in memory (tmpfs)
+    <span id="2.2"><a href="#2.2">[2.2]</a></span> Building some packages in memory (tmpfs)
     ____________________________________________________________________________
 
     This hook runs on pre-extract and conditionally runs the source extraction,
     package build process and resulting tarball creation in memory. The benefit
     of this is a nice speedup throughout (especially when used alongside
-    ccache <a href="#[0]">[0]</a>).
+    ccache <a href="#0">[0]</a>).
 
     NOTE: '/tmp' must be mounted as 'tmpfs' for this to work.
 
@@ -141,7 +141,7 @@ as-is and they can also be combined together.
     esac
 
 
-    <span id="[2.3]"><a href="#[2.3]">[2.3]</a></span> Logging build duration
+    <span id="2.3"><a href="#2.3">[2.3]</a></span> Logging build duration
     ____________________________________________________________________________
 
     This hook adds a new message post-build with the total build duration in a
@@ -173,7 +173,7 @@ as-is and they can also be combined together.
 References
 ________________________________________________________________________________
 
-<span id="[0]"><a href="#[0]">[0]</a></span> <a href='https://ccache.dev/'>https://ccache.dev/</a>
+<span id="0"><a href="#0">[0]</a></span> <a href='https://ccache.dev/'>https://ccache.dev/</a>
 
 
 ________________________________________________________________________________
