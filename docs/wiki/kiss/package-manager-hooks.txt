@@ -113,7 +113,6 @@ as-is and they can also be combined together.
     human readable format (00h 00m). Similar code is used in the boot process
     of the system to calculate boot time.
 
-
     case $TYPE in
         pre-build)
             IFS=. read -r _start _ < /proc/uptime
