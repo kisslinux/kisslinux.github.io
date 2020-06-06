@@ -6,7 +6,7 @@ and some sugar on top. The software choices made by a distribution are largely
 what define it.
 
 KISS takes a different approach to its software offerings by having highly
-opinionated defaults with limitless user choice as a counterbalance. The
+focused defaults with limitless user choice as a counterbalance. The
 defaults are just that, defaults. Nothing is tightly coupled.
 
 This page will explain the many software choices, the status of packages like
