@@ -37,7 +37,7 @@ This is not a complete list, it is merely the interesting bits. The true
 strength of KISS is not in its software choices but in its software omissions.
 
 
-    [1.1] C/POSIX Libraru
+    [1.1] C/POSIX Library
     ____________________________________________________________________________
 
     Most major distributions tend to use GNU's C library whereas KISS uses musl.
