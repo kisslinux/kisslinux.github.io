@@ -7,16 +7,16 @@ txt2html() {
     # Right now this only does some URL transformations.
 
     # Convert all plain-text links to HTML links (<a href="X">X</a>).
-    sed -E "s|([^\"\'\>])(http[s]?://[^[:space:]\)]*)|\1<a href='\2'>\2</a>|g" |
+    sed -E "s|([^\"\'\>])(http[s]?://[^[:space:]\)]*)|\1<a href=\2>\2</a>|g" |
 
     # Convert @/words to relative HTML links.
     # Convert $/words to GitHub URLs.
-    sed -E "s|(@/)([^ \)]*)|\1<a href=\"${pp##.}/\2\">\2</a>|g" |
-    sed -E "s|(\\$/)([^ \)]*)|\1<a href=\"$repo_url/\2\">\2</a>|g" |
+    sed -E "s|(@/)([^ \)]*)|\1<a href=${pp##.}/\2>\2</a>|g" |
+    sed -E "s|(\\$/)([^ \)]*)|\1<a href=$repo_url/\2>\2</a>|g" |
 
     # Convert [0] into HTML links.
-    sed -E "s|^( *)\[([0-9\.]*)\]|\1<span id=\"\2\">[\2]</span>|g" |
-    sed -E "s|([^\"#])\[([0-9\.]*)\]|\1<a href=\"#\2\">[\2]</a>|g" |
+    sed -E "s|^( *)\[([0-9\.]*)\]|\1<span id=\2>[\2]</span>|g" |
+    sed -E "s|([^\"#])\[([0-9\.]*)\]|\1<a href=#\2>[\2]</a>|g" |
 
     # Insert the page into the template.
     sed -E '/%%CONTENT%%/r /dev/stdin' template.html |

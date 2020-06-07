@@ -47,7 +47,7 @@ necessary.
 REPOSITORY LAYOUT
 ________________________________________________________________________________
 
-The Wiki lives in a separate repository ($/<a href="https://github.com/kisslinux/wiki">kisslinux/wiki</a>). It is then imported
+The Wiki lives in a separate repository ($/<a href=https://github.com/kisslinux/wiki>kisslinux/wiki</a>). It is then imported
 as a submodule inside of the website's repository ($kisslinux/website). This
 keeps things neat and tidy. It also makes contribution easier as it's less
 daunting compared to nesting it inside the website's tree.
@@ -58,23 +58,23 @@ ________________________________________________________________________________
 
 Links to other wiki pages can be written in the following way:
 
-    @/<a href="/wiki/help/help/wiki-syntax">help/wiki-syntax</a>
+    @/<a href=/wiki/help/help/wiki-syntax>help/wiki-syntax</a>
 
 Which is turned into:
 
-    @/<a href="/wiki/help/&lt;a">&lt;a</a> href="/wiki/help/wiki-syntax"&gt;wiki-syntax&lt;/a&gt;
+    @/<a href=/wiki/help/&lt;a>&lt;a</a> href="/wiki/help/wiki-syntax"&gt;wiki-syntax&lt;/a&gt;
 
 
 REFERENCE LINKS
 ________________________________________________________________________________
 
-Adding <a href="#0">[0]</a> to some text will create an anchor link to a corresponding reference.
+Adding <a href=#0>[0]</a> to some text will create an anchor link to a corresponding reference.
 This corresponding reference must also be created by the writer of the document.
-The build system will simply link them together for you. <a href="#1">[1]</a>
+The build system will simply link them together for you. <a href=#1>[1]</a>
 
-<span id="0"><a href="#0">[0]</a></span> Clicking the above reference will scroll the page to these anchor links.
+<span id=0><a href=#0>[0]</a></span> Clicking the above reference will scroll the page to these anchor links.
 
-<span id="1"><a href="#1">[1]</a></span> Links such as this one must start a column zero.
+<span id=1><a href=#1>[1]</a></span> Links such as this one must start a column zero.
 
 
 LINKS TO GITHUB
@@ -82,13 +82,13 @@ ________________________________________________________________________________
 
 Links to GitHub repositories can be written in the following way:
 
-    $/<a href="https://github.com/username">username</a>
-    $/<a href="https://github.com/username/repo">username/repo</a>
-    $/<a href="https://github.com/username/repo/commits/etc">username/repo/commits/etc</a>
+    $/<a href=https://github.com/username>username</a>
+    $/<a href=https://github.com/username/repo>username/repo</a>
+    $/<a href=https://github.com/username/repo/commits/etc>username/repo/commits/etc</a>
 
 Which is turned into:
 
-    $/<a href="https://github.com/&lt;a">&lt;a</a> href="https://github.com/username"&gt;username&lt;/a&gt;
+    $/<a href=https://github.com/&lt;a>&lt;a</a> href="https://github.com/username"&gt;username&lt;/a&gt;
 
 
 HTML

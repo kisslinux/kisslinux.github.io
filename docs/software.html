@@ -43,19 +43,19 @@ Python 2 and the further removal of unneeded software. This is only in relation
 to the official repositories as the Community make KISS boundless.
 
 
-<span id="0.0"><a href="#0.0">[0.0]</a></span> Index
+<span id=0.0><a href=#0.0>[0.0]</a></span> Index
 ________________________________________________________________________________
 
-- The Defaults                                                             <a href="#1.0">[1.0]</a>
-    - C/POSIX Library                                                      <a href="#1.1">[1.1]</a>
-    - Core Utilities and Shell                                             <a href="#1.2">[1.2]</a>
-    - Init System and Service Manager                                      <a href="#1.3">[1.3]</a>
-    - SSL Library                                                          <a href="#1.4">[1.4]</a>
-- Removed Software                                                         <a href="#2.0">[2.0]</a>
-- Excluded Software                                                        <a href="#3.0">[3.0]</a>
+- The Defaults                                                             <a href=#1.0>[1.0]</a>
+    - C/POSIX Library                                                      <a href=#1.1>[1.1]</a>
+    - Core Utilities and Shell                                             <a href=#1.2>[1.2]</a>
+    - Init System and Service Manager                                      <a href=#1.3>[1.3]</a>
+    - SSL Library                                                          <a href=#1.4>[1.4]</a>
+- Removed Software                                                         <a href=#2.0>[2.0]</a>
+- Excluded Software                                                        <a href=#3.0>[3.0]</a>
 
 
-<span id="1.0"><a href="#1.0">[1.0]</a></span> The Defaults
+<span id=1.0><a href=#1.0>[1.0]</a></span> The Defaults
 ________________________________________________________________________________
 
 KISS provides a somewhat non-typical software stack. It's small in size and
@@ -66,7 +66,7 @@ This is not a complete list, it is merely the interesting bits. The true
 strength of KISS is not in its software choices but in its software omissions.
 
 
-    <span id="1.1"><a href="#1.1">[1.1]</a></span> C/POSIX Library
+    <span id=1.1><a href=#1.1>[1.1]</a></span> C/POSIX Library
     ____________________________________________________________________________
 
     Most major distributions tend to use GNU's C library whereas KISS uses musl.
@@ -85,12 +85,12 @@ strength of KISS is not in its software choices but in its software omissions.
 
     To paint a clearer picture; our Firefox package no longer requires a series
     of patches for musl compatibility as the portability issues were fixed
-    upstream (Thanks to $/<a href="https://github.com/michaelforney">michaelforney</a>).
+    upstream (Thanks to $/<a href=https://github.com/michaelforney>michaelforney</a>).
 
-    More information: <a href='https://wiki.musl-libc.org/design-concepts.html'>https://wiki.musl-libc.org/design-concepts.html</a>
+    More information: <a href=https://wiki.musl-libc.org/design-concepts.html>https://wiki.musl-libc.org/design-concepts.html</a>
 
 
-    <span id="1.2"><a href="#1.2">[1.2]</a></span> Core Utilities and Shell
+    <span id=1.2><a href=#1.2>[1.2]</a></span> Core Utilities and Shell
     ____________________________________________________________________________
 
     The default provider of the core utilities (ls, cat, etc) and the POSIX
@@ -101,10 +101,10 @@ strength of KISS is not in its software choices but in its software omissions.
     executable. This is statically linked in KISS and comes in at 1MB for the
     entire package. Each utility is simply a symlink to the single binary.
 
-    More information: <a href='https://www.busybox.net/about.html'>https://www.busybox.net/about.html</a>
+    More information: <a href=https://www.busybox.net/about.html>https://www.busybox.net/about.html</a>
 
 
-    <span id="1.3"><a href="#1.3">[1.3]</a></span> Init System and Service Manager
+    <span id=1.3><a href=#1.3>[1.3]</a></span> Init System and Service Manager
     ____________________________________________________________________________
 
     Busybox is also the provider of KISS' default init and service manager. This
@@ -119,10 +119,10 @@ strength of KISS is not in its software choices but in its software omissions.
     must be implemented externally. KISS provides an init-agnostic and portable
     base with which any init and service manager can be used.
 
-    More information: $/<a href="https://github.com/kisslinux/init">kisslinux/init</a>
+    More information: $/<a href=https://github.com/kisslinux/init>kisslinux/init</a>
 
 
-    <span id="1.4"><a href="#1.4">[1.4]</a></span> SSL Library
+    <span id=1.4><a href=#1.4>[1.4]</a></span> SSL Library
     ____________________________________________________________________________
 
     KISS' default SSL library is LibreSSL, an OpenSSL fork by the OpenBSD folk.
@@ -132,10 +132,10 @@ strength of KISS is not in its software choices but in its software omissions.
     It also has a nicer build system and no reliance on Perl during compilation.
     This made it very easy to include in KISS' tiny core.
 
-    More information: <a href='https://libressl.org/index.html'>https://libressl.org/index.html</a>
+    More information: <a href=https://libressl.org/index.html>https://libressl.org/index.html</a>
 
 
-<span id="2.0"><a href="#2.0">[2.0]</a></span> Removed Software
+<span id=2.0><a href=#2.0>[2.0]</a></span> Removed Software
 ________________________________________________________________________________
 
 Through tireless effort, a large amount of software has been rendered unneeded
@@ -163,7 +163,7 @@ repositories are made up of only 150 or so packages (and this number has shrunk
 over time).
 
 
-<span id="3.0"><a href="#3.0">[3.0]</a></span> Excluded Software
+<span id=3.0><a href=#3.0>[3.0]</a></span> Excluded Software
 ________________________________________________________________________________
 
 You might be surprised to hear that a lot of popular software is explicitly
@@ -193,7 +193,7 @@ The Community have packaged this entire list (and then some) for those looking
 to use this software. This is #1 the strength of the distribution, a highly
 opinionated and minimal) base with limitless extensibility.
 
-See: @/<a href="/wiki/community/repositories">wiki/community/repositories</a>
+See: @/<a href=/wiki/community/repositories>wiki/community/repositories</a>
 
 
 ________________________________________________________________________________
