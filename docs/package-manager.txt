@@ -324,68 +324,72 @@ invocation, etc, etc.
 
 They require little to no extra code in the package manager to support them.
 
-
-Variable         | Description
------------------+--------------------------------------------------------------
-KISS_PATH        | List of repositories. This works exactly like '$PATH'
-                 | (a colon separated list of paths).
-                 |
-KISS_FORCE       | Force installation/removal of package by bypassing dependency
-                 | checks, etc. Set to '1' to enable.
-                 |
-KISS_CHOICE      | Set to '0' to disable the alternatives system and error on
-                 | any detected file conflicts.
-                 |
-KISS_HOOK        | Hook into the package manager. Set to the full path to the
-                 | script. See @/wiki/kiss/package-manager-hooks
-                 |
-KISS_ROOT        | Where installed packages will go. Can be used to install
-                 | packages to somewhere other than '/'.
-                 |
-KISS_COLOR       | Enable/Disable colors. Set to '0' to disable colors.
-                 |
-KISS_PROMPT      | Skip all prompts. Set to '0' to say 'yes' to all prompts from
-                 | the package manager.
-                 |
-KISS_COMPRESS    | Compression method to use for built package tarballs
-                 | (defaults to 'gz'). Valid: bz2, gz, lzma, lz, xz, zst
-                 |
-KISS_SU          | Force usage of a different sudo tool. Valid: su, sudo, doas
-                 |
-KISS_DEBUG       | Keep temporary directories around for debugging purposes.
-                 | Set to '1' to enable.
-                 |
-KISS_KEEPLOG     | Keep build logs around for successful builds and not just
-                 | failing ones. Set to '1' to enable.
-                 |
-KISS_TMPDIR      | Temporary directory for builds. Can be set to a tmpfs so
-                 | builds happen in memory.
-                 |
-KISS_PID         | Use a reproducible cache naming scheme instead of build-$pid.
-                 | If set to 'test', the result will be build-test.
-                 |
-
++-----------------+------------------------------------------------------------+
+|        Variable | Description                                                |
++-----------------+------------------------------------------------------------+
+|                 |                                                            |
+|       KISS_PATH | List of repositories. This works exactly like '$PATH'      |
+|                 | (a colon separated list of paths).                         |
+|                 |                                                            |
+|      KISS_FORCE | Force installation/removal of package by bypassing         |
+|                 | dependency checks, etc. Set to '1' to enable.              |
+|                 |                                                            |
+|     KISS_CHOICE | Set to '0' to disable the alternatives system and error on |
+|                 | any detected file conflicts.                               |
+|                 |                                                            |
+|       KISS_HOOK | Hook into the package manager. Set to the full path to the |
+|                 | script. See @/wiki/kiss/package-manager-hooks              |
+|                 |                                                            |
+|       KISS_ROOT | Where installed packages will go. Can be used to install   |
+|                 | packages to somewhere other than '/'.                      |
+|                 |                                                            |
+|      KISS_COLOR | Enable/Disable colors. Set to '0' to disable colors.       |
+|                 |                                                            |
+|     KISS_PROMPT | Skip all prompts. Set to '0' to say 'yes' to all prompts   |
+|                 | from the package manager.                                  |
+|                 |                                                            |
+|   KISS_COMPRESS | Compression method to use for built package tarballs       |
+|                 | (defaults to 'gz'). Valid: bz2, gz, lzma, lz, xz, zst      |
+|                 |                                                            |
+|         KISS_SU | Force usage of a different sudo tool.                      |
+|                 | Valid: su, sudo, doas                                      |
+|                 |                                                            |
+|      KISS_DEBUG | Keep temporary directories around for debugging purposes.  |
+|                 | Set to '1' to enable.                                      |
+|                 |                                                            |
+|    KISS_KEEPLOG | Keep build logs around for successful builds and not just  |
+|                 | failing ones. Set to '1' to enable.                        |
+|                 |                                                            |
+|     KISS_TMPDIR | Temporary directory for builds. Can be set to a tmpfs so   |
+|                 | builds happen in memory.                                   |
+|                 |                                                            |
+|        KISS_PID | Use a reproducible cache naming scheme instead of          |
+|                 | build-$pid. If set to test, the result will be build-test. |
+|                 |                                                            |
++-----------------+------------------------------------------------------------+
 
 There are also a myriad of "3rd-party" environment variables which control GCC,
 Make, CMake, etc. These aren't used by the package manager. They're used by the
 tools called by the package's build script.
 
-Variable         | Description
------------------+--------------------------------------------------------------
-XDG_CACHE_HOME   | Cache directory location.
-                 |
-CC               | C   compiler.
-CXX              | C++ compiler.
-AR               | Archive tool.
-NM               | Symbol  tool.
-RANLIB           | Index   tool.
-                 |
-CFLAGS           | C   compiler flags.
-CXXFLAGS         | C++ compiler flags.
-LDFLAGS          | Linker flags.
-MAKEFLAGS        | Make flags.
-SAMUFLAGS        | Samurai flags.
-RUSTFLAGS        | Rust compiler flags.
-                 |
-CMAKE_GENERATOR  | 'Unix Makefiles' or 'Ninja'.
-                 |
++-----------------+------------------------------------------------------------+
+|        Variable | Description                                                |
++-----------------+------------------------------------------------------------+
+|  XDG_CACHE_HOME | Cache directory location.                                  |
+|                 |                                                            |
+|              CC | C   compiler.                                              |
+|             CXX | C++ compiler.                                              |
+|              AR | Archive tool.                                              |
+|              NM | Symbol  tool.                                              |
+|          RANLIB | Index   tool.                                              |
+|                 |                                                            |
+|          CFLAGS | C   compiler flags.                                        |
+|        CXXFLAGS | C++ compiler flags.                                        |
+|         LDFLAGS | Linker flags.                                              |
+|       MAKEFLAGS | Make flags.                                                |
+|       SAMUFLAGS | Samurai flags.                                             |
+|       RUSTFLAGS | Rust compiler flags.                                       |
+|                 |                                                            |
+| CMAKE_GENERATOR | 'Unix Makefiles' or 'Ninja'.                               |
+|                 |                                                            |
++-----------------+------------------------------------------------------------+
