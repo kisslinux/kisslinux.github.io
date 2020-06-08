@@ -11,18 +11,23 @@ basic UNIX utilities and tools.
 DIRECTORY STRUCTURE
 ________________________________________________________________________________
 
-zlib/             # Package name.
-|- build          # Build script (chmod +x).
-|- sources        # Remote and local sources.
-|- version        # Package version.
-
-# Optional files.
-
-|- depends        # Dependencies (usually required).
-|- pre-remove     # Pre-remove script (chmod +x).
-|- post-install   # Post-install script (chmod +x).
-|- patches/*      # Directory to store patches.
-|- files/*        # Directory to store misc files.
++------------------------------------------------------------------------------+
+|                                                                              |
+|  zlib/            # Package name.                                            |
+|  - build          # Build script (chmod +x).                                 |
+|  - sources        # Remote and local sources.                                |
+|  - version        # Package version.                                         |
+|                                                                              |
+|                                                                              |
+|  # Optional files.                                                           |
+|                                                                              |
+|  - depends        # Dependencies (usually required).                         |
+|  - pre-remove     # Pre-remove script (chmod +x).                            |
+|  - post-install   # Post-install script (chmod +x).                          |
+|  - patches/*      # Directory to store patches.                              |
+|  - files/*        # Directory to store misc files.                           |
+|                                                                              |
++------------------------------------------------------------------------------+
 
 
 BUILD
@@ -42,18 +47,22 @@ The second argument contains the package's version.
 Everything in the mentioned path is added to the package tarball and later
 installed to the system.
 
-Example:
-
-    #!/bin/sh -e
-
-    # Disable stripping (add this only if needed).
-    :> nostrip
-
-    ./configure \
-         --prefix=/usr
-
-    make
-    make DESTDIR="$1" install
++------------------------------------------------------------------------------+
+| build                                                                        |
++------------------------------------------------------------------------------+
+|                                                                              |
+|   #!/bin/sh -e                                                               |
+|                                                                              |
+|   # Disable stripping (add this only if needed).                             |
+|   :> nostrip                                                                 |
+|                                                                              |
+|   ./configure \                                                              |
+|        --prefix=/usr                                                         |
+|                                                                              |
+|   make                                                                       |
+|   make DESTDIR="$1" install                                                  |
+|                                                                              |
++------------------------------------------------------------------------------+
 
 
 DEPENDS
@@ -68,15 +77,19 @@ for compile time dependencies and left blank for runtime dependencies.
 
 The depends file can be omitted entirely if the package has no dependencies.
 
-Example:
-
-    # Comments are also supported.
-
-    # Perl is needed at compile time.
-    perl make
-
-    # zlib is needed at runtime.
-    zlib
++------------------------------------------------------------------------------+
+| depends                                                                      |
++------------------------------------------------------------------------------+
+|                                                                              |
+|   # Comments are supported.                                                  |
+|                                                                              |
+|   # Perl is needed at compile time.                                          |
+|   perl make                                                                  |
+|                                                                              |
+|   # zlib is needed at runtime.                                               |
+|   zlib                                                                       |
+|                                                                              |
++------------------------------------------------------------------------------+
 
 
 SOURCES
@@ -95,34 +108,48 @@ prefix 'git+' should be added with an optional suffix #hash or @branch).
 Adding a suffix of '?no-extract' to the source URL will prevent the package
 manager from automatically extracting the source (if a tarball or zip).
 
-Example:
++------------------------------------------------------------------------------+
+| sources                                                                      |
++------------------------------------------------------------------------------+
+|                                                                              |
+|   https://example.com/dhcpcd-8.0.2.tar.xz                                    |
+|   files/dhcpcd.run                                                           |
+|                                                                              |
++------------------------------------------------------------------------------+
 
-    https://example.com/dhcpcd-8.0.2.tar.xz
-    files/dhcpcd.run
++------------------------------------------------------------------------------+
+| sources (usage with second field)                                            |
++------------------------------------------------------------------------------+
+|                                                                              |
+|   https://example.com/gcc-9.1.0.tar.xz  gcc                                  |
+|   https://example.com/gmp-6.1.2.tar.xz  gcc/gmp                              |
+|   https://example.com/mpfr-4.0.2.tar.xz gcc/mpfr                             |
+|   https://example.com/mpc-1.1.0.tar.gz  gcc/mpc                              |
+|                                                                              |
++------------------------------------------------------------------------------+
 
++------------------------------------------------------------------------------+
+| sources (usage with Git)                                                     |
++------------------------------------------------------------------------------+
+|                                                                              |
+|   git+https://github.com/dylanaraps/eiwd                                     |
+|                                                                              |
+|   # Grabbing a specific branch.                                              |
+|   git+https://github.com/dylanaraps/eiwd@branch                              |
+|                                                                              |
+|   # Grabbing a specific commit.                                              |
+|   git+https://github.com/dylanaraps/eiwd#commit                              |
+|                                                                              |
++------------------------------------------------------------------------------+
 
-Example (with second field):
++------------------------------------------------------------------------------+
+| sources (usage with automatic source extraction disabled)                    |
++------------------------------------------------------------------------------+
+|                                                                              |
+|   https://example.com/zlib-1.2.0.tar.xz?no-extract                           |
+|                                                                              |
++------------------------------------------------------------------------------+
 
-    https://example.com/gcc-9.1.0.tar.xz  gcc
-    https://example.com/gmp-6.1.2.tar.xz  gcc/gmp
-    https://example.com/mpfr-4.0.2.tar.xz gcc/mpfr
-    https://example.com/mpc-1.1.0.tar.gz  gcc/mpc
-
-
-Example (Git):
-
-    git+https://github.com/dylanaraps/eiwd
-
-    # Grabbing a specific branch.
-    git+https://github.com/dylanaraps/eiwd@branch
-
-    # Grabbing a specific commit.
-    git+https://github.com/dylanaraps/eiwd#commit
-
-
-Example (Automatic extraction disabled):
-
-    https://example.com/zlib-1.2.0.tar.xz?no-extract
 
 
 VERSION
@@ -137,14 +164,21 @@ field should contain the version number of the repository files themselves.
 If the package is using a git source to pull down the latest commit, the
 version should be simply set to 'git'.
 
-Example:
++------------------------------------------------------------------------------+
+| version                                                                      |
++------------------------------------------------------------------------------+
+|                                                                              |
+|   1.2.3 1                                                                    |
+|                                                                              |
++------------------------------------------------------------------------------+
 
-    1.2.3 1
-
-
-Example (Git):
-
-    git 1
++------------------------------------------------------------------------------+
+| version (Git)                                                                |
++------------------------------------------------------------------------------+
+|                                                                              |
+|   git 1                                                                      |
+|                                                                              |
++------------------------------------------------------------------------------+
 
 
 PRE-REMOVE
@@ -154,12 +188,16 @@ The pre-remove file should contain anything that needs run prior to the
 removal of the package. The file is language agnostic and the only requirement
 is that it be executable.
 
-Example:
-
-    #!/bin/sh -e
-
-    printf 'No one has used this yet!\n'
-    printf 'I have no example!\n'
++------------------------------------------------------------------------------+
+| pre-remove                                                                   |
++------------------------------------------------------------------------------+
+|                                                                              |
+|   #!/bin/sh -e                                                               |
+|                                                                              |
+|   printf 'No one has used this yet!\n'                                       |
+|   printf 'I have no example!\n'                                              |
+|                                                                              |
++------------------------------------------------------------------------------+
 
 
 POST-INSTALL
@@ -169,11 +207,15 @@ The post-install file should contain anything that needs to be run after a
 package installation to properly setup the software. The file is language
 agnostic and the only requirement is that it be executable.
 
-Example:
-
-    #!/bin/sh -e
-
-    fc-cache -f
++------------------------------------------------------------------------------+
+| post-install                                                                 |
++------------------------------------------------------------------------------+
+|                                                                              |
+|   #!/bin/sh -e                                                               |
+|                                                                              |
+|   fc-cache -vf                                                               |
+|                                                                              |
++------------------------------------------------------------------------------+
 
 
 PATCHES/*
@@ -188,26 +230,30 @@ This must be done in the build script of the package.
 The build script has direct access to the patches in its current working
 directory ('patch -p1 < example.patch' works directly).
 
-
-Example (sources):
-
-    https://example.com/rxvt-unicode-9.22.tar.bz2
-    patches/gentables.patch
-    patches/rxvt-unicode-kerning.patch
-
-
-Example (build):
-
-    #!/bin/sh -e
-
-    patch -p1 < rxvt-unicode-kerning.patch
-    patch -p1 < gentables.patch
-
-    ./configure \
-         --prefix=/usr
-
-    make
-    make DESTDIR="$1" install
++------------------------------------------------------------------------------+
+| sources (usage with patches)                                                 |
++------------------------------------------------------------------------------+
+|                                                                              |
+|   https://example.com/rxvt-unicode-9.22.tar.bz2                              |
+|   patches/gentables.patch                                                    |
+|   patches/rxvt-unicode-kerning.patch                                         |
+|                                                                              |
++------------------------------------------------------------------------------+
+| build (usage with patches)                                                   |
++------------------------------------------------------------------------------+
+|                                                                              |
+|   #!/bin/sh -e                                                               |
+|                                                                              |
+|   patch -p1 < rxvt-unicode-kerning.patch                                     |
+|   patch -p1 < gentables.patch                                                |
+|                                                                              |
+|   ./configure \                                                              |
+|        --prefix=/usr                                                         |
+|                                                                              |
+|   make                                                                       |
+|   make DESTDIR="$1" install                                                  |
+|                                                                              |
++------------------------------------------------------------------------------+
 
 
 FILES/*
@@ -221,19 +267,24 @@ In the sources file, files are referred to by using a relative path
 The build script has direct access to the files in its current working
 directory ('cat example_file' works directly).
 
-Example (sources):
-
-    https://example.com/kiss-1.0.0.tar.gz
-    files/kiss_path.sh
-
-Example (build):
-
-    #!/bin/sh -e
-
-    install -D kiss "$1/usr/bin/kiss"
-
-    # Accessible directly in '$PWD'.
-    install -D kiss_path.sh "$1/etc/kiss_path.sh"
-
++------------------------------------------------------------------------------+
+| sources (usage with local files)                                             |
++------------------------------------------------------------------------------+
+|                                                                              |
+|   https://example.com/kiss-1.0.0.tar.gz                                      |
+|   files/kiss_path.sh                                                         |
+|                                                                              |
++------------------------------------------------------------------------------+
+| build (usage with local files)                                               |
++------------------------------------------------------------------------------+
+|                                                                              |
+|   #!/bin/sh -e                                                               |
+|                                                                              |
+|   install -D kiss "$1/usr/bin/kiss"                                          |
+|                                                                              |
+|   # Accessible directly in '$PWD'.                                           |
+|   install -D kiss_path.sh "$1/etc/kiss_path.sh"                              |
+|                                                                              |
++------------------------------------------------------------------------------+
 
 
