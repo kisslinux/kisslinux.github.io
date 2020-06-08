@@ -8,7 +8,22 @@ This format allows effortless interface using any programming language or just
 basic UNIX utilities and tools.
 
 
-DIRECTORY STRUCTURE
+[0.0] Index
+________________________________________________________________________________
+
+- Directory Structure                                                      [1.0]
+
+- build                                                                    [2.0]
+- depends                                                                  [3.0]
+- sources                                                                  [4.0]
+- version                                                                  [5.0]
+- pre-remove                                                               [6.0]
+- post-install                                                             [7.0]
+- patches/*                                                                [8.0]
+- files/*                                                                  [9.0]
+
+
+[1.0] Directory Structure
 ________________________________________________________________________________
 
 +------------------------------------------------------------------------------+
@@ -30,7 +45,7 @@ ________________________________________________________________________________
 +------------------------------------------------------------------------------+
 
 
-BUILD
+[2.0] build
 ________________________________________________________________________________
 
 The build file should contain all of the steps necessary to patch, configure,
@@ -65,7 +80,7 @@ installed to the system.
 +------------------------------------------------------------------------------+
 
 
-DEPENDS
+[3.0] depends
 ________________________________________________________________________________
 
 The depends file should contain any other packages the package depends on to
@@ -92,7 +107,7 @@ The depends file can be omitted entirely if the package has no dependencies.
 +------------------------------------------------------------------------------+
 
 
-SOURCES
+[4.0] sources
 ________________________________________________________________________________
 
 The sources file should contain all remote and local files needed by the
@@ -152,7 +167,7 @@ manager from automatically extracting the source (if a tarball or zip).
 
 
 
-VERSION
+[5.0] version
 ________________________________________________________________________________
 
 The version file should contain a single line with two fields. All other lines
@@ -181,7 +196,7 @@ version should be simply set to 'git'.
 +------------------------------------------------------------------------------+
 
 
-PRE-REMOVE
+[6.0] pre-remove
 ________________________________________________________________________________
 
 The pre-remove file should contain anything that needs run prior to the
@@ -200,7 +215,7 @@ is that it be executable.
 +------------------------------------------------------------------------------+
 
 
-POST-INSTALL
+[7.0] post-install
 ________________________________________________________________________________
 
 The post-install file should contain anything that needs to be run after a
@@ -218,7 +233,7 @@ agnostic and the only requirement is that it be executable.
 +------------------------------------------------------------------------------+
 
 
-PATCHES/*
+[8.0] patches/*
 ________________________________________________________________________________
 
 The patches directory should contain any patches the software needs.
@@ -256,7 +271,7 @@ directory ('patch -p1 < example.patch' works directly).
 +------------------------------------------------------------------------------+
 
 
-FILES/*
+[9.0] files/*
 ________________________________________________________________________________
 
 The files/ directory should contain any miscellaneous files the software needs.

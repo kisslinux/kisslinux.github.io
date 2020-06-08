@@ -38,7 +38,22 @@ This format allows effortless interface using any programming language or just
 basic UNIX utilities and tools.
 
 
-DIRECTORY STRUCTURE
+<span id=0.0><a href=#0.0>[0.0]</a></span> Index
+________________________________________________________________________________
+
+- Directory Structure                                                      <a href=#1.0>[1.0]</a>
+
+- build                                                                    <a href=#2.0>[2.0]</a>
+- depends                                                                  <a href=#3.0>[3.0]</a>
+- sources                                                                  <a href=#4.0>[4.0]</a>
+- version                                                                  <a href=#5.0>[5.0]</a>
+- pre-remove                                                               <a href=#6.0>[6.0]</a>
+- post-install                                                             <a href=#7.0>[7.0]</a>
+- patches/*                                                                <a href=#8.0>[8.0]</a>
+- files/*                                                                  <a href=#9.0>[9.0]</a>
+
+
+<span id=1.0><a href=#1.0>[1.0]</a></span> Directory Structure
 ________________________________________________________________________________
 
 +------------------------------------------------------------------------------+
@@ -60,7 +75,7 @@ ________________________________________________________________________________
 +------------------------------------------------------------------------------+
 
 
-BUILD
+<span id=2.0><a href=#2.0>[2.0]</a></span> build
 ________________________________________________________________________________
 
 The build file should contain all of the steps necessary to patch, configure,
@@ -95,7 +110,7 @@ installed to the system.
 +------------------------------------------------------------------------------+
 
 
-DEPENDS
+<span id=3.0><a href=#3.0>[3.0]</a></span> depends
 ________________________________________________________________________________
 
 The depends file should contain any other packages the package depends on to
@@ -122,7 +137,7 @@ The depends file can be omitted entirely if the package has no dependencies.
 +------------------------------------------------------------------------------+
 
 
-SOURCES
+<span id=4.0><a href=#4.0>[4.0]</a></span> sources
 ________________________________________________________________________________
 
 The sources file should contain all remote and local files needed by the
@@ -182,7 +197,7 @@ manager from automatically extracting the source (if a tarball or zip).
 
 
 
-VERSION
+<span id=5.0><a href=#5.0>[5.0]</a></span> version
 ________________________________________________________________________________
 
 The version file should contain a single line with two fields. All other lines
@@ -211,7 +226,7 @@ version should be simply set to 'git'.
 +------------------------------------------------------------------------------+
 
 
-PRE-REMOVE
+<span id=6.0><a href=#6.0>[6.0]</a></span> pre-remove
 ________________________________________________________________________________
 
 The pre-remove file should contain anything that needs run prior to the
@@ -230,7 +245,7 @@ is that it be executable.
 +------------------------------------------------------------------------------+
 
 
-POST-INSTALL
+<span id=7.0><a href=#7.0>[7.0]</a></span> post-install
 ________________________________________________________________________________
 
 The post-install file should contain anything that needs to be run after a
@@ -248,7 +263,7 @@ agnostic and the only requirement is that it be executable.
 +------------------------------------------------------------------------------+
 
 
-PATCHES/*
+<span id=8.0><a href=#8.0>[8.0]</a></span> patches/*
 ________________________________________________________________________________
 
 The patches directory should contain any patches the software needs.
@@ -286,7 +301,7 @@ directory ('patch -p1 < example.patch' works directly).
 +------------------------------------------------------------------------------+
 
 
-FILES/*
+<span id=9.0><a href=#9.0>[9.0]</a></span> files/*
 ________________________________________________________________________________
 
 The files/ directory should contain any miscellaneous files the software needs.
