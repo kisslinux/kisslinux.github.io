@@ -57,11 +57,12 @@ ________________________________________________________________________________
     * Dynamic IP addressing                                                [5.4]
 
 * The kernel                                                               [6.0]
-    * Download the kernel sources                                          [6.1]
-    * Download firmware blobs                                              [6.2]
-    * Configure the kernel                                                 [6.3]
-    * Build the kernel                                                     [6.4]
-    * Install the kernel                                                   [6.5]
+    * Install required packages                                            [6.1]
+    * Download the kernel sources                                          [6.2]
+    * Download firmware blobs                                              [6.3]
+    * Configure the kernel                                                 [6.4]
+    * Build the kernel                                                     [6.5]
+    * Install the kernel                                                   [6.6]
 
 * The bootloader                                                           [7.0]
     * Build and install grub                                               [7.1]
@@ -575,7 +576,7 @@ read the link (and the patch itself for more information). @/news/20200509a
     | Install the built modules (to /usr/lib).                                 |
     +--------------------------------------------------------------------------+
     |                                                                          |
-    |   $ make modules_install                                                 |
+    |   $ make INSTALL_MOD_STRIP=1 modules_install                             |
     |                                                                          |
     +--------------------------------------------------------------------------+
     | Install the built kernel (to /boot). (Ignore the LILO error).            |
