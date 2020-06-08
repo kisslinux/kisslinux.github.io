@@ -116,8 +116,12 @@ Your disks should be setup and fully mounted to /mnt.
     <span id=2.1><a href=#2.1>[2.1]</a></span> Download the latest release
     ____________________________________________________________________________
 
-    $ url=<a href=https://github.com/kisslinux/repo/releases/download/1.10.0>https://github.com/kisslinux/repo/releases/download/1.10.0</a>
-    $ wget "$url/kiss-chroot.tar.xz"
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |   $ url=<a href=https://github.com/kisslinux/repo/releases/download/1.10.0>https://github.com/kisslinux/repo/releases/download/1.10.0</a>       |
+    |   $ wget "$url/kiss-chroot.tar.xz"                                       |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
 
 
     <span id=2.2><a href=#2.2>[2.2]</a></span> Verify the checksums (recommended)
@@ -126,8 +130,12 @@ Your disks should be setup and fully mounted to /mnt.
     This step verifies that the release matches the checksums generated upon
     its creation and also ensures that the download completed successfully.
 
-    $ wget "$url/kiss-chroot.tar.xz.sha256"
-    $ sha256sum -c < kiss-chroot.tar.xz.sha256
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |   $ wget "$url/kiss-chroot.tar.xz.sha256"                                |
+    |   $ sha256sum -c < kiss-chroot.tar.xz.sha256                             |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
 
 
     <span id=2.3><a href=#2.3>[2.3]</a></span> Verify the signature (recommended)
@@ -137,13 +145,25 @@ Your disks should be setup and fully mounted to /mnt.
     OS of your choice does not include GPG, this step can also be done on
     another machine (with the same tarball).
 
-    $ wget "$url/kiss-chroot.tar.xz.asc"
-
-    # Import my public key (if this fails, try another keyserver).
-    $ gpg --keyserver keys.gnupg.net --recv-key 46D62DD9F1DE636E
-
-    # Verify the signature.
-    $ gpg --verify kiss-chroot.tar.xz.asc kiss-chroot.tar.xz
+    +--------------------------------------------------------------------------+
+    | Download the armored ASCII file.                                         |
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |   $ wget "$url/kiss-chroot.tar.xz.asc"                                   |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
+    | Import my public key (if this fails, try another keyserver).             |
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |   $ gpg --keyserver keys.gnupg.net --recv-key 46D62DD9F1DE636E           |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
+    | Import my public key (if this fails, try another keyserver).             |
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |   $ gpg --verify kiss-chroot.tar.xz.asc kiss-chroot.tar.xz               |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
 
 
     <span id=2.4><a href=#2.4>[2.4]</a></span> Download the chroot helper
@@ -152,15 +172,26 @@ Your disks should be setup and fully mounted to /mnt.
     This is a simple script to chroot into /mnt and set up the environment for
     the rest of the installation.
 
-    $ url=<a href=https://raw.githubusercontent.com/kisslinux/kiss/master/contrib>https://raw.githubusercontent.com/kisslinux/kiss/master/contrib</a>
-    $ wget "$url/kiss-chroot"
-
-    # Inspect the script before you execute it below.
-    $ vi kiss-chroot
-
-    # Ensure the script is executable.
-    $ chmod +x kiss-chroot
-
+    +--------------------------------------------------------------------------+
+    | Download the chroot helper.                                              |
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |   $ url=<a href=https://raw.githubusercontent.com/kisslinux/kiss/master/contrib>https://raw.githubusercontent.com/kisslinux/kiss/master/contrib</a>  |
+    |   $ wget "$url/kiss-chroot"                                              |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
+    | Inspect the script before you execute it below.                          |
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |   $ vi kiss-chroot                                                       |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
+    | Ensure the script is executable.                                         |
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |   $ chmod +x kiss-chroot                                                 |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
 
     <span id=2.5><a href=#2.5>[2.5]</a></span> Unpack the tarball
     ____________________________________________________________________________
@@ -168,7 +199,11 @@ Your disks should be setup and fully mounted to /mnt.
     This step effectively installs KISS to /mnt. The tarball contains a full
     system minus the bootloader, kernel and optional utilities.
 
-    $ tar xvf kiss-chroot.tar.xz -C /mnt --strip-components 1
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |   $ tar xvf kiss-chroot.tar.xz -C /mnt --strip-components 1              |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
 
 
     <span id=2.6><a href=#2.6>[2.6]</a></span> Enter the chroot
@@ -177,7 +212,11 @@ Your disks should be setup and fully mounted to /mnt.
     On execution of this step you will be running KISS! The next steps involve
     the kernel, software compilation and system setup.
 
-    $ ./kiss-chroot /mnt
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |   $ ./kiss-chroot /mnt                                                   |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
 
 
 <span id=3.0><a href=#3.0>[3.0]</a></span> Enable repository signing
@@ -195,8 +234,12 @@ and further prevents any unsigned updates from reaching your system.
     Welcome to the KISS package manager! These two commands are how individual
     packages are built and installed on a KISS system.
 
-    $ kiss build   gnupg1
-    $ kiss install gnupg1
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |    $ kiss build   gnupg1                                                 |
+    |    $ kiss install gnupg1                                                 |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
 
 
     <span id=3.2><a href=#3.2>[3.2]</a></span> Import my (Dylan Araps') key
@@ -205,11 +248,19 @@ and further prevents any unsigned updates from reaching your system.
     If the GNU keyserver fails on your network, you can try an alternative
     mirror (pgp.mit.edu for example).
 
-    # Import my public key.
-    $ gpg --keyserver keys.gnupg.net --recv-key 46D62DD9F1DE636E
-
-    # Trust my public key.
-    $ echo trusted-key 0x46d62dd9f1de636e >>/root/.gnupg/gpg.conf
+    +--------------------------------------------------------------------------+
+    | Import my public key.                                                    |
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |    $ gpg --keyserver keys.gnupg.net --recv-key 46D62DD9F1DE636E          |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
+    | Trust my public key.                                                     |
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |    $ echo trusted-key 0x46d62dd9f1de636e >>/root/.gnupg/gpg.conf         |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
 
 
     <span id=3.3><a href=#3.3>[3.3]</a></span> Enable signature verification
@@ -222,8 +273,12 @@ and further prevents any unsigned updates from reaching your system.
     The same steps can also be followed with 3rd-party repositories if the
     owner signs their commits.
 
-    $ cd /var/db/kiss/repo
-    $ git config merge.verifySignatures true
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |   $ cd /var/db/kiss/repo                                                 |
+    |   $ git config merge.verifySignatures true                               |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
 
 
 <span id=4.0><a href=#4.0>[4.0]</a></span> Rebuild kiss
@@ -249,12 +304,22 @@ the downloaded chroot. This step can also be done after the installation.
     The `-jX` option should match the number of CPU cores available. You can
     optionally omit this, however builds will then be limited to a single core.
 
-    # NOTE: The 'O' in '-O3' is the letter O and NOT 0 (ZERO).
-    $ export CFLAGS="-O3 -pipe -march=native"
-    $ export CXXFLAGS="-O3 -pipe -march=native"
-
-    # NOTE: 4 should be changed to match the number of cores.
-    $ export MAKEFLAGS="-j4"
+    +--------------------------------------------------------------------------+
+    | CFLAGS/CXXFLAGS                                                          |
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |   # NOTE: The 'O' in '-O3' is the letter O and NOT 0 (ZERO).             |
+    |   $ export CFLAGS="-O3 -pipe -march=native"                              |
+    |   $ export CXXFLAGS="$CFLAGS"                                            |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
+    | MAKEFLAGS                                                                |
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |   # NOTE: 4 should be changed to match the number of cores.              |
+    |   $ export MAKEFLAGS="-j4"                                               |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
 
 
     <span id=4.2><a href=#4.2>[4.2]</a></span> Update all base packages to the latest version
@@ -264,7 +329,11 @@ the downloaded chroot. This step can also be done after the installation.
     to pull down changes from all enabled repositories and will then optionally
     handle the build/install process.
 
-    $ kiss update
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |   $ kiss update                                                          |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
 
 
     <span id=4.3><a href=#4.3>[4.3]</a></span> Rebuild all packages
@@ -274,7 +343,11 @@ the downloaded chroot. This step can also be done after the installation.
     name of every installed package. This glob is then passed to the package
     manager as a list of packages to build.
 
-    $ cd /var/db/kiss/installed && kiss build *
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |   $ cd /var/db/kiss/installed && kiss build *                            |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
 
 
 <span id=5.0><a href=#5.0>[5.0]</a></span> Userspace tools
@@ -289,45 +362,76 @@ The software below is required unless stated otherwise.
     <span id=5.1><a href=#5.1>[5.1]</a></span> Filesystems
     ____________________________________________________________________________
 
-    # Ext2, Ext3 and Ext4.
-    $ kiss b e2fsprogs
-    $ kiss i e2fsprogs
+    NOTE: Open an issue for additional filesystem support.
 
-    # fat, vfat and friends (Only needed for UEFI).
-    $ kiss b dosfstools
-    $ kiss i dosfstools
-
-    # xfs.
-    $ kiss b xfsprogs
-    $ kiss i xfsprogs
-
-    # Open an issue for additional filesystem support.
-    # Additional filesystems will go here.
+    +--------------------------------------------------------------------------+
+    | EXT2, EXT3, EXT4                                                         |
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |   $ kiss b e2fsprogs                                                     |
+    |   $ kiss i e2fsprogs                                                     |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
+    | FAT, VFAT                                                                |
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |   $ kiss b dosfstools                                                    |
+    |   $ kiss i dosfstools                                                    |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
+    | XFS                                                                      |
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |   $ kiss b xfsprogs                                                      |
+    |   $ kiss i xfsprogs                                                      |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
 
 
     <span id=5.2><a href=#5.2>[5.2]</a></span> Device management
     ____________________________________________________________________________
 
-    # Needed for blkid support in eudev.
-    $ kiss b util-linux
-    $ kiss i util-linux
+    NOTE: If you choose to not install eudev, mdev will automatically be used in
+          its place. Eudev is recommended as a lot of software requires it.
+          See: @/<a href=/wiki/dev/replacing-udev>wiki/dev/replacing-udev</a> for more information.
 
-    $ kiss b eudev
-    $ kiss i eudev
+    +--------------------------------------------------------------------------+
+    | Needed for blkid support in eudev (recommended but not required).        |
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |   $ kiss b util-linux                                                    |
+    |   $ kiss i util-linux                                                    |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
+    | The device manager.                                                      |
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |   $ kiss b eudev                                                         |
+    |   $ kiss i eudev                                                         |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
 
 
     <span id=5.3><a href=#5.3>[5.3]</a></span> WiFi (optional)
     ____________________________________________________________________________
 
-    $ kiss b wpa_supplicant
-    $ kiss i wpa_supplicant
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |   $ kiss b wpa_supplicant                                                |
+    |   $ kiss i wpa_supplicant                                                |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
 
 
     <span id=5.4><a href=#5.4>[5.4]</a></span> Dynamic IP addressing (optional)
     ____________________________________________________________________________
 
-    $ kiss b dhcpcd
-    $ kiss i dhcpcd
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |   $ kiss b dhcpcd                                                        |
+    |   $ kiss i dhcpcd                                                        |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
 
 
 <span id=6.0><a href=#6.0>[6.0]</a></span> The kernel
@@ -356,21 +460,33 @@ read the link (and the patch itself for more information). @/<a href=/news/20200
 
     libelf is required in most if not all cases.
 
-    $ kiss b libelf
-    $ kiss i libelf
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |   $ kiss b libelf                                                        |
+    |   $ kiss i libelf                                                        |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
 
     ncurses is needed for 'make menuconfig' and can be skipped if you will not
     be using it.
 
-    $ kiss b ncurses
-    $ kiss i ncurses
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |   $ kiss b ncurses                                                       |
+    |   $ kiss i ncurses                                                       |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
 
     Perl is needed by the build_OID_registry script which will be executed
     during your kernel build 99.9% of the time. What this means is that perl
     is *required*.
 
-    $ kiss b perl
-    $ kiss i perl
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |   $ kiss b perl                                                          |
+    |   $ kiss i perl                                                          |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
 
     Perl _can_ be avoided by applying the following patch to the kernel
     sources. The patch replaces the perl script with an implementation in POSIX
@@ -392,14 +508,20 @@ read the link (and the patch itself for more information). @/<a href=/news/20200
 
     - <a href=https://wiki.archlinux.org/index.php/Kernel>https://wiki.archlinux.org/index.php/Kernel</a>
 
-
-    Substitute KERNEL_SOURCE with the URL to the kernel sources.
-
-    $ wget KERNEL_SOURCE
-
-    # Extract the kernel sources.
-    $ tar xvf KERNEL_SOURCE.tar.??
-    $ cd linux-*
+    +--------------------------------------------------------------------------+
+    | Download the kernel sources.                                             |
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |   $ wget KERNEL_SOURCE                                                   |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
+    | Extract the kernel sources.                                              |
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |   $ tar xvf KERNEL_SOURCE.tar.??                                         |
+    |   $ cd linux-*                                                           |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
 
 
     <span id=6.3><a href=#6.3>[6.3]</a></span> Download firmware blobs (if required)
@@ -413,13 +535,21 @@ read the link (and the patch itself for more information). @/<a href=/news/20200
 
     <a href=https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git>https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git</a>
 
-    # Download and extract the firmware.
-    $ wget FIRMWARE_SOURCE.tar.gz
-    $ tar xvf linux-firmware-20191022.tar.gz
-
-    # Copy the required drivers to '/usr/lib/firmware'.
-    $ mkdir -p /usr/lib/firmware
-    $ cp -R ./path/to/driver /usr/lib/firmware
+    +--------------------------------------------------------------------------+
+    | Download and extract the firmware.                                       |
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |   $ wget FIRMWARE_SOURCE.tar.gz                                          |
+    |   $ tar xvf linux-firmware-20191022.tar.gz                               |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
+    | Copy the required drivers to '/usr/lib/firmware'.                        |
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |   $ mkdir -p /usr/lib/firmware                                           |
+    |   $ cp -R ./path/to/driver /usr/lib/firmware                             |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
 
 
     <span id=6.4><a href=#6.4>[6.4]</a></span> Configure the kernel
@@ -432,46 +562,65 @@ read the link (and the patch itself for more information). @/<a href=/news/20200
     [m] (modules). You can also optionally include the firmware in the kernel
     itself.
 
-    # Generate a default config with *most* drivers
-    # compiled as `[*]` (not modules).
-    $ make defconfig
-
-    # Open an interactive menu to edit the generated config, enabling anything
-    # extra you may need.
-    $ make menuconfig
-
-    # Store the generated config for reuse later.
-    $ cp .config /path/to/somewhere
+    +--------------------------------------------------------------------------+
+    | Generate a default config with most drivers built into the kernel.       |
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |   $ make defconfig                                                       |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
+    | Open an interactive menu to edit the generated .config and enable        |
+    | anything extra you may need..                                            |
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |   $ make menuconfig                                                      |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
+    | Store the generated config for reuse later.                              |
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |   $ cp .config /path/to/somewhere                                        |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
 
 
     <span id=6.5><a href=#6.5>[6.5]</a></span> Build the kernel
     ____________________________________________________________________________
 
     This may take a while to complete. The compilation time depends on your
-    hardware and kernel configuration.
+    hardware and kernel configuration. The 'nproc' command outputs the total
+    number of threads which we pass to make for a multi-core build.
 
-    # '-j $(nproc)' does a parallel build using all cores.
-    $ make -j "$(nproc)"
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |   $ make -j "$(nproc)"                                                   |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
 
 
     <span id=6.6><a href=#6.6>[6.6]</a></span> Install the kernel
     ____________________________________________________________________________
 
-    Ignore the LILO error, it's harmless.
-
-    # Install the built modules.
-    # This installs directly to /lib (symlink to /usr/lib).
-    $ make modules_install
-
-    # Install the built kernel.
-    # This installs directly to /boot.
-    $ make install
-
-    # Rename the kernel.
-    # Substitute VERSION for the kernel version you have built.
-    # Example: 'vmlinuz-5.4'
-    $ mv /boot/vmlinuz /boot/vmlinuz-VERSION
-    $ mv /boot/System.map /boot/System.map-VERSION
+    +--------------------------------------------------------------------------+
+    | Install the built modules (to /usr/lib).                                 |
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |   $ make modules_install                                                 |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
+    | Install the built kernel (to /boot). (Ignore the LILO error).            |
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |   $ make install                                                         |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
+    | Rename the kernel/system.map (vmlinuz -> vmlinuz-VERSION).               |
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |   $ mv /boot/vmlinuz    /boot/vmlinuz-VERSION                            |
+    |   $ mv /boot/System.map /boot/System.map-VERSION                         |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
 
 
 <span id=7.0><a href=#7.0>[7.0]</a></span> The bootloader
@@ -492,24 +641,42 @@ it exists
     <span id=7.2><a href=#7.2>[7.2]</a></span> Build and install grub
     ____________________________________________________________________________
 
-    $ kiss b grub
-    $ kiss i grub
-
-    # Required for UEFI.
-    $ kiss b efibootmgr
-    $ kiss i efibootmgr
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |   $ kiss b grub                                                          |
+    |   $ kiss i grub                                                          |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
+    | Required for UEFI.                                                       |
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |   $ kiss b efibootmgr                                                    |
+    |   $ kiss i efibootmgr                                                    |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
 
 
     <span id=7.3><a href=#7.3>[7.3]</a></span> Setup grub
     ____________________________________________________________________________
 
-    # BIOS.
-    $ grub-install /dev/sdX
-    $ grub-mkconfig -o /boot/grub/grub.cfg
-
-    # UEFI (replace 'esp' with the EFI mount point).
-    $ grub-install --target=x86_64-efi --efi-directory=esp --bootloader-id=kiss
-    $ grub-mkconfig -o /boot/grub/grub.cfg
+    +--------------------------------------------------------------------------+
+    | BIOS                                                                     |
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |   $ grub-install /dev/sdX                                                |
+    |   $ grub-mkconfig -o /boot/grub/grub.cfg                                 |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
+    | UEFI (replace 'esp' with the EFI mount point)                            |
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |   $ grub-install --target=x86_64-efi \                                   |
+    |                  --efi-directory=esp \                                   |
+    |                  --bootloader-id=kiss                                    |
+    |                                                                          |
+    |   $ grub-mkconfig -o /boot/grub/grub.cfg                                 |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
 
 
 <span id=8.0><a href=#8.0>[8.0]</a></span> Install init scripts
@@ -521,14 +688,22 @@ inittab config.
 
 Source code: $/<a href=https://github.com/kisslinux/init>kisslinux/init</a>
 
-$ kiss b baseinit
-$ kiss i baseinit
++------------------------------------------------------------------------------+
+|                                                                              |
+|   $ kiss b baseinit                                                          |
+|   $ kiss i baseinit                                                          |
+|                                                                              |
++------------------------------------------------------------------------------+
 
 
 <span id=9.0><a href=#9.0>[9.0]</a></span> Add a normal user (recommended)
 ________________________________________________________________________________
 
-$ adduser USERNAME
++------------------------------------------------------------------------------+
+|                                                                              |
+|   $ adduser USERNAME                                                         |
+|                                                                              |
++------------------------------------------------------------------------------+
 
 
 <span id=10.0><a href=#10.0>[10.0]</a></span> Enable the community repository
@@ -538,19 +713,32 @@ The KISS community repository is maintained by users of the distribution and
 contains packages which aren't in the main repositories. This repository is
 disabled by default.
 
-# Clone the repository to a location of your choosing.
-$ git clone <a href=https://github.com/kisslinux/community.git>https://github.com/kisslinux/community.git</a>
++------------------------------------------------------------------------------+
+| Clone the repository to a location of your choosing.                         |
++------------------------------------------------------------------------------+
+|                                                                              |
+|   $ git clone <a href=https://github.com/kisslinux/community.git>https://github.com/kisslinux/community.git</a>                     |
+|                                                                              |
++------------------------------------------------------------------------------+
 
-# Add the repository to the system-wide 'KISS_PATH'. The 'KISS_PATH' variable
-# works exactly like 'PATH'. Each repository is split by ':' and is checked in
-# the order they're written.
-#
-# Add the full path to the repository you cloned above to the existing
-# KISS_PATH. NOTE: The subdirectory must also be added.
-$ vi /etc/profile.d/kiss_path.sh
+Add the repository to the system-wide 'KISS_PATH'. The 'KISS_PATH' variable
+works exactly like 'PATH'. Each repository is split by ':' and is checked in the
+order they're written.
 
-# Spawn a new login shell to access this repository immediately.
-$ sh -l
+Add the full path to the repository you cloned above to the existing KISS_PATH.
+NOTE: The subdirectory must also be added.
+
++------------------------------------------------------------------------------+
+|                                                                              |
+|   $ vi /etc/profile.d/kiss_path.sh                                           |
+|                                                                              |
++------------------------------------------------------------------------------+
+| Spawn a new login shell to access this repository immediately.               |
++------------------------------------------------------------------------------+
+|                                                                              |
+|   $ sh -l                                                                    |
+|                                                                              |
++------------------------------------------------------------------------------+
 
 
 <span id=11.0><a href=#11.0>[11.0]</a></span> Install Xorg (optional)
@@ -559,11 +747,18 @@ ________________________________________________________________________________
 To install Xorg, the input drivers and a basic default set of fonts, run the
 following commands
 
-$ kiss b xorg-server xinit xf86-input-libinput
-
-# Installing a base font is recommended as nothing will work without fonts..
-$ kiss b liberation-fonts
-$ kiss i liberation-fonts
++------------------------------------------------------------------------------+
+|                                                                              |
+|   $ kiss b xorg-server xinit xf86-input-libinput                             |
+|                                                                              |
++------------------------------------------------------------------------------+
+| Installing a base font is recommended as nothing will work without fonts.    |
++------------------------------------------------------------------------------+
+|                                                                              |
+|   $ kiss b liberation-fonts                                                  |
+|   $ kiss i liberation-fonts                                                  |
+|                                                                              |
++------------------------------------------------------------------------------+
 
 
     <span id=11.1><a href=#11.1>[11.1]</a></span> Add your user to the relevant groups
@@ -573,9 +768,14 @@ $ kiss i liberation-fonts
     used as a multi-seat system. Further configuration can be done at your
     own discretion.
 
-    # Replace 'USERNAME' with the name of the user created above.
-    $ addgroup USERNAME video
-    $ addgroup USERNAME audio
+    +--------------------------------------------------------------------------+
+    | Replace 'USERNAME' with the name of the user created earlier.            |
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    | $ addgroup USERNAME video                                                |
+    | $ addgroup USERNAME audio                                                |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
 
 
 <span id=12.0><a href=#12.0>[12.0]</a></span> Further steps
