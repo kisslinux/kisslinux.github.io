@@ -1,0 +1,41 @@
+SX
+________________________________________________________________________________
+
+sx is a simple alternative to both xinit(1) and startx(1) for starting an Xorg 
+server.
+
+
+Configuration
+________________________________________________________________________________
+
+Ensure that you have sx installed first:
+
+$ kiss b sx && kiss i sx
+
+The default data and config directories can be modified to you liking via
+environment variables. The following commands should be issued as a regular
+user (i.e. non-root):
+
+$ echo "export XDG_DATA_HOME=$HOME/.sx" >> ~/.profile
+$ echo "export XDG_CONFIG_HOME=$HOME/.sx" >> ~/.profile
+
+Create the required directories and rc file:
+
+$ mkdir -p ~/.sx/sx
+$ touch sxrc
+$ chmod +x sxrc
+
+At this point, you can add content to your sxrc file. For example, if you
+wanted to start sowm windows manager, you could add the following:
+
+$ echo "exec sowm" >> ~/.sx/sx/sxrc
+
+You should now be able to start your X server with sx:
+
+$ sx
+
+
+References
+________________________________________________________________________________
+
+[0] https://github.com/Earnestly/sx
