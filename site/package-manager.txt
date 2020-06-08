@@ -30,16 +30,22 @@ ________________________________________________________________________________
 [1.0] Usage
 ________________________________________________________________________________
 
--> kiss [a|b|c|i|l|r|s|u|v] [pkg]...
--> alternatives   List and swap to alternatives
--> build          Build a package
--> checksum       Generate checksums
--> install        Install a package
--> list           List installed packages
--> remove         Remove a package
--> search         Search for a package
--> update         Update the system
--> version        Package manager version
++------------------------------------------------------------------------------+
+| kiss                                                                         |
++------------------------------------------------------------------------------+
+|                                                                              |
+|   -> kiss [a|b|c|i|l|r|s|u|v] [pkg]...                                       |
+|   -> alternatives   List and swap to alternatives                            |
+|   -> build          Build a package                                          |
+|   -> checksum       Generate checksums                                       |
+|   -> install        Install a package                                        |
+|   -> list           List installed packages                                  |
+|   -> remove         Remove a package                                         |
+|   -> search         Search for a package                                     |
+|   -> update         Update the system                                        |
+|   -> version        Package manager version                                  |
+|                                                                              |
++------------------------------------------------------------------------------+
 
 
 [2.0] Dependencies
@@ -155,16 +161,20 @@ ________________________________________________________________________________
 
     Example output:
 
-        -> libXmu Checking for missing dependencies
-        --- /home/dylan/conf/cache/kiss/build-4477/d
-         depends
-        @@ -1,3 +1,8 @@
-        +libX11
-        +libXau
-         libXext
-         libXt
-        +libxcb
-         xorg-util-macros make
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |   -> libXmu Checking for missing dependencies                            |
+    |   --- /home/dylan/conf/cache/kiss/build-4477/d                           |
+    |    depends                                                               |
+    |   @@ -1,3 +1,8 @@                                                        |
+    |   +libX11                                                                |
+    |   +libXau                                                                |
+    |    libXext                                                               |
+    |    libXt                                                                 |
+    |   +libxcb                                                                |
+    |    xorg-util-macros make                                                 |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
 
 
     [3.2] Fully dynamic (and automatic) alternatives system
@@ -180,21 +190,39 @@ ________________________________________________________________________________
     In other words, no changes need to be made to packages. In fact, nothing
     needs to be done at all. It's entirely automatic.
 
-    # List available alternatives.
-    # ('a' is an alias to 'alternatives')
-    $ kiss a
-    gnugrep /usr/bin/grep
-    ncurses /usr/bin/clear
-
-    # Swap to GNU grep.
-    $ kiss a gnugrep /usr/bin/grep
-    -> Swapping '/usr/bin/grep' from busybox to gnugrep
-
-    # Swap back to busybox grep.
-    $ kiss a busybox /usr/bin/grep
-
-    # Swap to all alternatives for a given package.
-    $ kiss a | grep ^sbase | kiss a -
+    +--------------------------------------------------------------------------+
+    | List available alternatives ('a' is an alias to 'alternatives').         |
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |   $ kiss a                                                               |
+    |   gnugrep /usr/bin/grep                                                  |
+    |   ncurses /usr/bin/clear                                                 |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
+    | Swap to GNU grep.                                                        |
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |   $ kiss a gnugrep /usr/bin/grep                                         |
+    |   -> Swapping '/usr/bin/grep' from busybox to gnugrep                    |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
+    | Swap back to busybox grep.                                               |
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |   $ kiss a busybox /usr/bin/grep                                         |
+    |   -> Swapping '/usr/bin/grep' from gnugrep to busybox                    |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
+    | Swap to all alternatives for a given package (sbase for example).        |
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |   $ kiss a | grep ^sbase | kiss a -                                      |
+    |   -> Swapping '/usr/bin/cat' from busybox to sbase                       |
+    |   -> Swapping '/usr/bin/cut' from busybox to sbase                       |
+    |   -> Swapping '/usr/bin/yes' from busybox to sbase                       |
+    |   ...Many more lines of output...                                        |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
 
     The above command works as the output of the alternatives listing is
     directly usable as input to 'kiss a'.
@@ -219,13 +247,17 @@ ________________________________________________________________________________
     If the user has touched the file but the file has not changed between
     package versions, it will simply be skipped over.
 
-    Example (with sha256 checksums truncated to fit):
-
-    -> opendoas Doing 3-way handshake for etc/doas.conf
-    Previous: 677b59e  etc/doas.conf
-    System:   dc5ab2b  etc/doas.conf
-    New:      677b59e  etc/doas.conf
-    -> Skipping etc/doas.conf
+    +--------------------------------------------------------------------------+
+    | Example (with sha256 checksums truncated to fit).                        |
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |   -> opendoas Doing 3-way handshake for etc/doas.conf                    |
+    |   Previous: 1656eee66c235cb717f9f8f35aa9c3587bb768d7fe  etc/doas.conf    |
+    |   System:   4a51871b3190fa74726ea2b12ffafb96f40c172b68  etc/doas.conf    |
+    |   New:      1656eee66c235cb717f9f8f35aa9c3587bb768d7fe  etc/doas.conf    |
+    |   -> Skipping etc/doas.conf                                              |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
 
 
     [3.4] Extensible via hooks ($KISS_HOOK)
@@ -248,22 +280,28 @@ ________________________________________________________________________________
 
     Example help output:
 
-    -> Installed extensions (kiss-* in $PATH)
-    -> chbuild    Create/destroy temporary chroots
-    -> chroot     Enter a kiss chroot
-    -> depends    Display a package's dependencies
-    -> export     Installed package to tarball
-    -> fork       Fork a package into the current dir
-    -> link       Link a repo file to another repo
-    -> maintainer Find the maintainer of a package
-    -> manifest   Display all files owned by a package
-    -> new        Create a boilerplate package
-    -> orphans    List orphaned packages
-    -> outdated   Check repository packages for updates
-    -> owns       Check which package owns a file
-    -> reset      Remove all packages but base
-    -> revdepends Packages which depend on package
-    -> size       Show the size on disk for a package
+    +--------------------------------------------------------------------------+
+    | kiss extensions                                                          |
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |   -> Installed extensions (kiss-* in $PATH)                              |
+    |   -> chbuild    Create/destroy temporary chroots                         |
+    |   -> chroot     Enter a kiss chroot                                      |
+    |   -> depends    Display a package's dependencies                         |
+    |   -> export     Installed package to tarball                             |
+    |   -> fork       Fork a package into the current dir                      |
+    |   -> link       Link a repo file to another repo                         |
+    |   -> maintainer Find the maintainer of a package                         |
+    |   -> manifest   Display all files owned by a package                     |
+    |   -> new        Create a boilerplate package                             |
+    |   -> orphans    List orphaned packages                                   |
+    |   -> outdated   Check repository packages for updates                    |
+    |   -> owns       Check which package owns a file                          |
+    |   -> reset      Remove all packages but base                             |
+    |   -> revdepends Packages which depend on package                         |
+    |   -> size       Show the size on disk for a package                      |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
 
     These are in effect, optional utilities which interact with the package
     system in one way or another.
