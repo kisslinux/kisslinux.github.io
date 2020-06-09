@@ -1,0 +1,131 @@
+<!doctype html><html lang=en><link href='data:image/gif;base64,R0lGODlhEAAQAPH/AAAAAP8AAP8AN////yH5BAUAAAQALAAAAAAQABAAAAM2SLrc/jA+QBUFM2iqA2bAMHSktwCCWJIYEIyvKLOuJt+wV69ry5cfwu7WCVp2RSPoUpE4n4sEADs=' rel=icon><title>KISS - openssh</title><meta charset=utf-8><meta name=Description content="An independent Linux distribution with a focus on simplicity and the concept of less is more."><meta name=viewport content="width=device-width,initial-scale=1"><style>body{overflow-y:scroll;font:16px monospace,monospace}img,.c{display:table-cell;max-width:999px;max-width:80ch}pre{margin:0;overflow-x:hidden}@media(max-width:999px){.c{display:block;font-size:1.94vw}}@media(prefers-color-scheme:dark){body{background:#000;color:#fff}a{color:#6CF}}</style><div style="display:table;margin:16px auto"><div class=c><pre style="top:0;position:sticky;user-select:none;padding-right:64px">
+<a href=/ style="text-decoration:none;color:#a00">
+|/
+|\ISS
+</a>
+<a href=/news>News</a>
+<a href=/blog>Blog</a>
+
+<a href=/wiki>Wiki (NEW!)</a>
+
+<a href=/install>Install KISS</a>
+<a href=/faq>FAQ</a>
+
+<a href=/package-system>Package System</a>
+<a href=/package-manager>Package Manager</a>
+<a href=/software>Software</a>
+
+<a href=/guidestones>Guidestones</a>
+
+<a href=/testimonials>Testimonials</a>
+<a href=/screenshots>Screenshots</a>
+<a href=/team>Team</a>
+
+<a href=/contact>Contact</a>
+<a href=/donate>Donate</a>
+
+<a href=https://github.com/kisslinux/>GitHub -&gt;</a>
+
+</pre></div><div class=c><pre>
+
+<a href="/wiki">wiki</a> / <a href='/wiki/software'>software</a> / openssh                                         <a href='https://github.com/kisslinux/wiki/edit/master/software/openssh.txt'>Edit this page</a>
+
+Edited (<a href='https://github.com/kisslinux/wiki/commit/18b08e8757a2e5d536bc9ade6160b48aacd87c94'>18b08e8</a>) at 2020-06-08 by Michael Czigler
+
+
+OPENSSH
+________________________________________________________________________________
+
+OpenSSH (also known as OpenBSD Secure Shell) is a suite of secure networking
+utilities based on the Secure Shell (SSH) protocol, which provides a secure 
+channel over an unsecured network in a client-server architecture. <a href=#0>[0]</a>
+
+
+Remote Server Configuration
+________________________________________________________________________________
+
+Begin by first verifying that you have openssh installed on the remote server:
+
+$ kiss b openssh && kiss i openssh
+
+Using busybox's runsv, create a new managed service for the ssh daemon:
+
+$ ln -s /etc/sv/sshd /var/service
+
+At this point, you can either restart the remote server or manually start the 
+SSH daemon:
+
+$ sv up sshd
+
+
+Client Authentication
+________________________________________________________________________________
+
+From an SSH client, use the following command to connect to the remote SSH 
+server:
+
+$ ssh USERNAME@SERVER
+
+Replace USERNAME with the name of a regular user and SERVER with the hostname or 
+IP address of the SSH remote server. Upon pressing return, you will also be
+prompted to enter the password of the regular user specified.
+
+
+Passwordless Authentication
+________________________________________________________________________________
+
+Passwordless login to a remove server can be achieved by creating a key pair. 
+From the SSH client, use the following command to generate the key:
+
+$ ssh-keygen -t rsa
+
+Copy the id_rsa.pub file generated from the previous step into the remote 
+server's ~/.ssh/authorized_keys with the following command:
+
+$ ssh-copy-id USERNAME@SERVER
+
+Replace USERNAME with the name of a regular user and SERVER with the hostname or 
+IP address of the SSH remote server. Upon pressing return, you will also be
+prompted to enter the password of the regular user specified.
+
+Verify that the key was copied to the remote server and passwordless login works
+by entering the following command from the previous section:
+
+$ ssh USERNAME@SERVER 
+
+Once passwordless login has been verified, disable password authentication on
+the remote server:
+
+$ echo "PasswordAuthentication no" >> /etc/ssh/sshd_config
+
+
+Tips and Tricks
+________________________________________________________________________________
+
+* When connecting to an SSH server, there are three different levels of debug
+  modes that can help with troubleshooting issues. Use the "-v" switch when
+  connecting to print the debugging messages:
+
+  $ ssh USERNAME@SERVER -v
+  $ ssh USERNAME@SERVER -vv
+  $ ssh USERNAME@SERVER -vvv
+
+* If you are looking to forward GUI-based applications through an SSH tunnel,
+  refer to the @/<a href=/wiki/software/x11-forwarding>x11-forwarding</a> article.
+
+
+References
+________________________________________________________________________________
+
+<span id=0><a href=#0>[0]</a></span> <a href=https://en.wikipedia.org/wiki/OpenSSH>https://en.wikipedia.org/wiki/OpenSSH</a>
+
+<span id=1><a href=#1>[1]</a></span> <a href=https://wiki.gentoo.org/wiki/SSH>https://wiki.gentoo.org/wiki/SSH</a>
+
+
+________________________________________________________________________________
+
+Dylan Araps (C) 2019-2020
+
+Linux(R) is the registered trademark of Linus Torvalds in the U.S. and
+other countries.
+</pre></div></div>

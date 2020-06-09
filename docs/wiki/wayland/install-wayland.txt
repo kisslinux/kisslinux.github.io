@@ -35,7 +35,7 @@ improve over time as more protocols become standardized.
 
 - Limited hardware and driver support. [5] [6] [7] [8]
 - Non-standard and compositor specific software. [10] [11] [12]
-- No Wayland support in SDL 1.
+- No Wayland support in SDL 1. [13]
 - Games with non-free assets tend to not work with SDL2 and Wayland.
 - Starting compositors without logind requires SUID permissions. [14]
 - Locked into using udev. [15]
@@ -148,6 +148,7 @@ ________________________________________________________________________________
 [10] $/Alexays/Waybar
 [11] $/any1/wayvnc
 [12] $/fzwoch/obs-gnome-screencast
+[13] https://hansdegoede.livejournal.com/22212.html
 [14] $/swaywm/sway/wiki/Running-Sway-without-systemd
 [15] $/swaywm/wlroots#building #udev
 [16] $/kisslinux/repo/blob/master/extra/mesa/depends

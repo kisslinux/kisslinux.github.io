@@ -1,0 +1,144 @@
+<!doctype html><html lang=en><link href='data:image/gif;base64,R0lGODlhEAAQAPH/AAAAAP8AAP8AN////yH5BAUAAAQALAAAAAAQABAAAAM2SLrc/jA+QBUFM2iqA2bAMHSktwCCWJIYEIyvKLOuJt+wV69ry5cfwu7WCVp2RSPoUpE4n4sEADs=' rel=icon><title>KISS - git</title><meta charset=utf-8><meta name=Description content="An independent Linux distribution with a focus on simplicity and the concept of less is more."><meta name=viewport content="width=device-width,initial-scale=1"><style>body{overflow-y:scroll;font:16px monospace,monospace}img,.c{display:table-cell;max-width:999px;max-width:80ch}pre{margin:0;overflow-x:hidden}@media(max-width:999px){.c{display:block;font-size:1.94vw}}@media(prefers-color-scheme:dark){body{background:#000;color:#fff}a{color:#6CF}}</style><div style="display:table;margin:16px auto"><div class=c><pre style="top:0;position:sticky;user-select:none;padding-right:64px">
+<a href=/ style="text-decoration:none;color:#a00">
+|/
+|\ISS
+</a>
+<a href=/news>News</a>
+<a href=/blog>Blog</a>
+
+<a href=/wiki>Wiki (NEW!)</a>
+
+<a href=/install>Install KISS</a>
+<a href=/faq>FAQ</a>
+
+<a href=/package-system>Package System</a>
+<a href=/package-manager>Package Manager</a>
+<a href=/software>Software</a>
+
+<a href=/guidestones>Guidestones</a>
+
+<a href=/testimonials>Testimonials</a>
+<a href=/screenshots>Screenshots</a>
+<a href=/team>Team</a>
+
+<a href=/contact>Contact</a>
+<a href=/donate>Donate</a>
+
+<a href=https://github.com/kisslinux/>GitHub -&gt;</a>
+
+</pre></div><div class=c><pre>
+
+<a href="/wiki">wiki</a> / <a href='/wiki/software'>software</a> / git                                             <a href='https://github.com/kisslinux/wiki/edit/master/software/git.txt'>Edit this page</a>
+
+Edited (<a href='https://github.com/kisslinux/wiki/commit/b32ae1b389d4410ae6b37f9a1959f5b1ffe8a15b'>b32ae1b</a>) at 2020-06-09 by Dylan Araps
+
+
+GIT <a href=#0>[0]</a>
+________________________________________________________________________________
+
+Git is a free and open source distributed version control system designed to
+handle everything from small to very large projects with speed and efficiency.
+
+
+Commands
+________________________________________________________________________________
+
+New KISS users may have various levels of exposure to git and other forms of
+version control systems. The following is intended to be a "quick" reference
+sheet of git commands.
+
++------------------+-----------------------------------------------------------+
+| Action (Basics)  | Command                                                   |
++------------------+-----------------------------------------------------------+
+|                  |                                                           |
+| Set Default      | $ git config --global user.name "FIRST_NAME LAST_NAME"    |
+| Username         | # stored in ~/.gitconfig                                  |
+|                  |                                                           |
+| Set Default      | $ git config --global user.email "MYEMAIL@EXAMPLE.COM"    |
+| Email Address    | # stored in ~/.gitconfig                                  |
+|                  |                                                           |
+| Set Default      | $ git config --global core.editor vim                     |
+| Text Editor      | # stored in ~/.gitconfig                                  |
+|                  |                                                           |
+| Store User       | $ git config credential.helper store                      |
+| Credentials      | # credentials saved in ~/.git-credentials as clear text   |
+|                  |                                                           |
+| Clone Repository | $ git clone GIT_URL                                       |
+|                  |                                                           |
+| Clone Branch     | $ git clone GIT_URL -b BRANCH_NAME                        |
+|                  |                                                           |
+| Repo. Status     | $ git status                                              |
+|                  |                                                           |
+| Add/Update       | $ git add FILE_OR_PATH                                    |
+| Project Files    |                                                           |
+|                  |                                                           |
+| Remove           | $ git add FILE_OR_PATH                                    |
+| Project Files    |                                                           |
+|                  |                                                           |
+| Commit           | $ git commit                                              |
+|                  | # records changes to the repository                       |
+|                  |                                                           |
+| Push             | $ git push                                                |
+|                  | # updates remote refs along with associated objects       |
+|                  |                                                           |
+| Pull             | $ git pull                                                |
+|                  | # fetch and integrate with another repository/branch      |
+|                  |                                                           |
+| Fetch            | $ git fetch                                               |
+|                  | # download objects and refs from another repository       |
+|                  |                                                           |
+| Merge            | $ git merge                                               |
+|                  | # join two or more development histories together         |
+|                  |                                                           |
+| Rebase           | $ git rebase                                              |
+|                  | # reapply commits on top of another base tip              |
+|                  |                                                           |
++------------------------------------------------------------------------------+
+
+
+Example 1: Staying Up-to-Date <a href=#1>[1]</a>
+________________________________________________________________________________
+
+In a standard setup, you generally have an origin and an upstream remote - the
+latter being the gatekeeper of the project or the source of truth to which you
+wish to contribute.
+
+First, verify that you have already setup a remote for the upstream repository,
+and hopefully an origin too:
+
+$ git remote -v
+
+If you don't have an upstream you can easily add it with the remote command:
+
+$ git remote add upstream UPSTREAM_URL
+
+Now you can collect the latest changes of the upstream repository with fetch.
+Repeat this every time you want to get updates:
+
+$ git fetch upstream
+
+Generally, you want to keep your local master branch as a close mirror of the
+upstream master and execute any work in feature branches, as they might later
+become pull requests.
+
+At this point, it does not matter if you use merge or rebase, as the result
+will typically be the same. Let's use merge:
+
+$ git checkout master
+$ git merge upstream/master
+
+
+References
+________________________________________________________________________________
+
+<span id=0><a href=#0>[0]</a></span> <a href=https://git-scm.com>https://git-scm.com</a>
+<span id=1><a href=#1>[1]</a></span> <a href=https://www.atlassian.com/git/tutorials/git-forks-and-upstreams>https://www.atlassian.com/git/tutorials/git-forks-and-upstreams</a>
+
+
+________________________________________________________________________________
+
+Dylan Araps (C) 2019-2020
+
+Linux(R) is the registered trademark of Linus Torvalds in the U.S. and
+other countries.
+</pre></div></div>
