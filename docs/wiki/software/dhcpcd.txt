@@ -1,7 +1,7 @@
 DHCPCD [0]
 ________________________________________________________________________________
 
-Dynamic Host Configuration Protocol Client Daemon is a popular DHCP client 
+Dynamic Host Configuration Protocol Client Daemon is a popular DHCP client
 capable of handling both IPv4 and IPv6 configuration.
 
 
@@ -10,35 +10,55 @@ ________________________________________________________________________________
 
 Begin by first verifying that you have dhcpcd installed:
 
-$ kiss b dhcpcd && kiss i dhcpcd
++------------------------------------------------------------------------------+
+|                                                                              |
+|   $ kiss b dhcpcd && kiss i dhcpcd                                           |
+|                                                                              |
++------------------------------------------------------------------------------+
 
 Once installed, dhcpcd can be used to automatically configure a network device
 interface:
 
-$ dhcpcd INTERFACE
++------------------------------------------------------------------------------+
+|                                                                              |
+|   $ dhcpcd INTERFACE                                                         |
+|                                                                              |
++------------------------------------------------------------------------------+
 
-Remember to replace INTERFACE in the command above with the name of the device 
+Remember to replace INTERFACE in the command above with the name of the device
 that you wish to configure.
 
 A network device's interface status can be inspected via ip-link:
 
-$ ip link show dev INTERFACE
++------------------------------------------------------------------------------+
+|                                                                              |
+|   $ ip link show dev INTERFACE                                               |
+|                                                                              |
++------------------------------------------------------------------------------+
 
 ip-link can also be used to enable or disable an interface:
 
-$ ip link set INTERFACE down  # disables the interface
-$ ip link set INTERFACE up    # enables the interface
++------------------------------------------------------------------------------+
+|                                                                              |
+|   $ ip link set INTERFACE down  # disable the interface                      |
+|   $ ip link set INTERFACE up    # enable  the interface                      |
+|                                                                              |
++------------------------------------------------------------------------------+
 
 
 Static IP Configuration
 ________________________________________________________________________________
 
-Continuing from the previous section, we can use ip-address to display the 
+Continuing from the previous section, we can use ip-address to display the
 current DHCP address information:
 
-$ ip address show
++------------------------------------------------------------------------------+
+|                                                                              |
+|   $ ip address show                                                          |
+|                                                                              |
++------------------------------------------------------------------------------+
 
-Using the output of the previous command, add the following lines to the 
+Using the output of the previous command, add the following lines to the
 /etc/dhcpcd.conf file using your preferred text editor:
 
 +------------------------------------------------------------------------------+
@@ -51,7 +71,7 @@ Using the output of the previous command, add the following lines to the
 +------------------------------------------------------------------------------+
 
 Remember to replace the INTERFACE, STATIC_IP, GATEWAY and DNS_SERVER in the
-block above with your own parameters. 
+block above with your own parameters.
 
 
 Hostname
@@ -59,26 +79,38 @@ ________________________________________________________________________________
 
 A system's hostname can be set by simply creating a /etc/hostname file:
 
-$ echo "HOSTNAME" > /etc/hostname
++------------------------------------------------------------------------------+
+|                                                                              |
+|   $ echo "HOSTNAME" > /etc/hostname                                          |
+|                                                                              |
++------------------------------------------------------------------------------+
 
-Remember to replace HOSTNAME with the string of your choosing.  
+Remember to replace HOSTNAME with the string of your choosing.
 
-Note: Valid characters for hostnames include ASCII letters from A to Z, digits 
-      from 0 to 9, and the hyphen character (-). A hostname may not start with 
+Note: Valid characters for hostnames include ASCII letters from A to Z, digits
+      from 0 to 9, and the hyphen character (-). A hostname may not start with
       a hyphen.
 
 
 Managed via runsv
 ________________________________________________________________________________
 
-Busybox's runsv can be used to create a new managed service with the following 
+Busybox's runsv can be used to create a new managed service with the following
 command:
 
-$ ln -s /etc/sv/dhcpcd/ /var/service
++------------------------------------------------------------------------------+
+|                                                                              |
+|   $ ln -s /etc/sv/dhcpcd/ /var/service                                       |
+|                                                                              |
++------------------------------------------------------------------------------+
 
-To start the new managed service, use the following command: 
+To start the new managed service, use the following command:
 
-$ sv up dhcpcd
++------------------------------------------------------------------------------+
+|                                                                              |
+|   $ sv up dhcpcd                                                             |
+|                                                                              |
++------------------------------------------------------------------------------+
 
 
 Tips and Tricks
@@ -86,21 +118,33 @@ ________________________________________________________________________________
 
 * A list of possible INTERFACE names can be obtained by running the following:
 
-  $ ls /sys/class/net
-  
-* The ping command can be used to verify connectivity with a network device 
+  +----------------------------------------------------------------------------+
+  |                                                                            |
+  |   $ ls /sys/class/net                                                      |
+  |                                                                            |
+  +----------------------------------------------------------------------------+
+
+* The ping command can be used to verify connectivity with a network device
   interface:
-  
-  $ ping www.google.com
+
+  +----------------------------------------------------------------------------+
+  |                                                                            |
+  |   $ ping www.google.com                                                    |
+  |                                                                            |
+  +----------------------------------------------------------------------------+
 
 * Some network administrators require that the hostname and domain name provided
   by the DHCP server is used by the system. In that case, pass the "-HD" switch:
-  
-  $ dhcpcd -HD INTERFACE
+
+  +----------------------------------------------------------------------------+
+  |                                                                            |
+  |   $ dhcpcd -HD INTERFACE                                                   |
+  |                                                                            |
+  +----------------------------------------------------------------------------+
 
 * If you are not sure what to put in the STATIC_IP, GATEWAY and DNS_SERVER, you
   can use the following example for reference:
-  
+
   +----------------------------------------------------------------------------+
   |                                                                            |
   |   interface eth0                                                           |
@@ -110,8 +154,8 @@ ________________________________________________________________________________
   |                                                                            |
   +----------------------------------------------------------------------------+
 
-  Notice the "/24" suffix, which is an abbreviation for the subnet mask 
-  255.255.255.0. Also, GATEWAY and DNS_SERVER are the same in this example. 
+  Notice the "/24" suffix, which is an abbreviation for the subnet mask
+  255.255.255.0. Also, GATEWAY and DNS_SERVER are the same in this example.
 
 
 References
