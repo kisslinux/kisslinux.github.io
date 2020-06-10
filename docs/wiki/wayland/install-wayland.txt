@@ -39,8 +39,6 @@ improve over time as more protocols become standardized.
 - Starting compositors without logind requires SUID permissions. [14]
 - Locked into using udev. [15]
 
-NOTE: This list of caveats will change over time.
-
 
 Benefits
 ________________________________________________________________________________
@@ -49,36 +47,33 @@ Wayland has a large number of benefits and improvements over Xorg. The above
 caveats do not apply to everyone (or every system). Those unaffected or willing
 to live with the caveats will have no problem swapping over.
 
-- Less moving parts [13], although a lot of software still heavily relies on the
+- Less moving parts [13], although some software still heavily relies on the
   Xorg libraries (Mesa [16], Firefox [17], etc).
 - No screen tearing by design [18].
-- Hardware accelerated video playback in Firefox. (VAAPI)
-- Hardware accelerated rendering in webkit2gtk. (WPEBackend-fdo)
-
-NOTE: This list of goodies will change over time.
+- Hardware accelerated video playback in Firefox [19] and Webkit2GTK [20]
 
 
 Prerequisites
 ________________________________________________________________________________
 
 Though KISS does not support Wayland officially there is no problem in making it
-capable through personal or 3rd party repositories. [19] The official
+capable through personal or 3rd party repositories. [21] The official
 repositories satisfy all dependencies. After "wayland" and "wayland-protocols"
 are installed, some package adjustments are required to make them to known
 citizens of your system.
 
 NOTE: From this point it is expected that "wayland" and "wayland-protocols" are
       installed and you have forked the required packages with modified
-      configure flags at the beginning of KISS_PATH. [20] Managing repositories
+      configure flags at the beginning of KISS_PATH. [22] Managing repositories
 
-* Packages which need to be forked [21]:
+* Packages which need to be forked [23]:
 
       firefox --enable-default-toolkit=cairo-gtk3-wayland
       gtk+3   --enable-wayland-backend
       mesa    -Dplatforms=x11,drm,wayland
 
 
-* Packages which pick up Wayland automatically at compile time [22]:
+* Packages which pick up Wayland automatically at compile time [23]:
   [needs expansion and verification]
 
       cairo
@@ -93,7 +88,7 @@ NOTE: From this point it is expected that "wayland" and "wayland-protocols" are
 Install Wayland on top Xorg KISS
 ________________________________________________________________________________
 
-Mesa must be rebuilt first, followed by the aforementioned packages [23] in
+Mesa must be rebuilt first, followed by the aforementioned packages [24] in
 a dependency given ascending order.
 
 NOTE: kiss-revdepends is the tool you need.
@@ -153,6 +148,8 @@ ________________________________________________________________________________
 [16] $/kisslinux/repo/blob/master/extra/mesa/depends
 [17] $/kisslinux/repo/blob/master/extra/firefox-bin/depends
 [18] https://people.freedesktop.org/~daniels/lca2013-wayland-x11.pdf
-[19] User Wayland repsitory $/sdsddsd1/mywayland
-[20] @/kiss/managing-repositories
-[23] https://wiki.gentoo.org/wiki/Sway#Other
+[19] https://bugzilla.mozilla.org/show_bug.cgi?id=1610199
+[20] (webkit2gtk VAAPI source needed)
+[21] User Wayland repsitory $/sdsddsd1/mywayland
+[22] @/kiss/managing-repositories
+[24] https://wiki.gentoo.org/wiki/Sway#Other
