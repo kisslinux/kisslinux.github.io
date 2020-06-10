@@ -58,9 +58,9 @@ implementation are considered "portable" (git, curl, etc)
 If a dependency can be made optional, it will be made so. Dependencies are also
 kept to a minimum (though we must also remain realistic).
 
-+------------------------------------------------------------------------------+
++------------------+------------------------------------------------+----------+
 | Dependency       | Reason for use                                 | Required |
-|------------------+------------------------------------------------+----------|
++------------------+------------------------------------------------+----------|
 | POSIX utilities  | Used throughout                                | Yes      |
 | git              | Remote repositories and                        | Yes [1]  |
 |                  | package git sources                            |          |
