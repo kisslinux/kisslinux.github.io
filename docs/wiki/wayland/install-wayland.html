@@ -30,7 +30,7 @@
 
 <a href="/wiki">wiki</a> / <a href='/wiki/wayland'>wayland</a> / install-wayland                                  <a href='https://github.com/kisslinux/wiki/edit/master/wayland/install-wayland.txt'>Edit this page</a>
 
-Edited (<a href='https://github.com/kisslinux/wiki/commit/26d5fc948757d83e18d0c9e901b0fc416fb3164e'>26d5fc9</a>) at 2020-06-08 by Dylan Araps
+Edited (<a href='https://github.com/kisslinux/wiki/commit/e96f1cd34a7beb34227f7ef9c139fa9ff3834e50'>e96f1cd</a>) at 2020-06-10 by Dylan Araps
 
 
 Wayland
@@ -61,8 +61,8 @@ are in differing stages of completeness. Xorg is still in wide use and a lot of
 software still requires it.
 
 The major downside to Wayland (compositors) is the reduction in choice. While
-the Wayland protocol does not define what a protocol shall depend on,
-compositors typically lock the user into udev, libinput and systemd/logind.
+the Wayland protocol does not define what a compositor shall depend on, they
+typically lock the user into udev, libinput and systemd/logind.
 
 The lack of standardized, desktop-oriented protocols has created a situation
 where software may only work in some compositors and not others. This should
@@ -70,24 +70,23 @@ improve over time as more protocols become standardized.
 
 - Limited hardware and driver support. <a href=#5>[5]</a> <a href=#6>[6]</a> <a href=#7>[7]</a> <a href=#8>[8]</a>
 - Non-standard and compositor specific software. <a href=#10>[10]</a> <a href=#11>[11]</a> <a href=#12>[12]</a>
-- No Wayland support in SDL 1. <a href=#13>[13]</a>
-- Games with non-free assets tend to not work with SDL2 and Wayland.
+- No Wayland support in SDL 1 (must use XWayland). <a href=#13>[13]</a>
 - Starting compositors without logind requires SUID permissions. <a href=#14>[14]</a>
 - Locked into using udev. <a href=#15>[15]</a>
 
 NOTE: This list of caveats will change over time.
 
 
-Why would I use it then?
+Benefits
 ________________________________________________________________________________
 
-While a system _can_ be simplified and improved utilization of given hardware
-may result in better overall performance, only you can decide if the undeniable
-bad is already weight out by the following goodies.
+Wayland has a large number of benefits and improvements over Xorg. The above
+caveats do not apply to everyone (or every system). Those unaffected or willing
+to live with the caveats will have no problem swapping over.
 
-- less moving parts <a href=#13>[13]</a>, although many graphical programs still heavily rely on
-  Xorg libraries. (Mesa <a href=#16>[16]</a>, Firefox <a href=#17>[17]</a>, Qt-WebEngine <a href=#18>[18]</a>, ...)
-- Screen tearing is not possible by design.
+- Less moving parts <a href=#13>[13]</a>, although a lot of software still heavily relies on the
+  Xorg libraries (Mesa <a href=#16>[16]</a>, Firefox <a href=#17>[17]</a>, etc).
+- No screen tearing by design <a href=#18>[18]</a>.
 - Hardware accelerated video playback in Firefox. (VAAPI)
 - Hardware accelerated rendering in webkit2gtk. (WPEBackend-fdo)
 
@@ -129,7 +128,7 @@ NOTE: From this point it is expected that "wayland" and "wayland-protocols" are
 Install Wayland on top Xorg KISS
 ________________________________________________________________________________
 
-Mesa must be rebuilt first, followed by the aforementioned packages <a href=#21>[21]</a>[22] in
+Mesa must be rebuilt first, followed by the aforementioned packages <a href=#23>[23]</a> in
 a dependency given ascending order.
 
 NOTE: kiss-revdepends is the tool you need.
@@ -188,7 +187,7 @@ ________________________________________________________________________________
 <span id=15><a href=#15>[15]</a></span> $/<a href=https://github.com/swaywm/wlroots#building>swaywm/wlroots#building</a> #udev
 <span id=16><a href=#16>[16]</a></span> $/<a href=https://github.com/kisslinux/repo/blob/master/extra/mesa/depends>kisslinux/repo/blob/master/extra/mesa/depends</a>
 <span id=17><a href=#17>[17]</a></span> $/<a href=https://github.com/kisslinux/repo/blob/master/extra/firefox-bin/depends>kisslinux/repo/blob/master/extra/firefox-bin/depends</a>
-<span id=18><a href=#18>[18]</a></span> $/<a href=https://github.com/kisslinux/community/blob/master/community/qt5-webengine/depends>kisslinux/community/blob/master/community/qt5-webengine/depends</a>
+<span id=18><a href=#18>[18]</a></span> <a href=https://people.freedesktop.org/~daniels/lca2013-wayland-x11.pdf>https://people.freedesktop.org/~daniels/lca2013-wayland-x11.pdf</a>
 <span id=19><a href=#19>[19]</a></span> User Wayland repsitory $/<a href=https://github.com/sdsddsd1/mywayland>sdsddsd1/mywayland</a>
 <span id=20><a href=#20>[20]</a></span> @/<a href=/wiki/wayland/kiss/managing-repositories>kiss/managing-repositories</a>
 <span id=23><a href=#23>[23]</a></span> <a href=https://wiki.gentoo.org/wiki/Sway#Other>https://wiki.gentoo.org/wiki/Sway#Other</a>

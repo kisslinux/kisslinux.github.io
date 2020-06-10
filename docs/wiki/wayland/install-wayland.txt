@@ -26,8 +26,8 @@ are in differing stages of completeness. Xorg is still in wide use and a lot of
 software still requires it.
 
 The major downside to Wayland (compositors) is the reduction in choice. While
-the Wayland protocol does not define what a protocol shall depend on,
-compositors typically lock the user into udev, libinput and systemd/logind.
+the Wayland protocol does not define what a compositor shall depend on, they
+typically lock the user into udev, libinput and systemd/logind.
 
 The lack of standardized, desktop-oriented protocols has created a situation
 where software may only work in some compositors and not others. This should
@@ -35,24 +35,23 @@ improve over time as more protocols become standardized.
 
 - Limited hardware and driver support. [5] [6] [7] [8]
 - Non-standard and compositor specific software. [10] [11] [12]
-- No Wayland support in SDL 1. [13]
-- Games with non-free assets tend to not work with SDL2 and Wayland.
+- No Wayland support in SDL 1 (must use XWayland). [13]
 - Starting compositors without logind requires SUID permissions. [14]
 - Locked into using udev. [15]
 
 NOTE: This list of caveats will change over time.
 
 
-Why would I use it then?
+Benefits
 ________________________________________________________________________________
 
-While a system _can_ be simplified and improved utilization of given hardware
-may result in better overall performance, only you can decide if the undeniable
-bad is already weight out by the following goodies.
+Wayland has a large number of benefits and improvements over Xorg. The above
+caveats do not apply to everyone (or every system). Those unaffected or willing
+to live with the caveats will have no problem swapping over.
 
-- less moving parts [13], although many graphical programs still heavily rely on
-  Xorg libraries. (Mesa [16], Firefox [17], Qt-WebEngine [18], ...)
-- Screen tearing is not possible by design.
+- Less moving parts [13], although a lot of software still heavily relies on the
+  Xorg libraries (Mesa [16], Firefox [17], etc).
+- No screen tearing by design [18].
 - Hardware accelerated video playback in Firefox. (VAAPI)
 - Hardware accelerated rendering in webkit2gtk. (WPEBackend-fdo)
 
@@ -94,7 +93,7 @@ NOTE: From this point it is expected that "wayland" and "wayland-protocols" are
 Install Wayland on top Xorg KISS
 ________________________________________________________________________________
 
-Mesa must be rebuilt first, followed by the aforementioned packages [21][22] in
+Mesa must be rebuilt first, followed by the aforementioned packages [23] in
 a dependency given ascending order.
 
 NOTE: kiss-revdepends is the tool you need.
@@ -153,7 +152,7 @@ ________________________________________________________________________________
 [15] $/swaywm/wlroots#building #udev
 [16] $/kisslinux/repo/blob/master/extra/mesa/depends
 [17] $/kisslinux/repo/blob/master/extra/firefox-bin/depends
-[18] $/kisslinux/community/blob/master/community/qt5-webengine/depends
+[18] https://people.freedesktop.org/~daniels/lca2013-wayland-x11.pdf
 [19] User Wayland repsitory $/sdsddsd1/mywayland
 [20] @/kiss/managing-repositories
 [23] https://wiki.gentoo.org/wiki/Sway#Other

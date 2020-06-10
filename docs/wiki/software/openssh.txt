@@ -1,9 +1,9 @@
-OPENSSH
+OPENSSH [0]
 ________________________________________________________________________________
 
 OpenSSH (also known as OpenBSD Secure Shell) is a suite of secure networking
 utilities based on the Secure Shell (SSH) protocol, which provides a secure 
-channel over an unsecured network in a client-server architecture. [0]
+channel over an unsecured network in a client-server architecture.
 
 
 Remote Server Configuration
@@ -76,12 +76,12 @@ ________________________________________________________________________________
   $ ssh USERNAME@SERVER -vvv
 
 * If you are looking to forward GUI-based applications through an SSH tunnel,
-  refer to the @/x11-forwarding article.
+  refer to the @/xorg/x11-forwarding article.
 
 
 References
 ________________________________________________________________________________
 
-[0] https://en.wikipedia.org/wiki/OpenSSH
+[0] https://www.openssh.com/openbsd.html
 
 [1] https://wiki.gentoo.org/wiki/SSH

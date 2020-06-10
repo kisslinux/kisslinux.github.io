@@ -98,6 +98,9 @@ main() {
     wiki_url=https://github.com/kisslinux/wiki
     repo_url=https://github.com
 
+    rm -rf docs
+    mkdir -p docs
+
     (cd site && find . -type f) | while read -r page; do
         printf '%s\n' "CC $page"
         page "$page"
