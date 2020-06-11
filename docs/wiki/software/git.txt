@@ -12,53 +12,53 @@ New KISS users may have various levels of exposure to git and other forms of
 version control systems. The following is intended to be a "quick" reference
 sheet of git commands.
 
-+------------------+-----------------------------------------------------------+
-| Action (Basics)  | Command                                                   |
-+------------------+-----------------------------------------------------------+
-|                  |                                                           |
-| Set Default      | $ git config --global user.name "FIRST_NAME LAST_NAME"    |
-| Username         | # stored in ~/.gitconfig                                  |
-|                  |                                                           |
-| Set Default      | $ git config --global user.email "MYEMAIL@EXAMPLE.COM"    |
-| Email Address    | # stored in ~/.gitconfig                                  |
-|                  |                                                           |
-| Set Default      | $ git config --global core.editor vim                     |
-| Text Editor      | # stored in ~/.gitconfig                                  |
-|                  |                                                           |
-| Store User       | $ git config credential.helper store                      |
-| Credentials      | # credentials saved in ~/.git-credentials as clear text   |
-|                  |                                                           |
-| Clone Repository | $ git clone GIT_URL                                       |
-|                  |                                                           |
-| Clone Branch     | $ git clone GIT_URL -b BRANCH_NAME                        |
-|                  |                                                           |
-| Repo. Status     | $ git status                                              |
-|                  |                                                           |
-| Add/Update       | $ git add FILE_OR_PATH                                    |
-| Project Files    |                                                           |
-|                  |                                                           |
-| Remove           | $ git add FILE_OR_PATH                                    |
-| Project Files    |                                                           |
-|                  |                                                           |
-| Commit           | $ git commit                                              |
-|                  | # records changes to the repository                       |
-|                  |                                                           |
-| Push             | $ git push                                                |
-|                  | # updates remote refs along with associated objects       |
-|                  |                                                           |
-| Pull             | $ git pull                                                |
-|                  | # fetch and integrate with another repository/branch      |
-|                  |                                                           |
-| Fetch            | $ git fetch                                               |
-|                  | # download objects and refs from another repository       |
-|                  |                                                           |
-| Merge            | $ git merge                                               |
-|                  | # join two or more development histories together         |
-|                  |                                                           |
-| Rebase           | $ git rebase                                              |
-|                  | # reapply commits on top of another base tip              |
-|                  |                                                           |
-+------------------------------------------------------------------------------+
++-------------------+----------------------------------------------------------+
+|   Action          |   Command                                                |
++-------------------+----------------------------------------------------------+
+|                   |                                                          |
+|   Set Default     |   $ git config --global user.name "FIRSTNAME LASTNAME"   |
+|   Username        |   # stored in ~/.gitconfig                               |
+|                   |                                                          |
+|   Set Default     |   $ git config --global user.email "EMAIL@EXAMPLE.COM"   |
+|   Email Address   |   # stored in ~/.gitconfig                               |
+|                   |                                                          |
+|   Set Default     |   $ git config --global core.editor vim                  |
+|   Text Editor     |   # stored in ~/.gitconfig                               |
+|                   |                                                          |
+|   Store User      |   $ git config credential.helper store                   |
+|   Credentials     |   # credentials saved in ~/.git-credentials              |
+|                   |                                                          |
+|   Clone Repo.     |   $ git clone GIT_URL                                    |
+|                   |                                                          |
+|   Clone Branch    |   $ git clone GIT_URL -b BRANCH_NAME                     |
+|                   |                                                          |
+|   Repo. Status    |   $ git status                                           |
+|                   |                                                          |
+|   Add/Update      |   $ git add FILE_OR_PATH                                 |
+|   Project Files   |                                                          |
+|                   |                                                          |
+|   Remove          |   $ git add FILE_OR_PATH                                 |
+|   Project Files   |                                                          |
+|                   |                                                          |
+|   Commit          |   $ git commit                                           |
+|                   |   # records changes to the repository                    |
+|                   |                                                          |
+|   Push            |   $ git push                                             |
+|                   |   # updates remote refs along with associated objects    |
+|                   |                                                          |
+|   Pull            |   $ git pull                                             |
+|                   |   # fetch and integrate with another repository/branch   |
+|                   |                                                          |
+|   Fetch           |   $ git fetch                                            |
+|                   |   # download objects and refs from another repository    |
+|                   |                                                          |
+|   Merge           |   $ git merge                                            |
+|                   |   # join two or more development histories together      |
+|                   |                                                          |
+|   Rebase          |   $ git rebase                                           |
+|                   |   # reapply commits on top of another base tip           |
+|                   |                                                          |
++-------------------+----------------------------------------------------------+
 
 
 Example 1: Staying Up-to-Date [1]
@@ -71,16 +71,28 @@ wish to contribute.
 First, verify that you have already setup a remote for the upstream repository,
 and hopefully an origin too:
 
-$ git remote -v
++------------------------------------------------------------------------------+
+|                                                                              |
+|   $ git remote -v                                                            |
+|                                                                              |
++------------------------------------------------------------------------------+
 
 If you don't have an upstream you can easily add it with the remote command:
 
-$ git remote add upstream UPSTREAM_URL
++------------------------------------------------------------------------------+
+|                                                                              |
+|   $ git remote add upstream UPSTREAM_URL                                     |
+|                                                                              |
++------------------------------------------------------------------------------+
 
 Now you can collect the latest changes of the upstream repository with fetch.
 Repeat this every time you want to get updates:
 
-$ git fetch upstream
++------------------------------------------------------------------------------+
+|                                                                              |
+|   $ git fetch upstream                                                       |
+|                                                                              |
++------------------------------------------------------------------------------+
 
 Generally, you want to keep your local master branch as a close mirror of the
 upstream master and execute any work in feature branches, as they might later
@@ -89,8 +101,12 @@ become pull requests.
 At this point, it does not matter if you use merge or rebase, as the result
 will typically be the same. Let's use merge:
 
-$ git checkout master
-$ git merge upstream/master
++------------------------------------------------------------------------------+
+|                                                                              |
+|   $ git checkout master                                                      |
+|   $ git merge upstream/master                                                |
+|                                                                              |
++------------------------------------------------------------------------------+
 
 
 References

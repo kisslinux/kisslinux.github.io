@@ -1,56 +1,58 @@
-SX [0]
+TZDATA [0]
 ________________________________________________________________________________
 
-sx is a simple alternative to both xinit and startx for starting an Xorg 
-server.
+The Time Zone Database (called tz, tzdb or zoneinfo) contains code and data that
+represent the history of local time for many representative locations around the 
+globe.  
 
 
 Configuration
 ________________________________________________________________________________
 
-Ensure that you have sx installed first:
+Begin by first verifying that you have tzdata installed:
 
 +------------------------------------------------------------------------------+
 |                                                                              |
-|   $ kiss b sx && kiss i sx                                                   |
+|   $ kiss b tzdata && kiss i tzdata                                           |
 |                                                                              |
 +------------------------------------------------------------------------------+
 
-The default data and config directories can be modified to your liking via
-environment variables. The following commands should be issued as a regular
-user (i.e. non-root):
+Look for the available timezones in /usr/share/zoneinfo/:
 
 +------------------------------------------------------------------------------+
 |                                                                              |
-|   $ echo "export XDG_DATA_HOME=$HOME/.sx" >> ~/.profile                      |
-|   $ echo "export XDG_CONFIG_HOME=$HOME/.sx" >> ~/.profile                    |
+|   $ ls /usr/share/zoneinfo                                                   |
 |                                                                              |
 +------------------------------------------------------------------------------+
 
-Create the required directories and rc file:
+Write your preferred timezone to the /etc/timezone file:
 
 +------------------------------------------------------------------------------+
 |                                                                              |
-|   $ mkdir -p ~/.sx/sx                                                        |
-|   $ touch sxrc                                                               |
-|   $ chmod +x sxrc                                                            |
+|   $ echo "TZ" > /etc/timezone                                                |
 |                                                                              |
 +------------------------------------------------------------------------------+
 
-At this point, you can add content to your sxrc file. For example, if you
-wanted to start sowm windows manager, you could add the following:
+Remember to replace TZ with with your preferred timezone. For example, if I 
+lived in the US Eastern timezone, I would replace TZ with "US/Eastern".
+
+Lastly, copy the preferred timezone file to /etc/localtime:
 
 +------------------------------------------------------------------------------+
 |                                                                              |
-|   $ echo "exec sowm" >> ~/.sx/sx/sxrc                                        |
+|   $ cp TZ_PATH /etc/localtime                                                |
 |                                                                              |
 +------------------------------------------------------------------------------+
 
-You should now be able to start your X server with sx:
+Remember to replace TZ_PATH with with the complete timezone path. For the 
+example given above, the complete TZ_PATH for "US/Eastern" would be 
+"/usr/share/zoneinfo/US/Eastern".
+
+As an optional final step, remove the tzdata package.
 
 +------------------------------------------------------------------------------+
 |                                                                              |
-|   $ sx                                                                       |
+|   $ kiss r tzdata                                                            |
 |                                                                              |
 +------------------------------------------------------------------------------+
 
@@ -58,4 +60,6 @@ You should now be able to start your X server with sx:
 References
 ________________________________________________________________________________
 
-[0] https://github.com/Earnestly/sx
+[0] https://github.com/eggert/tz
+[1] https://wiki.gentoo.org/wiki/Handbook:AMD64/Installation/Base#Timezone
+[2] https://wiki.archlinux.org/index.php/System_time

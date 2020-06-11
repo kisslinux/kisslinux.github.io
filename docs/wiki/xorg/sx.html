@@ -30,13 +30,13 @@
 
 <a href="/wiki">wiki</a> / <a href='/wiki/xorg'>xorg</a> / sx                                                  <a href='https://github.com/kisslinux/wiki/edit/master/xorg/sx.txt'>Edit this page</a>
 
-Edited (<a href='https://github.com/kisslinux/wiki/commit/aecec48e5432dffa37e184a9d7eeb194278051f5'>aecec48</a>) at 2020-06-07 by Michael Czigler
+Edited (<a href='https://github.com/kisslinux/wiki/commit/dac40178f8731efb67886410b79833dfe33e6d49'>dac4017</a>) at 2020-06-11 by Michael Czigler
 
 
-SX
+SX <a href=#0>[0]</a>
 ________________________________________________________________________________
 
-sx is a simple alternative to both xinit(1) and startx(1) for starting an Xorg 
+sx is a simple alternative to both xinit and startx for starting an Xorg 
 server.
 
 
@@ -45,29 +45,49 @@ ________________________________________________________________________________
 
 Ensure that you have sx installed first:
 
-$ kiss b sx && kiss i sx
++------------------------------------------------------------------------------+
+|                                                                              |
+|   $ kiss b sx && kiss i sx                                                   |
+|                                                                              |
++------------------------------------------------------------------------------+
 
-The default data and config directories can be modified to you liking via
+The default data and config directories can be modified to your liking via
 environment variables. The following commands should be issued as a regular
 user (i.e. non-root):
 
-$ echo "export XDG_DATA_HOME=$HOME/.sx" >> ~/.profile
-$ echo "export XDG_CONFIG_HOME=$HOME/.sx" >> ~/.profile
++------------------------------------------------------------------------------+
+|                                                                              |
+|   $ echo "export XDG_DATA_HOME=$HOME/.sx" >> ~/.profile                      |
+|   $ echo "export XDG_CONFIG_HOME=$HOME/.sx" >> ~/.profile                    |
+|                                                                              |
++------------------------------------------------------------------------------+
 
 Create the required directories and rc file:
 
-$ mkdir -p ~/.sx/sx
-$ touch sxrc
-$ chmod +x sxrc
++------------------------------------------------------------------------------+
+|                                                                              |
+|   $ mkdir -p ~/.sx/sx                                                        |
+|   $ touch sxrc                                                               |
+|   $ chmod +x sxrc                                                            |
+|                                                                              |
++------------------------------------------------------------------------------+
 
 At this point, you can add content to your sxrc file. For example, if you
 wanted to start sowm windows manager, you could add the following:
 
-$ echo "exec sowm" >> ~/.sx/sx/sxrc
++------------------------------------------------------------------------------+
+|                                                                              |
+|   $ echo "exec sowm" >> ~/.sx/sx/sxrc                                        |
+|                                                                              |
++------------------------------------------------------------------------------+
 
 You should now be able to start your X server with sx:
 
-$ sx
++------------------------------------------------------------------------------+
+|                                                                              |
+|   $ sx                                                                       |
+|                                                                              |
++------------------------------------------------------------------------------+
 
 
 References

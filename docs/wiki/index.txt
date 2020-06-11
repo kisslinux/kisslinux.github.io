@@ -61,7 +61,7 @@
 |                                                                              |
 | @/software/git                           @/software/openssh                  |
 | @/software/wpa_supplicant                @/software/dhcpcd                   |
-|                                                                              |
+| @/software/eiwd                          @/software/tzdata
 |                                                                              |
 +------------------------------------------------------------------------------+
 

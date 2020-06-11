@@ -30,7 +30,7 @@
 
 <a href="/wiki">wiki</a> / <a href='/wiki/software'>software</a> / openssh                                         <a href='https://github.com/kisslinux/wiki/edit/master/software/openssh.txt'>Edit this page</a>
 
-Edited (<a href='https://github.com/kisslinux/wiki/commit/50e2e1f59f2f9b4b1c05d635e2d30cba225706aa'>50e2e1f</a>) at 2020-06-09 by Michael Czigler
+Edited (<a href='https://github.com/kisslinux/wiki/commit/82e821fd4eba1612f14cdcb68f5c72a37eb484de'>82e821f</a>) at 2020-06-10 by Michael Czigler
 
 
 OPENSSH <a href=#0>[0]</a>
@@ -46,16 +46,28 @@ ________________________________________________________________________________
 
 Begin by first verifying that you have openssh installed on the remote server:
 
-$ kiss b openssh && kiss i openssh
++------------------------------------------------------------------------------+
+|                                                                              |
+|   $ kiss b openssh && kiss i openssh                                         |
+|                                                                              |
++------------------------------------------------------------------------------+
 
 Using busybox's runsv, create a new managed service for the ssh daemon:
 
-$ ln -s /etc/sv/sshd /var/service
++------------------------------------------------------------------------------+
+|                                                                              |
+|   $ ln -s /etc/sv/sshd /var/service                                          |
+|                                                                              |
++------------------------------------------------------------------------------+
 
 At this point, you can either restart the remote server or manually start the 
 SSH daemon:
 
-$ sv up sshd
++------------------------------------------------------------------------------+
+|                                                                              |
+|   $ sv up sshd                                                               |
+|                                                                              |
++------------------------------------------------------------------------------+
 
 
 Client Authentication
@@ -64,25 +76,37 @@ ________________________________________________________________________________
 From an SSH client, use the following command to connect to the remote SSH 
 server:
 
-$ ssh USERNAME@SERVER
++------------------------------------------------------------------------------+
+|                                                                              |
+|   $ ssh USERNAME@SERVER                                                      |
+|                                                                              |
++------------------------------------------------------------------------------+
 
 Replace USERNAME with the name of a regular user and SERVER with the hostname or 
 IP address of the SSH remote server. Upon pressing return, you will also be
 prompted to enter the password of the regular user specified.
 
 
-Passwordless Authentication
+Passwordless Authentication (Optional)
 ________________________________________________________________________________
 
 Passwordless login to a remove server can be achieved by creating a key pair. 
 From the SSH client, use the following command to generate the key:
 
-$ ssh-keygen -t rsa
++------------------------------------------------------------------------------+
+|                                                                              |
+|   $ ssh-keygen -t rsa                                                        |
+|                                                                              |
++------------------------------------------------------------------------------+
 
 Copy the id_rsa.pub file generated from the previous step into the remote 
 server's ~/.ssh/authorized_keys with the following command:
 
-$ ssh-copy-id USERNAME@SERVER
++------------------------------------------------------------------------------+
+|                                                                              |
+|   $ ssh-copy-id USERNAME@SERVER                                              |
+|                                                                              |
++------------------------------------------------------------------------------+
 
 Replace USERNAME with the name of a regular user and SERVER with the hostname or 
 IP address of the SSH remote server. Upon pressing return, you will also be
@@ -91,12 +115,20 @@ prompted to enter the password of the regular user specified.
 Verify that the key was copied to the remote server and passwordless login works
 by entering the following command from the previous section:
 
-$ ssh USERNAME@SERVER 
++------------------------------------------------------------------------------+
+|                                                                              |
+|   $ ssh USERNAME@SERVER                                                      |
+|                                                                              |
++------------------------------------------------------------------------------+
 
 Once passwordless login has been verified, disable password authentication on
 the remote server:
 
-$ echo "PasswordAuthentication no" >> /etc/ssh/sshd_config
++------------------------------------------------------------------------------+
+|                                                                              |
+|   $ echo "PasswordAuthentication no" >> /etc/ssh/sshd_config                 |
+|                                                                              |
++------------------------------------------------------------------------------+
 
 
 Tips and Tricks
@@ -106,9 +138,13 @@ ________________________________________________________________________________
   modes that can help with troubleshooting issues. Use the "-v" switch when
   connecting to print the debugging messages:
 
-  $ ssh USERNAME@SERVER -v
-  $ ssh USERNAME@SERVER -vv
-  $ ssh USERNAME@SERVER -vvv
++------------------------------------------------------------------------------+
+|                                                                              |
+|   $ ssh USERNAME@SERVER -v                                                   |
+|   $ ssh USERNAME@SERVER -vv                                                  |
+|   $ ssh USERNAME@SERVER -vvv                                                 |
+|                                                                              |
++------------------------------------------------------------------------------+
 
 * If you are looking to forward GUI-based applications through an SSH tunnel,
   refer to the @/<a href=/wiki/software/xorg/x11-forwarding>xorg/x11-forwarding</a> article.
@@ -118,7 +154,6 @@ References
 ________________________________________________________________________________
 
 <span id=0><a href=#0>[0]</a></span> <a href=https://www.openssh.com/openbsd.html>https://www.openssh.com/openbsd.html</a>
-
 <span id=1><a href=#1>[1]</a></span> <a href=https://wiki.gentoo.org/wiki/SSH>https://wiki.gentoo.org/wiki/SSH</a>
 
 

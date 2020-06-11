@@ -1,7 +1,9 @@
 SOFTWARE
 ________________________________________________________________________________
 
-- @/openssh
-- @/git
-- @/wpa_supplicant
 - @/dhcpcd
+- @/eiwd
+- @/git
+- @/openssh
+- @/tzdata
+- @/wpa_supplicant
