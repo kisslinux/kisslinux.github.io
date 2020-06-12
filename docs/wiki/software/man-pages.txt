@@ -1,0 +1,64 @@
+MAN PAGES
+________________________________________________________________________________
+
+A man page (short for manual page) is a form of software documentation usually
+found on a Unix or Unix-like operating systems. Topics covered include computer
+programs (including library and system calls), formal standards and conventions,
+and even abstract concepts. A user may invoke a man page by issuing the man
+command. [0]
+
+
+The man utility
+________________________________________________________________________________
+
+The 'mandoc' [1] package is the default provider of the 'man' utility.
+
++------------------------------------------------------------------------------+
+| Install mandoc                                                               |
++------------------------------------------------------------------------------+
+|                                                                              |
+|   $ kiss b mandoc && kiss i mandoc                                           |
+|                                                                              |
++------------------------------------------------------------------------------+
+
+By default, man typically uses a terminal pager program such as more or less to
+display its output. This can be configured via the $PAGER environment variable.
+
+
+Linux manuals
+________________________________________________________________________________
+
+The Linux man-pages project [2] documents the Linux kernel and C library
+interfaces that are employed by user-space programs.
+
++------------------------------------------------------------------------------+
+| Install man-pages                                                            |
++------------------------------------------------------------------------------+
+|                                                                              |
+|   $ kiss b man-pages && kiss i man-pages                                     |
+|                                                                              |
++------------------------------------------------------------------------------+
+
+
+POSIX manuals
+________________________________________________________________________________
+
+These are pages from POSIX.1-2008, Technical Corrigendum 1. Since TC1 appeared
+in 2013, it is also known as POSIX.1-2013. The man pages contain descriptions of
+the headers, the utilities, and the functions documented in that standard.
+
++------------------------------------------------------------------------------+
+| Install man-pages-posix                                                      |
++------------------------------------------------------------------------------+
+|                                                                              |
+|   $ kiss b man-pages-posix && kiss i man-pages-posix                         |
+|                                                                              |
++------------------------------------------------------------------------------+
+
+
+References
+________________________________________________________________________________
+
+[0] https://en.wikipedia.org/wiki/Man_page
+[1] https://mandoc.bsd.lv/
+[2] https://kernel.org/doc/man-pages/
