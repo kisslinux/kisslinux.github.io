@@ -56,26 +56,28 @@ ________________________________________________________________________________
     * WiFi                                                                 [5.3]
     * Dynamic IP addressing                                                [5.4]
 
-* The kernel                                                               [6.0]
-    * Install required packages                                            [6.1]
-    * Download the kernel sources                                          [6.2]
-    * Download firmware blobs                                              [6.3]
-    * Configure the kernel                                                 [6.4]
-    * Build the kernel                                                     [6.5]
-    * Install the kernel                                                   [6.6]
+* The hostname                                                             [6.0]
 
-* The bootloader                                                           [7.0]
-    * Build and install grub                                               [7.1]
-    * Setup grub                                                           [7.2]
+* The kernel                                                               [7.0]
+    * Install required packages                                            [7.1]
+    * Download the kernel sources                                          [7.2]
+    * Download firmware blobs                                              [7.3]
+    * Configure the kernel                                                 [7.4]
+    * Build the kernel                                                     [7.5]
+    * Install the kernel                                                   [7.6]
 
-* Install init scripts                                                     [8.0]
-* Add a normal user                                                        [9.0]
-* Enable the Community repository                                         [10.0]
+* The bootloader                                                           [8.0]
+    * Build and install grub                                               [8.1]
+    * Setup grub                                                           [8.2]
 
-* Install Xorg                                                            [11.0]
-    * Add your user to the relevant groups                                [11.1]
+* Install init scripts                                                     [9.0]
+* Add a normal user                                                       [10.0]
+* Enable the Community repository                                         [11.0]
 
-* Further steps                                                           [12.0]
+* Install Xorg                                                            [12.0]
+    * Add your user to the relevant groups                                [12.1]
+
+* Further steps                                                           [13.0]
 
 
 [2.0] Install KISS
@@ -405,7 +407,32 @@ The software below is required unless stated otherwise.
     +--------------------------------------------------------------------------+
 
 
-[6.0] The kernel
+[6.0] The hostname
+________________________________________________________________________________
+
++------------------------------------------------------------------------------+
+| Create the /etc/hostname file                                                |
++------------------------------------------------------------------------------+
+|                                                                              |
+|  $ echo HOSTNAME > /etc/hostname
+|                                                                              |
++------------------------------------------------------------------------------+
+
++------------------------------------------------------------------------------+
+| Update the /etc/hosts file                                                   |
++------------------------------------------------------------------------------+
+|                                                                              |
+|    127.0.0.1  HOSTNAME.localdomain  HOSTNAME
+|    ::1        HOSTNAME.localdomain  HOSTNAME  ip6-localhost
+|                                                                              |
++------------------------------------------------------------------------------+
+|                                                                              |
+|   NOTE: This step must be done every time the hostname is changed.           |
+|                                                                              |
++------------------------------------------------------------------------------+
+
+
+[7.0] The kernel
 ________________________________________________________________________________
 
 This step involves configuring and building your own Linux kernel. If you have
@@ -426,7 +453,7 @@ A patch may be required for some kernels when built with GCC 10.1.0. Please
 read the link (and the patch itself for more information). @/news/20200509a
 
 
-    [6.1] Install required packages
+    [7.1] Install required packages
     ____________________________________________________________________________
 
     libelf is required in most if not all cases.
@@ -466,7 +493,7 @@ read the link (and the patch itself for more information). @/news/20200509a
     Apply: @/dist/kernel-no-perl.patch
 
 
-    [6.2] Download the kernel sources
+    [7.2] Download the kernel sources
     ____________________________________________________________________________
 
     Kernel releases:
@@ -495,7 +522,7 @@ read the link (and the patch itself for more information). @/news/20200509a
     +--------------------------------------------------------------------------+
 
 
-    [6.3] Download firmware blobs (if required)
+    [7.3] Download firmware blobs (if required)
     ____________________________________________________________________________
 
     To keep the KISS repositories entirely FOSS, the proprietary kernel
@@ -523,7 +550,7 @@ read the link (and the patch itself for more information). @/news/20200509a
     +--------------------------------------------------------------------------+
 
 
-    [6.4] Configure the kernel
+    [7.4] Configure the kernel
     ____________________________________________________________________________
 
     You can determine which drivers you need by searching the web for your
@@ -555,7 +582,7 @@ read the link (and the patch itself for more information). @/news/20200509a
     +--------------------------------------------------------------------------+
 
 
-    [6.5] Build the kernel
+    [7.5] Build the kernel
     ____________________________________________________________________________
 
     This may take a while to complete. The compilation time depends on your
@@ -569,7 +596,7 @@ read the link (and the patch itself for more information). @/news/20200509a
     +--------------------------------------------------------------------------+
 
 
-    [6.6] Install the kernel
+    [7.6] Install the kernel
     ____________________________________________________________________________
 
     +--------------------------------------------------------------------------+
@@ -594,7 +621,7 @@ read the link (and the patch itself for more information). @/news/20200509a
     +--------------------------------------------------------------------------+
 
 
-[7.0] The bootloader
+[8.0] The bootloader
 ________________________________________________________________________________
 
 The default bootloader is grub (though nothing prevents you from using whatever
@@ -603,13 +630,13 @@ with it, both BIOS and UEFI are supported and vast amounts of documentation for
 it exists
 
 
-    [7.1] Recommended
+    [8.1] Recommended
     ____________________________________________________________________________
 
     Have an /etc/fstab file ready.
 
 
-    [7.2] Build and install grub
+    [8.2] Build and install grub
     ____________________________________________________________________________
 
     +--------------------------------------------------------------------------+
@@ -627,7 +654,7 @@ it exists
     +--------------------------------------------------------------------------+
 
 
-    [7.3] Setup grub
+    [8.3] Setup grub
     ____________________________________________________________________________
 
     +--------------------------------------------------------------------------+
@@ -650,7 +677,7 @@ it exists
     +--------------------------------------------------------------------------+
 
 
-[8.0] Install init scripts
+[9.0] Install init scripts
 ________________________________________________________________________________
 
 The default init is busybox init (though nothing ties you to it). The below
@@ -667,7 +694,7 @@ Source code: $/kisslinux/init
 +------------------------------------------------------------------------------+
 
 
-[9.0] Add a normal user (recommended)
+[10.0] Add a normal user (recommended)
 ________________________________________________________________________________
 
 +------------------------------------------------------------------------------+
@@ -677,7 +704,7 @@ ________________________________________________________________________________
 +------------------------------------------------------------------------------+
 
 
-[10.0] Enable the community repository
+[11.0] Enable the community repository
 ________________________________________________________________________________
 
 The KISS community repository is maintained by users of the distribution and
@@ -712,7 +739,7 @@ NOTE: The subdirectory must also be added.
 +------------------------------------------------------------------------------+
 
 
-[11.0] Install Xorg (optional)
+[12.0] Install Xorg (optional)
 ________________________________________________________________________________
 
 To install Xorg, the input drivers and a basic default set of fonts, run the
@@ -749,7 +776,7 @@ following commands
     +--------------------------------------------------------------------------+
 
 
-[12.0] Further steps
+[13.0] Further steps
 ________________________________________________________________________________
 
 You should now be able to reboot into your KISS installation. Typical
