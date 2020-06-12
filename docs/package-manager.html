@@ -51,7 +51,6 @@ ________________________________________________________________________________
     - Runtime dependency detector built around 'ldd'                       <a href=#3.1>[3.1]</a>
     - Fully dynamic (and automatic) alternatives system                    <a href=#3.2>[3.2]</a>
     - 3-way handshake for files in /etc/                                   <a href=#3.3>[3.3]</a>
-    - Extensible via 'kiss-*' utilities                                    <a href=#3.4>[3.4]</a>
 
 - Configuration                                                            <a href=#4.0>[4.0]</a>
 
@@ -61,8 +60,10 @@ ________________________________________________________________________________
     - Building some packages in memory (tmpfs)                             <a href=#5.3>[5.3]</a>
     - Logging build duration                                               <a href=#5.4>[5.4]</a>
 
-- Tips and Tricks                                                          <a href=#6.0>[6.0]</a>
-    - Swap grep implementations for a major speed up                       <a href=#6.1>[6.1]</a>
+- Extensible via 'kiss-*' utilities                                        <a href=#6.0>[6.0]</a>
+
+- Tips and Tricks                                                          <a href=#7.0>[7.0]</a>
+    - Swap grep implementations for a major speed up                       <a href=#7.1>[7.1]</a>
 
 
 <span id=1.0><a href=#1.0>[1.0]</a></span> Usage
@@ -299,50 +300,6 @@ ________________________________________________________________________________
     +--------------------------------------------------------------------------+
 
 
-    <span id=3.4><a href=#3.4>[3.4]</a></span> Extensible via 'kiss-*' utilities
-    ____________________________________________________________________________
-
-    Anything in the user's '$PATH' which matches the glob 'kiss-*' will be
-    directly usable via the package manager.
-
-    For example, 'kiss-size' is also usable as 'kiss size' (and even 'kiss si')
-    (shortest available alias).
-
-    The detected 'kiss-*' utilities will appear in the package manager's help
-    output with the second line in the script acting as a doc-string.
-
-    Example help output:
-
-    +--------------------------------------------------------------------------+
-    | kiss extensions                                                          |
-    +--------------------------------------------------------------------------+
-    |                                                                          |
-    |   -> Installed extensions (kiss-* in $PATH)                              |
-    |   -> chbuild    Create/destroy temporary chroots                         |
-    |   -> chroot     Enter a kiss chroot                                      |
-    |   -> depends    Display a package's dependencies                         |
-    |   -> export     Installed package to tarball                             |
-    |   -> fork       Fork a package into the current dir                      |
-    |   -> link       Link a repo file to another repo                         |
-    |   -> maintainer Find the maintainer of a package                         |
-    |   -> manifest   Display all files owned by a package                     |
-    |   -> new        Create a boilerplate package                             |
-    |   -> orphans    List orphaned packages                                   |
-    |   -> outdated   Check repository packages for updates                    |
-    |   -> owns       Check which package owns a file                          |
-    |   -> reset      Remove all packages but base                             |
-    |   -> revdepends Packages which depend on package                         |
-    |   -> size       Show the size on disk for a package                      |
-    |                                                                          |
-    +--------------------------------------------------------------------------+
-
-    These are in effect, optional utilities which interact with the package
-    system in one way or another.
-
-    My hope behind them is to act as an example as to how easy it is to
-    interface with the plain-text and "static" package system.
-
-
 <span id=4.0><a href=#4.0>[4.0]</a></span> Configuration
 ________________________________________________________________________________
 
@@ -565,7 +522,67 @@ Example:
     +--------------------------------------------------------------------------+
 
 
-<span id=6.0><a href=#6.0>[6.0]</a></span> Tips and Tricks
+<span id=6.0><a href=#6.0>[6.0]</a></span> Extensible via 'kiss-*' utilities
+________________________________________________________________________________
+
+Anything in the user's '$PATH' which matches the glob 'kiss-*' will be directly
+usable via the package manager. For example, 'kiss-size' is also usable as
+'kiss size' (and even 'kiss si') (the shortest available alias).
+
+The detected 'kiss-*' utilities will appear in the package manager's help output
+with the second line in the script acting as a doc-string.
+
+Example help output:
+
++--------------------------------------------------------------------------+
+| kiss extensions                                                          |
++--------------------------------------------------------------------------+
+|                                                                          |
+|   -> Installed extensions (kiss-* in $PATH)                              |
+|   -> chbuild    Create/destroy temporary chroots                         |
+|   -> chroot     Enter a kiss chroot                                      |
+|   -> depends    Display a package's dependencies                         |
+|   -> export     Installed package to tarball                             |
+|   -> fork       Fork a package into the current dir                      |
+|   -> link       Link a repo file to another repo                         |
+|   -> maintainer Find the maintainer of a package                         |
+|   -> manifest   Display all files owned by a package                     |
+|   -> new        Create a boilerplate package                             |
+|   -> orphans    List orphaned packages                                   |
+|   -> outdated   Check repository packages for updates                    |
+|   -> owns       Check which package owns a file                          |
+|   -> reset      Remove all packages but base                             |
+|   -> revdepends Packages which depend on package                         |
+|   -> size       Show the size on disk for a package                      |
+|                                                                          |
++--------------------------------------------------------------------------+
+
+These are in effect, optional utilities which interact with the package system
+in one way or another. My hope behind them is to act as an example as to how
+easy it is to interface with the plain-text and "static" package system.
+
+Example utility:
+
++------------------------------------------------------------------------------+
+| kiss-depends (kiss depends, kiss de)                                         |
++------------------------------------------------------------------------------+
+|                                                                              |
+|   #!/bin/sh -ef                                                              |
+|   # Display a package's dependencies                                         |
+|                                                                              |
+|   # Ignore shellcheck as we want the warning's behavior.                     |
+|   # shellcheck disable=2015                                                  |
+|   [ "$1" ] && kiss l "${1:-null}" >/dev/null || {                            |
+|       printf 'usage: kiss-depends [pkg]\n'                                   |
+|       exit 1                                                                 |
+|   }                                                                          |
+|                                                                              |
+|   cat "$KISS_ROOT/var/db/kiss/installed/$1/depends" 2>/dev/null              |
+|                                                                              |
++------------------------------------------------------------------------------+
+
+
+<span id=7.0><a href=#7.0>[7.0]</a></span> Tips and Tricks
 ________________________________________________________________________________
 
 A lot of the package manager's features are hard to discover or otherwise
@@ -573,7 +590,7 @@ non-obvious to its users. This section will document these features, how to use
 them and the benefits they bring.
 
 
-    <span id=6.1><a href=#6.1>[6.1]</a></span> Swap grep implementations for a major speed up.
+    <span id=7.1><a href=#7.1>[7.1]</a></span> Swap grep implementations for a major speed up.
     ____________________________________________________________________________
 
     The default grep implementation in KISS is busybox grep. This version of
