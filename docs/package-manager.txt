@@ -30,7 +30,7 @@ ________________________________________________________________________________
     - Building some packages in memory (tmpfs)                             [5.3]
     - Logging build duration                                               [5.4]
 
-- Extensible via 'kiss-*' utilities                                        [6.0]
+- Package Manager Extensions                                               [6.0]
 
 - Tips and Tricks                                                          [7.0]
     - Swap grep implementations for a major speed up                       [7.1]
@@ -492,7 +492,7 @@ Example:
     +--------------------------------------------------------------------------+
 
 
-[6.0] Extensible via 'kiss-*' utilities
+[6.0] Package Manager Extensions
 ________________________________________________________________________________
 
 Anything in the user's '$PATH' which matches the glob 'kiss-*' will be directly
