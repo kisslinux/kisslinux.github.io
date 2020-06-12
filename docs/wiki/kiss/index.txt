@@ -3,4 +3,3 @@ ________________________________________________________________________________
 
 - @/managing-repositories
 - @/style-guide
-- @/package-manager-hooks
