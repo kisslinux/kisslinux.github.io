@@ -34,7 +34,7 @@ ________________________________________________________________________________
   fields separated by lines and spaces. Easily parseable via any programming
   language or with basic UNIX utilities.
 
-  More information: @/package-system
+  More information: @/package-system $/kisslinux/repo
 
 
 * PORTABLE PACKAGE MANAGER
