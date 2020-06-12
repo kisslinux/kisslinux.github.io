@@ -50,8 +50,8 @@
 |                                     |  |                                     |
 | @/xorg/x11-forwarding               |  | TODO                                |
 | @/xorg/sx                           |  | TODO                                |
-| TODO                                |  | TODO                                |
-| TODO                                |  |                                     |
+|                                     |  | TODO                                |
+|                                     |  |                                     |
 |                                     |  |                                     |
 +-------------------------------------+  +-------------------------------------+
 
@@ -61,7 +61,8 @@
 |                                                                              |
 | @/software/git                           @/software/openssh                  |
 | @/software/wpa_supplicant                @/software/dhcpcd                   |
-| @/software/eiwd                          @/software/tzdata
+| @/software/eiwd                          @/software/tzdata                   |
+| @/software/vim                                                               |
 |                                                                              |
 +------------------------------------------------------------------------------+
 
