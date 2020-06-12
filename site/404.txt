@@ -8,3 +8,13 @@
                               VP   `Y88P'      VP
 
                                PAGE NOT FOUND.
+
+INDEX
+________________________________________________________________________________
+
+@/package-system          @/wiki            @/screenshots         @/testimonials
+@/package-manager         @/install         @/team                @/donate
+@/software                @/faq             @/guidestones         @/contact
+
+
+
