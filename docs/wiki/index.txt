@@ -24,8 +24,8 @@
 | DISTRIBUTION                        |  | WIKI                                |
 +-------------------------------------+  +-------------------------------------+
 |                                     |  |                                     |
-| @/kiss/managing-repositories        |  | @/help/about-this-wiki              |
-| @/kiss/style-guide                  |  | @/help/adding-a-page                |
+|  @/kiss/style-guide                 |  | @/help/about-this-wiki              |
+|                                     |  | @/help/adding-a-page                |
 |                                     |  | @/help/page-template                |
 |                                     |  |                                     |
 +-------------------------------------+  +-------------------------------------+
