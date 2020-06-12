@@ -659,6 +659,7 @@ Example help output:
 |   -> depends    Display a package's dependencies                         |
 |   -> export     Installed package to tarball                             |
 |   -> fork       Fork a package into the current dir                      |
+|   -> help       Read KISS documentation
 |   -> link       Link a repo file to another repo                         |
 |   -> maintainer Find the maintainer of a package                         |
 |   -> manifest   Display all files owned by a package                     |
