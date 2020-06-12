@@ -21,10 +21,18 @@ ________________________________________________________________________________
     - Runtime dependency detector built around 'ldd'                       [3.1]
     - Fully dynamic (and automatic) alternatives system                    [3.2]
     - 3-way handshake for files in /etc/                                   [3.3]
-    - Extensible via hooks ($KISS_HOOK)                                    [3.4]
-    - Extensible via 'kiss-*' utilities                                    [3.5]
+    - Extensible via 'kiss-*' utilities                                    [3.4]
 
 - Configuration                                                            [4.0]
+
+- Package Manager Hooks                                                    [5.0]
+    - Usage                                                                [5.1]
+    - Removing unneeded files from packages                                [5.2]
+    - Building some packages in memory (tmpfs)                             [5.3]
+    - Logging build duration                                               [5.4]
+
+- Tips and Tricks                                                          [6.0]
+    - Swap grep implementations for a major speed up                       [6.1]
 
 
 [1.0] Usage
@@ -260,13 +268,7 @@ ________________________________________________________________________________
     +--------------------------------------------------------------------------+
 
 
-    [3.4] Extensible via hooks ($KISS_HOOK)
-    ____________________________________________________________________________
-
-    See: @/wiki/kiss/package-manager-hooks
-
-
-    [3.5] Extensible via 'kiss-*' utilities
+    [3.4] Extensible via 'kiss-*' utilities
     ____________________________________________________________________________
 
     Anything in the user's '$PATH' which matches the glob 'kiss-*' will be
@@ -393,3 +395,174 @@ tools called by the package's build script.
 | CMAKE_GENERATOR | 'Unix Makefiles' or 'Ninja'.                               |
 |                 |                                                            |
 +-----------------+------------------------------------------------------------+
+
+
+[5.0] Package Manager Hooks
+________________________________________________________________________________
+
+KISS' package manager is extensible via hooks which fire at various different
+places inside the utility. Hooks allow the user to modify behavior, add new
+features or conditionally do things on a per-package basis.
+
+This setting is controlled by the '$KISS_HOOK' environment variable which takes
+the full path to a POSIX shell script as its value.
+
+Example:
+
++------------------------------------------------------------------------------+
+|                                                                              |
+|  export KISS_HOOK=$HOME/.local/bin/kiss-hook                                 |
+|                                                                              |
++------------------------------------------------------------------------------+
+
+
+    [5.1] Usage
+    ____________________________________________________________________________
+
+    The script is sourced at each hook and is given three variables as input.
+    POSIX shell does not allow sourced scripts to receive arguments, these
+    variables are instead defined via the script's environment.
+
+    - '$PKG':  The name of the current package.
+    - '$TYPE': The type of hook.
+    - '$DEST': The location where 'make install' will put files.
+
+    Valid values for '$TYPE' include:
+
+        pre-build,   post-build,   build-fail,
+        pre-install, post-install, pre-extract,
+        post-package.
+
+    As the hook script is sourced (instead of being executed in its own shell),
+    the script has the ability to override package manager internals and the
+    package manager's environment.
+
+
+    [5.2] Removing unneeded files from packages
+    ____________________________________________________________________________
+
+    Packages can contain files which you will have no use for. A simple hook can
+    be defined to remove them from packages.
+
+    NOTE: This is the default 'KISS_HOOK' script. If defining your own, be sure
+          to include this if you would like to continue to remove these files.
+
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |   case $TYPE in                                                          |
+    |       post-build)                                                        |
+    |           # Ensure that '$DEST' is set.                                  |
+    |           : "${DEST:?DEST is unset}"                                     |
+    |                                                                          |
+    |           rm -rf "$DEST/usr/share/gettext" \                             |
+    |                  "$DEST/usr/share/polkit-1" \                            |
+    |                  "$DEST/usr/share/locale" \                              |
+    |                  "$DEST/usr/share/info" \                                |
+    |                  "$DEST/usr/lib/charset.alias"                           |
+    |       ;;                                                                 |
+    |   esac                                                                   |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
+
+
+    [5.3] Building some packages in memory (tmpfs)
+    ____________________________________________________________________________
+
+    This hook runs on pre-extract and conditionally runs the source extraction,
+    package build process and resulting tarball creation in memory. The benefit
+    of this is a nice speedup throughout (especially when used alongside
+    ccache [0]).
+
+    NOTE: '/tmp' must be mounted as 'tmpfs' for this to work.
+
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |   case $TYPE in                                                          |
+    |       pre-extract)                                                       |
+    |           case $PKG in                                                   |
+    |               # Run everything on disk for these memory hungry packages. |
+    |               firefox|firefox-esr|rust|llvm|clang)                       |
+    |                   mak_dir=$KISS_TMPDIR/build-$pid                        |
+    |                   pkg_dir=$KISS_TMPDIR/pkg-$pid                          |
+    |               ;;                                                         |
+    |                                                                          |
+    |               *)                                                         |
+    |                   log "$PKG" "Activating tmpfs"                          |
+    |                                                                          |
+    |                   mak_dir=/tmp/build-$pid                                |
+    |                   pkg_dir=/tmp/pkg-$pid                                  |
+    |               ;;                                                         |
+    |           esac                                                           |
+    |                                                                          |
+    |           mkdir -p "$mak_dir" "$pkg_dir/$PKG/var/db/kiss/installed"      |
+    |       ;;                                                                 |
+    |   esac                                                                   |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
+
+
+    [5.4] Logging build duration
+    ____________________________________________________________________________
+
+    This hook adds a new message post-build with the total build duration in a
+    human readable format (00h 00m). Similar code is used in the boot process
+    of the system to calculate boot time.
+
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |   case $TYPE in                                                          |
+    |       pre-build)                                                         |
+    |           IFS=. read -r _start _ < /proc/uptime                          |
+    |       ;;                                                                 |
+    |                                                                          |
+    |       post-build)                                                        |
+    |           IFS=. read -r _end _ < /proc/uptime                            |
+    |                                                                          |
+    |           (                                                              |
+    |               _s=$((_end - _start))                                      |
+    |               _h=$((_s / 60 / 60 % 24))                                  |
+    |               _m=$((_s / 60 % 60))                                       |
+    |                                                                          |
+    |               [ "$_h" = 0 ] || _u="${_u}${_h}h "                         |
+    |               [ "$_m" = 0 ] || _u="${_u}${_m}m "                         |
+    |                                                                          |
+    |               log "$PKG" "Build finished in ${_u:-${_s}s}"               |
+    |           )                                                              |
+    |       ;;                                                                 |
+    |   esac                                                                   |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
+
+
+[6.0] Tips and Tricks
+________________________________________________________________________________
+
+A lot of the package manager's features are hard to discover or otherwise
+non-obvious to its users. This section will document these features, how to use
+them and the benefits they bring.
+
+
+    [6.1] Swap grep implementations for a major speed up.
+    ____________________________________________________________________________
+
+    The default grep implementation in KISS is busybox grep. This version of
+    grep works very well and supports a large number of features. The one issue
+    is that it is painfully slow when compared to other popular implementations.
+
+    A fairly major speedup can be attained by swapping to a different grep via
+    the alternatives system. The fastest grep implementation around is GNU grep
+    which is available in Community as 'gnugrep'.
+
+    +--------------------------------------------------------------------------+
+    | 1. Install GNU grep                                                      |
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |  $ kiss b gnugrep && kiss i gnugrep                                      |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
+    | 2. Swap to GNU grep                                                      |
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |  $ kiss a gnugrep /usr/bin/grep                                          |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
