@@ -1,0 +1,64 @@
+KERNEL CONFIGURATION GUIDE
+________________________________________________________________________________
+
+Configuring the Linux kernel is arguably the hardest step in the installation
+process. The kernel is humongous and figuring out what to enable in the
+seemingly endless option list can be a daunting task.
+
+The most important factor for success is how well one knows their hardware.
+Spend a little time doing some research prior to configuring the kernel. Knowing
+what is inside one's system is of immense value in all contexts.
+
+The physical realm however, is only part of the equation. Configuration extends
+to general features, file-systems, networking protocols, cryptography, security,
+processor features and more.
+
+This Wiki page will document kernel options, their requirement level
+(conditional, recommended or mandatory), a brief description and a rationale if
+necessary. Information about pre-built hardware as a whole will not be covered.
+
+[0.0] Index
+________________________________________________________________________________
+
+- Busybox compatibility                                                    [1.0]
+- Never lose your .config ever again                                       [2.0]
+
+
+[1,0] Busybox compatibility
+________________________________________________________________________________
+
+Various parts of the Linux build system use non-standard options with core
+utilities, this causes a build failure when using busybox. Thankfully, this non-
+standard usage depends on unimportant and rarely used kernel features.
+
+When these options are disabled (is the case by default unless 'allyesconfig' is
+used), the kernel builds just fine.
+
++------------------------------------------------------------------------------+
+| The following options are mandatory (when using busybox) (=n).               |
++------------------------------------------------------------------------------+
+|                                                                              |
+|   CONFIG_IKHEADERS         This option enables access to the in-kernel       |
+|                            headers that are generated during the build       |
+|                            process. These can be used to build eBPF tracing, |
+|                            or similar programs.                              |
+|                                                                              |
++------------------------------------------------------------------------------+
+
+
+[2,0] Never lose your .config ever again
+________________________________________________________________________________
+
+The kernel can be configured to store its configuration file to later make it
+accessible via /proc/config.gz. Storing the .config in the kernel ensures that
+you will never lose your config so long as you have its kernel.
+
++------------------------------------------------------------------------------+
+| The following options are recommended (=y).                                  |
++------------------------------------------------------------------------------+
+|                                                                              |
+|   CONFIG_IKCONFIG          Store the .config in the kernel.                  |
+|   CONFIG_IKCONFIG_PROC     Make the .config accessible as /proc/config.gz    |
+|                                                                              |
++------------------------------------------------------------------------------+
+
