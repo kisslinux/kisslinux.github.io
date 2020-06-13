@@ -21,56 +21,67 @@
 +------------------------------------------------------------------------------+
 
 +-------------------------------------+  +-------------------------------------+
+|                                     |  |                                     |
 | DISTRIBUTION                        |  | WIKI                                |
-+-------------------------------------+  +-------------------------------------+
 |                                     |  |                                     |
-|  @/kiss/style-guide                 |  | @/help/about-this-wiki              |
-|                                     |  | @/help/adding-a-page                |
-|                                     |  | @/help/page-template                |
+|  @/kiss/style-guide                 |  |  @/help/about-this-wiki             |
+|                                     |  |  @/help/adding-a-page               |
+|                                     |  |  @/help/page-template               |
 |                                     |  |                                     |
 +-------------------------------------+  +-------------------------------------+
 
 +------------------------------------------------------------------------------+
+|                                                                              |
+| CONFIGURING THE KERNEL (@/kernel/config)                                     |
+|                                                                              |
+|  The below pages do not yet exist, they are merely an example (help!).       |
+|                                                                              |
+|  @/kernel/lenovo-yoga-900                @/kernel/surface-pro                |
+|  @/kernel/thinkpad                       @/kernel/ryzen                      |
+|                                                                              |
++------------------------------------------------------------------------------+
+
++------------------------------------------------------------------------------+
+|                                                                              |
 | COMMUNITY                                                                    |
-+------------------------------------------------------------------------------+
 |                                                                              |
-| @/community/repositories   Software repositories maintained by members of    |
-|                            the Community. Highlights include Wayland, KDE,   |
-|                            XFCE4, Bluez, dbus and PulseAudio.                |
+|  @/community/repositories   Software repositories maintained by members of   |
+|                             the Community. Highlights include Wayland, KDE,  |
+|                             XFCE4, Bluez, dbus and PulseAudio.               |
 |                                                                              |
-| @/community/ports          Ports of KISS to different architectures.         |
-| @/community/projects       Community software projects.                      |
-| @/community/forks          Forks of KISS Linux.                              |
+|  @/community/ports          Ports of KISS to different architectures.        |
+|  @/community/projects       Community software projects.                     |
+|  @/community/forks          Forks of KISS Linux.                             |
 |                                                                              |
 +------------------------------------------------------------------------------+
 
 +-------------------------------------+  +-------------------------------------+
+|                                     |  |                                     |
 | XORG                                |  | WAYLAND                             |
-+-------------------------------------+  +-------------------------------------+
 |                                     |  |                                     |
-| @/xorg/x11-forwarding               |  | TODO                                |
-| @/xorg/sx                           |  | TODO                                |
-|                                     |  | TODO                                |
+|  @/xorg/x11-forwarding              |  |  TODO                               |
+|  @/xorg/sx                          |  |  TODO                               |
+|                                     |  |  TODO                               |
 |                                     |  |                                     |
 |                                     |  |                                     |
 +-------------------------------------+  +-------------------------------------+
 
 +------------------------------------------------------------------------------+
+|                                                                              |
 | SOFTWARE                                                                     |
-+------------------------------------------------------------------------------+
 |                                                                              |
-| @/software/git                           @/software/openssh                  |
-| @/software/wpa_supplicant                @/software/dhcpcd                   |
-| @/software/eiwd                          @/software/tzdata                   |
-| @/software/vim                           @/software/man-pages                |
+|  @/software/git                           @/software/openssh                 |
+|  @/software/wpa_supplicant                @/software/dhcpcd                  |
+|  @/software/eiwd                          @/software/tzdata                  |
+|  @/software/vim                           @/software/man-pages               |
 |                                                                              |
 +------------------------------------------------------------------------------+
 
-+-----------------------+  +------------------------+  +-----------------------+
-| DEVICE MANAGERS       |  | INIT SYSTEMS           |  | TODO                  |
 +-----------------------+  +------------------------+  +-----------------------+
 |                       |  |                        |  |                       |
-| @/dev/replacing-udev  |  | @/init/busybox         |  | TODO                  |
+| DEVICE MANAGERS       |  | INIT SYSTEMS           |  | TODO                  |
+|                       |  |                        |  |                       |
+|  @/dev/replacing-udev |  |  @/init/busybox        |  |  TODO                 |
 |                       |  |                        |  |                       |
 |                       |  |                        |  |                       |
 +-----------------------+  +------------------------+  +-----------------------+
