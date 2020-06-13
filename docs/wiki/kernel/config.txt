@@ -17,6 +17,7 @@ This Wiki page will document kernel options, their requirement level
 (conditional, recommended or mandatory), a brief description and a rationale if
 necessary. Information about pre-built hardware as a whole will not be covered.
 
+
 [0.0] Index
 ________________________________________________________________________________
 
