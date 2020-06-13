@@ -22,6 +22,7 @@ ________________________________________________________________________________
 
 - Busybox compatibility                                                    [1.0]
 - Never lose your .config ever again                                       [2.0]
+- Removing the perl requirement                                            [3.0]
 
 
 [1,0] Busybox compatibility
@@ -62,3 +63,21 @@ you will never lose your config so long as you have its kernel.
 |                                                                              |
 +------------------------------------------------------------------------------+
 
+
+[3.0] Removing the perl requirement
+________________________________________________________________________________
+
+Perl is needed by the build_OID_registry script which will be executed during
+the compilation process in most systems. This makes perl a mandatory dependency
+to build the kernel.
+
+A patch can be applied which adds a POSIX shell implementation of the perl
+script. This fully removes the perl requirement.
+
+@/patches/kernel-no-perl.patch  (Written by $/E5ten)
+
++------------------------------------------------------------------------------+
+|                                                                              |
+|   TIP: All links like this one are also available via 'kiss help'!           |
+|                                                                              |
++------------------------------------------------------------------------------+

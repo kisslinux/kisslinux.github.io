@@ -465,41 +465,36 @@ read the link (and the patch itself for more information). @/news/20200509a
     [7.1] Install required packages
     ____________________________________________________________________________
 
-    libelf is required in most if not all cases.
-
     +--------------------------------------------------------------------------+
+    |                                                                          |
+    | libelf (required in most if not all cases).                              |
     |                                                                          |
     |   $ kiss b libelf                                                        |
     |   $ kiss i libelf                                                        |
     |                                                                          |
     +--------------------------------------------------------------------------+
 
-    ncurses is needed for 'make menuconfig' and can be skipped if you will not
-    be using it.
-
     +--------------------------------------------------------------------------+
+    |                                                                          |
+    | ncurses (required only for 'make menuconfig').                           |
     |                                                                          |
     |   $ kiss b ncurses                                                       |
     |   $ kiss i ncurses                                                       |
     |                                                                          |
     +--------------------------------------------------------------------------+
 
-    Perl is needed by the build_OID_registry script which will be executed
-    during your kernel build 99.9% of the time. What this means is that perl
-    is *required*.
-
     +--------------------------------------------------------------------------+
     |                                                                          |
-    |   $ kiss b perl                                                          |
-    |   $ kiss i perl                                                          |
+    | perl (required in nearly all cases).                                     |
+    |                                                                          |
+    |   $ kiss b ncurses                                                       |
+    |   $ kiss i ncurses                                                       |
+    |                                                                          |
+    |                                                                          |
+    |   TIP: A patch can be applied to remove this requirement.                |
+    |        @/wiki/kernel/config#3.0                                          |
     |                                                                          |
     +--------------------------------------------------------------------------+
-
-    Perl _can_ be avoided by applying the following patch to the kernel
-    sources. The patch replaces the perl script with an implementation in POSIX
-    shell (Thanks $/E5ten).
-
-    Apply: @/dist/kernel-no-perl.patch
 
 
     [7.2] Download the kernel sources
