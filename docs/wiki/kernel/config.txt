@@ -25,7 +25,7 @@ ________________________________________________________________________________
 - Removing the perl requirement                                            [3.0]
 
 
-[1,0] Busybox compatibility
+[1.0] Busybox compatibility
 ________________________________________________________________________________
 
 Various parts of the Linux build system use non-standard options with core
@@ -36,8 +36,8 @@ When these options are disabled (is the case by default unless 'allyesconfig' is
 used), the kernel builds just fine.
 
 +------------------------------------------------------------------------------+
+|                                                                              |
 | The following options are mandatory (when using busybox) (=n).               |
-+------------------------------------------------------------------------------+
 |                                                                              |
 |   CONFIG_IKHEADERS         This option enables access to the in-kernel       |
 |                            headers that are generated during the build       |
@@ -47,7 +47,7 @@ used), the kernel builds just fine.
 +------------------------------------------------------------------------------+
 
 
-[2,0] Never lose your .config ever again
+[2.0] Never lose your .config ever again
 ________________________________________________________________________________
 
 The kernel can be configured to store its configuration file to later make it
@@ -55,8 +55,8 @@ accessible via /proc/config.gz. Storing the .config in the kernel ensures that
 you will never lose your config so long as you have its kernel.
 
 +------------------------------------------------------------------------------+
+|                                                                              |
 | The following options are recommended (=y).                                  |
-+------------------------------------------------------------------------------+
 |                                                                              |
 |   CONFIG_IKCONFIG          Store the .config in the kernel.                  |
 |   CONFIG_IKCONFIG_PROC     Make the .config accessible as /proc/config.gz    |

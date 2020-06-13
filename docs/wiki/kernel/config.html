@@ -30,7 +30,7 @@
 
 <a href="/wiki">wiki</a> / <a href='/wiki/kernel'>kernel</a> / config                                            <a href='https://github.com/kisslinux/wiki/edit/master/kernel/config.txt'>Edit this page</a>
 
-Edited (<a href='https://github.com/kisslinux/wiki/commit/a0a4a7353e7b23138a5a6536b40b9f9a78329788'>a0a4a73</a>) at 2020-06-13 by Dylan Araps
+Edited (<a href='https://github.com/kisslinux/wiki/commit/4508031c1b8410aa704b0cd7f22aa84721183e7d'>4508031</a>) at 2020-06-13 by Dylan Araps
 
 
 KERNEL CONFIGURATION GUIDE
@@ -60,7 +60,7 @@ ________________________________________________________________________________
 - Removing the perl requirement                                            <a href=#3.0>[3.0]</a>
 
 
-[1,0] Busybox compatibility
+<span id=1.0><a href=#1.0>[1.0]</a></span> Busybox compatibility
 ________________________________________________________________________________
 
 Various parts of the Linux build system use non-standard options with core
@@ -71,8 +71,8 @@ When these options are disabled (is the case by default unless 'allyesconfig' is
 used), the kernel builds just fine.
 
 +------------------------------------------------------------------------------+
+|                                                                              |
 | The following options are mandatory (when using busybox) (=n).               |
-+------------------------------------------------------------------------------+
 |                                                                              |
 |   CONFIG_IKHEADERS         This option enables access to the in-kernel       |
 |                            headers that are generated during the build       |
@@ -82,7 +82,7 @@ used), the kernel builds just fine.
 +------------------------------------------------------------------------------+
 
 
-[2,0] Never lose your .config ever again
+<span id=2.0><a href=#2.0>[2.0]</a></span> Never lose your .config ever again
 ________________________________________________________________________________
 
 The kernel can be configured to store its configuration file to later make it
@@ -90,8 +90,8 @@ accessible via /proc/config.gz. Storing the .config in the kernel ensures that
 you will never lose your config so long as you have its kernel.
 
 +------------------------------------------------------------------------------+
+|                                                                              |
 | The following options are recommended (=y).                                  |
-+------------------------------------------------------------------------------+
 |                                                                              |
 |   CONFIG_IKCONFIG          Store the .config in the kernel.                  |
 |   CONFIG_IKCONFIG_PROC     Make the .config accessible as /proc/config.gz    |
