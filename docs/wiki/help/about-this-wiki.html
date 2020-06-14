@@ -30,7 +30,7 @@
 
 <a href="/wiki">wiki</a> / <a href='/wiki/help'>help</a> / about-this-wiki                                     <a href='https://github.com/kisslinux/wiki/edit/master/help/about-this-wiki.txt'>Edit this page</a>
 
-Edited (<a href='https://github.com/kisslinux/wiki/commit/4d8c87fe6dace19c9a0bbd68fb3eca393c6bf303'>4d8c87f</a>) at 2020-06-05 by Dylan Araps
+Edited (<a href='https://github.com/kisslinux/wiki/commit/acb082cf1c23d3930acd26e057a73a54ca968fc8'>acb082c</a>) at 2020-06-14 by Dylan Araps
 
 
 ABOUT THIS WIKI
@@ -44,17 +44,26 @@ The custom syntax is designed to be unobtrusive as white-space controls layout.
 Full HTML is also supported in pages though it should only be used if 100%
 necessary.
 
+<span id=0.0><a href=#0.0>[0.0]</a></span> Index
+________________________________________________________________________________
 
-REPOSITORY LAYOUT
+- Repository layout                                                        <a href=#1.0>[1.0]</a>
+- Relative links                                                           <a href=#2.0>[2.0]</a>
+- Reference links                                                          <a href=#3.0>[3.0]</a>
+- Links to Github                                                          <a href=#4.0>[4.0]</a>
+- HTML                                                                     <a href=#4.0>[4.0]</a>
+
+
+<span id=1.0><a href=#1.0>[1.0]</a></span> Repository layout
 ________________________________________________________________________________
 
 The Wiki lives in a separate repository ($/<a href=https://github.com/kisslinux/wiki>kisslinux/wiki</a>). It is then imported
-as a submodule inside of the website's repository ($kisslinux/website). This
+as a submodule inside of the website's repository ($/<a href=https://github.com/kisslinux/website>kisslinux/website</a>). This
 keeps things neat and tidy. It also makes contribution easier as it's less
 daunting compared to nesting it inside the website's tree.
 
 
-RELATIVE LINKS
+<span id=2.0><a href=#2.0>[2.0]</a></span> Relative links
 ________________________________________________________________________________
 
 Links to other wiki pages can be written in the following way:
@@ -66,19 +75,21 @@ Which is turned into:
     @/<a href=/wiki/help/&lt;a>&lt;a</a> href="/wiki/help/wiki-syntax"&gt;wiki-syntax&lt;/a&gt;
 
 
-REFERENCE LINKS
+<span id=3.0><a href=#3.0>[3.0]</a></span> Reference links
 ________________________________________________________________________________
 
 Adding <a href=#0>[0]</a> to some text will create an anchor link to a corresponding reference.
 This corresponding reference must also be created by the writer of the document.
 The build system will simply link them together for you. <a href=#1>[1]</a>
 
-<span id=0><a href=#0>[0]</a></span> Clicking the above reference will scroll the page to these anchor links.
+The above table of contents <a href=#0.0>[0.0]</a> is simply the same concept but in reverse.
+This simple find/replace ends up being a very powerful tool.
 
+<span id=0><a href=#0>[0]</a></span> Clicking the above reference will scroll the page to these anchor links.
 <span id=1><a href=#1>[1]</a></span> Links such as this one must start a column zero.
 
 
-LINKS TO GITHUB
+<span id=4.0><a href=#4.0>[4.0]</a></span> Links to Github
 ________________________________________________________________________________
 
 Links to GitHub repositories can be written in the following way:
@@ -92,7 +103,7 @@ Which is turned into:
     $/<a href=https://github.com/&lt;a>&lt;a</a> href="https://github.com/username"&gt;username&lt;/a&gt;
 
 
-HTML
+<span id=5.0><a href=#5.0>[5.0]</a></span> HTML
 ________________________________________________________________________________
 
 Writing HTML directly is also supported as these .txt files will be inserted
