@@ -480,8 +480,8 @@ read the link (and the patch itself for more information). @/news/20200509a
     |                                                                          |
     | perl (required in nearly all cases).                                     |
     |                                                                          |
-    |   $ kiss b ncurses                                                       |
-    |   $ kiss i ncurses                                                       |
+    |   $ kiss b perl                                                          |
+    |   $ kiss i perl                                                          |
     |                                                                          |
     |                                                                          |
     |   TIP: A patch can be applied to remove this requirement.                |
