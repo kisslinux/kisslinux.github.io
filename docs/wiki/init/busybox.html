@@ -30,7 +30,7 @@
 
 <a href="/wiki">wiki</a> / <a href='/wiki/init'>init</a> / busybox                                             <a href='https://github.com/kisslinux/wiki/edit/master/init/busybox.txt'>Edit this page</a>
 
-Edited (<a href='https://github.com/kisslinux/wiki/commit/52ff93882d51533779fc495a157bed12d08c48e9'>52ff938</a>) at 2020-06-05 by Dylan Araps
+Edited (<a href='https://github.com/kisslinux/wiki/commit/9f1907139a1708925badf051855ba17cf81ac851'>9f19071</a>) at 2020-06-14 by Dylan Araps
 
 
 MANAGING SERVICES WITH BUSYBOX
@@ -56,6 +56,61 @@ ________________________________________________________________________________
 +---------+--------------------------------------------------------------------+
 
 See <a href=https://git.busybox.net/busybox/tree/runit/sv.c>https://git.busybox.net/busybox/tree/runit/sv.c</a> for full usage.
+
+
+Running commands during boot/shutdown
+________________________________________________________________________________
+
+This can be accomplished in a generic way (using /etc/rc.d) or by modifying the
+busybox-init only /etc/inittab file.
+
+
+    Using /etc/rc.d
+    ____________________________________________________________________________
+
+    This method of configuration works with every init system which uses the
+    KISS init framework. See $/<a href=https://github.com/kisslinux/init>kisslinux/init</a>
+
+    +--------------------------------------------------------------------------+
+    | Run command during boot.
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |  # Load the iwlwifi kernel module.                                       |
+    |  echo "modprobe iwlwifi" > /etc/rc.d/wifi.boot                           |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
+    | Run command during shutdown.                                             |
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |  # Save system time to hwclock.                                          |
+    |  echo "hwclock -w" > /etc/rc.d/hwclock.pre.shutdown                      |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |   TIP: .post.shutdown can also be used.                                  |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
+
+
+    Using /etc/inittab
+    ____________________________________________________________________________
+
+    +--------------------------------------------------------------------------+
+    | Run command during boot.                                                 |
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |  # Load the iwlwifi kernel module.                                       |
+    |  ::once:/bin/modprobe iwlwifi                                            |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
+    | Run command during shutdown.                                             |
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |  # Save system time to hwclock.                                          |
+    |  ::shutdown:/bin/hwclock -w                                              |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
+
 
 
 ________________________________________________________________________________
