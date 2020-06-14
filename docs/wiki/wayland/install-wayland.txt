@@ -116,12 +116,18 @@ ________________________________________________________________________________
 * In environments without systemd/elogind/consolekit the XDG_RUNTIME_DIR
   variable must be set manually. [23] Export this in your shellrc.
 
-  export XDG_RUNTIME_DIR=${XDG_RUNTIME_DIR:-/tmp/$(id -u)-runtime-dir}
-
-  [ -d "$XDG_RUNTIME_DIR" ] || {
-       mkdir -p   "$XDG_RUNTIME_DIR"
-       chmod 0700 "$XDG_RUNTIME_DIR"
-   }
++------------------------------------------------------------------------------+
+| .ashrc, .bashrc, .zshrc, etc                                                 |
++------------------------------------------------------------------------------+
+|                                                                              |
+|   export XDG_RUNTIME_DIR=${XDG_RUNTIME_DIR:-/tmp/$(id -u)-runtime-dir}       |
+|                                                                              |
+|   [ -d "$XDG_RUNTIME_DIR" ] || {                                             |
+|       mkdir -p   "$XDG_RUNTIME_DIR"                                          |
+|       chmod 0700 "$XDG_RUNTIME_DIR"                                          |
+|   }                                                                          |
+|                                                                              |
++------------------------------------------------------------------------------+
 
 * Install a Compositor of your choosing.
 
