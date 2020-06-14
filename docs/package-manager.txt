@@ -405,9 +405,9 @@ used.
     | 2. Let's 'fork' a few packages into our new repository.                  |
     +--------------------------------------------------------------------------+
     |                                                                          |
-    |  $ kiss fork curl
-    |  $ kiss fork xz
-    |  $ kiss fork zlib
+    |  $ kiss fork curl                                                        |
+    |  $ kiss fork xz                                                          |
+    |  $ kiss fork zlib                                                        |
     |                                                                          |
     +--------------------------------------------------------------------------+
 
@@ -431,7 +431,7 @@ used.
     | 2. Enable the repository                                                 |
     +--------------------------------------------------------------------------+
     |                                                                          |
-    |   $ export KISS_PATH=$KISS_PATH:/path/to/community/community
+    |   $ export KISS_PATH=$KISS_PATH:/path/to/community/community             |
     |                                                                          |
     +--------------------------------------------------------------------------+
 
@@ -489,9 +489,9 @@ used.
 
     +--------------------------------------------------------------------------+
     |                                                                          |
-    |   $ cd /path/to/myrepo/firefox
-    |   $ kiss b
-    |   $ kiss i
+    |   $ cd /path/to/myrepo/firefox                                           |
+    |   $ kiss b                                                               |
+    |   $ kiss i                                                               |
     |                                                                          |
     +--------------------------------------------------------------------------+
 
@@ -659,7 +659,7 @@ Example help output:
 |   -> depends    Display a package's dependencies                         |
 |   -> export     Installed package to tarball                             |
 |   -> fork       Fork a package into the current dir                      |
-|   -> help       Read KISS documentation
+|   -> help       Read KISS documentation                                  |
 |   -> link       Link a repo file to another repo                         |
 |   -> maintainer Find the maintainer of a package                         |
 |   -> manifest   Display all files owned by a package                     |

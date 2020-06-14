@@ -3,30 +3,16 @@ ________________________________________________________________________________
 
 Welcome to the installation guide for KISS Linux.
 
-The installation is very similar to Gentoo's stage 3 tarballs. An archive is
-used which contains a full KISS system minus the boot-loader and kernel.
-The provided archive contains all of the tooling needed to rebuild itself as
-well as the remaining packages needed for an installation.
+The installation utilizes a tarball which is unpacked to '/'. This same tarball
+is also directly usable as a chroot from any Linux distribution.
 
-You will need an existing Linux distribution to use as a base for the
-installation. It does not matter what kind of distribution it is nor does it
-matter what C library it uses.
-
-For the purpose of this guide we will be using another Linux distribution's
-live-CD to bootstrap KISS. The live-CD must include tar (with xz support),
-and other basic utilities.
+A live-CD from a another distribution is required to bootstrap KISS. It does not
+matter which distribution is used so long as it includes 'tar' and other basic
+utilities.
 
 From this point on, the guide assumes you have booted a live-CD, are logged
-in as root, have your disks/partitions/filesystems setup and have an internet
-connection.
-
-NOTE: If you come across any issues during the install process, refer to the
-      FAQ page. If your issue is not covered by the FAQ, hop on the IRC channel
-      and someone will assist you. See @/contact
-
-NOTE: Don't blindly follow the steps here. Know what you're doing and put some
-      thought into your actions. This guide will _guide_ you and not dictate
-      to you.
+in as root, have your disks, partitions and filesystems setup and have an
+internet connection.
 
 
 [1.0] The Process
@@ -83,7 +69,7 @@ ________________________________________________________________________________
 [2.0] Install KISS
 ________________________________________________________________________________
 
-Your disks should be setup and fully mounted to /mnt.
+Disks should be setup and fully mounted to /mnt.
 
 
     [2.1] Download the latest release
@@ -114,9 +100,9 @@ Your disks should be setup and fully mounted to /mnt.
     [2.3] Verify the signature (recommended)
     ____________________________________________________________________________
 
-    This step verifies that the release was signed by Dylan Araps. If the live
-    OS of your choice does not include GPG, this step can also be done on
-    another machine (with the same tarball).
+    This step verifies that the release was signed by its creator, Dylan Araps.
+    If the live OS of your choice does not include GPG, this step can also be
+    done on another machine (with the same tarball).
 
     +--------------------------------------------------------------------------+
     | Download the armored ASCII file.                                         |
@@ -131,7 +117,7 @@ Your disks should be setup and fully mounted to /mnt.
     |   $ gpg --keyserver keys.gnupg.net --recv-key 46D62DD9F1DE636E           |
     |                                                                          |
     +--------------------------------------------------------------------------+
-    | Import my public key (if this fails, try another keyserver).             |
+    | Verify the signature.                                                    |
     +--------------------------------------------------------------------------+
     |                                                                          |
     |   $ gpg --verify kiss-chroot.tar.xz.asc kiss-chroot.tar.xz               |
@@ -143,7 +129,8 @@ Your disks should be setup and fully mounted to /mnt.
     ____________________________________________________________________________
 
     This is a simple script to chroot into /mnt and set up the environment for
-    the rest of the installation.
+    the rest of the installation. The script handles mounting pseudo filesystems
+    (/proc, /dev, /sys), enabling network inside the chroot, etc.
 
     +--------------------------------------------------------------------------+
     | Download the chroot helper.                                              |
@@ -165,6 +152,7 @@ Your disks should be setup and fully mounted to /mnt.
     |   $ chmod +x kiss-chroot                                                 |
     |                                                                          |
     +--------------------------------------------------------------------------+
+
 
     [2.5] Unpack the tarball
     ____________________________________________________________________________
@@ -191,13 +179,13 @@ Your disks should be setup and fully mounted to /mnt.
     |                                                                          |
     +--------------------------------------------------------------------------+
 
+
 [3.0] Enable repository signing
 ________________________________________________________________________________
 
-This step is _entirely optional_ and can also be done after the installation.
-
-Repository signing ensures that all updates have been signed by (Dylan Araps)
-and further prevents any unsigned updates from reaching your system.
+This step is optional and can also be done after the installation. Repository
+signing ensures that all updates have been signed by (Dylan Araps) and further
+prevents any unsigned updates from reaching your system.
 
 +------------------------------------------------------------------------------+
 | TIP!                                                                         |
@@ -227,8 +215,7 @@ and further prevents any unsigned updates from reaching your system.
     [3.2] Import my (Dylan Araps') key
     ____________________________________________________________________________
 
-    If the GNU keyserver fails on your network, you can try an alternative
-    mirror (pgp.mit.edu for example).
+    If the GNU keyserver fails on your network, try an alternative mirror.
 
     +--------------------------------------------------------------------------+
     | Import my public key.                                                    |
@@ -249,11 +236,11 @@ and further prevents any unsigned updates from reaching your system.
     ____________________________________________________________________________
 
     Repository signature verification uses a feature built into git itself
-    (merge.verifySignatures`)!  This can be disabled at any time using the
-    inverse of the git command below.
+    (merge.verifySignatures)!  This can be disabled at any time using the
+    inverse of the below git command.
 
     The same steps can also be followed with 3rd-party repositories if the
-    owner signs their commits.
+    owner chooses to sign their commits.
 
     +--------------------------------------------------------------------------+
     |                                                                          |
@@ -266,8 +253,7 @@ and further prevents any unsigned updates from reaching your system.
 [4.0] Rebuild kiss
 ________________________________________________________________________________
 
-This step is entirely optional and you can just use the supplied binaries from
-the downloaded chroot. This step can also be done after the installation.
+This step is entirely optional and can also be done post-installation.
 
 
     [4.1] Modify compiler options (optional)
@@ -341,7 +327,7 @@ Each kiss action (build, install, etc) has a shorthand alias. From now on,
 The software below is required unless stated otherwise.
 
 
-    [5.1] Filesystems
+    [5.1] Filesystem utilities
     ____________________________________________________________________________
 
     NOTE: Open an issue for additional filesystem support.
@@ -452,14 +438,21 @@ not done this before, below are a few guides to get you started.
 - https://kernelnewbies.org/KernelBuild
 
 The Linux kernel is not managed by the package manager. The kernel is managed
-manually by the user.
+manually by the user. (Rationale: @/faq#7.3)
 
-KISS does not support booting using an initramfs. When configuring your kernel
-ensure that all required file-system, disk controller and USB drivers are built
-with [*] (Yes) and not [m] (Module).
+KISS does not support booting using an initramfs (see @/faq#7.2). When
+configuring your kernel ensure that all required file-system, disk controller
+and USB drivers are built with [*] (=y) and not [m] (=m).
 
 A patch may be required for some kernels when built with GCC 10.1.0. Please
 read the link (and the patch itself for more information). @/news/20200509a
+
++------------------------------------------------------------------------------+
+|                                                                              |
+|   TIP: The Wiki contains a basic kernel configuration page.                  |
+|        @/wiki/kernel/config                                                  |
+|                                                                              |
++------------------------------------------------------------------------------+
 
 
     [7.1] Install required packages
@@ -505,7 +498,6 @@ read the link (and the patch itself for more information). @/news/20200509a
     - https://kernel.org    (vanilla)
     - https://www.fsfla.org (libre)
 
-
     A larger list of kernels can be found here:
 
     - https://wiki.archlinux.org/index.php/Kernel
@@ -520,7 +512,7 @@ read the link (and the patch itself for more information). @/news/20200509a
     | Extract the kernel sources.                                              |
     +--------------------------------------------------------------------------+
     |                                                                          |
-    |   $ tar xvf KERNEL_SOURCE.tar.??                                         |
+    |   $ tar xvf KERNEL_SOURCE                                                |
     |   $ cd linux-*                                                           |
     |                                                                          |
     +--------------------------------------------------------------------------+
@@ -529,11 +521,10 @@ read the link (and the patch itself for more information). @/news/20200509a
     [7.3] Download firmware blobs (if required)
     ____________________________________________________________________________
 
-    To keep the KISS repositories entirely FOSS, the proprietary kernel
-    firmware is omitted. This also makes sense as the kernel itself is manually
-    managed by the user.
-
-    Note: This step is only required if your hardware utilizes these drivers.
+    To keep the KISS repositories entirely FOSS, the proprietary kernel firmware
+    is omitted. This also makes sense as the kernel itself is manually managed
+    by the user. This step is only required if your hardware utilizes makes use
+    of this firmware.
 
     https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git
 
@@ -583,6 +574,10 @@ read the link (and the patch itself for more information). @/news/20200509a
     |                                                                          |
     |   $ cp .config /path/to/somewhere                                        |
     |                                                                          |
+    |                                                                          |
+    |   TIP: The kernel can backup its own .config file.                       |
+    |        @/wiki/kernel/config#2.0                                          |
+    |                                                                          |
     +--------------------------------------------------------------------------+
 
 
@@ -591,7 +586,7 @@ read the link (and the patch itself for more information). @/news/20200509a
 
     This may take a while to complete. The compilation time depends on your
     hardware and kernel configuration. The 'nproc' command outputs the total
-    number of threads which we pass to make for a multi-core build.
+    number of threads which we pass to make for a multi-threaded build.
 
     +--------------------------------------------------------------------------+
     |                                                                          |
@@ -628,10 +623,9 @@ read the link (and the patch itself for more information). @/news/20200509a
 [8.0] The bootloader
 ________________________________________________________________________________
 
-The default bootloader is grub (though nothing prevents you from using whatever
-bootloader you desire). This bootloader was chosen as most people are familiar
-with it, both BIOS and UEFI are supported and vast amounts of documentation for
-it exists
+The default bootloader is grub (though nothing prevents the use of another
+bootloader). This default was chosen as most people are familiar with it, both
+BIOS and UEFI are supported and vast amounts of documentation for it exists.
 
 
     [8.1] Recommended
@@ -725,9 +719,9 @@ disabled by default.
 
 Add the repository to the system-wide 'KISS_PATH'. The 'KISS_PATH' variable
 works exactly like 'PATH'. Each repository is split by ':' and is checked in the
-order they're written.
+order they're written. See @/package-manager#5.0
 
-Add the full path to the repository you cloned above to the existing KISS_PATH.
+Add the full path of the repository cloned above to the existing KISS_PATH.
 NOTE: The subdirectory must also be added.
 
 +------------------------------------------------------------------------------+
@@ -747,7 +741,7 @@ NOTE: The subdirectory must also be added.
 ________________________________________________________________________________
 
 To install Xorg, the input drivers and a basic default set of fonts, run the
-following commands
+following commands. See @/wiki/xorg
 
 +------------------------------------------------------------------------------+
 |                                                                              |
@@ -786,6 +780,8 @@ ________________________________________________________________________________
 You should now be able to reboot into your KISS installation. Typical
 configuration should follow (creation of users, service configuration,
 installing a window manager, terminal etc).
+
+The KISS Wiki is a good place to look for post-installation information.
 
 +------------------------------------------------------------------------------+
 | TIP!                                                                         |
