@@ -1,47 +1,72 @@
-SCROT [0]
+SOFTWARE_NAME [0]
 ________________________________________________________________________________
 
-Scrot is a minimalist command line screen capturing application. It allows
-substantial degree of flexibility by specifying parameters on command line,
-including the ability to invoke a third-party utility to manipulate the
-resulting screenshot.
-
-TIP: Append '.txt' to the URL to see the page source. (@/page-template.txt)
+DESCRIPTION
 
 
-Description
+Index (recommended for larger pages)
 ________________________________________________________________________________
 
-Features of the program include the ability to limit the scope of capturing to
-a specific screen area, to set the delay (if needed to capture some menu or
-another UI element which is shown only when focused) and to specify the
-filename template using wildcards (including those of the strftime function
-from the C standard library).[3] Other features include creating thumbnails of
-the taken screenshots and specifying the quality of the resulting image if
-lossy format is required.[4]
+- Usage                                                                    [0.0]
 
-The scrot utility follows the UNIX philosophy principles formulated by Doug
-McIlroy: the only thing it does is screen capturing, though it allows one to
-specify a command for further manipulations of a resulting file.[5]
+- Heading                                                                  [1.0]
+    - Subheading                                                           [1.1]
 
-The ability to control scrot from the command line allows the user to run it
-over the network with tools like OpenSSH to get a screenshot of a remote
-desktop[6] or execute it as the window manager command binding.[7]
-
-Scrot was forked as part of the Resurrecting Open Source Project.[8] This
-updated fork is being used for the Arch Linux package of scrot.
+- Heading                                                                  [2.1]
+- References                                                               [3.0]
 
 
-References
+[0.0] Usage
 ________________________________________________________________________________
 
-[0] This page is from Wikipedia and merely serves as a temporary and quick
-    example page. https://en.wikipedia.org/wiki/Scrot
+Begin by first verifying that you have SOFTWARE_NAME installed:
 
-[1] http://manpages.ubuntu.com/manpages/vivid/man1/scrot.1.html
++------------------------------------------------------------------------------+
+|                                                                              |
+|   $ kiss b SOFTWARE_NAME && kiss i SOFTWARE_NAME                             |
+|                                                                              |
++------------------------------------------------------------------------------+
 
-[2] ...
 
-[3] ...
+[1.0] Heading
+________________________________________________________________________________
 
-[4] ...
+WORDS
+
++------------------------------------------------------------------------------+
+|                                                                              |
+|   $ cmd                                                                      |
+|                                                                              |
++------------------------------------------------------------------------------+
+
+
+    [1.1] Subheading
+    ____________________________________________________________________________
+
+    WORDS
+
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |   $ cmd                                                                  |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
+
+
+[2.0] Heading
+________________________________________________________________________________
+
+WORDS
+
++------------------------------------------------------------------------------+
+|                                                                              |
+|   $ cmd                                                                      |
+|                                                                              |
++------------------------------------------------------------------------------+
+
+
+[3.0] References
+________________________________________________________________________________
+
+[0] https://example.com
+[1] https://example.com
+[2] https://example.com

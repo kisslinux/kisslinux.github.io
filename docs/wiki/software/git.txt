@@ -5,7 +5,16 @@ Git is a free and open source distributed version control system designed to
 handle everything from small to very large projects with speed and efficiency.
 
 
-Commands
+[0.0] Index
+________________________________________________________________________________
+
+- Git Commands                                                             [1.0]
+- Example 1: Staying Up-to-Date                                            [2.0]
+- Example 2: Squashing Your Latest Commits Into One                        [3.0]
+- Example 3: Writing a new KISS Wiki article                               [4.0]
+
+
+[1.0] Git Commands
 ________________________________________________________________________________
 
 New KISS users may have various levels of exposure to git and other forms of
@@ -64,7 +73,7 @@ sheet of git commands.
 +-------------------+----------------------------------------------------------+
 
 
-Example 1: Staying Up-to-Date [1]
+[2.0] Example 1: Staying Up-to-Date [1]
 ________________________________________________________________________________
 
 In a standard setup, you generally have an origin and an upstream remote - the
@@ -112,7 +121,7 @@ will typically be the same. Let's use merge:
 +------------------------------------------------------------------------------+
 
 
-Example 2: Squashing Your Latest Commits Into One [2]
+[3.0] Example 2: Squashing Your Latest Commits Into One [2]
 ________________________________________________________________________________
 
 With git it’s possible to squash previous commits into one. This is a great way
@@ -171,6 +180,100 @@ When done, save and quit your editor. Git will now squash the commits into one.
 Note: Do not squash commits that you’ve already shared with others. You are
       changing history and it will cause trouble for others.
 
+
+[4.0] Example 3: Writing a new KISS Wiki article.
+________________________________________________________________________________
+
+Note: The method described below requires a GitHub user account. If you do not
+      have a GitHub user account or do not wish to create one, you can still 
+      submit your articles or ideas directly to dylan@k1ss.org.
+
+Lets say you are interested in writing a new article for the KISS Wiki. The
+process is fairly straight forward!  
+
+Begin by first creating a fork of the KISS Wiki repository. One way to do this
+is from a web browser by going to the https://github.com/kisslinux/wiki page, 
+clicking the "Fork" button in the upper right corner of the page. Doing so 
+should create a copy of the KISS Wiki repository on your user account (e.g. 
+https://github.com/USERNAME/wiki). 
+
+Clone the forked repository to your PC with the following command. Remember to 
+replace USERNAME with your actual GitHub username.
+
++------------------------------------------------------------------------------+
+|                                                                              |
+|   $ git clone https://github.com/USERNAME/wiki.git                           |
+|                                                                              |
++------------------------------------------------------------------------------+
+
+Once cloned to your PC, navigate to the wiki directory:
+
++------------------------------------------------------------------------------+
+|                                                                              |
+|   $ cd wiki                                                                  |
+|                                                                              |
++------------------------------------------------------------------------------+
+
+Add your new article in this directory per the @/help/adding-a-page guidelines. 
+Once you are ready to publish your newly created article, you need to add/update
+your forked reposity. From the main wiki directory, you can check the status of
+all changes or newly created files:
+
++------------------------------------------------------------------------------+
+|                                                                              |
+|   $ git status                                                               |
+|                                                                              |
++------------------------------------------------------------------------------+
+ 
+Using the output of command above, update/add the new files your forked 
+repository that are ready to be published:
+
++------------------------------------------------------------------------------+
+|                                                                              |
+|   $ git add FILE_NAME1 FILE_NAME                                             |
+|                                                                              |
++------------------------------------------------------------------------------+
+
+Alternatively, you can add ALL newly updated/created files in a single command:
+
++------------------------------------------------------------------------------+
+|                                                                              |
+|   $ git add *                                                                |
+|                                                                              |
++------------------------------------------------------------------------------+
+
+Next, you will commit your changes. 
+
++------------------------------------------------------------------------------+
+|                                                                              |
+|   $ git commit -m "YOUR_COMMIT_MSG"                                          |
+|                                                                              |
++------------------------------------------------------------------------------+
+
+Replace YOUR_COMMIT_MSG with a short description of change(s) or the new article 
+(i.e. "git: new article" or "git: add new git example"). 
+
+At this point you are ready to push your changes to the GitHub server with the
+following command.
+
++------------------------------------------------------------------------------+
+|                                                                              |
+|   $ git push                                                                 |
+|                                                                              |
++------------------------------------------------------------------------------+
+
+Upon doing so, you will be prompted to enter your GitHub user credentials. Once
+entered, the latest changes will be uploaded to your forked Wiki repository 
+on GitHub.
+
+The last step is to initiate a Pull Request (PR). A PR can be initiated via a
+web browser by going to the https://github.com/USERNAME/wiki page and pressing
+the "New pull request" button near the top of the page. In the Title field, 
+enter the reason for initiating a PR (i.e. "git: new article") and press the 
+"Create pull request" button.
+
+Note: Pay attention to which branch is being merged into the master branch of
+      the repository :kisslinux/wiki".
 
 
 References
