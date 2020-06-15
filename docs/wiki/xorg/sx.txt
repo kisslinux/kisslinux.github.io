@@ -32,8 +32,8 @@ Create the required directories and rc file:
 +------------------------------------------------------------------------------+
 |                                                                              |
 |   $ mkdir -p ~/.sx/sx                                                        |
-|   $ touch sxrc                                                               |
-|   $ chmod +x sxrc                                                            |
+|   $ touch ~/.sx/sx/sxrc                                                               |
+|   $ chmod +x ~/.sx/sx/sxrc                                                            |
 |                                                                              |
 +------------------------------------------------------------------------------+
 
