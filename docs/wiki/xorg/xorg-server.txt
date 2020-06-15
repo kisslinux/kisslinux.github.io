@@ -7,7 +7,17 @@ graphical user interfaces, like desktop environments or window managers, and
 their applications.
 
 
-Getting Started
+[0.0] Index
+________________________________________________________________________________
+
+- Getting Started                                                          [1.0]
+- Graphics Drivers                                                         [2.0]
+- Window Managers                                                          [3.0]
+- Remote X Session Management                                              [4.0]
+- References                                                               [5.0]
+
+
+[1.0] Getting Started
 ________________________________________________________________________________
 
 If you are following along from the KISS installation guide, you should already
@@ -24,7 +34,7 @@ and configure _ONE_ of the following packages:
 * sx (@/xorg/sx)
 
 
-Graphics Drivers
+[2.0] Graphics Drivers
 ________________________________________________________________________________
 
 Depending on your graphics card hardware, one of the following graphics card 
@@ -40,7 +50,7 @@ Note: xf86-video-intel is not needed for Intel GPUs as the generic modesetting
       driver built into Xorg works really well.
 
 
-Window Managers
+[3.0] Window Managers
 ________________________________________________________________________________
 
 Note: Installing a window manager is entirely optional and based on user 
@@ -74,7 +84,7 @@ The following is a snapshot of some of the available WMs at this time:
 |                    |                                                         |
 +--------------------+---------------------------------------------------------+
 
-Remote X Session Management
+[4.0] Remote X Session Management
 ________________________________________________________________________________
 
 What if you need to access your applications remotely?  The solution is to 
@@ -82,7 +92,7 @@ utilize X server's "baked in" X11 forwarding solution.  For for more information
 check out the @/xorg/x11-forwarding article.  
 
 
-References
+[5.0] References
 ________________________________________________________________________________
 
 [0] https://www.x.org/wiki/

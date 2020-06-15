@@ -12,6 +12,7 @@ ________________________________________________________________________________
 - Example 1: Staying Up-to-Date                                            [2.0]
 - Example 2: Squashing Your Latest Commits Into One                        [3.0]
 - Example 3: Writing a new KISS Wiki article                               [4.0]
+- References                                                               [5.0]
 
 
 [1.0] Git Commands
@@ -276,7 +277,7 @@ Note: Pay attention to which branch is being merged into the master branch of
       the repository :kisslinux/wiki".
 
 
-References
+[5.0] References
 ________________________________________________________________________________
 
 [0] https://git-scm.com
