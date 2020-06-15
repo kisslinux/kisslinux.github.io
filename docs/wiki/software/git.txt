@@ -214,10 +214,10 @@ Once cloned to your PC, navigate to the wiki directory:
 |                                                                              |
 +------------------------------------------------------------------------------+
 
-Add your new article in this directory per the @/help/adding-a-page guidelines. 
-Once you are ready to publish your newly created article, you need to add/update
-your forked reposity. From the main wiki directory, you can check the status of
-all changes or newly created files:
+Add your new article in this directory per the #/wiki/help/adding-a-page 
+guidelines. Once you are ready to publish your newly created article, you need 
+to add/update your forked repository. From the main wiki directory, you can 
+check the status of all changes or newly created files:
 
 +------------------------------------------------------------------------------+
 |                                                                              |
