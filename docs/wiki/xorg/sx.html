@@ -30,7 +30,7 @@
 
 <a href="/wiki">wiki</a> / <a href='/wiki/xorg'>xorg</a> / sx                                                  <a href='https://github.com/kisslinux/wiki/edit/master/xorg/sx.txt'>Edit this page</a>
 
-Edited (<a href='https://github.com/kisslinux/wiki/commit/c3ff380f49384bd69fa34c4278efeca2644df1ea'>c3ff380</a>) at 2020-06-15 by Michael Czigler
+Edited (<a href='https://github.com/kisslinux/wiki/commit/46e4d7cec458d66b0645ab32a0541866a1cc26a9'>46e4d7c</a>) at 2020-06-17 by Michael Czigler
 
 
 SX <a href=#0>[0]</a>
@@ -51,9 +51,8 @@ Ensure that you have sx installed first:
 |                                                                              |
 +------------------------------------------------------------------------------+
 
-The default data and config directories can be modified to your liking via
-environment variables. The following commands should be issued as a regular
-user (i.e. non-root):
+The default data and config directories can be modified via environment 
+variables:
 
 +------------------------------------------------------------------------------+
 |                                                                              |
@@ -73,7 +72,7 @@ Create the required directories and rc file:
 +------------------------------------------------------------------------------+
 
 At this point, you can add content to your sxrc file. For example, if you
-wanted to start sowm windows manager, you could add the following:
+wanted to start sowm window manager, you could add the following:
 
 +------------------------------------------------------------------------------+
 |                                                                              |
@@ -81,13 +80,27 @@ wanted to start sowm windows manager, you could add the following:
 |                                                                              |
 +------------------------------------------------------------------------------+
 
-You should now be able to start your X server with sx:
+You should now be able to start your window manager and X server with sx:
 
 +------------------------------------------------------------------------------+
 |                                                                              |
 |   $ sx                                                                       |
 |                                                                              |
 +------------------------------------------------------------------------------+
+
+
+Start After Login
+________________________________________________________________________________
+
+Add the following to the bottom of your ~/.profile file:
+
++------------------------------------------------------------------------------+
+|                                                                              |
+|   $ [ -z "$DISPLAY" ] && [ "$(tty)" = /dev/tty1 ] && exec sx                 |
+|                                                                              |
++------------------------------------------------------------------------------+
+
+If you would like to remain logged in when the X session ends, remove exec.
 
 
 References

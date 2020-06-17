@@ -15,7 +15,7 @@ Vim configuration is stored in a local users ~/.vimrc file. The contents of
 this file are based on the users preferences.
 
 The following configuration is an example based on Sven Gucke's [1] published
-vim setup and modified to satisfy the KISS @/kiss/style-guide.
+vim setup and modified to satisfy the KISS #/kiss/style-guide.
 
 Note: There are no "fancy" text decorations or highlighting. Just a core set of
       features selected to assist in code and article writing.

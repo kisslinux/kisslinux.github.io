@@ -30,8 +30,8 @@ have the following packages installed:
 In order to start the X window system server, you will also need to install
 and configure _ONE_ of the following packages:
 
-* xinit (@/xorg/xinit)
-* sx (@/xorg/sx)
+* xinit (@/xinit)
+* sx (@/sx)
 
 
 [2.0] Graphics Drivers
@@ -89,7 +89,7 @@ ________________________________________________________________________________
 
 What if you need to access your applications remotely?  The solution is to 
 utilize X server's "baked in" X11 forwarding solution.  For for more information, 
-check out the @/xorg/x11-forwarding article.  
+check out the @/x11-forwarding article.  
 
 
 [5.0] References

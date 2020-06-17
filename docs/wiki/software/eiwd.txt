@@ -2,7 +2,7 @@ EIWD [0]
 ________________________________________________________________________________
 
 eiwd is iNet Wireless Daemon (iwd) without dbus. iNet Wireless Daemon aims to 
-replace @/software/wpa_supplicant while providing the following benefits:
+replace @/wpa_supplicant while providing the following benefits:
 
 * Simplification of network management.
 * Faster network discovery.

@@ -157,5 +157,5 @@ ________________________________________________________________________________
 [19] https://bugzilla.mozilla.org/show_bug.cgi?id=1610199
 [20] (webkit2gtk VAAPI source needed)
 [21] User Wayland repsitory $/sdsddsd1/mywayland
-[22] @/kiss/managing-repositories
+[22] #/kiss/managing-repositories
 [24] https://wiki.gentoo.org/wiki/Sway#Other

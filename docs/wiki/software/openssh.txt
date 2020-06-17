@@ -112,7 +112,7 @@ ________________________________________________________________________________
 +------------------------------------------------------------------------------+
 
 * If you are looking to forward GUI-based applications through an SSH tunnel,
-  refer to the @/xorg/x11-forwarding article.
+  refer to the #/wiki/xorg/x11-forwarding article.
 
 
 References
