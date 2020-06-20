@@ -14,6 +14,8 @@ ________________________________________________________________________________
 - Graphics Drivers                                                         [2.0]
 - Window Managers                                                          [3.0]
 - Remote X Session Management                                              [4.0]
+    - VNC                                                                  [4.1]
+    - x11-forwarding                                                       [4.2]
 - References                                                               [5.0]
 
 
@@ -87,9 +89,27 @@ The following is a snapshot of some of the available WMs at this time:
 [4.0] Remote X Session Management
 ________________________________________________________________________________
 
-What if you need to access your applications remotely?  The solution is to 
-utilize X server's "baked in" X11 forwarding solution.  For for more information, 
-check out the @/x11-forwarding article.  
+The following tools are currently available for remote X session management.
+
+
+    [4.1] VNC
+    ____________________________________________________________________________
+
+    A Virtual Network Computing (VNC) is a graphical desktop-sharing system that 
+    uses the Remote Frame Buffer protocol (RFB) to remotely control another 
+    computer. The following VNC tools are currently offered through the
+    Community repository:
+    
+    * x11vnc (#/wiki/software/x11vnc)
+
+
+    [4.2] x11-forwarding
+    ____________________________________________________________________________
+
+    What if you need to access your applications remotely (with no additional 
+    applications)? The solution is to utilize X server's "baked in" X11 
+    forwarding solution. For for more information, check out the 
+    @/x11-forwarding article.  
 
 
 [5.0] References

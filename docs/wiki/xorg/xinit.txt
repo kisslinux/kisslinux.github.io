@@ -43,6 +43,20 @@ You should now be able to start your X server with startx:
 +------------------------------------------------------------------------------+
 
 
+Start After Login
+________________________________________________________________________________
+
+Add the following to the bottom of your ~/.profile file:
+
++------------------------------------------------------------------------------+
+|                                                                              |
+|   $ [ -z "$DISPLAY" ] && [ "$(tty)" = /dev/tty1 ] && exec startx             |
+|                                                                              |
++------------------------------------------------------------------------------+
+
+If you would like to remain logged in when the X session ends, remove exec.
+
+
 References
 ________________________________________________________________________________
 

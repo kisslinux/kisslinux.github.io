@@ -30,7 +30,7 @@
 
 <a href="/wiki">wiki</a> / <a href='/wiki/xorg'>xorg</a> / xinit                                               <a href='https://github.com/kisslinux/wiki/edit/master/xorg/xinit.txt'>Edit this page</a>
 
-Edited (<a href='https://github.com/kisslinux/wiki/commit/c2a8568bf79fb4daee425a137d183680b1457a26'>c2a8568</a>) at 2020-06-12 by Michael Czigler
+Edited (<a href='https://github.com/kisslinux/wiki/commit/d5ab73209b512557e21d748a65369cd759761d73'>d5ab732</a>) at 2020-06-20 by Michael Czigler
 
 
 XINIT <a href=#0>[0]</a>
@@ -76,6 +76,20 @@ You should now be able to start your X server with startx:
 |   $ startx                                                                   |
 |                                                                              |
 +------------------------------------------------------------------------------+
+
+
+Start After Login
+________________________________________________________________________________
+
+Add the following to the bottom of your ~/.profile file:
+
++------------------------------------------------------------------------------+
+|                                                                              |
+|   $ [ -z "$DISPLAY" ] && [ "$(tty)" = /dev/tty1 ] && exec startx             |
+|                                                                              |
++------------------------------------------------------------------------------+
+
+If you would like to remain logged in when the X session ends, remove exec.
 
 
 References

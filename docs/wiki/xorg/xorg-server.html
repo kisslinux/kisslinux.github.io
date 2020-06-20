@@ -30,7 +30,7 @@
 
 <a href="/wiki">wiki</a> / <a href='/wiki/xorg'>xorg</a> / xorg-server                                         <a href='https://github.com/kisslinux/wiki/edit/master/xorg/xorg-server.txt'>Edit this page</a>
 
-Edited (<a href='https://github.com/kisslinux/wiki/commit/af8eb08583aeb83f0d7224b3c1e7e5452750fa71'>af8eb08</a>) at 2020-06-15 by Nihal
+Edited (<a href='https://github.com/kisslinux/wiki/commit/47d64aa3b1570e15f2f339d034b08010e4122790'>47d64aa</a>) at 2020-06-19 by Michael Czigler
 
 
 XORG-SERVER <a href=#0>[0]</a>
@@ -49,6 +49,8 @@ ________________________________________________________________________________
 - Graphics Drivers                                                         <a href=#2.0>[2.0]</a>
 - Window Managers                                                          <a href=#3.0>[3.0]</a>
 - Remote X Session Management                                              <a href=#4.0>[4.0]</a>
+    - VNC                                                                  <a href=#4.1>[4.1]</a>
+    - x11-forwarding                                                       <a href=#4.2>[4.2]</a>
 - References                                                               <a href=#5.0>[5.0]</a>
 
 
@@ -122,9 +124,27 @@ The following is a snapshot of some of the available WMs at this time:
 <span id=4.0><a href=#4.0>[4.0]</a></span> Remote X Session Management
 ________________________________________________________________________________
 
-What if you need to access your applications remotely?  The solution is to 
-utilize X server's "baked in" X11 forwarding solution.  For for more information, 
-check out the @/<a href=/wiki/xorg/x11-forwarding>x11-forwarding</a> article.  
+The following tools are currently available for remote X session management.
+
+
+    <span id=4.1><a href=#4.1>[4.1]</a></span> VNC
+    ____________________________________________________________________________
+
+    A Virtual Network Computing (VNC) is a graphical desktop-sharing system that 
+    uses the Remote Frame Buffer protocol (RFB) to remotely control another 
+    computer. The following VNC tools are currently offered through the
+    Community repository:
+    
+    * x11vnc (#/<a href=/wiki/software/x11vnc>wiki/software/x11vnc</a>)
+
+
+    <span id=4.2><a href=#4.2>[4.2]</a></span> x11-forwarding
+    ____________________________________________________________________________
+
+    What if you need to access your applications remotely (with no additional 
+    applications)? The solution is to utilize X server's "baked in" X11 
+    forwarding solution. For for more information, check out the 
+    @/<a href=/wiki/xorg/x11-forwarding>x11-forwarding</a> article.  
 
 
 <span id=5.0><a href=#5.0>[5.0]</a></span> References
