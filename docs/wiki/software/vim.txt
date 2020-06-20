@@ -25,9 +25,8 @@ Note: There are no "fancy" text decorations or highlighting. Just a core set of
 +------------------------------------------------------------------------------+
 |                                                                              |
 |   set ai nocp digraph ek hid ru sc vb wmnu noeb noet nosol                   |
-|   filetype plugin indent on                                                  |
 |   syntax on                                                                  |
-|   set bs=2 fo=cqrt ls=2 shm=at tw=72 sw=4 ts=4 sts=4 ww=<,>,h,l              |
+|   set bs=2 fo=cqrt ls=2 shm=at tw=80 sw=4 ts=4 sts=4 ww=<,>,h,l              |
 |   set comments=b:#,:%,n:>                                                    |
 |   set list listchars=tab:»·,trail:·                                          |
 |   autocmd FileType markdown,text setlocal spell                              |
@@ -138,8 +137,8 @@ by using the ":help OPTION" command in vim.
 |   sw=4                 |   indentation” is worth or a backspace keypress     |
 |                        |   is worth.                                         |
 |                        |                                                     |
-|   textwidth            |   This explicitly sets the width of text to 72      |
-|   set tw=72            |   characters. After each completion of a word in    |
+|   textwidth            |   This explicitly sets the width of text to 80      |
+|   set tw=80            |   characters. After each completion of a word in    |
 |                        |   insert mode, vim checks whether its end is past   |
 |                        |   this width; if so then it will break the word     |
 |                        |   onto the next line. Note that vim will remove     |
