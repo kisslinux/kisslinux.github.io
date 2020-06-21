@@ -485,7 +485,7 @@ read the link (and the patch itself for more information). @/news/20200509a
     |                                                                          |
     |                                                                          |
     |   TIP: A patch can be applied to remove this requirement.                |
-    |        @/wiki/kernel/config#3.0                                          |
+    |        - @/wiki/kernel/config#3.0                                        | |        - /usr/share/doc/wiki/kernel/patches/kernel-no-perl.patch         |
     |                                                                          |
     +--------------------------------------------------------------------------+
 
