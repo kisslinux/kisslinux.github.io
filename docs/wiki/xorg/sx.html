@@ -30,7 +30,7 @@
 
 <a href="/wiki">wiki</a> / <a href='/wiki/xorg'>xorg</a> / sx                                                  <a href='https://github.com/kisslinux/wiki/edit/master/xorg/sx.txt'>Edit this page</a>
 
-Edited (<a href='https://github.com/kisslinux/wiki/commit/46e4d7cec458d66b0645ab32a0541866a1cc26a9'>46e4d7c</a>) at 2020-06-17 by Michael Czigler
+Edited (<a href='https://github.com/kisslinux/wiki/commit/b8498c985dc3e3cd5c402999b0d21e682936c2de'>b8498c9</a>) at 2020-06-23 by Michael Czigler
 
 
 SX <a href=#0>[0]</a>
@@ -51,13 +51,13 @@ Ensure that you have sx installed first:
 |                                                                              |
 +------------------------------------------------------------------------------+
 
-The default data and config directories can be modified via environment 
-variables:
+The default XDG_DATA_HOME and XDG_CONFIG_HOME directories can be modified via 
+environment variables:
 
 +------------------------------------------------------------------------------+
 |                                                                              |
-|   $ echo "export XDG_DATA_HOME=$HOME/.sx" >> ~/.profile                      |
-|   $ echo "export XDG_CONFIG_HOME=$HOME/.sx" >> ~/.profile                    |
+|   $ echo "export XDG_DATA_HOME=$HOME/.config" >> ~/.profile                  |
+|   $ echo "export XDG_CONFIG_HOME=$HOME/.config" >> ~/.profile                |
 |                                                                              |
 +------------------------------------------------------------------------------+
 
@@ -65,9 +65,9 @@ Create the required directories and rc file:
 
 +------------------------------------------------------------------------------+
 |                                                                              |
-|   $ mkdir -p ~/.sx/sx                                                        |
-|   $ touch ~/.sx/sx/sxrc                                                      |
-|   $ chmod +x ~/.sx/sx/sxrc                                                   |
+|   $ mkdir -p ~/.config/sx                                                    |
+|   $ touch ~/.config/sx/sxrc                                                  |
+|   $ chmod +x ~/.config/sx/sxrc                                               |
 |                                                                              |
 +------------------------------------------------------------------------------+
 
@@ -76,7 +76,7 @@ wanted to start sowm window manager, you could add the following:
 
 +------------------------------------------------------------------------------+
 |                                                                              |
-|   $ echo "exec sowm" >> ~/.sx/sx/sxrc                                        |
+|   $ echo "exec sowm" >> ~/.config/sx/sxrc                                    |
 |                                                                              |
 +------------------------------------------------------------------------------+
 

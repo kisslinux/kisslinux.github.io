@@ -16,13 +16,13 @@ Ensure that you have sx installed first:
 |                                                                              |
 +------------------------------------------------------------------------------+
 
-The default data and config directories can be modified via environment 
-variables:
+The default XDG_DATA_HOME and XDG_CONFIG_HOME directories can be modified via 
+environment variables:
 
 +------------------------------------------------------------------------------+
 |                                                                              |
-|   $ echo "export XDG_DATA_HOME=$HOME/.sx" >> ~/.profile                      |
-|   $ echo "export XDG_CONFIG_HOME=$HOME/.sx" >> ~/.profile                    |
+|   $ echo "export XDG_DATA_HOME=$HOME/.config" >> ~/.profile                  |
+|   $ echo "export XDG_CONFIG_HOME=$HOME/.config" >> ~/.profile                |
 |                                                                              |
 +------------------------------------------------------------------------------+
 
@@ -30,9 +30,9 @@ Create the required directories and rc file:
 
 +------------------------------------------------------------------------------+
 |                                                                              |
-|   $ mkdir -p ~/.sx/sx                                                        |
-|   $ touch ~/.sx/sx/sxrc                                                      |
-|   $ chmod +x ~/.sx/sx/sxrc                                                   |
+|   $ mkdir -p ~/.config/sx                                                    |
+|   $ touch ~/.config/sx/sxrc                                                  |
+|   $ chmod +x ~/.config/sx/sxrc                                               |
 |                                                                              |
 +------------------------------------------------------------------------------+
 
@@ -41,7 +41,7 @@ wanted to start sowm window manager, you could add the following:
 
 +------------------------------------------------------------------------------+
 |                                                                              |
-|   $ echo "exec sowm" >> ~/.sx/sx/sxrc                                        |
+|   $ echo "exec sowm" >> ~/.config/sx/sxrc                                    |
 |                                                                              |
 +------------------------------------------------------------------------------+
 
