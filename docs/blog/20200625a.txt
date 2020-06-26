@@ -1,0 +1,257 @@
+Subject	This month in KISS (#3)!
+From	Dylan Araps &lt;dylan@k1ss.org&gt;
+Date	Mon, 25 Jun 2020 11:07:09 +0100
+
+Welcome to the third monthly update for KISS Linux. The focus this month was on
+documentation and the reopening of the distribution's Wiki. A big thank you to
+those filling the Wiki with words.
+
+The first thing you may notice is the website's new overall look. The new Wiki
+demanded features be added to the static site generator and the website also
+reaped these rewards.
+
+
+[0.0] Index
+________________________________________________________________________________
+
+- A new logo appears!                                                      [1.0]
+- Website changes                                                          [2.0]
+- New Wiki                                                                 [3.0]
+- kiss help                                                                [4.0]
+- Package manager changes                                                  [5.0]
+- Package manager in C?                                                    [6.0]
+- The build machine has arrived                                            [7.0]
+- KDE comes to KISS                                                        [8.0]
+- LXQT comes to KISS                                                       [9.0]
+- KISS has been ported to ARMV7                                           [10.0]
+
+
+[1.0] A new logo appears!
+________________________________________________________________________________
+
+KISS now has a "real" logo. The idea came to me as I was writing new pages for
+the website. I'm very pleased with how it turned out. It can be displayed as an
+image (TBA) or simply as ASCII text (as seen below).
+
++------------------------------------------------------------------------------+
+|                                                                              |
+|                                                                              |
+|          |/                                                                  |
+|          |\ISS                                                               |
+|                                                                              |
+|          An independent Linux(R) distribution with a focus on                |
+|          simplicity and the concept of less is more.                         |
+|                                                                              |
+|                                                                              |
++------------------------------------------------------------------------------+
++---------+                                        +----+  +--------+
+|         |          +-------------+  |/           | |/ |  |        |  |/
+|  |/     |  |/      | |/          |  |\ISS LINUX  | |\ |  |   |/   |  |\ISS
+|  |\ISS  |  |\ISS   | |\ISS LINUX |               +----+  |   |\   |  _____
+|         |          +-------------+  |/             |/    |        |
++---------+                           |\ISS Linux    |\    +--------+
+
+This text based representation of the logo also enables its usage in terminals,
+plain-text email and well... anywhere that text is available.
+
+
+[2.0] Website changes
+________________________________________________________________________________
+
+Every page on the website now uses a uniform line length (80 characters) which
+is far wider than the myriad of lengths used prior. The static website generator
+now supports hyperlinks via a minimal syntax as well as linking between two
+elements.
+
+This linking allows for easy implementation of references as well as a table of
+contents where needed. Best of all is that these are all simple 'sed' calls
+during generation time. [0]
+
+Every page on the website has been rewritten to fit the aforementioned changes
+and the reading experience should now be far more enjoyable. For those wondering
+what the old website used to look like, see [1].
+
+[0] $/kisslinux/website/blob/master/make#L5-L29
+[1] https://web.archive.org/web/20200521223143/https://k1ss.org/
+
+
+[3.0] New Wiki
+________________________________________________________________________________
+
+The Wiki has reopened! SEE: #/wiki and #/wiki/help/about-this-wiki
+
++------------------------------------------------------------------------------+
+|                                                                              |
+|                   _  _____ ___ ___  __      _____ _  _____                   |
+|                  | |/ /_ _/ __/ __\ \ \    / /_ _| |/ /_ _|                  |
+|                  | ' < | |\__ \__ \  \ \/\/ / | || ' < | |                   |
+|                  |_|\_\___|___/___/   \_/\_/ |___|_|\_\___|                  |
+|                                                                              |
+|           Welcome to the KISS WIKI. Documentation and information            |
+|           about KISS and Linux in general. Written by the Community.         |
+|                                                                              |
+|                                                                              |
+|                                                                              |
+|          .--------------------------------------------------------.          |
+|          |                                                        |          |
+|          | This wiki is incomplete, you can help by expanding it! |          |
+|          |                                                        | .--.     |
+|          '-------------------------------------------------------\\|o_o |    |
+|                                                                    |:_/ |    |
+|  Sources: $/kisslinux/wiki                                        //   \ \   |
+|                                                                  (|     | )  |
++------------------------------------------------------------------------------+
+
+I decided to close the old Wiki as it was difficult to work with, unstructured
+and all over the place. This turned contributors away and its information began
+to rot over time. [2]
+
+These issues have been solved in the rebirth and contributions have been steady
+since its opening. I hope to see this become a bountiful resource for users of
+KISS and beyond.
+
+Once again, a big thank you to everyone writing pages.
+
+[2] $/kisslinux/website/commit/62e3ed0e974b3eb5b636e7a91914992cd9ea62c8
+
+
+[4.0] kiss help
+________________________________________________________________________________
+
+The distribution's documentation is now browsable via a tiny utility included
+with the package manager. The installation guide, FAQ, Wiki(!) and all other
+documentation is also available by default.
+
++------------------------------------------------------------------------------+
+| kiss-help utility                                                            |
++------------------------------------------------------------------------------+
+|                                                                              |
+|  #!/bin/sh                                                                   |
+|  # Read KISS documentation                                                   |
+|                                                                              |
+|  cd "$KISS_ROOT/usr/share/doc/kiss" 2>/dev/null || {                         |
+|      printf 'Documentation is missing from /usr/share/doc/kiss\n'            |
+|      exit 1                                                                  |
+|  }                                                                           |
+|                                                                              |
+|  [ -f "${1:-.}/index.txt" ] && file=./${1:-.}/index.txt                      |
+|  [ -f "${1:-.}.txt" ]       && file=./${1:-.}.txt                            |
+|  [ -f "${1:-:}" ]           && file=./${1:-.}                                |
+|                                                                              |
+|  "${PAGER:-less}" "${file:-404.txt}"                                         |
+|                                                                              |
++------------------------------------------------------------------------------+
+
+Usage of the above utility is as follows.
+
++------------------------------------------------------------------------------+
+|                                                                              |
+|  $ kiss help install            # Installation guide  .                      |
+|  $ kiss help package-manager    # Package manager manual.                    |
+|  $ kiss help package-system     # Package system documentation.              |
+|  $ kiss help wiki/software/git  # Wiki page.                                 |
+|  $ kiss help wiki/software      # Pages under software in the Wiki.          |
+|  ...                                                                         |
+|                                                                              |
++------------------------------------------------------------------------------+
+
+This will open the desired page in the pager of your choosing ('less' by
+default). This is configurable via the $PAGER environment variable. One can of
+course browse the txt files in /usr/share/doc/kiss directly, this merely adds a
+little sugar on top.
+
+For those wondering about disk space requirements, all documentation (including
+the entire Wiki) come in at around 400K~ (for 50 pages of information).
+
+
+[5.0] Package manager changes
+________________________________________________________________________________
+
+The package manager saw a few nice improvements and a range of bug fixes.
+
+* Added two new hooks ('post-package' and 'pre-extract'). The latter is nice as
+  it enables the package manager's cache to live entirely in memory.
+  See #/package-manager#6.0 and #/package-manager#6.3
+
+* Handling of Git sources has been revamped with clones of all types now done in
+  a shallow manner (where supported). This includes default branch clones,
+  branch clones as well as clones of specific Git commits.
+
+* Package installation and removal have been simplified, code is now shared
+  between the two and /less/ is done overall. This comes with a nice performance
+  increase as less external utilities are used per-file.
+
+* Added a new action called 'download' (also aliased to 'd') which downloads
+  all sources for a package (or list of packages). This allows one to
+  pre-download all sources for non-networked builds later.
+
+
+[6.0] Package manager in C?
+________________________________________________________________________________
+
+I have started work on an alternative implementation of the package manager
+written in C (C99). This is where the majority of my time has been spent for the
+past 12 days (Git stats: 269 commits,  22,954 ++  21,029 --).
+
+Things are coming along nicely with package listing, package searching,
+source downloads, checksum verification/generation and package builds in
+working order.
+
+The goal is a single, statically linked executable with little to no reliance
+on overall system health. In other words, a broken system shouldn't also break
+the package manager.
+
+This implementation will eventually become the default package manager with the
+current shell based one offered as an alternative. If all goes well, the new
+package manager should be ready for early testing in a month or so.
+
+Source: $/dylanaraps/k
+
+
+[7.0] The build machine has arrived
+________________________________________________________________________________
+
+The build machine donated by a very generous KISS user finally arrived this week
+after a long stay at customs and countless phone calls back and forth.
+
+It is a beautifully made machine and it runs silently at full load. The system
+even came with KISS installed! A thank you from the bottom of my heart for the
+donation. I will never forget this.
+
+I finished setting it up just yesterday and it will be put to use as a build
+machine (as mentioned in last month's post @/20200525a). It will additionally be
+used as a test bed to explore the large number of ideas in my TODO list.
+
+
+[8.0] KDE comes to KISS
+________________________________________________________________________________
+
+Dilyn Corner has successfully ported KDE to KISS! I mentioned this last month
+though it only recently reached a usable state. This is wonderful to see!
+
+Source: $/dilyn-corner/KISS-kde
+
+<a href="https://user-images.githubusercontent.com/6799467/85854381-f166c400-b7bc-11ea-94c7-9faf4bda0144.jpg"><img loading="lazy" src="https://user-images.githubusercontent.com/6799467/85854381-f166c400-b7bc-11ea-94c7-9faf4bda0144.jpg" alt="KISS KDE"></a>
+
+
+[9.0] LXQT comes to KISS
+________________________________________________________________________________
+
+This is still in its early stages though Eudald Gubert i Roldan has begun the
+work in porting LXQT to KISS.
+
+Source: $/eudaldgr/kiss-repo/tree/master/lxqt
+
+<a href="https://user-images.githubusercontent.com/6799467/85854793-be710000-b7bd-11ea-8dc4-d58578d9d2a6.png"><img loading="lazy" src="https://user-images.githubusercontent.com/6799467/85854793-be710000-b7bd-11ea-8dc4-d58578d9d2a6.png" alt="KISS LXQT"></a>
+
+
+[10.0] KISS has been ported to ARMV7
+________________________________________________________________________________
+
+James Davies has ported KISS to ARMV7! James is also the creator of the AARCH64
+and PPC64LE ports.
+
+Source: https://github.com/jedavies-dev/kiss-armv7
+
+(A full list of ports can be found here: #/wiki/community/ports)
+
