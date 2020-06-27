@@ -746,6 +746,7 @@ following commands. See @/wiki/xorg
 +------------------------------------------------------------------------------+
 |                                                                              |
 |   $ kiss b xorg-server xinit xf86-input-libinput                             |
+|   $ kiss i xorg-server xinit xf86-input-libinput                             |
 |                                                                              |
 +------------------------------------------------------------------------------+
 | Installing a base font is recommended as nothing will work without fonts.    |
