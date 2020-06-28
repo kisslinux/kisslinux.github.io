@@ -13,18 +13,48 @@ nothing is tightly coupled or dependent on a specific init or service manager.
 [0.0] Index
 ________________________________________________________________________________
 
-- runit                                                                    [1.0]
+- Rebooting after switching init systems                                   [1.0]
+- runit                                                                    [2.0]
 
 
-[1.0] runit
+[1.0] Rebooting after switching init systems
+________________________________________________________________________________
+
+After switching init systems, your running init system may not accept the
+new poweroff commands. You will need to reboot/poweroff using the running init's
+utilities for the new utilities to work. These commands are for the init system
+currently running on your system and not the one you are switching to.
+
++------------------------------------------------------------------------------+
+| Busybox                                                                      |
++------------------------------------------------------------------------------+
+|                                                                              |
+|   $ busybox reboot                                                           |
+|                                                                              |
++------------------------------------------------------------------------------+
+| Runit                                                                        |
++------------------------------------------------------------------------------+
+|                                                                              |
+|   $ runit-init 6                                                             |
+|                                                                              |
++------------------------------------------------------------------------------+
+| sinit/shinit                                                                 |
++------------------------------------------------------------------------------+
+|                                                                              |
+|   $ kill -s INT 1                                                            |
+|                                                                              |
++------------------------------------------------------------------------------+
+
+
+[2.0] runit
 ________________________________________________________________________________
 
 Begin by first verifying that runit is installed.
 
 +------------------------------------------------------------------------------+
 |                                                                              |
-|  # Available in the Community repository.                                    |
-|  $ kiss b runit && kiss i runit                                              |
+|   # Available in the Community repository.                                   |
+|   $ kiss b runit && kiss i runit                                             |
 |                                                                              |
 +------------------------------------------------------------------------------+
 
@@ -32,7 +62,9 @@ Finally, use the alternatives system to swap to runit.
 
 +------------------------------------------------------------------------------+
 |                                                                              |
-|  # See #/package-manager#3.2 for more information.
-|  $ kiss a | grep ^runit | kiss a -                                           |
+|   # See #/package-manager#3.2 for more information.                          |
+|   $ kiss a runit /usr/bin/init                                               |
+|   $ kiss a runit /usr/bin/poweroff                                           |
+|   $ kiss a runit /usr/bin/reboot                                             |
 |                                                                              |
 +------------------------------------------------------------------------------+

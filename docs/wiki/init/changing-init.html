@@ -30,7 +30,7 @@
 
 <a href="/wiki">wiki</a> / <a href='/wiki/init'>init</a> / changing-init                                       <a href='https://github.com/kisslinux/wiki/edit/master/init/changing-init.txt'>Edit this page</a>
 
-Edited (<a href='https://github.com/kisslinux/wiki/commit/70f1bdf9ed3e5f8a7f88eda4e721966c91cf6ea6'>70f1bdf</a>) at 2020-06-28 by Dylan Araps
+Edited (<a href='https://github.com/kisslinux/wiki/commit/245674e7cf5c9266b367375d2e99d48baf84965e'>245674e</a>) at 2020-06-28 by Dylan Araps
 
 
 Changing Init Systems
@@ -48,18 +48,48 @@ nothing is tightly coupled or dependent on a specific init or service manager.
 <span id=0.0><a href=#0.0>[0.0]</a></span> Index
 ________________________________________________________________________________
 
-- runit                                                                    <a href=#1.0>[1.0]</a>
+- Rebooting after switching init systems                                   <a href=#1.0>[1.0]</a>
+- runit                                                                    <a href=#2.0>[2.0]</a>
 
 
-<span id=1.0><a href=#1.0>[1.0]</a></span> runit
+<span id=1.0><a href=#1.0>[1.0]</a></span> Rebooting after switching init systems
+________________________________________________________________________________
+
+After switching init systems, your running init system may not accept the
+new poweroff commands. You will need to reboot/poweroff using the running init's
+utilities for the new utilities to work. These commands are for the init system
+currently running on your system and not the one you are switching to.
+
++------------------------------------------------------------------------------+
+| Busybox                                                                      |
++------------------------------------------------------------------------------+
+|                                                                              |
+|   $ busybox reboot                                                           |
+|                                                                              |
++------------------------------------------------------------------------------+
+| Runit                                                                        |
++------------------------------------------------------------------------------+
+|                                                                              |
+|   $ runit-init 6                                                             |
+|                                                                              |
++------------------------------------------------------------------------------+
+| sinit/shinit                                                                 |
++------------------------------------------------------------------------------+
+|                                                                              |
+|   $ kill -s INT 1                                                            |
+|                                                                              |
++------------------------------------------------------------------------------+
+
+
+<span id=2.0><a href=#2.0>[2.0]</a></span> runit
 ________________________________________________________________________________
 
 Begin by first verifying that runit is installed.
 
 +------------------------------------------------------------------------------+
 |                                                                              |
-|  # Available in the Community repository.                                    |
-|  $ kiss b runit && kiss i runit                                              |
+|   # Available in the Community repository.                                   |
+|   $ kiss b runit && kiss i runit                                             |
 |                                                                              |
 +------------------------------------------------------------------------------+
 
@@ -67,8 +97,10 @@ Finally, use the alternatives system to swap to runit.
 
 +------------------------------------------------------------------------------+
 |                                                                              |
-|  # See #/<a href=/package-manager#3.2>package-manager#3.2</a> for more information.
-|  $ kiss a | grep ^runit | kiss a -                                           |
+|   # See #/<a href=/package-manager#3.2>package-manager#3.2</a> for more information.                          |
+|   $ kiss a runit /usr/bin/init                                               |
+|   $ kiss a runit /usr/bin/poweroff                                           |
+|   $ kiss a runit /usr/bin/reboot                                             |
 |                                                                              |
 +------------------------------------------------------------------------------+
 

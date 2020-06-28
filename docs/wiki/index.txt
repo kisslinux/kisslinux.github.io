@@ -83,7 +83,7 @@
 |                       |  |                        |  |                       |
 |  @/dev/replacing-udev |  |  @/init/busybox        |  |  @/boot/efistub       |
 |                       |  |  @/init/changing-init  |  |  @/boot/efivarfs      |
-|                       |  |                        |  |                       |
+|                       |  |  @/init/sysmgr         |  |                       |
 |                       |  |                        |  |                       |
 +-----------------------+  +------------------------+  +-----------------------+
 
