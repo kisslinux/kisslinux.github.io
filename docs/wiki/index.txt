@@ -82,7 +82,7 @@
 | DEVICE MANAGERS       |  | INIT SYSTEMS           |  | BOOT                  |
 |                       |  |                        |  |                       |
 |  @/dev/replacing-udev |  |  @/init/busybox        |  |  @/boot/efistub       |
-|                       |  |                        |  |  @/boot/efivarfs      |
+|                       |  |  @/init/changing-init  |  |  @/boot/efivarfs      |
 |                       |  |                        |  |                       |
 |                       |  |                        |  |                       |
 +-----------------------+  +------------------------+  +-----------------------+

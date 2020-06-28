@@ -1,0 +1,38 @@
+Changing Init Systems
+________________________________________________________________________________
+
+KISS' default init system and service manager are provided by busybox. The
+service manager being an independent implementation of runit's utilities. This
+default should work with all system configurations though one may still wish to
+swap to the init system and service manager of their choosing.
+
+This is very easily done via the package manager's alternatives system as
+nothing is tightly coupled or dependent on a specific init or service manager.
+
+
+[0.0] Index
+________________________________________________________________________________
+
+- runit                                                                    [1.0]
+
+
+[1.0] runit
+________________________________________________________________________________
+
+Begin by first verifying that runit is installed.
+
++------------------------------------------------------------------------------+
+|                                                                              |
+|  # Available in the Community repository.                                    |
+|  $ kiss b runit && kiss i runit                                              |
+|                                                                              |
++------------------------------------------------------------------------------+
+
+Finally, use the alternatives system to swap to runit.
+
++------------------------------------------------------------------------------+
+|                                                                              |
+|  # See #/package-manager#3.2 for more information.
+|  $ kiss a | grep ^runit | kiss a -                                           |
+|                                                                              |
++------------------------------------------------------------------------------+
