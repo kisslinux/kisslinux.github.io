@@ -84,6 +84,7 @@
 |  @/software/wpa_supplicant                @/software/dhcpcd                  |
 |  @/software/eiwd                          @/software/tzdata                  |
 |  @/software/vim                           @/software/man-pages               |
+|  @/software/acpid                                                            |
 |                                                                              |
 +------------------------------------------------------------------------------+
 
