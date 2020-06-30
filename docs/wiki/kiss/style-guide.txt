@@ -333,7 +333,12 @@ ________________________________________________________________________________
 
     Use the following style:
 
-       go build
+       export GOPATH="$PWD/go"
+       export GO111MODULE=on
+
+       go build \
+           -modcacherw \
+           -trimpath
 
        install -Dm755 lazygit "$1/usr/bin/lazygit"
 
