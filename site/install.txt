@@ -136,7 +136,7 @@ Disks should be setup and fully mounted to /mnt.
     | Download the chroot helper.                                              |
     +--------------------------------------------------------------------------+
     |                                                                          |
-    |   $ url=https://raw.githubusercontent.com/kisslinux/kiss/master/contrib  |
+    |   $ url=https://raw.githubusercontent.com/kisslinux/kiss/master/contrib/kiss-chroot|
     |   $ wget "$url/kiss-chroot"                                              |
     |                                                                          |
     +--------------------------------------------------------------------------+
