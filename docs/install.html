@@ -299,8 +299,8 @@ This step is entirely optional and can also be done post-installation.
     This option tells the compiler to use optimizations unique to your
     processor's architecture.
 
-    The `-jX` option should match the number of CPU cores available. You can
-    optionally omit this, however builds will then be limited to a single core.
+    The `-jX` option should match the number of CPU threads available. You can
+    omit this, however builds will then be limited to a single thread.
 
     +--------------------------------------------------------------------------+
     | CFLAGS/CXXFLAGS                                                          |
@@ -314,7 +314,7 @@ This step is entirely optional and can also be done post-installation.
     | MAKEFLAGS                                                                |
     +--------------------------------------------------------------------------+
     |                                                                          |
-    |   # NOTE: 4 should be changed to match the number of cores.              |
+    |   # NOTE: 4 should be changed to match the number of threads.            |
     |   $ export MAKEFLAGS="-j4"                                               |
     |                                                                          |
     +--------------------------------------------------------------------------+
