@@ -331,6 +331,7 @@ from various manufacturers.
     |   WLAN_VENDOR_INTEL        Store the .config in the kernel.              |
     |   MAC80211                 Enables hardware independent IEEE 802.11      |
     |   CFG80211                 Enables the Linux Wireless LAN config API     |
+    |   IWLWIFI                  Enables the IWLWIFI driver.                   |
     |                                                                          |
     |   One of the following options is required (=y)                          |
     |                                                                          |
