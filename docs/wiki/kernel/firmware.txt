@@ -84,38 +84,38 @@ peripherals.
     be as follows:
 
     +--------------------------------------------------------------------------+
-    |   Rebuild the Kernel                                                     |
+    | Rebuild the Kernel                                                       |
     +--------------------------------------------------------------------------+
     |                                                                          |
-    |   $ make "$(nproc)" && make modules_install                              |
+    |   $ make -j "$(nproc)" && make modules_install                           |
     |                                                                          |
     +--------------------------------------------------------------------------+
-    |   Remount the boot partition                                             |
+    | Remount the boot partition                                               |
     +--------------------------------------------------------------------------+
     |                                                                          |
     |   $ mount /boot                                                          |
     |                                                                          |
     +--------------------------------------------------------------------------+
-    |   Install the built kernel (to /boot). (Ignore the LILO error).          |
+    | Install the built kernel (to /boot). (Ignore the LILO error).            |
     +--------------------------------------------------------------------------+
     |                                                                          |
     |   $ make install                                                         |
     |                                                                          |
     +--------------------------------------------------------------------------+
-    |   Rename the kernel/system.map (vmlinuz -> vmlinuz-VERSION).             |
+    | Rename the kernel/system.map (vmlinuz -> vmlinuz-VERSION).               |
     +--------------------------------------------------------------------------+
     |                                                                          |
     |   $ mv /boot/vmlinuz    /boot/vmlinuz-VERSION                            |
     |   $ mv /boot/System.map /boot/System.map-VERSION                         |
     |                                                                          |
     +--------------------------------------------------------------------------+
-    |   Update the boot loader (assuming using GRUB2)                          |
+    | Update the boot loader (assuming using GRUB2)                            |
     +--------------------------------------------------------------------------+
     |                                                                          |
     |   $ grub-mkconfig -o /boot/grub/grub.cfg                                 |
     |                                                                          |
     +--------------------------------------------------------------------------+
-    |   Reboot for the new kernel configuration to take effect:                |
+    | Reboot for the new kernel configuration to take effect:                  |
     +--------------------------------------------------------------------------+
     |                                                                          |
     |   $ reboot                                                               |

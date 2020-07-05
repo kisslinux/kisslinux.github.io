@@ -30,7 +30,7 @@
 
 <a href="/wiki">wiki</a> / <a href='/wiki/kernel'>kernel</a> / firmware                                          <a href='https://github.com/kisslinux/wiki/edit/master/kernel/firmware.txt'>Edit this page</a>
 
-Edited (<a href='https://github.com/kisslinux/wiki/commit/0ef7200d94afece925b3d12e73d39cc02836fdd5'>0ef7200</a>) at 2020-06-25 by Dylan Araps
+Edited (<a href='https://github.com/kisslinux/wiki/commit/b4e699002c602911e0e34cb63c1a5d7b7db58ac7'>b4e6990</a>) at 2020-07-05 by Dylan Araps
 
 
 FIRMWARE
@@ -119,38 +119,38 @@ peripherals.
     be as follows:
 
     +--------------------------------------------------------------------------+
-    |   Rebuild the Kernel                                                     |
+    | Rebuild the Kernel                                                       |
     +--------------------------------------------------------------------------+
     |                                                                          |
-    |   $ make "$(nproc)" && make modules_install                              |
+    |   $ make -j "$(nproc)" && make modules_install                           |
     |                                                                          |
     +--------------------------------------------------------------------------+
-    |   Remount the boot partition                                             |
+    | Remount the boot partition                                               |
     +--------------------------------------------------------------------------+
     |                                                                          |
     |   $ mount /boot                                                          |
     |                                                                          |
     +--------------------------------------------------------------------------+
-    |   Install the built kernel (to /boot). (Ignore the LILO error).          |
+    | Install the built kernel (to /boot). (Ignore the LILO error).            |
     +--------------------------------------------------------------------------+
     |                                                                          |
     |   $ make install                                                         |
     |                                                                          |
     +--------------------------------------------------------------------------+
-    |   Rename the kernel/system.map (vmlinuz -> vmlinuz-VERSION).             |
+    | Rename the kernel/system.map (vmlinuz -> vmlinuz-VERSION).               |
     +--------------------------------------------------------------------------+
     |                                                                          |
     |   $ mv /boot/vmlinuz    /boot/vmlinuz-VERSION                            |
     |   $ mv /boot/System.map /boot/System.map-VERSION                         |
     |                                                                          |
     +--------------------------------------------------------------------------+
-    |   Update the boot loader (assuming using GRUB2)                          |
+    | Update the boot loader (assuming using GRUB2)                            |
     +--------------------------------------------------------------------------+
     |                                                                          |
     |   $ grub-mkconfig -o /boot/grub/grub.cfg                                 |
     |                                                                          |
     +--------------------------------------------------------------------------+
-    |   Reboot for the new kernel configuration to take effect:                |
+    | Reboot for the new kernel configuration to take effect:                  |
     +--------------------------------------------------------------------------+
     |                                                                          |
     |   $ reboot                                                               |
