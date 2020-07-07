@@ -37,7 +37,7 @@ busybox-init only /etc/inittab file.
     KISS init framework. See $/kisslinux/init
 
     +--------------------------------------------------------------------------+
-    | Run command during boot.
+    | Run command during boot.                                                 |
     +--------------------------------------------------------------------------+
     |                                                                          |
     |  # Load the iwlwifi kernel module.                                       |
