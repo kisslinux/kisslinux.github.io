@@ -125,7 +125,6 @@ ________________________________________________________________________________
   CONFIG_CRYPTO_AES
   CONFIG_CRYPTO_DES
   CONFIG_CRYPTO_CMAC
-  CONFIG_CRYPTO_USER_API_HASH
   CONFIG_CRYPTO_HMAC
   CONFIG_CRYPTO_SHA512
   CONFIG_CRYPTO_ARC4
