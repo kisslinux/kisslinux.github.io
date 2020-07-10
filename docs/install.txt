@@ -757,7 +757,7 @@ following commands. See @/wiki/xorg
 +------------------------------------------------------------------------------+
 
 
-    [11.1] Add your user to the relevant groups
+    [12.1] Add your user to the relevant groups
     ____________________________________________________________________________
 
     This groups based permissions model may not be suitable if KISS will be
