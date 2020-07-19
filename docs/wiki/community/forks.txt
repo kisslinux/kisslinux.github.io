@@ -5,7 +5,7 @@ Members of the Community have forked KISS to create their own distributions with
 differing software, ideas, goals, etc.
 
 
-WYVERTUX
+Wyvertux
 ________________________________________________________________________________
 
 Wyvertux is an experimental Linux distribution that aims to completely remove
@@ -14,7 +14,7 @@ GNU utilities (if it's even possible) from the Linux build system.
 Source: $/wyvertux/wyvertux
 
 
-CARBS LINUX
+Carbs Linux
 ________________________________________________________________________________
 
 Carbs Linux is an in-development Linux distribution with a suckless mindset. The
@@ -23,3 +23,12 @@ distribution.
 
 Source: https://carbslinux.org/
 
+
+Quinn Linux
+________________________________________________________________________________
+
+Quinn is an experimental fork of KISS which removes busybox and installs
+standard system utilities and glibc while keeping libressl and of course the
+KISS package manager.
+
+Source:  https://quinnlinux.com/
