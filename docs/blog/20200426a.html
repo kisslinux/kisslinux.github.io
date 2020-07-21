@@ -114,7 +114,7 @@ The package manager no longer uses 'rsync' to handle transfers during
 installation and instead handles everything using basic utilities (cp, etc).
 In other words; if you do not personally use rsync, you may now remove it!
 
-The behavior of 'kiss <action>' when no further arguments are passed has
+The behavior of 'kiss &lt;action>' when no further arguments are passed has
 changed. Instead of aborting, the package manager will check to see if '$PWD'
 resolves to a kiss package.
 
@@ -130,7 +130,7 @@ invocation of the package manager.
 
 Any utilities named in 'kiss-*' in your '$PATH' will now integrate directly
 with the package manager. They'll appear in the help output and be usable via
-'kiss <name>' (<name> being the utlitity name with 'kiss-' stripped).
+'kiss &lt;name>' (&lt;name> being the utlitity name with 'kiss-' stripped).
 
 Here's what it looks like:
 
