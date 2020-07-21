@@ -31,7 +31,7 @@
 
 <a href="/wiki">wiki</a> / <a href='/wiki/console'>console</a> / fonts                                            <a href='https://github.com/kisslinux/wiki/edit/master/console/fonts.txt'>Edit this page</a>
 
-Edited (<a href='https://github.com/kisslinux/wiki/commit/7f854611f76a90490463aabd92bbbf72c45f76e1'>7f85461</a>) at 2020-06-28 by Dylan Araps
+Edited (<a href='https://github.com/kisslinux/wiki/commit/ee199ab17fab198cdad659f5c07b4630738eb9ad'>ee199ab</a>) at 2020-07-21 by sdsddsd1
 
 
 CHANGING THE CONSOLE FONT
@@ -52,12 +52,23 @@ Currently packaged Linux console fonts.
 Changing the Console Font
 ________________________________________________________________________________
 
-Use the following command to set the console font. Add it to your ~/.profile
-or /etc/profile to make the change permanent.
+Use the following command to set the console font _after_ a user has logged in.
+Add it to your ~/.profile or /etc/profile to make the change permanent.
 
 +------------------------------------------------------------------------------+
 |                                                                              |
 |   [ "$DISPLAY" ] || setfont /usr/share/consolefonts/FONT_NAME.gz             |
+|                                                                              |
++------------------------------------------------------------------------------+
+
+To change the console font _before_ a user has logged in, add the following to
+your /etc/inittab or /etc/rc.conf.
+
++------------------------------------------------------------------------------+
+| /etc/rc.conf                                                                 |
++------------------------------------------------------------------------------+
+|                                                                              |
+|   /usr/bin/setfont /usr/share/consolefonts/FONT_NAME.gz -C /dev/tty1         |
 |                                                                              |
 +------------------------------------------------------------------------------+
 
