@@ -188,7 +188,7 @@ by using the ":help OPTION" command in vim.
 +------------------------+-----------------------------------------------------+
 
 In summary, there are MANY configurations that can be applied to vim in just a
-few lines of text!  As a best practive, test vim out without any configuration
+few lines of text!  As a best practice, test vim out without any configuration
 applied, then slowly add in needed features. A good *starter* configuration file
 might look something like this:
 

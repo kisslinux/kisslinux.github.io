@@ -52,6 +52,7 @@
 |  @/community/ports          Ports of KISS to different architectures.        |
 |  @/community/projects       Community software projects.                     |
 |  @/community/forks          Forks of KISS Linux.                             |
+|  @/community/extensions     Extensions for the KISS package manager.         |
 |                                                                              |
 +------------------------------------------------------------------------------+
 
