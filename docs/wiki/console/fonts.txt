@@ -11,6 +11,7 @@ ________________________________________________________________________________
 Currently packaged Linux console fonts.
 
 - terminus-font (Community).
+- spleen-font (Community).
 
 
 Changing the Console Font
@@ -21,7 +22,7 @@ Add it to your ~/.profile or /etc/profile to make the change permanent.
 
 +------------------------------------------------------------------------------+
 |                                                                              |
-|   [ "$DISPLAY" ] || setfont /usr/share/consolefonts/FONT_NAME.gz             |
+|   [ "$DISPLAY" ] || setfont /usr/share/consolefonts/FONT_NAME                |
 |                                                                              |
 +------------------------------------------------------------------------------+
 
@@ -32,6 +33,6 @@ your /etc/inittab or /etc/rc.conf.
 | /etc/rc.conf                                                                 |
 +------------------------------------------------------------------------------+
 |                                                                              |
-|   /usr/bin/setfont /usr/share/consolefonts/FONT_NAME.gz -C /dev/tty1         |
+|   /usr/bin/setfont /usr/share/consolefonts/FONT_NAME -C /dev/tty1            |
 |                                                                              |
 +------------------------------------------------------------------------------+

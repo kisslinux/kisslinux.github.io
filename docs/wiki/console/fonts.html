@@ -31,7 +31,7 @@
 
 <a href="/wiki">wiki</a> / <a href='/wiki/console'>console</a> / fonts                                            <a href='https://github.com/kisslinux/wiki/edit/master/console/fonts.txt'>Edit this page</a>
 
-Edited (<a href='https://github.com/kisslinux/wiki/commit/ee199ab17fab198cdad659f5c07b4630738eb9ad'>ee199ab</a>) at 2020-07-21 by sdsddsd1
+Edited (<a href='https://github.com/kisslinux/wiki/commit/290dcebdf027471de4122c18c08b53816de69c34'>290dceb</a>) at 2020-07-22 by sdsddsd1
 
 
 CHANGING THE CONSOLE FONT
@@ -47,6 +47,7 @@ ________________________________________________________________________________
 Currently packaged Linux console fonts.
 
 - terminus-font (Community).
+- spleen-font (Community).
 
 
 Changing the Console Font
@@ -57,7 +58,7 @@ Add it to your ~/.profile or /etc/profile to make the change permanent.
 
 +------------------------------------------------------------------------------+
 |                                                                              |
-|   [ "$DISPLAY" ] || setfont /usr/share/consolefonts/FONT_NAME.gz             |
+|   [ "$DISPLAY" ] || setfont /usr/share/consolefonts/FONT_NAME                |
 |                                                                              |
 +------------------------------------------------------------------------------+
 
@@ -68,7 +69,7 @@ your /etc/inittab or /etc/rc.conf.
 | /etc/rc.conf                                                                 |
 +------------------------------------------------------------------------------+
 |                                                                              |
-|   /usr/bin/setfont /usr/share/consolefonts/FONT_NAME.gz -C /dev/tty1         |
+|   /usr/bin/setfont /usr/share/consolefonts/FONT_NAME -C /dev/tty1            |
 |                                                                              |
 +------------------------------------------------------------------------------+
 
