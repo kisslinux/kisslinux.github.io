@@ -44,6 +44,10 @@ peripherals.
     When building drivers into the kernel, ensure that the firmware blobs
     (*.ucode files) are referenced and the firmware root directory is set.
 
+    Replace '****.ucode' with the firmware you would like to bake into the
+    kernel. Values are paths to files, separated by spaces with locations
+    relative to the value of CONFIG_EXTRA_FIRMWARE_DIR.
+
     +--------------------------------------------------------------------------+
     |   ".config" Example                                                      |
     +--------------------------------------------------------------------------+

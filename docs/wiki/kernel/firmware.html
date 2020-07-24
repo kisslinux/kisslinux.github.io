@@ -31,7 +31,7 @@
 
 <a href="/wiki">wiki</a> / <a href='/wiki/kernel'>kernel</a> / firmware                                          <a href='https://github.com/kisslinux/wiki/edit/master/kernel/firmware.txt'>Edit this page</a>
 
-Edited (<a href='https://github.com/kisslinux/wiki/commit/2ff12f23702f1e909cf43d00ab35e72c0d922a09'>2ff12f2</a>) at 2020-07-05 by Dylan Araps
+Edited (<a href='https://github.com/kisslinux/wiki/commit/d7b8cebba5a5d66a4d588f85aef4ee7db2883aff'>d7b8ceb</a>) at 2020-07-24 by Dylan Araps
 
 
 FIRMWARE
@@ -79,6 +79,10 @@ peripherals.
 
     When building drivers into the kernel, ensure that the firmware blobs
     (*.ucode files) are referenced and the firmware root directory is set.
+
+    Replace '****.ucode' with the firmware you would like to bake into the
+    kernel. Values are paths to files, separated by spaces with locations
+    relative to the value of CONFIG_EXTRA_FIRMWARE_DIR.
 
     +--------------------------------------------------------------------------+
     |   ".config" Example                                                      |
