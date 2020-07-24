@@ -22,9 +22,8 @@ ________________________________________________________________________________
     - Download the latest release                                          [2.1]
     - Verify the checksums                                                 [2.2]
     - Verify the signature                                                 [2.3]
-    - Download the chroot helper                                           [2.4]
-    - Unpack the tarball                                                   [2.5]
-    - Enter the chroot                                                     [2.6]
+    - Unpack the tarball                                                   [2.4]
+    - Enter the chroot                                                     [2.5]
 
 - Enable repository signing                                                [3.0]
     - Build and install gnupg1                                             [3.1]
@@ -125,36 +124,7 @@ Disks should be setup and fully mounted to /mnt.
     +--------------------------------------------------------------------------+
 
 
-    [2.4] Download the chroot helper
-    ____________________________________________________________________________
-
-    This is a simple script to chroot into /mnt and set up the environment for
-    the rest of the installation. The script handles mounting pseudo filesystems
-    (/proc, /dev, /sys), enabling network inside the chroot, etc.
-
-    +--------------------------------------------------------------------------+
-    | Download the chroot helper.                                              |
-    +--------------------------------------------------------------------------+
-    |                                                                          |
-    |   $ url=https://raw.githubusercontent.com/kisslinux/kiss/master/contrib  |
-    |   $ wget "$url/kiss-chroot"                                              |
-    |                                                                          |
-    +--------------------------------------------------------------------------+
-    | Inspect the script before you execute it below.                          |
-    +--------------------------------------------------------------------------+
-    |                                                                          |
-    |   $ vi kiss-chroot                                                       |
-    |                                                                          |
-    +--------------------------------------------------------------------------+
-    | Ensure the script is executable.                                         |
-    +--------------------------------------------------------------------------+
-    |                                                                          |
-    |   $ chmod +x kiss-chroot                                                 |
-    |                                                                          |
-    +--------------------------------------------------------------------------+
-
-
-    [2.5] Unpack the tarball
+    [2.4] Unpack the tarball
     ____________________________________________________________________________
 
     This step effectively installs KISS to /mnt. The tarball contains a full
@@ -167,15 +137,19 @@ Disks should be setup and fully mounted to /mnt.
     +--------------------------------------------------------------------------+
 
 
-    [2.6] Enter the chroot
+    [2.5] Enter the chroot
     ____________________________________________________________________________
+
+    This is a simple script to chroot into /mnt and set up the environment for
+    the rest of the installation. The script handles mounting pseudo filesystems
+    (/proc, /dev, /sys), enabling network inside the chroot, etc.
 
     On execution of this step you will be running KISS! The next steps involve
     the kernel, software compilation and system setup.
 
     +--------------------------------------------------------------------------+
     |                                                                          |
-    |   $ ./kiss-chroot /mnt                                                   |
+    |   $ /mnt/bin/kiss-chroot /mnt                                            |
     |                                                                          |
     +--------------------------------------------------------------------------+
 
