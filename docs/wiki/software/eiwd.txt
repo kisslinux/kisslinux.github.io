@@ -1,7 +1,7 @@
 EIWD [0]
 ________________________________________________________________________________
 
-eiwd is iNet Wireless Daemon (iwd) without dbus. iNet Wireless Daemon aims to 
+eiwd is iNet Wireless Daemon (iwd) without dbus. iNet Wireless Daemon aims to
 replace @/wpa_supplicant while providing the following benefits:
 
 * Simplification of network management.
@@ -35,7 +35,7 @@ Create a new daemon configuration file:
 |                                                                              |
 +------------------------------------------------------------------------------+
 
-Using a preferred text editor, add the following lines to the main.conf file 
+Using a preferred text editor, add the following lines to the main.conf file
 generated above:
 
 +------------------------------------------------------------------------------+
@@ -53,7 +53,7 @@ generated above:
 Adding A Wireless Network
 ________________________________________________________________________________
 
-eiwd ships with a iwd_passphrase, which can be used for generating iwd network 
+eiwd ships with a iwd_passphrase, which can be used for generating iwd network
 files:
 
 +------------------------------------------------------------------------------+
@@ -64,7 +64,7 @@ files:
 
 Remember to replace BSSID and PASSWORD with your respective network credentials.
 
-Using a preferred text editor, copy the output of the command above to the 
+Using a preferred text editor, copy the output of the command above to the
 following location: /var/lib/iwd/BSSID.psk
 
 
@@ -112,9 +112,9 @@ ________________________________________________________________________________
   |                                                                            |
   +----------------------------------------------------------------------------+
 
-* If idw fails to start, check to make that you have the required kernel 
+* If iwd fails to start, check to make that you have the required kernel
   options:
-  
+
   CONFIG_CRYPTO_USER_API_HASH
   CONFIG_CRYPTO_USER_API_SKCIPHER
   CONFIG_KEY_DH_OPERATIONS
