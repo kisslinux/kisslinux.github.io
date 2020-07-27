@@ -48,6 +48,7 @@ ________________________________________________________________________________
     - Can you package SOFTWARE for me?                                     <a href=#5.2>[5.2]</a>
     - What init does KISS use?                                             <a href=#5.3>[5.3]</a>
     - What coreutils does KISS use?                                        <a href=#5.4>[5.4]</a>
+    - Does DRM work in browsers?                                           <a href=#5.5>[5.5]</a>
 
 - Package Management                                                       <a href=#6.0>[6.0]</a>
     - How do I remove a package and all of its dependencies?               <a href=#6.1>[6.1]</a>
@@ -217,6 +218,27 @@ ________________________________________________________________________________
     busybox. Popular alternatives are Suckless' sbase/ubase and GNU's set of
     core utilities.
 
+
+    <span id=5.5><a href=#5.5>[5.5]</a></span> Does DRM work in browsers?
+    ____________________________________________________________________________
+
+    DRM (specifically the commonly used Widevine) does not work when musl is the
+    C library. The DRM is a binary (typically downloaded by the browser) and it
+    requires glibc.
+
+    Nothing can be done to fix this as the DRM is not open source.
+
+    Workarounds:
+
+    * Running your browser inside a chroot (containing a glibc based
+      distribution).
+
+    * Running the Flatpak (available here $/<a href=https://github.com/dylanaraps/kiss-flatpak>dylanaraps/kiss-flatpak</a>) version of
+      the browser. NOTE: Requires pulseaudio ($/<a href=https://github.com/periish/kiss-all>periish/kiss-all</a>)
+
+    * Using something such as Nix to run the browser.
+
+    * Running the browser in docker, a virtual machine, etc.
 
 
 <span id=6.0><a href=#6.0>[6.0]</a></span> Package Management
