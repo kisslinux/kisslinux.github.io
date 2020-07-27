@@ -22,13 +22,3 @@ base system will consist of only the necessary programs to create a Linux
 distribution.
 
 Source: https://carbslinux.org/
-
-
-Quinn Linux
-________________________________________________________________________________
-
-Quinn is an experimental fork of KISS which removes busybox and installs
-standard system utilities and glibc while keeping libressl and of course the
-KISS package manager.
-
-Source:  https://quinnlinux.com/
