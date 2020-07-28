@@ -321,6 +321,9 @@ They require little to no extra code in the package manager to support them.
 |         KISS_SU | Force usage of a different sudo tool.                      |
 |                 | Valid: su, sudo, doas                                      |
 |                 |                                                            |
+|      KISS_STRIP | Enable/Disable package stripping globally.                 |
+|                 | Set to '0' to disable.                                     |
+|                 |                                                            |
 |      KISS_DEBUG | Keep temporary directories around for debugging purposes.  |
 |                 | Set to '1' to enable.                                      |
 |                 |                                                            |
