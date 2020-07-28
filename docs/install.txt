@@ -76,7 +76,7 @@ Disks should be setup and fully mounted to /mnt.
 
     +--------------------------------------------------------------------------+
     |                                                                          |
-    |   $ url=https://github.com/kisslinux/repo/releases/download/1.11.1       |
+    |   $ url=https://github.com/kisslinux/repo/releases/download/1.12.0       |
     |   $ wget "$url/kiss-chroot.tar.xz"                                       |
     |                                                                          |
     +--------------------------------------------------------------------------+
