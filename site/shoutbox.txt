@@ -1,19 +1,19 @@
 SHOUTBOX
 ________________________________________________________________________________
 
-Smaller news, interesting snippets and information.
+Smaller news, interesting snippets and information. Feel free to send pull
+requests to post to the shoutbox.
 
 +-----------------------------------------------------------------------------+
 |                                                                             |
 |  29/07/2020                                                                 |
 |                                                                             |
-|     dylan  If nothing requires libxml2 it will be dropped from the Official |
-|            repositories and moved to Community. Run 'kiss rev libxml2' to   |
-|            see what requires it in your system.                             |
+|       dylan  If nothing requires libxml2 it will be dropped from the        |
+|              Official repositories and moved to Community. Run              |
+|              'kiss rev libxml2' to see what requires it in your system.     |
 |                                                                             |
 |  01/01/1970                                                                 |
 |                                                                             |
-|       ...  Start of the UNIX epoch.                                         |
-|                                                                             |
+|         ...  Start of the UNIX epoch and the dawn of time.                  |
 |                                                                             |
 +-----------------------------------------------------------------------------+
