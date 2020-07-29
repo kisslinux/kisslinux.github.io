@@ -1,0 +1,2 @@
+29/07/2020 - dylan - If nothing requires libxml2 it will be dropped from the
+                     Official repositories and moved to Community.
