@@ -68,7 +68,16 @@ ________________________________________________________________________________
 [2.0] Install KISS
 ________________________________________________________________________________
 
-Disks should be setup and fully mounted to /mnt.
+Start by declaring two variables.
+
++------------------------------------------------------------------------------+
+|                                                                              |
+|   $ ver=2020.7                                                               |
+|   $ url=https://github.com/kisslinux/repo/releases/download/$ver             |
+|                                                                              |
++------------------------------------------------------------------------------+
+
+NOTE: Disks should be setup and fully mounted to /mnt.
 
 
     [2.1] Download the latest release
@@ -76,8 +85,7 @@ Disks should be setup and fully mounted to /mnt.
 
     +--------------------------------------------------------------------------+
     |                                                                          |
-    |   $ url=https://github.com/kisslinux/repo/releases/download/1.12.0       |
-    |   $ wget "$url/kiss-chroot.tar.xz"                                       |
+    |   $ wget "$url/kiss-chroot-$ver.tar.xz"                                  |
     |                                                                          |
     +--------------------------------------------------------------------------+
 
@@ -90,8 +98,8 @@ Disks should be setup and fully mounted to /mnt.
 
     +--------------------------------------------------------------------------+
     |                                                                          |
-    |   $ wget "$url/kiss-chroot.tar.xz.sha256"                                |
-    |   $ sha256sum -c < kiss-chroot.tar.xz.sha256                             |
+    |   $ wget "$url/kiss-chroot-$ver.tar.xz.sha256"                           |
+    |   $ sha256sum -c < kiss-chroot-$ver.tar.xz.sha256                        |
     |                                                                          |
     +--------------------------------------------------------------------------+
 
@@ -107,7 +115,7 @@ Disks should be setup and fully mounted to /mnt.
     | Download the armored ASCII file.                                         |
     +--------------------------------------------------------------------------+
     |                                                                          |
-    |   $ wget "$url/kiss-chroot.tar.xz.asc"                                   |
+    |   $ wget "$url/kiss-chroot-$ver.tar.xz.asc"                              |
     |                                                                          |
     +--------------------------------------------------------------------------+
     | Import my public key (if this fails, try another keyserver).             |
@@ -119,7 +127,7 @@ Disks should be setup and fully mounted to /mnt.
     | Verify the signature.                                                    |
     +--------------------------------------------------------------------------+
     |                                                                          |
-    |   $ gpg --verify kiss-chroot.tar.xz.asc kiss-chroot.tar.xz               |
+    |   $ gpg --verify "kiss-chroot-$ver.tar.xz.asc" "kiss-chroot-$ver.tar.xz" |
     |                                                                          |
     +--------------------------------------------------------------------------+
 
@@ -132,7 +140,7 @@ Disks should be setup and fully mounted to /mnt.
 
     +--------------------------------------------------------------------------+
     |                                                                          |
-    |   $ tar xvf kiss-chroot.tar.xz -C /mnt --strip-components 1              |
+    |   $ tar xvf "kiss-chroot-$ver.tar.xz" -C /mnt --strip-components 1       |
     |                                                                          |
     +--------------------------------------------------------------------------+
 
