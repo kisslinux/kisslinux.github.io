@@ -4,6 +4,9 @@ Date	Mon, 3 Aug 2020 06:06:06 +0100
 
 Welcome to month 4!
 
+KISS is an independent Linux(R) distribution with a focus on simplicity and the
+concept of less is more. See https://k1ss.org for more information.
+
 
 [0.0] Index
 ________________________________________________________________________________
