@@ -119,7 +119,7 @@ Today I released neofetch 7.1.0.
 
 Thanks to everyone involved.
 
-https://github.com/dylanaraps/neofetch/releases/tag/7.1.0
+$/dylanaraps/neofetch/releases/tag/7.1.0
 
 
 [8.0] gkiss
@@ -145,4 +145,4 @@ A list of hex colors is passed via stdin to paleta, the input is morphed into
 a set of escape sequences and sent to every running terminal in the
 system + stdout. Every terminal's colorscheme is updated in realtime!
 
-https://github.com/dylanaraps/paleta
+$/dylanaraps/paleta
