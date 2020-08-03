@@ -7,6 +7,13 @@
 <ttl>1800</ttl>
 <atom:link href="https://k1ss.org/blog/blog.xml" rel="self" type="application/rss+xml" />
 <item>
+<title>03/08/2020: This month in KISS (#4)</title>
+<description>Welcome to month 4!</description>
+<link>https://k1ss.org/blog/20200803a</link>
+<guid isPermaLink="true">https://k1ss.org/blog/20200803a/</guid>
+<pubDate>Mon, 03 Aug 2020 00:00:00 +0000</pubDate>
+</item>
+<item>
 <title>25/06/2020: This month in KISS (#3)</title>
 <description>Welcome to the third monthly update for KISS Linux. The focus this month was on documentation and the reopening of the distribution's Wiki. A big thank you to those filling the Wiki with words.</description>
 <link>https://k1ss.org/blog/20200625a</link>

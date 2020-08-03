@@ -1,0 +1,185 @@
+<!doctype html><html lang=en><link href='data:image/gif;base64,R0lGODlhEAAQAPH/AAAAAP8AAP8AN////yH5BAUAAAQALAAAAAAQABAAAAM2SLrc/jA+QBUFM2iqA2bAMHSktwCCWJIYEIyvKLOuJt+wV69ry5cfwu7WCVp2RSPoUpE4n4sEADs=' rel=icon><title>KISS - 20200803a</title><meta charset=utf-8><meta name=Description content="An independent Linux distribution with a focus on simplicity and the concept of less is more."><meta name=viewport content="width=device-width,initial-scale=1"><style>body{overflow-y:scroll;font:16px monospace,monospace}img,.c{display:table-cell;max-width:999px;max-width:80ch}pre{margin:0;overflow-x:hidden}@media(max-width:999px){.c{display:block;font-size:1.94vw}}@media(prefers-color-scheme:dark){body{background:#000;color:#fff}a{color:#6CF}}</style><div style="display:table;margin:16px auto"><div class=c><pre style="top:0;position:sticky;user-select:none;padding-right:64px">
+<a href=/ style="text-decoration:none;color:#a00">
+|/
+|\ISS
+</a>
+<a href=/news>News</a>
+<a href=/blog>Blog</a>
+
+<a href=/wiki>Wiki (NEW!)</a>
+
+<a href=/install>Install KISS</a>
+<a href=/faq>FAQ</a>
+
+<a href=/package-system>Package System</a>
+<a href=/package-manager>Package Manager</a>
+<a href=/software>Software</a>
+
+<a href=/guidestones>Guidestones</a>
+
+<a href=/testimonials>Testimonials</a>
+<a href=/screenshots>Screenshots</a>
+<a href=/team>Team</a>
+
+<a href=/contact>Contact</a>
+<a href=/donate>Donate</a>
+
+<a href=https://github.com/kisslinux/>GitHub</a>
+<a href=https://git.k1ss.org>Git (mirror)</a>
+
+</pre></div><div class=c><pre>
+
+Subject	This month in KISS (#4)!
+From	Dylan Araps &lt;dylan@k1ss.org&gt;
+Date	Mon, 3 Aug 2020 06:06:06 +0100
+
+Welcome to month 4!
+
+
+<span id=0.0><a href=#0.0>[0.0]</a></span> Index
+________________________________________________________________________________
+
+- c package manager                                                        <a href=#1.0>[1.0]</a>
+- <a href=https://git.k1ss.org>https://git.k1ss.org</a>                                                     <a href=#2.0>[2.0]</a>
+- libelf                                                                   <a href=#3.0>[3.0]</a>
+- libudev-zero                                                             <a href=#4.0>[4.0]</a>
+- removal of .la files                                                     <a href=#5.0>[5.0]</a>
+- package manager changes                                                  <a href=#6.0>[6.0]</a>
+- neofetch 7.1.0                                                           <a href=#7.0>[7.0]</a>
+- gkiss                                                                    <a href=#8.0>[8.0]</a>
+- paleta                                                                   <a href=#9.0>[9.0]</a>
+
+
+<span id=1.0><a href=#1.0>[1.0]</a></span> c package manager
+________________________________________________________________________________
+
+The C package manager is on hold and I will be revisiting it soon. The vision I
+have for it has changed and I'd like to explore something slightly different.
+Will have more to share about this later.
+
+
+<span id=2.0><a href=#2.0>[2.0]</a></span> <a href=https://git.k1ss.org>https://git.k1ss.org</a>
+________________________________________________________________________________
+
+KISS now has its own mirror of the repositories which live on GitHub. This
+currently serves as backup for when GitHub goes down (or vice versa) which has
+seemingly happened more and more since its acquisition.
+
+As a user, feel free to set your git remotes here. Those wanting to avoid GitHub
+in its entirety can send in patches via email if they like.
+
+
+<span id=3.0><a href=#3.0>[3.0]</a></span> libelf
+________________________________________________________________________________
+
+We have swapped libelf implementations from elftoolchain to elfutils.
+
+In the past year we have swapped our libelf implementation twice, the most
+recent swap occurring two days ago. This was just in time for Linux 5.8 as this
+version cannot be built with elftoolchain libelf.
+
+libelf is a library which lets you read, modify or create ELF files in an
+architecture independent way. There are a few different implementations of this
+library (some in development, others not).
+
+The Linux kernel (from 4.14.12) makes use of this library when
+CONFIG_UNWINDER_ORC or CONFIG_STACK_VALIDATION are enabled. The former requires
+the latter so in any case, the latter controls this.
+
+E5ten tracked the build failure to a difference in behavior between elftoolchain
+and elfutils in the gelf_getsymshndx() function. elfutils allows the second
+parameter to be NULL whereas elftoolchain does not.
+
+The kernel build process happens to trigger this which causes build failure when
+using elftoolchain's libelf.
+
+Bug filed here: <a href=https://sourceforge.net/p/elftoolchain/tickets/593/>https://sourceforge.net/p/elftoolchain/tickets/593/</a>
+
+
+<span id=4.0><a href=#4.0>[4.0]</a></span> libudev-zero
+________________________________________________________________________________
+
+libudev-zero is a daemonless, drop-in replacement for libudev written in C99.
+
+This library enables the user to run the device manager of their choosing
+without needing to worry about the udev dependency at all.
+
+Development started just a month ago by illiliti, also known for
+$/<a href=https://github.com/illiliti/tinyramfs>illiliti/tinyramfs</a> and $/<a href=https://github.com/illiliti/kiss-encryption.>illiliti/kiss-encryption.</a>
+
+
+<span id=5.0><a href=#5.0>[5.0]</a></span> removal of .la files
+________________________________________________________________________________
+
+Packages will no longer install libtool's .la files.
+
+These files contain descriptions of libraries for use by libtool and they
+really aren't needed. Arch Linux got rid of them in 2005!
+
+https://bbs.archlinux.org/viewtopic.php?id=14936
+
+
+<span id=6.0><a href=#6.0>[6.0]</a></span> package manager changes
+________________________________________________________________________________
+
+Here are the highlights, more in the commit log.
+
+* Git sources now also pull down their submodules (if any exist).
+* Arguments to 'kiss install' can now be relative.
+* Added '$KISS_STRIP' to globally control binary stripping.
+* Removed last Linux-specific pieces of code.
+* Build files now modifiable in pre-build hooks.
+* Fixed output bugs with post-install log.
+
+
+<span id=7.0><a href=#7.0>[7.0]</a></span> neofetch 7.1.0
+________________________________________________________________________________
+
+Today I released neofetch 7.1.0.
+
+* Neofetch will now detect Ubuntu flavours (Xubuntu, etc) and show their logo.
+* The latest macOS is now supported.
+* Memory output unit can now be changed (KiB, MiB, GiB).
+* Added es-shell support.
+* Show -current or -release when using OpenBSD.
+* Desktop environment output now shows version.
+* ... see commits.
+
+Thanks to everyone involved.
+
+https://github.com/dylanaraps/neofetch/releases/tag/7.1.0
+
+
+<span id=8.0><a href=#8.0>[8.0]</a></span> gkiss
+________________________________________________________________________________
+
+GKISS (GNU KISS Linux) is an alternative rootfs and set of repositories for KISS
+providing glibc instead of musl.
+
+This is a great option for those needing glibc (and it can be run in a chroot
+under musl too!).
+
+https://depsterr.com/gkiss/
+
+
+<span id=9.0><a href=#9.0>[9.0]</a></span> paleta
+________________________________________________________________________________
+
+paleta is a tool I recently wrote in C which enables on-the-fly terminal
+palette modification, independent of terminal emulator. This covers foreground,
+background, cursor and colors 0-255.
+
+A list of hex colors is passed via stdin to paleta, the input is morphed into
+a set of escape sequences and sent to every running terminal in the
+system + stdout. Every terminal's colorscheme is updated in realtime!
+
+https://github.com/dylanaraps/paleta
+
+
+________________________________________________________________________________
+
+Dylan Araps (C) 2019-2020
+
+Linux(R) is the registered trademark of Linus Torvalds in the U.S. and
+other countries.
+</pre></div></div>

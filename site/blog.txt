@@ -3,6 +3,7 @@ ________________________________________________________________________________
 
 RSS Feed available here: @/blog/blog.xml
 
+- @/blog/20200803a This month in KISS (#4)
 - @/blog/20200625a This month in KISS (#3)
 - @/blog/20200525a This month in KISS (#2)
 - @/blog/20200509a KISS turns 1!
