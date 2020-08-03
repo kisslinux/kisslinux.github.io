@@ -74,7 +74,7 @@ This library enables the user to run the device manager of their choosing
 without needing to worry about the udev dependency at all.
 
 Development started just a month ago by illiliti, also known for
-$/illiliti/tinyramfs and $/illiliti/kiss-encryption.
+$/illiliti/tinyramfs and $/illiliti/kiss-encryption
 
 
 [5.0] removal of .la files
