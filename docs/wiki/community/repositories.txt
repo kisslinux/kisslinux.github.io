@@ -13,14 +13,6 @@ to XFCE4, podman and more.
 Source: $/periish/kiss-all
 
 
-MYWAYLAND
-________________________________________________________________________________
-
-Wayland and friends.
-
-Source: $/sdsddsd1/mywayland
-
-
 KDE
 ________________________________________________________________________________
 

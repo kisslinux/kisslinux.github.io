@@ -31,7 +31,7 @@
 
 <a href="/wiki">wiki</a> / <a href='/wiki/wayland'>wayland</a> / install-wayland                                  <a href='https://github.com/kisslinux/wiki/edit/master/wayland/install-wayland.txt'>Edit this page</a>
 
-Edited (<a href='https://github.com/kisslinux/wiki/commit/af8eb08583aeb83f0d7224b3c1e7e5452750fa71'>af8eb08</a>) at 2020-06-15 by Nihal
+Edited (<a href='https://github.com/kisslinux/wiki/commit/8f1bbf52b15f7f68cace715683ac3d575b2a6de7'>8f1bbf5</a>) at 2020-08-04 by Jonathan Dahan
 
 
 Wayland
@@ -93,14 +93,14 @@ Prerequisites
 ________________________________________________________________________________
 
 Though KISS does not support Wayland officially there is no problem in making it
-capable through personal or 3rd party repositories. <a href=#21>[21]</a> The official
+capable through personal or 3rd party repositories. The official
 repositories satisfy all dependencies. After "wayland" and "wayland-protocols"
 are installed, some package adjustments are required to make them to known
 citizens of your system.
 
 NOTE: From this point it is expected that "wayland" and "wayland-protocols" are
       installed and you have forked the required packages with modified
-      configure flags at the beginning of KISS_PATH. <a href=#22>[22]</a> Managing repositories
+      configure flags at the beginning of KISS_PATH. <a href=#21>[21]</a> Managing repositories
 
 * Packages which need to be forked <a href=#23>[23]</a>:
 
@@ -124,7 +124,7 @@ NOTE: From this point it is expected that "wayland" and "wayland-protocols" are
 Install Wayland on top Xorg KISS
 ________________________________________________________________________________
 
-Mesa must be rebuilt first, followed by the aforementioned packages <a href=#24>[24]</a> in
+Mesa must be rebuilt first, followed by the aforementioned packages <a href=#22>[22]</a> in
 a dependency given ascending order.
 
 NOTE: kiss-revdepends is the tool you need.
@@ -192,9 +192,8 @@ ________________________________________________________________________________
 <span id=18><a href=#18>[18]</a></span> <a href=https://people.freedesktop.org/~daniels/lca2013-wayland-x11.pdf>https://people.freedesktop.org/~daniels/lca2013-wayland-x11.pdf</a>
 <span id=19><a href=#19>[19]</a></span> <a href=https://bugzilla.mozilla.org/show_bug.cgi?id=1610199>https://bugzilla.mozilla.org/show_bug.cgi?id=1610199</a>
 <span id=20><a href=#20>[20]</a></span> (webkit2gtk VAAPI source needed)
-<span id=21><a href=#21>[21]</a></span> User Wayland repsitory $/<a href=https://github.com/sdsddsd1/mywayland>sdsddsd1/mywayland</a>
-<span id=22><a href=#22>[22]</a></span> #/<a href=/kiss/managing-repositories>kiss/managing-repositories</a>
-<span id=24><a href=#24>[24]</a></span> <a href=https://wiki.gentoo.org/wiki/Sway#Other>https://wiki.gentoo.org/wiki/Sway#Other</a>
+<span id=21><a href=#21>[21]</a></span> #/<a href=/kiss/managing-repositories>kiss/managing-repositories</a>
+<span id=22><a href=#22>[22]</a></span> <a href=https://wiki.gentoo.org/wiki/Sway#Other>https://wiki.gentoo.org/wiki/Sway#Other</a>
 
 
 ________________________________________________________________________________

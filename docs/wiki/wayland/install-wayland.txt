@@ -57,14 +57,14 @@ Prerequisites
 ________________________________________________________________________________
 
 Though KISS does not support Wayland officially there is no problem in making it
-capable through personal or 3rd party repositories. [21] The official
+capable through personal or 3rd party repositories. The official
 repositories satisfy all dependencies. After "wayland" and "wayland-protocols"
 are installed, some package adjustments are required to make them to known
 citizens of your system.
 
 NOTE: From this point it is expected that "wayland" and "wayland-protocols" are
       installed and you have forked the required packages with modified
-      configure flags at the beginning of KISS_PATH. [22] Managing repositories
+      configure flags at the beginning of KISS_PATH. [21] Managing repositories
 
 * Packages which need to be forked [23]:
 
@@ -88,7 +88,7 @@ NOTE: From this point it is expected that "wayland" and "wayland-protocols" are
 Install Wayland on top Xorg KISS
 ________________________________________________________________________________
 
-Mesa must be rebuilt first, followed by the aforementioned packages [24] in
+Mesa must be rebuilt first, followed by the aforementioned packages [22] in
 a dependency given ascending order.
 
 NOTE: kiss-revdepends is the tool you need.
@@ -156,6 +156,5 @@ ________________________________________________________________________________
 [18] https://people.freedesktop.org/~daniels/lca2013-wayland-x11.pdf
 [19] https://bugzilla.mozilla.org/show_bug.cgi?id=1610199
 [20] (webkit2gtk VAAPI source needed)
-[21] User Wayland repsitory $/sdsddsd1/mywayland
-[22] #/kiss/managing-repositories
-[24] https://wiki.gentoo.org/wiki/Sway#Other
+[21] #/kiss/managing-repositories
+[22] https://wiki.gentoo.org/wiki/Sway#Other
