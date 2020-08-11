@@ -1,0 +1,55 @@
+Subject Changes to repositories using symlinks to /var/db/kiss/repo
+From	Dylan Araps &lt;dylan@k1ss.org&gt;
+Date	Wed, 11 May 2020 03:21:09 +0100
+
+In two weeks' time, the assumption that the official repositories live in
+/var/db/kiss/repo will be removed. This change only affects repositories which
+contain symlinks to this location.
+
+This change is being made for a number of reasons.
+
+- There should be no forced system-wide repository. Users should be free to put
+  the official repositories wherever they like (or even safely remove them). In
+  other words, the official repositories should not be something special.
+
+- The official repositories can be removed from the installation medium. This
+  reduces the size of the tarball by an amount that can only grow over time.
+
+- Users will now learn about repositories and how they work as a part of the
+  installation process. The guide will also include information about the
+  Community repository (and the KISS universe) early on.
+
+
+Repositories with symlinks to /var/db/kiss/repo contain packages based on
+official repository packages. The maintainer may only need to change a package's
+build file so they symlink the rest of the files to the official repositories
+(removing the maintenance burden and duplicate effort).
+
+The now recommended way to layer packages in this manner is to use Git
+submodules. Add the official repositories to your repository as a submodule,
+update your symlinks to /relatively/ point there and the package manager will
+handle the rest.
+
+An example repository can be found here: $/dylanaraps/kiss-submodule-links
+
+Notes about this change:
+
+- The package manager is already aware of submodules and this already works.
+- It makes repository dependence explicit rather than implicit.
+- The submodule is standalone and uninfluenced by KISS_PATH.
+- It required no code.
+
+This change will be made in two weeks. Everything is ready on my end, the time
+is given for repository owners to make the needed change. If all goes well and
+there are no qualms, this change may be made before the deadline. We'll see
+where the wind takes us.
+
+Discussion will be kept open until the change is made. Please leave your
+thoughts in the link below or somewhere I can see them. Happy to answer any
+questions you may have. :)
+
+Discussion: $/kisslinux/repo/issues/209
+
+---
+
+    Dylan

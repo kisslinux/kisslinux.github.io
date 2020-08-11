@@ -8,6 +8,13 @@
 <ttl>1800</ttl>
 <atom:link href="https://k1ss.org/news/news.xml" rel="self" type="application/rss+xml"/>
 <item>
+<title>11/08/2020: Changes to repositories using symlinks to /var/db/kiss/repo</title>
+<description>In two weeks' time, the assumption that the official repositories live in /var/db/kiss/repo will be removed. This change only affects repositories which contain symlinks to this location.</description>
+<link>https://k1ss.org/news/20200811a</link>
+<guid isPermaLink="true">https://k1ss.org/news/20200811a/</guid>
+<pubDate>Tue, 11 Aug 2020 00:00:00 +0000</pubDate>
+</item>
+<item>
 <title>11/05/2020: Encryption support moved outside init</title>
 <description>Encryption support in the init scripts will be moved to an external
 project. Development will happen at a quicker pace and be done by
