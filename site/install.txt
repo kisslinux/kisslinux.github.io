@@ -62,12 +62,11 @@ ________________________________________________________________________________
 
 - Install init scripts                                                    [10.0]
 - Add a normal user                                                       [11.0]
-- Enable the Community repository                                         [12.0]
 
-- Install Xorg                                                            [13.0]
-    - Add your user to the relevant groups                                [13.1]
+- Install Xorg                                                            [12.0]
+    - Add your user to the relevant groups                                [12.1]
 
-- Further steps                                                           [14.0]
+- Further steps                                                           [13.0]
 
 
 [2.0] Install KISS
@@ -825,42 +824,7 @@ ________________________________________________________________________________
 +------------------------------------------------------------------------------+
 
 
-[12.0] Enable the community repository
-________________________________________________________________________________
-
-The KISS community repository is maintained by users of the distribution and
-contains packages which aren't in the main repositories. This repository is
-disabled by default.
-
-+------------------------------------------------------------------------------+
-| Clone the repository to a location of your choosing.                         |
-+------------------------------------------------------------------------------+
-|                                                                              |
-|   $ git clone https://github.com/kisslinux/community.git                     |
-|                                                                              |
-+------------------------------------------------------------------------------+
-
-Add the repository to the system-wide 'KISS_PATH'. The 'KISS_PATH' variable
-works exactly like 'PATH'. Each repository is split by ':' and is checked in the
-order they're written. See @/package-manager#5.0
-
-Add the full path of the repository cloned above to the existing KISS_PATH.
-NOTE: The subdirectory must also be added.
-
-+------------------------------------------------------------------------------+
-|                                                                              |
-|   $ vi /etc/profile.d/kiss_path.sh                                           |
-|                                                                              |
-+------------------------------------------------------------------------------+
-| Spawn a new login shell to access this repository immediately.               |
-+------------------------------------------------------------------------------+
-|                                                                              |
-|   $ sh -l                                                                    |
-|                                                                              |
-+------------------------------------------------------------------------------+
-
-
-[13.0] Install Xorg (optional)
+[12.0] Install Xorg (optional)
 ________________________________________________________________________________
 
 To install Xorg, the input drivers and a basic default set of fonts, run the
@@ -880,7 +844,7 @@ following commands. See @/wiki/xorg
 +------------------------------------------------------------------------------+
 
 
-    [13.1] Add your user to the relevant groups
+    [12.1] Add your user to the relevant groups
     ____________________________________________________________________________
 
     This groups based permissions model may not be suitable if KISS will be
@@ -897,7 +861,7 @@ following commands. See @/wiki/xorg
     +--------------------------------------------------------------------------+
 
 
-[14.0] Further steps
+[13.0] Further steps
 ________________________________________________________________________________
 
 You should now be able to reboot into your KISS installation. Typical
