@@ -13,9 +13,6 @@ ________________________________________________________________________________
 - Xorg will be unable to automatically detect input devices.
 - Libinput will be unable to use its quirks system.
 
-- Some packages have an eudev dependency which cannot be removed.
-    - lvm2 (Compile _without_ --enable-udev_sync and --enable-udev_rules)
-
 
 BENEFITS
 ________________________________________________________________________________

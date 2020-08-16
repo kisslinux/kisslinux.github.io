@@ -15,6 +15,8 @@ ________________________________________________________________________________
 
 - Rebooting after switching init systems                                   [1.0]
 - runit                                                                    [2.0]
+- Hummingbird                                                              [3.0]
+    - Setting up runsvdir                                                  [3.1]
 
 
 [1.0] Rebooting after switching init systems
@@ -38,7 +40,7 @@ currently running on your system and not the one you are switching to.
 |   $ runit-init 6                                                             |
 |                                                                              |
 +------------------------------------------------------------------------------+
-| sinit/shinit                                                                 |
+| sinit/shinit and Hummingbird                                                 |
 +------------------------------------------------------------------------------+
 |                                                                              |
 |   $ kill -s INT 1                                                            |
@@ -68,3 +70,42 @@ Finally, use the alternatives system to swap to runit.
 |   $ kiss a runit /usr/bin/reboot                                             |
 |                                                                              |
 +------------------------------------------------------------------------------+
+
+
+[3.0] Hummingbird
+________________________________________________________________________________
+
+Make sure to install Hummingbird.
+
++------------------------------------------------------------------------------+
+|                                                                              |
+|   # Available in the Community repository.                                   |
+|   $ kiss b hummingbird-git && kiss i hummingbird-git                         |
+|                                                                              |
++------------------------------------------------------------------------------+
+
+Then, swap to Hummingbird by using the alternatives system.
+
++------------------------------------------------------------------------------+
+|                                                                              |
+|   $ kiss a hummingbird-git /usr/bin/init                                     |
+|   $ kiss a hummingbird-git /usr/bin/reboot                                   |
+|                                                                              |
++------------------------------------------------------------------------------+
+
+Once you have booted using Hummingbird, take note that the command used to
+turn the system off is "shutdown".
+
+
+    [3.1] Setting up runsvdir
+    ____________________________________________________________________________
+
+    Hummingbird doesn't provide a service manager, and doesn't read from
+    inittab either. Some people find it useful to have one, such as runsvdir.
+
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |   $ mkdir /etc/rc.d                                                      |
+    |   $ echo 'runsvdir -P /var/service &' > /etc/rc.d/runsvdir.boot          |
+    |                                                                          |
+    +--------------------------------------------------------------------------+

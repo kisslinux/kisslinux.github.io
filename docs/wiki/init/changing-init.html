@@ -31,7 +31,7 @@
 
 <a href="/wiki">wiki</a> / <a href='/wiki/init'>init</a> / changing-init                                       <a href='https://github.com/kisslinux/wiki/edit/master/init/changing-init.txt'>Edit this page</a>
 
-Edited (<a href='https://github.com/kisslinux/wiki/commit/245674e7cf5c9266b367375d2e99d48baf84965e'>245674e</a>) at 2020-06-28 by Dylan Araps
+Edited (<a href='https://github.com/kisslinux/wiki/commit/4dad319265254687cb5e668b58c1da3b475fca74'>4dad319</a>) at 2020-08-16 by Alejandro Sior
 
 
 Changing Init Systems
@@ -51,6 +51,8 @@ ________________________________________________________________________________
 
 - Rebooting after switching init systems                                   <a href=#1.0>[1.0]</a>
 - runit                                                                    <a href=#2.0>[2.0]</a>
+- Hummingbird                                                              <a href=#3.0>[3.0]</a>
+    - Setting up runsvdir                                                  <a href=#3.1>[3.1]</a>
 
 
 <span id=1.0><a href=#1.0>[1.0]</a></span> Rebooting after switching init systems
@@ -74,7 +76,7 @@ currently running on your system and not the one you are switching to.
 |   $ runit-init 6                                                             |
 |                                                                              |
 +------------------------------------------------------------------------------+
-| sinit/shinit                                                                 |
+| sinit/shinit and Hummingbird                                                 |
 +------------------------------------------------------------------------------+
 |                                                                              |
 |   $ kill -s INT 1                                                            |
@@ -104,6 +106,45 @@ Finally, use the alternatives system to swap to runit.
 |   $ kiss a runit /usr/bin/reboot                                             |
 |                                                                              |
 +------------------------------------------------------------------------------+
+
+
+<span id=3.0><a href=#3.0>[3.0]</a></span> Hummingbird
+________________________________________________________________________________
+
+Make sure to install Hummingbird.
+
++------------------------------------------------------------------------------+
+|                                                                              |
+|   # Available in the Community repository.                                   |
+|   $ kiss b hummingbird-git && kiss i hummingbird-git                         |
+|                                                                              |
++------------------------------------------------------------------------------+
+
+Then, swap to Hummingbird by using the alternatives system.
+
++------------------------------------------------------------------------------+
+|                                                                              |
+|   $ kiss a hummingbird-git /usr/bin/init                                     |
+|   $ kiss a hummingbird-git /usr/bin/reboot                                   |
+|                                                                              |
++------------------------------------------------------------------------------+
+
+Once you have booted using Hummingbird, take note that the command used to
+turn the system off is "shutdown".
+
+
+    <span id=3.1><a href=#3.1>[3.1]</a></span> Setting up runsvdir
+    ____________________________________________________________________________
+
+    Hummingbird doesn't provide a service manager, and doesn't read from
+    inittab either. Some people find it useful to have one, such as runsvdir.
+
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |   $ mkdir /etc/rc.d                                                      |
+    |   $ echo 'runsvdir -P /var/service &' > /etc/rc.d/runsvdir.boot          |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
 
 
 ________________________________________________________________________________
