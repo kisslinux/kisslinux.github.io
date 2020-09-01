@@ -25,59 +25,63 @@ ________________________________________________________________________________
     - Unpack the tarball                                                   [2.4]
     - Enter the chroot                                                     [2.5]
 
-- Enable repository signing                                                [3.0]
-    - Build and install gnupg1                                             [3.1]
-    - Import My Key                                                        [3.2]
-    - Enable Signature Verification                                        [3.3]
+- Setup repositories                                                       [3.0]
+    - KISS_PATH                                                            [3.1]
+    - Official repositories                                                [3.2]
+    - Community                                                            [3.3]
 
-- Rebuild KISS                                                             [4.0]
-    - Modify Compiler Options                                              [4.1]
-    - Update All Base Packages                                             [4.2]
-    - Rebuild All Packages                                                 [4.3]
+- Enable repository signing                                                [4.0]
+    - Build and install gnupg1                                             [4.1]
+    - Import My Key                                                        [4.2]
+    - Enable Signature Verification                                        [4.3]
 
-- Userspace tools                                                          [5.0]
-    - Filesystems                                                          [5.1]
-    - Device management                                                    [5.2]
-    - WiFi                                                                 [5.3]
-    - Dynamic IP addressing                                                [5.4]
+- Rebuild KISS                                                             [5.0]
+    - Modify Compiler Options                                              [5.1]
+    - Update All Base Packages                                             [5.2]
+    - Rebuild All Packages                                                 [5.3]
 
-- The hostname                                                             [6.0]
+- Userspace tools                                                          [6.0]
+    - Filesystems                                                          [6.1]
+    - Device management                                                    [6.2]
+    - WiFi                                                                 [6.3]
+    - Dynamic IP addressing                                                [6.4]
 
-- The kernel                                                               [7.0]
-    - Install required packages                                            [7.1]
-    - Download the kernel sources                                          [7.2]
-    - Download firmware blobs                                              [7.3]
-    - Configure the kernel                                                 [7.4]
-    - Build the kernel                                                     [7.5]
-    - Install the kernel                                                   [7.6]
+- The hostname                                                             [7.0]
 
-- The bootloader                                                           [8.0]
-    - Build and install grub                                               [8.1]
-    - Setup grub                                                           [8.2]
+- The kernel                                                               [8.0]
+    - Install required packages                                            [8.1]
+    - Download the kernel sources                                          [8.2]
+    - Download firmware blobs                                              [8.3]
+    - Configure the kernel                                                 [8.4]
+    - Build the kernel                                                     [8.5]
+    - Install the kernel                                                   [8.6]
 
-- Install init scripts                                                     [9.0]
-- Add a normal user                                                       [10.0]
-- Enable the Community repository                                         [11.0]
+- The bootloader                                                           [9.0]
+    - Build and install grub                                               [9.1]
+    - Setup grub                                                           [9.2]
 
-- Install Xorg                                                            [12.0]
-    - Add your user to the relevant groups                                [12.1]
+- Install init scripts                                                    [10.0]
+- Add a normal user                                                       [11.0]
+- Enable the Community repository                                         [12.0]
 
-- Further steps                                                           [13.0]
+- Install Xorg                                                            [13.0]
+    - Add your user to the relevant groups                                [13.1]
+
+- Further steps                                                           [14.0]
 
 
 [2.0] Install KISS
 ________________________________________________________________________________
 
-Start by declaring two variables.
-
-+------------------------------------------------------------------------------+
-|                                                                              |
-|   $ ver=2020.7                                                               |
-|   $ url=https://github.com/kisslinux/repo/releases/download/$ver             |
-|                                                                              |
-+------------------------------------------------------------------------------+
-
 NOTE: Disks should be setup and fully mounted to /mnt.
+
+Start by declaring a variable.
+
++------------------------------------------------------------------------------+
+|                                                                              |
+|   $ url=https://github.com/kisslinux/repo/releases/download/2020.9           |
+|                                                                              |
++------------------------------------------------------------------------------+
 
 
     [2.1] Download the latest release
@@ -85,7 +89,7 @@ NOTE: Disks should be setup and fully mounted to /mnt.
 
     +--------------------------------------------------------------------------+
     |                                                                          |
-    |   $ wget "$url/kiss-chroot-$ver.tar.xz"                                  |
+    |   $ wget "$url/kiss-chroot-2020.9.tar.xz"                                |
     |                                                                          |
     +--------------------------------------------------------------------------+
 
@@ -98,8 +102,8 @@ NOTE: Disks should be setup and fully mounted to /mnt.
 
     +--------------------------------------------------------------------------+
     |                                                                          |
-    |   $ wget "$url/kiss-chroot-$ver.tar.xz.sha256"                           |
-    |   $ sha256sum -c < kiss-chroot-$ver.tar.xz.sha256                        |
+    |   $ wget "$url/kiss-chroot-2020.9.tar.xz.sha256"                         |
+    |   $ sha256sum -c < kiss-chroot-2020.9.tar.xz.sha256                      |
     |                                                                          |
     +--------------------------------------------------------------------------+
 
@@ -115,7 +119,7 @@ NOTE: Disks should be setup and fully mounted to /mnt.
     | Download the armored ASCII file.                                         |
     +--------------------------------------------------------------------------+
     |                                                                          |
-    |   $ wget "$url/kiss-chroot-$ver.tar.xz.asc"                              |
+    |   $ wget "$url/kiss-chroot-2020.9.tar.xz.asc"                            |
     |                                                                          |
     +--------------------------------------------------------------------------+
     | Import my public key (if this fails, try another keyserver).             |
@@ -127,7 +131,7 @@ NOTE: Disks should be setup and fully mounted to /mnt.
     | Verify the signature.                                                    |
     +--------------------------------------------------------------------------+
     |                                                                          |
-    |   $ gpg --verify "kiss-chroot-$ver.tar.xz.asc" "kiss-chroot-$ver.tar.xz" |
+    |   $ gpg --verify "kiss-chroot-2020.9.tar.xz.asc"                         |
     |                                                                          |
     +--------------------------------------------------------------------------+
 
@@ -140,7 +144,8 @@ NOTE: Disks should be setup and fully mounted to /mnt.
 
     +--------------------------------------------------------------------------+
     |                                                                          |
-    |   $ tar xvf "kiss-chroot-$ver.tar.xz" -C /mnt --strip-components 1       |
+    |   $ cd /mnt                                                              |
+    |   $ tar xvf /path/to/kiss-chroot-2020.9.tar.xz                           |
     |                                                                          |
     +--------------------------------------------------------------------------+
 
@@ -162,7 +167,143 @@ NOTE: Disks should be setup and fully mounted to /mnt.
     +--------------------------------------------------------------------------+
 
 
-[3.0] Enable repository signing
+[3.0] Setup repositories
+________________________________________________________________________________
+
+The repository system is quite different to that of other distributions. The
+system is controlled via an environment variable called KISS_PATH. This variable
+is analogous to PATH, a colon separated list of absolute paths.
+
+A repository is merely a directory (repo) containing directories (packages) and
+can be located anywhere on the file-system. The full path to the directory is
+the value to KISS_PATH.
+
+The chroot/installation tarball does not come with any repositories by default,
+nor does the package manager expect or /assume/ that any exist in a given
+location. This is entirely up to the user.
+
+
+    [3.1] Setting KISS_PATH
+    ____________________________________________________________________________
+
+    The variable can be set system-wide, per-user, per-session, per-command,
+    and even programmatically. This guide will cover setting it for the current
+    user with an example repository layout.
+
+    Take this layout:
+
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |  ~/repos/                                                                |
+    |  |                                                                       |
+    |  +- repo/                                                                |
+    |  |  - .git/                                                              |
+    |  |  - core/                                                              |
+    |  |  - extra/                                                             |
+    |  |  - xorg/                                                              |
+    |  |                                                                       |
+    |  +- community/                                                           |
+    |  |  - .git/                                                              |
+    |  |  - community/                                                         |
+    |  |                                                                       |
+    |  +- personal/                                                            |
+    |  |  - games/                                                             |
+    |  |  - web                                                                |
+    |  |                                                                        |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
+
+    - Repositories are stored in ~/repos/ which is a per-user configuration.
+    - There are two git repositories containing four KISS repositories.
+    - There is a third repository called personal, not tracked by git.
+    - The personal repository contains two KISS repositories.
+
+    This user's KISS_PATH could look like this:
+
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |  ~/.profile                                                              |
+    |                                                                          |
+    |    1 export KISS_PATH=''                                                 |
+    |    2 KISS_PATH=$KISS_PATH:$HOME/repos/personal/games                     |
+    |    3 KISS_PATH=$KISS_PATH:$HOME/repos/personal/web                       |
+    |    4 KISS_PATH=$KISS_PATH:$HOME/repos/repo/core                          |
+    |    5 KISS_PATH=$KISS_PATH:$HOME/repos/repo/extra                         |
+    |    6 KISS_PATH=$KISS_PATH:$HOME/repos/repo/xorg                          |
+    |    7 KISS_PATH=$KISS_PATH:$HOME/repos/community/community                |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
+
+    - All repositories are enabled.
+    - This is a per-user configuration using ~/.profile
+    - The package manager will search this list in the order it is defined.
+
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |  TIP: Run '. ~/.profile' for changes to immediately take effect.         |
+    |  TIP: Run 'echo "$KISS_PATH"' to check if properly set.                  |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
+
+
+    [3.2] Official repositories
+    ____________________________________________________________________________
+
+    The official repositories contain everything from the base system to a
+    working web browser (Firefox) and media player (mpv). This includes Xorg,
+    rust, nodejs and a lot of other useful software.
+
+    Clone the repository to the directory of your choosing.
+
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    | $ git clone https://github.com/kisslinux/repo                            |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
+
+    This will be cloned to a directory called 'repo'. This directory contains
+    multiple KISS repositories (core, extra, testing and xorg). Core and Extra
+    must be enabled as this guide requires their use. Xorg is optional.
+
+
+    [3.3] Community
+    ____________________________________________________________________________
+
+    The community repository contains packages submitted and maintained by users
+    of the distribution. It is twice the size of the official repositories and
+    contains a lot of useful software.
+
+    Clone the repository to the directory of your choosing.
+
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    | $ git clone https://github.com/kisslinux/community                       |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
+
+    This will be cloned to a directory called 'community'. This directory
+    contains a single KISS repository bearing the same name.
+
+
+    [3.4] Universe
+    ____________________________________________________________________________
+
+    There are many more repositories in existence, each providing a unique set
+    of software. These are all independently created and managed by users. This
+    has been called the "KISS Universe".
+
+    - https://k1ss.org/wiki/community/repositories
+    - https://github.com/topics/kiss-repo
+
+    NOTE: It may be desirable to save this step for post-installation.
+
+
+Repositories should now be setup and in functioning order. Run 'kiss search \*'
+(notice the escaping) to print all repository packages in the search order of
+the package manager.
+
+
+[4.0] Enable repository signing
 ________________________________________________________________________________
 
 This step is optional and can also be done after the installation. Repository
@@ -180,7 +321,7 @@ prevents any unsigned updates from reaching your system.
 +------------------------------------------------------------------------------+
 
 
-    [3.1] Build and install gnupg1
+    [4.1] Build and install gnupg1
     ____________________________________________________________________________
 
     Welcome to the KISS package manager! These two commands are how individual
@@ -194,7 +335,7 @@ prevents any unsigned updates from reaching your system.
     +--------------------------------------------------------------------------+
 
 
-    [3.2] Import my (Dylan Araps') key
+    [4.2] Import my (Dylan Araps') key
     ____________________________________________________________________________
 
     If the GNU keyserver fails on your network, try an alternative mirror.
@@ -214,7 +355,7 @@ prevents any unsigned updates from reaching your system.
     +--------------------------------------------------------------------------+
 
 
-    [3.3] Enable signature verification
+    [4.3] Enable signature verification
     ____________________________________________________________________________
 
     Repository signature verification uses a feature built into git itself
@@ -232,13 +373,13 @@ prevents any unsigned updates from reaching your system.
     +--------------------------------------------------------------------------+
 
 
-[4.0] Rebuild kiss
+[5.0] Rebuild kiss
 ________________________________________________________________________________
 
 This step is entirely optional and can also be done post-installation.
 
 
-    [4.1] Modify compiler options (optional)
+    [5.1] Modify compiler options (optional)
     ____________________________________________________________________________
 
     These options have been tested and work with every package in the
@@ -272,7 +413,7 @@ This step is entirely optional and can also be done post-installation.
     +--------------------------------------------------------------------------+
 
 
-    [4.2] Update all base packages to the latest version
+    [5.2] Update all base packages to the latest version
     ____________________________________________________________________________
 
     This is how updates are performed on a KISS system. This command uses git
@@ -286,7 +427,7 @@ This step is entirely optional and can also be done post-installation.
     +--------------------------------------------------------------------------+
 
 
-    [4.3] Rebuild all packages
+    [5.3] Rebuild all packages
     ____________________________________________________________________________
 
     We simply cd to the installed packages database and use a glob to grab the
@@ -300,7 +441,7 @@ This step is entirely optional and can also be done post-installation.
     +--------------------------------------------------------------------------+
 
 
-[5.0] Userspace tools
+[6.0] Userspace tools
 ________________________________________________________________________________
 
 Each kiss action (build, install, etc) has a shorthand alias. From now on,
@@ -309,7 +450,7 @@ Each kiss action (build, install, etc) has a shorthand alias. From now on,
 The software below is required unless stated otherwise.
 
 
-    [5.1] Filesystem utilities
+    [6.1] Filesystem utilities
     ____________________________________________________________________________
 
     NOTE: Open an issue for additional filesystem support.
@@ -338,7 +479,7 @@ The software below is required unless stated otherwise.
     +--------------------------------------------------------------------------+
 
 
-    [5.2] Device management
+    [6.2] Device management
     ____________________________________________________________________________
 
     NOTE: If you choose to not install eudev, mdev will automatically be used in
@@ -362,7 +503,7 @@ The software below is required unless stated otherwise.
     +--------------------------------------------------------------------------+
 
 
-    [5.3] WiFi (optional)
+    [6.3] WiFi (optional)
     ____________________________________________________________________________
 
     +--------------------------------------------------------------------------+
@@ -373,7 +514,7 @@ The software below is required unless stated otherwise.
     +--------------------------------------------------------------------------+
 
 
-    [5.4] Dynamic IP addressing (optional)
+    [6.4] Dynamic IP addressing (optional)
     ____________________________________________________________________________
 
     +--------------------------------------------------------------------------+
@@ -384,7 +525,7 @@ The software below is required unless stated otherwise.
     +--------------------------------------------------------------------------+
 
 
-[6.0] The hostname
+[7.0] The hostname
 ________________________________________________________________________________
 
 +------------------------------------------------------------------------------+
@@ -409,7 +550,7 @@ ________________________________________________________________________________
 +------------------------------------------------------------------------------+
 
 
-[7.0] The kernel
+[8.0] The kernel
 ________________________________________________________________________________
 
 This step involves configuring and building your own Linux kernel. If you have
@@ -437,7 +578,7 @@ read the link (and the patch itself for more information). @/news/20200509a
 +------------------------------------------------------------------------------+
 
 
-    [7.1] Install required packages
+    [8.1] Install required packages
     ____________________________________________________________________________
 
     +--------------------------------------------------------------------------+
@@ -472,7 +613,7 @@ read the link (and the patch itself for more information). @/news/20200509a
     +--------------------------------------------------------------------------+
 
 
-    [7.2] Download the kernel sources
+    [8.2] Download the kernel sources
     ____________________________________________________________________________
 
     Kernel releases:
@@ -500,7 +641,7 @@ read the link (and the patch itself for more information). @/news/20200509a
     +--------------------------------------------------------------------------+
 
 
-    [7.3] Download firmware blobs (if required)
+    [8.3] Download firmware blobs (if required)
     ____________________________________________________________________________
 
     To keep the KISS repositories entirely FOSS, the proprietary kernel firmware
@@ -527,7 +668,7 @@ read the link (and the patch itself for more information). @/news/20200509a
     +--------------------------------------------------------------------------+
 
 
-    [7.4] Configure the kernel
+    [8.4] Configure the kernel
     ____________________________________________________________________________
 
     You can determine which drivers you need by searching the web for your
@@ -563,7 +704,7 @@ read the link (and the patch itself for more information). @/news/20200509a
     +--------------------------------------------------------------------------+
 
 
-    [7.5] Build the kernel
+    [8.5] Build the kernel
     ____________________________________________________________________________
 
     This may take a while to complete. The compilation time depends on your
@@ -577,7 +718,7 @@ read the link (and the patch itself for more information). @/news/20200509a
     +--------------------------------------------------------------------------+
 
 
-    [7.6] Install the kernel
+    [8.6] Install the kernel
     ____________________________________________________________________________
 
     +--------------------------------------------------------------------------+
@@ -602,7 +743,7 @@ read the link (and the patch itself for more information). @/news/20200509a
     +--------------------------------------------------------------------------+
 
 
-[8.0] The bootloader
+[9.0] The bootloader
 ________________________________________________________________________________
 
 The default bootloader is grub (though nothing prevents the use of another
@@ -610,13 +751,13 @@ bootloader). This default was chosen as most people are familiar with it, both
 BIOS and UEFI are supported and vast amounts of documentation for it exists.
 
 
-    [8.1] Recommended
+    [9.1] Recommended
     ____________________________________________________________________________
 
     Have an /etc/fstab file ready.
 
 
-    [8.2] Build and install grub
+    [9.2] Build and install grub
     ____________________________________________________________________________
 
     +--------------------------------------------------------------------------+
@@ -634,7 +775,7 @@ BIOS and UEFI are supported and vast amounts of documentation for it exists.
     +--------------------------------------------------------------------------+
 
 
-    [8.3] Setup grub
+    [9.3] Setup grub
     ____________________________________________________________________________
 
     +--------------------------------------------------------------------------+
@@ -657,7 +798,7 @@ BIOS and UEFI are supported and vast amounts of documentation for it exists.
     +--------------------------------------------------------------------------+
 
 
-[9.0] Install init scripts
+[10.0] Install init scripts
 ________________________________________________________________________________
 
 The default init is busybox init (though nothing ties you to it). The below
@@ -674,7 +815,7 @@ Source code: $/kisslinux/init
 +------------------------------------------------------------------------------+
 
 
-[10.0] Add a normal user (recommended)
+[11.0] Add a normal user (recommended)
 ________________________________________________________________________________
 
 +------------------------------------------------------------------------------+
@@ -684,7 +825,7 @@ ________________________________________________________________________________
 +------------------------------------------------------------------------------+
 
 
-[11.0] Enable the community repository
+[12.0] Enable the community repository
 ________________________________________________________________________________
 
 The KISS community repository is maintained by users of the distribution and
@@ -719,7 +860,7 @@ NOTE: The subdirectory must also be added.
 +------------------------------------------------------------------------------+
 
 
-[12.0] Install Xorg (optional)
+[13.0] Install Xorg (optional)
 ________________________________________________________________________________
 
 To install Xorg, the input drivers and a basic default set of fonts, run the
@@ -739,7 +880,7 @@ following commands. See @/wiki/xorg
 +------------------------------------------------------------------------------+
 
 
-    [12.1] Add your user to the relevant groups
+    [13.1] Add your user to the relevant groups
     ____________________________________________________________________________
 
     This groups based permissions model may not be suitable if KISS will be
@@ -756,7 +897,7 @@ following commands. See @/wiki/xorg
     +--------------------------------------------------------------------------+
 
 
-[13.0] Further steps
+[14.0] Further steps
 ________________________________________________________________________________
 
 You should now be able to reboot into your KISS installation. Typical

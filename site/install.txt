@@ -73,16 +73,15 @@ ________________________________________________________________________________
 [2.0] Install KISS
 ________________________________________________________________________________
 
-Start by declaring two variables.
-
-+------------------------------------------------------------------------------+
-|                                                                              |
-|   $ ver=2020.7                                                               |
-|   $ url=https://github.com/kisslinux/repo/releases/download/$ver             |
-|                                                                              |
-+------------------------------------------------------------------------------+
-
 NOTE: Disks should be setup and fully mounted to /mnt.
+
+Start by declaring a variable.
+
++------------------------------------------------------------------------------+
+|                                                                              |
+|   $ url=https://github.com/kisslinux/repo/releases/download/2020.9           |
+|                                                                              |
++------------------------------------------------------------------------------+
 
 
     [2.1] Download the latest release
@@ -90,7 +89,7 @@ NOTE: Disks should be setup and fully mounted to /mnt.
 
     +--------------------------------------------------------------------------+
     |                                                                          |
-    |   $ wget "$url/kiss-chroot-$ver.tar.xz"                                  |
+    |   $ wget "$url/kiss-chroot-2020.9.tar.xz"                                |
     |                                                                          |
     +--------------------------------------------------------------------------+
 
@@ -103,8 +102,8 @@ NOTE: Disks should be setup and fully mounted to /mnt.
 
     +--------------------------------------------------------------------------+
     |                                                                          |
-    |   $ wget "$url/kiss-chroot-$ver.tar.xz.sha256"                           |
-    |   $ sha256sum -c < kiss-chroot-$ver.tar.xz.sha256                        |
+    |   $ wget "$url/kiss-chroot-2020.9.tar.xz.sha256"                         |
+    |   $ sha256sum -c < kiss-chroot-2020.9.tar.xz.sha256                      |
     |                                                                          |
     +--------------------------------------------------------------------------+
 
@@ -120,7 +119,7 @@ NOTE: Disks should be setup and fully mounted to /mnt.
     | Download the armored ASCII file.                                         |
     +--------------------------------------------------------------------------+
     |                                                                          |
-    |   $ wget "$url/kiss-chroot-$ver.tar.xz.asc"                              |
+    |   $ wget "$url/kiss-chroot-2020.9.tar.xz.asc"                            |
     |                                                                          |
     +--------------------------------------------------------------------------+
     | Import my public key (if this fails, try another keyserver).             |
@@ -132,7 +131,7 @@ NOTE: Disks should be setup and fully mounted to /mnt.
     | Verify the signature.                                                    |
     +--------------------------------------------------------------------------+
     |                                                                          |
-    |   $ gpg --verify "kiss-chroot-$ver.tar.xz.asc" "kiss-chroot-$ver.tar.xz" |
+    |   $ gpg --verify "kiss-chroot-2020.9.tar.xz.asc"                         |
     |                                                                          |
     +--------------------------------------------------------------------------+
 
@@ -145,7 +144,8 @@ NOTE: Disks should be setup and fully mounted to /mnt.
 
     +--------------------------------------------------------------------------+
     |                                                                          |
-    |   $ tar xvf "kiss-chroot-$ver.tar.xz" -C /mnt --strip-components 1       |
+    |   $ cd /mnt                                                              |
+    |   $ tar xvf /path/to/kiss-chroot-2020.9.tar.xz                           |
     |                                                                          |
     +--------------------------------------------------------------------------+
 
@@ -237,11 +237,11 @@ location. This is entirely up to the user.
     - All repositories are enabled.
     - This is a per-user configuration using ~/.profile
     - The package manager will search this list in the order it is defined.
-    - If a package is not found in a repository, the next list item is checked.
 
     +--------------------------------------------------------------------------+
     |                                                                          |
     |  TIP: Run '. ~/.profile' for changes to immediately take effect.         |
+    |  TIP: Run 'echo "$KISS_PATH"' to check if properly set.                  |
     |                                                                          |
     +--------------------------------------------------------------------------+
 
@@ -262,8 +262,8 @@ location. This is entirely up to the user.
     +--------------------------------------------------------------------------+
 
     This will be cloned to a directory called 'repo'. This directory contains
-    multiple KISS repositories (core, extra, testing and xorg). Add core and
-    extra to your KISS_PATH in all cases. Add xorg if desirable.
+    multiple KISS repositories (core, extra, testing and xorg). Core and Extra
+    must be enabled as this guide requires their use. Xorg is optional.
 
 
     [3.3] Community

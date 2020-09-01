@@ -56,59 +56,63 @@ ________________________________________________________________________________
     - Unpack the tarball                                                   <a href=#2.4>[2.4]</a>
     - Enter the chroot                                                     <a href=#2.5>[2.5]</a>
 
-- Enable repository signing                                                <a href=#3.0>[3.0]</a>
-    - Build and install gnupg1                                             <a href=#3.1>[3.1]</a>
-    - Import My Key                                                        <a href=#3.2>[3.2]</a>
-    - Enable Signature Verification                                        <a href=#3.3>[3.3]</a>
+- Setup repositories                                                       <a href=#3.0>[3.0]</a>
+    - KISS_PATH                                                            <a href=#3.1>[3.1]</a>
+    - Official repositories                                                <a href=#3.2>[3.2]</a>
+    - Community                                                            <a href=#3.3>[3.3]</a>
 
-- Rebuild KISS                                                             <a href=#4.0>[4.0]</a>
-    - Modify Compiler Options                                              <a href=#4.1>[4.1]</a>
-    - Update All Base Packages                                             <a href=#4.2>[4.2]</a>
-    - Rebuild All Packages                                                 <a href=#4.3>[4.3]</a>
+- Enable repository signing                                                <a href=#4.0>[4.0]</a>
+    - Build and install gnupg1                                             <a href=#4.1>[4.1]</a>
+    - Import My Key                                                        <a href=#4.2>[4.2]</a>
+    - Enable Signature Verification                                        <a href=#4.3>[4.3]</a>
 
-- Userspace tools                                                          <a href=#5.0>[5.0]</a>
-    - Filesystems                                                          <a href=#5.1>[5.1]</a>
-    - Device management                                                    <a href=#5.2>[5.2]</a>
-    - WiFi                                                                 <a href=#5.3>[5.3]</a>
-    - Dynamic IP addressing                                                <a href=#5.4>[5.4]</a>
+- Rebuild KISS                                                             <a href=#5.0>[5.0]</a>
+    - Modify Compiler Options                                              <a href=#5.1>[5.1]</a>
+    - Update All Base Packages                                             <a href=#5.2>[5.2]</a>
+    - Rebuild All Packages                                                 <a href=#5.3>[5.3]</a>
 
-- The hostname                                                             <a href=#6.0>[6.0]</a>
+- Userspace tools                                                          <a href=#6.0>[6.0]</a>
+    - Filesystems                                                          <a href=#6.1>[6.1]</a>
+    - Device management                                                    <a href=#6.2>[6.2]</a>
+    - WiFi                                                                 <a href=#6.3>[6.3]</a>
+    - Dynamic IP addressing                                                <a href=#6.4>[6.4]</a>
 
-- The kernel                                                               <a href=#7.0>[7.0]</a>
-    - Install required packages                                            <a href=#7.1>[7.1]</a>
-    - Download the kernel sources                                          <a href=#7.2>[7.2]</a>
-    - Download firmware blobs                                              <a href=#7.3>[7.3]</a>
-    - Configure the kernel                                                 <a href=#7.4>[7.4]</a>
-    - Build the kernel                                                     <a href=#7.5>[7.5]</a>
-    - Install the kernel                                                   <a href=#7.6>[7.6]</a>
+- The hostname                                                             <a href=#7.0>[7.0]</a>
 
-- The bootloader                                                           <a href=#8.0>[8.0]</a>
-    - Build and install grub                                               <a href=#8.1>[8.1]</a>
-    - Setup grub                                                           <a href=#8.2>[8.2]</a>
+- The kernel                                                               <a href=#8.0>[8.0]</a>
+    - Install required packages                                            <a href=#8.1>[8.1]</a>
+    - Download the kernel sources                                          <a href=#8.2>[8.2]</a>
+    - Download firmware blobs                                              <a href=#8.3>[8.3]</a>
+    - Configure the kernel                                                 <a href=#8.4>[8.4]</a>
+    - Build the kernel                                                     <a href=#8.5>[8.5]</a>
+    - Install the kernel                                                   <a href=#8.6>[8.6]</a>
 
-- Install init scripts                                                     <a href=#9.0>[9.0]</a>
-- Add a normal user                                                       <a href=#10.0>[10.0]</a>
-- Enable the Community repository                                         <a href=#11.0>[11.0]</a>
+- The bootloader                                                           <a href=#9.0>[9.0]</a>
+    - Build and install grub                                               <a href=#9.1>[9.1]</a>
+    - Setup grub                                                           <a href=#9.2>[9.2]</a>
 
-- Install Xorg                                                            <a href=#12.0>[12.0]</a>
-    - Add your user to the relevant groups                                <a href=#12.1>[12.1]</a>
+- Install init scripts                                                    <a href=#10.0>[10.0]</a>
+- Add a normal user                                                       <a href=#11.0>[11.0]</a>
+- Enable the Community repository                                         <a href=#12.0>[12.0]</a>
 
-- Further steps                                                           <a href=#13.0>[13.0]</a>
+- Install Xorg                                                            <a href=#13.0>[13.0]</a>
+    - Add your user to the relevant groups                                <a href=#13.1>[13.1]</a>
+
+- Further steps                                                           <a href=#14.0>[14.0]</a>
 
 
 <span id=2.0><a href=#2.0>[2.0]</a></span> Install KISS
 ________________________________________________________________________________
 
-Start by declaring two variables.
-
-+------------------------------------------------------------------------------+
-|                                                                              |
-|   $ ver=2020.7                                                               |
-|   $ url=https://github.com/kisslinux/repo/releases/download/$ver             |
-|                                                                              |
-+------------------------------------------------------------------------------+
-
 NOTE: Disks should be setup and fully mounted to /mnt.
+
+Start by declaring a variable.
+
++------------------------------------------------------------------------------+
+|                                                                              |
+|   $ url=https://github.com/kisslinux/repo/releases/download/2020.9           |
+|                                                                              |
++------------------------------------------------------------------------------+
 
 
     <span id=2.1><a href=#2.1>[2.1]</a></span> Download the latest release
@@ -116,7 +120,7 @@ NOTE: Disks should be setup and fully mounted to /mnt.
 
     +--------------------------------------------------------------------------+
     |                                                                          |
-    |   $ wget "$url/kiss-chroot-$ver.tar.xz"                                  |
+    |   $ wget "$url/kiss-chroot-2020.9.tar.xz"                                |
     |                                                                          |
     +--------------------------------------------------------------------------+
 
@@ -129,8 +133,8 @@ NOTE: Disks should be setup and fully mounted to /mnt.
 
     +--------------------------------------------------------------------------+
     |                                                                          |
-    |   $ wget "$url/kiss-chroot-$ver.tar.xz.sha256"                           |
-    |   $ sha256sum -c < kiss-chroot-$ver.tar.xz.sha256                        |
+    |   $ wget "$url/kiss-chroot-2020.9.tar.xz.sha256"                         |
+    |   $ sha256sum -c < kiss-chroot-2020.9.tar.xz.sha256                      |
     |                                                                          |
     +--------------------------------------------------------------------------+
 
@@ -146,7 +150,7 @@ NOTE: Disks should be setup and fully mounted to /mnt.
     | Download the armored ASCII file.                                         |
     +--------------------------------------------------------------------------+
     |                                                                          |
-    |   $ wget "$url/kiss-chroot-$ver.tar.xz.asc"                              |
+    |   $ wget "$url/kiss-chroot-2020.9.tar.xz.asc"                            |
     |                                                                          |
     +--------------------------------------------------------------------------+
     | Import my public key (if this fails, try another keyserver).             |
@@ -158,7 +162,7 @@ NOTE: Disks should be setup and fully mounted to /mnt.
     | Verify the signature.                                                    |
     +--------------------------------------------------------------------------+
     |                                                                          |
-    |   $ gpg --verify "kiss-chroot-$ver.tar.xz.asc" "kiss-chroot-$ver.tar.xz" |
+    |   $ gpg --verify "kiss-chroot-2020.9.tar.xz.asc"                         |
     |                                                                          |
     +--------------------------------------------------------------------------+
 
@@ -171,7 +175,8 @@ NOTE: Disks should be setup and fully mounted to /mnt.
 
     +--------------------------------------------------------------------------+
     |                                                                          |
-    |   $ tar xvf "kiss-chroot-$ver.tar.xz" -C /mnt --strip-components 1       |
+    |   $ cd /mnt                                                              |
+    |   $ tar xvf /path/to/kiss-chroot-2020.9.tar.xz                           |
     |                                                                          |
     +--------------------------------------------------------------------------+
 
@@ -193,7 +198,143 @@ NOTE: Disks should be setup and fully mounted to /mnt.
     +--------------------------------------------------------------------------+
 
 
-<span id=3.0><a href=#3.0>[3.0]</a></span> Enable repository signing
+<span id=3.0><a href=#3.0>[3.0]</a></span> Setup repositories
+________________________________________________________________________________
+
+The repository system is quite different to that of other distributions. The
+system is controlled via an environment variable called KISS_PATH. This variable
+is analogous to PATH, a colon separated list of absolute paths.
+
+A repository is merely a directory (repo) containing directories (packages) and
+can be located anywhere on the file-system. The full path to the directory is
+the value to KISS_PATH.
+
+The chroot/installation tarball does not come with any repositories by default,
+nor does the package manager expect or /assume/ that any exist in a given
+location. This is entirely up to the user.
+
+
+    <span id=3.1><a href=#3.1>[3.1]</a></span> Setting KISS_PATH
+    ____________________________________________________________________________
+
+    The variable can be set system-wide, per-user, per-session, per-command,
+    and even programmatically. This guide will cover setting it for the current
+    user with an example repository layout.
+
+    Take this layout:
+
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |  ~/repos/                                                                |
+    |  |                                                                       |
+    |  +- repo/                                                                |
+    |  |  - .git/                                                              |
+    |  |  - core/                                                              |
+    |  |  - extra/                                                             |
+    |  |  - xorg/                                                              |
+    |  |                                                                       |
+    |  +- community/                                                           |
+    |  |  - .git/                                                              |
+    |  |  - community/                                                         |
+    |  |                                                                       |
+    |  +- personal/                                                            |
+    |  |  - games/                                                             |
+    |  |  - web                                                                |
+    |  |                                                                        |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
+
+    - Repositories are stored in ~/repos/ which is a per-user configuration.
+    - There are two git repositories containing four KISS repositories.
+    - There is a third repository called personal, not tracked by git.
+    - The personal repository contains two KISS repositories.
+
+    This user's KISS_PATH could look like this:
+
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |  ~/.profile                                                              |
+    |                                                                          |
+    |    1 export KISS_PATH=''                                                 |
+    |    2 KISS_PATH=$KISS_PATH:$HOME/repos/personal/games                     |
+    |    3 KISS_PATH=$KISS_PATH:$HOME/repos/personal/web                       |
+    |    4 KISS_PATH=$KISS_PATH:$HOME/repos/repo/core                          |
+    |    5 KISS_PATH=$KISS_PATH:$HOME/repos/repo/extra                         |
+    |    6 KISS_PATH=$KISS_PATH:$HOME/repos/repo/xorg                          |
+    |    7 KISS_PATH=$KISS_PATH:$HOME/repos/community/community                |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
+
+    - All repositories are enabled.
+    - This is a per-user configuration using ~/.profile
+    - The package manager will search this list in the order it is defined.
+
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |  TIP: Run '. ~/.profile' for changes to immediately take effect.         |
+    |  TIP: Run 'echo "$KISS_PATH"' to check if properly set.                  |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
+
+
+    <span id=3.2><a href=#3.2>[3.2]</a></span> Official repositories
+    ____________________________________________________________________________
+
+    The official repositories contain everything from the base system to a
+    working web browser (Firefox) and media player (mpv). This includes Xorg,
+    rust, nodejs and a lot of other useful software.
+
+    Clone the repository to the directory of your choosing.
+
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    | $ git clone <a href=https://github.com/kisslinux/repo>https://github.com/kisslinux/repo</a>                            |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
+
+    This will be cloned to a directory called 'repo'. This directory contains
+    multiple KISS repositories (core, extra, testing and xorg). Core and Extra
+    must be enabled as this guide requires their use. Xorg is optional.
+
+
+    <span id=3.3><a href=#3.3>[3.3]</a></span> Community
+    ____________________________________________________________________________
+
+    The community repository contains packages submitted and maintained by users
+    of the distribution. It is twice the size of the official repositories and
+    contains a lot of useful software.
+
+    Clone the repository to the directory of your choosing.
+
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    | $ git clone <a href=https://github.com/kisslinux/community>https://github.com/kisslinux/community</a>                       |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
+
+    This will be cloned to a directory called 'community'. This directory
+    contains a single KISS repository bearing the same name.
+
+
+    <span id=3.4><a href=#3.4>[3.4]</a></span> Universe
+    ____________________________________________________________________________
+
+    There are many more repositories in existence, each providing a unique set
+    of software. These are all independently created and managed by users. This
+    has been called the "KISS Universe".
+
+    - <a href=https://k1ss.org/wiki/community/repositories>https://k1ss.org/wiki/community/repositories</a>
+    - <a href=https://github.com/topics/kiss-repo>https://github.com/topics/kiss-repo</a>
+
+    NOTE: It may be desirable to save this step for post-installation.
+
+
+Repositories should now be setup and in functioning order. Run 'kiss search \*'
+(notice the escaping) to print all repository packages in the search order of
+the package manager.
+
+
+<span id=4.0><a href=#4.0>[4.0]</a></span> Enable repository signing
 ________________________________________________________________________________
 
 This step is optional and can also be done after the installation. Repository
@@ -211,7 +352,7 @@ prevents any unsigned updates from reaching your system.
 +------------------------------------------------------------------------------+
 
 
-    <span id=3.1><a href=#3.1>[3.1]</a></span> Build and install gnupg1
+    <span id=4.1><a href=#4.1>[4.1]</a></span> Build and install gnupg1
     ____________________________________________________________________________
 
     Welcome to the KISS package manager! These two commands are how individual
@@ -225,7 +366,7 @@ prevents any unsigned updates from reaching your system.
     +--------------------------------------------------------------------------+
 
 
-    <span id=3.2><a href=#3.2>[3.2]</a></span> Import my (Dylan Araps') key
+    <span id=4.2><a href=#4.2>[4.2]</a></span> Import my (Dylan Araps') key
     ____________________________________________________________________________
 
     If the GNU keyserver fails on your network, try an alternative mirror.
@@ -245,7 +386,7 @@ prevents any unsigned updates from reaching your system.
     +--------------------------------------------------------------------------+
 
 
-    <span id=3.3><a href=#3.3>[3.3]</a></span> Enable signature verification
+    <span id=4.3><a href=#4.3>[4.3]</a></span> Enable signature verification
     ____________________________________________________________________________
 
     Repository signature verification uses a feature built into git itself
@@ -263,13 +404,13 @@ prevents any unsigned updates from reaching your system.
     +--------------------------------------------------------------------------+
 
 
-<span id=4.0><a href=#4.0>[4.0]</a></span> Rebuild kiss
+<span id=5.0><a href=#5.0>[5.0]</a></span> Rebuild kiss
 ________________________________________________________________________________
 
 This step is entirely optional and can also be done post-installation.
 
 
-    <span id=4.1><a href=#4.1>[4.1]</a></span> Modify compiler options (optional)
+    <span id=5.1><a href=#5.1>[5.1]</a></span> Modify compiler options (optional)
     ____________________________________________________________________________
 
     These options have been tested and work with every package in the
@@ -303,7 +444,7 @@ This step is entirely optional and can also be done post-installation.
     +--------------------------------------------------------------------------+
 
 
-    <span id=4.2><a href=#4.2>[4.2]</a></span> Update all base packages to the latest version
+    <span id=5.2><a href=#5.2>[5.2]</a></span> Update all base packages to the latest version
     ____________________________________________________________________________
 
     This is how updates are performed on a KISS system. This command uses git
@@ -317,7 +458,7 @@ This step is entirely optional and can also be done post-installation.
     +--------------------------------------------------------------------------+
 
 
-    <span id=4.3><a href=#4.3>[4.3]</a></span> Rebuild all packages
+    <span id=5.3><a href=#5.3>[5.3]</a></span> Rebuild all packages
     ____________________________________________________________________________
 
     We simply cd to the installed packages database and use a glob to grab the
@@ -331,7 +472,7 @@ This step is entirely optional and can also be done post-installation.
     +--------------------------------------------------------------------------+
 
 
-<span id=5.0><a href=#5.0>[5.0]</a></span> Userspace tools
+<span id=6.0><a href=#6.0>[6.0]</a></span> Userspace tools
 ________________________________________________________________________________
 
 Each kiss action (build, install, etc) has a shorthand alias. From now on,
@@ -340,7 +481,7 @@ Each kiss action (build, install, etc) has a shorthand alias. From now on,
 The software below is required unless stated otherwise.
 
 
-    <span id=5.1><a href=#5.1>[5.1]</a></span> Filesystem utilities
+    <span id=6.1><a href=#6.1>[6.1]</a></span> Filesystem utilities
     ____________________________________________________________________________
 
     NOTE: Open an issue for additional filesystem support.
@@ -369,7 +510,7 @@ The software below is required unless stated otherwise.
     +--------------------------------------------------------------------------+
 
 
-    <span id=5.2><a href=#5.2>[5.2]</a></span> Device management
+    <span id=6.2><a href=#6.2>[6.2]</a></span> Device management
     ____________________________________________________________________________
 
     NOTE: If you choose to not install eudev, mdev will automatically be used in
@@ -393,7 +534,7 @@ The software below is required unless stated otherwise.
     +--------------------------------------------------------------------------+
 
 
-    <span id=5.3><a href=#5.3>[5.3]</a></span> WiFi (optional)
+    <span id=6.3><a href=#6.3>[6.3]</a></span> WiFi (optional)
     ____________________________________________________________________________
 
     +--------------------------------------------------------------------------+
@@ -404,7 +545,7 @@ The software below is required unless stated otherwise.
     +--------------------------------------------------------------------------+
 
 
-    <span id=5.4><a href=#5.4>[5.4]</a></span> Dynamic IP addressing (optional)
+    <span id=6.4><a href=#6.4>[6.4]</a></span> Dynamic IP addressing (optional)
     ____________________________________________________________________________
 
     +--------------------------------------------------------------------------+
@@ -415,7 +556,7 @@ The software below is required unless stated otherwise.
     +--------------------------------------------------------------------------+
 
 
-<span id=6.0><a href=#6.0>[6.0]</a></span> The hostname
+<span id=7.0><a href=#7.0>[7.0]</a></span> The hostname
 ________________________________________________________________________________
 
 +------------------------------------------------------------------------------+
@@ -440,7 +581,7 @@ ________________________________________________________________________________
 +------------------------------------------------------------------------------+
 
 
-<span id=7.0><a href=#7.0>[7.0]</a></span> The kernel
+<span id=8.0><a href=#8.0>[8.0]</a></span> The kernel
 ________________________________________________________________________________
 
 This step involves configuring and building your own Linux kernel. If you have
@@ -468,7 +609,7 @@ read the link (and the patch itself for more information). @/<a href=/news/20200
 +------------------------------------------------------------------------------+
 
 
-    <span id=7.1><a href=#7.1>[7.1]</a></span> Install required packages
+    <span id=8.1><a href=#8.1>[8.1]</a></span> Install required packages
     ____________________________________________________________________________
 
     +--------------------------------------------------------------------------+
@@ -503,7 +644,7 @@ read the link (and the patch itself for more information). @/<a href=/news/20200
     +--------------------------------------------------------------------------+
 
 
-    <span id=7.2><a href=#7.2>[7.2]</a></span> Download the kernel sources
+    <span id=8.2><a href=#8.2>[8.2]</a></span> Download the kernel sources
     ____________________________________________________________________________
 
     Kernel releases:
@@ -531,7 +672,7 @@ read the link (and the patch itself for more information). @/<a href=/news/20200
     +--------------------------------------------------------------------------+
 
 
-    <span id=7.3><a href=#7.3>[7.3]</a></span> Download firmware blobs (if required)
+    <span id=8.3><a href=#8.3>[8.3]</a></span> Download firmware blobs (if required)
     ____________________________________________________________________________
 
     To keep the KISS repositories entirely FOSS, the proprietary kernel firmware
@@ -558,7 +699,7 @@ read the link (and the patch itself for more information). @/<a href=/news/20200
     +--------------------------------------------------------------------------+
 
 
-    <span id=7.4><a href=#7.4>[7.4]</a></span> Configure the kernel
+    <span id=8.4><a href=#8.4>[8.4]</a></span> Configure the kernel
     ____________________________________________________________________________
 
     You can determine which drivers you need by searching the web for your
@@ -594,7 +735,7 @@ read the link (and the patch itself for more information). @/<a href=/news/20200
     +--------------------------------------------------------------------------+
 
 
-    <span id=7.5><a href=#7.5>[7.5]</a></span> Build the kernel
+    <span id=8.5><a href=#8.5>[8.5]</a></span> Build the kernel
     ____________________________________________________________________________
 
     This may take a while to complete. The compilation time depends on your
@@ -608,7 +749,7 @@ read the link (and the patch itself for more information). @/<a href=/news/20200
     +--------------------------------------------------------------------------+
 
 
-    <span id=7.6><a href=#7.6>[7.6]</a></span> Install the kernel
+    <span id=8.6><a href=#8.6>[8.6]</a></span> Install the kernel
     ____________________________________________________________________________
 
     +--------------------------------------------------------------------------+
@@ -633,7 +774,7 @@ read the link (and the patch itself for more information). @/<a href=/news/20200
     +--------------------------------------------------------------------------+
 
 
-<span id=8.0><a href=#8.0>[8.0]</a></span> The bootloader
+<span id=9.0><a href=#9.0>[9.0]</a></span> The bootloader
 ________________________________________________________________________________
 
 The default bootloader is grub (though nothing prevents the use of another
@@ -641,13 +782,13 @@ bootloader). This default was chosen as most people are familiar with it, both
 BIOS and UEFI are supported and vast amounts of documentation for it exists.
 
 
-    <span id=8.1><a href=#8.1>[8.1]</a></span> Recommended
+    <span id=9.1><a href=#9.1>[9.1]</a></span> Recommended
     ____________________________________________________________________________
 
     Have an /etc/fstab file ready.
 
 
-    <span id=8.2><a href=#8.2>[8.2]</a></span> Build and install grub
+    <span id=9.2><a href=#9.2>[9.2]</a></span> Build and install grub
     ____________________________________________________________________________
 
     +--------------------------------------------------------------------------+
@@ -665,7 +806,7 @@ BIOS and UEFI are supported and vast amounts of documentation for it exists.
     +--------------------------------------------------------------------------+
 
 
-    <span id=8.3><a href=#8.3>[8.3]</a></span> Setup grub
+    <span id=9.3><a href=#9.3>[9.3]</a></span> Setup grub
     ____________________________________________________________________________
 
     +--------------------------------------------------------------------------+
@@ -688,7 +829,7 @@ BIOS and UEFI are supported and vast amounts of documentation for it exists.
     +--------------------------------------------------------------------------+
 
 
-<span id=9.0><a href=#9.0>[9.0]</a></span> Install init scripts
+<span id=10.0><a href=#10.0>[10.0]</a></span> Install init scripts
 ________________________________________________________________________________
 
 The default init is busybox init (though nothing ties you to it). The below
@@ -705,7 +846,7 @@ Source code: $/<a href=https://github.com/kisslinux/init>kisslinux/init</a>
 +------------------------------------------------------------------------------+
 
 
-<span id=10.0><a href=#10.0>[10.0]</a></span> Add a normal user (recommended)
+<span id=11.0><a href=#11.0>[11.0]</a></span> Add a normal user (recommended)
 ________________________________________________________________________________
 
 +------------------------------------------------------------------------------+
@@ -715,7 +856,7 @@ ________________________________________________________________________________
 +------------------------------------------------------------------------------+
 
 
-<span id=11.0><a href=#11.0>[11.0]</a></span> Enable the community repository
+<span id=12.0><a href=#12.0>[12.0]</a></span> Enable the community repository
 ________________________________________________________________________________
 
 The KISS community repository is maintained by users of the distribution and
@@ -750,7 +891,7 @@ NOTE: The subdirectory must also be added.
 +------------------------------------------------------------------------------+
 
 
-<span id=12.0><a href=#12.0>[12.0]</a></span> Install Xorg (optional)
+<span id=13.0><a href=#13.0>[13.0]</a></span> Install Xorg (optional)
 ________________________________________________________________________________
 
 To install Xorg, the input drivers and a basic default set of fonts, run the
@@ -770,7 +911,7 @@ following commands. See @/<a href=/wiki/xorg>wiki/xorg</a>
 +------------------------------------------------------------------------------+
 
 
-    <span id=12.1><a href=#12.1>[12.1]</a></span> Add your user to the relevant groups
+    <span id=13.1><a href=#13.1>[13.1]</a></span> Add your user to the relevant groups
     ____________________________________________________________________________
 
     This groups based permissions model may not be suitable if KISS will be
@@ -787,7 +928,7 @@ following commands. See @/<a href=/wiki/xorg>wiki/xorg</a>
     +--------------------------------------------------------------------------+
 
 
-<span id=13.0><a href=#13.0>[13.0]</a></span> Further steps
+<span id=14.0><a href=#14.0>[14.0]</a></span> Further steps
 ________________________________________________________________________________
 
 You should now be able to reboot into your KISS installation. Typical
