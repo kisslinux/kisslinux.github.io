@@ -27,14 +27,14 @@ Below are a few examples of *basic* rules that could be set:
 |   requiring a password to be entered.                                        |
 +------------------------------------------------------------------------------+
 |                                                                              |
-|   $ permit nopass USER                                                       |
+|   permit nopass USER                                                         |
 |                                                                              |
 +------------------------------------------------------------------------------+
 |   Allow a specific group (i.e. "wheel") to escalate root permissions         |
 |   without requiring a password to be entered.                                |
 +------------------------------------------------------------------------------+
 |                                                                              |
-|   $ permit nopass wheel                                                      |
+|   permit nopass wheel                                                        |
 |                                                                              |
 +------------------------------------------------------------------------------+
 

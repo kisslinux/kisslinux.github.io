@@ -64,6 +64,14 @@ ________________________________________________________________________________
   |                                                                            |
   +----------------------------------------------------------------------------+
 
+- Use the following command to open an easy to use, terminal based alsa control interface:
+  
+  +----------------------------------------------------------------------------+
+  |                                                                            |
+  |   $ alsamixer                                                              |
+  |                                                                            |
+  +----------------------------------------------------------------------------+
+
 - More "complex" .asoundrc configuration file examples can be found on the 
   Gentoo Wiki [1] and Arch Linux Wiki [2].
 
