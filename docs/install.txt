@@ -79,7 +79,7 @@ Start by declaring a variable.
 
 +------------------------------------------------------------------------------+
 |                                                                              |
-|   $ url=https://github.com/kisslinux/repo/releases/download/2020.9           |
+|   $ url=https://github.com/kisslinux/repo/releases/download/2020.9-2         |
 |                                                                              |
 +------------------------------------------------------------------------------+
 
@@ -89,7 +89,7 @@ Start by declaring a variable.
 
     +--------------------------------------------------------------------------+
     |                                                                          |
-    |   $ wget "$url/kiss-chroot-2020.9.tar.xz"                                |
+    |   $ wget "$url/kiss-chroot-2020.9-2.tar.xz"                              |
     |                                                                          |
     +--------------------------------------------------------------------------+
 
@@ -102,8 +102,8 @@ Start by declaring a variable.
 
     +--------------------------------------------------------------------------+
     |                                                                          |
-    |   $ wget "$url/kiss-chroot-2020.9.tar.xz.sha256"                         |
-    |   $ sha256sum -c < kiss-chroot-2020.9.tar.xz.sha256                      |
+    |   $ wget "$url/kiss-chroot-2020.9-2.tar.xz.sha256"                       |
+    |   $ sha256sum -c < kiss-chroot-2020.9-2.tar.xz.sha256                    |
     |                                                                          |
     +--------------------------------------------------------------------------+
 
@@ -119,7 +119,7 @@ Start by declaring a variable.
     | Download the armored ASCII file.                                         |
     +--------------------------------------------------------------------------+
     |                                                                          |
-    |   $ wget "$url/kiss-chroot-2020.9.tar.xz.asc"                            |
+    |   $ wget "$url/kiss-chroot-2020.9-2.tar.xz.asc"                          |
     |                                                                          |
     +--------------------------------------------------------------------------+
     | Import my public key (if this fails, try another keyserver).             |
@@ -131,7 +131,7 @@ Start by declaring a variable.
     | Verify the signature.                                                    |
     +--------------------------------------------------------------------------+
     |                                                                          |
-    |   $ gpg --verify "kiss-chroot-2020.9.tar.xz.asc"                         |
+    |   $ gpg --verify "kiss-chroot-2020.9-2.tar.xz.asc"                       |
     |                                                                          |
     +--------------------------------------------------------------------------+
 
@@ -145,7 +145,7 @@ Start by declaring a variable.
     +--------------------------------------------------------------------------+
     |                                                                          |
     |   $ cd /mnt                                                              |
-    |   $ tar xvf /path/to/kiss-chroot-2020.9.tar.xz                           |
+    |   $ tar xvf /path/to/kiss-chroot-2020.9-2.tar.xz                         |
     |                                                                          |
     +--------------------------------------------------------------------------+
 
