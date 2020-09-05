@@ -46,9 +46,10 @@ the entry was added with 'efibootmgr --verbose'.
 +------------------------------------------------------------------------------+
 |                                                                              |
 |   $ efibootmgr \                                                             |
+|         --create \                                                           |
 |         --disk     /dev/sdX \                                                |
 |         --part     N \                                                       |
-|         --create   KISS \                                                    |
+|         --label    KISS \                                                    |
 |         --loader   /vmlinuz \                                                |
 |         --unicode  'root=/dev/sdYM' \                                        |
 |         --verbose                                                            |

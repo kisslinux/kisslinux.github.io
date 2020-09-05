@@ -31,7 +31,7 @@
 
 <a href="/wiki">wiki</a> / <a href='/wiki/boot'>boot</a> / efistub                                             <a href='https://github.com/kisslinux/wiki/edit/master/boot/efistub.txt'>Edit this page</a>
 
-Edited (<a href='https://github.com/kisslinux/wiki/commit/7bbdc4ee8249860f36d1e90066197047b799ebb8'>7bbdc4e</a>) at 2020-06-14 by Dylan Araps
+Edited (<a href='https://github.com/kisslinux/wiki/commit/e1b3dd48cc2cccc377eadae5b1495637590256c6'>e1b3dd4</a>) at 2020-09-05 by Alejandro Sior
 
 
 EFISTUB <a href=#0>[0]</a>
@@ -82,9 +82,10 @@ the entry was added with 'efibootmgr --verbose'.
 +------------------------------------------------------------------------------+
 |                                                                              |
 |   $ efibootmgr \                                                             |
+|         --create \                                                           |
 |         --disk     /dev/sdX \                                                |
 |         --part     N \                                                       |
-|         --create   KISS \                                                    |
+|         --label    KISS \                                                    |
 |         --loader   /vmlinuz \                                                |
 |         --unicode  'root=/dev/sdYM' \                                        |
 |         --verbose                                                            |
