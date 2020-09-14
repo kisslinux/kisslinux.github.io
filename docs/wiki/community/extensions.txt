@@ -1,7 +1,7 @@
 KISS EXTENSIONS
 ________________________________________________________________________________
 
-Anything in the user's '$PATH' which matches the glob 'kiss-*' will interpreted 
+Anything in the user's '$PATH' which matches the glob 'kiss-*' will interpreted
 as an extension and be directly usable via the package manager. Here are some
 extensions written by the community.
 
@@ -18,7 +18,7 @@ ________________________________________________________________________________
 
 Search for packages in all known kiss repositories.
 
-Source: $/Admicos/kiss-repo/tree/master/custom/kiss-find
+Source: https://git.ebc.li/kiss/custom/src/branch/main/custom/kiss-find
 
 
 kiss-rmdeps
@@ -34,4 +34,4 @@ ________________________________________________________________________________
 
 Copy packages from any KISS repo automatically
 
-Source: $/Admicos/kiss-repo/tree/master/custom/kiss-steal
+Source: https://git.ebc.li/kiss/custom/src/branch/main/custom/kiss-steal
