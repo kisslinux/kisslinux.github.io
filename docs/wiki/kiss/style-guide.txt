@@ -371,7 +371,7 @@ ________________________________________________________________________________
     This dependency is implicit. Some packages are assumed to always be
     available. This dependency can be removed.
 
-    Examples: gcc, make, pkgconf, musl.
+    Examples: gcc, make, musl.
 
 
     [1203]----------------------------------------------------------------------
