@@ -23,18 +23,22 @@ doas.conf, there are plenty of examples of rules to choose from and modify.
 Below are a few examples of *basic* rules that could be set:  
 
 +------------------------------------------------------------------------------+
-|   Allow a specific regular user, USER, to escalate root permissions without  |
-|   requiring a password to be entered.                                        |
+|   Allow a specific regular user, USER, to escalate to root permissions.      |
 +------------------------------------------------------------------------------+
 |                                                                              |
-|   permit nopass USER                                                         |
+|   permit USER                                                                |
 |                                                                              |
 +------------------------------------------------------------------------------+
-|   Allow a specific group (i.e. "wheel") to escalate root permissions         |
-|   without requiring a password to be entered.                                |
+|   Allow a specific group (i.e. "wheel") to escalate to root permissions.     |
 +------------------------------------------------------------------------------+
 |                                                                              |
-|   permit nopass wheel                                                        |
+|   permit wheel                                                               |
+|                                                                              |
++------------------------------------------------------------------------------+
+|   You can also allow privilege escalation without a password.                |
++------------------------------------------------------------------------------+
+|                                                                              |
+|   permit nopass [GROUP OR USER]                                              |
 |                                                                              |
 +------------------------------------------------------------------------------+
 

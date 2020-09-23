@@ -31,7 +31,7 @@
 
 <a href="/wiki">wiki</a> / <a href='/wiki/software'>software</a> / openssh                                         <a href='https://github.com/kisslinux/wiki/edit/master/software/openssh.txt'>Edit this page</a>
 
-Edited (<a href='https://github.com/kisslinux/wiki/commit/af8eb08583aeb83f0d7224b3c1e7e5452750fa71'>af8eb08</a>) at 2020-06-15 by Nihal
+Edited (<a href='https://github.com/kisslinux/wiki/commit/46d10377f4446f568e426be6c087e2aa6b4f191b'>46d1037</a>) at 2020-09-04 by fultons sabotage linux machine
 
 
 OPENSSH <a href=#0>[0]</a>
@@ -150,6 +150,25 @@ ________________________________________________________________________________
 * If you are looking to forward GUI-based applications through an SSH tunnel,
   refer to the #/<a href=/wiki/xorg/x11-forwarding>wiki/xorg/x11-forwarding</a> article.
 
+
+troubleshooting
+________________________________________________________________________________
+
+* you can fix errors such as this one
+
++------------------------------------------------------------------------------+
+|                                                                              |
+|  top error: Error opening terminal: xterm-256color                           |
+|                                                                              |
++------------------------------------------------------------------------------+
+
+By running this command in your ssh session
+
++------------------------------------------------------------------------------+
+|                                                                              |
+|  $ export TERM=xterm                                                         |
+|                                                                              |
++------------------------------------------------------------------------------+
 
 References
 ________________________________________________________________________________

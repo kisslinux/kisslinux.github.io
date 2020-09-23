@@ -47,6 +47,8 @@ sheet of git commands.
 |   Add/Update      |   $ git add FILE_OR_PATH                                 |
 |   Project Files   |                                                          |
 |                   |                                                          |
+|   Apply a patch   |   $ git apply PATH_FILE                                  |
+|                   |                                                          |
 |   Remove          |   $ git add FILE_OR_PATH                                 |
 |   Project Files   |                                                          |
 |                   |                                                          |

@@ -31,7 +31,7 @@
 
 <a href="/wiki">wiki</a> / <a href='/wiki/software'>software</a> / opendoas                                        <a href='https://github.com/kisslinux/wiki/edit/master/software/opendoas.txt'>Edit this page</a>
 
-Edited (<a href='https://github.com/kisslinux/wiki/commit/21cd0022a750008629fd4190ae2220d5f61198dc'>21cd002</a>) at 2020-09-03 by Fulton Browne
+Edited (<a href='https://github.com/kisslinux/wiki/commit/d9b7e1d89eef0b19fb48f48943d29cfd8f50f8d2'>d9b7e1d</a>) at 2020-09-04 by Fulton Browne
 
 
 OPENDOAS <a href=#0>[0]</a>
@@ -59,18 +59,22 @@ doas.conf, there are plenty of examples of rules to choose from and modify.
 Below are a few examples of *basic* rules that could be set:  
 
 +------------------------------------------------------------------------------+
-|   Allow a specific regular user, USER, to escalate root permissions without  |
-|   requiring a password to be entered.                                        |
+|   Allow a specific regular user, USER, to escalate to root permissions.      |
 +------------------------------------------------------------------------------+
 |                                                                              |
-|   permit nopass USER                                                         |
+|   permit USER                                                                |
 |                                                                              |
 +------------------------------------------------------------------------------+
-|   Allow a specific group (i.e. "wheel") to escalate root permissions         |
-|   without requiring a password to be entered.                                |
+|   Allow a specific group (i.e. "wheel") to escalate to root permissions.     |
 +------------------------------------------------------------------------------+
 |                                                                              |
-|   permit nopass wheel                                                        |
+|   permit wheel                                                               |
+|                                                                              |
++------------------------------------------------------------------------------+
+|   You can also allow privilege escalation without a password.                |
++------------------------------------------------------------------------------+
+|                                                                              |
+|   permit nopass [GROUP OR USER]                                              |
 |                                                                              |
 +------------------------------------------------------------------------------+
 
