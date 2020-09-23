@@ -1,0 +1,484 @@
+<!doctype html><html lang=en><link href='data:image/gif;base64,R0lGODlhEAAQAPH/AAAAAP8AAP8AN////yH5BAUAAAQALAAAAAAQABAAAAM2SLrc/jA+QBUFM2iqA2bAMHSktwCCWJIYEIyvKLOuJt+wV69ry5cfwu7WCVp2RSPoUpE4n4sEADs=' rel=icon><title>KISS - kde</title><meta charset=utf-8><meta name=Description content="An independent Linux distribution with a focus on simplicity and the concept of less is more."><meta name=viewport content="width=device-width,initial-scale=1"><style>body{overflow-y:scroll;font:16px monospace,monospace}img,.c{display:table-cell;max-width:999px;max-width:80ch}pre{margin:0;overflow-x:hidden}@media(max-width:999px){.c{display:block;font-size:1.94vw}}@media(prefers-color-scheme:dark){body{background:#000;color:#fff}a{color:#6CF}}</style><div style="display:table;margin:16px auto"><div class=c><pre style="top:0;position:sticky;user-select:none;padding-right:64px">
+<a href=/ style="text-decoration:none;color:#a00">
+|/
+|\ISS
+</a>
+<a href=/news>News</a>
+<a href=/blog>Blog</a>
+
+<a href=/wiki>Wiki</a>
+
+<a href=/install>Install KISS</a>
+<a href=/faq>FAQ</a>
+
+<a href=/package-system>Package System</a>
+<a href=/package-manager>Package Manager</a>
+<a href=/software>Software</a>
+
+<a href=/guidestones>Guidestones</a>
+
+<a href=/testimonials>Testimonials</a>
+<a href=/screenshots>Screenshots</a>
+<a href=/team>Team</a>
+
+<a href=/contact>Contact</a>
+<a href=/donate>Donate</a>
+
+<a href=https://github.com/kisslinux/>GitHub</a>
+<a href=https://git.k1ss.org>Git (mirror)</a>
+
+</pre></div><div class=c><pre>
+
+<a href="/wiki">wiki</a> / <a href='/wiki/desktops'>desktops</a> / kde                                             <a href='https://github.com/kisslinux/wiki/edit/master/desktops/kde.txt'>Edit this page</a>
+
+Edited (<a href='https://github.com/kisslinux/wiki/commit/10c5a074bb547f77b36d325f66f25c9751fa4cef'>10c5a07</a>) at 2020-09-23 by Dilyn Corner
+
+
+KDE
+________________________________________________________________________________
+
+KDE <a href=#0>[0]</a> is desktop environment which consists of the Plasma Desktop, the KDE 
+Frameworks, and a collection of free and open source, cross-platform programs.
+The project makes integral use of the Qt framework <a href=#1>[1]</a> to help provide a 
+uniform experience for users between all of the software a user will install.
+
+$/<a href=https://github.com/dilyn-corner/KISS-kde>dilyn-corner/KISS-kde</a> is still considered to be under heavy development. While
+the desktop environment works quite well, many things have yet to be tested. If
+you run into bugs, problems, or have suggestions, submit issues or pull requests
+on the GitHub page!
+
+Note that, due to the KISS Guidestones <a href=#2>[2]</a>, the $/<a href=https://github.com/dilyn-corner/KISS-kde>dilyn-corner/KISS-kde</a> project
+is entirely community maintained. It will always remain separate from the core
+KISS project, including the community repository. Specifically, KDE violates the
+software inclusion guidestone. dbus, logind, pam, and wayland are all required
+to install and use KDE. 
+
+
+Index
+________________________________________________________________________________
+
+- Getting Started                                                          <a href=#0.0>[0.0]</a>
+
+- From Scratch                                                             <a href=#1.0>[1.0]</a>
+    - Prerequisites                                                        <a href=#1.1>[1.1]</a>
+    - Installing                                                           <a href=#1.2>[1.2]</a>
+
+- The KISS-kde tarball                                                     <a href=#2.0>[2.0]</a>
+
+- Starting KDE                                                             <a href=#3.0>[3.0]</a>
+    - Console                                                              <a href=#3.1>[3.1]</a>
+    - Login Manager                                                        <a href=#3.2>[3.2]</a>
+
+- Post-Install                                                             <a href=#4.0>[4.0]</a>
+    - kwinft                                                               <a href=#4.1>[4.1]</a>
+    - sddm                                                                 <a href=#4.2>[4.2]</a>
+    - Extras                                                               <a href=#4.3>[4.3]</a>
+
+- How You Can Help                                                         <a href=#5.0>[5.0]</a>
+- References                                                               <a href=#6.0>[6.0]</a>
+
+
+<span id=0.0><a href=#0.0>[0.0]</a></span> Getting Started
+________________________________________________________________________________
+
+To begin using the K Desktop Environment there are two choices. The first option
+is to use a prebuilt tarball similar to the KISS release tarballs and install it
+analogously to how one installs KISS. The second is to build every package from
+source from an existing KISS installation or from a Live CD.
+
+
+<span id=1.0><a href=#1.0>[1.0]</a></span> From Scratch
+________________________________________________________________________________
+
+KDE can also be installed from an existing KISS installation. While this
+method takes far longer, it offers more fine-grained control on the overall
+system. The use of your own C(XX)FLAGS, smaller packages (e.g. mesa), as
+as well as choosing $KISS_ROOT. Overall build time is approximately 800x the
+time it takes for you to build coreutils. Most of this time is spent
+building qt5-webengine. A KISS package of qt5, qt5-declarative, and
+qt5-webengine are available on the GitHub page <a href=#3>[3]</a> to offer some time saving.
+
+You have two choices on what to install: plasma-desktop or plasma. Building 
+plasma-desktop will pull in the minimum required dependencies for a working 
+KDE environment, plus a few extra niceities such as a system settings manager, 
+the breeze icon theme, and fonts. Alternatively, plasma is a meta-package that 
+includes things like an info center, a bug/crash reporting framework, additional
+plasma wallpapers, and bluedevil. It's basically KDE with all of the frills. Opt
+for plasma-desktop if you only want to selectively include these. For instance
+if you know you will not need bluetooth, you have no need for bluedevil. 
+
+
+    <span id=1.1><a href=#1.1>[1.1]</a></span> Prerequisites
+    ____________________________________________________________________________
+
+    First, fetch the required repositories and add them to your $KISS_PATH. Omit
+    any repositories you already have, just ensure that community comes AFTER
+    KISS-kde/extra. These repositories may be stored anywhere; assume they are
+    in $HOME.
+
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |   $ git clone <a href=https://github.com/kisslinux/community>https://github.com/kisslinux/community</a>                     |
+    |   $ git clone <a href=https://github.com/dilyn-corner/KISS-kde>https://github.com/dilyn-corner/KISS-kde</a>                   |
+    |                                                                          |
+    |   $ export KISS_PATH="$HOME/KISS-kde/extra:$KISS_PATH"                   |
+    |   $ export KISS_PATH="$HOME/KISS-kde/plasma:$KISS_PATH"                  |
+    |   $ export KISS_PATH="$HOME/KISS-kde/frameworks:$KISS_PATH"              |
+    |   $ export KISS_PATH="$KISS_PATH:$HOME/community/community"              |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
+
+    Next, enure that you have the proper required packages installed. These
+    include eudev, dbus, coreutils, and gnugrep. The former two are both runtime
+    dependencies, but the latter are both build-time requirements. As such, feel
+    free to remove them at the end if you wish!
+    
+    coreutils and gnugrep both provide files which conflict with other KISS
+    packages, such as busybox. To ensure we are using the correct programs when
+    we attempt to build plasma, we use the alternatives system! For more
+    information on this system, see <a href=#4>[4]</a>.
+
+    If you want to get an idea for how long it will take to build the entire
+    plasma-desktop dependency tree, you can time the coreutils build and multiply
+    that time by ~800 to get a rough estimate of the time in minutes.
+    
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |   $ kiss b eudev dbus coreutils gnugrep                                  |
+    |   $ kiss i eudev dbus coreutils gnugrep                                  |
+    |   $ kiss a coreutils /usr/bin/realpath                                   |
+    |   $ kiss a coreutils /usr/bin/mktemp                                     |
+    |   $ kiss a coreutils /usr/bin/ln                                         |
+    |   $ kiss a gnugrep   /usr/bin/grep                                       |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
+
+    Note that if you currently have packages like xorg-server installed, you
+    might want to rebuild them to pickup on the new eudev they can take 
+    advantage of. If you do not currently have xorg-server installed, you will
+    want to get it. A pure wayland KDE is both untested and unlikely to work.
+
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |   $ kiss b xorg-server libinput xf86-input-libinput                      |
+    |   $ kiss i xorg-server libinput xf86-input-libinput                      |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
+
+    Make sure you do not currently have qt5 installed. The build files have been
+    tweaked for this repository to make use of dbus and eudev. As a result, 
+    carrying over the community version of these packages will lead to unknown 
+    problems. If you would like to skip building them and instead install the
+    prebuilt packages provided on the GitHub page, install the dependencies 
+    and do
+
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |   $ ver=2020.08                                                          |
+    |   $ qtver=5.15.0-1                                                       | 
+    |   $ url=https://github.com/dilyn-corner/KISS-kde/releases/download/$ver  |
+    |                                                                          |
+    |   $ wget $url/qt5.$qtver.tar.gz \                                        |
+    |          -O qt5\#$qtver.tar.gz                                           |
+    |   $ wget $url/qt5-declarative.$qtver.tar.gz \                            |
+    |         -O qt5-declarative\#$qtver.tar.gz                                |
+    |   $ wget $url/qt5-webengine.$qtver.tar.gz \                              |
+    |          -O qt5-webengine\#$qtver.tar.gz                                 |
+    |                                                                          |
+    |   $ kiss i qt5                                                           |
+    |   $ kiss i qt5-declarative                                               |
+    |   $ kiss i qt5-webengine                                                 |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
+
+
+    <span id=1.2><a href=#1.2>[1.2]</a></span> Installing
+    ____________________________________________________________________________
+
+    Now that all of the build requirements are taken care of, we can install 
+    the desktop environment. Make your choice between plasma-desktop or plasma, 
+    and build them by
+
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |   $ kiss b plasma-desktop && kiss i plasma-desktop                       | 
+    |                                                                          |
+    +--------------------------------------------------------------------------+
+
+    Optionally, enable and start the eudev and dbus services:
+
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |   $ ln -s /etc/sv/dbus  /var/service                                     |
+    |   $ ln -s /etc/sv/udevd /var/service                                     |
+    |                                                                          |
+    |   $ sv up dbus                                                           |
+    |   $ sv up udevd                                                          |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
+
+No services are required to be running in order to start a plasma session.
+However, starting the eudev service provides certain useful features such as
+automatic device detection and hotplugging.
+
+
+<span id=2.0><a href=#2.0>[2.0]</a></span> The KISS-kde tarball
+________________________________________________________________________________
+
+Similarly to KISS itself, a tarball containing a fully-functional KISS with
+KDE setup is available from the GitHub repository <a href=#3>[3]</a>. This archive can be
+chrooted into or directly unpacked to '/'. Note that it is 500+MB in size.
+It is built from a kiss-chroot archive with identical generic C(XX)FLAGS. 
+
+NOTE: In general, it is a security risk to install prebuilt packages. This
+archive is provided as a courtesy by $/<a href=https://github.com/dilyn-corner.>dilyn-corner.</a> Always verify the
+authenticity of packages, and the identities of packagers!
+
+The KISS-kde archive is a fully installed version of plasma-desktop. See <a href=#1.0>[1.0]</a>
+for the distinction between plasma-desktop and plasma.
+
+To download the latest release,
+
++------------------------------------------------------------------------------+
+|                                                                              |
+|   $ ver=2020.08                                                              |
+|   $ url=https://github.com/dilyn-corner/KISS-kde/releases/download/$ver      |
+|   $ wget $url/kiss-kde-$ver.tar.xz                                           |
+|                                                                              |
++------------------------------------------------------------------------------+
+    
+It is strongly recommended to verify the checksums to avoid problems like
+using a partially downloaded archive.
+
++------------------------------------------------------------------------------+
+|                                                                              |
+|   $ wget $url/kiss-kde-$ver.tar.xz.sha256                                    |
+|   $ sha256sum -c < kiss-kde-$ver.tar.xz.sha256                               |
+|                                                                              |
++------------------------------------------------------------------------------+
+
+After setting up your disks, mount your desired root partition to '/mnt' and
+to install the latest release,
+
++------------------------------------------------------------------------------+
+|                                                                              |
+|   $ tar xf kiss-kde-$ver.tar.xz -C /mnt --strip-components 1                 |
+|                                                                              |
++------------------------------------------------------------------------------+
+
+and enter the chroot environment,
+
++------------------------------------------------------------------------------+
+|                                                                              |
+|   $ ./mnt/bin/kiss-chroot /mnt                                               |
+|                                                                              |
++------------------------------------------------------------------------------+
+
+The only remaining work to be done is creating a kernel, choosing a
+bootloader, and adding users. For help with kernels, see @/<a href=/wiki/desktops/kernel.>kernel.</a> For help
+with bootloaders, see @/<a href=/wiki/desktops/boot.>boot.</a> The archive already includes dosfstools and
+e2fsprogs.
+
+Refer to the official installation guide <a href=#5>[5]</a> for small tweaks you may wish to make,
+such as user management or changing your hostname.
+
+NOTE: Please ensure you have cgroup support enabled in your kernel <a href=#6>[6]</a>!
+
+It is recommended that you change the root password; the default is "toor".
+
+If you would like to start a wayland session instead of an X session, swap which
+line is (un)commented in /root/.xinitrc:
+
++------------------------------------------------------------------------------+
+|                                                                              |
+|   $ vi .xinitrc                                                              |
+|   $ startx                                                                   |
+|                                                                              |
++------------------------------------------------------------------------------+
+
+Finally, 
+
++------------------------------------------------------------------------------+
+|                                                                              |
+|   $ exit                                                                     |
+|   $ reboot                                                                   |
+|   $ startx                                                                   |
+|                                                                              |
++------------------------------------------------------------------------------+
+
+You should now be greeted with a fresh Plasma Desktop!
+
+
+<span id=3.0><a href=#3.0>[3.0]</a></span> Starting KDE
+________________________________________________________________________________
+
+You have two choices on how to launch KDE. Either you can start it directly from
+the console, or you can make use of a login manager. 
+
+
+    <span id=3.1><a href=#3.1>[3.1]</a></span> Console
+    ____________________________________________________________________________
+
+    Launching a KDE session directly from the console is very straightforward.
+    If you would like to use wayland instead of X, replace x11 by wayland in the
+    below command.
+    Simply add a line to your xinitrc file:
+
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |   $ launch="exec dbus-launch --exit-with-session startplasma-x11"        |
+    |   $ echo "$launch" >> "$HOME/.xinitrc"                                   |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
+
+
+    <span id=3.2><a href=#3.2>[3.2]</a></span> Login Manager
+    ____________________________________________________________________________
+
+    The KISS-kde repository also includes sddm <a href=#7>[7]</a>, the Simple Desktop Display
+    Manager, as an option for a login manager. Enabling it is very easy and it
+    comes preconfigured with the breeze theme. First, build and install sddm.
+
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |   $ kiss b sddm && kiss i sddm                                           |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
+
+    Then, enable the relevant services. polkit and elogind should already be
+    installed if you followed the prior instructions. If not, install them in
+    the usual way.
+    
+    NOTE: by default, it may not be possible for root to login via sddm. Best
+    practices would dictate that you login as a unprivileged user.
+    
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |   $ ln -s /etc/sv/polkitd /var/service                                   |
+    |   $ ln -s /etc/sv/elogind /var/service                                   |
+    |   $ ln -s /etc/sv/sddm    /var/service                                   |
+    |                                                                          |
+    |   $ sv up polkitd                                                        |
+    |   $ sv up elogind                                                        |
+    |   $ sv up sddm                                                           |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
+
+    If everything went well, sddm should immediately launch after you start the
+    sddm service.
+
+
+<span id=4.0><a href=#4.0>[4.0]</a></span> Post-Install
+________________________________________________________________________________
+
+Everything you do from here on is to customize your new Plasma Desktop to your
+own needs! No further setup or configuration is required. However, there are a
+few things available to you that you can change, if you so choose.
+
+
+    <span id=4.1><a href=#4.1>[4.1]</a></span> kwinft
+    ____________________________________________________________________________
+
+    kwinft <a href=#8>[8]</a> is a composited window manager for X11 and Wayland systems. Most
+    of the differences between kwinft and kwin are in the underlying code;
+    kwinft is designed to have better coding practices and be well-organized.
+    However, any features that appear in kwinft can be expected to eventually
+    show up in kwin. So if you prefer a more bleeding edge, potentially better
+    window manager for KDE, kwinft is an option. You can either swap to kwinft
+    from an existing KDE install or start immediately with using it. All you are
+    required to do is uncomment the kwinft lines in the dependencies list of
+    plasma-{desktop,workspace}, and comment out kwin in the same packages. Then,
+
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |   $ pkill X                                                              |
+    |                                                                          |
+    |   $ KISS_FORCE=1 kiss r kwin kwayland-server                             |
+    |                                                                          |
+    |   $ kiss b kwinft && kiss i kwinft                                       |
+    |                                                                          |
+    |   $ kiss b plasma-workspace && kiss i plasma-workspace                   |
+    |   $ kiss b plasma-desktop   && kiss i plasma-desktop                     |
+    |                                                                          |
+    |   $ startx                                                               |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
+
+
+    <span id=4.2><a href=#4.2>[4.2]</a></span> sddm
+    ____________________________________________________________________________
+
+    sddm can be configured quite heavily. Configuration is read from
+    /etc/sddm.conf. If it does not exist, you can generate it: 
+
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |   $ sddm --example-config >> /etc/sddm.conf                              |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
+
+    You can manually edit this file to allow for autologins, changing themes,
+    changing the user icons, or even changing the range of UIDs that can login
+    through sddm. 
+
+    Alternatively, configuration can be done graphically during a plasma
+    session. Simply install sddm-kcm and a sddm configuration section in 
+    systemsettings should become available.
+
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |   $ kiss b sddm-kcm && kiss i sddm-kcm                                   |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
+
+
+    <span id=4.3><a href=#4.3>[4.3]</a></span> Extras
+    ____________________________________________________________________________
+
+    Many things are included in KISS-kde/extra. Most exist as supplements to
+    items in the framework or plasma, but many are for KDE Applications. 
+    However, there are a few that might be of interest to most users. This
+    includes kvantum (a robust theme engine) <a href=#9>[9]</a>, sddm (a login manager), and 
+    latte-dock (a dock app) <a href=#10>[10]</a>.
+
+    Separate from these are the KDE Applications, such as krita or dolphin.
+    These are located in KISS-kde/kdeapps. Add the repository to your $KISS_PATH
+    in order to install them! Some useful (and working) applications include
+    dolphin and konsole. Over time, the list of working KDE Applications should
+    grow!
+
+
+<span id=5.0><a href=#5.0>[5.0]</a></span> How You Can Help
+________________________________________________________________________________
+
+The KISS-kde project is always looking for more contributors. Whether it is
+fixing build errors, submitting patches, or adding applications, every
+contribution is welcome!
+
+For a current list of project milestones, check out the first section of the
+README at $/<a href=https://github.com/dilyn-corner/KISS-kde.>dilyn-corner/KISS-kde.</a>
+
+
+<span id=6.0><a href=#6.0>[6.0]</a></span> References
+________________________________________________________________________________
+
+<span id=0><a href=#0>[0]</a></span> <a href=https://kde.org>https://kde.org</a>
+<span id=1><a href=#1>[1]</a></span> <a href=https://qt.io>https://qt.io</a>
+<span id=2><a href=#2>[2]</a></span> <a href=https://k1ss.org/guidestones>https://k1ss.org/guidestones</a>
+<span id=3><a href=#3>[3]</a></span> <a href=https://github.com/dilyn-corner/KISS-kde/releases>https://github.com/dilyn-corner/KISS-kde/releases</a>
+<span id=4><a href=#4>[4]</a></span> <a href=https://k1ss.org/package-manager#3.2>https://k1ss.org/package-manager#3.2</a>
+<span id=5><a href=#5>[5]</a></span> <a href=https://k1ss.org/install>https://k1ss.org/install</a>
+<span id=6><a href=#6>[6]</a></span> <a href=http://linuxfromscratch.org/blfs/view/svn/general/elogind.html>http://linuxfromscratch.org/blfs/view/svn/general/elogind.html</a> 
+<span id=7><a href=#7>[7]</a></span> <a href=https://wiki.archlinux.org/index.php/SDDM>https://wiki.archlinux.org/index.php/SDDM</a>
+<span id=8><a href=#8>[8]</a></span> <a href=https://gitlab.com/kwinft/kwinft>https://gitlab.com/kwinft/kwinft</a>
+<span id=9><a href=#9>[9]</a></span> <a href=https://github.com/tsujan/Kvantum>https://github.com/tsujan/Kvantum</a>
+<span id=10><a href=#10>[10]</a></span> <a href=https://github.com/KDE/latte-dock>https://github.com/KDE/latte-dock</a>
+
+
+________________________________________________________________________________
+
+Dylan Araps (C) 2019-2020
+
+Linux(R) is the registered trademark of Linus Torvalds in the U.S. and
+other countries.
+</pre></div></div>
