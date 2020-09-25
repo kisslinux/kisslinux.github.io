@@ -69,3 +69,12 @@ ________________________________________________________________________________
 Fonts packaged for KISS Linux.
 
 Source: $/Himmalerin/kiss-fonts
+
+
+DOCKER
+--------------------------------------------------------------------------------
+
+Docker and its dependencies.
+
+Source: $/cemkeylan/cpt-docker
+
