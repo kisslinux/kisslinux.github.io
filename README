@@ -6,6 +6,21 @@ ________________________________________________________________________________
 Website
 ________________________________________________________________________________
 
+<html>
+<body>
+
+<h2>Computer Code</h2>
+<p>Some programming code:</p>
+
+<code>
+x = 5;<br>
+y = 6;<br>
+z = x + y;
+</code>
+
+</body>
+</html>
+
 The KISS Linux website and documentation.
 
 NOTE: The docs/ directory contains the built sources.
