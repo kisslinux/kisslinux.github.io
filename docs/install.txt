@@ -208,7 +208,7 @@ location. This is entirely up to the user.
     |  +- personal/                                                            |
     |  |  - games/                                                             |
     |  |  - web                                                                |
-    |  |                                                                        |
+    |  |                                                                       |
     |                                                                          |
     +--------------------------------------------------------------------------+
 
@@ -874,7 +874,7 @@ The KISS Wiki is a good place to look for post-installation information.
 | TIP!                                                                         |
 +------------------------------------------------------------------------------+
 |                                                                              |
-|   The Wiki is available offline via 'kiss help wiki'.
+|   The Wiki is available offline via 'kiss help wiki'.                        |
 |                                                                              |
 |   $ kiss help wiki                                                           |
 |                                                                              |
