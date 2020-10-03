@@ -11,8 +11,8 @@ home.
 Configuration
 ________________________________________________________________________________
 
-Vim configuration is stored in a local users ~/.vimrc file. The contents of
-this file are based on the users preferences.
+Vim configuration is stored in a local user's ~/.vimrc file. The contents of
+this file are based on the user's preferences.
 
 The following configuration is an example based on Sven Gucke's [1] published
 vim setup and modified to satisfy the KISS #/kiss/style-guide.
