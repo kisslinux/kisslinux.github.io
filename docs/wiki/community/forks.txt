@@ -27,7 +27,8 @@ Source: https://carbslinux.org/
 pine linux
 ________________________________________________________________________________
 
-An experimental linux distro with the goal of being secure, fast, and fully suckless.
+An experimental linux distro with the goal of being secure, fast, and fully
+suckless.
 
 Source: https://sr.ht/~fultonbrowne/Pine-linux/
 
