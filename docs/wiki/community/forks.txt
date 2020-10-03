@@ -27,9 +27,9 @@ Source: https://carbslinux.org/
 pine linux
 ________________________________________________________________________________
 
-A linux that is desinged to be as fast and secure as possible
+An experimental linux distro with the goal of being secure, fast, and fully suckless.
 
-Source: https://github.com/pine-linux
+Source: https://sr.ht/~fultonbrowne/Pine-linux/
 
 
 Mue Linux
