@@ -77,7 +77,7 @@ and run the following command.
 
 +------------------------------------------------------------------------------+
 |                                                                              |
-|   $ efibootmgr --bootnum XXXX --delete-bootnum
+|   $ efibootmgr --bootnum XXXX --delete-bootnum                               |
 |                                                                              |
 +------------------------------------------------------------------------------+
 
