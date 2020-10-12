@@ -18,7 +18,8 @@ ________________________________________________________________________________
 
 A simplistic system-supervisor.
 
-Source: $/cemkeylan/sysmgr
+POSIX sh: $/cemkeylan/sysmgr (deprecated)
+C:        $/cemkeylan/sm
 
 
 SHINIT
