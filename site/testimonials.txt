@@ -10,9 +10,6 @@ Here's what people are saying about KISS!
 > Just wanted to say this looks kickass. It is way easier to tear
   things down than to build them.
 
-> As a person who speaks Swedish, I feel that I must point out
-  that “getkiss” translates to “goat pee.”
-
 > I was looking for something like this actually, I thought I would
   finally have to warm up to BSD if I wanted an OS that I have some
   hope of understanding fully.
@@ -22,8 +19,6 @@ Here's what people are saying about KISS!
   in the south of France who would wash the bytes by hand before
   uploading them to his server. Said it was a family tradition
   passed down for generations.
-
-> New logo needed. The chopped off head is bad luck in parts of Asia.
 
 > I've got a basic installation done! It was actually quite simple!
   Not much is set up, but getting the base down was arguably simpler
@@ -46,20 +41,11 @@ Here's what people are saying about KISS!
 > Just what we need, another Linux distribution. Spread the effort
   even more thinly.
 
-> Saw a link for this linux distribution, and I've gotta say, the
-  sexy logo makes this probably not appropriate for adoption in a
-  professional environment. Nerds: read the goddamn room
-
 > I spent some time on their website, and this really is a wonder
   distribution.
 
 > Literally the opposite of KISS. At lest don't use hypocritical
   excuses for your crusades.
-
-> Hi! I just wanted to let you know that, while the name is funny
-  enough in English, it gets even better in Swedish: "kiss" is a
-  synonym for "piss", and even the website translates to
-  goatpiss.org. Have a nice day!
 
 > KISS Linux is a really interesting effort and a sign, IMO, of a
   healthy ecosystem, so I commend Dylan and other contributors for
