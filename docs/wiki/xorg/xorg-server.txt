@@ -84,6 +84,8 @@ The following is a snapshot of some of the available WMs at this time:
 |                    |                                                         |
 |   sowm             |   An itsy bitsy floating window manager. [4]            |
 |                    |                                                         |
+|   xwm              |   A tiny XCB floating window manager. [5]               |
+|                    |                                                         |
 +--------------------+---------------------------------------------------------+
 
 [4.0] Remote X Session Management
@@ -120,3 +122,4 @@ ________________________________________________________________________________
 [2] https://github.com/baskerville/bspwm
 [3] https://dwm.suckless.org/
 [4] https://github.com/dylanaraps/sowm
+[5] https://github.com/mcpcpc/xwm
