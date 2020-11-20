@@ -51,7 +51,7 @@ The above table of contents [0.0] is simply the same concept but in reverse.
 This simple find/replace ends up being a very powerful tool.
 
 [0] Clicking the above reference will scroll the page to these anchor links.
-[1] Links such as this one must start a column zero.
+[1] Links such as this one must start at column zero.
 
 
 [4.0] Links to Github

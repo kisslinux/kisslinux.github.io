@@ -61,12 +61,13 @@ ________________________________________________________________________________
     - Setup grub                                                           [9.2]
 
 - Install init scripts                                                    [10.0]
-- Add a normal user                                                       [11.0]
+- Set a root password                                                     [11.0]
+- Add a normal user                                                       [12.0]
 
-- Install Xorg                                                            [12.0]
-    - Add your user to the relevant groups                                [12.1]
+- Install Xorg                                                            [13.0]
+    - Add your user to the relevant groups                                [13.1]
 
-- Further steps                                                           [13.0]
+- Further steps                                                           [14.0]
 
 
 [2.0] Install KISS
@@ -815,7 +816,17 @@ Source code: $/kisslinux/init
 +------------------------------------------------------------------------------+
 
 
-[11.0] Add a normal user (recommended)
+[12.0] Add a normal user (recommended)
+________________________________________________________________________________
+
++------------------------------------------------------------------------------+
+|                                                                              |
+|   $ passwd                                                                   |
+|                                                                              |
++------------------------------------------------------------------------------+
+
+
+[12.0] Add a normal user (recommended)
 ________________________________________________________________________________
 
 +------------------------------------------------------------------------------+
@@ -825,7 +836,7 @@ ________________________________________________________________________________
 +------------------------------------------------------------------------------+
 
 
-[12.0] Install Xorg (optional)
+[13.0] Install Xorg (optional)
 ________________________________________________________________________________
 
 To install Xorg, the input drivers and a basic default set of fonts, run the
@@ -845,7 +856,7 @@ following commands. See @/wiki/xorg
 +------------------------------------------------------------------------------+
 
 
-    [12.1] Add your user to the relevant groups
+    [13.1] Add your user to the relevant groups
     ____________________________________________________________________________
 
     This groups based permissions model may not be suitable if KISS will be
@@ -862,7 +873,7 @@ following commands. See @/wiki/xorg
     +--------------------------------------------------------------------------+
 
 
-[13.0] Further steps
+[14.0] Further steps
 ________________________________________________________________________________
 
 You should now be able to reboot into your KISS installation. Typical
