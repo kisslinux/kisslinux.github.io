@@ -93,10 +93,11 @@
 
 +-----------------------+  +------------------------+  +-----------------------+
 |                       |  |                        |  |                       |
-| CONSOLE               |  | DESKTOPS               |  |                       |
+| CONSOLE               |  | DESKTOPS               |  | STORAGE               |
 |                       |  |                        |  |                       |
-|  @/console/bkeymaps   |  |  @/desktops/kde        |  |                       |
-|  @/console/fonts      |  |                        |  |                       |
+|  @/console/bkeymaps   |  |  @/desktops/kde        |  |  @/storage/disks      |
+|  @/console/fonts      |  |                        |  |  @/storage/zram       |
+|                       |  |                        |  |  @/storage/zswap      |
 |                       |  |                        |  |                       |
 +-----------------------+  +------------------------+  +-----------------------+
 
