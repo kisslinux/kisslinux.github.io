@@ -56,7 +56,7 @@ compressor is in use. To see them all,
 For information on setting up a swapfile or swap partition, see @/storage/disks.
 
 
-zbud versus z3fold versus zmalloc
+zbud versus z3fold versus zsmalloc
 ________________________________________________________________________________
 
 There are three different allocators to choose from for compressed pages:

@@ -31,7 +31,7 @@
 
 <a href="/wiki">wiki</a> / <a href='/wiki/storage'>storage</a> / disks                                            <a href='https://github.com/kisslinux/wiki/edit/master/storage/disks.txt'>Edit this page</a>
 
-Edited (<a href='https://github.com/kisslinux/wiki/commit/9218b991eda259e979b86fa9cc24acae65b58786'>9218b99</a>) at 2020-11-17 by Dilyn Corner
+Edited (<a href='https://github.com/kisslinux/wiki/commit/a4b7517974c5e18b3f5cc090d044d46cdb09486a'>a4b7517</a>) at 2020-11-20 by Dilyn Corner
 
 
 STORAGE
@@ -438,7 +438,7 @@ filesystems for each partition.
     |              |                        |                                  |
     |  swap        | core/busybox           |  mkswap                          |
     |  EXT2/3/4    | extra/e2fsprogs        |  mkfs.ext2/3/4                   |
-    |  DOS/FATxx   | extra/dosfstools       |  mkfs.dos/fat/vat                |
+    |  DOS/FATxx   | extra/dosfstools       |  mkfs.dos/fat/vfat               |
     |  XFS         | extra/xfsprogs         |  mkfs.xfs                        |
     |  BTRFS       | community/btrfs-progs  |  mkfs.btrfs                      |
     |  NTFS        | community/ntfs-3g      |  mkfs.ntfs                       |
@@ -466,13 +466,13 @@ filesystems for each partition.
  
     +--------------------------------------------------------------------------+
     |                                                                          |
-    |   $ mkfs.ext4     /dev/sda2                                              |
-    |   $ mkfs.ext4     /dev/sda3                                              |
-    |   $ mkfs.fat -F32 /dev/sda1                                              |
+    |   $ mkfs.ext4     /dev/nvme0n1p2                                         |
+    |   $ mkfs.ext4     /dev/nvme0n1p3                                         |
+    |   $ mkfs.fat -F32 /dev/nvme0n1p1                                         |
     |                                                                          |
-    |   $ mount /dev/sda2 /mnt                                                 |
-    |   $ mount /dev/sda3 /mnt/home                                            |
-    |   $ mount /dev/sda1 /mnt/boot                                            |
+    |   $ mount /dev/nvme0n1p2 /mnt                                            |
+    |   $ mount /dev/nvme0n1p3 /mnt/home                                       |
+    |   $ mount /dev/nvme0n1p1 /mnt/boot                                       |
     |                                                                          |
     +--------------------------------------------------------------------------+
 

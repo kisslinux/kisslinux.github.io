@@ -402,7 +402,7 @@ filesystems for each partition.
     |              |                        |                                  |
     |  swap        | core/busybox           |  mkswap                          |
     |  EXT2/3/4    | extra/e2fsprogs        |  mkfs.ext2/3/4                   |
-    |  DOS/FATxx   | extra/dosfstools       |  mkfs.dos/fat/vat                |
+    |  DOS/FATxx   | extra/dosfstools       |  mkfs.dos/fat/vfat               |
     |  XFS         | extra/xfsprogs         |  mkfs.xfs                        |
     |  BTRFS       | community/btrfs-progs  |  mkfs.btrfs                      |
     |  NTFS        | community/ntfs-3g      |  mkfs.ntfs                       |
@@ -430,13 +430,13 @@ filesystems for each partition.
  
     +--------------------------------------------------------------------------+
     |                                                                          |
-    |   $ mkfs.ext4     /dev/sda2                                              |
-    |   $ mkfs.ext4     /dev/sda3                                              |
-    |   $ mkfs.fat -F32 /dev/sda1                                              |
+    |   $ mkfs.ext4     /dev/nvme0n1p2                                         |
+    |   $ mkfs.ext4     /dev/nvme0n1p3                                         |
+    |   $ mkfs.fat -F32 /dev/nvme0n1p1                                         |
     |                                                                          |
-    |   $ mount /dev/sda2 /mnt                                                 |
-    |   $ mount /dev/sda3 /mnt/home                                            |
-    |   $ mount /dev/sda1 /mnt/boot                                            |
+    |   $ mount /dev/nvme0n1p2 /mnt                                            |
+    |   $ mount /dev/nvme0n1p3 /mnt/home                                       |
+    |   $ mount /dev/nvme0n1p1 /mnt/boot                                       |
     |                                                                          |
     +--------------------------------------------------------------------------+
 

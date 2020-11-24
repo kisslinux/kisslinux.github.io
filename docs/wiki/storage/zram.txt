@@ -18,6 +18,9 @@ enable and configure. First, ensure zram is enabled in the kernel:
 
 +------------------------------------------------------------------------------+
 |                                                                              |
+|   General setup --->                                                         |
+|       <*> Support for paging of anonymous memory (swap)                      |
+|                                                                              |
 |   Memory Management options --->                                             |
 |       <*> Memory allocator for compressed pages                              |
 |                                                                              |
@@ -32,6 +35,9 @@ enable and configure. First, ensure zram is enabled in the kernel:
 |                                                                              |
 +------------------------------------------------------------------------------+
 
+lz4 is available in community. The default compression algorithm is lzo and
+CONFIG_CRYPTO_LZO=y/m is forced when CONFIG_ZRAM=y/m.
+
 Building compressed RAM block devices as a module is recommended because it
 enables runtime block device creation. If it is built-in to the kernel, pass
 zram.num_devices=X in the kernel commandline (bootloader or built-in).
@@ -45,6 +51,10 @@ method using an /etc/rc.d/zram.{boot,pre.shutdown} script is shown below.
 Because multiple ramdisks are allowed, it might be preferable to create 
 multiple zram devices for better utilization on multicore systems. 
 
+The compression used on zram block devices cannot be changed once the device is
+initialized. This means that you cannot swap compression algorithms at run-time,
+unlike with zswap.
+
 $SIZE below can be given in bytes or suffixed by M,G.
 
 +------------------------------------------------------------------------------+
@@ -52,17 +62,31 @@ $SIZE below can be given in bytes or suffixed by M,G.
 +------------------------------------------------------------------------------+
 |   #!/bin/sh -e                                                               |
 |                                                                              |
-|   modprobe zram                                                              |
+|   # Create four zram devices for swap, one for tmpfs                         |
+|                                                                              |
+|   modprobe zram num_devices=5                                                |
 |                                                                              |
 |   # create zram devices of $SIZE 2G                                          |
+|   # Use lz4 compression on the devices                                       |
 |   # Mark the devices as swap devices                                         |
 |   # Enable the swap devices                                                  |
 |                                                                              |
 |   for dev in 0 1 2 3; do                                                     |
-|       echo 2G > "/sys/block/zram$dev/disksize"                               |
-|       mkswap "/dev/zram$dev"                                                 |
-|       swapon "/dev/zram$dev" -p 10                                           |
+|       echo lz4 > "/sys/block/zram$dev/comp_algorithm"                        |
+|       echo 2G >  "/sys/block/zram$dev/disksize"                              |
+|       mkswap     "/dev/zram$dev"                                             |
+|       swapon     "/dev/zram$dev" -p 10                                       |
 |   done                                                                       |
+|                                                                              |
+|   # Create a 4G ext4 zram device to use as tmpfs with lz4 compression        |
+|                                                                              |
+|   echo lz4  > /sys/block/zram4/comp_algorithm                                |
+|   echo 4G   > /sys/block/zram4/disksize                                      |
+|   mkfs.ext4   /dev/zram4                                                     |
+|   mount       /dev/zram4 /tmp                                                |
+|                                                                              |
+|   # /tmp requires sticky bit permissions for nonroot user access             |
+|   chmod 1777 /tmp                                                            |
 |                                                                              |
 +------------------------------------------------------------------------------+
 
@@ -77,6 +101,10 @@ $SIZE below can be given in bytes or suffixed by M,G.
 |       swapoff "/dev/zram$dev"                                                |
 |       echo 1 > "/sys/block/zram$dev/reset"                                   |
 |   done                                                                       |
+|                                                                              |
+|   # Unmount /tmp, reset zram device                                          |
+|   umount /dev/zram4                                                          |
+|   echo 1 > /sys/block/zram4/reset                                            |
 |                                                                              |
 +------------------------------------------------------------------------------+
 
