@@ -783,7 +783,7 @@ BIOS and UEFI are supported and vast amounts of documentation for it exists.
     | BIOS                                                                     |
     +--------------------------------------------------------------------------+
     |                                                                          |
-    |   $ grub-install /dev/sdX                                                |
+    |   $ grub-install --target=i386-pc /dev/sdX                               |
     |   $ grub-mkconfig -o /boot/grub/grub.cfg                                 |
     |                                                                          |
     +--------------------------------------------------------------------------+

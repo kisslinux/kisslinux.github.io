@@ -218,7 +218,7 @@ for various manufacturers.
           |           model*)      : ${model:=$val}    ;;                      |
           |       esac                                                         |
      	  |   done < /proc/cpuinfo                                             |
-	      |   printf "%02x-%02x-%02x\n" "$family "$model" "$stepping"          |
+	  |   printf "%02x-%02x-%02x\n" "$family" "$model" "$stepping"	       |
           |                                                                    |
           +--------------------------------------------------------------------+
 

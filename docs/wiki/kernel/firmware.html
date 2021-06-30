@@ -31,7 +31,7 @@
 
 <a href="/wiki">wiki</a> / <a href='/wiki/kernel'>kernel</a> / firmware                                          <a href='https://github.com/kisslinux/wiki/edit/master/kernel/firmware.txt'>Edit this page</a>
 
-Edited (<a href='https://github.com/kisslinux/wiki/commit/d7b8cebba5a5d66a4d588f85aef4ee7db2883aff'>d7b8ceb</a>) at 2020-07-24 by Dylan Araps
+Edited (<a href='https://github.com/kisslinux/wiki/commit/87a63a77cc7c34f2f3aac18de44eb7424af4744d'>87a63a7</a>) at 2020-11-27 by aabacchus
 
 
 FIRMWARE
@@ -254,7 +254,7 @@ for various manufacturers.
           |           model*)      : ${model:=$val}    ;;                      |
           |       esac                                                         |
      	  |   done < /proc/cpuinfo                                             |
-	      |   printf "%02x-%02x-%02x\n" "$family "$model" "$stepping"          |
+	  |   printf "%02x-%02x-%02x\n" "$family" "$model" "$stepping"	       |
           |                                                                    |
           +--------------------------------------------------------------------+
 

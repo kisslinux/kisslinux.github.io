@@ -640,7 +640,7 @@ read the link (and the patch itself for more information). @/<a href=/news/20200
     |                                                                          |
     |   TIP: A patch can be applied to remove this requirement.                |
     |        - @/<a href=/wiki/kernel/config#5.0>wiki/kernel/config#5.0</a>                                        |
-    |        - /usr/share/doc/wiki/kernel/patches/kernel-no-perl.patch         |
+    |        - /usr/share/doc/kiss/wiki/kernel/patches/kernel-no-perl.patch    |
     |                                                                          |
     +--------------------------------------------------------------------------+
 
@@ -814,7 +814,7 @@ BIOS and UEFI are supported and vast amounts of documentation for it exists.
     | BIOS                                                                     |
     +--------------------------------------------------------------------------+
     |                                                                          |
-    |   $ grub-install /dev/sdX                                                |
+    |   $ grub-install --target=i386-pc /dev/sdX                               |
     |   $ grub-mkconfig -o /boot/grub/grub.cfg                                 |
     |                                                                          |
     +--------------------------------------------------------------------------+
