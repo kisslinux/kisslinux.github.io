@@ -596,7 +596,7 @@ ________________________________________________________________________________
 [7]  https://bugzilla.kernel.org/show_bug.cgi?id=207585
 [8]  https://github.com/jedavies-dev/kiss-zfs
 [9]  https://wiki.archlinux.org/index.php/file_systems
-[10] @/package-manager#6.3
+[10] #/package-manager#6.3
 [11] https://wiki.archlinux.org/index.php/Fstab#Identifying_filesystems
 [12] https://linux.die.net/man/8/dump
 [13] https://man7.org/linux/man-pages/man5/fstab.5.html

@@ -719,11 +719,11 @@ ________________________________________________________________________________
 [0] https://kde.org
 [1] https://qt.io
 [3] https://gitlab.com/kwinft/kwinft
-[4] @/package-manager#3.2
-[5] @/package-manager#5.3
+[4] #/package-manager#3.2
+[5] #/package-manager#5.3
 [6] http://linuxfromscratch.org/blfs/view/svn/general/elogind.html
 [7] https://github.com/dilyn-corner/KISS-kde/releases
-[8] @/install
+[8] #/install
 [9] https://wiki.archlinux.org/index.php/SDDM
 [10] https://github.com/tsujan/Kvantum
 [11] https://github.com/KDE/latte-dock
