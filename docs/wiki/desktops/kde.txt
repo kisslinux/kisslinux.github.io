@@ -1,22 +1,15 @@
 KDE
 ________________________________________________________________________________
 
-KDE [0] is desktop environment which consists of the Plasma Desktop, the KDE 
+KDE [0] is desktop environment which consists of the Plasma Desktop, the KDE
 Frameworks, and a collection of free and open source, cross-platform programs.
-The project makes integral use of the Qt framework [1] to help provide a 
+The project makes integral use of the Qt framework [1] to help provide a
 uniform experience for users between all of the software a user will install.
 
 $/dilyn-corner/KISS-kde is still considered to be under heavy development. While
 the desktop environment works quite well, many things have yet to be tested. If
 you run into bugs, problems, or have suggestions, submit issues or pull requests
 on the GitHub page!
-
-NOTE: due to the KISS Guidestones [2], the $/dilyn-corner/KISS-kde project is
-entirely community maintained. It will always remain separate from the core KISS
-project, including the community repository. Specifically, KDE violates the
-software inclusion guidestone. The required violations are dbus and wayland. 
-However, logind, polkit, and PAM are optional to build and use KDE.
-
 
 Index
 ________________________________________________________________________________
@@ -58,7 +51,7 @@ ________________________________________________________________________________
 To begin using the K Desktop Environment there are two choices. The first option
 is to use a prebuilt tarball similar to the KISS release tarballs and install it
 analogously to how one installs KISS. The second is to build every package from
-source from an existing KISS installation. Beyond this, one need only clone two 
+source from an existing KISS installation. Beyond this, one need only clone two
 git repositories, install dbus, and choose whether to use libudev-zero or eudev.
 
 There are several optional features that users have a choice on. These choices
@@ -81,7 +74,7 @@ Assuming that you keep these repositories in $HOME,
 |   $ export KISS_PATH="$KISS_PATH:$HOME/community/community"                  |
 |                                                                              |
 |   # you can optionally include the kde path for sddm, dolphin, etc.          |
-|   $ export KISS_PATH="$KISS_PATH:$HOME/KISS-kde/kde"                         |    
+|   $ export KISS_PATH="$KISS_PATH:$HOME/KISS-kde/kde"                         |
 |                                                                              |
 +------------------------------------------------------------------------------+
 
@@ -90,24 +83,24 @@ Assuming that you keep these repositories in $HOME,
     ____________________________________________________________________________
 
     KDE utilizes polkit and PAM for authentication. They provide a robust
-    backend and sets of features which allow for more fine-grained control of 
+    backend and sets of features which allow for more fine-grained control of
     which users can perform what actions. However, there are no strict
     requirements to use them. For instance, kauth (the framework responsible for
     providing access to the polkit backend) only optionally requires polkit.
     Additionally, kscreenlocker (the program responsible for locking the screen)
     only requires PAM in instances where the login manager has failed to
-    properly track user sessions and will not allow the user to login. 
-    
+    properly track user sessions and will not allow the user to login.
+
     In the case of single-seat or single-user machines, complicated
     authentication frameworks might be seen as a needless additional form of
-    security. If users decide they do not wish to make use of these features, 
+    security. If users decide they do not wish to make use of these features,
     they are not required to do anything.
 
     In cases where users would prefer to have fine-grained controls over access,
-    the only prerequisite is to install a user permissions backend and polkit 
+    the only prerequisite is to install a user permissions backend and polkit
     prior to building the rest of KDE. The permission systems allowed are
-    linux-pam or shadow. If users intend on installing a login manager (such as 
-    elogind), PAM should be chosen. Otherwise, shadow is an excellent option 
+    linux-pam or shadow. If users intend on installing a login manager (such as
+    elogind), PAM should be chosen. Otherwise, shadow is an excellent option
     (and is available in community).
 
     If a user wishes to go this route, simply build and install linux-pam or
@@ -122,8 +115,8 @@ Assuming that you keep these repositories in $HOME,
     +--------------------------------------------------------------------------+
 
     If users change their mind after setting up KDE, reverting is as simple as
-    rebuilding the relevant packages. For instance, if a user decided to build 
-    polkit and linux-pam and wishes to drop the stack entirely, 
+    rebuilding the relevant packages. For instance, if a user decided to build
+    polkit and linux-pam and wishes to drop the stack entirely,
 
     +--------------------------------------------------------------------------+
     |                                                                          |
@@ -137,10 +130,10 @@ Assuming that you keep these repositories in $HOME,
     +--------------------------------------------------------------------------+
 
     Known issues with lacking proper authentication backends includes the
-    inability to use systemsettings to alter things like the time. 
+    inability to use systemsettings to alter things like the time.
 
     NOTE: currently there seems to be an issue with authentication in general;
-    kscreenlocker does not allow users to log back in, and users cannot change 
+    kscreenlocker does not allow users to log back in, and users cannot change
     the date or time. Without linux-pam installed, the former issue is resolved.
 
 
@@ -149,17 +142,17 @@ Assuming that you keep these repositories in $HOME,
 
     Currently, users can either start plasma sessions via TTY or from a greeter.
     Login managers provide a way by which certain other programs can track
-    sessions, and provide a measure of security for the system. For instance, 
-    networkmanager optionally requires logind for ensuring internet features 
-    return after the system wakes up from sleep, and sddm allows restrictions 
+    sessions, and provide a measure of security for the system. For instance,
+    networkmanager optionally requires logind for ensuring internet features
+    return after the system wakes up from sleep, and sddm allows restrictions
     on which UIDs can login to a system.
 
     For users who have limited interest in managing their sessions via logind,
     no action is required.
 
-    For users who wish to have session-tracking features or would like to 
-    utilize programs like sddm, elogind is required (other options are 
-    currently being explored). elogind requires PAM. As a result, users choosing 
+    For users who wish to have session-tracking features or would like to
+    utilize programs like sddm, elogind is required (other options are
+    currently being explored). elogind requires PAM. As a result, users choosing
     to use elogind should do the following:
 
     +--------------------------------------------------------------------------+
@@ -185,23 +178,23 @@ Assuming that you keep these repositories in $HOME,
 
     NOTE: to take advantage of the authentication backend, users should
     reinstall kauth and kscreenlocker.
-    
+
 
     [0.3] Default Window Manager
     ____________________________________________________________________________
 
-    Currently there are two primary window managers that can be chosen: kwin and 
-    kwinft. kwinft [3] is a composited window manager for X11 and Wayland 
-    systems. Most of the differences between kwinft and kwin are in the 
-    underlying code; kwinft is designed to have better coding practices and be 
-    well-organized. However, any features that appear in kwinft can be expected 
-    to eventually show up in kwin. So if you prefer a more bleeding edge, 
+    Currently there are two primary window managers that can be chosen: kwin and
+    kwinft. kwinft [3] is a composited window manager for X11 and Wayland
+    systems. Most of the differences between kwinft and kwin are in the
+    underlying code; kwinft is designed to have better coding practices and be
+    well-organized. However, any features that appear in kwinft can be expected
+    to eventually show up in kwin. So if you prefer a more bleeding edge,
     potentially better window manager for KDE, kwinft is an option.
 
-    By default, kwin will be installed. If you wish to change this, fork 
-    plasma-{workspace,desktop} and alter the depends files. All you are required 
-    to do is uncomment the kwinft lines in the dependencies lists and comment 
-    out kwin. For more information on forking packages, see [4]. In order to 
+    By default, kwin will be installed. If you wish to change this, fork
+    plasma-{workspace,desktop} and alter the depends files. All you are required
+    to do is uncomment the kwinft lines in the dependencies lists and comment
+    out kwin. For more information on forking packages, see [4]. In order to
     change which is used on an existing installation,
 
     +--------------------------------------------------------------------------+
@@ -238,20 +231,20 @@ powerdevil. See [4.0] for more information.
     [1.1] Prerequisites
     ____________________________________________________________________________
 
-    Ensure that you have the proper required packages installed: libudev-zero, 
-    dbus, and xorg-server. libudev-zero has been tested to work with KDE. 
-    Optionally, eudev also works. The choice is up to you! Currently, 
+    Ensure that you have the proper required packages installed: libudev-zero,
+    dbus, and xorg-server. libudev-zero has been tested to work with KDE.
+    Optionally, eudev also works. The choice is up to you! Currently,
     dbus-alternatives (like a stub library) are untested. The dependencies of
-    the KDE packages assume many Xorg libraries are already installed. Not 
+    the KDE packages assume many Xorg libraries are already installed. Not
     having xorg-server might result in missing dependencies.
 
     These are the only requirements for building plasma-desktop.
-    
-    NOTE: in order to build certain extras, coreutils is required. Specifically: 
-    elogind, libblockdev, and udisks2 require three separate programs. Patches 
-    are welcome to resolve this! coreutils provides files which conflict with 
-    other KISS packages, such as busybox. To ensure we are using the correct 
-    programs when we attempt to build these extras, we use the alternatives 
+
+    NOTE: in order to build certain extras, coreutils is required. Specifically:
+    elogind, libblockdev, and udisks2 require three separate programs. Patches
+    are welcome to resolve this! coreutils provides files which conflict with
+    other KISS packages, such as busybox. To ensure we are using the correct
+    programs when we attempt to build these extras, we use the alternatives
     system! For more information on this system, see [5]. This is not required
     if you do not care about elogind.
 
@@ -259,8 +252,8 @@ powerdevil. See [4.0] for more information.
     | Package     | Requirement                                                |
     |-------------+------------------------------------------------------------|
     |             |                                                            |
-    | elogind     | /usr/bin/realpath --relative-to                            | 
-    | udisks2     | /usr/bin/ln -r                                             | 
+    | elogind     | /usr/bin/realpath --relative-to                            |
+    | udisks2     | /usr/bin/ln -r                                             |
     | libblockdev | /usr/bin/mktemp --tmpdir                                   |
     |             |                                                            |
     +-------------+------------------------------------------------------------+
@@ -285,33 +278,33 @@ powerdevil. See [4.0] for more information.
     |                                                                          |
     +--------------------------------------------------------------------------+
 
-    NOTE: If you had packages like xorg-server installed, you might want to 
-    rebuild them to pickup on the new device manager they can take advantage of. 
-    If you do not currently have xorg-server installed, you will want to get it. 
+    NOTE: If you had packages like xorg-server installed, you might want to
+    rebuild them to pickup on the new device manager they can take advantage of.
+    If you do not currently have xorg-server installed, you will want to get it.
     A pure wayland KDE is both untested and unlikely to work.
 
     NOTE: with the release of plasma 5.20.0, KDE is more aggressively supporting
     a wayland environment. xorg support may be dropped in the future!
 
     Make sure you do not currently have qt5 installed. The build files have been
-    tweaked for this repository to make use of dbus and libudev-zero. As a 
-    result, carrying over the community version of these packages will lead to 
+    tweaked for this repository to make use of dbus and libudev-zero. As a
+    result, carrying over the community version of these packages will lead to
     unknown problems.
 
     Because of the time required to build qt5* packages, some prebuilt tarballs
-    are available on the Github repository [5]. They are built in a standard 
+    are available on the Github repository [5]. They are built in a standard
     KISS tarball, with C(XX)FLAGS=-march=x86-64 -mtune=generic -Os -pipe.
 
     NOTE: In general, it is a security risk to install prebuilt packages. these
     archives are provided as a courtesy by $/dilyn-corner. Always verify the
     authenticity of packages, and the identities of packagers!
-    
-    The current release is 5.15.1, available with the 2020.10-1 release. 
+
+    The current release is 5.15.1, available with the 2020.10-1 release.
 
     +--------------------------------------------------------------------------+
     |                                                                          |
     |   $ ver=2020.10-1                                                        |
-    |   $ qtver=5.15.1-1                                                       | 
+    |   $ qtver=5.15.1-1                                                       |
     |   $ url=https://github.com/dilyn-corner/KISS-kde/releases/download/$ver  |
     |                                                                          |
     |   $ wget $url/qt5.$qtver.tar.gz \                                        |
@@ -350,12 +343,12 @@ powerdevil. See [4.0] for more information.
     [1.2] Installing
     ____________________________________________________________________________
 
-    Now that all of the build requirements are taken care of, we can install 
+    Now that all of the build requirements are taken care of, we can install
     the desktop environment. Just over a hundred packages are required.
 
     +--------------------------------------------------------------------------+
     |                                                                          |
-    |   $ kiss b plasma-desktop && kiss i plasma-desktop                       | 
+    |   $ kiss b plasma-desktop && kiss i plasma-desktop                       |
     |                                                                          |
     +--------------------------------------------------------------------------+
 
@@ -379,7 +372,7 @@ powerdevil. See [4.0] for more information.
 
     +--------------------------------------------------------------------------+
     |                                                                          |
-    |   $ exec dbus-launch --exit-with-session startplasma-x11                 | 
+    |   $ exec dbus-launch --exit-with-session startplasma-x11                 |
     |                                                                          |
     +--------------------------------------------------------------------------+
 
@@ -393,7 +386,7 @@ ________________________________________________________________________________
 
 Similarly to KISS itself, a tarball containing a fully-functional KISS with
 KDE setup is available from the GitHub repository [7]. This archive can be
-chrooted into or directly unpacked to '/'. It is built from a kiss-chroot 
+chrooted into or directly unpacked to '/'. It is built from a kiss-chroot
 archive with identical generic C(XX)FLAGS, and is ~330MB in size.
 
 NOTE: In general, it is a security risk to install prebuilt packages. This
@@ -405,7 +398,7 @@ not make choices for the user. As a result, it should be installed
 identically to how KISS is normally installed, using the KISS install guide.
 See [8] for KISS setup instructions.
 
-There will be monthly releases of the KISS-kde tarball to keep up with upstream. 
+There will be monthly releases of the KISS-kde tarball to keep up with upstream.
 The format of releases will be in YYYY-MM format.
 
 To download e.g. the first October 2020 release,
@@ -417,7 +410,7 @@ To download e.g. the first October 2020 release,
 |   $ wget $url/kiss-kde-$ver.tar.xz                                           |
 |                                                                              |
 +------------------------------------------------------------------------------+
-    
+
 It is strongly recommended to verify the checksums to avoid problems like
 using a partially downloaded archive.
 
@@ -446,11 +439,11 @@ and enter the chroot environment,
 +------------------------------------------------------------------------------+
 
 From here, simply follow the rest of the install guide [8].
-For help with kernels, see @/kernel. For help with bootloaders, see @/boot. 
+For help with kernels, see @/kernel. For help with bootloaders, see @/boot.
 
 It is recommended that you change the root password; the default is "toor".
 
-After setting up everything, it should be as simple as: 
+After setting up everything, it should be as simple as:
 
 +------------------------------------------------------------------------------+
 |                                                                              |
@@ -467,7 +460,7 @@ You should now be greeted with a fresh Plasma Desktop!
 ________________________________________________________________________________
 
 You have two choices on how to launch KDE. Either you can start it directly from
-the console, or you can make use of a login manager. 
+the console, or you can make use of a login manager.
 
 
     [3.1] Console
@@ -493,7 +486,7 @@ the console, or you can make use of a login manager.
     |                                                                          |
     |   export XDG_RUNTIME_DIR="${XDG_RUNTIME_DIR:-/tmp/$(id -u)-runtime}"     |
     |                                                                          |
-    |   [ -d "$XDG_RUNTIME_DIR" ] || {                                         | 
+    |   [ -d "$XDG_RUNTIME_DIR" ] || {                                         |
     |       mkdir -p   "$XDG_RUNTIME_DIR"                                      |
     |       chmod 0700 "$XDG_RUNTIME_DIR"                                      |
     |   }                                                                      |
@@ -505,8 +498,8 @@ the console, or you can make use of a login manager.
     ____________________________________________________________________________
 
     The KISS-kde repository also includes sddm [9], the Simple Desktop Display
-    Manager, as an option for a greeter. It requires a login manager. elogind is 
-    the default; other options are currently being tested. First, build and 
+    Manager, as an option for a greeter. It requires a login manager. elogind is
+    the default; other options are currently being tested. First, build and
     install elogind
 
     +--------------------------------------------------------------------------+
@@ -518,7 +511,7 @@ the console, or you can make use of a login manager.
     +--------------------------------------------------------------------------+
 
     Then, install sddm
-    
+
     +--------------------------------------------------------------------------+
     |                                                                          |
     |   # sddm is in the KISS-kde/kde repo                                     |
@@ -528,10 +521,10 @@ the console, or you can make use of a login manager.
 
     NOTE: by default, it may not be possible for root to login via sddm. Best
     practices would dictate that you login as an unprivileged user.
-    
+
     Enable the requisite services for sddm to function properly. For KISS'
     default service manager,
-    
+
     +--------------------------------------------------------------------------+
     |                                                                          |
     |   $ ln -s /etc/sv/polkitd /var/service                                   |
@@ -579,10 +572,10 @@ few things available to you that you can change, if you so choose.
     [4.2] Greeters
     ____________________________________________________________________________
 
-    sddm is a feature-rich but straightforward greeter; see [3.2] for 
-    installation and setup instructions. sddm can be configured heavily. 
-    Configuration is read from /etc/sddm.conf. If it does not exist, you can 
-    generate it: 
+    sddm is a feature-rich but straightforward greeter; see [3.2] for
+    installation and setup instructions. sddm can be configured heavily.
+    Configuration is read from /etc/sddm.conf. If it does not exist, you can
+    generate it:
 
     +--------------------------------------------------------------------------+
     |                                                                          |
@@ -592,10 +585,10 @@ few things available to you that you can change, if you so choose.
 
     You can manually edit this file to allow for autologins, changing themes,
     changing the user icons, or even changing the range of UIDs that can login
-    through sddm. 
+    through sddm.
 
     Alternatively, configuration can be done graphically during a plasma
-    session. Simply install sddm-kcm and a sddm configuration section in 
+    session. Simply install sddm-kcm and a sddm configuration section in
     systemsettings should become available.
 
     +--------------------------------------------------------------------------+
@@ -604,18 +597,18 @@ few things available to you that you can change, if you so choose.
     |                                                                          |
     +--------------------------------------------------------------------------+
 
-    NOTE: other greeters are untested. If you find success with alternatives, 
+    NOTE: other greeters are untested. If you find success with alternatives,
     make a PR to add them!
 
 
     [4.3] Extras
     ____________________________________________________________________________
 
-    Several things are included in KISS-kde/kde. Examples include sddm, 
+    Several things are included in KISS-kde/kde. Examples include sddm,
     kvantum [10] and latte-dock [11].
 
     Separate from these are the KDE Applications, such as krita or dolphin.
-    Some useful (and working) applications include dolphin and konsole. 
+    Some useful (and working) applications include dolphin and konsole.
 
     Finally, there are several useful extra programs which will enhance the
     standard KDE experience.
@@ -626,7 +619,7 @@ few things available to you that you can change, if you so choose.
     |             |                                                            |
     | sddm        | The Simple Desktop Display Manager                         |
     | kvantum     | An svg-based theme engine for qt5                          |
-    | latte-dock  | A feature-rich dock based on the Plasma Framework          | 
+    | latte-dock  | A feature-rich dock based on the Plasma Framework          |
     |             |                                                            |
     | dolphin     | The default KDE file manager                               |
     | konsole     | The default KDE terminal emulator                          |
@@ -657,9 +650,9 @@ $dilyn-corner/KISS-kde.
     If the fonts you have installed don't appear in any Qt applications, such as
     konsole, but DO appear in other applications, such as st, Qt is not properly
     identifying your font location. This can be confirmed by running a Qt app
-    from a terminal and seeing warnings about how Qt does not ship fonts, and it 
-    could not find them in /usr/lib/fonts. Additionally, qtdiag may inform you 
-    that the default system font is noto-sans, regardless of whether or not 
+    from a terminal and seeing warnings about how Qt does not ship fonts, and it
+    could not find them in /usr/lib/fonts. Additionally, qtdiag may inform you
+    that the default system font is noto-sans, regardless of whether or not
     noto-sans is installed.
 
     This issue should be resolved by merely rebuilding qt5.
@@ -670,22 +663,22 @@ $dilyn-corner/KISS-kde.
 
     This is a known issue with kscreenlocker and KISS. The problem would
     seemingly lie with PAM not properly authenticating the user. This remains
-    unresolved. 
+    unresolved.
 
     If the user trying to login is root, you may have luck killing the
-    kscreenlocker_greet process. 
-    
-    The short term fix is to disable screen locking during inactivity, not 
+    kscreenlocker_greet process.
+
+    The short term fix is to disable screen locking during inactivity, not
     require a password while unlocking, or to simply never lock the screen.
-    
+
     This issue does not exist on systems which do not have linux-pam installed.
 
 
     [5.3] I can't change the system time!
     ____________________________________________________________________________
 
-    Administrative actions currently cannot be executed as any user in places 
-    such as systemsettings. 
+    Administrative actions currently cannot be executed as any user in places
+    such as systemsettings.
 
     A solution to resolve this issue is currently unknown.
 
@@ -694,8 +687,8 @@ $dilyn-corner/KISS-kde.
     ____________________________________________________________________________
 
     Please open an issue on the GitHub page! The dependencies have been
-    minimized as much as possible to ensure the fewest things required are 
-    pulled in to have a working system. As a result, some things may fail to 
+    minimized as much as possible to ensure the fewest things required are
+    pulled in to have a working system. As a result, some things may fail to
     build independently. Some dependency requirements are simple fixes. Some
     examples include:
 
@@ -725,13 +718,12 @@ ________________________________________________________________________________
 
 [0] https://kde.org
 [1] https://qt.io
-[2] https://k1ss.org/guidestones
 [3] https://gitlab.com/kwinft/kwinft
-[4] https://k1ss.org/package-manager#3.2
-[5] https://k1ss.org/package-manager#5.3
-[6] http://linuxfromscratch.org/blfs/view/svn/general/elogind.html 
+[4] @/package-manager#3.2
+[5] @/package-manager#5.3
+[6] http://linuxfromscratch.org/blfs/view/svn/general/elogind.html
 [7] https://github.com/dilyn-corner/KISS-kde/releases
-[8] https://k1ss.org/install
+[8] @/install
 [9] https://wiki.archlinux.org/index.php/SDDM
 [10] https://github.com/tsujan/Kvantum
 [11] https://github.com/KDE/latte-dock

@@ -27,7 +27,7 @@
 
 <a href="/wiki">wiki</a> / <a href='/wiki/software'>software</a> / git                                             <a href='https://github.com/kisslinux/wiki/edit/master/software/git.txt'>Edit this page</a>
 
-Edited (<a href='https://github.com/kisslinux/wiki/commit/ff910afb30b8e8eaf719fd84aa25e77d83e2f721'>ff910af</a>) at 2020-09-05 by fultons sabotage linux machine
+Edited (<a href='https://github.com/kisslinux/wiki/commit/2cc4420d52dd54f1d9cd8804af2c966d6b42d2cb'>2cc4420</a>) at 2021-06-30 by Dylan Araps
 
 
 GIT <a href=#0>[0]</a>
@@ -160,7 +160,7 @@ will typically be the same. Let's use merge:
 ________________________________________________________________________________
 
 With git it’s possible to squash previous commits into one. This is a great way
-to group certain changes together before sharing them with others. Let’s say 
+to group certain changes together before sharing them with others. Let’s say
 this is your current git log:
 
 +------------------------------------------------------------------------------+
@@ -173,7 +173,7 @@ this is your current git log:
 +------------------------------------------------------------------------------+
 
 You have a branch “feature_x” here. You’ve already pushed d7322aa with the proof
-of concept of the new feature X. After that you’ve been working to add new 
+of concept of the new feature X. After that you’ve been working to add new
 element to the feature, including some changes in CSS. Now, you want to squash
 your last three commits in one to make your history look pretty.
 
@@ -196,8 +196,8 @@ This will open up your editor with the following:
 +------------------------------------------------------------------------------+
 
 Now you can tell git what to do with each commit. Let’s keep the commit f392171,
-the one were we added our feature. We’ll squash the following two commits into 
-the first one - leaving us with one clean commit with features X in it, 
+the one were we added our feature. We’ll squash the following two commits into
+the first one - leaving us with one clean commit with features X in it,
 including the added element and CSS.
 
 Change your file to this:
@@ -220,19 +220,19 @@ Note: Do not squash commits that you’ve already shared with others. You are
 ________________________________________________________________________________
 
 Note: The method described below requires a GitHub user account. If you do not
-      have a GitHub user account or do not wish to create one, you can still 
-      submit your articles or ideas directly to dylan@k1ss.org.
+      have a GitHub user account or do not wish to create one, you can still
+      submit your articles or ideas directly to dylan.araps@gmail.com.
 
 Lets say you are interested in writing a new article for the KISS Wiki. The
-process is fairly straight forward!  
+process is fairly straight forward!
 
 Begin by first creating a fork of the KISS Wiki repository. One way to do this
-is from a web browser by going to the <a href=https://github.com/kisslinux/wiki>https://github.com/kisslinux/wiki</a> page, 
-clicking the "Fork" button in the upper right corner of the page. Doing so 
-should create a copy of the KISS Wiki repository on your user account (e.g. 
-<a href=https://github.com/USERNAME/wiki>https://github.com/USERNAME/wiki</a>). 
+is from a web browser by going to the <a href=https://github.com/kisslinux/wiki>https://github.com/kisslinux/wiki</a> page,
+clicking the "Fork" button in the upper right corner of the page. Doing so
+should create a copy of the KISS Wiki repository on your user account (e.g.
+<a href=https://github.com/USERNAME/wiki>https://github.com/USERNAME/wiki</a>).
 
-Clone the forked repository to your PC with the following command. Remember to 
+Clone the forked repository to your PC with the following command. Remember to
 replace USERNAME with your actual GitHub username.
 
 +------------------------------------------------------------------------------+
@@ -249,9 +249,9 @@ Once cloned to your PC, navigate to the wiki directory:
 |                                                                              |
 +------------------------------------------------------------------------------+
 
-Add your new article in this directory per the #/<a href=/wiki/help/adding-a-page>wiki/help/adding-a-page</a> 
-guidelines. Once you are ready to publish your newly created article, you need 
-to add/update your forked repository. From the main wiki directory, you can 
+Add your new article in this directory per the #/<a href=/wiki/help/adding-a-page>wiki/help/adding-a-page</a>
+guidelines. Once you are ready to publish your newly created article, you need
+to add/update your forked repository. From the main wiki directory, you can
 check the status of all changes or newly created files:
 
 +------------------------------------------------------------------------------+
@@ -259,8 +259,8 @@ check the status of all changes or newly created files:
 |   $ git status                                                               |
 |                                                                              |
 +------------------------------------------------------------------------------+
- 
-Using the output of command above, update/add the new files your forked 
+
+Using the output of command above, update/add the new files your forked
 repository that are ready to be published:
 
 +------------------------------------------------------------------------------+
@@ -277,7 +277,7 @@ Alternatively, you can add ALL newly updated/created files in a single command:
 |                                                                              |
 +------------------------------------------------------------------------------+
 
-Next, you will commit your changes. 
+Next, you will commit your changes.
 
 +------------------------------------------------------------------------------+
 |                                                                              |
@@ -285,8 +285,8 @@ Next, you will commit your changes.
 |                                                                              |
 +------------------------------------------------------------------------------+
 
-Replace YOUR_COMMIT_MSG with a short description of change(s) or the new article 
-(i.e. "git: new article" or "git: add new git example"). 
+Replace YOUR_COMMIT_MSG with a short description of change(s) or the new article
+(i.e. "git: new article" or "git: add new git example").
 
 At this point you are ready to push your changes to the GitHub server with the
 following command.
@@ -298,13 +298,13 @@ following command.
 +------------------------------------------------------------------------------+
 
 Upon doing so, you will be prompted to enter your GitHub user credentials. Once
-entered, the latest changes will be uploaded to your forked Wiki repository 
+entered, the latest changes will be uploaded to your forked Wiki repository
 on GitHub.
 
 The last step is to initiate a Pull Request (PR). A PR can be initiated via a
 web browser by going to the <a href=https://github.com/USERNAME/wiki>https://github.com/USERNAME/wiki</a> page and pressing
-the "New pull request" button near the top of the page. In the Title field, 
-enter the reason for initiating a PR (i.e. "git: new article") and press the 
+the "New pull request" button near the top of the page. In the Title field,
+enter the reason for initiating a PR (i.e. "git: new article") and press the
 "Create pull request" button.
 
 Note: Pay attention to which branch is being merged into the master branch of
