@@ -116,14 +116,14 @@ stuff out of the way first.
 KISS has no need for:
 
     bash, dbus, fakeroot, file, ca-certificates, atk-brige-*, gettext,
-    intltool, autoconf, automake, libtool, yasm, shared-mime-info, ...
+    intltool, autoconf, automake, libtool, yasm, shared-mime-info,
+    python2, ...
 
 
 Work is almost complete in removing more traditionally fundamental pieces of
 software from the distribution. The following pieces of software have been
 reduced to compile-time(!) dependencies of Firefox (and only Firefox).
 
-    - Python 2 (Porting effort to Python 3 still ongoing upstream).
     - GTK+2    (Due to be removed upstream in 2020).
     - Perl     (Used throughout the build process. Tricky).
 
