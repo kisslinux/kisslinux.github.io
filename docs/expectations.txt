@@ -1,0 +1,69 @@
+Expectations
+________________________________________________________________________________
+
+I develop KISS for free. I owe you nothing. Any help I may provide is at my own
+discretion. KISS is my gift to you from the love of what I do. I hope you find
+it as useful as I have. - Dylan Araps
+
+
+    1. Users
+    ____________________________________________________________________________
+
+    Every user has the means to maintain their system and it is the expectation
+    that users solve their own problems. This extends to any unpackaged software
+    the user may require. The health of a user's system is solely the user's
+    responsibility.
+
+
+    2. Governance
+    ____________________________________________________________________________
+
+    There is a sole commander-in-chief (Dylan Araps), there is no below
+    governance structure. There are no rules based around speech.
+
+
+    3. Repositories
+    ____________________________________________________________________________
+
+    The official repositories are a minimal and extensible base providing no
+    more than a graphical session, web browser and media player.
+
+    Prohibited software:
+
+    - Software requiring a network connection during its build process.
+    - Software containing telemetry (unless patched out),
+    - Proprietary software,
+    - Desktop environments,
+    - And the following (non-exhaustive) list:
+      - consoleKit
+      - dbus
+      - electron
+      - gettext
+      - intltool
+      - libsn
+      - logind
+      - elogind
+      - pam
+      - pipewire
+      - polkit
+      - pulseaudio
+      - systemd
+      - wayland
+
+
+    4. Tooling
+    ____________________________________________________________________________
+
+    Package management features which are unsupported by design:
+
+    - Circular dependencies (are a bug, not a feature).
+    - Recursive orphan removal (error prone).
+    - Marking packages as explicitly installed.
+
+
+    5. Initialization
+    ____________________________________________________________________________
+
+    The user is free to use the init system of their choosing. Nothing unrelated
+    to initialization of the computer shall require a specific init system.
+

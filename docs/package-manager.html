@@ -6,16 +6,14 @@
 <a href=/news>News</a>
 <a href=/blog>Blog</a>
 
-<a href=/wiki>Wiki</a>
-
-<a href=/install>Install KISS</a>
+<a href=/expectations>expectations</a>
+<a href=/install><b>Install KISS</b></a>
 <a href=/faq>FAQ</a>
+<a href=/wiki>Wiki</a>
 
 <a href=/package-system>Package System</a>
 <a href=/package-manager>Package Manager</a>
 <a href=/software>Software</a>
-
-<a href=/guidestones>Guidestones</a>
 
 <a href=/testimonials>Testimonials</a>
 <a href=/screenshots>Screenshots</a>
@@ -451,20 +449,19 @@ used.
     ____________________________________________________________________________
 
     Let's assume that our KISS_PATH matches the above example (Core and Extra).
-    As an example, we'll be enabling the Community repository.
 
     +--------------------------------------------------------------------------+
     | 1. Clone the repository                                                  |
     +--------------------------------------------------------------------------+
     |                                                                          |
     |   # This can live anywhere on the system.                                |
-    |   $ git clone <a href=https://github.com/kisslinux/community>https://github.com/kisslinux/community</a>                     |
+    |   $ git clone <repo_url>                                                 |
     |                                                                          |
     +--------------------------------------------------------------------------+
     | 2. Enable the repository                                                 |
     +--------------------------------------------------------------------------+
     |                                                                          |
-    |   $ export KISS_PATH=$KISS_PATH:/path/to/community/community             |
+    |   $ export KISS_PATH=$KISS_PATH:/path/to/repo                            |
     |                                                                          |
     +--------------------------------------------------------------------------+
 
@@ -748,7 +745,7 @@ them and the benefits they bring.
 
     A fairly major speedup can be attained by swapping to a different grep via
     the alternatives system. The fastest grep implementation around is GNU grep
-    which is available in Community as 'gnugrep'.
+    which is available in the official repositories as 'gnugrep'.
 
     +--------------------------------------------------------------------------+
     | 1. Install GNU grep                                                      |

@@ -6,16 +6,14 @@
 <a href=/news>News</a>
 <a href=/blog>Blog</a>
 
-<a href=/wiki>Wiki</a>
-
-<a href=/install>Install KISS</a>
+<a href=/expectations>expectations</a>
+<a href=/install><b>Install KISS</b></a>
 <a href=/faq>FAQ</a>
+<a href=/wiki>Wiki</a>
 
 <a href=/package-system>Package System</a>
 <a href=/package-manager>Package Manager</a>
 <a href=/software>Software</a>
-
-<a href=/guidestones>Guidestones</a>
 
 <a href=/testimonials>Testimonials</a>
 <a href=/screenshots>Screenshots</a>
@@ -58,7 +56,6 @@ ________________________________________________________________________________
 - Setup repositories                                                       <a href=#3.0>[3.0]</a>
     - KISS_PATH                                                            <a href=#3.1>[3.1]</a>
     - Official repositories                                                <a href=#3.2>[3.2]</a>
-    - Community                                                            <a href=#3.3>[3.3]</a>
 
 - Enable repository signing                                                <a href=#4.0>[4.0]</a>
     - Build and install gnupg1                                             <a href=#4.1>[4.1]</a>
@@ -232,10 +229,6 @@ location. This is entirely up to the user.
     |  |  - extra/                                                             |
     |  |  - xorg/                                                              |
     |  |                                                                       |
-    |  +- community/                                                           |
-    |  |  - .git/                                                              |
-    |  |  - community/                                                         |
-    |  |                                                                       |
     |  +- personal/                                                            |
     |  |  - games/                                                             |
     |  |  - web                                                                |
@@ -260,7 +253,6 @@ location. This is entirely up to the user.
     |    4 KISS_PATH=$KISS_PATH:$HOME/repos/repo/core                          |
     |    5 KISS_PATH=$KISS_PATH:$HOME/repos/repo/extra                         |
     |    6 KISS_PATH=$KISS_PATH:$HOME/repos/repo/xorg                          |
-    |    7 KISS_PATH=$KISS_PATH:$HOME/repos/community/community                |
     |                                                                          |
     +--------------------------------------------------------------------------+
 
@@ -296,31 +288,11 @@ location. This is entirely up to the user.
     must be enabled as this guide requires their use. Xorg is optional.
 
 
-    <span id=3.3><a href=#3.3>[3.3]</a></span> Community
-    ____________________________________________________________________________
-
-    The community repository contains packages submitted and maintained by users
-    of the distribution. It is twice the size of the official repositories and
-    contains a lot of useful software.
-
-    Clone the repository to the directory of your choosing.
-
-    +--------------------------------------------------------------------------+
-    |                                                                          |
-    | $ git clone <a href=https://github.com/kisslinux/community>https://github.com/kisslinux/community</a>                       |
-    |                                                                          |
-    +--------------------------------------------------------------------------+
-
-    This will be cloned to a directory called 'community'. This directory
-    contains a single KISS repository bearing the same name.
-
-
     <span id=3.4><a href=#3.4>[3.4]</a></span> Universe
     ____________________________________________________________________________
 
     There are many more repositories in existence, each providing a unique set
-    of software. These are all independently created and managed by users. This
-    has been called the "KISS Universe".
+    of software. These are all independently created and managed by users.
 
     - @/<a href=/wiki/community/repositories>wiki/community/repositories</a>
     - <a href=https://github.com/topics/kiss-repo>https://github.com/topics/kiss-repo</a>

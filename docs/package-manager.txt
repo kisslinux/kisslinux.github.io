@@ -421,20 +421,19 @@ used.
     ____________________________________________________________________________
 
     Let's assume that our KISS_PATH matches the above example (Core and Extra).
-    As an example, we'll be enabling the Community repository.
 
     +--------------------------------------------------------------------------+
     | 1. Clone the repository                                                  |
     +--------------------------------------------------------------------------+
     |                                                                          |
     |   # This can live anywhere on the system.                                |
-    |   $ git clone https://github.com/kisslinux/community                     |
+    |   $ git clone <repo_url>                                                 |
     |                                                                          |
     +--------------------------------------------------------------------------+
     | 2. Enable the repository                                                 |
     +--------------------------------------------------------------------------+
     |                                                                          |
-    |   $ export KISS_PATH=$KISS_PATH:/path/to/community/community             |
+    |   $ export KISS_PATH=$KISS_PATH:/path/to/repo                            |
     |                                                                          |
     +--------------------------------------------------------------------------+
 
@@ -718,7 +717,7 @@ them and the benefits they bring.
 
     A fairly major speedup can be attained by swapping to a different grep via
     the alternatives system. The fastest grep implementation around is GNU grep
-    which is available in Community as 'gnugrep'.
+    which is available in the official repositories as 'gnugrep'.
 
     +--------------------------------------------------------------------------+
     | 1. Install GNU grep                                                      |

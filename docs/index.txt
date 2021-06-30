@@ -70,7 +70,7 @@ ________________________________________________________________________________
   match any shell, core utilities, init system, device manager and more. The
   alternatives system enables this down to file level.
 
-  More information: @/package-manager#3.2 @/wiki/community/repositories
+  More information: @/package-manager#3.2
 
 
 FURTHER READING

@@ -11,7 +11,7 @@ defaults are just that, defaults. Nothing is tightly coupled.
 
 This page will explain the many software choices, the status of packages like
 Python 2 and the further removal of unneeded software. This is only in relation
-to the official repositories as the Community make KISS boundless.
+to the official repositories as the users make KISS boundless.
 
 
 [0.0] Index
@@ -159,9 +159,3 @@ everything up to and including a web browser (Firefox) and a media player (mpv).
 It is a easier to add software to a system than it is to try and pry it out of
 one. This also ensures that this software remains _optional_ and is not forced
 onto users. Choices must remain so.
-
-The Community have packaged this entire list (and then some) for those looking
-to use this software. This is #1 the strength of the distribution: a highly
-opinionated and minimal base with limitless extensibility.
-
-See: @/wiki/community/repositories
