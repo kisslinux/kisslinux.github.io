@@ -34,42 +34,29 @@ ________________________________________________________________________________
 
 - Why should I use KISS?                                                   <a href=#1.0>[1.0]</a>
 - What does KISS mean?                                                     <a href=#2.0>[2.0]</a>
-- Is KISS rolling release or stable?                                       <a href=#3.0>[3.0]</a>
-- Something something BUS factor of ONE.                                   <a href=#4.0>[4.0]</a>
+- Something something BUS factor of ONE.                                   <a href=#3.0>[3.0]</a>
 
-- Software                                                                 <a href=#5.0>[5.0]</a>
-    - Why isn't SOFTWARE packaged?                                         <a href=#5.1>[5.1]</a>
-    - Can you package SOFTWARE for me?                                     <a href=#5.2>[5.2]</a>
-    - What init does KISS use?                                             <a href=#5.3>[5.3]</a>
-    - What coreutils does KISS use?                                        <a href=#5.4>[5.4]</a>
-    - Does DRM work in browsers?                                           <a href=#5.5>[5.5]</a>
+- Software                                                                 <a href=#4.0>[4.0]</a>
+    - Why isn't SOFTWARE packaged?                                         <a href=#4.1>[4.1]</a>
+    - Can you package SOFTWARE for me?                                     <a href=#4.2>[4.2]</a>
+    - What init does KISS use?                                             <a href=#4.3>[4.3]</a>
+    - What coreutils does KISS use?                                        <a href=#4.4>[4.4]</a>
+    - Does DRM work in browsers?                                           <a href=#4.5>[4.5]</a>
 
-- Package Management                                                       <a href=#6.0>[6.0]</a>
-    - How do I remove a package and all of its dependencies?               <a href=#6.1>[6.1]</a>
+- Kernel                                                                   <a href=#5.0>[5.0]</a>
+    - Why doesn't my kernel boot?                                          <a href=#5.1>[5.1]</a>
+    - Why doesn't KISS support initramfs?                                  <a href=#5.2>[5.2]</a>
+    - Why must I compile my own kernel?                                    <a href=#5.3>[5.3]</a>
+      Must I keep the kernel headers package in sync with my kernel?       <a href=#5.4>[5.4]</a>
 
-- Kernel                                                                   <a href=#7.0>[7.0]</a>
-    - Why doesn't my kernel boot?                                          <a href=#7.1>[7.1]</a>
-    - Why doesn't KISS support initramfs?                                  <a href=#7.2>[7.2]</a>
-    - Why must I compile my own kernel?                                    <a href=#7.3>[7.3]</a>
-    - Why doesn't KISS provide kernel sources as a package?                <a href=#7.4>[7.4]</a>
-      Must I keep the kernel headers package in sync with my kernel?       <a href=#7.5>[7.5]</a>
-
-- GCC                                                                      <a href=#8.0>[8.0]</a>
-    - C compiler cannot create executables.                                <a href=#8.1>[8.1]</a>
-
-- XORG                                                                     <a href=#9.0>[9.0]</a>
-    - Why can't I start Xorg as a normal user?                             <a href=#9.1>[9.1]</a>
-    - How do I take a screenshot?                                          <a href=#9.2>[9.2]</a>
+- GCC                                                                      <a href=#6.0>[6.0]</a>
+    - C compiler cannot create executables.                                <a href=#6.1>[6.1]</a>
 
 
 <span id=1.0><a href=#1.0>[1.0]</a></span> Why should I use KISS?
 ________________________________________________________________________________
 
 That's up to you to decide.
-
-I'm not going to try and sell you something I'm giving away for free. Have a
-read of the website and its wealth of information, try KISS in a virtual
-machine (a chroot is also an option) and come to your own conclusions.
 
 
 <span id=2.0><a href=#2.0>[2.0]</a></span> What does KISS mean?
@@ -88,23 +75,7 @@ Stupid does not refer to the user. To quote Wikipedia:
   and the sophistication available to repair them.
 
 
-<span id=3.0><a href=#3.0>[3.0]</a></span> Is KISS rolling release or stable?
-________________________________________________________________________________
-
-Packages are updated as quickly as possible while at the same time tested to
-ensure that no issues arise in the new version. A new version of a package will
-be held back if it causes issues.
-
-When a package update brings in a bug during the build process or at runtime,
-it will be patched in KISS until it is fixed upstream. This will typically
-happen hours after the version is available and doesn't cause a delay.
-
-Nothing prevents you as a user from choosing the update schedule you would
-prefer. Total control is in your hands. KISS merely provides you with an always
-up-to-date repository pool.
-
-
-<span id=4.0><a href=#4.0>[4.0]</a></span> Something something BUS factor of ONE.
+<span id=3.0><a href=#3.0>[3.0]</a></span> Something something BUS factor of ONE.
 ________________________________________________________________________________
 
 Every user of the distribution owns their system in its entirety. The management
@@ -167,23 +138,23 @@ they need is already in the existing system. The power is in your hands.
 You are free.
 
 
-<span id=5.0><a href=#5.0>[5.0]</a></span> SOFTWARE
+<span id=4.0><a href=#4.0>[4.0]</a></span> SOFTWARE
 ________________________________________________________________________________
 
 
-    <span id=5.1><a href=#5.1>[5.1]</a></span> Why isn't SOFTWARE packaged?
+    <span id=4.1><a href=#4.1>[4.1]</a></span> Why isn't SOFTWARE packaged?
     ____________________________________________________________________________
 
     No one has packaged it yet.
 
 
-    <span id=5.2><a href=#5.2>[5.2]</a></span> Can you package SOFTWARE for me?
+    <span id=4.2><a href=#4.2>[4.2]</a></span> Can you package SOFTWARE for me?
     ____________________________________________________________________________
 
-    Do it yourself.
+    No.
 
 
-    <span id=5.3><a href=#5.3>[5.3]</a></span> What init does KISS use?
+    <span id=4.3><a href=#4.3>[4.3]</a></span> What init does KISS use?
     ____________________________________________________________________________
 
     KISS uses busybox init by default. There is however, no lock-in and the user
@@ -191,80 +162,32 @@ ________________________________________________________________________________
     in an init-agnostic way and act as a base for every init to use.
 
 
-    <span id=5.4><a href=#5.4>[5.4]</a></span> What coreutils does KISS use?
+    <span id=4.4><a href=#4.4>[4.4]</a></span> What coreutils does KISS use?
     ____________________________________________________________________________
 
     KISS uses busybox coreutils by default. There is however, no lock-in and the
     user may use whatever they like. All shell code is written in portable POSIX
     shell and coreutils invocations.
 
-    * One exception is made for 'sed -i' which isn't POSIX but is far too useful
-      to do away with. Many sed implementations include -i so this is more of a
-      non-issue.
-
-    * The tar command has no standard interface, however support is included for
-      busybox tar, libarchive tar (bsdtar), GNU tar and others.
-
-    * Some utilities have no standard specification and where their use is
-      required, we adhere to common options between implementations.
-
-    Barring the above exceptions, users are running KISS without the use of
-    busybox. Popular alternatives are Suckless' sbase/ubase and GNU's set of
-    core utilities.
+    NOTE: Some utilities have no standard specification and where their use is
+          required, we adhere to common options between implementations.
 
 
-    <span id=5.5><a href=#5.5>[5.5]</a></span> Does DRM work in browsers?
+    <span id=4.5><a href=#4.5>[4.5]</a></span> Does Widevine DRM work in browsers?
     ____________________________________________________________________________
 
-    DRM (specifically the commonly used Widevine) does not work when musl is the
-    C library. The DRM is a binary (typically downloaded by the browser) and it
-    requires glibc.
+    No. The DRM is incompatible with KISS' C library (musl). Nothing can be
+    done to fix this as the DRM is not open source.
 
-    Nothing can be done to fix this as the DRM is not open source.
-
-    Workarounds:
-
-    * Running your browser inside a chroot (containing a glibc based
-      distribution).
-
-    * Running the Flatpak (available here $/<a href=https://github.com/dylanaraps/kiss-flatpak>dylanaraps/kiss-flatpak</a>) version of
-      the browser. NOTE: Requires pulseaudio ($/<a href=https://github.com/periish/kiss-all>periish/kiss-all</a>)
-
-    * Using something such as Nix to run the browser.
-
-    * Running the browser in docker, a virtual machine, etc.
+    Workaround: Run your browser inside a chroot, sandbox, container, namespace,
+                virtual machine, etc (within a glibc based distribution).
 
 
-<span id=6.0><a href=#6.0>[6.0]</a></span> Package Management
+<span id=5.0><a href=#5.0>[5.0]</a></span> Kernel
 ________________________________________________________________________________
 
 
-    <span id=6.1><a href=#6.1>[6.1]</a></span> How do I remove a package and all of its dependencies?
-    ____________________________________________________________________________
-
-    Short answer: With one command? You can't.
-
-    The package manager does not do recursive dependency removal on removal of
-    a package. This error-prone automation will not be added to the package
-    manager.
-
-    Instead, the workflow is to remove the single package and then look at the
-    output of the 'kiss-orphans' command to see what can now be removed. This
-    command will list all packages which have no relationship with other
-    packages, otherwise known as orphans.
-
-    This list may include Firefox and other "end" software so a brain is
-    required when parsing the list. You'll come to learn the relationships
-    between packages and their dependencies and this will eventually become
-    effortless.
-
-
-
-<span id=7.0><a href=#7.0>[7.0]</a></span> Kernel
-________________________________________________________________________________
-
-
-    <span id=7.1><a href=#7.1>[7.1]</a></span> Why doesn't my kernel boot?
+    <span id=5.1><a href=#5.1>[5.1]</a></span> Why doesn't my kernel boot?
     ____________________________________________________________________________
 
     The kernel not booting can be a variety of issues. This is almost always
@@ -287,7 +210,7 @@ ________________________________________________________________________________
        right drive.
 
 
-    <span id=7.2><a href=#7.2>[7.2]</a></span> Why doesn't KISS support initramfs?
+    <span id=5.2><a href=#5.2>[5.2]</a></span> Why doesn't KISS support initramfs?
     ____________________________________________________________________________
 
     KISS technically supports booting via an initramfs, it just doesn't require
@@ -301,7 +224,7 @@ ________________________________________________________________________________
     Thank god it isn't a requirement.
 
 
-    <span id=7.3><a href=#7.3>[7.3]</a></span> Why must I compile my own kernel?
+    <span id=5.3><a href=#5.3>[5.3]</a></span> Why must I compile my own kernel?
     ____________________________________________________________________________
 
     The kernel must be compiled by the user for a variety of reasons.
@@ -341,15 +264,10 @@ ________________________________________________________________________________
        binaries and an initramfs generation tool for KISS. Just don't wait on
        the BDFL to do it for you.
 
-    2. Eases distribution maintenance for the BDFL. Shipping a generic kernel
-       demands a humongous, module heavy kernel with support for everything
-       under the sun. An initramfs is then a requirement to boot this damn
-       monstrosity.
-
-       There is then a need for a _portable_ initramfs generation tool which to
-       my knowledge doesn't exist. There can't be a dependence on bash or
-       anything outside of core. All initramfs tools are either
-       distribution-specific or non-portable to KISS.
+    2. Eases distribution maintenance for the BDFL. Shipping a generic binary
+       demands a humongous, module heavy configuration with support for
+       everything under the sun. An initramfs is then a requirement to boot
+       this damn monstrosity.
 
        Then there'd be endless support requests for tweaks, additions and
        removals to the distribution config and the burden of updating the kernel
@@ -367,13 +285,7 @@ ________________________________________________________________________________
        every aspect of their kernel and is solely responsible for it.
 
 
-    <span id=7.4><a href=#7.4>[7.4]</a></span> Why doesn't KISS provide kernel sources as a package?
-    ____________________________________________________________________________
-
-    Why should it? See above.
-
-
-    <span id=7.5><a href=#7.5>[7.5]</a></span> Must I keep the linux-headers package in sync with my kernel's
+    <span id=5.4><a href=#5.4>[5.4]</a></span> Must I keep the linux-headers package in sync with my kernel's
           version to maintain a working system?
     ____________________________________________________________________________
 
@@ -383,30 +295,23 @@ ________________________________________________________________________________
     headers).
 
     The headers are backwards compatible and are fully usable with a matching or
-    NEWER kernel version. There are two cases where you'd be required to update
-    the headers yourself.
+    _newer_ kernel version. There are two cases where you'd be required to
+    update the headers yourself.
 
     1. To run a kernel _older_ than the default headers.
     2. To make use of features in your _newer_ kernel version.
 
-    Here's an excerpt from the kernel's documentation which may explain the
-    situation better than I.
+    Further reading:
 
-    > Kernel headers are backwards compatible, but not forwards compatible. This
-      means that a program built against a C library using older kernel headers
-      should run on a newer kernel (although it may not have access to new
-      features), but a program built against newer kernel headers may not work
-      on an older kernel.
-
-      From: <a href=https://www.kernel.org/doc/Documentation/kbuild/headers_install.txt>https://www.kernel.org/doc/Documentation/kbuild/headers_install.txt</a>
+    <a href=https://www.kernel.org/doc/Documentation/kbuild/headers_install.txt>https://www.kernel.org/doc/Documentation/kbuild/headers_install.txt</a>
 
 
 
-<span id=8.0><a href=#8.0>[8.0]</a></span> GCC
+<span id=6.0><a href=#6.0>[6.0]</a></span> GCC
 ________________________________________________________________________________
 
 
-    <span id=8.1><a href=#8.1>[8.1]</a></span> C compiler cannot create executables.
+    <span id=6.1><a href=#6.1>[6.1]</a></span> C compiler cannot create executables.
     ____________________________________________________________________________
 
     This is almost always an error in your CFLAGS/CXXFLAGS. Ensure that you have
@@ -416,64 +321,6 @@ ________________________________________________________________________________
 
         $ CFLAGS= CXXFLAGS= LDFLAGS= kiss b pkg
 
-    You'll then be able to discern whether or not this was the issue.
-
-
-
-<span id=9.0><a href=#9.0>[9.0]</a></span> XORG
-________________________________________________________________________________
-
-
-    <span id=9.1><a href=#9.1>[9.1]</a></span> Why can't I start Xorg as a normal user?
-    ____________________________________________________________________________
-
-    This is likely due to you running 'modprobe amdgpu' or equivalent post (or
-    late) boot which causes udev to miss setting up the GPU device in /dev/dri.
-
-    There are three separate solutions ranging from easy to hard. Either of the
-    three will solve the issue.
-
-    1. Start the udevd service.
-
-       This will keep udevd alive and ensure that it does its thing when it
-       detects that the GPU driver has loaded.
-
-       Enabling the service also turns on device hotplug and other features.
-       This isn't the default as there's no need for the daemon to run on a
-       static system.
-
-       $ ln -s /etc/sv/udevd/ /var/service
-
-    2. Run 'modprobe' earlier in the boot process.
-
-       Running 'modprobe' in your inittab or in rc.d will result in it executing
-       _after_ udevd has finished setting up devices.
-
-       By moving 'modprobe' to /etc/rc.conf, it will load the driver before
-       udevd executes which will allow it to detect and setup the device.
-
-    3. Compile the GPU driver and firmware into the kernel.
-
-       This is trickier but the best solution overall. Instead of using modules,
-       compile the firmware into the kernel.
-
-       You'll then not have to worry about udevd/modprobe as the kernel will
-       automatically load the driver as early as possible.
-
-       This may include compiling proprietary firmware into the kernel as well
-       which is a little bit finicky but doable.
-
-
-    <span id=9.2><a href=#9.2>[9.2]</a></span> How do I take a screenshot?
-    ____________________________________________________________________________
-
-    Most users will typically use 'ffmpeg' as their screenshot tool as they'll
-    already have ffmpeg installed for MPV or Firefox. Other options include
-    'scrot', 'imlib2' or 'imagemagick' (import).
-
-    If you'd like to use another tool, package it yourself. Remember, if no one
-    has packaged something it means that no one has needed said package. It is
-    up to you.
 
 
 ________________________________________________________________________________
