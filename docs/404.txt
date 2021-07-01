@@ -14,7 +14,7 @@ ________________________________________________________________________________
 
 @/package-system          @/wiki            @/screenshots         @/testimonials
 @/package-manager         @/install         @/team                @/donate
-@/software                @/faq             @/guidestones         @/contact
+@/software                @/faq             @/contact
 
 
 
