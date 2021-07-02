@@ -13,8 +13,8 @@ INDEX
 ________________________________________________________________________________
 
 @/package-system          @/wiki            @/screenshots         @/testimonials
-@/package-manager         @/install         @/team                @/donate
-@/software                @/faq             @/contact
+@/package-manager         @/install         @/donate              @/faq
+@/contact
 
 
 
