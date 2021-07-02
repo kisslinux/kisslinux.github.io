@@ -55,15 +55,6 @@ ________________________________________________________________________________
   More information: @/faq#3.0 https://en.wikipedia.org/wiki/Bus_factor
 
 
-* LESS SOFTWARE
-
-  Less software is better than more software. As the amount of running software
-  increases, as does the risk of bugs, security issues and things going awry.
-  A system with less moving parts is also far easier to wholly understand.
-
-  More information: @/software
-
-
 * USER CHOICE
 
   There is no lock-in to specific software. The user has the ability to mix and
@@ -72,11 +63,3 @@ ________________________________________________________________________________
 
   More information: @/package-manager#3.2
 
-
-FURTHER READING
-________________________________________________________________________________
-
-- @/testimonials
-- @/install
-- @/faq
-- @/wiki
