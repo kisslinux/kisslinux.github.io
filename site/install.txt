@@ -536,9 +536,9 @@ not done this before, below are a few guides to get you started.
 - https://kernelnewbies.org/KernelBuild
 
 The Linux kernel is not managed by the package manager. The kernel is managed
-manually by the user. (Rationale: @/faq#7.3)
+manually by the user. (Rationale: @/faq#5.3)
 
-KISS does not support booting using an initramfs (see @/faq#7.2). When
+KISS does not support booting using an initramfs (see @/faq#5.2). When
 configuring your kernel ensure that all required file-system, disk controller
 and USB drivers are built with [*] (=y) and not [m] (=m).
 

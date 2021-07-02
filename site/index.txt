@@ -52,7 +52,7 @@ ________________________________________________________________________________
   no infrastructure and the entire distribution is merely a few Git
   repositories. The distribution's upstream is entirely optional.
 
-  More information: @/faq#4.0 https://en.wikipedia.org/wiki/Bus_factor
+  More information: @/faq#3.0 https://en.wikipedia.org/wiki/Bus_factor
 
 
 * LESS SOFTWARE
