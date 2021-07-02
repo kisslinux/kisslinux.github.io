@@ -19,8 +19,8 @@ EOF
 rss="<item>
 <title>$date2: $1</title>
 <description></description>
-<link>https://k1ss.org/blog/$date</link>
-<guid isPermaLink=\"true\">https://k1ss.org/blog/$date/</guid>
+<link>https://kisslinux.xyz/blog/$date</link>
+<guid isPermaLink=\"true\">https://kisslinux.xyz/blog/$date/</guid>
 <pubDate>$date3 00:00:00 +0000</pubDate>
 </item>"
 

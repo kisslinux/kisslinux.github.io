@@ -1,5 +1,5 @@
 Subject	This week in KISS (#14)
-From	Dylan Araps &lt;dylan@k1ss.org&gt;
+From	Dylan Araps &lt;dylan.araps@gmail.com&gt;
 Date	Tue, 9 Mar 2020 14:07:09 +0100
 
 Hello.
