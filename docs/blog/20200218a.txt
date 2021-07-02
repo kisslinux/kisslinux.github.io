@@ -1,5 +1,5 @@
 Subject	https://k1ss.org
-From	Dylan Araps &lt;dylan.araps@gmail.com&gt;
+From	Dylan Araps &lt;dylan@kisslinux.xyz&gt;
 Date	Mon, 18 Feb 2020 14:15:27 +0100
 
 

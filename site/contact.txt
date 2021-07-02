@@ -1,8 +1,15 @@
 Contact
 ________________________________________________________________________________
 
-- Email:  dylan.araps@gmail.com
-- GitHub: $/kisslinux
+- Email:
+
+   - dylan@kisslinux.xyz
+   - dylan.araps@gmail.com
+
+- GitHub:
+
+   - $/dylanaraps
+   - $/kisslinux
 
 
 Donate

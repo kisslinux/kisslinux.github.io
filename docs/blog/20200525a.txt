@@ -1,5 +1,5 @@
 Subject	This month in KISS (#2)!
-From	Dylan Araps &lt;dylan.araps@gmail.com&gt;
+From	Dylan Araps &lt;dylan@kisslinux.xyz&gt;
 Date	Mon, 25 May 2020 07:07:09 +0100
 
 Welcome to the second monthly update for KISS. This post will be
@@ -25,7 +25,7 @@ Here's the first commit to the project:
 
 +-------------------------------------------------+
 | commit 0cda243d535f11e7c26b9182bc63e425deb5ba45 |
-| Author: Dylan Araps &lt;dylan.araps@gmail.com&gt;     |
+| Author: Dylan Araps &lt;dylan@kisslinux.xyz&gt; |
 | Date:   Thu May 9 09:46:50 2019 +0300           |
 |                                                 |
 |       new package manager experiment            |

@@ -1,5 +1,5 @@
 Subject	This week in KISS (#12)
-From	Dylan Araps &lt;dylan.araps@gmail.com&gt;
+From	Dylan Araps &lt;dylan@kisslinux.xyz&gt;
 Date	Mon, 24 Feb 2020 15:07:09 +0100
 
 
