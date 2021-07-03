@@ -92,8 +92,7 @@ page() {
 
     # POST-GENERATION STEP.
     case $page in
-        # Hardlink all .txt files to the docs/ directory.
-        *.txt) ln -f "site/$page" "docs/$page" ;;
+        *.txt) cp -f "site/$page" "docs/$page" ;;
     esac
 }
 
