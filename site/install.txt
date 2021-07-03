@@ -125,7 +125,7 @@ Start by declaring a variable.
     | Import my public key (if this fails, try another keyserver).             |
     +--------------------------------------------------------------------------+
     |                                                                          |
-    |   $ gpg --keyserver keys.gnupg.net --recv-key 46D62DD9F1DE636E           |
+    |   $ gpg --keyserver keys.gnupg.net --recv-key 13295DAC2CF13B5C           |
     |                                                                          |
     +--------------------------------------------------------------------------+
     | Verify the signature.                                                    |
