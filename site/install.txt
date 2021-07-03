@@ -874,8 +874,6 @@ The KISS Wiki is a good place to look for post-installation information.
 |                                                                              |
 +------------------------------------------------------------------------------+
 
-If you encountered any issues, don't hesitate to open an issue on one of our
-GitHub repositories, post on https://reddit.com/r/kisslinux or join the
-IRC server.
+If you encountered any issues or have any questions, get in touch.
 
 See: @/contact

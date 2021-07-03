@@ -3,6 +3,7 @@ ________________________________________________________________________________
 
 RSS Feed available here: @/news/news.xml
 
+- @/news/20210703a Update
 - @/news/20200811a Changes to repositories using symlinks to /var/db/kiss/repo
 - @/news/20200511a Encryption support moved outside init
 - @/news/20200509a GCC 10.1.0 kernel issue

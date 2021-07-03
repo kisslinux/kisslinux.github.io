@@ -8,6 +8,13 @@
 <ttl>1800</ttl>
 <atom:link href="https://kisslinux.xyz/news/news.xml" rel="self" type="application/rss+xml"/>
 <item>
+<title>03/07/2021: Update</title>
+<description></description>
+<link>https://kisslinux.xyz/news/20210703a</link>
+<guid isPermaLink="true">https://kisslinux.xyz/news/20210703a/</guid>
+<pubDate>Sat, 03 Jul 2021 00:00:00 +0000</pubDate>
+</item>
+<item>
 <title>11/08/2020: Changes to repositories using symlinks to /var/db/kiss/repo</title>
 <description>In two weeks' time, the assumption that the official repositories live in /var/db/kiss/repo will be removed. This change only affects repositories which contain symlinks to this location.</description>
 <link>https://kisslinux.xyz/news/20200811a</link>
