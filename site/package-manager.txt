@@ -295,46 +295,46 @@ They require little to no extra code in the package manager to support them.
 |        Variable | Description                                                |
 +-----------------+------------------------------------------------------------+
 |                 |                                                            |
-|       KISS_PATH | List of repositories. This works exactly like '$PATH'      |
-|                 | (a colon separated list of paths).                         |
-|                 |                                                            |
-|      KISS_FORCE | Force installation/removal of package by bypassing         |
-|                 | dependency checks, etc. Set to '1' to enable.              |
-|                 |                                                            |
-|     KISS_CHOICE | Set to '0' to disable the alternatives system and error on |
+| KISS_CHOICE     | Set to '0' to disable the alternatives system and error on |
 |                 | any detected file conflicts.                               |
 |                 |                                                            |
-|       KISS_HOOK | Hook into the package manager. Set to the full path to the |
-|                 | script. See @/wiki/kiss/package-manager-hooks              |
+| KISS_COLOR      | Enable/Disable colors. Set to '0' to disable colors.       |
 |                 |                                                            |
-|       KISS_ROOT | Where installed packages will go. Can be used to install   |
-|                 | packages to somewhere other than '/'.                      |
-|                 |                                                            |
-|      KISS_COLOR | Enable/Disable colors. Set to '0' to disable colors.       |
-|                 |                                                            |
-|     KISS_PROMPT | Skip all prompts. Set to '0' to say 'yes' to all prompts   |
-|                 | from the package manager.                                  |
-|                 |                                                            |
-|   KISS_COMPRESS | Compression method to use for built package tarballs       |
+| KISS_COMPRESS   | Compression method to use for built package tarballs       |
 |                 | (defaults to 'gz'). Valid: bz2, gz, lzma, lz, xz, zst      |
 |                 |                                                            |
-|         KISS_SU | Force usage of a different sudo tool.                      |
-|                 | Valid: su, sudo, doas                                      |
-|                 |                                                            |
-|      KISS_STRIP | Enable/Disable package stripping globally.                 |
-|                 | Set to '0' to disable.                                     |
-|                 |                                                            |
-|      KISS_DEBUG | Keep temporary directories around for debugging purposes.  |
+| KISS_DEBUG      | Keep temporary directories around for debugging purposes.  |
 |                 | Set to '1' to enable.                                      |
 |                 |                                                            |
-|    KISS_KEEPLOG | Keep build logs around for successful builds and not just  |
+| KISS_ELF        | Which 'readelf' command to use.                            |
+|                 | (defaults to 'readelf') Valid: readelf(s), ldd             |
+|                 |                                                            |
+| KISS_FORCE      | Force installation/removal of package by bypassing         |
+|                 | dependency checks, etc. Set to '1' to enable.              |
+|                 |                                                            |
+| KISS_HOOK       | Hook into the package manager. Set to the full path to the |
+|                 | script. See @/wiki/kiss/package-manager-hooks              |
+|                 |                                                            |
+| KISS_KEEPLOG    | Keep build logs around for successful builds and not just  |
 |                 | failing ones. Set to '1' to enable.                        |
 |                 |                                                            |
-|     KISS_TMPDIR | Temporary directory for builds. Can be set to a tmpfs so   |
-|                 | builds happen in memory.                                   |
+| KISS_PATH       | List of repositories. This works exactly like '$PATH'      |
+|                 | (a colon separated list of paths).                         |
 |                 |                                                            |
-|        KISS_PID | Use a reproducible cache naming scheme instead of          |
-|                 | build-$pid. If set to test, the result will be build-test. |
+| KISS_PROMPT     | Skip all prompts. Set to '0' to say 'yes' to all prompts   |
+|                 | from the package manager.                                  |
+|                 |                                                            |
+| KISS_ROOT       | Where installed packages will go. Can be used to install   |
+|                 | packages to somewhere other than '/'.                      |
+|                 |                                                            |
+| KISS_STRIP      | Enable/Disable package stripping globally.                 |
+|                 | Set to '0' to disable.                                     |
+|                 |                                                            |
+| KISS_SU         | Force usage of a different sudo tool.                      |
+|                 | Valid: su, sudo, doas, ssu                                 |
+|                 |                                                            |
+| KISS_TMPDIR     | Temporary directory for builds. Can be set to a tmpfs so   |
+|                 | builds happen in memory.                                   |
 |                 |                                                            |
 +-----------------+------------------------------------------------------------+
 
