@@ -304,8 +304,7 @@ prevents any unsigned updates from reaching your system.
 
     +--------------------------------------------------------------------------+
     |                                                                          |
-    |    $ kiss build   gnupg1                                                 |
-    |    $ kiss install gnupg1                                                 |
+    |    $ kiss build gnupg1                                                   |
     |                                                                          |
     +--------------------------------------------------------------------------+
 
@@ -420,7 +419,7 @@ This step is entirely optional and can also be done post-installation.
 ________________________________________________________________________________
 
 Each kiss action (build, install, etc) has a shorthand alias. From now on,
-'kiss b' and 'kiss i' will be used in place of 'kiss build' and 'kiss install'.
+'kiss b' will be used in place of 'kiss build'.
 
 The software below is required unless stated otherwise.
 
@@ -435,21 +434,18 @@ The software below is required unless stated otherwise.
     +--------------------------------------------------------------------------+
     |                                                                          |
     |   $ kiss b e2fsprogs                                                     |
-    |   $ kiss i e2fsprogs                                                     |
     |                                                                          |
     +--------------------------------------------------------------------------+
     | FAT, VFAT                                                                |
     +--------------------------------------------------------------------------+
     |                                                                          |
     |   $ kiss b dosfstools                                                    |
-    |   $ kiss i dosfstools                                                    |
     |                                                                          |
     +--------------------------------------------------------------------------+
     | XFS                                                                      |
     +--------------------------------------------------------------------------+
     |                                                                          |
     |   $ kiss b xfsprogs                                                      |
-    |   $ kiss i xfsprogs                                                      |
     |                                                                          |
     +--------------------------------------------------------------------------+
 
@@ -466,14 +462,12 @@ The software below is required unless stated otherwise.
     +--------------------------------------------------------------------------+
     |                                                                          |
     |   $ kiss b util-linux                                                    |
-    |   $ kiss i util-linux                                                    |
     |                                                                          |
     +--------------------------------------------------------------------------+
     | The device manager.                                                      |
     +--------------------------------------------------------------------------+
     |                                                                          |
     |   $ kiss b eudev                                                         |
-    |   $ kiss i eudev                                                         |
     |                                                                          |
     +--------------------------------------------------------------------------+
 
@@ -484,7 +478,6 @@ The software below is required unless stated otherwise.
     +--------------------------------------------------------------------------+
     |                                                                          |
     |   $ kiss b wpa_supplicant                                                |
-    |   $ kiss i wpa_supplicant                                                |
     |                                                                          |
     +--------------------------------------------------------------------------+
 
@@ -495,7 +488,6 @@ The software below is required unless stated otherwise.
     +--------------------------------------------------------------------------+
     |                                                                          |
     |   $ kiss b dhcpcd                                                        |
-    |   $ kiss i dhcpcd                                                        |
     |                                                                          |
     +--------------------------------------------------------------------------+
 
@@ -561,7 +553,6 @@ read the link (and the patch itself for more information). @/news/20200509a
     | libelf (required in most if not all cases).                              |
     |                                                                          |
     |   $ kiss b libelf                                                        |
-    |   $ kiss i libelf                                                        |
     |                                                                          |
     +--------------------------------------------------------------------------+
 
@@ -570,7 +561,6 @@ read the link (and the patch itself for more information). @/news/20200509a
     | ncurses (required only for 'make menuconfig').                           |
     |                                                                          |
     |   $ kiss b ncurses                                                       |
-    |   $ kiss i ncurses                                                       |
     |                                                                          |
     +--------------------------------------------------------------------------+
 
@@ -579,8 +569,6 @@ read the link (and the patch itself for more information). @/news/20200509a
     | perl (required in nearly all cases).                                     |
     |                                                                          |
     |   $ kiss b perl                                                          |
-    |   $ kiss i perl                                                          |
-    |                                                                          |
     |                                                                          |
     |   TIP: A patch can be applied to remove this requirement.                |
     |        - @/wiki/kernel/config#5.0                                        |
@@ -739,14 +727,12 @@ BIOS and UEFI are supported and vast amounts of documentation for it exists.
     +--------------------------------------------------------------------------+
     |                                                                          |
     |   $ kiss b grub                                                          |
-    |   $ kiss i grub                                                          |
     |                                                                          |
     +--------------------------------------------------------------------------+
     | Required for UEFI.                                                       |
     +--------------------------------------------------------------------------+
     |                                                                          |
     |   $ kiss b efibootmgr                                                    |
-    |   $ kiss i efibootmgr                                                    |
     |                                                                          |
     +--------------------------------------------------------------------------+
 
@@ -786,7 +772,6 @@ Source code: $/kisslinux/init
 +------------------------------------------------------------------------------+
 |                                                                              |
 |   $ kiss b baseinit                                                          |
-|   $ kiss i baseinit                                                          |
 |                                                                              |
 +------------------------------------------------------------------------------+
 
@@ -826,7 +811,6 @@ following commands. See @/wiki/xorg
 +------------------------------------------------------------------------------+
 |                                                                              |
 |   $ kiss b liberation-fonts                                                  |
-|   $ kiss i liberation-fonts                                                  |
 |                                                                              |
 +------------------------------------------------------------------------------+
 
