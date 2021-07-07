@@ -299,8 +299,9 @@ prevents any unsigned updates from reaching your system.
     [4.1] Build and install gnupg1
     ____________________________________________________________________________
 
-    Welcome to the KISS package manager! These two commands are how individual
-    packages are built and installed on a KISS system.
+    Welcome to the KISS package manager! This command will build gnupg1 and
+    prompt for installation once done. Packages can also be installed by using
+    'kiss i pkg'.
 
     +--------------------------------------------------------------------------+
     |                                                                          |
