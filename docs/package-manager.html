@@ -59,7 +59,7 @@ ________________________________________________________________________________
 - Package Manager Hooks                                                    <a href=#6.0>[6.0]</a>
     - Usage                                                                <a href=#6.1>[6.1]</a>
     - Removing unneeded files from packages                                <a href=#6.2>[6.2]</a>
-    - Building some packages in memory (tmpfs)                             <a href=#6.3>[6.3]</a>
+    - Drop into a subshell on build fail                                   <a href=#6.3>[6.3]</a>
     - Logging build duration                                               <a href=#6.4>[6.4]</a>
 
 - Package Manager Extensions                                               <a href=#7.0>[7.0]</a>
@@ -595,36 +595,17 @@ Example:
     +--------------------------------------------------------------------------+
 
 
-    <span id=6.3><a href=#6.3>[6.3]</a></span> Building some packages in memory (tmpfs)
+    <span id=6.3><a href=#6.3>[6.3]</a></span> Drop into a subshell on build fail
     ____________________________________________________________________________
 
-    This hook runs on pre-extract and conditionally runs the source extraction,
-    package build process and resulting tarball creation in memory. The benefit
-    of this is a nice speedup throughout (especially when used alongside
-    ccache <a href=#0>[0]</a>).
-
-    NOTE: '/tmp' must be mounted as 'tmpfs' for this to work.
+    Handy for debugging.
 
     +--------------------------------------------------------------------------+
     |                                                                          |
     |   case $TYPE in                                                          |
-    |       pre-extract)                                                       |
-    |           case $PKG in                                                   |
-    |               # Run everything on disk for these memory hungry packages. |
-    |               firefox|firefox-esr|rust|llvm|clang)                       |
-    |                   mak_dir=$KISS_TMPDIR/build-$pid                        |
-    |                   pkg_dir=$KISS_TMPDIR/pkg-$pid                          |
-    |               ;;                                                         |
-    |                                                                          |
-    |               *)                                                         |
-    |                   log "$PKG" "Activating tmpfs"                          |
-    |                                                                          |
-    |                   mak_dir=/tmp/build-$pid                                |
-    |                   pkg_dir=/tmp/pkg-$pid                                  |
-    |               ;;                                                         |
-    |           esac                                                           |
-    |                                                                          |
-    |           mkdir -p "$mak_dir" "$pkg_dir/$PKG/var/db/kiss/installed"      |
+    |       build-fail)                                                        |
+    |           log "$PKG" "Dropped into subshell"                             |
+    |           sh >/dev/tty                                                   |
     |       ;;                                                                 |
     |   esac                                                                   |
     |                                                                          |
