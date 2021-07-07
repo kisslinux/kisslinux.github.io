@@ -17,7 +17,7 @@ The 'mandoc' [1] package is the default provider of the 'man' utility.
 | Install mandoc                                                               |
 +------------------------------------------------------------------------------+
 |                                                                              |
-|   $ kiss b mandoc && kiss i mandoc                                           |
+|   $ kiss b mandoc                                                            |
 |                                                                              |
 +------------------------------------------------------------------------------+
 
@@ -35,7 +35,7 @@ interfaces that are employed by user-space programs.
 | Install man-pages                                                            |
 +------------------------------------------------------------------------------+
 |                                                                              |
-|   $ kiss b man-pages && kiss i man-pages                                     |
+|   $ kiss b man-pages                                                         |
 |                                                                              |
 +------------------------------------------------------------------------------+
 
@@ -51,7 +51,7 @@ the headers, the utilities, and the functions documented in that standard.
 | Install man-pages-posix                                                      |
 +------------------------------------------------------------------------------+
 |                                                                              |
-|   $ kiss b man-pages-posix && kiss i man-pages-posix                         |
+|   $ kiss b man-pages-posix                                                   |
 |                                                                              |
 +------------------------------------------------------------------------------+
 

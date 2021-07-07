@@ -13,7 +13,7 @@ Begin by first verifying that you have opendoas installed:
 
 +------------------------------------------------------------------------------+
 |                                                                              |
-|   $ kiss b opendoas && kiss i opendoas                                       |
+|   $ kiss b opendoas                                                          |
 |                                                                              |
 +------------------------------------------------------------------------------+
 

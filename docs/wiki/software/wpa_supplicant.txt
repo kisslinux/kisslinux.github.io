@@ -15,7 +15,7 @@ Begin by first verifying that you have wpa_supplicant installed:
 
 +------------------------------------------------------------------------------+
 |                                                                              |
-|   $ kiss b wpa_supplicant && kiss i wpa_supplicant                           |
+|   $ kiss b wpa_supplicant                                                    |
 |                                                                              |
 +------------------------------------------------------------------------------+
 

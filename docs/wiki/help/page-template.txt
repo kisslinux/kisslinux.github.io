@@ -24,7 +24,7 @@ Begin by first verifying that you have SOFTWARE_NAME installed:
 
 +------------------------------------------------------------------------------+
 |                                                                              |
-|   $ kiss b SOFTWARE_NAME && kiss i SOFTWARE_NAME                             |
+|   $ kiss b SOFTWARE_NAME                                                     |
 |                                                                              |
 +------------------------------------------------------------------------------+
 

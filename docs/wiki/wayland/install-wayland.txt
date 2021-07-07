@@ -99,7 +99,7 @@ mesa, cairo, pango, gtk+3, firefox/webkit2gtk
       libva, intel-vaapi-driver
       sdl2
 
-$ kiss b mesa && kiss i mesa && kiss b pango && kiss i pango ...
+$ kiss b mesa && kiss b pango && ...
 
 
 Install Wayland on top base KISS

@@ -15,8 +15,8 @@ ensure that you have the following installed:
 
 +------------------------------------------------------------------------------+
 |                                                                              |
-|   $ kiss b xorg-server && kiss i xorg-server                                 |
-|   $ kiss b xauth && kiss i xauth                                             |
+|   $ kiss b xorg-server                                                       |
+|   $ kiss b xauth                                                             |
 |                                                                              |
 +------------------------------------------------------------------------------+
 

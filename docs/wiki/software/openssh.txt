@@ -13,7 +13,7 @@ Begin by first verifying that you have openssh installed on the remote server:
 
 +------------------------------------------------------------------------------+
 |                                                                              |
-|   $ kiss b openssh && kiss i openssh                                         |
+|   $ kiss b openssh                                                           |
 |                                                                              |
 +------------------------------------------------------------------------------+
 

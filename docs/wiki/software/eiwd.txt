@@ -21,8 +21,8 @@ Ensure that you have the following dependencies installed:
 
 +------------------------------------------------------------------------------+
 |                                                                              |
-|   $ kiss b eiwd && kiss i eiwd                                               |
-|   $ kiss b openresolv && kiss i openresolv                                   |
+|   $ kiss b eiwd                                                              |
+|   $ kiss b openresolv                                                        |
 |                                                                              |
 +------------------------------------------------------------------------------+
 

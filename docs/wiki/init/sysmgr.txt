@@ -13,7 +13,7 @@ Begin by first verifying that you have sysmgr installed.
 +------------------------------------------------------------------------------+
 |                                                                              |
 |   # Available in the Community repository.                                   |
-|   $ kiss b sysmgr && kiss i sysmgr                                           |
+|   $ kiss b sysmgr                                                            |
 |                                                                              |
 +------------------------------------------------------------------------------+
 

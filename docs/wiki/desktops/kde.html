@@ -25,7 +25,7 @@
 
 <a href="/wiki">wiki</a> / <a href='/wiki/desktops'>desktops</a> / kde                                             <a href='https://github.com/kisslinux/wiki/edit/master/desktops/kde.txt'>Edit this page</a>
 
-Edited (<a href='https://github.com/kisslinux/wiki/commit/ad8b8f780f88d50060b1feef88b78528d9abba2e'>ad8b8f7</a>) at 2021-06-30 by Dylan Araps
+Edited (<a href='https://github.com/kisslinux/wiki/commit/4f18dd0b95c51fe9b3974898dd49a24209805fc7'>4f18dd0</a>) at 2021-07-07 by Dylan Araps
 
 
 KDE
@@ -138,9 +138,9 @@ Assuming that you keep these repositories in $HOME,
 
     +--------------------------------------------------------------------------+
     |                                                                          |
-    |   $ kiss b linux-pam   && kiss i linux-pam                               |
-    |   $ kiss b polkit      && kiss i polkit                                  |
-    |   $ kiss b polkit-qt-1 && kiss i polkit-qt-1                             |
+    |   $ kiss b linux-pam                                                     |
+    |   $ kiss b polkit                                                        |
+    |   $ kiss b polkit-qt-1                                                   |
     |                                                                          |
     +--------------------------------------------------------------------------+
 
@@ -155,7 +155,6 @@ Assuming that you keep these repositories in $HOME,
     |                                                                          |
     |   # Rebuild kauth, kscreenlocker                                         |
     |   $ kiss b kauth kscreenlocker                                           |
-    |   $ kiss i kauth kscreenlocker                                           |
     |                                                                          |
     +--------------------------------------------------------------------------+
 
@@ -191,16 +190,16 @@ Assuming that you keep these repositories in $HOME,
     |   $ KISS_FORCE=1 kiss r shadow                                           |
     |                                                                          |
     |   # Install linux-pam                                                    |
-    |   $ kiss b linux-pam && kiss i linux-pam                                 |
+    |   $ kiss b linux-pam                                                     |
     |                                                                          |
     |   # Rebuild polkit                                                       |
-    |   $ kiss b polkit polkit-qt-1 && kiss i polkit polkit-qt-1               |
+    |   $ kiss b polkit polkit-qt-1                                            |
     |                                                                          |
     |   # Install elogind                                                      |
-    |   $ kiss b elogind && kiss i elogind                                     |
+    |   $ kiss b elogind                                                       |
     |                                                                          |
     |   # Because of the way we build polkit, rebuild it                       |
-    |   $ kiss b polkit && kiss i polkit                                       |
+    |   $ kiss b polkit                                                        |
     |                                                                          |
     +--------------------------------------------------------------------------+
 
@@ -233,10 +232,10 @@ Assuming that you keep these repositories in $HOME,
     |                                                                          |
     |   $ KISS_FORCE=1 kiss r kwin kwayland-server                             |
     |                                                                          |
-    |   $ kiss b kwinft && kiss i kwinft                                       |
+    |   $ kiss b kwinft                                                        |
     |                                                                          |
-    |   $ kiss b plasma-workspace && kiss i plasma-workspace                   |
-    |   $ kiss b plasma-desktop   && kiss i plasma-desktop                     |
+    |   $ kiss b plasma-workspace                                              |
+    |   $ kiss b plasma-desktop                                                |
     |                                                                          |
     |   $ startx                                                               |
     |                                                                          |
@@ -296,12 +295,10 @@ powerdevil. See <a href=#4.0>[4.0]</a> for more information.
     +--------------------------------------------------------------------------+
     |                                                                          |
     |   $ kiss b libudev-zero dbus                                             |
-    |   $ kiss i libudev-zero dbus                                             |
     |   $ kiss b xorg-server libinput xf86-input-libinput                      |
-    |   $ kiss i xorg-server libinput xf86-input-libinput                      |
     |                                                                          |
     |   # If you opt to install e.g. elogind                                   |
-    |   $ kiss b coreutils && kiss i coreutils                                 |
+    |   $ kiss b coreutils                                                     |
     |   $ kiss a coreutils /usr/bin/realpath                                   |
     |   $ kiss a coreutils /usr/bin/mktemp                                     |
     |   $ kiss a coreutils /usr/bin/ln                                         |
@@ -378,7 +375,7 @@ powerdevil. See <a href=#4.0>[4.0]</a> for more information.
 
     +--------------------------------------------------------------------------+
     |                                                                          |
-    |   $ kiss b plasma-desktop && kiss i plasma-desktop                       |
+    |   $ kiss b plasma-desktop                                                |
     |                                                                          |
     +--------------------------------------------------------------------------+
 
@@ -534,9 +531,9 @@ the console, or you can make use of a login manager.
 
     +--------------------------------------------------------------------------+
     |                                                                          |
-    |   $ kiss b elogind && kiss i elogind                                     |
+    |   $ kiss b elogind                                                       |
     |   # So that polkit will build the correct libs to support elogind,       |
-    |   $ kiss b polkit && kiss i polkit                                       |
+    |   $ kiss b polkit                                                        |
     |                                                                          |
     +--------------------------------------------------------------------------+
 
@@ -545,7 +542,7 @@ the console, or you can make use of a login manager.
     +--------------------------------------------------------------------------+
     |                                                                          |
     |   # sddm is in the KISS-kde/kde repo                                     |
-    |   $ kiss b sddm && kiss i sddm                                           |
+    |   $ kiss b sddm                                                          |
     |                                                                          |
     +--------------------------------------------------------------------------+
 
@@ -623,7 +620,7 @@ few things available to you that you can change, if you so choose.
 
     +--------------------------------------------------------------------------+
     |                                                                          |
-    |   $ kiss b sddm-kcm && kiss i sddm-kcm                                   |
+    |   $ kiss b sddm-kcm                                                      |
     |                                                                          |
     +--------------------------------------------------------------------------+
 

@@ -56,7 +56,7 @@ Begin by first verifying that runit is installed.
 +------------------------------------------------------------------------------+
 |                                                                              |
 |   # Available in the Community repository.                                   |
-|   $ kiss b runit && kiss i runit                                             |
+|   $ kiss b runit                                                             |
 |                                                                              |
 +------------------------------------------------------------------------------+
 
@@ -80,7 +80,7 @@ Make sure to install Hummingbird.
 +------------------------------------------------------------------------------+
 |                                                                              |
 |   # Available in the Community repository.                                   |
-|   $ kiss b hummingbird-git && kiss i hummingbird-git                         |
+|   $ kiss b hummingbird-git                                                   |
 |                                                                              |
 +------------------------------------------------------------------------------+
 
