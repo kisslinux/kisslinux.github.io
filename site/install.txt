@@ -78,8 +78,8 @@ Start by declaring a variable.
 
 +------------------------------------------------------------------------------+
 |                                                                              |
-|   $ url=https://github.com/kisslinux/repo/releases/download/2021.7-3         |
-|   $ file=kiss-chroot-2021.7-3.tar.xz                                         |
+|   $ url=https://github.com/kisslinux/repo/releases/download/2021.7-4         |
+|   $ file=kiss-chroot-2021.7-4.tar.xz                                         |
 |                                                                              |
 +------------------------------------------------------------------------------+
 
