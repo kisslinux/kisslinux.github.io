@@ -119,7 +119,16 @@ ________________________________________________________________________________
     https://codeberg.org/dnkl/foot  
 
 
-    [2.2] ate
+    [2.2] wayst
+    ____________________________________________________________________________
+
+    Simple terminal emulator for Wayland and X11 with OpenGL rendering and 
+    minimal dependencies.
+
+    https://github.com/91861/wayst
+
+
+    [2.3] ate
     ____________________________________________________________________________
     
     Awesome terminal emulator.
@@ -127,7 +136,7 @@ ________________________________________________________________________________
     https://github.com/andir/ate
 
 
-    [2.3] havoc
+    [2.4] havoc
     ____________________________________________________________________________
     
     A minimal terminal emulator for Wayland on Linux.
@@ -135,7 +144,7 @@ ________________________________________________________________________________
     https://github.com/ii8/havoc
 
 
-    [2.4] wterm
+    [2.5] wterm
     ____________________________________________________________________________
     
     st fork for Wayland.
@@ -143,7 +152,7 @@ ________________________________________________________________________________
     https://github.com/majestrate/wterm 
 
 
-    [2.5] alacritty
+    [2.6] alacritty
     ____________________________________________________________________________
     
     Alacritty is a modern terminal emulator that comes with sensible defaults, 
@@ -154,7 +163,7 @@ ________________________________________________________________________________
     https://github.com/alacritty/alacritty
 
 
-    [2.6] kitty
+    [2.7] kitty
     ____________________________________________________________________________
     
     The fast, feature-rich, cross-platform, GPU based terminal.
