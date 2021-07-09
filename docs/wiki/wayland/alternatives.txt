@@ -390,6 +390,22 @@ ________________________________________________________________________________
     https://sr.ht/~kennylevinsen/greetd/
 
 
+    [13.3] wtype
+    ____________________________________________________________________________
+
+    xdotool type for wayland.
+
+    https://sr.ht/~kennylevinsen/greetd/
+
+
+    [13.4] ydotool
+    ____________________________________________________________________________
+
+    Generic Linux command-line automation tool (no X!).
+
+    https://github.com/ReimuNotMoe/ydotool
+
+
 [14.0] References
 ________________________________________________________________________________
 
