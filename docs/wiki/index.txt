@@ -53,6 +53,18 @@
 
 +------------------------------------------------------------------------------+
 |                                                                              |
+| SOFTWARE                                                                     |
+|                                                                              |
+|  @/software/firefox                       @/software/man-pages               |
+|  @/software/git                           @/software/openssh                 |
+|  @/software/wpa_supplicant                @/software/dhcpcd                  |
+|  @/software/acpid                         @/software/tzdata                  |
+|  @/software/vim                                                              |
+|                                                                              |
++------------------------------------------------------------------------------+
+
++------------------------------------------------------------------------------+
+|                                                                              |
 | COMMUNITY                                                                    |
 |                                                                              |
 |  @/community/repositories   Software repositories maintained by members of   |
@@ -66,23 +78,11 @@
 |                                                                              |
 +------------------------------------------------------------------------------+
 
-+------------------------------------------------------------------------------+
-|                                                                              |
-| SOFTWARE                                                                     |
-|                                                                              |
-|  @/software/git                           @/software/openssh                 |
-|  @/software/wpa_supplicant                @/software/dhcpcd                  |
-|  @/software/eiwd                          @/software/tzdata                  |
-|  @/software/vim                           @/software/man-pages               |
-|  @/software/acpid                                                            |
-|                                                                              |
-+------------------------------------------------------------------------------+
-
 +-----------------------+  +------------------------+  +-----------------------+
 |                       |  |                        |  |                       |
 | CONSOLE               |  | DESKTOPS               |  | STORAGE               |
 |                       |  |                        |  |                       |
-|  @/console/bkeymaps   |  |  @/desktops/kde        |  |  @/storage/disks      |
+|  @/console/bkeymaps   |  |                        |  |  @/storage/disks      |
 |  @/console/fonts      |  |                        |  |  @/storage/zram       |
 |                       |  |                        |  |  @/storage/zswap      |
 |                       |  |                        |  |                       |
