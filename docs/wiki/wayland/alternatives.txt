@@ -381,6 +381,15 @@ ________________________________________________________________________________
     https://git.sr.ht/~kennylevinsen/wlsunset
 
 
+    [13.2] greetd
+    ____________________________________________________________________________
+
+    A minimal and flexible login manager daemon that makes no assumptions about 
+    what you want to launch.
+
+    https://sr.ht/~kennylevinsen/greetd/
+
+
 [14.0] References
 ________________________________________________________________________________
 
