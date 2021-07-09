@@ -7,12 +7,11 @@ The installation utilizes a tarball which is unpacked to '/'. This same tarball
 is also directly usable as a chroot from any Linux distribution.
 
 A live-CD from a another distribution is required to bootstrap KISS. It does not
-matter which distribution is used so long as it includes 'tar' and other basic
-utilities.
+matter which distribution is used so long as it includes 'tar', 'xz' and other 
+basic utilities.
 
-From this point on, the guide assumes you have booted a live-CD, are logged
-in as root, have your disks, partitions and filesystems setup and have an
-internet connection.
+The guide assumes you have booted a live-CD, are logged in as root, have your 
+disks, partitions and filesystems setup and have an internet connection.
 
 
 [1.0] The Process
@@ -41,9 +40,8 @@ ________________________________________________________________________________
 
 - Userspace tools                                                          [6.0]
     - Filesystems                                                          [6.1]
-    - Device management                                                    [6.2]
-    - WiFi                                                                 [6.3]
-    - Dynamic IP addressing                                                [6.4]
+    - WiFi                                                                 [6.2]
+    - Dynamic IP addressing                                                [6.3]
 
 - The hostname                                                             [7.0]
 
@@ -62,19 +60,14 @@ ________________________________________________________________________________
 - Install init scripts                                                    [10.0]
 - Set a root password                                                     [11.0]
 - Add a normal user                                                       [12.0]
-
-- Install Xorg                                                            [13.0]
-    - Add your user to the relevant groups                                [13.1]
-
+- Install graphical session (wayland)                                     [13.0]
 - Further steps                                                           [14.0]
 
 
 [2.0] Install KISS
 ________________________________________________________________________________
 
-NOTE: Disks should be setup and fully mounted to /mnt.
-
-Start by declaring a variable.
+Start by declaring two variables.
 
 +------------------------------------------------------------------------------+
 |                                                                              |
@@ -94,11 +87,8 @@ Start by declaring a variable.
     +--------------------------------------------------------------------------+
 
 
-    [2.2] Verify the checksums (recommended)
+    [2.2] Verify checksums (recommended)
     ____________________________________________________________________________
-
-    This step verifies that the release matches the checksums generated upon
-    its creation and also ensures that the download completed successfully.
 
     +--------------------------------------------------------------------------+
     |                                                                          |
@@ -108,7 +98,7 @@ Start by declaring a variable.
     +--------------------------------------------------------------------------+
 
 
-    [2.3] Verify the signature (recommended)
+    [2.3] Verify signature (recommended)
     ____________________________________________________________________________
 
     This step verifies that the release was signed by its creator, Dylan Araps.
@@ -139,13 +129,13 @@ Start by declaring a variable.
     [2.4] Unpack the tarball
     ____________________________________________________________________________
 
-    This step effectively installs KISS to /mnt. The tarball contains a full
-    system minus the bootloader, kernel and optional utilities.
+    This step effectively installs KISS to /mnt. The tarball contains a working
+    system minus the bootloader and kernel.
 
     +--------------------------------------------------------------------------+
     |                                                                          |
     |   $ cd /mnt                                                              |
-    |   $ tar xvf "$OLDPWD/$file"                                              |
+    |   $ xz -d "$OLDPWD/$file" | tar xvf -                                    |
     |                                                                          |
     +--------------------------------------------------------------------------+
 
@@ -153,9 +143,9 @@ Start by declaring a variable.
     [2.5] Enter the chroot
     ____________________________________________________________________________
 
-    This is a simple script to chroot into /mnt and set up the environment for
-    the rest of the installation. The script handles mounting pseudo filesystems
-    (/proc, /dev, /sys), enabling network inside the chroot, etc.
+    This is a simple script to chroot into /mnt and set up the environment.
+    The script handles mounting pseudo filesystems (/proc, /dev, /sys, etc), 
+    enabling network inside the chroot and clean up upon exit.
 
     On execution of this step you will be running KISS! The next steps involve
     the kernel, software compilation and system setup.
@@ -179,7 +169,7 @@ can be located anywhere on the file-system. The full path to the directory is
 the value to KISS_PATH.
 
 The chroot/installation tarball does not come with any repositories by default,
-nor does the package manager expect or /assume/ that any exist in a given
+nor does the package manager expect or assume that any exist in a given 
 location. This is entirely up to the user.
 
 
@@ -200,19 +190,19 @@ location. This is entirely up to the user.
     |  |  - .git/                                                              |
     |  |  - core/                                                              |
     |  |  - extra/                                                             |
-    |  |  - xorg/                                                              |
+    |  |  - wayland/                                                           |
     |  |                                                                       |
     |  +- personal/                                                            |
     |  |  - games/                                                             |
-    |  |  - web                                                                |
+    |  |  - web/                                                               |
     |  |                                                                       |
     |                                                                          |
     +--------------------------------------------------------------------------+
 
     - Repositories are stored in ~/repos/ which is a per-user configuration.
-    - There are two git repositories containing four KISS repositories.
-    - There is a third repository called personal, not tracked by git.
-    - The personal repository contains two KISS repositories.
+    - There is a git repository called 'repo' containing four KISS repositories.
+    - There is a directory called personal, not tracked by git.
+    - The personal directory contains two KISS repositories.
 
     This user's KISS_PATH could look like this:
 
@@ -225,7 +215,7 @@ location. This is entirely up to the user.
     |    3 KISS_PATH=$KISS_PATH:$HOME/repos/personal/web                       |
     |    4 KISS_PATH=$KISS_PATH:$HOME/repos/repo/core                          |
     |    5 KISS_PATH=$KISS_PATH:$HOME/repos/repo/extra                         |
-    |    6 KISS_PATH=$KISS_PATH:$HOME/repos/repo/xorg                          |
+    |    6 KISS_PATH=$KISS_PATH:$HOME/repos/repo/wayland                       |
     |                                                                          |
     +--------------------------------------------------------------------------+
 
@@ -236,7 +226,6 @@ location. This is entirely up to the user.
     +--------------------------------------------------------------------------+
     |                                                                          |
     |  TIP: Run '. ~/.profile' for changes to immediately take effect.         |
-    |  TIP: Run 'echo "$KISS_PATH"' to check if properly set.                  |
     |                                                                          |
     +--------------------------------------------------------------------------+
 
@@ -245,7 +234,7 @@ location. This is entirely up to the user.
     ____________________________________________________________________________
 
     The official repositories contain everything from the base system to a
-    working web browser (Firefox) and media player (mpv). This includes Xorg,
+    working web browser (Firefox) and media player (mpv). This includes Wayland,
     rust, nodejs and a lot of other useful software.
 
     Clone the repository to the directory of your choosing.
@@ -257,8 +246,8 @@ location. This is entirely up to the user.
     +--------------------------------------------------------------------------+
 
     This will be cloned to a directory called 'repo'. This directory contains
-    multiple KISS repositories (core, extra, testing and xorg). Core and Extra
-    must be enabled as this guide requires their use. Xorg is optional.
+    multiple KISS repositories (core, extra, testing and wayland). Core and 
+    Extra must be enabled as this guide requires their use. Wayland is optional.
 
 
     [3.4] Universe
@@ -270,20 +259,12 @@ location. This is entirely up to the user.
     - @/wiki/community/repositories
     - https://github.com/topics/kiss-repo
 
-    NOTE: It may be desirable to save this step for post-installation.
+    It may be desirable to save this step for post-installation.
 
 
 Repositories should now be setup and in functioning order. Run 'kiss search \*'
-(notice the escaping) to print all repository packages in the search order of
+(notice the backslash) to print all repository packages in the search order of
 the package manager.
-
-
-[4.0] Enable repository signing
-________________________________________________________________________________
-
-This step is optional and can also be done after the installation. Repository
-signing ensures that all updates have been signed by (Dylan Araps) and further
-prevents any unsigned updates from reaching your system.
 
 +------------------------------------------------------------------------------+
 | TIP!                                                                         |
@@ -296,12 +277,19 @@ prevents any unsigned updates from reaching your system.
 +------------------------------------------------------------------------------+
 
 
+[4.0] Enable repository signing
+________________________________________________________________________________
+
+This step is optional and can also be done after the installation. Repository
+signing ensures that all updates have been signed by (Dylan Araps) and further
+prevents any unsigned updates from reaching your system.
+
     [4.1] Build and install gnupg1
     ____________________________________________________________________________
 
     Welcome to the KISS package manager! This command will build gnupg1 and
-    prompt for installation once done. Packages can also be installed by using
-    'kiss i pkg'.
+    prompt for installation once done. Packages can also be installed manually
+    by using 'kiss i pkg'.
 
     +--------------------------------------------------------------------------+
     |                                                                          |
@@ -310,7 +298,7 @@ prevents any unsigned updates from reaching your system.
     +--------------------------------------------------------------------------+
 
 
-    [4.2] Import my (Dylan Araps') key
+    [4.2] Import (Dylan Araps') key
     ____________________________________________________________________________
 
     If the GNU keyserver fails on your network, try an alternative mirror.
@@ -342,7 +330,7 @@ prevents any unsigned updates from reaching your system.
 
     +--------------------------------------------------------------------------+
     |                                                                          |
-    |   $ cd /var/db/kiss/repo                                                 |
+    |   $ cd /path/to/repo # (where kisslinux/repo was cloned)                 |
     |   $ git config merge.verifySignatures true                               |
     |                                                                          |
     +--------------------------------------------------------------------------+
@@ -382,7 +370,7 @@ This step is entirely optional and can also be done post-installation.
     | MAKEFLAGS                                                                |
     +--------------------------------------------------------------------------+
     |                                                                          |
-    |   # NOTE: 4 should be changed to match the number of threads.            |
+    |   # NOTE: '4' should be changed to match the number of threads.          |
     |   $ export MAKEFLAGS="-j4"                                               |
     |                                                                          |
     +--------------------------------------------------------------------------+
@@ -420,7 +408,7 @@ This step is entirely optional and can also be done post-installation.
 ________________________________________________________________________________
 
 Each kiss action (build, install, etc) has a shorthand alias. From now on,
-'kiss b' will be used in place of 'kiss build'.
+'kiss b' will be used in place of 'kiss build' and so on.
 
 The software below is required unless stated otherwise.
 
@@ -443,37 +431,9 @@ The software below is required unless stated otherwise.
     |   $ kiss b dosfstools                                                    |
     |                                                                          |
     +--------------------------------------------------------------------------+
-    | XFS                                                                      |
-    +--------------------------------------------------------------------------+
-    |                                                                          |
-    |   $ kiss b xfsprogs                                                      |
-    |                                                                          |
-    +--------------------------------------------------------------------------+
 
 
-    [6.2] Device management
-    ____________________________________________________________________________
-
-    NOTE: If you choose to not install eudev, mdev will automatically be used in
-          its place. Eudev is recommended as a lot of software requires it.
-          See: @/wiki/dev/replacing-udev for more information.
-
-    +--------------------------------------------------------------------------+
-    | Needed for blkid support in eudev (recommended but not required).        |
-    +--------------------------------------------------------------------------+
-    |                                                                          |
-    |   $ kiss b util-linux                                                    |
-    |                                                                          |
-    +--------------------------------------------------------------------------+
-    | The device manager.                                                      |
-    +--------------------------------------------------------------------------+
-    |                                                                          |
-    |   $ kiss b eudev                                                         |
-    |                                                                          |
-    +--------------------------------------------------------------------------+
-
-
-    [6.3] WiFi (optional)
+    [6.2] WiFi (optional)
     ____________________________________________________________________________
 
     +--------------------------------------------------------------------------+
@@ -483,7 +443,7 @@ The software below is required unless stated otherwise.
     +--------------------------------------------------------------------------+
 
 
-    [6.4] Dynamic IP addressing (optional)
+    [6.3] Dynamic IP addressing (optional)
     ____________________________________________________________________________
 
     +--------------------------------------------------------------------------+
@@ -535,9 +495,6 @@ KISS does not support booting using an initramfs (see @/faq#5.2). When
 configuring your kernel ensure that all required file-system, disk controller
 and USB drivers are built with [*] (=y) and not [m] (=m).
 
-A patch may be required for some kernels when built with GCC 10.1.0. Please
-read the link (and the patch itself for more information). @/news/20200509a
-
 +------------------------------------------------------------------------------+
 |                                                                              |
 |   TIP: The Wiki contains a basic kernel configuration page.                  |
@@ -550,24 +507,24 @@ read the link (and the patch itself for more information). @/news/20200509a
     ____________________________________________________________________________
 
     +--------------------------------------------------------------------------+
-    |                                                                          |
     | libelf (required in most if not all cases).                              |
+    +--------------------------------------------------------------------------+
     |                                                                          |
     |   $ kiss b libelf                                                        |
     |                                                                          |
     +--------------------------------------------------------------------------+
 
     +--------------------------------------------------------------------------+
-    |                                                                          |
     | ncurses (required only for 'make menuconfig').                           |
+    +--------------------------------------------------------------------------+
     |                                                                          |
     |   $ kiss b ncurses                                                       |
     |                                                                          |
     +--------------------------------------------------------------------------+
 
     +--------------------------------------------------------------------------+
-    |                                                                          |
     | perl (required in nearly all cases).                                     |
+    +--------------------------------------------------------------------------+
     |                                                                          |
     |   $ kiss b perl                                                          |
     |                                                                          |
@@ -611,8 +568,7 @@ read the link (and the patch itself for more information). @/news/20200509a
 
     To keep the KISS repositories entirely FOSS, the proprietary kernel firmware
     is omitted. This also makes sense as the kernel itself is manually managed
-    by the user. This step is only required if your hardware utilizes makes use
-    of this firmware.
+    by the user. This step is only required if your hardware needs firmware.
 
     https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git
 
@@ -621,7 +577,7 @@ read the link (and the patch itself for more information). @/news/20200509a
     +--------------------------------------------------------------------------+
     |                                                                          |
     |   $ wget FIRMWARE_SOURCE.tar.gz                                          |
-    |   $ tar xvf linux-firmware-20191022.tar.gz                               |
+    |   $ tar xvf FIRMWARE_SOURCE.tar.gz                                       |
     |                                                                          |
     +--------------------------------------------------------------------------+
     | Copy the required drivers to '/usr/lib/firmware'.                        |
@@ -637,11 +593,9 @@ read the link (and the patch itself for more information). @/news/20200509a
     ____________________________________________________________________________
 
     You can determine which drivers you need by searching the web for your
-    hardware and the Linux kernel.
-
-    If you require firmware blobs, the drivers you enable must be enabled as
-    [m] (modules). You can also optionally include the firmware in the kernel
-    itself.
+    hardware and the Linux kernel. If you require firmware blobs, the drivers 
+    you enable must be enabled as [m] (modules). You can also optionally include 
+    the firmware in the kernel itself.
 
     +--------------------------------------------------------------------------+
     | Generate a default config with most drivers built into the kernel.       |
@@ -651,7 +605,7 @@ read the link (and the patch itself for more information). @/news/20200509a
     |                                                                          |
     +--------------------------------------------------------------------------+
     | Open an interactive menu to edit the generated .config and enable        |
-    | anything extra you may need..                                            |
+    | anything extra you may need.                                             |
     +--------------------------------------------------------------------------+
     |                                                                          |
     |   $ make menuconfig                                                      |
@@ -673,12 +627,11 @@ read the link (and the patch itself for more information). @/news/20200509a
     ____________________________________________________________________________
 
     This may take a while to complete. The compilation time depends on your
-    hardware and kernel configuration. The 'nproc' command outputs the total
-    number of threads which we pass to make for a multi-threaded build.
+    hardware and kernel configuration. 
 
     +--------------------------------------------------------------------------+
     |                                                                          |
-    |   $ make -j "$(nproc)"                                                   |
+    |   $ make                                                                 |
     |                                                                          |
     +--------------------------------------------------------------------------+
 
@@ -711,9 +664,9 @@ read the link (and the patch itself for more information). @/news/20200509a
 [9.0] The bootloader
 ________________________________________________________________________________
 
-The default bootloader is grub (though nothing prevents the use of another
-bootloader). This default was chosen as most people are familiar with it, both
-BIOS and UEFI are supported and vast amounts of documentation for it exists.
+The default bootloader is grub (though nothing prevents the use of another). 
+This default was chosen as most people are familiar with it, both BIOS and UEFI 
+are supported and vast amounts of documentation for it exists.
 
 
     [9.1] Recommended
@@ -797,50 +750,10 @@ ________________________________________________________________________________
 +------------------------------------------------------------------------------+
 
 
-[13.0] Install Xorg (optional)
+[13.0] Install graphical session (wayland) (optional)
 ________________________________________________________________________________
 
-To install Xorg, the input drivers and a basic default set of fonts, run the
-following commands. See @/wiki/xorg
-
-+------------------------------------------------------------------------------+
-|                                                                              |
-|   $ kiss b xorg-server xinit xf86-input-libinput                             |
-|                                                                              |
-+------------------------------------------------------------------------------+
-| Installing a base font is recommended as nothing will work without fonts.    |
-+------------------------------------------------------------------------------+
-|                                                                              |
-|   $ kiss b liberation-fonts                                                  |
-|                                                                              |
-+------------------------------------------------------------------------------+
-
-
-    [13.1] Add your user to the relevant groups
-    ____________________________________________________________________________
-
-    This groups based permissions model may not be suitable if KISS will be
-    used as a multi-seat system. Further configuration can be done at your
-    own discretion.
-
-    +--------------------------------------------------------------------------+
-    | Replace 'USERNAME' with the name of the user created earlier.            |
-    +--------------------------------------------------------------------------+
-    |                                                                          |
-    | $ addgroup USERNAME video                                                |
-    | $ addgroup USERNAME audio                                                |
-    |                                                                          |
-    +--------------------------------------------------------------------------+
-
-
-[14.0] Further steps
-________________________________________________________________________________
-
-You should now be able to reboot into your KISS installation. Typical
-configuration should follow (creation of users, service configuration,
-installing a window manager, terminal etc).
-
-The KISS Wiki is a good place to look for post-installation information.
+See @/wiki/wayland/install @/wiki/wayland 
 
 +------------------------------------------------------------------------------+
 | TIP!                                                                         |
@@ -850,15 +763,25 @@ The KISS Wiki is a good place to look for post-installation information.
 |                                                                              |
 |   $ kiss help wiki                                                           |
 |                                                                              |
-|   $ kiss help wiki/xorg                                                      |
-|   $ kiss help wiki/xorg/xinit                                                |
-|   $ kiss help wiki/xorg/xinit                                                |
+|   $ kiss help wiki/wayland                                                   |
+|   $ kiss help wiki/wayland/install                                           |
 |                                                                              |
 |   $ kiss help wiki/software                                                  |
-|   $ kiss help wiki/software/man-pages                                        |
+|   $ kiss help wiki/software/firefox                                          |
 |                                                                              |
 +------------------------------------------------------------------------------+
+
+
+[14.0] Further steps
+________________________________________________________________________________
+
+The installation is complete! 
+
+If everything was done correctly, you should now be able to reboot into your 
+KISS installation. Typical post-installation steps should follow, see the wiki.
 
 If you encountered any issues or have any questions, get in touch.
 
 See: @/contact
+
+
