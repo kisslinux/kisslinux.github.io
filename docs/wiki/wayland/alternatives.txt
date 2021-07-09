@@ -1,0 +1,375 @@
+WAYLAND ALTERNATIVES TO XORG SOFTWARE [0] [1]
+________________________________________________________________________________
+
+
+[0.0] Index
+________________________________________________________________________________
+
+- Compositors (or Display Servers)                                         [1.0]
+- Terminal Emulators                                                       [2.0]
+- Web Browsers                                                             [3.0]
+- Clipboard Managers                                                       [4.0]
+- Display Configuration                                                    [5.0]
+- Image Viewers                                                            [6.0]
+- Application Launchers                                                    [7.0]
+- Screen Lockers                                                           [8.0]
+- Screenshot tools                                                         [9.0]
+- Status Bars                                                             [10.0]
+- Notification Daemons                                                    [11.0]
+- Wallpaper Setters                                                       [12.0]
+
+
+[1.0] Compositors (or Display Servers)
+________________________________________________________________________________
+
+Display servers that implement the Wayland display server protocol are also 
+called Wayland compositors because they additionally perform the task of a 
+compositing window manager. - Wikipedia [2]
+
+
+    [1.1] sway
+    ____________________________________________________________________________
+
+    i3-compatible Wayland compositor 
+
+    https://github.com/swaywm/sway
+
+
+    [1.2] hikari
+    ____________________________________________________________________________
+
+    hikari [ja. Light] is a stacking Wayland compositor which is actively 
+    developed on FreeBSD but also supports Linux. 
+
+    https://hikari.acmelabs.space/  
+
+
+    [1.3] dwl
+    ____________________________________________________________________________
+
+    dwl is a compact, hackable compositor for Wayland based on wlroots. It is 
+    intended to fill the same space in the Wayland world that dwm does in X11, 
+    primarily in terms of philosophy, and secondarily in terms of functionality.     
+
+    https://github.com/djpohly/dwl
+
+
+    [1.4] japokwm
+    ____________________________________________________________________________
+
+    Japokwm is a dynamic tiling wayland compositor where you are able to create 
+    new layouts without the hassle of editing the source code. You just give it 
+    information about where windows go and it will handle stuff such as resizing 
+    all by itself 
+
+    https://github.com/werererer/japokwm
+
+
+    [1.5] labwc
+    ____________________________________________________________________________
+
+    Labwc is a wlroots-based stacking compositor for Wayland. It aims to be 
+    light-weight and independent, with a focus on simply stacking windows well 
+    and rendering some window decorations. Where practicable, it uses clients 
+    for wall-paper, panels, screenshots, and so on. 
+
+    https://github.com/johanmalm/labwc
+
+
+    [1.6] taiwins
+    ____________________________________________________________________________
+
+    Taiwins is a dynamic wayland window manager, supports both tiling and 
+    floating layout. It is designed to be modern and modular. It is extensible 
+    through lua script and it has built-in shell and widgets implementation 
+    through nuklear GUI. It also supports popular tiling window manager features 
+    like gapping.
+
+    https://github.com/taiwins/taiwins
+
+
+    [1.7] waybox
+    ____________________________________________________________________________
+
+    An Openbox clone on Wayland (WIP)
+
+    https://github.com/wizbright/waybox
+
+
+    [1.7] wayfire
+    ____________________________________________________________________________
+
+    Wayfire is a 3D Wayland compositor, inspired by Compiz and based on wlroots.
+    It aims to create a customizable, extendable and lightweight environment 
+    without sacrificing its appearance.
+
+    https://github.com/WayfireWM/wayfire
+
+
+[2.0] Terminal Emulators
+________________________________________________________________________________
+
+
+    [2.1] foot
+    ____________________________________________________________________________
+
+    The fast, lightweight and minimalistic Wayland terminal emulator.
+
+    https://codeberg.org/dnkl/foot  
+
+
+    [2.2] ate
+    ____________________________________________________________________________
+    
+    Awesome terminal emulator.
+
+    https://github.com/andir/ate
+
+
+    [2.3] havoc
+    ____________________________________________________________________________
+    
+    A minimal terminal emulator for Wayland on Linux.
+
+    https://github.com/ii8/havoc
+
+
+    [2.4] wterm
+    ____________________________________________________________________________
+    
+    st fork for Wayland.
+
+    https://github.com/majestrate/wterm 
+
+
+    [2.5] alacritty
+    ____________________________________________________________________________
+    
+    Alacritty is a modern terminal emulator that comes with sensible defaults, 
+    but allows for extensive configuration. By integrating with other 
+    applications, rather than reimplementing their functionality, it manages to 
+    provide a flexible set of features with high performance. 
+
+    https://github.com/alacritty/alacritty
+
+
+    [2.6] kitty
+    ____________________________________________________________________________
+    
+    The fast, feature-rich, cross-platform, GPU based terminal.
+
+    https://github.com/kovidgoyal/kitty
+
+
+
+[3.0] Web Browsers (without X11 dependency)
+________________________________________________________________________________
+
+
+    [3.1] firefox
+    ____________________________________________________________________________
+    
+    Firefox, is a free and open-source web browser developed by the Mozilla 
+    Foundation and its subsidiary, the Mozilla Corporation. 
+
+    https://www.mozilla.org/en-US/firefox/new/
+
+
+[4.0] Clipboard Managers
+________________________________________________________________________________
+
+
+    [4.1] wl-clipboard
+    ____________________________________________________________________________
+    
+    This project implements two command-line Wayland clipboard utilities, 
+    wl-copy and wl-paste, that let you easily copy data between the clipboard 
+    and Unix pipes, sockets, files and so on.
+
+    https://github.com/bugaevc/wl-clipboard
+
+
+[5.0] Display Configuration
+________________________________________________________________________________
+
+
+    [5.1] wlr-randr
+    ____________________________________________________________________________
+    
+    Utility to manage outputs of a Wayland compositor.
+
+    https://github.com/emersion/wlr-randr
+
+
+    [5.2] kanshi
+    ____________________________________________________________________________
+    
+    kanshi allows you to define output profiles that are automatically enabled 
+    and disabled on hotplug. For instance, this can be used to turn a laptop's 
+    internal screen off when docked.
+
+    https://github.com/emersion/kanshi
+
+
+[6.0] Image Viewers
+________________________________________________________________________________
+
+
+    [6.1] imv
+    ____________________________________________________________________________
+    
+    A command line image viewer intended for use with tiling window managers.
+
+    https://github.com/eXeC64/imv
+
+
+    [6.2] mpv
+    ____________________________________________________________________________
+    
+    mpv is a free (as in freedom) media player for the command line. It 
+    supports a wide variety of media file formats, audio and video codecs, and 
+    subtitle types.
+
+    https://github.com/mpv-player/mpv
+
+
+[7.0] Application Launchers
+________________________________________________________________________________
+
+
+    [7.1] bemenu
+    ____________________________________________________________________________
+    
+    Dynamic menu library and client program inspired by dmenu
+
+    https://github.com/Cloudef/bemenu
+
+
+    [7.2] fuzzel
+    ____________________________________________________________________________
+    
+    A Wayland-native application launcher, similar to rofi's drun mode.
+
+    https://codeberg.org/dnkl/fuzzel
+
+
+    [7.3] wofi
+    ____________________________________________________________________________
+
+    Wofi is a launcher/menu program for wlroots based wayland compositors.
+
+    https://hg.sr.ht/~scoopta/wofi
+
+
+
+[8.0] Screen Lockers
+________________________________________________________________________________
+
+
+    [8.1] swaylock
+    ____________________________________________________________________________
+
+    A screen locking utility for Wayland compositors.
+
+    https://github.com/swaywm/swaylock
+
+
+    [8.2] swayidle
+    ____________________________________________________________________________
+
+    This is sway's idle management daemon, swayidle. It is compatible with any 
+    Wayland compositor which implements the KDE idle protocol. 
+
+    https://github.com/swaywm/swayidle
+
+
+[9.0] Screenshot tools
+________________________________________________________________________________
+
+
+    [9.1] grim
+    ____________________________________________________________________________
+
+    Grab images from a Wayland compositor. 
+
+    https://github.com/emersion/grim
+
+
+    [9.2] slurp
+    ____________________________________________________________________________
+
+    Select a region in a Wayland compositor and print it to the standard output. 
+
+    https://github.com/emersion/slurp
+
+
+[10.0] Status Bars
+________________________________________________________________________________
+
+
+    [10.1] yambar
+    ____________________________________________________________________________
+
+    Modular status panel for X11 and Wayland.
+
+    https://codeberg.org/dnkl/yambar
+
+
+    [10.2] sfwbar
+    ____________________________________________________________________________
+
+    SFWBar (Sway Floating Window Bar) is a flexible taskbar application 
+    designed with a stacking layout in mind. 
+
+    https://github.com/LBCrion/sfwbar
+
+
+
+[11.0] Notification Daemons
+________________________________________________________________________________
+
+
+    [11.1] fnott
+    ____________________________________________________________________________
+
+    Keyboard driven and lightweight Wayland notification daemon for 
+    wlroots-based compositors.
+
+    https://codeberg.org/dnkl/fnott
+
+
+    [11.2] mako
+    ____________________________________________________________________________
+
+    A lightweight notification daemon for Wayland.
+
+    https://github.com/emersion/mako
+
+
+[12.0] Wallpaper Setters
+________________________________________________________________________________
+
+
+    [12.1] wbg
+    ____________________________________________________________________________
+
+    Super simple wallpaper application for Wayland compositors implementing 
+    the layer-shell protocol.
+
+    https://codeberg.org/dnkl/wbg
+
+
+    [12.2] swaybg
+    ____________________________________________________________________________
+
+    A wallpaper utility for Wayland compositors.
+
+    https://github.com/swaywm/swaybg
+
+
+[13.0] References
+________________________________________________________________________________
+
+[0] https://github.com/natpen/awesome-wayland
+[1] https://arewewaylandyet.com/
+[2] https://en.wikipedia.org/wiki/Wayland_(display_server_protocol) 
