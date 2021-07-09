@@ -28,7 +28,9 @@ ________________________________________________________________________________
     - Intel (iwlwifi)                                                      [4.1]
 - Bluetooth                                                                [5.0]
 - Sound                                                                    [6.0]
-- References                                                               [7.0]
+- Hardware Specific                                                        [7.0]
+    - IBM Thinkpad X230                                                    [7.1]
+- References                                                               [8.0]
 
 
 [1.0] Overview
@@ -374,7 +376,40 @@ where Enable AMD Audio CoProcessor IP support appears, that should also be set.
 +-----------------------------------------------------------------------------+
 
 
-[7.0] References
+[7.0] Hardware Specific
+________________________________________________________________________________
+
+
+    [7.1] IBM Thinkpad X230
+    ____________________________________________________________________________
+    
+    A defconfig is sufficent for the machine to boot. Sound and WIFI must be
+    manually enabled. A firmware blob for INTEL Centrino Advanced-N 6205 is
+    necessary. It can be found in the root directory of the proprietary kernel
+    firmware. ThinkPad specific ACPI options _can_ be enabled.
+
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |   $ make defconfig                                                       |
+    |   $ cp iwlwifi-6000g2a-6.ucode /usr/lib/firmware                         |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
+
+    +--------------------------------------------------------------------------+
+    | .config                                                                  |
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |   CONFIG_IWLWIFI=y                                                       |
+    |   CONFIG_IWLDVM=y                                                        |
+    |   CONFIG_EXTRA_FIRMWARE="iwlwifi-6000g2a-6.ucode"                        |
+    |   CONFIG_EXTRA_FIRMWARE_DIR="/usr/lib/firmware"                          |
+    |   CONFIG_SND_HDA_CODEC_REALTEK=y                                         |
+    |   CONFIG_THINKPAD_ACPI=y                                                 |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
+
+
+[8.0] References
 ________________________________________________________________________________
 
 [0] https://wiki.gentoo.org/wiki/AMDGPU

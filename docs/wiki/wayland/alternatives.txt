@@ -17,6 +17,7 @@ ________________________________________________________________________________
 - Status Bars                                                             [10.0]
 - Notification Daemons                                                    [11.0]
 - Wallpaper Setters                                                       [12.0]
+- Other                                                                   [13.0]
 
 
 [1.0] Compositors (or Display Servers)
@@ -367,7 +368,20 @@ ________________________________________________________________________________
     https://github.com/swaywm/swaybg
 
 
-[13.0] References
+[13.0] Other
+________________________________________________________________________________
+
+
+    [13.1] wlsunset
+    ____________________________________________________________________________
+
+    Day/night gamma adjustments for Wayland compositors supporting 
+    wlr-gamma-control-unstable-v1.
+
+    https://git.sr.ht/~kennylevinsen/wlsunset
+
+
+[14.0] References
 ________________________________________________________________________________
 
 [0] https://github.com/natpen/awesome-wayland
