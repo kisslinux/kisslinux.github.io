@@ -32,10 +32,10 @@ The installation utilizes a tarball which is unpacked to '/'. This same tarball
 is also directly usable as a chroot from any Linux distribution.
 
 A live-CD from a another distribution is required to bootstrap KISS. It does not
-matter which distribution is used so long as it includes 'tar', 'xz' and other 
+matter which distribution is used so long as it includes 'tar', 'xz' and other
 basic utilities.
 
-The guide assumes you have booted a live-CD, are logged in as root, have your 
+The guide assumes you have booted a live-CD, are logged in as root, have your
 disks, partitions and filesystems setup and have an internet connection.
 
 
@@ -169,7 +169,7 @@ Start by declaring two variables.
     ____________________________________________________________________________
 
     This is a simple script to chroot into /mnt and set up the environment.
-    The script handles mounting pseudo filesystems (/proc, /dev, /sys, etc), 
+    The script handles mounting pseudo filesystems (/proc, /dev, /sys, etc),
     enabling network inside the chroot and clean up upon exit.
 
     On execution of this step you will be running KISS! The next steps involve
@@ -194,7 +194,7 @@ can be located anywhere on the file-system. The full path to the directory is
 the value to KISS_PATH.
 
 The chroot/installation tarball does not come with any repositories by default,
-nor does the package manager expect or assume that any exist in a given 
+nor does the package manager expect or assume that any exist in a given
 location. This is entirely up to the user.
 
 
@@ -271,7 +271,7 @@ location. This is entirely up to the user.
     +--------------------------------------------------------------------------+
 
     This will be cloned to a directory called 'repo'. This directory contains
-    multiple KISS repositories (core, extra, testing and wayland). Core and 
+    multiple KISS repositories (core, extra, testing and wayland). Core and
     Extra must be enabled as this guide requires their use. Wayland is optional.
 
 
@@ -332,13 +332,13 @@ prevents any unsigned updates from reaching your system.
     | Import my public key.                                                    |
     +--------------------------------------------------------------------------+
     |                                                                          |
-    |    $ gpg --keyserver keys.gnupg.net --recv-key 46D62DD9F1DE636E          |
+    |    $ gpg --keyserver keys.gnupg.net --recv-key 13295DAC2CF13B5C          |
     |                                                                          |
     +--------------------------------------------------------------------------+
     | Trust my public key.                                                     |
     +--------------------------------------------------------------------------+
     |                                                                          |
-    |    $ echo trusted-key 0x46d62dd9f1de636e >>/root/.gnupg/gpg.conf         |
+    |    $ echo trusted-key 0x13295DAC2CF13B5C >>/root/.gnupg/gpg.conf         |
     |                                                                          |
     +--------------------------------------------------------------------------+
 
@@ -618,8 +618,8 @@ and USB drivers are built with [*] (=y) and not [m] (=m).
     ____________________________________________________________________________
 
     You can determine which drivers you need by searching the web for your
-    hardware and the Linux kernel. If you require firmware blobs, the drivers 
-    you enable must be enabled as [m] (modules). You can also optionally include 
+    hardware and the Linux kernel. If you require firmware blobs, the drivers
+    you enable must be enabled as [m] (modules). You can also optionally include
     the firmware in the kernel itself.
 
     +--------------------------------------------------------------------------+
@@ -652,7 +652,7 @@ and USB drivers are built with [*] (=y) and not [m] (=m).
     ____________________________________________________________________________
 
     This may take a while to complete. The compilation time depends on your
-    hardware and kernel configuration. 
+    hardware and kernel configuration.
 
     +--------------------------------------------------------------------------+
     |                                                                          |
@@ -689,8 +689,8 @@ and USB drivers are built with [*] (=y) and not [m] (=m).
 <span id=9.0><a href=#9.0>[9.0]</a></span> The bootloader
 ________________________________________________________________________________
 
-The default bootloader is grub (though nothing prevents the use of another). 
-This default was chosen as most people are familiar with it, both BIOS and UEFI 
+The default bootloader is grub (though nothing prevents the use of another).
+This default was chosen as most people are familiar with it, both BIOS and UEFI
 are supported and vast amounts of documentation for it exists.
 
 
@@ -778,7 +778,7 @@ ________________________________________________________________________________
 <span id=13.0><a href=#13.0>[13.0]</a></span> Install graphical session (wayland) (optional)
 ________________________________________________________________________________
 
-See @/<a href=/wiki/wayland/install>wiki/wayland/install</a> @/<a href=/wiki/wayland>wiki/wayland</a> 
+See @/<a href=/wiki/wayland/install>wiki/wayland/install</a> @/<a href=/wiki/wayland>wiki/wayland</a>
 
 +------------------------------------------------------------------------------+
 | TIP!                                                                         |
@@ -800,9 +800,9 @@ See @/<a href=/wiki/wayland/install>wiki/wayland/install</a> @/<a href=/wiki/way
 <span id=14.0><a href=#14.0>[14.0]</a></span> Further steps
 ________________________________________________________________________________
 
-The installation is complete! 
+The installation is complete!
 
-If everything was done correctly, you should now be able to reboot into your 
+If everything was done correctly, you should now be able to reboot into your
 KISS installation. Typical post-installation steps should follow, see the wiki.
 
 If you encountered any issues or have any questions, get in touch.
