@@ -3,6 +3,7 @@ ________________________________________________________________________________
 
 RSS Feed available here: @/blog/blog.xml
 
+- @/blog/20210711a KISS LINUX
 - @/blog/20200903a This month in KISS (#5)
 - @/blog/20200803a This month in KISS (#4)
 - @/blog/20200625a This month in KISS (#3)
