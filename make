@@ -21,6 +21,9 @@ txt2html() {
     sed -E "s|^( *)\[([0-9\.]*)\]|\1<span id=\2>[\2]</span>|g" |
     sed -E "s|([^\"#])\[([0-9\.]*)\]|\1<a href=#\2>[\2]</a>|g" |
 
+    # Convert '<' to '&lt;'.
+    sed -E "s|<repo_url>|\&lt;repo_url>|g" |
+
     # Insert the page into the template.
     sed -E '/%%CONTENT%%/r /dev/stdin' template.html |
     sed -E '/%%CONTENT%%/d' |
