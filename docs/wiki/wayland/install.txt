@@ -21,7 +21,7 @@ compositors.
 Installing Wayland
 ________________________________________________________________________________
 
-First, pick a wayland compositor. If unsure, see @/alternatives.
+First, pick a wayland compositor. If unsure, see @/alternatives  
 
 +------------------------------------------------------------------------------+
 |                                                                              |

@@ -1,6 +1,6 @@
 Wayland
 ________________________________________________________________________________
 
-- @/alternatives.txt
-- @/install.txt
+- @/alternatives
+- @/install
 
