@@ -313,7 +313,7 @@ They require little to no extra code in the package manager to support them.
 |                 | dependency checks, etc. Set to '1' to enable.              |
 |                 |                                                            |
 | KISS_HOOK       | Hook into the package manager. Set to the full path to the |
-|                 | script. See @/wiki/kiss/package-manager-hooks              |
+|                 | script. See [6.0]                                          |
 |                 |                                                            |
 | KISS_KEEPLOG    | Keep build logs around for successful builds and not just  |
 |                 | failing ones. Set to '1' to enable.                        |
