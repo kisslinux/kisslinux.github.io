@@ -185,6 +185,15 @@ ________________________________________________________________________________
     https://www.mozilla.org/en-US/firefox/new/
 
 
+    [3.2] qutebrowser
+    ____________________________________________________________________________
+    
+    Qutebrowser is a keyboard-focused browser with a minimal GUI. It’s based on
+    Python and PyQt5 and free software, licensed under the GPL.
+
+    https://github.com/qutebrowser/qutebrowser
+
+
 [4.0] Clipboard Managers
 ________________________________________________________________________________
 
@@ -334,6 +343,14 @@ ________________________________________________________________________________
     https://github.com/LBCrion/sfwbar
 
 
+    [10.3] waybar
+    ____________________________________________________________________________
+    
+    Highly customizable Wayland bar for Sway and Wlroots based compositors.
+
+    https://github.com/Alexays/Waybar
+
+
 
 [11.0] Notification Daemons
 ________________________________________________________________________________
@@ -404,7 +421,7 @@ ________________________________________________________________________________
 
     xdotool type for wayland.
 
-    https://sr.ht/~kennylevinsen/greetd/
+    https://github.com/atx/wtype
 
 
     [13.4] ydotool
