@@ -107,7 +107,7 @@ Start by declaring two variables.
 
     +--------------------------------------------------------------------------+
     |                                                                          |
-    |   $ wget "$url/$file"                                                    |
+    |   $ curl -fLO "$url/$file"                                               |
     |                                                                          |
     +--------------------------------------------------------------------------+
 
@@ -117,7 +117,7 @@ Start by declaring two variables.
 
     +--------------------------------------------------------------------------+
     |                                                                          |
-    |   $ wget "$url/$file.sha256"                                             |
+    |   $ curl -fLO "$url/$file.sha256"                                        |
     |   $ sha256sum -c < "$file.sha256"                                        |
     |                                                                          |
     +--------------------------------------------------------------------------+
@@ -134,7 +134,7 @@ Start by declaring two variables.
     | Download the armored ASCII file.                                         |
     +--------------------------------------------------------------------------+
     |                                                                          |
-    |   $ wget "$url/$file.asc"                                                |
+    |   $ curl -fLO "$url/$file.asc"                                           |
     |                                                                          |
     +--------------------------------------------------------------------------+
     | Import my public key (if this fails, try another keyserver).             |
@@ -576,7 +576,7 @@ and USB drivers are built with [*] (=y) and not [m] (=m).
     | Download the kernel sources.                                             |
     +--------------------------------------------------------------------------+
     |                                                                          |
-    |   $ wget KERNEL_SOURCE                                                   |
+    |   $ curl -fLO KERNEL_SOURCE                                              |
     |                                                                          |
     +--------------------------------------------------------------------------+
     | Extract the kernel sources.                                              |
@@ -601,7 +601,7 @@ and USB drivers are built with [*] (=y) and not [m] (=m).
     | Download and extract the firmware.                                       |
     +--------------------------------------------------------------------------+
     |                                                                          |
-    |   $ wget FIRMWARE_SOURCE.tar.gz                                          |
+    |   $ curl -fLO FIRMWARE_SOURCE.tar.gz                                     |
     |   $ tar xvf FIRMWARE_SOURCE.tar.gz                                       |
     |                                                                          |
     +--------------------------------------------------------------------------+
