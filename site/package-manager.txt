@@ -427,7 +427,7 @@ used.
     +--------------------------------------------------------------------------+
     |                                                                          |
     |   # This can live anywhere on the system.                                |
-    |   $ git clone <repo_url>                                                 |
+    |   $ git clone https://example.com/repo                                   |
     |                                                                          |
     +--------------------------------------------------------------------------+
     | 2. Enable the repository                                                 |
