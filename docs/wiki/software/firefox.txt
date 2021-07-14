@@ -1,7 +1,7 @@
 FIREFOX
 ________________________________________________________________________________
 
-Firefox is a free and open-source web browser developed by the Mozilla 
+Firefox is a free and open-source web browser developed by the Mozilla
 Foundation and its subsidiary, the Mozilla Corporation.
 
 
@@ -59,7 +59,7 @@ For VAAPI to work the following about:config options must be set.
 |                                                                              |
 |  gfx.webrender.all=true                                                      |
 |  media.av1.enabled=false                                                     |
-|  media.ffmpeg.dmabuf-textures.enabled=true                                   |
+|  media.ffmpeg.dmabuf-textures.disabled=false                                 |
 |  media.ffmpeg.vaapi.enabled=true                                             |
 |  media.ffvpx.enabled=false                                                   |
 |                                                                              |
