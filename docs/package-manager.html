@@ -27,8 +27,8 @@ KISS PACKAGE MANAGER
 ________________________________________________________________________________
 
 The KISS package manager is a self-contained POSIX shell script which is written
-in a highly portable way. The entire utility comes in at under 1000 lines of
-code (excluding blank lines/comments of which there are many).
+in a highly portable way. It should run in anywhere with a POSIX shell and
+POSIX compliant coreutils.
 
 The package manager is merely an implementation of the package format, its
 requirements and some added sugar on top.
@@ -60,7 +60,6 @@ ________________________________________________________________________________
     - Usage                                                                <a href=#6.1>[6.1]</a>
     - Removing unneeded files from packages                                <a href=#6.2>[6.2]</a>
     - Drop into a subshell on build fail                                   <a href=#6.3>[6.3]</a>
-    - Logging build duration                                               <a href=#6.4>[6.4]</a>
 
 - Package Manager Extensions                                               <a href=#7.0>[7.0]</a>
 
@@ -100,39 +99,35 @@ implementation are considered "portable" (git, curl, etc)
 If a dependency can be made optional, it will be made so. Dependencies are also
 kept to a minimum (though we must also remain realistic).
 
-+------------------+------------------------------------------------+----------+
-| Dependency       | Reason for use                                 | Required |
-+------------------+------------------------------------------------+----------|
-| POSIX utilities  | Used throughout                                | Yes      |
-| git              | Remote repositories and                        | Yes <a href=#1>[1]</a>  |
-|                  | package git sources                            |          |
-| curl             | Source downloads                               | Yes      |
-| gpg1 or gpg2     | Repository signing                             | No       |
-| sha256sum        | Checksums                                      | Yes <a href=#2>[2]</a>  |
-| tar              | Sources, packages, etc                         | Yes <a href=#3>[3]</a>  |
-| unzip            | Zip sources (very rare)                        | No       |
-|                  |                                                |          |
-|                  |                                                |          |
-|------------------+------------------------------------------------+----------|
-| Compression      |                                                |          |
-|------------------+------------------------------------------------+----------|
-| gzip, bzip2, xz  | Tarball compression                            | Yes <a href=#4>[4]</a>  |
-| zstd, lzma, lzip | Tarball compression                            | No       |
-|                  |                                                |          |
-|                  |                                                |          |
-|------------------+------------------------------------------------+----------|
-| Privileges       |                                                |          |
-|------------------+------------------------------------------------+----------|
-| su | sudo | doas | Privilege escalation                           | No <a href=#5>[5]</a>   |
-|                  |                                                |          |
-|                  |                                                |          |
-|------------------+------------------------------------------------+----------|
-| Binutils         |                                                |          |
-|------------------+------------------------------------------------+----------|
-| ldd              | Dependency Fixer                               | No <a href=#6>[6]</a>   |
-| strip            | Binary Stripping                               | No <a href=#6>[6]</a>   |
-|                  |                                                |          |
-+------------------+------------------------------------------------+----------+
++----------------------+--------------------------------------------+----------+
+| Dependency           | Reason for use                             | Required |
++----------------------+--------------------------------------------+----------|
+| POSIX utilities      | Used throughout                            | Yes      |
+| git                  | Remote repositories and git sources        | Yes <a href=#1>[1]</a>  |
+| curl                 | Source downloads                           | Yes      |
+| gnupg1 or gnupg2     | Repository signing                         | No       |
+| sha256sum            | Checksums                                  | Yes <a href=#2>[2]</a>  |
+| tar                  | Sources, packages, etc                     | Yes <a href=#3>[3]</a>  |
+| unzip                | Zip sources (very rare)                    | No       |
+|                      |                                            |          |
+|----------------------+--------------------------------------------+----------|
+| Compression          |                                            |          |
+|----------------------+--------------------------------------------+----------|
+| gzip, bzip2, xz      | Tarball compression                        | Yes <a href=#4>[4]</a>  |
+| zstd, lzma, lzip     | Tarball compression                        | No       |
+|                      |                                            |          |
+|----------------------+--------------------------------------------+----------|
+| Privileges           |                                            |          |
+|----------------------+--------------------------------------------+----------|
+| su, sudo, doas, ssu  | Privilege escalation                       | No <a href=#5>[5]</a>   |
+|                      |                                            |          |
+|----------------------+--------------------------------------------+----------|
+| Binutils             |                                            |          |
+|----------------------+--------------------------------------------+----------|
+| ldd                  | Dependency Fixer                           | No <a href=#6>[6]</a>   |
+| strip                | Binary Stripping                           | No <a href=#6>[6]</a>   |
+|                      |                                            |          |
++----------------------+--------------------------------------------+----------+
 
 <span id=1><a href=#1>[1]</a></span> Git is also required for contribution to the distribution itself. Strictly
     speaking, nothing forces you to use git. Remote repositories and git based
@@ -337,8 +332,8 @@ They require little to no extra code in the package manager to support them.
 | KISS_FORCE      | Force installation/removal of package by bypassing         |
 |                 | dependency checks, etc. Set to '1' to enable.              |
 |                 |                                                            |
-| KISS_HOOK       | Hook into the package manager. Set to the full path to the |
-|                 | script. See <a href=#6.0>[6.0]</a>                                          |
+| KISS_HOOK       | Hook into the package manager. A colon separated list of   |
+|                 | absolute paths to executable files. See <a href=#6.0>[6.0]</a>              |
 |                 |                                                            |
 | KISS_KEEPLOG    | Keep build logs around for successful builds and not just  |
 |                 | failing ones. Set to '1' to enable.                        |
@@ -540,7 +535,7 @@ Example:
 
 +------------------------------------------------------------------------------+
 |                                                                              |
-|  export KISS_HOOK=$HOME/.local/bin/kiss-hook                                 |
+|  export KISS_HOOK=$HOME/.local/bin/kiss-hook:/path/to/other/hook             |
 |                                                                              |
 +------------------------------------------------------------------------------+
 
@@ -548,23 +543,88 @@ Example:
     <span id=6.1><a href=#6.1>[6.1]</a></span> Usage
     ____________________________________________________________________________
 
-    The script is sourced at each hook and is given three variables as input.
-    POSIX shell does not allow sourced scripts to receive arguments, these
-    variables are instead defined via the script's environment.
+    Each hook is executed in the order it appears in KISS_HOOK and is given its
+    own environment/arguments accordingly. The hooks are documented as follows.
 
-    - '$PKG':  The name of the current package.
-    - '$TYPE': The type of hook.
-    - '$DEST': The location where 'make install' will put files.
+    +--------------+-----------------------------------------------------------+
+    | hook         | arguments                                                 |
+    +--------------+-----------------------------------------------------------+
+    | build-fail   | hook_type pkg_name build_directory                        |
+    | post-build   | hook_type pkg_name DESTDIR                                |
+    | post-install | hook_type pkg_name installed_database                     |
+    | post-package | hook_type pkg_name tarball                                |
+    | post-update  | hook_type                                                 |
+    | pre-build    | hook_type pkg_name build_directory                        |
+    | pre-extract  | hook_type pkg_name DESTDIR                                |
+    | pre-install  | hook_type pkg_name extract_directory                      |
+    | pre-remove   | hook_type pkg_name installed_database                     |
+    | pre-update   | hook_type                                                 |
+    |              |                                                           |
+    +--------------------------------------------------------------------------+
 
-    Valid values for '$TYPE' include:
+        build-fail
+        ________________________________________________________________________
 
-        pre-build,   post-build,   build-fail,
-        pre-install, post-install, pre-extract,
-        post-package.
+        arg1: build-fail
+        arg2: package name
+        arg3: build directory
 
-    As the hook script is sourced (instead of being executed in its own shell),
-    the script has the ability to override package manager internals and the
-    package manager's environment.
+        post-build
+        ________________________________________________________________________
+
+        arg1: post-build
+        arg2: package name
+        arg3: DESTDIR
+
+        post-install
+        ________________________________________________________________________
+
+        arg1: post-install
+        arg2: package name
+        arg3: installed database (/var/db/kiss/installed/pkg_name)
+
+        post-package
+        ________________________________________________________________________
+
+        arg1: post-package
+        arg2: package name
+        arg3: path to tarball
+
+        post-update
+        ________________________________________________________________________
+
+        arg1: post-update
+        env:  PWD is set to the current repository.
+
+        pre-build
+        ________________________________________________________________________
+
+        arg1: pre-build
+        arg2: build directory
+
+        pre-extract
+        ________________________________________________________________________
+
+        arg1: pre-extract
+        arg2: DESTDIR
+
+        pre-install
+        ________________________________________________________________________
+
+        arg1: pre-install
+        arg2: extraction directory
+
+        pre-remove
+        ________________________________________________________________________
+
+        arg1: pre-remove
+        arg2: installed database (/var/db/kiss/installed/pkg_name)
+
+        pre-update
+        ________________________________________________________________________
+
+        arg1: pre-update
+        env:  PWD is set to the current repository.
 
 
     <span id=6.2><a href=#6.2>[6.2]</a></span> Removing unneeded files from packages
@@ -578,16 +638,16 @@ Example:
 
     +--------------------------------------------------------------------------+
     |                                                                          |
-    |   case $TYPE in                                                          |
+    |   case $1 in                                                             |
     |       post-build)                                                        |
-    |           # Ensure that '$DEST' is set.                                  |
-    |           : "${DEST:?DEST is unset}"                                     |
+    |           # Ensure that '$3' is set.                                     |
+    |           : "${3:?DESTDIR is unset}"                                     |
     |                                                                          |
-    |           rm -rf "$DEST/usr/share/gettext" \                             |
-    |                  "$DEST/usr/share/polkit-1" \                            |
-    |                  "$DEST/usr/share/locale" \                              |
-    |                  "$DEST/usr/share/info" \                                |
-    |                  "$DEST/usr/lib/charset.alias"                           |
+    |           rm -rf "$3/usr/share/gettext" \                                |
+    |                  "$3/usr/share/polkit-1" \                               |
+    |                  "$3/usr/share/locale" \                                 |
+    |                  "$3/usr/share/info" \                                   |
+    |                  "$3/usr/lib/charset.alias"                              |
     |       ;;                                                                 |
     |   esac                                                                   |
     |                                                                          |
@@ -601,43 +661,10 @@ Example:
 
     +--------------------------------------------------------------------------+
     |                                                                          |
-    |   case $TYPE in                                                          |
+    |   case $1 in                                                             |
     |       build-fail)                                                        |
-    |           log "$PKG" "Dropped into subshell"                             |
+    |           log "$2" "Dropped into subshell"                               |
     |           sh >/dev/tty                                                   |
-    |       ;;                                                                 |
-    |   esac                                                                   |
-    |                                                                          |
-    +--------------------------------------------------------------------------+
-
-
-    <span id=6.4><a href=#6.4>[6.4]</a></span> Logging build duration
-    ____________________________________________________________________________
-
-    This hook adds a new message post-build with the total build duration in a
-    human readable format (00h 00m). Similar code is used in the boot process
-    of the system to calculate boot time.
-
-    +--------------------------------------------------------------------------+
-    |                                                                          |
-    |   case $TYPE in                                                          |
-    |       pre-build)                                                         |
-    |           IFS=. read -r _start _ < /proc/uptime                          |
-    |       ;;                                                                 |
-    |                                                                          |
-    |       post-build)                                                        |
-    |           IFS=. read -r _end _ < /proc/uptime                            |
-    |                                                                          |
-    |           (                                                              |
-    |               _s=$((_end - _start))                                      |
-    |               _h=$((_s / 60 / 60 % 24))                                  |
-    |               _m=$((_s / 60 % 60))                                       |
-    |                                                                          |
-    |               [ "$_h" = 0 ] || _u="${_u}${_h}h "                         |
-    |               [ "$_m" = 0 ] || _u="${_u}${_m}m "                         |
-    |                                                                          |
-    |               log "$PKG" "Build finished in ${_u:-${_s}s}"               |
-    |           )                                                              |
     |       ;;                                                                 |
     |   esac                                                                   |
     |                                                                          |
