@@ -123,6 +123,9 @@ prefix 'git+' should be added with an optional suffix #hash or @branch).
 Adding a suffix of '?no-extract' to the source URL will prevent the package
 manager from automatically extracting the source (if a tarball or zip).
 
+Sources also support MARKERS which are replaced with the version information
+as defined in the version file at runtime.
+
 +------------------------------------------------------------------------------+
 | sources                                                                      |
 +------------------------------------------------------------------------------+
@@ -154,6 +157,25 @@ manager from automatically extracting the source (if a tarball or zip).
 |                                                                              |
 |   # Grabbing a specific commit.                                              |
 |   git+https://github.com/dylanaraps/eiwd#commit                              |
+|                                                                              |
++------------------------------------------------------------------------------+
+
++------------------------------------------------------------------------------+
+| sources (usage with MARKERS)                                                 |
++------------------------------------------------------------------------------+
+|                                                                              |
+| VERSION The first  field of the version file verbatim.                       |
+| RELEASE The second field of the version file verbatim.                       |
+|   MAJOR The first  component of VERSION split on .+-_                        |
+|   MINOR The second component of VERSION split on .+-_                        |
+|   PATCH The third  component of VERSION split on .+-_                        |
+|   IDENT All other components of VERSION.                                     |
+|     PKG The name of the package.                                             |
+|                                                                              |
++------------------------------------------------------------------------------+
+|                                                                              |
+|   https://example.com/dhcpcd-VERSION.tar.xz                                  |
+|   https://example.com/pub/gnome/sources/atk/MAJOR.MINOR/atk-VERSION.tar.xz   |
 |                                                                              |
 +------------------------------------------------------------------------------+
 
