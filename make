@@ -53,7 +53,7 @@ wiki_nav() {
     nav="$nav<a href='$wiki_url/edit/master/${page##*wiki/}'>Edit this page</a>"
 
     printf '%s\n\n%s\n\n\n' "$nav" \
-        "$(git submodule foreach --quiet git log -1 \
+        "$(git -C site/wiki log -1 \
         --format="Edited (<a href='$wiki_url/commit/%H'>%h</a>) at %as by %an" \
         "${page##*wiki/}")"
 }
@@ -86,13 +86,13 @@ page() {
 
         # Copy over any non-txt files.
         *)
-            cp -f "site/$page" "docs/$page"
+            cp -Lf "site/$page" "docs/$page"
         ;;
     esac
 
     # POST-GENERATION STEP.
     case $page in
-        *.txt) cp -f "site/$page" "docs/$page" ;;
+        *.txt) cp -Lf "site/$page" "docs/$page" ;;
     esac
 }
 
@@ -103,9 +103,17 @@ main() {
     rm -rf docs
     mkdir -p docs
 
-    (cd site && find . -type f) | while read -r page; do
-        printf '%s\n' "CC $page"
-        page "$page"
+    (cd site && find . ! -type d) | while read -r page; do
+        case $page in
+            ./kiss/*)
+                # Skip.
+            ;;
+
+            *)
+                printf '%s\n' "CC $page"
+                page "$page"
+            ;;
+        esac
     done
 }
 

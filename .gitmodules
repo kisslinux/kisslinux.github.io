@@ -1,3 +1,6 @@
 [submodule "site/wiki"]
 	path = site/wiki
 	url = https://github.com/kisslinux/wiki
+[submodule "site/kiss"]
+	path = site/kiss
+	url = https://github.com/kisslinux/kiss
