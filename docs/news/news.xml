@@ -11,7 +11,7 @@
 <title>15/07/2021: gzip -> pigz</title>
 <description>Manual intervention required</description>
 <link>https://kisslinux.xyz/news/20210715a</link>
-<guid isPermaLink="true">https://kisslinux.xyz/news/20210715a/</guid>
+<guid isPermaLink="true">https://kisslinux.xyz/news/20210715a</guid>
 <pubDate>Thu, 15 Jul 2021 00:00:00 +0000</pubDate>
 </item>
 <item>
@@ -19,21 +19,21 @@
 <description>KISS is moving to openssl and wayland. This is two breaking changes being made
 at the same time.</description>
 <link>https://kisslinux.xyz/news/20210708a</link>
-<guid isPermaLink="true">https://kisslinux.xyz/news/20210708a/</guid>
+<guid isPermaLink="true">https://kisslinux.xyz/news/20210708a</guid>
 <pubDate>Thu, 08 Jul 2021 00:00:00 +0000</pubDate>
 </item>
 <item>
 <title>03/07/2021: Update</title>
 <description></description>
 <link>https://kisslinux.xyz/news/20210703a</link>
-<guid isPermaLink="true">https://kisslinux.xyz/news/20210703a/</guid>
+<guid isPermaLink="true">https://kisslinux.xyz/news/20210703a</guid>
 <pubDate>Sat, 03 Jul 2021 00:00:00 +0000</pubDate>
 </item>
 <item>
 <title>11/08/2020: Changes to repositories using symlinks to /var/db/kiss/repo</title>
 <description>In two weeks' time, the assumption that the official repositories live in /var/db/kiss/repo will be removed. This change only affects repositories which contain symlinks to this location.</description>
 <link>https://kisslinux.xyz/news/20200811a</link>
-<guid isPermaLink="true">https://kisslinux.xyz/news/20200811a/</guid>
+<guid isPermaLink="true">https://kisslinux.xyz/news/20200811a</guid>
 <pubDate>Tue, 11 Aug 2020 00:00:00 +0000</pubDate>
 </item>
 <item>
@@ -42,21 +42,21 @@ at the same time.</description>
 project. Development will happen at a quicker pace and be done by
 members of the community (those who use encryption themselves).</description>
 <link>https://kisslinux.xyz/news/20200511a</link>
-<guid isPermaLink="true">https://kisslinux.xyz/news/20200511a/</guid>
+<guid isPermaLink="true">https://kisslinux.xyz/news/20200511a</guid>
 <pubDate>Mon, 11 May 2020 00:00:00 +0000</pubDate>
 </item>
 <item>
 <title>09/05/2020: GCC 10.1.0 kernel issue</title>
 <description>The kernel compiled with GCC 10.1.0 may crash on boot.</description>
 <link>https://kisslinux.xyz/news/20200509a</link>
-<guid isPermaLink="true">https://kisslinux.xyz/news/20200509a/</guid>
+<guid isPermaLink="true">https://kisslinux.xyz/news/20200509a</guid>
 <pubDate>Sat, 09 May 2020 00:00:00 +0000</pubDate>
 </item>
 <item>
 <title>06/05/2020: </title>
 <description></description>
 <link>https://kisslinux.xyz/news/20200506a/</link>
-<guid isPermaLink="true">https://kisslinux.xyz/news/20200506a/</guid>
+<guid isPermaLink="true">https://kisslinux.xyz/news/20200506a</guid>
 <pubDate>Wed, 06 May 2020 00:00:00 +0000</pubDate>
 </item>
 <item>
