@@ -514,8 +514,8 @@ and USB drivers are built with [*] (=y) and not [m] (=m).
     |                                                                          |
     |   NOTE: If using libelf, the following fix may need to be applied.       |
     |                                                                          |
-    |   $ sed '/<stdlib.h>/a #include <linux/stddef.h>' \                      |
-    |         tools/objtool/arch/x86/decode.c > _                              |
+    |   $ sed '/&lt;stdlib.h&gt;/a #include &lt;linux/stddef.h&gt;' \                      |
+    |         tools/objtool/arch/x86/decode.c &gt; _                              |
     |   $ mv -f _ tools/objtool/arch/x86/decode.c                              |
     |                                                                          |
     +--------------------------------------------------------------------------+
