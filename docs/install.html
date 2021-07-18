@@ -537,6 +537,12 @@ and USB drivers are built with [*] (=y) and not [m] (=m).
     |                                                                          |
     |   $ kiss b libelf                                                        |
     |                                                                          |
+    |   NOTE: If using libelf, the following fix may need to be applied.       |
+    |                                                                          |
+    |   $ sed '/<stdlib.h>/a #include <linux/stddef.h>' \                      |
+    |         tools/objtool/arch/x86/decode.c > _                              |
+    |   $ mv -f _ tools/objtool/arch/x86/decode.c                              |
+    |                                                                          |
     +--------------------------------------------------------------------------+
 
     +--------------------------------------------------------------------------+
