@@ -3,35 +3,35 @@
 <channel>
 <title>KISS Linux Blog</title>
 <description>An independent Linux® distribution with a focus on simplicity and the concept of "less is more". The distribution currently targets the x86-64 architecture and the English language.</description>
-<link>https://kisslinux.xyz</link>
+<link>https://kisslinux.org</link>
 <ttl>1800</ttl>
-<atom:link href="https://kisslinux.xyz/blog/blog.xml" rel="self" type="application/rss+xml" />
+<atom:link href="https://kisslinux.org/blog/blog.xml" rel="self" type="application/rss+xml" />
 <item>
 <title>11/07/2021: KISS LINUX</title>
 <description></description>
-<link>https://kisslinux.xyz/blog/20210711a</link>
-<guid isPermaLink="true">https://kisslinux.xyz/blog/20210711a</guid>
+<link>https://kisslinux.org/blog/20210711a</link>
+<guid isPermaLink="true">https://kisslinux.org/blog/20210711a</guid>
 <pubDate>Sun, 11 Jul 2020 15:00:00 +0000</pubDate>
 </item>
 <item>
 <title>03/09/2020: This month in KISS (#5)</title>
 <description></description>
-<link>https://kisslinux.xyz/blog/20200903a</link>
-<guid isPermaLink="true">https://kisslinux.xyz/blog/20200903a</guid>
+<link>https://kisslinux.org/blog/20200903a</link>
+<guid isPermaLink="true">https://kisslinux.org/blog/20200903a</guid>
 <pubDate>Thu, 03 Sep 2020 00:00:00 +0000</pubDate>
 </item>
 <item>
 <title>03/08/2020: This month in KISS (#4)</title>
 <description>Welcome to month 4!</description>
-<link>https://kisslinux.xyz/blog/20200803a</link>
-<guid isPermaLink="true">https://kisslinux.xyz/blog/20200803a</guid>
+<link>https://kisslinux.org/blog/20200803a</link>
+<guid isPermaLink="true">https://kisslinux.org/blog/20200803a</guid>
 <pubDate>Mon, 03 Aug 2020 00:00:00 +0000</pubDate>
 </item>
 <item>
 <title>25/06/2020: This month in KISS (#3)</title>
 <description>Welcome to the third monthly update for KISS Linux. The focus this month was on documentation and the reopening of the distribution's Wiki. A big thank you to those filling the Wiki with words.</description>
-<link>https://kisslinux.xyz/blog/20200625a</link>
-<guid isPermaLink="true">https://kisslinux.xyz/blog/20200625a</guid>
+<link>https://kisslinux.org/blog/20200625a</link>
+<guid isPermaLink="true">https://kisslinux.org/blog/20200625a</guid>
 <pubDate>Thu, 25 Jun 2020 00:00:00 +0000</pubDate>
 </item>
 <item>
@@ -39,36 +39,36 @@
 <description>Welcome to the second monthly update for KISS. This post will be
 quite a long one, we've seen some nice changes this month and some
 great work by the Community.</description>
-<link>https://kisslinux.xyz/blog/20200525a</link>
-<guid isPermaLink="true">https://kisslinux.xyz/blog/20200525a</guid>
+<link>https://kisslinux.org/blog/20200525a</link>
+<guid isPermaLink="true">https://kisslinux.org/blog/20200525a</guid>
 <pubDate>Mon, 25 May 2020 00:00:00 +0000</pubDate>
 </item>
 <item>
 <title>09/05/2020: KISS turns 1!</title>
 <description>Today marks one year since the first commit to the KISS repositories.</description>
-<link>https://kisslinux.xyz/blog/20200509a</link>
-<guid isPermaLink="true">https://kisslinux.xyz/blog/20200509a</guid>
+<link>https://kisslinux.org/blog/20200509a</link>
+<guid isPermaLink="true">https://kisslinux.org/blog/20200509a</guid>
 <pubDate>Sat, 09 May 2020 00:00:00 +0000</pubDate>
 </item>
 <item>
 <title>26/04/2020: This month in KISS (#1)</title>
 <description>First off. Apologies for the rather large delay in the release of this post. My laptop of four years decided to never again turn on. The model (Lenovo Yoga 900) is plagued with power issues which I came to know very well.</description>
-<link>https://kisslinux.xyz/blog/20200426a</link>
-<guid isPermaLink="true">https://kisslinux.xyz/blog/20200426a</guid>
+<link>https://kisslinux.org/blog/20200426a</link>
+<guid isPermaLink="true">https://kisslinux.org/blog/20200426a</guid>
 <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
 </item>
 <item>
 <title>25/03/2020: This week in KISS (#16)</title>
 <description>Hello all</description>
-<link>https://kisslinux.xyz/blog/20200325a</link>
-<guid isPermaLink="true">https://kisslinux.xyz/blog/20200325a</guid>
+<link>https://kisslinux.org/blog/20200325a</link>
+<guid isPermaLink="true">https://kisslinux.org/blog/20200325a</guid>
 <pubDate>Wed, 25 Mar 2020 00:00:00 +0000</pubDate>
 </item>
 <item>
 <title>16/03/2020: This week in KISS (#15)</title>
 <description>It's been a weird week.</description>
-<link>https://kisslinux.xyz/blog/20200316a</link>
-<guid isPermaLink="true">https://kisslinux.xyz/blog/20200316a</guid>
+<link>https://kisslinux.org/blog/20200316a</link>
+<guid isPermaLink="true">https://kisslinux.org/blog/20200316a</guid>
 <pubDate>Mon, 16 Mar 2020 00:00:00 +0000</pubDate>
 </item>
 <item>
@@ -76,145 +76,145 @@ great work by the Community.</description>
 <description>This week I worked on reducing the size of KISS' installation
 and rootfs tarball. This involved a myriad of different changes.
 The size shrunk from 47.7MB to the new size of 26.7MB.</description>
-<link>https://kisslinux.xyz/blog/20200309a</link>
-<guid isPermaLink="true">https://kisslinux.xyz/blog/20200309a</guid>
+<link>https://kisslinux.org/blog/20200309a</link>
+<guid isPermaLink="true">https://kisslinux.org/blog/20200309a</guid>
 <pubDate>Mon, 09 Mar 2020 00:00:00 +0000</pubDate>
 </item>
 <item>
 <title>03/03/2020: This week in KISS (#13)</title>
 <description>This week I worked on slimming down the official repositories.</description>
-<link>https://kisslinux.xyz/blog/20200303a</link>
-<guid isPermaLink="true">https://kisslinux.xyz/blog/20200303a</guid>
+<link>https://kisslinux.org/blog/20200303a</link>
+<guid isPermaLink="true">https://kisslinux.org/blog/20200303a</guid>
 <pubDate>Tue, 03 Mar 2020 00:00:00 +0000</pubDate>
 </item>
 <item>
 <title>24/02/2020: This week in KISS (#12)</title>
 <description>A thankfully quiet week this one was. The regular old package updates and a lot of new documentation.</description>
-<link>https://kisslinux.xyz/blog/20200224a</link>
-<guid isPermaLink="true">https://kisslinux.xyz/blog/20200224a</guid>
+<link>https://kisslinux.org/blog/20200224a</link>
+<guid isPermaLink="true">https://kisslinux.org/blog/20200224a</guid>
 <pubDate>Mon, 24 Feb 2020 00:00:00 +0000</pubDate>
 </item>
 <item>
-<title>18/02/2020: kisslinux.xyz</title>
+<title>18/02/2020: kisslinux.org</title>
 <description>I wrote a little about the new website in my weekly post
 yesterday but felt the need to write something in depth
 about it.</description>
-<link>https://kisslinux.xyz/blog/20200218a</link>
-<guid isPermaLink="true">https://kisslinux.xyz/blog/20200218a</guid>
+<link>https://kisslinux.org/blog/20200218a</link>
+<guid isPermaLink="true">https://kisslinux.org/blog/20200218a</guid>
 <pubDate>Tue, 18 Feb 2020 00:00:00 +0000</pubDate>
 </item>
 <item>
 <title>17/02/2020: This week in KISS (#11)</title>
 <description>Website redesign #1023 is complete.</description>
-<link>https://kisslinux.xyz/blog/20200217a</link>
-<guid isPermaLink="true">https://kisslinux.xyz/blog/20200217a</guid>
+<link>https://kisslinux.org/blog/20200217a</link>
+<guid isPermaLink="true">https://kisslinux.org/blog/20200217a</guid>
 <pubDate>Mon, 17 Feb 2020 00:00:00 +0000</pubDate>
 </item>
 <item>
 <title>09/02/2020: This week in KISS (#10)</title>
 <description>More package manager goodies this week.</description>
-<link>https://kisslinux.xyz/blog/20200209a</link>
-<guid isPermaLink="true">https://kisslinux.xyz/blog/20200209a</guid>
+<link>https://kisslinux.org/blog/20200209a</link>
+<guid isPermaLink="true">https://kisslinux.org/blog/20200209a</guid>
 <pubDate>Sun, 09 Feb 2020 00:00:00 +0000</pubDate>
 </item>
 <item>
 <title>02/02/2020: This week in KISS (#9)</title>
 <description>Alternatives!</description>
-<link>https://kisslinux.xyz/blog/20200202a</link>
-<guid isPermaLink="true">https://kisslinux.xyz/blog/20200202a</guid>
+<link>https://kisslinux.org/blog/20200202a</link>
+<guid isPermaLink="true">https://kisslinux.org/blog/20200202a</guid>
 <pubDate>Sun, 02 Feb 2020 00:00:00 +0000</pubDate>
 </item>
 <item>
 <title>25/01/2020: This week in KISS (#8)</title>
 <description>More fun stuff this week.</description>
-<link>https://kisslinux.xyz/blog/20200125a</link>
-<guid isPermaLink="true">https://kisslinux.xyz/blog/20200125a</guid>
+<link>https://kisslinux.org/blog/20200125a</link>
+<guid isPermaLink="true">https://kisslinux.org/blog/20200125a</guid>
 <pubDate>Sat, 25 Jan 2020 00:00:00 +0000</pubDate>
 </item>
 <item>
 <title>18/01/2020: This week in KISS (#7)</title>
 <description>Lots of interesting changes this week. A big thank you to everyone involved.</description>
-<link>https://kisslinux.xyz/blog/20200118a</link>
-<guid isPermaLink="true">https://kisslinux.xyz/blog/20200118a</guid>
+<link>https://kisslinux.org/blog/20200118a</link>
+<guid isPermaLink="true">https://kisslinux.org/blog/20200118a</guid>
 <pubDate>Sat, 18 Jan 2020 00:00:00 +0000</pubDate>
 </item>
 <item>
 <title>11/01/2020: This week in KISS (#6)</title>
 <description>The focus this week was on increasing the portability of the boot scripts. This involved adding new "generic" hooks and removing any non-portable flags.</description>
-<link>https://kisslinux.xyz/blog/20200111a</link>
-<guid isPermaLink="true">https://kisslinux.xyz/blog/20200111a</guid>
+<link>https://kisslinux.org/blog/20200111a</link>
+<guid isPermaLink="true">https://kisslinux.org/blog/20200111a</guid>
 <pubDate>Sat, 11 Jan 2020 00:00:00 +0000</pubDate>
 </item>
 
 <item>
 <title>02/01/2020: This week in KISS (#5)</title>
 <description></description>
-<link>https://kisslinux.xyz/blog/20200102a</link>
-<guid isPermaLink="true">https://kisslinux.xyz/blog/20200102a</guid>
+<link>https://kisslinux.org/blog/20200102a</link>
+<guid isPermaLink="true">https://kisslinux.org/blog/20200102a</guid>
 <pubDate>Thu, 02 Jan 2020 00:00:00 +0000</pubDate>
 </item>
 
 <item>
 <title>11/12/2019: This week in KISS (#4)</title>
 <description>Another quiet week.</description>
-<link>https://kisslinux.xyz/blog/20191211a</link>
-<guid isPermaLink="true">https://kisslinux.xyz/blog/20191211a</guid>
+<link>https://kisslinux.org/blog/20191211a</link>
+<guid isPermaLink="true">https://kisslinux.org/blog/20191211a</guid>
 <pubDate>Wed, 11 Dec 2019 00:00:00 +0000</pubDate>
 </item>
 
 <item>
 <title>02/12/2019: This week in KISS (#3)</title>
 <description>Another quiet week.</description>
-<link>https://kisslinux.xyz/blog/20191202a</link>
-<guid isPermaLink="true">https://kisslinux.xyz/blog/20191202a</guid>
+<link>https://kisslinux.org/blog/20191202a</link>
+<guid isPermaLink="true">https://kisslinux.org/blog/20191202a</guid>
 <pubDate>Mon, 02 Dec 2019 00:00:00 +0000</pubDate>
 </item>
 
 <item>
 <title>24/11/2019: This week in KISS (#2)</title>
 <description>This was a relatively quiet week. I took a much needed break and focused solely on updating packages.</description>
-<link>https://kisslinux.xyz/blog/20191124a</link>
-<guid isPermaLink="true">https://kisslinux.xyz/blog/20191124a</guid>
+<link>https://kisslinux.org/blog/20191124a</link>
+<guid isPermaLink="true">https://kisslinux.org/blog/20191124a</guid>
 <pubDate>Mon, 24 Nov 2019 00:00:00 +0000</pubDate>
 </item>
 
 <item>
 <title>17/11/2019: This week in KISS (#1)</title>
 <description>Welcome to the first "This week in KISS"! The aim of these posts will be to highlight the development of KISS week by week to hopefully give a better look at the overall status of the project.</description>
-<link>https://kisslinux.xyz/blog/20191117a</link>
-<guid isPermaLink="true">https://kisslinux.xyz/blog/20191117a</guid>
+<link>https://kisslinux.org/blog/20191117a</link>
+<guid isPermaLink="true">https://kisslinux.org/blog/20191117a</guid>
 <pubDate>Mon, 17 Nov 2019 00:00:00 +0000</pubDate>
 </item>
 
 <item>
 <title>04/10/2019: I've gone to great lengths for this silence</title>
 <description>I’ve spent a lot of time ensuring this website remains small, simple and fast. To quote Futurama “When You Do Things Right, People Won’t Be Sure You’ve Done Anything at All”. I’ve gone to great lengths for this silence.</description>
-<link>https://kisslinux.xyz/blog/20191004a</link>
-<guid isPermaLink="true">https://kisslinux.xyz/blog/20191004a</guid>
+<link>https://kisslinux.org/blog/20191004a</link>
+<guid isPermaLink="true">https://kisslinux.org/blog/20191004a</guid>
 <pubDate>Mon, 04 Nov 2019 00:00:00 +0000</pubDate>
 </item>
 
 <item>
 <title>28/08/2019: Why does GTK3 Firefox require GTK2?</title>
 <description>Firefox only supports Linux builds with GTK3 for some time now, however GTK2 is still a mandatory dependency. It turns out that GTK2 is required for NPAPI plugins and the...</description>
-<link>https://kisslinux.xyz/blog/20190828b</link>
-<guid isPermaLink="true">https://kisslinux.xyz/blog/20190828b</guid>
+<link>https://kisslinux.org/blog/20190828b</link>
+<guid isPermaLink="true">https://kisslinux.org/blog/20190828b</guid>
 <pubDate>Wed, 28 Aug 2019 00:00:00 +0000</pubDate>
 </item>
 
 <item>
 <title>28/08/2019: Firefox 69 now fully depends on dbus</title>
 <description>The upcoming Firefox release now depends on dbus and this dependency can’t be disabled. The usual --disable-dbus mozconfig option has no effect. Until this is fixed upstream or we find...</description>
-<link>https://kisslinux.xyz/blog/20190828a</link>
-<guid isPermaLink="true">https://kisslinux.xyz/blog/20190828a</guid>
+<link>https://kisslinux.org/blog/20190828a</link>
+<guid isPermaLink="true">https://kisslinux.org/blog/20190828a</guid>
 <pubDate>Wed, 28 Aug 2019 00:00:00 +0000</pubDate>
 </item>
 
 <item>
 <title>27/08/2019: Python 2 will never die</title>
 <description>When developing KISS I wanted to ship Python 3 and try to avoid the dependence on Python 2. This ended up becoming an impossibility due to two offending packages, Firefox...</description>
-<link>https://kisslinux.xyz/blog/20190827a</link>
-<guid isPermaLink="true">https://kisslinux.xyz/blog/20190827a</guid>
+<link>https://kisslinux.org/blog/20190827a</link>
+<guid isPermaLink="true">https://kisslinux.org/blog/20190827a</guid>
 <pubDate>Tue, 27 Aug 2019 00:00:00 +0000</pubDate>
 </item>
 

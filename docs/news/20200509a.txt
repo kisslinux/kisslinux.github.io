@@ -1,5 +1,5 @@
 Subject	GCC 10.1.0 kernel issue
-From	Dylan Araps &lt;dylan@kisslinux.xyz&gt;
+From	Dylan Araps &lt;dylan@kisslinux.org&gt;
 Date	Wed, 9 May 2020 01:05:09 +0100
 
 The kernel compiled with GCC 10.1.0 may crash on boot. This doesn't
@@ -43,5 +43,5 @@ the boot up process.
 Notes:
 
 - Reported to apply cleanly to kernel version 5.6.11.
-- Hop on IRC, Reddit or send me an email (dylan@kisslinux.xyz) if you
+- Hop on IRC, Reddit or send me an email (dylan@kisslinux.org) if you
   require any assistance. I'm here to help.

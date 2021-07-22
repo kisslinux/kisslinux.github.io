@@ -1,5 +1,5 @@
 Subject Update
-From	Dylan Araps &lt;dylan@kisslinux.xyz&gt;
+From	Dylan Araps &lt;dylan@kisslinux.org&gt;
 Date	Sat, 3 July 2021 03:03:03 +0100
 
 Hello,

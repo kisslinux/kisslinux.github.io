@@ -10,7 +10,7 @@
 +-------------------------------------+
 
 Subject	KISS LINUX
-From	Dylan Araps &lt;dylan@kisslinux.xyz&gt;
+From	Dylan Araps &lt;dylan@kisslinux.org&gt;
 Date	Sun, 11 Jul 2020 15:00:00 +0100
 
 Hello,
@@ -37,7 +37,7 @@ The distribution
 ________________________________________________________________________________
 
 * As stated in previous posts, development will continue as normal from now on.
-  The official KISS Linux website is https://kisslinux.xyz and development is at
+  The official KISS Linux website is https://kisslinux.org and development is at
   its original location on GitHub ($/kisslinux).
 
 * The IRC channel and subreddit will remain community operated (and are
