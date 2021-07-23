@@ -1,0 +1,17 @@
+Subject A new home
+From	Dylan Araps &lt;dylan@kisslinux.org&gt;
+Date	Sat, 3 July 2021 03:03:03 +0100
+
+The KISS Linux website is now at https://kisslinux.org thanks to the generosity
+of the domain's previous owner. I received an email yesterday with an offer to
+donate the domain to the project of which I gracefully accepted.
+
+The .xyz domain will no longer be used. A 301 redirect has been setup to send
+traffic to the new domain. The email on the .xyz domain will remain active for
+a short while.
+
+I want to publicly thank this individual and their act of kindness.
+KISS Linux now has a new home.
+
+
+    Dylan

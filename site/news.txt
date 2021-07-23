@@ -3,6 +3,7 @@ ________________________________________________________________________________
 
 RSS Feed available here: @/news/news.xml
 
+- @/news/20210723a A new home
 - @/news/20210715a gzip -> pigz
 - @/news/20210708a Breaking changes
 - @/news/20210703a Update
