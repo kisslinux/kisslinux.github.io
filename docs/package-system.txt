@@ -13,7 +13,7 @@ comprise the system are as follows.
 | checksums        | DSL [3]  | No         | No       | No          | No [1]   |
 | depends          | DSL [3]  | No         | Yes      | Yes         | No       |
 | sources          | DSL [3]  | No         | Yes      | Yes         | No       |
-| version          | DSL [3]  | No         | No       | No          | Yes      |
+| version          | DSL [3]  | No         | [4]      | [4]         | Yes      |
 |                  |          |            |          |             |          |
 | pre-remove       | Any      | Yes [2]    | N/A      | N/A         | No       |
 | post-install     | Any      | Yes [2]    | N/A      | N/A         | No       |
@@ -31,6 +31,9 @@ rows by newline and columns by whitespace.
 
 [3] The file's format is a domain specific language with its own rules.
     https://en.wikipedia.org/wiki/Domain-specific_language
+
+[4] Tooling should only read the first line of the version file. Any lines
+    following should be ignored (allowing one to store arbitrary information).
 
 
 [0.0] Index
@@ -68,7 +71,7 @@ toolchain defaults are as follows: AR=ar, CC=cc, CXX=c++, NM=nm, RANLIB=ranlib
 |  1  #!/bin/sh -e                                                             |
 |  2                                                                           |
 |  3  # Disable stripping (use if needed).                                     |
-|  4  :> nostrip                                                               |
+|  4  :&gt; nostrip                                                               |
 |  5                                                                           |
 |  6  ./configure \                                                            |
 |  7      --prefix=/usr                                                        |
@@ -203,7 +206,7 @@ should be used to perform any required post-install steps or to display notices.
 |                                                                              |
 |  1 #!/bin/sh -e                                                              |
 |  2                                                                           |
-|  3 cat <<EOF                                                                 |
+|  3 cat &lt;&lt;EOF                                                           |
 |  4                                                                           |
 |  5 The commands zcat, unpigz and gunzip were merely symbolic                 |
 |  6 links to the pigz binary. They have been removed. To gain                 |

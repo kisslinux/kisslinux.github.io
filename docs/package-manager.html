@@ -1,8 +1,8 @@
 <!doctype html><html lang=en><link href='data:image/gif;base64,R0lGODlhEAAQAPH/AAAAAP8AAP8AN////yH5BAUAAAQALAAAAAAQABAAAAM2SLrc/jA+QBUFM2iqA2bAMHSktwCCWJIYEIyvKLOuJt+wV69ry5cfwu7WCVp2RSPoUpE4n4sEADs=' rel=icon><title>KISS - package-manager</title><meta charset=utf-8><meta name=Description content="An independent Linux(R) distribution with a focus on simplicity and the concept of less is more."><meta name=viewport content="width=device-width,initial-scale=1"><style>body{overflow-y:scroll;font:16px monospace,monospace}img,.c{display:table-cell;max-width:999px;max-width:80ch}pre{margin:0;overflow-x:hidden}@media(max-width:999px){.c{display:block;font-size:1.94vw}}@media(prefers-color-scheme:dark){body{background:#000;color:#fff}a{color:#6CF}}</style><div style="display:table;margin:16px auto"><div class=c><pre style="top:0;position:sticky;user-select:none;padding-right:64px">
-<a href=/ style="text-decoration:none;color:#a00"><b>
+<a href=/ style="text-decoration:none;color:#a00">
 |/
 |\ISS LINUX™
-</b></a>
+</a>
 <a href=/news>News (20210723a)</a>
 <a href=/blog>Blog</a>
 
@@ -218,13 +218,17 @@ features or conditionally do things on a per-package basis.
     | pre-install   | Type   | Package  | Extracted package  |                 |
     | pre-remove    | Type   | Package  | Installed database |                 |
     | pre-source    | Type   | Package  | Verbatim source    | Resolved source |
-    | pre-update    | Type   | <a href=#7>[7]</a>      |                    |                 |
+    | pre-update    | Type   | <a href=#7>[7]</a> <a href=#8>[8]</a>  |                    |                 |
     | queue-status  | Type   | Package  | Number in queue    | Total in queue  |
     |               |        |          |                    |                 |
     +---------------+--------+----------+--------------------+-----------------+
 
     <span id=7><a href=#7>[7]</a></span> The -update hooks start in the current repository. In other words, you
         can operate on the repository directly or grab the value from '$PWD'.
+
+    <span id=8><a href=#8>[8]</a></span> The second argument of pre-update is '0' if the current user owns the
+        repository and '1' if they do not. In the latter case, privilege
+        escalation is required to preserve ownership.
 
 
 <span id=5.0><a href=#5.0>[5.0]</a></span> Package Manager Extensions
