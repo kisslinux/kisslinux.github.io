@@ -59,7 +59,7 @@ wiki_nav() {
 }
 
 page() {
-    pp=${page%/*} title=${page##*/} title=${title%%.txt}
+    pp=${page%/*}; title=${page##*/}; title=${title%%.txt}
 
     mkdir -p "docs/$pp"
 
