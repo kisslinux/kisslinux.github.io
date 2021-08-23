@@ -17,6 +17,10 @@ ________________________________________________________________________________
   * Can-The-Distribution-Package-SOFTWARE-For-Me?--------------------------[005]
   * Does-DRM-Work-In-Web-Browsers?-----------------------------------------[006]
 
+* Website------------------------------------------------------------------[007]
+  * Where-Is-Dark-Mode?----------------------------------------------------[008]
+  * What-Font-Does-This-Website-Use?---------------------------------------[009]
+
 
 [001] Distribution
 ________________________________________________________________________________
@@ -61,4 +65,21 @@ ________________________________________________________________________________
   No. The proprietary DRM is incompatible with the distribution's choice of C
   library (musl) and will not run. Nothing can be done to fix this as the DRM
   is not open source.
+
+
+[007] Website
+________________________________________________________________________________
+
+
+--[008]-Where-Is-Dark-Mode?-----------------------------------------------------
+
+  This website supports dark mode via 'prefers-color-scheme'.
+
+  https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme
+
+
+--[009]-What-Font-Does-This-Website-Use?----------------------------------------
+
+  This website uses your browser's default monospace font.
+
 
