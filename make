@@ -50,11 +50,14 @@ page() {
 main() {
     rm -rf docs && mkdir -p docs
 
-    [ -z "$KISS_REPO" ] ||
+    [ -z "$KISS_REPO" ] || {
+        mkdir -p site/wiki/pkg
+
         for pkg in "$KISS_REPO"/*/*/; do
             pkg=${pkg%%/}
             cp -Lf "$pkg/README" "site/wiki/pkg/${pkg##*/}.txt" || :
         done
+    }
 
     (cd site && find . ! -type d) |
 
