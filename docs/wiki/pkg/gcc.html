@@ -1,0 +1,91 @@
+<!doctype html><html lang=en><link href='data:image/gif;base64,R0lGODlhEAAQAPH/AAAAAP8AAP8AN////yH5BAUAAAQALAAAAAAQABAAAAM2SLrc/jA+QBUFM2iqA2bAMHSktwCCWJIYEIyvKLOuJt+wV69ry5cfwu7WCVp2RSPoUpE4n4sEADs=' rel=icon><title>KISS - gcc</title><meta charset=utf-8><meta name=Description content="Kiss Linux is a meta-distribution for the x86_64 architecture with a focus on simplicity, sustainability and user freedom. The distribution was created by Dylan Araps who also acts as its sole developer."><meta name=viewport content="width=device-width,initial-scale=1"><style>body{overflow-y:scroll;font:16px monospace,monospace}img,#c{display:table-cell;max-width:999px;max-width:80ch}pre{margin:0;overflow-x:hidden}@media(max-width:999px){#c{display:block;font-size:1.94vw}}@media(prefers-color-scheme:dark){body{background:#000;color:#fff}a{color:#6CF}}</style><div style="display:table;margin:16px auto">
+<div id=c><pre>
+<div style="display:inline-block"><a href=/ style="text-decoration:none;color:#a00">
+|/
+|\ISS</a>               <a href=/tidbits>Tidbits</a>  <a href=/post>Posts</a>  <a href=/answers>Answers</a>  <a href=/install>Install</a>  <a href=/wiki>Wiki</a>  <a href=/contact>Contact</a>  <a href=/donate>Donate</a>  </div><div style="image-rendering:crisp-edges;display:inline-block;vertical-align:sub"><a href=https://github.com/kisslinux/><img src="data:image/gif;base64,R0lGODlhEAAQAPABAAAAAP//ACH5BAUIAAEALAAAAAAQABAAAAIojA2px6G/GJzgJASxbrI+jmVgGI3TSF4oZS6emmqw823dTFcWbklNAQA7"></a></div>
+
+
+GCC
+________________________________________________________________________________
+
+The GNU Compiler Collection (GCC) is an optimizing compiler produced by the GNU
+Project supporting various programming languages, hardware architectures and
+operating systems. The Free Software Foundation (FSF) distributes GCC as free
+software under the GNU General Public License (GNU GPL). GCC is a key component
+of the GNU toolchain and the standard compiler for most projects related to GNU
+and the Linux kernel. With roughly 15 million lines of code in 2019, GCC is one
+of the biggest open source programs in existence. It has played an important
+role in the growth of free software, as both a tool and an example. <a href=#0>[0]</a>
+
+Upstream: <a href=https://gcc.gnu.org/>https://gcc.gnu.org/</a>
+
+
+<span id=000><a href=#000>[000]</a></span> Index
+________________________________________________________________________________
+
+* Installation-------------------------------------------------------------<a href=#001>[001]</a>
+* Setup--------------------------------------------------------------------<a href=#002>[002]</a>
+* Usage--------------------------------------------------------------------<a href=#003>[003]</a>
+* Troubleshooting----------------------------------------------------------<a href=#004>[004]</a>
+  * C/CXX-Compiler-Cannot-Create-Executables-------------------------------<a href=#005>[005]</a>
+* References---------------------------------------------------------------<a href=#006>[006]</a>
+
+
+<span id=001><a href=#001>[001]</a></span> Installation
+________________________________________________________________________________
+
++------------------------------------------------------------------------------+
+|                                                                              |
+|  $ kiss b gcc                                                                |
+|                                                                              |
++------------------------------------------------------------------------------+
+
+
+<span id=002><a href=#002>[002]</a></span> Setup
+________________________________________________________________________________
+
+GCC is the default compiler and is installed by default. No further setup should
+be necessary short of compilation flags.
+
+
+<span id=003><a href=#003>[003]</a></span> Usage
+________________________________________________________________________________
+
+Refer to the manual pages and command help output.
+
+
+<span id=004><a href=#004>[004]</a></span> Troubleshooting
+________________________________________________________________________________
+
+
+--<span id=005><a href=#005>[005]</a></span>-C/CXX-Compiler-Cannot-Create-Executables--------------------------------
+
+  This is almost always an error in your CFLAGS/CXXFLAGS. Ensure that you have
+  used -ONUM (CAPITAL O) and not (lowercase o) or (zero 0). If this does not fix
+  the issue, try building the package with a cleaner environment.
+
+  +----------------------------------------------------------------------------+
+  |                                                                            |
+  |  $ CFLAGS= CXXFLAGS= LDFLAGS= kiss b pkg                                   |
+  |                                                                            |
+  +----------------------------------------------------------------------------+
+
+  If the issue still persists, open a bug at $/<a href=https://github.com/kisslinux/repo>kisslinux/repo</a>
+
+
+<span id=006><a href=#006>[006]</a></span> References
+________________________________________________________________________________
+
+<span id=0><a href=#0>[0]</a></span> <a href=https://en.wikipedia.org/wiki/GNU_Compiler_Collection>https://en.wikipedia.org/wiki/GNU_Compiler_Collection</a>
+
+
+
+________________________________________________________________________________
+
+Dylan Araps (C) 2019-2021
+
+The registered trademark Linux(R) is used pursuant to a sublicense from the
+Linux Foundation, the exclusive licensee of Linus Torvalds, owner of the mark
+on a world­wide basis.
+
+</pre></div></div>

@@ -1,21 +1,21 @@
 +------------------------------------------------------------------------------+
 |                                                                              |
-|                                                   (Created by $/dylanaraps)  |
+|                                                    (Created by <a href="https://github.com/dylanaraps">Dylan Araps</a>)  |
 |                                                                              |
 |                                                                              |
 |                                                                              |
 |          |/                                                                  |
-|          |\ISS LINUX                                                         |
+|          |\ISS LINUX™                                                        |
 |                                                                              |
-|          An independent Linux(R) distribution with a focus on                |
-|          simplicity and the concept of less is more.                         |
+|          A Linux(R) meta-distribution for the x86_64 architecture            |
+|          with a focus on simplicity, sustainability and user freedom.        |
 |                                                                              |
 |                                                                              |
 |                                                                     ____     |
 |                                                                    |    |    |
 |          .--------------------------------------------------------.|    |    |
 |          |                                                         |    |    |
-|          |   "...all progress depends on the unreasonable man."    |    |    |
+|          |   "whatsoever a man soweth, that shall he also reap."   |    |    |
 |          |                                                       ._|____|_.  |
 |          '-------------------------------------------------------\\|o_o |    |
 |                                                                    |:_/ |    |
@@ -23,43 +23,155 @@
 |                                                                  (|     | )  |
 +------------------------------------------------------------------------------+
 
+* Overview-----------------------------------------------------------------[100]
+* Software-Distribution-Model----------------------------------------------[200]
+* The-Official-Repositories------------------------------------------------[300]
+* Package-System-----------------------------------------------------------[400]
+* Package-Manager----------------------------------------------------------[500]
+* Further-Reading----------------------------------------------------------[600]
 
-OVERVIEW
+
+[100] Overview
 ________________________________________________________________________________
 
+Kiss Linux is a meta-distribution for the x86_64 architecture with a focus on
+simplicity, sustainability and user freedom. The project was created by
+Dylan Araps who also acts as its sole developer.
 
-* STATIC PACKAGING SYSTEM
+The distribution is designed to be maintainable by a single person and to this
+end has no infrastructure, backend or monetary running costs. Further, all
+installations of KISS contain everything needed to continue its development.
 
-  The package format is entirely static. A series of plain-text files with
-  fields separated by lines and spaces. Easily parseable via any programming
-  language or with basic UNIX utilities.
+The user is provided with three things.
 
-  More information: @/package-system $/kisslinux/repo
+1. The Official Repositories - An extensible base including a fully X11-less
+   Wayland environment, modern web browser, media player and everything needed
+   for this system to rebuild (and update) itself (in under 120 packages).
 
+2. The Package Management System - A pleasant to work with and concise
+   package format powered by a small, portable and self-contained package
+   manager (written in POSIX shell).
 
-* PORTABLE PACKAGE MANAGER
-
-  The package manager is written in less than 1000 lines of POSIX shell with
-  a large emphasis on portability. The only requirements are a POSIX compliant
-  environment, curl and git.
-
-  More information: @/package-manager $/kisslinux/kiss
-
-
-* BUS FACTOR OF ZERO
-
-  The distribution is designed to be maintainable by a single person. There is
-  no infrastructure and the entire distribution is merely a few Git
-  repositories. The distribution's upstream is entirely optional.
-
-  More information: @/faq#3.0 https://en.wikipedia.org/wiki/Bus_factor
+3. The Freedom To Go It Alone - Users can choose to maintain their system
+   themselves thus freeing them from all external influence. The system then
+   belongs to the user and they become totally self-reliant.
 
 
-* USER CHOICE
+[200] Software Distribution Model
+________________________________________________________________________________
 
-  There is no lock-in to specific software. The user has the ability to mix and
-  match any shell, core utilities, init system, device manager and more. The
-  alternatives system enables this down to file level.
+The distribution is "rolling release" (install once, update perpetually) with
+the compilation process taking place on the user's machine. Updates to the
+distribution merely contain instructions for how each package is built.
 
-  More information: @/package-manager#3.2
+This model gives the user control over the compilation process while also
+removing the need for the distribution to have the necessary infrastructure
+to churn out and distribute binaries on a daily basis.
+
+
+[300] The Official Repositories
+________________________________________________________________________________
+
+The problem with monolithic repositories is that they have no clear end. They
+have infinite growth possibility, very broad scope and rely on volunteer effort
+to keep everything fresh. They become harder to maintain over time and unless
+their growth is checked, will eventually become unsustainable.
+
+Kiss Linux's repositories are instead designed to be small and understandable.
+Instead of attempting to package the world they act as an extensible base which
+users can build upon to suit their needs.
+
+To best illustrate, here is the entire thing (121 components) (18/08/2021).
+
+baseinit baselayout binutils bison busybox curl flex gcc git grub kiss
+linux-headers m4 make musl openssl pigz xz zlib adwaita-icon-theme alsa-lib
+alsa-utils atk bzip2 cairo cbindgen ccache clang cmake dhcpcd dosfstools
+e2fsprogs efibootmgr efivar eiwd expat ffmpeg firefox firefox-privacy
+fontconfig freetype-harfbuzz gdk-pixbuf glib gnugrep gnupg1 gtk+3
+hicolor-icon-theme intel-vaapi-driver json-c kirc lame libass libelf libffi
+libjpeg-turbo libogg libpng libtheora libudev-zero libva libva-utils libvorbis
+libvpx libwebp llvm man-pages mandoc mdevd mesa meson mold mpv mutt nasm ncurses
+nodejs opendoas openresolv openssh opus pango pcre perl pkgconf python rust
+samurai scdoc sqlite ssu strace tiff ttf-croscore tzdata util-linux vim
+wpa_supplicant x264 x265 xvidcore zstd foot foot-pgo grim libdrm libinput
+libpciaccess libseat libxkbcommon pixman slurp sway sway-no-seat sway-tiny
+wayland wayland-protocols wbg wl-clipboard wlroots wlsunset xkeyboard-config
+
+The distribution explicitly excludes logind, udev, dbus, systemd, polkit,
+pulseaudio, electron and all desktop environments. This software is either
+with lock-in, too complex or otherwise out of scope.
+
+Further reading: @/wiki
+
+
+[400] Package System
+________________________________________________________________________________
+
+The system is based around directories and files. A repository (directory)
+contains packages (directories) which contain information (files). Repositories
+can be stored anywhere and their use is determined by a search path.
+
+As software is compiled locally, there is no line drawn between the "frontend"
+and "backend", they are one and the same. Learning the package management
+system also teaches you how to develop the distribution.
+
+* repository/
+    * package-a/
+        * build
+        * checksums
+        * depends
+        * sources
+        * version
+    * package-b/
+        * build
+        * checksums
+        * patches/
+            * 0001-fix-segfault.patch
+            * 0002-no-x11.patch
+        * sources
+        * version
+
+Each file serves a specific purpose and files can be omitted when the package
+has no use for them. Files can be symbolically linked between packages to
+deduplicate otherwise identical information.
+
+Further reading: @/wiki/package-system
+
+
+[500] Package Manager
+________________________________________________________________________________
+
+The package manager (also named 'kiss') is a small, self-contained and POSIX
+compliant shell script written with portability in mind. It should run in all
+environments with a POSIX shell and core utilities.
+
+There is no configuration file and no weird arguments to memorize. Interaction
+is done via "actions" with each action taking a list of packages to operate on.
+Each action also has a single letter alias (build == b).
+
+* kiss [a|b|c|d|i|l|r|s|u|U|v] [pkg]...
+* alternatives   List and swap alternatives
+* build          Build packages
+* checksum       Generate checksums
+* download       Download sources
+* install        Install packages
+* list           List installed packages
+* remove         Remove packages
+* search         Search for packages
+* update         Update the system and repositories
+* Upgrade        Upgrade the system
+* version        Package manager version
+
+Further reading: @/wiki/package-manager
+
+
+[600] Further Reading
+________________________________________________________________________________
+
+- @/answers               - Answers to the most common questions.
+- @/doc                   - General distribution documentation.
+- @/doc/package-system    - The package management system in detail.
+- @/doc/package-manager   - The package manager's documentation.
+- @/doc/website           - About the website itself.
+- @/contact               - Get in touch with Kiss Linux.
 

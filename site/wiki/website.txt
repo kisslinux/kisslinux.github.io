@@ -1,0 +1,56 @@
+Website
+________________________________________________________________________________
+
+This website is rather unique. Each page is plain-text which is inserted into
+some &lt;pre&gt; tags in a template. The template also contains the CSS,
+favicon, GitHub icon, content and HTML. Every page is entirely self-contained
+and a page load of this website is only a single network request.
+
+
+[000] Index
+________________________________________________________________________________
+
+* Favicon ---------------------------------------------------------------- [100]
+  * Why Use A Favicon At All? -------------------------------------------- [101]
+* GitHub Icon                                                              [200]
+
+
+[100] Favicon
+________________________________________________________________________________
+
+The favicon is a base64 encoded gif image which I created. It is designed to
+take up as little space as possible.
+
+&lt;link href='data:image/gif;base64,R0lGODlhEAAQAPH/AAAAAP8AAP8AN////yH5BAUAAAQ
+ALAAAAAAQABAAAAM2SLrc/jA+QBUFM2iqA2bAMHSktwCCWJIYEIyvKLOuJt+wV69ry5cfwu7WCVp2RSP
+oUpE4n4sEADs=' rel=icon&gt;
+
+
+  [101] Why Use A Favicon At All?
+  ____________________________________________________________________________
+
+  The funny thing about web browsers is that they will assume a favicon exists
+  despite this possibly being false. Browsers will try to load it and you'll
+  end up with error 404 and a wasted request.
+
+  Providing some kind of inline favicon is the only way to quiet the browser
+  and prevent it from trying to load something that does not exist. Prior to
+  creating the above favicon, this website used the following snippet.
+
+  &lt;link href=data:, rel=icon&gt;
+
+  Through a lot of tinkering I found that this is the smallest possible (inline)
+  favicon. This successfully shushes the web request in all tested browsers.
+
+
+[200] GitHub Icon
+________________________________________________________________________________
+
+The GitHub icon in the navigation bar is also a base64 encoded gif image (of my
+creation). It is a 16x16 version of the GitHub logo.
+
+&lt;img src="data:image/gif;base64,R0lGODlhEAAQAPABAAAAAP//ACH5BAUIAAEALAAAAAAQ
+ABAAAAIojA2px6G/GJzgJASxbrI+jmVgGI3TSF4oZS6emmqw823dTFcWbklNAQA7"&gt;
+
+
+

@@ -1,0 +1,26 @@
+Manual Pages
+________________________________________________________________________________
+
+A man page (short for manual page) is a form of software documentation usually
+found on a Unix or Unix-like operating system. Topics covered include computer
+programs (including library and system calls), formal standards and conventions,
+and even abstract concepts. A user may invoke a man page by issuing the man
+command. [0]
+
+To view manual pages, first install the mandoc package.
+
++------------------------------------------------------------------------------+
+|                                                                              |
+|  $ kiss b mandoc                                                             |
+|                                                                              |
++------------------------------------------------------------------------------+
+
+To obtain manuals for the C library and POSIX core utilities, install the
+man-pages package. Other packages may or may not provide manuals, the current
+status of this effort can be seen here. $/kisslinux/repo/issues/273
+
+
+References
+________________________________________________________________________________
+
+[0] https://en.wikipedia.org/wiki/Man_page

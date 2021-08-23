@@ -1,0 +1,9 @@
+Donate
+________________________________________________________________________________
+
+Your donations fund development of the distribution and renewal of its domain
+name + email hosting. The amount of time I (Dylan Araps) can dedicate to the
+project is dependent on your support.
+
+- <a href='https://patreon.com/dyla'>Patreon</a>
+- <a href='https://paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=V7QNJNKS3WYVS'>Paypal</a>

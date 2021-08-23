@@ -9,12 +9,3 @@
 
                                PAGE NOT FOUND.
 
-INDEX
-________________________________________________________________________________
-
-@/package-system          @/wiki            @/screenshots         @/testimonials
-@/package-manager         @/install         @/donate              @/faq
-@/contact
-
-
-

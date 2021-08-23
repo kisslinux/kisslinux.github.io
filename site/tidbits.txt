@@ -1,0 +1,26 @@
+Tidbits
+________________________________________________________________________________
+
+Bite-sized news about Kiss Linux and its development.
+
+
+[23082021]
+________________________________________________________________________________
+
+Welcome to the new website. It is not 100% complete yet but at a stage where I
+am happy for it to replace the previous one. So, expect further changes to the
+site for a little while.
+
+The new Wiki contains a page for every package in the repositories. Some of
+these pages are rather bare but this will improve alongside the existing manual
+page effort $/kisslinux/repo/issues/273
+
+Expect more frequent updates from me about KISS in this new tidbits page. I will
+also be adding an RSS feed here for folks interested. If there are any issues
+with the new website, let me know @/contact
+
+PS The new FAQ page at @/answers needs filling in. Send me questions and
+   (if suitable) I will answer them on this page.
+
+PPS The README files for each package will be checked into the repository
+    shortly. For now they exist solely on the website.

@@ -1,0 +1,64 @@
+Answers
+________________________________________________________________________________
+
+This page aims to answer the most common questions asked about Kiss Linux. If
+your question is not listed here, an equivalent answer may exist within the
+distribution's documentation. If no answer is found, get in touch @/contact
+
+
+[000] Index
+________________________________________________________________________________
+
+* Distribution-------------------------------------------------------------[001]
+  * What-Does-"KISS"-Mean?-------------------------------------------------[002]
+
+* Software-----------------------------------------------------------------[003]
+  * Why-Is-SOFTWARE-Not-Packaged?------------------------------------------[004]
+  * Can-The-Distribution-Package-SOFTWARE-For-Me?--------------------------[005]
+  * Does-DRM-Work-In-Web-Browsers?-----------------------------------------[006]
+
+
+[001] Distribution
+________________________________________________________________________________
+
+
+--[002]-What-Does-"KISS"-Mean?--------------------------------------------------
+
+  KISS is an acronym for "Keep it simple stupid" (notice _no_ comma).
+
+  Stupid does not refer to the user. To quote Wikipedia:
+
+  > The principle is best exemplified by the story of Johnson handing a team of
+    design engineers a handful of tools, with the challenge that the jet
+    aircraft they were designing must be repairable by an average mechanic in
+    the field under combat conditions with only these tools.
+
+  > Hence, the "stupid" refers to the relationship between the way things break
+    and the sophistication available to repair them.
+
+
+[003] Software
+________________________________________________________________________________
+
+
+--[004]-Why-Is-SOFTWARE-Not-Packaged--------------------------------------------
+
+  The distribution provides users with an extensible base (including a modern
+  web browser and media player). Any software that goes beyond this goal is not
+  provided. It is expected that users build upon and extend this base (making
+  any changes necessary to suit their needs).
+
+
+--[005]-Can-The-Distribution-Package-SOFTWARE-For-Me?---------------------------
+
+  Feel free to suggest software for inclusion in the official repositories.
+  Depending on the software and its role in the system, the distribution may
+  pick it up as an official package.
+
+
+--[006]-Does-DRM-Work-In-Web-Browsers?------------------------------------------
+
+  No. The proprietary DRM is incompatible with the distribution's choice of C
+  library (musl) and will not run. Nothing can be done to fix this as the DRM
+  is not open source.
+

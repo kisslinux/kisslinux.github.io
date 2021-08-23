@@ -1,0 +1,88 @@
+<!doctype html><html lang=en><link href='data:image/gif;base64,R0lGODlhEAAQAPH/AAAAAP8AAP8AN////yH5BAUAAAQALAAAAAAQABAAAAM2SLrc/jA+QBUFM2iqA2bAMHSktwCCWJIYEIyvKLOuJt+wV69ry5cfwu7WCVp2RSPoUpE4n4sEADs=' rel=icon><title>KISS - device-management</title><meta charset=utf-8><meta name=Description content="Kiss Linux is a meta-distribution for the x86_64 architecture with a focus on simplicity, sustainability and user freedom. The distribution was created by Dylan Araps who also acts as its sole developer."><meta name=viewport content="width=device-width,initial-scale=1"><style>body{overflow-y:scroll;font:16px monospace,monospace}img,#c{display:table-cell;max-width:999px;max-width:80ch}pre{margin:0;overflow-x:hidden}@media(max-width:999px){#c{display:block;font-size:1.94vw}}@media(prefers-color-scheme:dark){body{background:#000;color:#fff}a{color:#6CF}}</style><div style="display:table;margin:16px auto">
+<div id=c><pre>
+<div style="display:inline-block"><a href=/ style="text-decoration:none;color:#a00">
+|/
+|\ISS</a>               <a href=/tidbits>Tidbits</a>  <a href=/post>Posts</a>  <a href=/answers>Answers</a>  <a href=/install>Install</a>  <a href=/wiki>Wiki</a>  <a href=/contact>Contact</a>  <a href=/donate>Donate</a>  </div><div style="image-rendering:crisp-edges;display:inline-block;vertical-align:sub"><a href=https://github.com/kisslinux/><img src="data:image/gif;base64,R0lGODlhEAAQAPABAAAAAP//ACH5BAUIAAEALAAAAAAQABAAAAIojA2px6G/GJzgJASxbrI+jmVgGI3TSF4oZS6emmqw823dTFcWbklNAQA7"></a></div>
+
+
+Device Management
+________________________________________________________________________________
+
+The distribution provides two device managers, mdev (from busybox) and mdevd.
+The user also retains the ability to run the system without the use of a device
+manager. This page will document how to setup and use the defaults.
+
+The provided configuration files also support device hotplugging for programs
+which link to libudev (via the libudev-zero package). @/<a href=/wiki/pkg/libudev-zero>pkg/libudev-zero</a> is a
+daemonless replacement for udev which works with any device manager.
+
+
+<span id=000><a href=#000>[000]</a></span> Index
+________________________________________________________________________________
+
+* Installation-------------------------------------------------------------<a href=#001>[001]</a>
+* Setup--------------------------------------------------------------------<a href=#002>[002]</a>
+  * Configuration----------------------------------------------------------<a href=#003>[003]</a>
+  * Start-The-Daemon-------------------------------------------------------<a href=#004>[004]</a>
+* References---------------------------------------------------------------<a href=#005>[005]</a>
+
+
+<span id=001><a href=#001>[001]</a></span> Installation
+________________________________________________________________________________
+
+If opting to use mdevd the package must be installed. If opting to use mdev,
+it is provided by busybox (which is part of the base system).
+
++------------------------------------------------------------------------------+
+|                                                                              |
+|  $ kiss b mdevd                                                              |
+|                                                                              |
++------------------------------------------------------------------------------+
+
+
+<span id=002><a href=#002>[002]</a></span> Setup
+________________________________________________________________________________
+
+The baseinit package supports mdev and mdevd. The only setup required is any
+additional configuration (if necessary) and to start the daemon.
+
+
+--<span id=003><a href=#003>[003]</a></span>-Configuration-----------------------------------------------------------
+
+  The default configuration files for both device managers are the same (as both
+  device managers support the same format). The majority of use cases should be
+  covered. If additional configuration is required make your modifications to
+  /etc/mdev.conf (mdev) or /etc/mdevd.conf (mdevd) accordingly.
+
+  Documentation on the device managers and configuration format is not (yet)
+  included with the distribution and can be found in the following locations.
+
+  * <a href=https://github.com/slashbeast/mdev-like-a-boss/>https://github.com/slashbeast/mdev-like-a-boss/</a>
+  * <a href=https://git.busybox.net/busybox/plain/docs/mdev.txt>https://git.busybox.net/busybox/plain/docs/mdev.txt</a>
+  * <a href=http://kanj.github.io/elfs/book/x86Musl/bootscripts/mdev.html>http://kanj.github.io/elfs/book/x86Musl/bootscripts/mdev.html</a>
+  * <a href=https://skarnet.org/software/mdevd/>https://skarnet.org/software/mdevd/</a>
+
+
+--<span id=004><a href=#004>[004]</a></span>-Start-The-Daemon--------------------------------------------------------
+
+  Both device managers provide service files compatible with the distribution's
+  default service manager. Refer to the distribution's service management
+  documentation at #/<a href=/wiki/service-management>wiki/service-management</a> for further information.
+
+
+<span id=005><a href=#005>[005]</a></span> References
+________________________________________________________________________________
+
+<span id=0><a href=#0>[0]</a></span> <a href=https://skarnet.org/software/mdevd/>https://skarnet.org/software/mdevd/</a>
+
+
+
+________________________________________________________________________________
+
+Dylan Araps (C) 2019-2021
+
+The registered trademark Linux(R) is used pursuant to a sublicense from the
+Linux Foundation, the exclusive licensee of Linus Torvalds, owner of the mark
+on a world­wide basis.
+
+</pre></div></div>

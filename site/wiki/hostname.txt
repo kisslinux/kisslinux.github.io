@@ -1,0 +1,17 @@
+Hostname
+________________________________________________________________________________
+
++----------------------------------------------------------------------------+
+|                                                                            |
+| Update the /etc/hostname file.                                             |
+|                                                                            |
+|  $ printf '%s\n' HOSTNAME > /etc/hostname                                  |
+|                                                                            |
+|                                                                            |
+| Update the /etc/hosts file.                                                |
+|                                                                            |
+|  1 127.0.0.1  HOSTNAME.localdomain  HOSTNAME                               |
+|  2 ::1        HOSTNAME.localdomain  HOSTNAME  ip6-localhost                |
+|                                                                            |
++----------------------------------------------------------------------------+
+

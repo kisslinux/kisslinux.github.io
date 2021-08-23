@@ -1,0 +1,70 @@
+Device Management
+________________________________________________________________________________
+
+The distribution provides two device managers, mdev (from busybox) and mdevd.
+The user also retains the ability to run the system without the use of a device
+manager. This page will document how to setup and use the defaults.
+
+The provided configuration files also support device hotplugging for programs
+which link to libudev (via the libudev-zero package). @/pkg/libudev-zero is a
+daemonless replacement for udev which works with any device manager.
+
+
+[000] Index
+________________________________________________________________________________
+
+* Installation-------------------------------------------------------------[001]
+* Setup--------------------------------------------------------------------[002]
+  * Configuration----------------------------------------------------------[003]
+  * Start-The-Daemon-------------------------------------------------------[004]
+* References---------------------------------------------------------------[005]
+
+
+[001] Installation
+________________________________________________________________________________
+
+If opting to use mdevd the package must be installed. If opting to use mdev,
+it is provided by busybox (which is part of the base system).
+
++------------------------------------------------------------------------------+
+|                                                                              |
+|  $ kiss b mdevd                                                              |
+|                                                                              |
++------------------------------------------------------------------------------+
+
+
+[002] Setup
+________________________________________________________________________________
+
+The baseinit package supports mdev and mdevd. The only setup required is any
+additional configuration (if necessary) and to start the daemon.
+
+
+--[003]-Configuration-----------------------------------------------------------
+
+  The default configuration files for both device managers are the same (as both
+  device managers support the same format). The majority of use cases should be
+  covered. If additional configuration is required make your modifications to
+  /etc/mdev.conf (mdev) or /etc/mdevd.conf (mdevd) accordingly.
+
+  Documentation on the device managers and configuration format is not (yet)
+  included with the distribution and can be found in the following locations.
+
+  * https://github.com/slashbeast/mdev-like-a-boss/
+  * https://git.busybox.net/busybox/plain/docs/mdev.txt
+  * http://kanj.github.io/elfs/book/x86Musl/bootscripts/mdev.html
+  * https://skarnet.org/software/mdevd/
+
+
+--[004]-Start-The-Daemon--------------------------------------------------------
+
+  Both device managers provide service files compatible with the distribution's
+  default service manager. Refer to the distribution's service management
+  documentation at #/wiki/service-management for further information.
+
+
+[005] References
+________________________________________________________________________________
+
+[0] https://skarnet.org/software/mdevd/
+

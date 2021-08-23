@@ -1,0 +1,244 @@
+<!doctype html><html lang=en><link href='data:image/gif;base64,R0lGODlhEAAQAPH/AAAAAP8AAP8AN////yH5BAUAAAQALAAAAAAQABAAAAM2SLrc/jA+QBUFM2iqA2bAMHSktwCCWJIYEIyvKLOuJt+wV69ry5cfwu7WCVp2RSPoUpE4n4sEADs=' rel=icon><title>KISS - package-system</title><meta charset=utf-8><meta name=Description content="Kiss Linux is a meta-distribution for the x86_64 architecture with a focus on simplicity, sustainability and user freedom. The distribution was created by Dylan Araps who also acts as its sole developer."><meta name=viewport content="width=device-width,initial-scale=1"><style>body{overflow-y:scroll;font:16px monospace,monospace}img,#c{display:table-cell;max-width:999px;max-width:80ch}pre{margin:0;overflow-x:hidden}@media(max-width:999px){#c{display:block;font-size:1.94vw}}@media(prefers-color-scheme:dark){body{background:#000;color:#fff}a{color:#6CF}}</style><div style="display:table;margin:16px auto">
+<div id=c><pre>
+<div style="display:inline-block"><a href=/ style="text-decoration:none;color:#a00">
+|/
+|\ISS</a>               <a href=/tidbits>Tidbits</a>  <a href=/post>Posts</a>  <a href=/answers>Answers</a>  <a href=/install>Install</a>  <a href=/wiki>Wiki</a>  <a href=/contact>Contact</a>  <a href=/donate>Donate</a>  </div><div style="image-rendering:crisp-edges;display:inline-block;vertical-align:sub"><a href=https://github.com/kisslinux/><img src="data:image/gif;base64,R0lGODlhEAAQAPABAAAAAP//ACH5BAUIAAEALAAAAAAQABAAAAIojA2px6G/GJzgJASxbrI+jmVgGI3TSF4oZS6emmqw823dTFcWbklNAQA7"></a></div>
+
+
+KISS PACKAGE SYSTEM
+________________________________________________________________________________
+
+Packages are comprised of a directory and the series of files contained within.
+The name of the package is derived from its directory name. The files which
+comprise the system are as follows.
+
++------------------+----------+------------+----------+-------------+----------+
+| File             | Language | Executable | Comments | Blank lines | Required |
++------------------+----------+------------+----------+-------------+----------+
+|                  |          |            |          |             |          |
+| build            | Any      | Yes <a href=#2>[2]</a>    | N/A      | N/A         | Yes      |
+| checksums        | DSL <a href=#3>[3]</a>  | No         | No       | No          | No <a href=#1>[1]</a>   |
+| depends          | DSL <a href=#3>[3]</a>  | No         | Yes      | Yes         | No       |
+| sources          | DSL <a href=#3>[3]</a>  | No         | Yes      | Yes         | No       |
+| version          | DSL <a href=#3>[3]</a>  | No         | <a href=#4>[4]</a>      | <a href=#4>[4]</a>         | Yes      |
+|                  |          |            |          |             |          |
+| pre-remove       | Any      | Yes <a href=#2>[2]</a>    | N/A      | N/A         | No       |
+| post-install     | Any      | Yes <a href=#2>[2]</a>    | N/A      | N/A         | No       |
+|                  |          |            |          |             |          |
++------------------+----------+------------+----------+-------------+----------+
+
+Unless stated otherwise, all files marked DSL are a grid of cells split into
+rows by newline and columns by whitespace.
+
+<span id=1><a href=#1>[1]</a></span> The checksums file is only required if the sources file contains sources
+    which exist as files on disk (directories, git repositories need not apply).
+
+<span id=2><a href=#2>[2]</a></span> The only requirement is that the file be executable. The file itself can be
+    written in any programming language.
+
+<span id=3><a href=#3>[3]</a></span> The file's format is a domain specific language with its own rules.
+    <a href=https://en.wikipedia.org/wiki/Domain-specific_language>https://en.wikipedia.org/wiki/Domain-specific_language</a>
+
+<span id=4><a href=#4>[4]</a></span> Tooling should only read the first line of the version file. Any lines
+    following should be ignored (allowing one to store arbitrary information).
+
+
+<span id=000><a href=#000>[000]</a></span> Index
+________________________________________________________________________________
+
+* build ------------------------------------------------------------------ <a href=#001>[001]</a>
+* checksums -------------------------------------------------------------- <a href=#002>[002]</a>
+* depends ---------------------------------------------------------------- <a href=#003>[003]</a>
+* sources ---------------------------------------------------------------- <a href=#004>[004]</a>
+* version ---------------------------------------------------------------- <a href=#005>[005]</a>
+* pre-remove ------------------------------------------------------------- <a href=#006>[006]</a>
+* post-install ----------------------------------------------------------- <a href=#007>[007]</a>
+* Further reading -------------------------------------------------------- <a href=#008>[008]</a>
+
+
+<span id=001><a href=#001>[001]</a></span> build
+________________________________________________________________________________
+
+The build file is executed in the directory containing the package's extracted
+sources. Unlike other distributions, a 'cd' is not needed as sources have their
+top-level directory components stripped away.
+
+The build file is given two arguments. The destination directory (where
+artifacts should be installed) and the first field of the package's version
+file (verbatim).
+
+The build file is given a modified environment containing DESTDIR, KISS_ROOT,
+GOPATH and generic defaults for toolchain variables (if unset by the user). The
+toolchain defaults are as follows: AR=ar, CC=cc, CXX=c++, NM=nm, RANLIB=ranlib
+
++------------------------------------------------------------------------------+
+| Example shell-based build file                                               |
++------------------------------------------------------------------------------+
+|                                                                              |
+|  1  #!/bin/sh -e                                                             |
+|  2                                                                           |
+|  3  # Disable stripping (use if needed).                                     |
+|  4  :&gt; nostrip                                                               |
+|  5                                                                           |
+|  6  ./configure \                                                            |
+|  7      --prefix=/usr                                                        |
+|  8                                                                           |
+|  9  make                                                                     |
+| 10  make install                                                             |
+|                                                                              |
++------------------------------------------------------------------------------+
+
+
+<span id=002><a href=#002>[002]</a></span> checksums
+________________________________________________________________________________
+
+The checksums file is generated by the package manager (kiss c pkg) and is
+derived from files listed in the package's sources file. Directories and Git
+repositories are excluded.
+
+Checksum verification can be disabled for a source by replacing its checksum
+with 'SKIP' in the checksums file. The package manager will notify you when
+this occurs.
+
++------------------------------------------------------------------------------+
+|                                                                              |
+|  1 892a0875b9872acd04a9fde79b1f943075d5ea162415de3047c327df33fbaee5          |
+|  2 8a5b38a76b778da8d6f4236f1ea89e680daea971be6ee3a57e4e7ae99a883aa2          |
+|  3 SKIP                                                                      |
+|                                                                              |
++------------------------------------------------------------------------------+
+
+
+<span id=003><a href=#003>[003]</a></span> depends
+________________________________________________________________________________
+
+The depends file contains the package's dependencies listed one per line in
+alphabetical order. Duplicate entries are not supported. The second optional
+field denotes the dependency type (unset for runtime, 'make' for compile-time).
+
++------------------------------------------------------------------------------+
+|                                                                              |
+|  1 alsa-lib                                                                  |
+|  2 meson make                                                                |
+|  3                                                                           |
+|  4 # This is a comment.                                                      |
+|  5 wayland                                                                   |
+|  6 wayland-protocols make                                                    |
+|                                                                              |
++------------------------------------------------------------------------------+
+
+
+<span id=004><a href=#004>[004]</a></span> sources
+________________________________________________________________________________
+
+The sources file contains the package's sources one per line. A valid source is
+a URL to a file, relative path, absolute path or Git repository. The optional
+second field denotes the relative destination directory.
+
+Git repositories must be prefixed with git+. An optional suffix is supported to
+checkout a specific branch (@BRANCH) or commit (#COMMIT). All clones are shallow
+where supported by the remote server. If no suffix is used, master is cloned.
+
++------------------------------------------------------------------------------+
+|                                                                              |
+|  1 # This is a comment.                                                      |
+|  2 <a href=https://www.openssl.org/source/openssl-VERSION.tar.gz>https://www.openssl.org/source/openssl-VERSION.tar.gz</a>                     |
+|  3 <a href=https://causal.agency/libretls/libretls-3.3.3p1.tar.gz>https://causal.agency/libretls/libretls-3.3.3p1.tar.gz</a> libretls           |
+|  4                                                                           |
+|  5 files/update-certdata.sh                                                  |
+|  6 git+<a href=https://github.com/kisslinux/kiss@dev>https://github.com/kisslinux/kiss@dev</a>                                 |
+|                                                                              |
++------------------------------------------------------------------------------+
+
+The following MARKERS can be used to substitute version information. These are
+replaced at runtime with their respective values. Literal MARKERS can be escaped
+by prepending a backslash.
+
++------------------------------------------------------------------------------+
+|                                                                              |
+|  VERSION   The first  field of the version file verbatim.                    |
+|  RELEASE   The second field of the version file verbatim.                    |
+|    MAJOR   The first  component of VERSION split on .-_+                     |
+|    MINOR   The second component of VERSION split on .-_+                     |
+|    PATCH   The third  component of VERSION split on .-_+                     |
+|    IDENT   All other components.                                             |
+|  PACKAGE   The name of the package.                                          |
+|                                                                              |
++------------------------------------------------------------------------------+
+
+
+<span id=005><a href=#005>[005]</a></span> version
+________________________________________________________________________________
+
+The version file is a single line split into two mandatory fields. The first
+field is the package's version and the second field the version of the
+repository files themselves.
+
+If the package follows its upstream release schedule, the first field should
+match the upstream version number. If the source is a Git repository, the
+version should be set to 'git'. If a specific git commit is used, the version
+number should match accordingly.
+
++------------------------------------------------------------------------------+
+|                                                                              |
+|  1 1.2.11 1                                                                  |
+|                                                                              |
++------------------------------------------------------------------------------+
+
+
+<span id=006><a href=#006>[006]</a></span> pre-remove
+________________________________________________________________________________
+
+The pre-remove file is executed before removal of the package. This file should
+be used to perform any required pre-removal steps or to display notices.
+
++------------------------------------------------------------------------------+
+| Example shell-based pre-remove file                                          |
++------------------------------------------------------------------------------+
+|                                                                              |
+| TODO: Example                                                                |
+|                                                                              |
++------------------------------------------------------------------------------+
+
+
+<span id=007><a href=#007>[007]</a></span> post-install
+________________________________________________________________________________
+
+The post-install file is executed after installation of the package. This file
+should be used to perform any required post-install steps or to display notices.
+
++------------------------------------------------------------------------------+
+| Example shell-based post-install file                                        |
++------------------------------------------------------------------------------+
+|                                                                              |
+|  1 #!/bin/sh -e                                                              |
+|  2                                                                           |
+|  3 cat &lt;&lt;EOF                                                                 |
+|  4                                                                           |
+|  5 The commands zcat, unpigz and gunzip were merely symbolic                 |
+|  6 links to the pigz binary. They have been removed. To gain                 |
+|  7 them back, create the symlinks (or use an alias or shell                  |
+|  8 function).                                                                |
+|  9                                                                           |
+| 10 EOF                                                                       |
+|                                                                              |
++------------------------------------------------------------------------------+
+
+
+<span id=008><a href=#008>[008]</a></span> Further reading
+________________________________________________________________________________
+
+- @/<a href=/wiki/package-manager>package-manager</a>
+- $/<a href=https://github.com/kisslinux/kiss>kisslinux/kiss</a>
+
+
+
+________________________________________________________________________________
+
+Dylan Araps (C) 2019-2021
+
+The registered trademark Linux(R) is used pursuant to a sublicense from the
+Linux Foundation, the exclusive licensee of Linus Torvalds, owner of the mark
+on a world­wide basis.
+
+</pre></div></div>

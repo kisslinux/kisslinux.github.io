@@ -1,0 +1,113 @@
+Service Management
+________________________________________________________________________________
+
+KISS' default service manager is a small runit implementation provided by the
+busybox package. This was chosen as its service files are concise and the
+distribution already uses busybox (making it effectively "free").
+
+The user is of course free to use the init or service manager of their choosing.
+This page merely documents the default service manager, how to interact with it
+and how to write its service files.
+
+
+[000] Index
+________________________________________________________________________________
+
+* Basic Usage--------------------------------------------------------------[001]
+  * List-Package-Provided-Services-----------------------------------------[002]
+  * Enable-A-Service-------------------------------------------------------[003]
+  * Disabling-A-Service----------------------------------------------------[004]
+  * Starting-A-Service-----------------------------------------------------[005]
+  * Stopping-A-Service-----------------------------------------------------[006]
+* Providing-A-Service-With-A-Package---------------------------------------[007]
+
+
+[001] Basic Usage
+________________________________________________________________________________
+
+This page covers only basic usage. A full list of supported commands (and how
+they work) can be found here. https://git.busybox.net/busybox/tree/runit/sv.c
+
+
+--[002]-List-Package-Provided-Services------------------------------------------
+
+  This command lists all services provided by installed packages. When creating
+  packages it is recommended that a service file also be supplied. Services
+  for personal use can be stored anywhere in the system.
+
+  +----------------------------------------------------------------------------+
+  |                                                                            |
+  |  $ ls /etc/sv/                                                             |
+  |                                                                            |
+  +----------------------------------------------------------------------------+
+
+
+--[003]-Enable-A-Service--------------------------------------------------------
+
+  This enables the service and makes the utilities aware of its existence.
+  Services stored in /etc/sv do nothing until they are symbolically linked
+  to the default services directory (/var/service).
+
+  +----------------------------------------------------------------------------+
+  |                                                                            |
+  |  $ ln -s /etc/sv/SERVICE_NAME/ /var/service                                |
+  |                                                                            |
+  +----------------------------------------------------------------------------+
+
+
+--[004]-Disabling-A-Service-----------------------------------------------------
+
+  This command is the inverse of above and fully disables a service.
+
+  +----------------------------------------------------------------------------+
+  |                                                                            |
+  |  $ rm -f /var/service/SERVICE_NAME                                         |
+  |                                                                            |
+  +----------------------------------------------------------------------------+
+
+
+--[005]-Status-Of-A-Service-----------------------------------------------------
+
+  Report the current status of the service and the log service (if available).
+
+  +----------------------------------------------------------------------------+
+  |                                                                            |
+  |  $ sv status SERVICE_NAME                                                  |
+  |                                                                            |
+  +----------------------------------------------------------------------------+
+
+
+--[005]-Starting-A-Service------------------------------------------------------
+
+  If the service is not running, start it (and if it stops, restart it).
+
+  +----------------------------------------------------------------------------+
+  |                                                                            |
+  |  $ sv up SERVICE_NAME                                                      |
+  |                                                                            |
+  +----------------------------------------------------------------------------+
+
+
+--[006]-Stopping-A-Service------------------------------------------------------
+
+  If the service is running, send it the TERM signal and the CONT signal.
+  If ./run exists, start ./finish (if it exists). Once stopped, do not restart
+  the service.
+
+  +----------------------------------------------------------------------------+
+  |                                                                            |
+  |  $ sv down SERVICE_NAME                                                    |
+  |                                                                            |
+  +----------------------------------------------------------------------------+
+
+
+--[007]-Starting-A-Service-Once-------------------------------------------------
+
+  If the service is not running, start it (and if it stops, do not restart it).
+
+  +----------------------------------------------------------------------------+
+  |                                                                            |
+  |  $ sv once SERVICE_NAME                                                    |
+  |                                                                            |
+  +----------------------------------------------------------------------------+
+

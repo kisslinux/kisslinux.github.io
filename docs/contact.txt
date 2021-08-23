@@ -1,19 +1,15 @@
 Contact
 ________________________________________________________________________________
 
-- Email:
+The distribution's official communication channels are listed below. Feel free
+to get in touch and a response will be given at the earliest convenience.
 
-   - dylan@kisslinux.org
-   - dylan.araps@gmail.com
+Email:
 
-- GitHub:
+    dylan@kisslinux.org
+    dylan.araps@gmail.com
 
-   - $/dylanaraps
-   - $/kisslinux
+GitHub:
 
-
-Donate
-________________________________________________________________________________
-
-- https://patreon.com/dyla
-- <a href='https://paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=V7QNJNKS3WYVS'>Paypal</a>
+   $/kisslinux
+   $/dylanaraps
