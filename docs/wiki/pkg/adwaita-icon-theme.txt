@@ -28,7 +28,7 @@ ________________________________________________________________________________
 ________________________________________________________________________________
 
 If this is the only icon theme installed it should be automatically used and
-no setup is needed. To explicitly set this as the icon font, edit
+no setup is needed. To explicitly set this as the icon theme, edit
 ~/.config/gtk-3.0/settings.ini and add the following two lines.
 
 +------------------------------------------------------------------------------+
