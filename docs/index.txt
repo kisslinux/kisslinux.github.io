@@ -169,9 +169,9 @@ Further reading: @/wiki/package-manager
 ________________________________________________________________________________
 
 - @/answers               - Answers to the most common questions.
-- @/doc                   - General distribution documentation.
-- @/doc/package-system    - The package management system in detail.
-- @/doc/package-manager   - The package manager's documentation.
-- @/doc/website           - About the website itself.
+- @/wiki                  - General distribution documentation.
+- @/wiki/package-system   - The package management system in detail.
+- @/wiki/package-manager  - The package manager's documentation.
+- @/wiki/website          - About the website itself.
 - @/contact               - Get in touch with Kiss Linux.
 
