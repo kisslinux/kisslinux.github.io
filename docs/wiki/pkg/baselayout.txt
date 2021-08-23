@@ -27,6 +27,24 @@ ________________________________________________________________________________
 [002] Usage
 ________________________________________________________________________________
 
-For manuals on the various files, install util-linux (or modify the
-package to only install manuals). Busybox only provides command help output.
++------------------------------------------------------------------------------+
+|                                                                              |
+|  /etc/crypttab          Configuration for encrypted block devices.           |
+|  /etc/fstab             Static information about the filesystems.            |
+|  /etc/group             User group file.                                     |
+|  /etc/host.conf         Resolver configuration file.                         |
+|  /etc/hosts             Static table lookup for hostnames.                   |
+|  /etc/issue             Prelogin message and identification file.            |
+|  /etc/mime.types        Maps filename suffices to media types.               |
+|  /etc/mtab              Symbolic link to /proc/self/mounts.                  |
+|  /etc/os-release        Operating system identification.                     |
+|  /etc/passwd            Password file.                                       |
+|  /etc/profile           System-wide shell configuration.                     |
+|  /etc/securetty         List of terminals on which root is allowed to login. |
+|  /etc/shadow            Shadowed password file.                              |
+|  /etc/shells            List of login shells.                                |
+|                                                                              |
++------------------------------------------------------------------------------+
 
+Documentation for the various files is not yet provided by the distribution.
+Refer to online documentation for the time being.
