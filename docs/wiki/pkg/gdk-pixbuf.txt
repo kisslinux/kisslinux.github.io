@@ -13,7 +13,7 @@ ________________________________________________________________________________
 
 * Installation-------------------------------------------------------------[001]
 * Usage--------------------------------------------------------------------[002]
-* Statistics---------------------------------------------------------------[003]
+* Information--------------------------------------------------------------[003]
   * Change-History---------------------------------------------------------[004]
 * References---------------------------------------------------------------[005]
 
@@ -35,11 +35,11 @@ No documentation is currently provided with the package, refer to online
 documentation and command output for the time being.
 
 
-[004] Statistics
+[003] Information
 ________________________________________________________________________________
 
 
---[005]-Change-History--------------------------------------------------------
+--[004]-Change-History--------------------------------------------------------
 
   2021-07-27 <a href="https://github.com/kisslinux/repo/commit/30ef3a30a0fe9dfab8d7fafc5e4a869db98f6a2a">30ef3a30</a> gdk-pixbuf: Simpler test disable
   2021-07-19 <a href="https://github.com/kisslinux/repo/commit/ebb78637adc29bdea9e82a8b684fc2512f5a9408">ebb78637</a> gdk-pixbuf: nits
@@ -64,7 +64,7 @@ ________________________________________________________________________________
   2019-07-27 <a href="https://github.com/kisslinux/repo/commit/c36adcc137c63b7fd11f3cc7ff3fcd7687adda26">c36adcc1</a> gdk-pixbuf: new package at 2.38.1
 
 
-[006] References
+[005] References
 ________________________________________________________________________________
 
 [0] https://gitlab.gnome.org/GNOME/gdk-pixbuf

@@ -20,7 +20,7 @@ ________________________________________________________________________________
   * Set-XDG_RUNTIME_DIR----------------------------------------------------[005]
 * Usage--------------------------------------------------------------------[006]
 * Troubleshooting----------------------------------------------------------[007]
-* Statistics---------------------------------------------------------------[008]
+* Information--------------------------------------------------------------[008]
   * Change-History---------------------------------------------------------[009]
 * References---------------------------------------------------------------[010]
 
@@ -98,11 +98,11 @@ If you are using the 'sway-tiny' package and encounter any issues, send bug
 reports to $/kisslinux/repo rather than upstream.
 
 
-[009] Statistics
+[008] Information
 ________________________________________________________________________________
 
 
---[010]-Change-History--------------------------------------------------------
+--[009]-Change-History--------------------------------------------------------
 
   2021-08-24 <a href="https://github.com/kisslinux/repo/commit/145e318b0ec8d9c84672b1bd8c815ef0e466c50a">145e318b</a> sway-tiny: import Firefox fixes
   2021-07-28 <a href="https://github.com/kisslinux/repo/commit/cf41d1db72d3243ab26249add43d60f26da70301">cf41d1db</a> sway-tiny: add link to DrmSetMaster info
@@ -133,7 +133,7 @@ ________________________________________________________________________________
   2021-07-08 <a href="https://github.com/kisslinux/repo/commit/247518cf2268df7ebae260ab1183dcac5a5e2bc2">247518cf</a> sway-tiny: git
 
 
-[011] References
+[010] References
 ________________________________________________________________________________
 
 [0] https://en.wikipedia.org

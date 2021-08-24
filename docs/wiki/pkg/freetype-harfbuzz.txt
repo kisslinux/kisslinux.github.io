@@ -29,7 +29,7 @@ ________________________________________________________________________________
 
 * Installation-------------------------------------------------------------[001]
 * Usage--------------------------------------------------------------------[002]
-* Statistics---------------------------------------------------------------[003]
+* Information--------------------------------------------------------------[003]
   * Change-History---------------------------------------------------------[004]
 * References---------------------------------------------------------------[005]
 
@@ -51,11 +51,11 @@ No documentation is currently provided with the package, refer to online
 documentation for the time being.
 
 
-[004] Statistics
+[003] Information
 ________________________________________________________________________________
 
 
---[005]-Change-History--------------------------------------------------------
+--[004]-Change-History--------------------------------------------------------
 
   2021-08-08 <a href="https://github.com/kisslinux/repo/commit/a9984c8ab2a012f637e5b2e8ead585f83a385ac3">a9984c8a</a> freetype-harfbuzz: clean up
   2021-08-08 <a href="https://github.com/kisslinux/repo/commit/b8d0723123be6f8e158b8d498d98b3a38b50dfda">b8d07231</a> freetype-harfbuzz: fix depends
@@ -98,7 +98,7 @@ ________________________________________________________________________________
   2019-08-04 <a href="https://github.com/kisslinux/repo/commit/59779af7b296ff8a11612110819989da062dfce8">59779af7</a> freetype-harfbuzz: added initial package
 
 
-[006] References
+[005] References
 ________________________________________________________________________________
 
 [0] https://en.wikipedia.org/wiki/FreeType

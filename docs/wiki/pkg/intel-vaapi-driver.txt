@@ -19,7 +19,7 @@ ________________________________________________________________________________
 
 * Installation-------------------------------------------------------------[001]
 * Usage--------------------------------------------------------------------[002]
-* Statistics---------------------------------------------------------------[003]
+* Information--------------------------------------------------------------[003]
   * Change-History---------------------------------------------------------[004]
 * References---------------------------------------------------------------[005]
 
@@ -41,11 +41,11 @@ No documentation is currently provided with the package, refer to online
 documentation for the time being.
 
 
-[004] Statistics
+[003] Information
 ________________________________________________________________________________
 
 
---[005]-Change-History--------------------------------------------------------
+--[004]-Change-History--------------------------------------------------------
 
   2021-07-15 <a href="https://github.com/kisslinux/repo/commit/b8150445c7b7af920d51192cecf68ea968192b29">b8150445</a> intel-vaapi-driver: use VERSION
   2021-07-01 <a href="https://github.com/kisslinux/repo/commit/3b33cfc40d63e27f3eb9c773eab7f6628cdea3d2">3b33cfc4</a> intel-vaapi-driver: use new checksums format
@@ -55,7 +55,7 @@ ________________________________________________________________________________
   2020-01-20 <a href="https://github.com/kisslinux/repo/commit/96c0241fd51aa006b475016189a16fe22432100b">96c0241f</a> intel-vaapi-driver: new package at 2.4.0
 
 
-[006] References
+[005] References
 ________________________________________________________________________________
 
 [0] https://github.com/intel/intel-vaapi-driver

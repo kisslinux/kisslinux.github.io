@@ -15,7 +15,7 @@ ________________________________________________________________________________
 * Installation-------------------------------------------------------------[001]
 * Setup--------------------------------------------------------------------[002]
 * Usage--------------------------------------------------------------------[003]
-* Statistics---------------------------------------------------------------[004]
+* Information--------------------------------------------------------------[004]
   * Change-History---------------------------------------------------------[005]
 * References---------------------------------------------------------------[006]
 
@@ -44,11 +44,11 @@ Refer to the FreeDesktop libudev documentation for library information. Refer
 to the project's upstream for more information.
 
 
-[005] Statistics
+[004] Information
 ________________________________________________________________________________
 
 
---[006]-Change-History--------------------------------------------------------
+--[005]-Change-History--------------------------------------------------------
 
   2021-07-18 <a href="https://github.com/kisslinux/repo/commit/5e1cac83c4abd3486a77514ba573f5ad189e85d0">5e1cac83</a> libudev-zero: update for new env
   2021-07-15 <a href="https://github.com/kisslinux/repo/commit/c9444ecbae45b1ab370a789c29f9094f9126542a">c9444ecb</a> libudev-zero: use VERSION
@@ -70,7 +70,7 @@ ________________________________________________________________________________
   2020-07-22 <a href="https://github.com/kisslinux/repo/commit/0aa2ee4aea1c5adf6ea82428377036e9beed485a">0aa2ee4a</a> libudev-zero: new package at 0.1.0
 
 
-[007] References
+[006] References
 ________________________________________________________________________________
 
 [0] https://github.com/illiliti/libudev-zero

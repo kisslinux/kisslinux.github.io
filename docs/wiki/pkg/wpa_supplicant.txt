@@ -18,7 +18,7 @@ ________________________________________________________________________________
   * Conntecting-To-Networks------------------------------------------------]003]
 * Usage--------------------------------------------------------------------[004]
   * Starting-The-Service---------------------------------------------------[005]
-* Statistics---------------------------------------------------------------[006]
+* Information--------------------------------------------------------------[006]
   * Change-History---------------------------------------------------------[007]
 * References---------------------------------------------------------------[008]
 
@@ -61,11 +61,11 @@ and its documentation.
   documentation for instructions on how to enable the service. [1]
 
 
-[007] Statistics
+[006] Information
 ________________________________________________________________________________
 
 
---[008]-Change-History--------------------------------------------------------
+--[007]-Change-History--------------------------------------------------------
 
   2021-07-29 <a href="https://github.com/kisslinux/repo/commit/7cb956ca685daf0f8792d450c8466492ec0ed576">7cb956ca</a> wpa_supplicant: provide service file
   2021-07-18 <a href="https://github.com/kisslinux/repo/commit/3a3eb28420c354aec67b59493ae57d6e945b490d">3a3eb284</a> wpa_supplicant: remove unintended change
@@ -90,7 +90,7 @@ ________________________________________________________________________________
   2019-06-21 <a href="https://github.com/kisslinux/repo/commit/715aa2ffcbdd7e6825761624562ba4ca5e777629">715aa2ff</a> wpa_supplicant: Fix package.
 
 
-[009] References
+[008] References
 ________________________________________________________________________________
 
 [0] https://en.wikipedia.org/wiki/Wpa_supplicant

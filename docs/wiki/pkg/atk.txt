@@ -17,7 +17,7 @@ ________________________________________________________________________________
 
 * Installation-------------------------------------------------------------[001]
 * Usage--------------------------------------------------------------------[002]
-* Statistics---------------------------------------------------------------[003]
+* Information--------------------------------------------------------------[003]
   * Change-History---------------------------------------------------------[004]
 * References---------------------------------------------------------------[005]
 
@@ -39,11 +39,11 @@ No documentation is currently provided with the package, refer to online
 documentation for the time being.
 
 
-[004] Statistics
+[003] Information
 ________________________________________________________________________________
 
 
---[005]-Change-History--------------------------------------------------------
+--[004]-Change-History--------------------------------------------------------
 
   2021-07-27 <a href="https://github.com/kisslinux/repo/commit/057d8fd61ee615853a5820c4762dbf634b633a3d">057d8fd6</a> atk: simpler test disable
   2021-07-17 <a href="https://github.com/kisslinux/repo/commit/bc0d50c49a98f1f33807d457d82de02fabf772fa">bc0d50c4</a> atk: update for new env
@@ -62,7 +62,7 @@ ________________________________________________________________________________
   2019-07-27 <a href="https://github.com/kisslinux/repo/commit/2be2e7b44af10a1c5c4c1f4d89544ffeaf6e6e62">2be2e7b4</a> atk: new package at 2.32.0
 
 
-[006] References
+[005] References
 ________________________________________________________________________________
 
 [0] https://en.wikipedia.org/wiki/Accessibility_Toolkit

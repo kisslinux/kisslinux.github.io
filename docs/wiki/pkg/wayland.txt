@@ -15,7 +15,7 @@ ________________________________________________________________________________
 
 * Installation-------------------------------------------------------------[001]
 * Usage--------------------------------------------------------------------[003]
-* Statistics---------------------------------------------------------------[005]
+* Information--------------------------------------------------------------[005]
   * Change-History---------------------------------------------------------[006]
 * References---------------------------------------------------------------[007]
 
@@ -37,18 +37,18 @@ No documentation is currently provided with the package, refer to online
 documentation for the time being.
 
 
-[006] Statistics
+[005] Information
 ________________________________________________________________________________
 
 
---[007]-Change-History--------------------------------------------------------
+--[006]-Change-History--------------------------------------------------------
 
   2021-07-15 <a href="https://github.com/kisslinux/repo/commit/be3f2fa02c44fe29f9e1a26ed632e493922c0dd2">be3f2fa0</a> wayland: update for new env
   2021-07-15 <a href="https://github.com/kisslinux/repo/commit/6ea43777399981ef742d04c5bde26cfa78bccb38">6ea43777</a> wayland: use VERSION
   2021-07-08 <a href="https://github.com/kisslinux/repo/commit/3f3b1fba1ec07ae37dbfbff7c0d53c447c5768d5">3f3b1fba</a> wayland: 1.19.0
 
 
-[008] References
+[007] References
 ________________________________________________________________________________
 
 [0] https://en.wikipedia.org/wiki/Wayland_(display_server_protocol)

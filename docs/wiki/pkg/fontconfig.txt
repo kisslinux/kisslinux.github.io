@@ -14,7 +14,7 @@ ________________________________________________________________________________
 
 * Installation-------------------------------------------------------------[001]
 * Usage--------------------------------------------------------------------[002]
-* Statistics---------------------------------------------------------------[003]
+* Information--------------------------------------------------------------[003]
   * Change-History---------------------------------------------------------[004]
 * References---------------------------------------------------------------[005]
 
@@ -36,11 +36,11 @@ No documentation is currently provided with the package, refer to online
 documentation for the time being.
 
 
-[004] Statistics
+[003] Information
 ________________________________________________________________________________
 
 
---[005]-Change-History--------------------------------------------------------
+--[004]-Change-History--------------------------------------------------------
 
   2021-07-31 <a href="https://github.com/kisslinux/repo/commit/6fc6158c2c1107f713194cd0b69b54e9129b4b1e">6fc6158c</a> fontconfig: remove gperf dependency
   2021-07-17 <a href="https://github.com/kisslinux/repo/commit/09e5d4a588bfb0439e75b94958a726631f566a84">09e5d4a5</a> fontconfig: update for new env
@@ -63,7 +63,7 @@ ________________________________________________________________________________
   2019-06-28 <a href="https://github.com/kisslinux/repo/commit/f033a372ebc560f99732f95b24ec0cfa272fecf6">f033a372</a> fontconfig: Fix source.
 
 
-[006] References
+[005] References
 ________________________________________________________________________________
 
 [0] https://en.wikipedia.org/wiki/Fontconfig

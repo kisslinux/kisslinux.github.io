@@ -12,7 +12,7 @@ ________________________________________________________________________________
 
 * Installation-------------------------------------------------------------[001]
 * Usage--------------------------------------------------------------------[002]
-* Statistics---------------------------------------------------------------[003]
+* Information--------------------------------------------------------------[003]
   * Change-History---------------------------------------------------------[004]
 * References---------------------------------------------------------------[005]
 
@@ -34,18 +34,18 @@ No documentation is currently provided with the package, refer command help and
 online documentation for the time being.
 
 
-[004] Statistics
+[003] Information
 ________________________________________________________________________________
 
 
---[005]-Change-History--------------------------------------------------------
+--[004]-Change-History--------------------------------------------------------
 
   2021-07-15 <a href="https://github.com/kisslinux/repo/commit/584520e35f21aaffd7379e304e6a791612c0d3a5">584520e3</a> wlsunset: update for new env
   2021-07-15 <a href="https://github.com/kisslinux/repo/commit/839bc9dc1eafbeb9206fd3f2cc2bd42cad49c7f2">839bc9dc</a> wlsunset: use VERSION
   2021-07-09 <a href="https://github.com/kisslinux/repo/commit/ad7d86e5d56c68b74da424cde69643a0749a5cdd">ad7d86e5</a> wlsunset: 0.2.0
 
 
-[006] References
+[005] References
 ________________________________________________________________________________
 
 [0] https://sr.ht/~kennylevinsen/wlsunset/
