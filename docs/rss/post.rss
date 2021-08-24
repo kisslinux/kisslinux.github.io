@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+        <title>KISS Linux Posts</title>
+        <description>Blog posts and news about Kiss Linux and its development.</description>
+        <link>https://kisslinux.org/post</link>
+        <pubDate>Mon, 23 Aug 2021 16:20:00 +0000</pubDate>
+        <ttl>1800</ttl>
+    </channel>
+</rss>
