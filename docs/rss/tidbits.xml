@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+        <title>KISS Linux Tidbits</title>
+        <description>Bite-sized news about Kiss Linux and its development.</description>
+        <link>https://kisslinux.org/tidbits</link>
+        <pubDate>Mon, 23 Aug 2021 16:20:00 +0000</pubDate>
+        <ttl>1800</ttl>
+
+        <item>
+            <title>23082021</title>
+            <description>
+Welcome to the new website. It is not 100% complete yet but at a stage where I
+am happy for it to replace the previous one. So, expect further changes to the
+site for a little while.
+            </description>
+            <link>https://kisslinux.org/tidbits#23082021</link>
+            <pubDate>Mon, 23 Aug 2021 16:20:00 +0000</pubDate>
+        </item>
+    </channel>
+</rss>
