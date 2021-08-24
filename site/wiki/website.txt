@@ -10,12 +10,12 @@ and a page load of this website is only a single network request.
 [000] Index
 ________________________________________________________________________________
 
-* Favicon ---------------------------------------------------------------- [100]
-  * Why Use A Favicon At All? -------------------------------------------- [101]
-* GitHub Icon                                                              [200]
+* Favicon------------------------------------------------------------------[001]
+  * Why-Use-A-Favicon-At-All?----------------------------------------------[002]
+* GitHub-Icon--------------------------------------------------------------[003]
 
 
-[100] Favicon
+[001] Favicon
 ________________________________________________________________________________
 
 The favicon is a base64 encoded gif image which I created. It is designed to
@@ -26,8 +26,7 @@ ALAAAAAAQABAAAAM2SLrc/jA+QBUFM2iqA2bAMHSktwCCWJIYEIyvKLOuJt+wV69ry5cfwu7WCVp2RSP
 oUpE4n4sEADs=' rel=icon&gt;
 
 
-  [101] Why Use A Favicon At All?
-  ____________________________________________________________________________
+--[002]-Why-Use-A-Favicon-At-All?-----------------------------------------------
 
   The funny thing about web browsers is that they will assume a favicon exists
   despite this possibly being false. Browsers will try to load it and you'll
@@ -43,7 +42,7 @@ oUpE4n4sEADs=' rel=icon&gt;
   favicon. This successfully shushes the web request in all tested browsers.
 
 
-[200] GitHub Icon
+[003] GitHub Icon
 ________________________________________________________________________________
 
 The GitHub icon in the navigation bar is also a base64 encoded gif image (of my
@@ -51,6 +50,4 @@ creation). It is a 16x16 version of the GitHub logo.
 
 &lt;img src="data:image/gif;base64,R0lGODlhEAAQAPABAAAAAP//ACH5BAUIAAEALAAAAAAQ
 ABAAAAIojA2px6G/GJzgJASxbrI+jmVgGI3TSF4oZS6emmqw823dTFcWbklNAQA7"&gt;
-
-
 
