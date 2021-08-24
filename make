@@ -16,7 +16,7 @@ txt2html() {
     # Convert $/words to GitHub URLs.
     sed -E "s|(@/)([^ \)]*)|\1<a href=$1/\2>\2</a>|g" |
     sed -E "s|(%/)([^ \)]*)|\1<a href=/wiki/pkg/\2>\2</a>|g" |
-    sed -E "s|(#/)([^ \)]*)|\1<a href=/\2>\2</a>|g" |
+    sed -E "s|(\\#/)([^ \)]*)|\1<a href=/\2>\2</a>|g" |
     sed -E "s|(\\$/)([^ \)]*)|\1<a href=https://github.com/\2>\2</a>|g" |
 
     # Convert [0] into HTML links.
