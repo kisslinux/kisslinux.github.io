@@ -22,9 +22,8 @@ ________________________________________________________________________________
 
 * Installation-------------------------------------------------------------<a href=#001>[001]</a>
 * Usage--------------------------------------------------------------------<a href=#002>[002]</a>
-* Information--------------------------------------------------------------<a href=#003>[003]</a>
-  * Change-History---------------------------------------------------------<a href=#004>[004]</a>
-* References---------------------------------------------------------------<a href=#005>[005]</a>
+* History------------------------------------------------------------------<a href=#003>[003]</a>
+* References---------------------------------------------------------------<a href=#004>[004]</a>
 
 
 <span id=001><a href=#001>[001]</a></span> Installation
@@ -44,60 +43,57 @@ Refer to the manual pages and command help output. To use git-request-pull,
 perl is required.
 
 
-<span id=003><a href=#003>[003]</a></span> Information
+<span id=003><a href=#003>[003]</a></span> History
 ________________________________________________________________________________
 
-
---<span id=004><a href=#004>[004]</a></span>-Change-History--------------------------------------------------------
-
-<div style="max-height:177px;overflow:hidden scroll">  2021-08-17 <a href="https://github.com/kisslinux/repo/commit/33b38f8b3113ea7c85c99ad2f8e39e1437bbbabd">33b38f8b</a> git: 2.33.0
-  2021-07-28 <a href="https://github.com/kisslinux/repo/commit/801ead4d0777a7357229f36b9344c823f9b4b5ae">801ead4d</a> git: remove duplicate option. Closes #299
-  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/43aaf2d19b24828d3f05bb3e9a23878cfef43a91">43aaf2d1</a> git: update for new env
-  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/a052c08df9ff9ec24ed03aaa591bbf7e675bab26">a052c08d</a> git: use VERSION
-  2021-07-12 <a href="https://github.com/kisslinux/repo/commit/f460d66788cf757a98daaeb91ab6567c0264496f">f460d667</a> git: fix non-posix cp flag
-  2021-07-08 <a href="https://github.com/kisslinux/repo/commit/197217d67ba6f5b5491b63c16ec96af595d0f923">197217d6</a> git: depend on openssl
-  2021-06-30 <a href="https://github.com/kisslinux/repo/commit/d36d682a96fd5521f4fb19e2881abc218f869bed">d36d682a</a> git: 2.32.0
-  2020-10-30 <a href="https://github.com/kisslinux/repo/commit/50747e422ed17ecbb93dc70e818c614c1b3caab6">50747e42</a> git: 2.29.2
-  2020-10-24 <a href="https://github.com/kisslinux/repo/commit/034bc52a4baac684e6d54e4df0f251d09462b2a7">034bc52a</a> git: 2.29.1
-  2020-10-19 <a href="https://github.com/kisslinux/repo/commit/356588321f49f782163d6d55282141daaa9e9789">35658832</a> git: 2.29.0
-  2020-10-01 <a href="https://github.com/kisslinux/repo/commit/165d755e33b02e1099eae46c497b64a8a383a9df">165d755e</a> git: Fix build when curl is compiled with zstd.
-  2020-09-30 <a href="https://github.com/kisslinux/repo/commit/25c7001caee0e7834bf47f2a9b9fd3bf53230086">25c7001c</a> git: remove unneeded sed
-  2020-09-30 <a href="https://github.com/kisslinux/repo/commit/ef453d8ba25ed8016f8925894df6dcee349900b5">ef453d8b</a> git: statically linked with https
-  2020-09-30 <a href="https://github.com/kisslinux/repo/commit/684788ac3733dd19e7f02b4b33e04f50ebaa6390">684788ac</a> git: disable static for now
-  2020-09-30 <a href="https://github.com/kisslinux/repo/commit/873153e405ec06b9bbaef0e455ce18e3c1215bd4">873153e4</a> git: statically link
-  2020-07-27 <a href="https://github.com/kisslinux/repo/commit/e6130bf9555c810865670fd5b4decf884178f637">e6130bf9</a> git: bump to 2.28.0
-  2020-06-01 <a href="https://github.com/kisslinux/repo/commit/1a92d8261a4b5982b4bdace5a0f7eb0421662a0b">1a92d826</a> git: bump to 2.27.0
-  2020-05-30 <a href="https://github.com/kisslinux/repo/commit/363d656005aa78d287507d1f60d259b021340bf9">363d6560</a> git: fix sources (cert exp)
-  2020-05-15 <a href="https://github.com/kisslinux/repo/commit/62d2bf14626e047523904202fefd0dbbb7ca5bd1">62d2bf14</a> git: bump rel for libressl
-  2020-05-08 <a href="https://github.com/kisslinux/repo/commit/a047a7d2c027188434d641281e64e6a5e5922e97">a047a7d2</a> git: Install files to /usr/lib/git-core
-  2020-04-27 <a href="https://github.com/kisslinux/repo/commit/5db39b3879d8c8f77ed7ef7f7939caec9a2e88ea">5db39b38</a> git: install manual pages
-  2020-04-21 <a href="https://github.com/kisslinux/repo/commit/2470c517280442519e5b78ed9cecb59e8c659522">2470c517</a> git: bump to 2.26.2
-  2020-04-15 <a href="https://github.com/kisslinux/repo/commit/65ef89872101ff5df56aaad38cfc95a5eec7f166">65ef8987</a> git: bump to 2.26.1
-  2020-03-23 <a href="https://github.com/kisslinux/repo/commit/766ee34d08bc2a877176fe8dcebf3d98c9a7f4f8">766ee34d</a> git: bump to 2.26.0
-  2020-03-22 <a href="https://github.com/kisslinux/repo/commit/62814b192dd138566d6ac5df91552d806cab1818">62814b19</a> git: Fix broken patch. Closes #174
-  2020-03-18 <a href="https://github.com/kisslinux/repo/commit/937b278a15b464aa394188e33b60c74d08a76d84">937b278a</a> git: bump to 2.25.2
-  2020-03-04 <a href="https://github.com/kisslinux/repo/commit/1a18b2d35ab63984c66c7fec3443a6b7e5c7da2c">1a18b2d3</a> git: Reduce size by 25MB~ @E5ten
-  2020-02-17 <a href="https://github.com/kisslinux/repo/commit/ecd3b0ccdc332ecf74eb3d160ad423cc6532265a">ecd3b0cc</a> git: bump to 2.25.1
-  2020-01-22 <a href="https://github.com/kisslinux/repo/commit/7f6c33cfc1a377758cd56f8721f98026eed78ca7">7f6c33cf</a> git: Build with perl if available
-  2020-01-14 <a href="https://github.com/kisslinux/repo/commit/e1f53df43940cfed5a5d15682f82b97dc0435880">e1f53df4</a> git: bump to 2.25.0
-  2019-12-10 <a href="https://github.com/kisslinux/repo/commit/09bd41c527c0c3f5cfc38cad4c0d9a2e3a4fc5c0">09bd41c5</a> git: bump to 2.24.1
-  2019-11-04 <a href="https://github.com/kisslinux/repo/commit/74382b5452fe37a88cd760d2f0f7ca74471757cd">74382b54</a> git: bump to 2.24.0
-  2019-09-07 <a href="https://github.com/kisslinux/repo/commit/d0dd166079a5f10dd50199f455ae7d4a0cb2bcc0">d0dd1660</a> git: fix build'
-  2019-09-07 <a href="https://github.com/kisslinux/repo/commit/7e03ed67ff11915230dd2a020a8e32a0138edd3c">7e03ed67</a> git: fix checksums
-  2019-09-07 <a href="https://github.com/kisslinux/repo/commit/f7ddd3f24946111dd511e37d7de539d577fdf695">f7ddd3f2</a> git: remove autotools dependency
-  2019-08-17 <a href="https://github.com/kisslinux/repo/commit/c5587791a0c175b8f53fee1da63e2eba595a456c">c5587791</a> git: bump to 2.23.0
-  2019-08-13 <a href="https://github.com/kisslinux/repo/commit/c63675612df91932071b89f263f19ade8ab7d51a">c6367561</a> git: bump to 2.22.1, NO_PERL=YesPlease
-  2019-07-20 <a href="https://github.com/kisslinux/repo/commit/9f5184a21cbbea7327581561fd4f83c2fe2a075e">9f5184a2</a> git: Smaller build
-  2019-07-06 <a href="https://github.com/kisslinux/repo/commit/de94c8b48485938f3955b59d12918aeaa9012b7a">de94c8b4</a> git: bump to 2.22.0
-  2019-06-19 <a href="https://github.com/kisslinux/repo/commit/52dfeaa7a84242bd36b1199843ce1d818431a4b4">52dfeaa7</a> git: add license
-  2019-06-19 <a href="https://github.com/kisslinux/repo/commit/a51d3748de307a89c97bee0cdb71c820909a0b4e">a51d3748</a> git: remove expat
-  2019-06-19 <a href="https://github.com/kisslinux/repo/commit/025b5d8d72d73585fa0f2a4b7f723795cd9be9b8">025b5d8d</a> git: add expat dependency
-  2019-06-18 <a href="https://github.com/kisslinux/repo/commit/16d7a75a497b223ce6136907dce47d151f6a6572">16d7a75a</a> git: Added curl as dependency.
-  2019-06-18 <a href="https://github.com/kisslinux/repo/commit/13e68bc3bbf3e2c7f30d26a87eaa569676b1a492">13e68bc3</a> git: Update manifest
-  2019-06-02 <a href="https://github.com/kisslinux/repo/commit/4e136a08957dd9ff3944d73afb46ebc0831f65e3">4e136a08</a> git: init at 2.21.0
+<div style="max-height:177px;overflow:hidden scroll">2021-08-17 <a href="https://github.com/kisslinux/repo/commit/33b38f8b3113ea7c85c99ad2f8e39e1437bbbabd">33b38f8b</a> git: 2.33.0
+2021-07-28 <a href="https://github.com/kisslinux/repo/commit/801ead4d0777a7357229f36b9344c823f9b4b5ae">801ead4d</a> git: remove duplicate option. Closes #299
+2021-07-15 <a href="https://github.com/kisslinux/repo/commit/43aaf2d19b24828d3f05bb3e9a23878cfef43a91">43aaf2d1</a> git: update for new env
+2021-07-15 <a href="https://github.com/kisslinux/repo/commit/a052c08df9ff9ec24ed03aaa591bbf7e675bab26">a052c08d</a> git: use VERSION
+2021-07-12 <a href="https://github.com/kisslinux/repo/commit/f460d66788cf757a98daaeb91ab6567c0264496f">f460d667</a> git: fix non-posix cp flag
+2021-07-08 <a href="https://github.com/kisslinux/repo/commit/197217d67ba6f5b5491b63c16ec96af595d0f923">197217d6</a> git: depend on openssl
+2021-06-30 <a href="https://github.com/kisslinux/repo/commit/d36d682a96fd5521f4fb19e2881abc218f869bed">d36d682a</a> git: 2.32.0
+2020-10-30 <a href="https://github.com/kisslinux/repo/commit/50747e422ed17ecbb93dc70e818c614c1b3caab6">50747e42</a> git: 2.29.2
+2020-10-24 <a href="https://github.com/kisslinux/repo/commit/034bc52a4baac684e6d54e4df0f251d09462b2a7">034bc52a</a> git: 2.29.1
+2020-10-19 <a href="https://github.com/kisslinux/repo/commit/356588321f49f782163d6d55282141daaa9e9789">35658832</a> git: 2.29.0
+2020-10-01 <a href="https://github.com/kisslinux/repo/commit/165d755e33b02e1099eae46c497b64a8a383a9df">165d755e</a> git: Fix build when curl is compiled with zstd.
+2020-09-30 <a href="https://github.com/kisslinux/repo/commit/25c7001caee0e7834bf47f2a9b9fd3bf53230086">25c7001c</a> git: remove unneeded sed
+2020-09-30 <a href="https://github.com/kisslinux/repo/commit/ef453d8ba25ed8016f8925894df6dcee349900b5">ef453d8b</a> git: statically linked with https
+2020-09-30 <a href="https://github.com/kisslinux/repo/commit/684788ac3733dd19e7f02b4b33e04f50ebaa6390">684788ac</a> git: disable static for now
+2020-09-30 <a href="https://github.com/kisslinux/repo/commit/873153e405ec06b9bbaef0e455ce18e3c1215bd4">873153e4</a> git: statically link
+2020-07-27 <a href="https://github.com/kisslinux/repo/commit/e6130bf9555c810865670fd5b4decf884178f637">e6130bf9</a> git: bump to 2.28.0
+2020-06-01 <a href="https://github.com/kisslinux/repo/commit/1a92d8261a4b5982b4bdace5a0f7eb0421662a0b">1a92d826</a> git: bump to 2.27.0
+2020-05-30 <a href="https://github.com/kisslinux/repo/commit/363d656005aa78d287507d1f60d259b021340bf9">363d6560</a> git: fix sources (cert exp)
+2020-05-15 <a href="https://github.com/kisslinux/repo/commit/62d2bf14626e047523904202fefd0dbbb7ca5bd1">62d2bf14</a> git: bump rel for libressl
+2020-05-08 <a href="https://github.com/kisslinux/repo/commit/a047a7d2c027188434d641281e64e6a5e5922e97">a047a7d2</a> git: Install files to /usr/lib/git-core
+2020-04-27 <a href="https://github.com/kisslinux/repo/commit/5db39b3879d8c8f77ed7ef7f7939caec9a2e88ea">5db39b38</a> git: install manual pages
+2020-04-21 <a href="https://github.com/kisslinux/repo/commit/2470c517280442519e5b78ed9cecb59e8c659522">2470c517</a> git: bump to 2.26.2
+2020-04-15 <a href="https://github.com/kisslinux/repo/commit/65ef89872101ff5df56aaad38cfc95a5eec7f166">65ef8987</a> git: bump to 2.26.1
+2020-03-23 <a href="https://github.com/kisslinux/repo/commit/766ee34d08bc2a877176fe8dcebf3d98c9a7f4f8">766ee34d</a> git: bump to 2.26.0
+2020-03-22 <a href="https://github.com/kisslinux/repo/commit/62814b192dd138566d6ac5df91552d806cab1818">62814b19</a> git: Fix broken patch. Closes #174
+2020-03-18 <a href="https://github.com/kisslinux/repo/commit/937b278a15b464aa394188e33b60c74d08a76d84">937b278a</a> git: bump to 2.25.2
+2020-03-04 <a href="https://github.com/kisslinux/repo/commit/1a18b2d35ab63984c66c7fec3443a6b7e5c7da2c">1a18b2d3</a> git: Reduce size by 25MB~ @E5ten
+2020-02-17 <a href="https://github.com/kisslinux/repo/commit/ecd3b0ccdc332ecf74eb3d160ad423cc6532265a">ecd3b0cc</a> git: bump to 2.25.1
+2020-01-22 <a href="https://github.com/kisslinux/repo/commit/7f6c33cfc1a377758cd56f8721f98026eed78ca7">7f6c33cf</a> git: Build with perl if available
+2020-01-14 <a href="https://github.com/kisslinux/repo/commit/e1f53df43940cfed5a5d15682f82b97dc0435880">e1f53df4</a> git: bump to 2.25.0
+2019-12-10 <a href="https://github.com/kisslinux/repo/commit/09bd41c527c0c3f5cfc38cad4c0d9a2e3a4fc5c0">09bd41c5</a> git: bump to 2.24.1
+2019-11-04 <a href="https://github.com/kisslinux/repo/commit/74382b5452fe37a88cd760d2f0f7ca74471757cd">74382b54</a> git: bump to 2.24.0
+2019-09-07 <a href="https://github.com/kisslinux/repo/commit/d0dd166079a5f10dd50199f455ae7d4a0cb2bcc0">d0dd1660</a> git: fix build'
+2019-09-07 <a href="https://github.com/kisslinux/repo/commit/7e03ed67ff11915230dd2a020a8e32a0138edd3c">7e03ed67</a> git: fix checksums
+2019-09-07 <a href="https://github.com/kisslinux/repo/commit/f7ddd3f24946111dd511e37d7de539d577fdf695">f7ddd3f2</a> git: remove autotools dependency
+2019-08-17 <a href="https://github.com/kisslinux/repo/commit/c5587791a0c175b8f53fee1da63e2eba595a456c">c5587791</a> git: bump to 2.23.0
+2019-08-13 <a href="https://github.com/kisslinux/repo/commit/c63675612df91932071b89f263f19ade8ab7d51a">c6367561</a> git: bump to 2.22.1, NO_PERL=YesPlease
+2019-07-20 <a href="https://github.com/kisslinux/repo/commit/9f5184a21cbbea7327581561fd4f83c2fe2a075e">9f5184a2</a> git: Smaller build
+2019-07-06 <a href="https://github.com/kisslinux/repo/commit/de94c8b48485938f3955b59d12918aeaa9012b7a">de94c8b4</a> git: bump to 2.22.0
+2019-06-19 <a href="https://github.com/kisslinux/repo/commit/52dfeaa7a84242bd36b1199843ce1d818431a4b4">52dfeaa7</a> git: add license
+2019-06-19 <a href="https://github.com/kisslinux/repo/commit/a51d3748de307a89c97bee0cdb71c820909a0b4e">a51d3748</a> git: remove expat
+2019-06-19 <a href="https://github.com/kisslinux/repo/commit/025b5d8d72d73585fa0f2a4b7f723795cd9be9b8">025b5d8d</a> git: add expat dependency
+2019-06-18 <a href="https://github.com/kisslinux/repo/commit/16d7a75a497b223ce6136907dce47d151f6a6572">16d7a75a</a> git: Added curl as dependency.
+2019-06-18 <a href="https://github.com/kisslinux/repo/commit/13e68bc3bbf3e2c7f30d26a87eaa569676b1a492">13e68bc3</a> git: Update manifest
+2019-06-02 <a href="https://github.com/kisslinux/repo/commit/4e136a08957dd9ff3944d73afb46ebc0831f65e3">4e136a08</a> git: init at 2.21.0
 </div>
 
-<span id=005><a href=#005>[005]</a></span> References
+<span id=004><a href=#004>[004]</a></span> References
 ________________________________________________________________________________
 
 <span id=0><a href=#0>[0]</a></span> <a href=https://en.wikipedia.org/wiki/Git>https://en.wikipedia.org/wiki/Git</a>

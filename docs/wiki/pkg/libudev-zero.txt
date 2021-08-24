@@ -15,9 +15,8 @@ ________________________________________________________________________________
 * Installation-------------------------------------------------------------[001]
 * Setup--------------------------------------------------------------------[002]
 * Usage--------------------------------------------------------------------[003]
-* Information--------------------------------------------------------------[004]
-  * Change-History---------------------------------------------------------[005]
-* References---------------------------------------------------------------[006]
+* History------------------------------------------------------------------[004]
+* References---------------------------------------------------------------[005]
 
 
 [001] Installation
@@ -44,33 +43,30 @@ Refer to the FreeDesktop libudev documentation for library information. Refer
 to the project's upstream for more information.
 
 
-[004] Information
+[004] History
 ________________________________________________________________________________
 
-
---[005]-Change-History--------------------------------------------------------
-
-<div style="max-height:177px;overflow:hidden scroll">  2021-07-18 <a href="https://github.com/kisslinux/repo/commit/5e1cac83c4abd3486a77514ba573f5ad189e85d0">5e1cac83</a> libudev-zero: update for new env
-  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/c9444ecbae45b1ab370a789c29f9094f9126542a">c9444ecb</a> libudev-zero: use VERSION
-  2021-07-03 <a href="https://github.com/kisslinux/repo/commit/b58602a025f6b6cec91b2d911905f9fd9a0f7809">b58602a0</a> libudev-zero: 0.5.2
-  2021-06-30 <a href="https://github.com/kisslinux/repo/commit/8452681403f86649f8dfdd56fbfd7c3567aa5fdc">84526814</a> libudev-zero: 0.5.1
-  2020-11-22 <a href="https://github.com/kisslinux/repo/commit/85ddd08df9497155b33e2e8e9070fb2fadcd86d1">85ddd08d</a> libudev-zero: 0.4.5
-  2020-09-20 <a href="https://github.com/kisslinux/repo/commit/44e81f6fe3f0d2486bf07df5e52a3712dce7d39c">44e81f6f</a> libudev-zero: 0.4.4
-  2020-09-15 <a href="https://github.com/kisslinux/repo/commit/9a6c4dadbe6375422528648bdb31c860315fe706">9a6c4dad</a> libudev-zero: Fix pkg-config file path
-  2020-09-01 <a href="https://github.com/kisslinux/repo/commit/6ca2edf82b391b25f1b71c8ff93e9b8799db4e16">6ca2edf8</a> libudev-zero: 0.4.2
-  2020-08-26 <a href="https://github.com/kisslinux/repo/commit/8ed0cf9f0291d86fe82cfba07203c8117df5fb55">8ed0cf9f</a> libudev-zero: 0.4.1
-  2020-08-08 <a href="https://github.com/kisslinux/repo/commit/1445799e16191733be8fb8341af00034cc950176">1445799e</a> libudev-zero: bump to 0.3.2
-  2020-08-01 <a href="https://github.com/kisslinux/repo/commit/fef3f7edab48377b34b169db3ed900edb8866d0e">fef3f7ed</a> libudev-zero: 0.3.1
-  2020-08-01 <a href="https://github.com/kisslinux/repo/commit/7cbea70bb3d58f45c8231b9e07a1dcc278667c19">7cbea70b</a> libudev-zero: Revert update due to breakage with input devices
-  2020-08-01 <a href="https://github.com/kisslinux/repo/commit/c4617aa5f0fc015b9d878aba0f0f4e8d317ab0ce">c4617aa5</a> libudev-zero: 0.3.0
-  2020-07-29 <a href="https://github.com/kisslinux/repo/commit/ac65444414a14b8c5ab7b40af37ef5926a0957a4">ac654444</a> libudev-zero: bump to 0.2.1
-  2020-07-26 <a href="https://github.com/kisslinux/repo/commit/b33560d583ebd970309e45ae6222d65b307d3790">b33560d5</a> libudev-zero: bump to 0.1.2
-  2020-07-22 <a href="https://github.com/kisslinux/repo/commit/1e45351d9d5243c328a56ce96a291ee306ce5403">1e45351d</a> libudev-zero: bump to 0.1.1
-  2020-07-22 <a href="https://github.com/kisslinux/repo/commit/a587272f96c4baeed2beef2297a317c5a7fea69b">a587272f</a> libudev-zero: Add linux-headers to depends
-  2020-07-22 <a href="https://github.com/kisslinux/repo/commit/0aa2ee4aea1c5adf6ea82428377036e9beed485a">0aa2ee4a</a> libudev-zero: new package at 0.1.0
+<div style="max-height:177px;overflow:hidden scroll">2021-07-18 <a href="https://github.com/kisslinux/repo/commit/5e1cac83c4abd3486a77514ba573f5ad189e85d0">5e1cac83</a> libudev-zero: update for new env
+2021-07-15 <a href="https://github.com/kisslinux/repo/commit/c9444ecbae45b1ab370a789c29f9094f9126542a">c9444ecb</a> libudev-zero: use VERSION
+2021-07-03 <a href="https://github.com/kisslinux/repo/commit/b58602a025f6b6cec91b2d911905f9fd9a0f7809">b58602a0</a> libudev-zero: 0.5.2
+2021-06-30 <a href="https://github.com/kisslinux/repo/commit/8452681403f86649f8dfdd56fbfd7c3567aa5fdc">84526814</a> libudev-zero: 0.5.1
+2020-11-22 <a href="https://github.com/kisslinux/repo/commit/85ddd08df9497155b33e2e8e9070fb2fadcd86d1">85ddd08d</a> libudev-zero: 0.4.5
+2020-09-20 <a href="https://github.com/kisslinux/repo/commit/44e81f6fe3f0d2486bf07df5e52a3712dce7d39c">44e81f6f</a> libudev-zero: 0.4.4
+2020-09-15 <a href="https://github.com/kisslinux/repo/commit/9a6c4dadbe6375422528648bdb31c860315fe706">9a6c4dad</a> libudev-zero: Fix pkg-config file path
+2020-09-01 <a href="https://github.com/kisslinux/repo/commit/6ca2edf82b391b25f1b71c8ff93e9b8799db4e16">6ca2edf8</a> libudev-zero: 0.4.2
+2020-08-26 <a href="https://github.com/kisslinux/repo/commit/8ed0cf9f0291d86fe82cfba07203c8117df5fb55">8ed0cf9f</a> libudev-zero: 0.4.1
+2020-08-08 <a href="https://github.com/kisslinux/repo/commit/1445799e16191733be8fb8341af00034cc950176">1445799e</a> libudev-zero: bump to 0.3.2
+2020-08-01 <a href="https://github.com/kisslinux/repo/commit/fef3f7edab48377b34b169db3ed900edb8866d0e">fef3f7ed</a> libudev-zero: 0.3.1
+2020-08-01 <a href="https://github.com/kisslinux/repo/commit/7cbea70bb3d58f45c8231b9e07a1dcc278667c19">7cbea70b</a> libudev-zero: Revert update due to breakage with input devices
+2020-08-01 <a href="https://github.com/kisslinux/repo/commit/c4617aa5f0fc015b9d878aba0f0f4e8d317ab0ce">c4617aa5</a> libudev-zero: 0.3.0
+2020-07-29 <a href="https://github.com/kisslinux/repo/commit/ac65444414a14b8c5ab7b40af37ef5926a0957a4">ac654444</a> libudev-zero: bump to 0.2.1
+2020-07-26 <a href="https://github.com/kisslinux/repo/commit/b33560d583ebd970309e45ae6222d65b307d3790">b33560d5</a> libudev-zero: bump to 0.1.2
+2020-07-22 <a href="https://github.com/kisslinux/repo/commit/1e45351d9d5243c328a56ce96a291ee306ce5403">1e45351d</a> libudev-zero: bump to 0.1.1
+2020-07-22 <a href="https://github.com/kisslinux/repo/commit/a587272f96c4baeed2beef2297a317c5a7fea69b">a587272f</a> libudev-zero: Add linux-headers to depends
+2020-07-22 <a href="https://github.com/kisslinux/repo/commit/0aa2ee4aea1c5adf6ea82428377036e9beed485a">0aa2ee4a</a> libudev-zero: new package at 0.1.0
 </div>
 
-[006] References
+[005] References
 ________________________________________________________________________________
 
 [0] https://github.com/illiliti/libudev-zero

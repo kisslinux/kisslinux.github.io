@@ -18,9 +18,8 @@ ________________________________________________________________________________
 * Setup--------------------------------------------------------------------[002]
 * Usage--------------------------------------------------------------------[003]
 * Troubleshooting----------------------------------------------------------[004]
-* Information--------------------------------------------------------------[005]
-  * Change-History---------------------------------------------------------[006]
-* References---------------------------------------------------------------[007]
+* History------------------------------------------------------------------[005]
+* References---------------------------------------------------------------[006]
 
 
 [001] Installation
@@ -67,36 +66,33 @@ documentation. There is also documentation available online. To verify that
 ccache is working the 'ccache -s' command can be used.
 
 
-[005] Information
+[005] History
 ________________________________________________________________________________
 
-
---[006]-Change-History--------------------------------------------------------
-
-<div style="max-height:177px;overflow:hidden scroll">  2021-08-20 <a href="https://github.com/kisslinux/repo/commit/078ccafb7aefc67c0082f5b9951c75dde6421ec2">078ccafb</a> ccache: 4.4
-  2021-07-17 <a href="https://github.com/kisslinux/repo/commit/db801050d2a050caa3c3d877e8b1044218851e84">db801050</a> ccache: update for new env
-  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/7ff3e56c62d646f740027b6a9a81e4842ea06ca2">7ff3e56c</a> ccache: use VERSION
-  2021-06-30 <a href="https://github.com/kisslinux/repo/commit/89c8955ed3f6fe058ca77c63b32873ed54b9ef33">89c8955e</a> ccache: 4.3
-  2020-11-23 <a href="https://github.com/kisslinux/repo/commit/16bf88203dcc723910b9c84076c63ee1c87557b3">16bf8820</a> ccache: 4.1
-  2020-10-20 <a href="https://github.com/kisslinux/repo/commit/e40cada6fa239115c4ac097f54fd36b0de1a5ebc">e40cada6</a> ccache: fix depends
-  2020-10-19 <a href="https://github.com/kisslinux/repo/commit/1bb480ad71323aabef29ae617b930e68dbb3aec9">1bb480ad</a> ccache: 4.0
-  2020-10-02 <a href="https://github.com/kisslinux/repo/commit/3f06240ea81a44f286e711e0dd003f0f057dc2e4">3f06240e</a> ccache: 3.7.12
-  2020-07-22 <a href="https://github.com/kisslinux/repo/commit/8487e4a36e43ee81de37c1db8b9d6a470d288942">8487e4a3</a> ccache: bump to 3.7.11
-  2020-06-23 <a href="https://github.com/kisslinux/repo/commit/390e52166b8bb353a897ec36004b94ac61b7668f">390e5216</a> ccache: bump to 3.7.10
-  2020-06-08 <a href="https://github.com/kisslinux/repo/commit/330ed81ab2616b82680dfb38e64c580d20c73a79">330ed81a</a> ccache: Add new message to post-install
-  2020-04-29 <a href="https://github.com/kisslinux/repo/commit/06dba772010f064b71a333c9afc62a9fc9db556e">06dba772</a> ccache: Drop clang (for now)
-  2020-03-29 <a href="https://github.com/kisslinux/repo/commit/19ddf1b6cd8f2fab801183d4eabcef854011e9d3">19ddf1b6</a> ccache: bump to 3.7.9
-  2020-03-17 <a href="https://github.com/kisslinux/repo/commit/f3b210b1ddda3dc06da187483fbecab63ac3ab9b">f3b210b1</a> ccache: bump to 3.7.8
-  2020-03-08 <a href="https://github.com/kisslinux/repo/commit/20116584012f21260b557781553e83f9a642ed89">20116584</a> ccache: Clang support
-  2020-01-06 <a href="https://github.com/kisslinux/repo/commit/5df7ad393f9b34094654f54a22d21c28026bd4b3">5df7ad39</a> ccache: bump to 3.7.7
-  2019-11-18 <a href="https://github.com/kisslinux/repo/commit/94ddf4e9f1eb9c1b643c851af06bdbc88f3b4a8e">94ddf4e9</a> ccache: bump to 3.7.6
-  2019-10-23 <a href="https://github.com/kisslinux/repo/commit/437c2e199cb5d71f48b4d5ef44adf1d116d1ccb5">437c2e19</a> ccache: bump to 3.7.5
-  2019-09-13 <a href="https://github.com/kisslinux/repo/commit/eb86e29c4d28b6934a5d912f11768f1752fddffb">eb86e29c</a> ccache: add post-install message
-  2019-09-13 <a href="https://github.com/kisslinux/repo/commit/68a6a0ba7c72cb2226f0b465f01ad7b152368559">68a6a0ba</a> ccache: bump to 3.7.4
-  2019-08-20 <a href="https://github.com/kisslinux/repo/commit/2a2449a666d509c6c6c25e87f471cf6e5fc5b616">2a2449a6</a> ccache: new package at 3.7.3
+<div style="max-height:177px;overflow:hidden scroll">2021-08-20 <a href="https://github.com/kisslinux/repo/commit/078ccafb7aefc67c0082f5b9951c75dde6421ec2">078ccafb</a> ccache: 4.4
+2021-07-17 <a href="https://github.com/kisslinux/repo/commit/db801050d2a050caa3c3d877e8b1044218851e84">db801050</a> ccache: update for new env
+2021-07-15 <a href="https://github.com/kisslinux/repo/commit/7ff3e56c62d646f740027b6a9a81e4842ea06ca2">7ff3e56c</a> ccache: use VERSION
+2021-06-30 <a href="https://github.com/kisslinux/repo/commit/89c8955ed3f6fe058ca77c63b32873ed54b9ef33">89c8955e</a> ccache: 4.3
+2020-11-23 <a href="https://github.com/kisslinux/repo/commit/16bf88203dcc723910b9c84076c63ee1c87557b3">16bf8820</a> ccache: 4.1
+2020-10-20 <a href="https://github.com/kisslinux/repo/commit/e40cada6fa239115c4ac097f54fd36b0de1a5ebc">e40cada6</a> ccache: fix depends
+2020-10-19 <a href="https://github.com/kisslinux/repo/commit/1bb480ad71323aabef29ae617b930e68dbb3aec9">1bb480ad</a> ccache: 4.0
+2020-10-02 <a href="https://github.com/kisslinux/repo/commit/3f06240ea81a44f286e711e0dd003f0f057dc2e4">3f06240e</a> ccache: 3.7.12
+2020-07-22 <a href="https://github.com/kisslinux/repo/commit/8487e4a36e43ee81de37c1db8b9d6a470d288942">8487e4a3</a> ccache: bump to 3.7.11
+2020-06-23 <a href="https://github.com/kisslinux/repo/commit/390e52166b8bb353a897ec36004b94ac61b7668f">390e5216</a> ccache: bump to 3.7.10
+2020-06-08 <a href="https://github.com/kisslinux/repo/commit/330ed81ab2616b82680dfb38e64c580d20c73a79">330ed81a</a> ccache: Add new message to post-install
+2020-04-29 <a href="https://github.com/kisslinux/repo/commit/06dba772010f064b71a333c9afc62a9fc9db556e">06dba772</a> ccache: Drop clang (for now)
+2020-03-29 <a href="https://github.com/kisslinux/repo/commit/19ddf1b6cd8f2fab801183d4eabcef854011e9d3">19ddf1b6</a> ccache: bump to 3.7.9
+2020-03-17 <a href="https://github.com/kisslinux/repo/commit/f3b210b1ddda3dc06da187483fbecab63ac3ab9b">f3b210b1</a> ccache: bump to 3.7.8
+2020-03-08 <a href="https://github.com/kisslinux/repo/commit/20116584012f21260b557781553e83f9a642ed89">20116584</a> ccache: Clang support
+2020-01-06 <a href="https://github.com/kisslinux/repo/commit/5df7ad393f9b34094654f54a22d21c28026bd4b3">5df7ad39</a> ccache: bump to 3.7.7
+2019-11-18 <a href="https://github.com/kisslinux/repo/commit/94ddf4e9f1eb9c1b643c851af06bdbc88f3b4a8e">94ddf4e9</a> ccache: bump to 3.7.6
+2019-10-23 <a href="https://github.com/kisslinux/repo/commit/437c2e199cb5d71f48b4d5ef44adf1d116d1ccb5">437c2e19</a> ccache: bump to 3.7.5
+2019-09-13 <a href="https://github.com/kisslinux/repo/commit/eb86e29c4d28b6934a5d912f11768f1752fddffb">eb86e29c</a> ccache: add post-install message
+2019-09-13 <a href="https://github.com/kisslinux/repo/commit/68a6a0ba7c72cb2226f0b465f01ad7b152368559">68a6a0ba</a> ccache: bump to 3.7.4
+2019-08-20 <a href="https://github.com/kisslinux/repo/commit/2a2449a666d509c6c6c25e87f471cf6e5fc5b616">2a2449a6</a> ccache: new package at 3.7.3
 </div>
 
-[007] References
+[006] References
 ________________________________________________________________________________
 
 [0] https://en.wikipedia.org/wiki/Ccache

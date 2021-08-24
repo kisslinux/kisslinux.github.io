@@ -21,9 +21,8 @@ ________________________________________________________________________________
 * Setup--------------------------------------------------------------------[002]
 * Usage--------------------------------------------------------------------[003]
 * Troubleshooting----------------------------------------------------------[004]
-* Information--------------------------------------------------------------[005]
-  * Change-History---------------------------------------------------------[006]
-* References---------------------------------------------------------------[007]
+* History------------------------------------------------------------------[005]
+* References---------------------------------------------------------------[006]
 
 
 [001] Installation
@@ -63,35 +62,32 @@ ________________________________________________________________________________
 If a package fails to build with clang, open an issue at $/kisslinux/repo
 
 
-[005] Information
+[005] History
 ________________________________________________________________________________
 
-
---[006]-Change-History--------------------------------------------------------
-
-<div style="max-height:177px;overflow:hidden scroll">  2021-08-15 <a href="https://github.com/kisslinux/repo/commit/5d84e02ca034bb25069049cd105b6c87808579df">5d84e02c</a> clang: fix incorrect flag
-  2021-07-17 <a href="https://github.com/kisslinux/repo/commit/8ec205895ebaf246941fc05b02b125d33236540d">8ec20589</a> clang: update for new env
-  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/796d4f301d22766a55a93aa38a749446ef236936">796d4f30</a> clang: use VERSION
-  2021-07-09 <a href="https://github.com/kisslinux/repo/commit/2d98f2f9a3309ec040a7fdd5bed70006c344e23f">2d98f2f9</a> clang: 12.0.1
-  2021-07-03 <a href="https://github.com/kisslinux/repo/commit/04ce5126debb1625fdd4b2f6743e7f49afbdfd7f">04ce5126</a> clang: remove sed -i
-  2021-06-30 <a href="https://github.com/kisslinux/repo/commit/341b774153486821bd498c898c255df7d504ddf8">341b7741</a> clang: 12.0.0
-  2020-10-12 <a href="https://github.com/kisslinux/repo/commit/d3546b39e7c8aeca2813d1076aa3befc6eb6bd29">d3546b39</a> llvm/clang: 11.0.0
-  2020-09-17 <a href="https://github.com/kisslinux/repo/commit/03dfe7611be22e7d7a51b607cfaa13e466874ddd">03dfe761</a> clang: disable libxml2
-  2020-07-22 <a href="https://github.com/kisslinux/repo/commit/6e5c7a043980dfaaa179fa35b70ed6f6ef7dc418">6e5c7a04</a> llvm,clang: bump to 10.0.1
-  2020-05-08 <a href="https://github.com/kisslinux/repo/commit/ba563711f5e1a05f3c7785d254fa6f1d5cbcc288">ba563711</a> clang: Fix libexec directory location
-  2020-03-25 <a href="https://github.com/kisslinux/repo/commit/47d6e1e94d357396e7324ff4860ee6d4624b4ad7">47d6e1e9</a> llvm,clang: bump to 10.0.0
-  2019-12-21 <a href="https://github.com/kisslinux/repo/commit/d7816c2f76542fd6654345196a0a31647c64e6e0">d7816c2f</a> llvm/clang: bump to 9.0.1
-  2019-11-14 <a href="https://github.com/kisslinux/repo/commit/5469b31a04bb31f3d5848cbfbd6d90f6afa125a9">5469b31a</a> clang: better build
-  2019-10-22 <a href="https://github.com/kisslinux/repo/commit/55a5edf51dba79222561c82d1ef5514ab936677f">55a5edf5</a> clang: remove unneeded patches
-  2019-09-21 <a href="https://github.com/kisslinux/repo/commit/b02a2de596aaf374f439c35afa8a7be34dc0a775">b02a2de5</a> clang: revert to 8.0.1
-  2019-09-20 <a href="https://github.com/kisslinux/repo/commit/742d96b50ff17d386ebd270cbfa01a9d05ea7f05">742d96b5</a> clang: use https for source
-  2019-09-20 <a href="https://github.com/kisslinux/repo/commit/56b86f76afcbb594430e42daddd1da2920d96031">56b86f76</a> clang: bump to 9.0.0
-  2019-08-14 <a href="https://github.com/kisslinux/repo/commit/f21f1462041b85b00fcb206fae345c9c7abf6d55">f21f1462</a> clang: bump to 8.0.1
-  2019-08-04 <a href="https://github.com/kisslinux/repo/commit/7daa0c19a4208af5b317b09bd920ab534fa8ab51">7daa0c19</a> clang: move to extra
-  2019-07-31 <a href="https://github.com/kisslinux/repo/commit/f706e3cc441ac15713906fc70105805b9b1d63be">f706e3cc</a> clang: new package at 8.0.0
+<div style="max-height:177px;overflow:hidden scroll">2021-08-15 <a href="https://github.com/kisslinux/repo/commit/5d84e02ca034bb25069049cd105b6c87808579df">5d84e02c</a> clang: fix incorrect flag
+2021-07-17 <a href="https://github.com/kisslinux/repo/commit/8ec205895ebaf246941fc05b02b125d33236540d">8ec20589</a> clang: update for new env
+2021-07-15 <a href="https://github.com/kisslinux/repo/commit/796d4f301d22766a55a93aa38a749446ef236936">796d4f30</a> clang: use VERSION
+2021-07-09 <a href="https://github.com/kisslinux/repo/commit/2d98f2f9a3309ec040a7fdd5bed70006c344e23f">2d98f2f9</a> clang: 12.0.1
+2021-07-03 <a href="https://github.com/kisslinux/repo/commit/04ce5126debb1625fdd4b2f6743e7f49afbdfd7f">04ce5126</a> clang: remove sed -i
+2021-06-30 <a href="https://github.com/kisslinux/repo/commit/341b774153486821bd498c898c255df7d504ddf8">341b7741</a> clang: 12.0.0
+2020-10-12 <a href="https://github.com/kisslinux/repo/commit/d3546b39e7c8aeca2813d1076aa3befc6eb6bd29">d3546b39</a> llvm/clang: 11.0.0
+2020-09-17 <a href="https://github.com/kisslinux/repo/commit/03dfe7611be22e7d7a51b607cfaa13e466874ddd">03dfe761</a> clang: disable libxml2
+2020-07-22 <a href="https://github.com/kisslinux/repo/commit/6e5c7a043980dfaaa179fa35b70ed6f6ef7dc418">6e5c7a04</a> llvm,clang: bump to 10.0.1
+2020-05-08 <a href="https://github.com/kisslinux/repo/commit/ba563711f5e1a05f3c7785d254fa6f1d5cbcc288">ba563711</a> clang: Fix libexec directory location
+2020-03-25 <a href="https://github.com/kisslinux/repo/commit/47d6e1e94d357396e7324ff4860ee6d4624b4ad7">47d6e1e9</a> llvm,clang: bump to 10.0.0
+2019-12-21 <a href="https://github.com/kisslinux/repo/commit/d7816c2f76542fd6654345196a0a31647c64e6e0">d7816c2f</a> llvm/clang: bump to 9.0.1
+2019-11-14 <a href="https://github.com/kisslinux/repo/commit/5469b31a04bb31f3d5848cbfbd6d90f6afa125a9">5469b31a</a> clang: better build
+2019-10-22 <a href="https://github.com/kisslinux/repo/commit/55a5edf51dba79222561c82d1ef5514ab936677f">55a5edf5</a> clang: remove unneeded patches
+2019-09-21 <a href="https://github.com/kisslinux/repo/commit/b02a2de596aaf374f439c35afa8a7be34dc0a775">b02a2de5</a> clang: revert to 8.0.1
+2019-09-20 <a href="https://github.com/kisslinux/repo/commit/742d96b50ff17d386ebd270cbfa01a9d05ea7f05">742d96b5</a> clang: use https for source
+2019-09-20 <a href="https://github.com/kisslinux/repo/commit/56b86f76afcbb594430e42daddd1da2920d96031">56b86f76</a> clang: bump to 9.0.0
+2019-08-14 <a href="https://github.com/kisslinux/repo/commit/f21f1462041b85b00fcb206fae345c9c7abf6d55">f21f1462</a> clang: bump to 8.0.1
+2019-08-04 <a href="https://github.com/kisslinux/repo/commit/7daa0c19a4208af5b317b09bd920ab534fa8ab51">7daa0c19</a> clang: move to extra
+2019-07-31 <a href="https://github.com/kisslinux/repo/commit/f706e3cc441ac15713906fc70105805b9b1d63be">f706e3cc</a> clang: new package at 8.0.0
 </div>
 
-[007] References
+[006] References
 ________________________________________________________________________________
 
 [0] https://en.wikipedia.org/wiki/Clang

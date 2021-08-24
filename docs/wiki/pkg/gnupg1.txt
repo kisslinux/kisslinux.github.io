@@ -14,9 +14,8 @@ ________________________________________________________________________________
 
 * Installation-------------------------------------------------------------[001]
 * Usage--------------------------------------------------------------------[002]
-* Information--------------------------------------------------------------[003]
-  * Change-History---------------------------------------------------------[004]
-* References---------------------------------------------------------------[005]
+* History------------------------------------------------------------------[003]
+* References---------------------------------------------------------------[004]
 
 
 [001] Installation
@@ -35,23 +34,20 @@ ________________________________________________________________________________
 Refer to the manual pages and command help output.
 
 
-[003] Information
+[003] History
 ________________________________________________________________________________
 
-
---[004]-Change-History--------------------------------------------------------
-
-<div style="max-height:177px;overflow:hidden scroll">  2021-07-18 <a href="https://github.com/kisslinux/repo/commit/19b462aa67817e906e89ed2838e45cbfaee22cdb">19b462aa</a> gnupg1: update for new env
-  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/e009af1f6829306e060448edf63960e530766991">e009af1f</a> gnupg1: use VERSION
-  2021-07-08 <a href="https://github.com/kisslinux/repo/commit/23887e8ee9a30333dc5efb3fd53422ab0efb45c4">23887e8e</a> gnupg1: depend on openssl
-  2021-07-01 <a href="https://github.com/kisslinux/repo/commit/1d0d30803d6134a822dbea74c17ad4bb8ef4576c">1d0d3080</a> gnupg1: use new checksums format
-  2020-05-08 <a href="https://github.com/kisslinux/repo/commit/dbaa5b584ebfc53341d50699310ae574fc48b301">dbaa5b58</a> gnupg1: Fix libexec location
-  2020-04-19 <a href="https://github.com/kisslinux/repo/commit/4214b60a36b63e76a53e5f0f36746a79abcbb185">4214b60a</a> gnupg1: Disable nls
-  2020-02-12 <a href="https://github.com/kisslinux/repo/commit/a289cdc21e91959484dbe9e131d2a4f65655dc11">a289cdc2</a> gnupg1: Fix build with GCC 10
-  2019-10-05 <a href="https://github.com/kisslinux/repo/commit/070c8ec93c3d2e785dce1eb0c47d1ee293512377">070c8ec9</a> gnupg1: let nls be detected
+<div style="max-height:177px;overflow:hidden scroll">2021-07-18 <a href="https://github.com/kisslinux/repo/commit/19b462aa67817e906e89ed2838e45cbfaee22cdb">19b462aa</a> gnupg1: update for new env
+2021-07-15 <a href="https://github.com/kisslinux/repo/commit/e009af1f6829306e060448edf63960e530766991">e009af1f</a> gnupg1: use VERSION
+2021-07-08 <a href="https://github.com/kisslinux/repo/commit/23887e8ee9a30333dc5efb3fd53422ab0efb45c4">23887e8e</a> gnupg1: depend on openssl
+2021-07-01 <a href="https://github.com/kisslinux/repo/commit/1d0d30803d6134a822dbea74c17ad4bb8ef4576c">1d0d3080</a> gnupg1: use new checksums format
+2020-05-08 <a href="https://github.com/kisslinux/repo/commit/dbaa5b584ebfc53341d50699310ae574fc48b301">dbaa5b58</a> gnupg1: Fix libexec location
+2020-04-19 <a href="https://github.com/kisslinux/repo/commit/4214b60a36b63e76a53e5f0f36746a79abcbb185">4214b60a</a> gnupg1: Disable nls
+2020-02-12 <a href="https://github.com/kisslinux/repo/commit/a289cdc21e91959484dbe9e131d2a4f65655dc11">a289cdc2</a> gnupg1: Fix build with GCC 10
+2019-10-05 <a href="https://github.com/kisslinux/repo/commit/070c8ec93c3d2e785dce1eb0c47d1ee293512377">070c8ec9</a> gnupg1: let nls be detected
 </div>
 
-[005] References
+[004] References
 ________________________________________________________________________________
 
 [0] https://packages.debian.org/sid/gnupg1

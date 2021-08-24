@@ -53,7 +53,7 @@ pkg() {
     # Get git log of all packages.
     git -C "$KISS_REPO" log \
         --date=short \
-        --pretty="format:  %cd <a href=\"$url/commit/%H\">%h</a> %s" \
+        --pretty="format:%cd <a href=\"$url/commit/%H\">%h</a> %s" \
         > .log
 
     for pkg in "$KISS_REPO"/*/*/; do
@@ -74,19 +74,17 @@ pkg() {
                 _i=${line##*\[0}
                 _i=${_i#0}
                 _i=${_i%%']'}
-                printf '* Information--------------------------------------------------------------[%03d]\n' "$_i"
-                printf '  * Change-History---------------------------------------------------------[%03d]\n' "$((_i + 1))"
-                printf '%s[%03d]\n' "${line%'['*}" "$((_i + 2))"
+                printf '* History------------------------------------------------------------------[%03d]\n' "$_i"
+                printf '%s[%03d]\n' "${line%'['*}" "$((_i + 1))"
             ;;
 
             # Insert new entries into page.
             "["???"] References"*)
-                printf '[%03d] Information\n' "$_i"
-                printf '________________________________________________________________________________\n'
-                printf -- '\n\n--[%03d]-Change-History--------------------------------------------------------\n\n' "$((_i + 1))"
+                printf '[%03d] History\n' "$_i"
+                printf '________________________________________________________________________________\n\n'
                 printf '<div style="max-height:177px;overflow:hidden scroll">'
                 grep -F "${pkg##*/}: " .log
-                printf '</div>\n\n[%03d] References\n' "$((_i + 2))"
+                printf '</div>\n\n[%03d] References\n' "$((_i + 1))"
             ;;
 
             *)

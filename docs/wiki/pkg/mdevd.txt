@@ -21,9 +21,8 @@ ________________________________________________________________________________
 * Installation-------------------------------------------------------------[001]
 * Setup--------------------------------------------------------------------[002]
 * Usage--------------------------------------------------------------------[003]
-* Information--------------------------------------------------------------[004]
-  * Change-History---------------------------------------------------------[005]
-* References---------------------------------------------------------------[006]
+* History------------------------------------------------------------------[004]
+* References---------------------------------------------------------------[005]
 
 
 [001] Installation
@@ -51,17 +50,14 @@ No documentation is currently provided with the package, refer to online
 documentation for the time being.
 
 
-[004] Information
+[004] History
 ________________________________________________________________________________
 
-
---[005]-Change-History--------------------------------------------------------
-
-<div style="max-height:177px;overflow:hidden scroll">  2021-08-24 <a href="https://github.com/kisslinux/repo/commit/7bd823c6bb0e664eaa295ba81c5d4de2a5517858">7bd823c6</a> mdevd: fix service file
-  2021-08-21 <a href="https://github.com/kisslinux/repo/commit/4255ba99a90c876e98ee64ce2e6b23f6c17f1d3b">4255ba99</a> mdevd: 0.1.4.0
+<div style="max-height:177px;overflow:hidden scroll">2021-08-24 <a href="https://github.com/kisslinux/repo/commit/7bd823c6bb0e664eaa295ba81c5d4de2a5517858">7bd823c6</a> mdevd: fix service file
+2021-08-21 <a href="https://github.com/kisslinux/repo/commit/4255ba99a90c876e98ee64ce2e6b23f6c17f1d3b">4255ba99</a> mdevd: 0.1.4.0
 </div>
 
-[006] References
+[005] References
 ________________________________________________________________________________
 
 [0] https://skarnet.org/software/mdevd/

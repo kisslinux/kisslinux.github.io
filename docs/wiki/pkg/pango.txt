@@ -16,9 +16,8 @@ ________________________________________________________________________________
 
 * Installation-------------------------------------------------------------[001]
 * Usage--------------------------------------------------------------------[002]
-* Information--------------------------------------------------------------[003]
-  * Change-History---------------------------------------------------------[004]
-* References---------------------------------------------------------------[005]
+* History------------------------------------------------------------------[003]
+* References---------------------------------------------------------------[004]
 
 
 [001] Installation
@@ -38,43 +37,40 @@ No documentation is currently provided with the package, refer to online
 documentation for the time being.
 
 
-[003] Information
+[003] History
 ________________________________________________________________________________
 
-
---[004]-Change-History--------------------------------------------------------
-
-<div style="max-height:177px;overflow:hidden scroll">  2021-08-18 <a href="https://github.com/kisslinux/repo/commit/907932a955080d7e90e7aa4a844d40c99044e01b">907932a9</a> pango: bump rel
-  2021-08-18 <a href="https://github.com/kisslinux/repo/commit/f0ad5c73448ef71243a721b6c2b4a2748924f4fa">f0ad5c73</a> pango: fix segfaults
-  2021-08-18 <a href="https://github.com/kisslinux/repo/commit/159dc0270700333d09b45167e800d2c36327ed62">159dc027</a> pango: 1.48.9
-  2021-08-12 <a href="https://github.com/kisslinux/repo/commit/b199b67c44560a7d752edde6594a3368b04d1256">b199b67c</a> pango: 1.48.8
-  2021-07-27 <a href="https://github.com/kisslinux/repo/commit/52045d6a0da59059d8bd35831521851464cd87a6">52045d6a</a> pango: simplify build
-  2021-07-18 <a href="https://github.com/kisslinux/repo/commit/6e4b440a2dbebb4d19b70df1120b9daf071a3bc5">6e4b440a</a> pango: update for new env
-  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/6c9c202fc12e7dea012e31174ad9857ecafba067">6c9c202f</a> pango: use VERSION
-  2021-07-08 <a href="https://github.com/kisslinux/repo/commit/7be91e2834d417a0038641238d5736d45629207a">7be91e28</a> pango: remove xorg dependency
-  2021-07-07 <a href="https://github.com/kisslinux/repo/commit/42af66fc909712a7afa9d1f32b3c7f01fa98be94">42af66fc</a> pango: remove fribidi dependency
-  2021-07-04 <a href="https://github.com/kisslinux/repo/commit/8c505415d6460481221033ca8856ee90fac1e8c9">8c505415</a> pango: 1.48.7
-  2021-07-03 <a href="https://github.com/kisslinux/repo/commit/f1e98bd306648870fc776a86bb653c1640547b53">f1e98bd3</a> pango: remove sed -i, remove network requirement
-  2021-06-30 <a href="https://github.com/kisslinux/repo/commit/d3c8f08d84f93a2704782ad597060ff86bc8d113">d3c8f08d</a> pango: 1.48.6
-  2020-11-09 <a href="https://github.com/kisslinux/repo/commit/a86960944cc3540adb42616ba24936f3ba01d389">a8696094</a> pango: 1.48.0
-  2020-09-19 <a href="https://github.com/kisslinux/repo/commit/6dfb563adc8c42a456333ce1fe32b73313946936">6dfb563a</a> pango: 1.46.2
-  2020-08-20 <a href="https://github.com/kisslinux/repo/commit/25bd10d5c38d81098b2ba2245e60584cef91ac6f">25bd10d5</a> pango: 1.46.1
-  2020-08-11 <a href="https://github.com/kisslinux/repo/commit/0f3f66971b8a4e12d7ea09c95c1c8b90f0fda382">0f3f6697</a> pango: 1.46.0
-  2020-02-14 <a href="https://github.com/kisslinux/repo/commit/bec564094819c02e630338951e4bc2999df96829">bec56409</a> pango: clean up
-  2019-10-25 <a href="https://github.com/kisslinux/repo/commit/23fc877abd446530de400558de16523b554d5977">23fc877a</a> pango: bump to 1.44.7
-  2019-10-08 <a href="https://github.com/kisslinux/repo/commit/e91cc43579f2341e3b70fc4d2b23da0925fe6f95">e91cc435</a> pango: cleanup
-  2019-09-04 <a href="https://github.com/kisslinux/repo/commit/bd3e2c817eba32a88109acf710f1251a889cd1a4">bd3e2c81</a> pango: bump to 1.44.6
-  2019-09-03 <a href="https://github.com/kisslinux/repo/commit/3f77324fdc044a7f09dd02e6e54e8ec808a5a4dd">3f77324f</a> pango: fix dependencies
-  2019-08-17 <a href="https://github.com/kisslinux/repo/commit/162b6f69180dfe131ec06b562d592a348be30e78">162b6f69</a> pango: bump to 1.44.5
-  2019-08-14 <a href="https://github.com/kisslinux/repo/commit/51be47b824507f7e1a097fe7f957f5a9d7a13338">51be47b8</a> pango: bump to 1.44.4
-  2019-08-13 <a href="https://github.com/kisslinux/repo/commit/2e1146f50ff95b5971074c672babf5fdf739eba5">2e1146f5</a> pango: bump to 1.44.3
-  2019-08-05 <a href="https://github.com/kisslinux/repo/commit/6ed0d229e7f7c067d6b71b68343ac1de039a526a">6ed0d229</a> pango: move to extra
-  2019-07-28 <a href="https://github.com/kisslinux/repo/commit/dd0634d0097f851e8cac04f9e5ba74020731b179">dd0634d0</a> pango: Fix depends
-  2019-07-27 <a href="https://github.com/kisslinux/repo/commit/60014ddecad82f640159c2da182e3db8fafc814e">60014dde</a> pango: Fix dependencies.
-  2019-07-27 <a href="https://github.com/kisslinux/repo/commit/7b103a9547edacbd0bd9c0703afdc0ffcdc0ebb3">7b103a95</a> pango: new package at 1.42.4
+<div style="max-height:177px;overflow:hidden scroll">2021-08-18 <a href="https://github.com/kisslinux/repo/commit/907932a955080d7e90e7aa4a844d40c99044e01b">907932a9</a> pango: bump rel
+2021-08-18 <a href="https://github.com/kisslinux/repo/commit/f0ad5c73448ef71243a721b6c2b4a2748924f4fa">f0ad5c73</a> pango: fix segfaults
+2021-08-18 <a href="https://github.com/kisslinux/repo/commit/159dc0270700333d09b45167e800d2c36327ed62">159dc027</a> pango: 1.48.9
+2021-08-12 <a href="https://github.com/kisslinux/repo/commit/b199b67c44560a7d752edde6594a3368b04d1256">b199b67c</a> pango: 1.48.8
+2021-07-27 <a href="https://github.com/kisslinux/repo/commit/52045d6a0da59059d8bd35831521851464cd87a6">52045d6a</a> pango: simplify build
+2021-07-18 <a href="https://github.com/kisslinux/repo/commit/6e4b440a2dbebb4d19b70df1120b9daf071a3bc5">6e4b440a</a> pango: update for new env
+2021-07-15 <a href="https://github.com/kisslinux/repo/commit/6c9c202fc12e7dea012e31174ad9857ecafba067">6c9c202f</a> pango: use VERSION
+2021-07-08 <a href="https://github.com/kisslinux/repo/commit/7be91e2834d417a0038641238d5736d45629207a">7be91e28</a> pango: remove xorg dependency
+2021-07-07 <a href="https://github.com/kisslinux/repo/commit/42af66fc909712a7afa9d1f32b3c7f01fa98be94">42af66fc</a> pango: remove fribidi dependency
+2021-07-04 <a href="https://github.com/kisslinux/repo/commit/8c505415d6460481221033ca8856ee90fac1e8c9">8c505415</a> pango: 1.48.7
+2021-07-03 <a href="https://github.com/kisslinux/repo/commit/f1e98bd306648870fc776a86bb653c1640547b53">f1e98bd3</a> pango: remove sed -i, remove network requirement
+2021-06-30 <a href="https://github.com/kisslinux/repo/commit/d3c8f08d84f93a2704782ad597060ff86bc8d113">d3c8f08d</a> pango: 1.48.6
+2020-11-09 <a href="https://github.com/kisslinux/repo/commit/a86960944cc3540adb42616ba24936f3ba01d389">a8696094</a> pango: 1.48.0
+2020-09-19 <a href="https://github.com/kisslinux/repo/commit/6dfb563adc8c42a456333ce1fe32b73313946936">6dfb563a</a> pango: 1.46.2
+2020-08-20 <a href="https://github.com/kisslinux/repo/commit/25bd10d5c38d81098b2ba2245e60584cef91ac6f">25bd10d5</a> pango: 1.46.1
+2020-08-11 <a href="https://github.com/kisslinux/repo/commit/0f3f66971b8a4e12d7ea09c95c1c8b90f0fda382">0f3f6697</a> pango: 1.46.0
+2020-02-14 <a href="https://github.com/kisslinux/repo/commit/bec564094819c02e630338951e4bc2999df96829">bec56409</a> pango: clean up
+2019-10-25 <a href="https://github.com/kisslinux/repo/commit/23fc877abd446530de400558de16523b554d5977">23fc877a</a> pango: bump to 1.44.7
+2019-10-08 <a href="https://github.com/kisslinux/repo/commit/e91cc43579f2341e3b70fc4d2b23da0925fe6f95">e91cc435</a> pango: cleanup
+2019-09-04 <a href="https://github.com/kisslinux/repo/commit/bd3e2c817eba32a88109acf710f1251a889cd1a4">bd3e2c81</a> pango: bump to 1.44.6
+2019-09-03 <a href="https://github.com/kisslinux/repo/commit/3f77324fdc044a7f09dd02e6e54e8ec808a5a4dd">3f77324f</a> pango: fix dependencies
+2019-08-17 <a href="https://github.com/kisslinux/repo/commit/162b6f69180dfe131ec06b562d592a348be30e78">162b6f69</a> pango: bump to 1.44.5
+2019-08-14 <a href="https://github.com/kisslinux/repo/commit/51be47b824507f7e1a097fe7f957f5a9d7a13338">51be47b8</a> pango: bump to 1.44.4
+2019-08-13 <a href="https://github.com/kisslinux/repo/commit/2e1146f50ff95b5971074c672babf5fdf739eba5">2e1146f5</a> pango: bump to 1.44.3
+2019-08-05 <a href="https://github.com/kisslinux/repo/commit/6ed0d229e7f7c067d6b71b68343ac1de039a526a">6ed0d229</a> pango: move to extra
+2019-07-28 <a href="https://github.com/kisslinux/repo/commit/dd0634d0097f851e8cac04f9e5ba74020731b179">dd0634d0</a> pango: Fix depends
+2019-07-27 <a href="https://github.com/kisslinux/repo/commit/60014ddecad82f640159c2da182e3db8fafc814e">60014dde</a> pango: Fix dependencies.
+2019-07-27 <a href="https://github.com/kisslinux/repo/commit/7b103a9547edacbd0bd9c0703afdc0ffcdc0ebb3">7b103a95</a> pango: new package at 1.42.4
 </div>
 
-[005] References
+[004] References
 ________________________________________________________________________________
 
 [0] https://en.wikipedia.org/wiki/Pango

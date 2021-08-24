@@ -14,9 +14,8 @@ ________________________________________________________________________________
 * Installation-------------------------------------------------------------[001]
 * Setup--------------------------------------------------------------------[002]
 * Usage--------------------------------------------------------------------[003]
-* Information--------------------------------------------------------------[004]
-  * Change-History---------------------------------------------------------[005]
-* References---------------------------------------------------------------[006]
+* History------------------------------------------------------------------[004]
+* References---------------------------------------------------------------[005]
 
 
 [001] Installation
@@ -43,28 +42,25 @@ ________________________________________________________________________________
 Refer to the manual pages and command help output.
 
 
-[004] Information
+[004] History
 ________________________________________________________________________________
 
-
---[005]-Change-History--------------------------------------------------------
-
-<div style="max-height:177px;overflow:hidden scroll">  2021-08-20 <a href="https://github.com/kisslinux/repo/commit/5ef2247be260424bd5f6e39b89a6b9f81f2a3707">5ef2247b</a> bzip2: move back to core
-  2021-07-22 <a href="https://github.com/kisslinux/repo/commit/00b987baf487fad2ebcba242f91fd2bc5ecb8a87">00b987ba</a> bzip2: move to extra
-  2021-07-18 <a href="https://github.com/kisslinux/repo/commit/1bcbe81f8e7241c318713f5abde870727bd07899">1bcbe81f</a> bzip2: update for new env
-  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/5538b576fbe79d232fff9fd39158e9db5dce615c">5538b576</a> bzip2: use VERSION
-  2021-07-01 <a href="https://github.com/kisslinux/repo/commit/ef5d6ca8a971d1d3f368fef29e3df725dd91dec9">ef5d6ca8</a> bzip2: remove usage of install
-  2021-07-01 <a href="https://github.com/kisslinux/repo/commit/1e3d8eb65c9d7697b05305e87b8d3d64778c3c8a">1e3d8eb6</a> bzip2: use new checksum format
-  2020-04-27 <a href="https://github.com/kisslinux/repo/commit/50df29f275d5359f4252f700f0df7072a3e11d1a">50df29f2</a> bzip2: Revert to prior build method
-  2020-04-23 <a href="https://github.com/kisslinux/repo/commit/9ca23ccd811c97b5697534980d82f770de36064d">9ca23ccd</a> bzip2: Saner build
-  2020-02-12 <a href="https://github.com/kisslinux/repo/commit/40ac7114ac93940863bc6b39c2eb51db3b9d6f6c">40ac7114</a> bzip2: Use cc @konimex
-  2019-10-07 <a href="https://github.com/kisslinux/repo/commit/d6646d2e53db5a4850b85835aa73c00b4faa974b">d6646d2e</a> bzip2: build with generic_gcc to use $CC
-  2019-10-07 <a href="https://github.com/kisslinux/repo/commit/6715d1ce3f9c5746c5691b0cfc1c1f4e0bb28542">6715d1ce</a> bzip2: build with generic_gcc to use $CC
-  2019-09-16 <a href="https://github.com/kisslinux/repo/commit/988345550c8856b8626cc6ea64545b2b2daecfa7">98834555</a> bzip2: clean up build
-  2019-08-03 <a href="https://github.com/kisslinux/repo/commit/b63fdef95b695c11a707b2d1f6d69497e0c64c35">b63fdef9</a> bzip2: new package at 1.0.8
+<div style="max-height:177px;overflow:hidden scroll">2021-08-20 <a href="https://github.com/kisslinux/repo/commit/5ef2247be260424bd5f6e39b89a6b9f81f2a3707">5ef2247b</a> bzip2: move back to core
+2021-07-22 <a href="https://github.com/kisslinux/repo/commit/00b987baf487fad2ebcba242f91fd2bc5ecb8a87">00b987ba</a> bzip2: move to extra
+2021-07-18 <a href="https://github.com/kisslinux/repo/commit/1bcbe81f8e7241c318713f5abde870727bd07899">1bcbe81f</a> bzip2: update for new env
+2021-07-15 <a href="https://github.com/kisslinux/repo/commit/5538b576fbe79d232fff9fd39158e9db5dce615c">5538b576</a> bzip2: use VERSION
+2021-07-01 <a href="https://github.com/kisslinux/repo/commit/ef5d6ca8a971d1d3f368fef29e3df725dd91dec9">ef5d6ca8</a> bzip2: remove usage of install
+2021-07-01 <a href="https://github.com/kisslinux/repo/commit/1e3d8eb65c9d7697b05305e87b8d3d64778c3c8a">1e3d8eb6</a> bzip2: use new checksum format
+2020-04-27 <a href="https://github.com/kisslinux/repo/commit/50df29f275d5359f4252f700f0df7072a3e11d1a">50df29f2</a> bzip2: Revert to prior build method
+2020-04-23 <a href="https://github.com/kisslinux/repo/commit/9ca23ccd811c97b5697534980d82f770de36064d">9ca23ccd</a> bzip2: Saner build
+2020-02-12 <a href="https://github.com/kisslinux/repo/commit/40ac7114ac93940863bc6b39c2eb51db3b9d6f6c">40ac7114</a> bzip2: Use cc @konimex
+2019-10-07 <a href="https://github.com/kisslinux/repo/commit/d6646d2e53db5a4850b85835aa73c00b4faa974b">d6646d2e</a> bzip2: build with generic_gcc to use $CC
+2019-10-07 <a href="https://github.com/kisslinux/repo/commit/6715d1ce3f9c5746c5691b0cfc1c1f4e0bb28542">6715d1ce</a> bzip2: build with generic_gcc to use $CC
+2019-09-16 <a href="https://github.com/kisslinux/repo/commit/988345550c8856b8626cc6ea64545b2b2daecfa7">98834555</a> bzip2: clean up build
+2019-08-03 <a href="https://github.com/kisslinux/repo/commit/b63fdef95b695c11a707b2d1f6d69497e0c64c35">b63fdef9</a> bzip2: new package at 1.0.8
 </div>
 
-[006] References
+[005] References
 ________________________________________________________________________________
 
 [0] https://en.wikipedia.org/wiki/Bzip2

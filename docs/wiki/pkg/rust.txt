@@ -20,9 +20,8 @@ ________________________________________________________________________________
 
 * Installation-------------------------------------------------------------[001]
 * Usage--------------------------------------------------------------------[002]
-* Information--------------------------------------------------------------[003]
-  * Change-History---------------------------------------------------------[004]
-* References---------------------------------------------------------------[005]
+* History------------------------------------------------------------------[003]
+* References---------------------------------------------------------------[004]
 
 
 [001] Installation
@@ -41,69 +40,66 @@ ________________________________________________________________________________
 Refer to the manual pages and command help output.
 
 
-[003] Information
+[003] History
 ________________________________________________________________________________
 
-
---[004]-Change-History--------------------------------------------------------
-
-<div style="max-height:177px;overflow:hidden scroll">  2021-08-16 <a href="https://github.com/kisslinux/repo/commit/3faa0d056a107b05208a0a2191f32f9612d4eff0">3faa0d05</a> rust: remove leftover code
-  2021-08-16 <a href="https://github.com/kisslinux/repo/commit/66c018fdbbe7f8a54a788a69c3b0cb7d731e9c99">66c018fd</a> rust: support llvm-only systems. closes #304
-  2021-07-30 <a href="https://github.com/kisslinux/repo/commit/145d1560344fb77a30f321b1f900e9c73a9ac44a">145d1560</a> rust: 1.54.0
-  2021-07-18 <a href="https://github.com/kisslinux/repo/commit/3853980a54ae50d4d958a0feadb3b401e928aa1a">3853980a</a> rust: remove old checksum
-  2021-07-18 <a href="https://github.com/kisslinux/repo/commit/67b6001c8cd01dc363d52a9e2310052cf6e778a0">67b6001c</a> rust: update for new env
-  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/8383c960cd64513c60e4f1743de28bc299caa546">8383c960</a> rust: use VERSION
-  2021-07-08 <a href="https://github.com/kisslinux/repo/commit/40b7b544a3194967cf95af95597f8ce76d59ee43">40b7b544</a> rust: depend on openssl
-  2021-07-06 <a href="https://github.com/kisslinux/repo/commit/85e9114ed1b93cddc59677289c115ee9323e9514">85e9114e</a> rust: remove more unneeded stuff
-  2021-07-03 <a href="https://github.com/kisslinux/repo/commit/afbd121d2e26085c72e693a6e37f3b4aeb39a089">afbd121d</a> rust: remove sed -i
-  2021-06-30 <a href="https://github.com/kisslinux/repo/commit/6169762d534607588634036fe0d69b0e78bbea28">6169762d</a> rust: 1.53.0
-  2021-06-30 <a href="https://github.com/kisslinux/repo/commit/d3d9c9a370f43640593208db8bf4765a10e0eab3">d3d9c9a3</a> rust: drop from testing
-  2020-10-09 <a href="https://github.com/kisslinux/repo/commit/a14d883d70536981305323754831e7aa5515b706">a14d883d</a> rust: 1.47.0
-  2020-09-26 <a href="https://github.com/kisslinux/repo/commit/17f7c6d8617c6214171334fbc96f6cd70d6537e0">17f7c6d8</a> rust: fix depends. Closes #224
-  2020-08-28 <a href="https://github.com/kisslinux/repo/commit/2037f953d25ddbb27d993da4b2f2af51b31921f0">2037f953</a> rust: move to extra
-  2020-08-26 <a href="https://github.com/kisslinux/repo/commit/f7e3b61bcc62cffa4440c0803fa322085c2d0e06">f7e3b61b</a> rust: 1.45.2
-  2020-08-26 <a href="https://github.com/kisslinux/repo/commit/651c7eb297cc727290736e2b19cb5615f6bfe740">651c7eb2</a> rust: drop from testing
-  2020-08-06 <a href="https://github.com/kisslinux/repo/commit/f49aad4321e255efff30722165c2f3fcdb92353c">f49aad43</a> rust: remove unneeded bash script. #212
-  2020-07-28 <a href="https://github.com/kisslinux/repo/commit/b3b764319803538b3bf06e318bebc0b23071ca44">b3b76431</a> rust: 1.45.0
-  2020-07-21 <a href="https://github.com/kisslinux/repo/commit/6449dbea8c89286e06c79f8590d30dd70b90faf8">6449dbea</a> rust: bump to 1.45.0 (testing)
-  2020-06-20 <a href="https://github.com/kisslinux/repo/commit/e285a1e1956311476a764f4ec96c620b046ae057">e285a1e1</a> rust: bump to 1.44.1
-  2020-06-05 <a href="https://github.com/kisslinux/repo/commit/89f39913aaa805ab8bbf7bceb6cc9a7586d5631e">89f39913</a> rust: bump to 1.44.0
-  2020-06-02 <a href="https://github.com/kisslinux/repo/commit/da3916cd96344a0ae4334cf707b8f7231f72f724">da3916cd</a> rust: Fix build with libressl 3.2.X
-  2020-05-17 <a href="https://github.com/kisslinux/repo/commit/22a3500c829b0d7cc8b75b66d2028686fc8413da">22a3500c</a> rust: Update for libressl 3.1.1
-  2020-05-08 <a href="https://github.com/kisslinux/repo/commit/6a480822c87325e68d748d57fb17a36948d3c303">6a480822</a> rust: bump to 1.43.1
-  2020-05-06 <a href="https://github.com/kisslinux/repo/commit/40ebd70dc87b72c1f17c47bb9e22ebf015660b88">40ebd70d</a> rust: move from testing
-  2020-05-06 <a href="https://github.com/kisslinux/repo/commit/9b9c39bde3f95954859b72398dab916966e69964">9b9c39bd</a> rust: bump to 1.43.0
-  2020-05-03 <a href="https://github.com/kisslinux/repo/commit/4fc6ce2b0978853a866c7e15689898ab4af20155">4fc6ce2b</a> rust: Fix white-space
-  2020-04-30 <a href="https://github.com/kisslinux/repo/commit/b65624963d47e1a57a45388dd5da7761f8eeef04">b6562496</a> rust: Revert to previous version until Firefox supports this one.
-  2020-04-30 <a href="https://github.com/kisslinux/repo/commit/062935e79bd5db35d4157327310cd0aecf0fedd1">062935e7</a> rust: Move latest to testing
-  2020-04-26 <a href="https://github.com/kisslinux/repo/commit/79a6d7a34dc43bb3ac9b8b38cf6b35a06c0e5096">79a6d7a3</a> rust: Remove sources
-  2020-04-24 <a href="https://github.com/kisslinux/repo/commit/af3a73406620a8329b19db2786370c850375547b">af3a7340</a> rust: bump to 1.43.0
-  2020-03-24 <a href="https://github.com/kisslinux/repo/commit/a0d530902056f441ce8b471ddfb2e046a4c6f675">a0d53090</a> mesa,rust: Bump rel for LLVM/Clang 10
-  2020-03-12 <a href="https://github.com/kisslinux/repo/commit/9b61cd1f08b80900641aa52066e868e65ea62278">9b61cd1f</a> rust: bump to 1.42.0
-  2020-02-27 <a href="https://github.com/kisslinux/repo/commit/9c46ea764f4125b7d8f56e56f5c1112571cad3a8">9c46ea76</a> rust: bump to 1.41.1
-  2020-01-31 <a href="https://github.com/kisslinux/repo/commit/ebbb23bbcd2a6b0bdab6dac3fc0f8bc10ad25130">ebbb23bb</a> rust: bump to 1.41.0
-  2020-01-31 <a href="https://github.com/kisslinux/repo/commit/24a54633e97a7f5cbd7e6d39e31eea37990f258b">24a54633</a> rust: Use xz
-  2020-01-01 <a href="https://github.com/kisslinux/repo/commit/35fd7ff2fe1ec6f814bfc40c6d7122404af70088">35fd7ff2</a> firefox, firefox-privacy, rust: move to extra
-  2019-11-26 <a href="https://github.com/kisslinux/repo/commit/c1a443fbe15ded08452e1337d2e4e1cbddc84314">c1a443fb</a> rust: bump to 1.39.0
-  2019-11-07 <a href="https://github.com/kisslinux/repo/commit/7b6bcca76ece24a6e7548c67d38f1a6d21932899">7b6bcca7</a> rust: revert to 1.38.0. See: https://bugzilla.mozilla.org/show_bug.cgi?id=1594827
-  2019-11-07 <a href="https://github.com/kisslinux/repo/commit/549ae1d7eea150da3f8969ffd8197783f1c5f182">549ae1d7</a> rust: bump to 1.39.0
-  2019-10-25 <a href="https://github.com/kisslinux/repo/commit/765ef16aa18b6c86889703da21d5240154026abf">765ef16a</a> rust: fix build with libressl 3.0.X
-  2019-10-15 <a href="https://github.com/kisslinux/repo/commit/b0f591d15e20fec7c6b8a8698bcca0b5c840f6ac">b0f591d1</a> rust: remove internet connection requirement per build.
-  2019-10-07 <a href="https://github.com/kisslinux/repo/commit/5cf3a4e952c46fa254bca579d80a67624595c1e9">5cf3a4e9</a> rust: remove rm
-  2019-09-27 <a href="https://github.com/kisslinux/repo/commit/d6646e5be25482061638d62bad3689e5ce8df721">d6646e5b</a> clang,llvm,rust: bump to 9.0.0,9.0.0,1.38.0
-  2019-09-22 <a href="https://github.com/kisslinux/repo/commit/3e59edafee6118c7387ae47f8accde203c3f2d13">3e59edaf</a> rust: fix checksums
-  2019-09-21 <a href="https://github.com/kisslinux/repo/commit/158f5273caac0ae2342e60d376ddff664ac0108c">158f5273</a> rust: revert llvm changes
-  2019-09-20 <a href="https://github.com/kisslinux/repo/commit/3e9982ea44de8b4e4e940c7f9dea62f317ae79fd">3e9982ea</a> rust: fix build with LLVM 9.0.0
-  2019-08-24 <a href="https://github.com/kisslinux/repo/commit/ad94869807c1f5b0140654c966ebf61a2b3dff6f">ad948698</a> rust: move to extra
-  2019-08-24 <a href="https://github.com/kisslinux/repo/commit/4a4b6a53521ef5e7112a3208494607e8780151b1">4a4b6a53</a> rust: bump to 1.37.0
-  2019-08-24 <a href="https://github.com/kisslinux/repo/commit/8eefa55da3f2e843c1ad4e383b61e810481a6a6b">8eefa55d</a> rust: add 1.37 testing package
-  2019-08-07 <a href="https://github.com/kisslinux/repo/commit/3a997cd4a13e9e7a4877960fbd0f097547d854dd">3a997cd4</a> rust: remove patch listed in sources file
-  2019-07-30 <a href="https://github.com/kisslinux/repo/commit/6ec3c232c5205ff2483e4696493fe7a49c078d64">6ec3c232</a> rust: uncomment dependencies
-  2019-07-30 <a href="https://github.com/kisslinux/repo/commit/18d4113974003cbdc0e160000eba754b5de0fbbc">18d41139</a> rust: enable local rust if it has already been built and installed
-  2019-07-30 <a href="https://github.com/kisslinux/repo/commit/46134fa86e50de0a113aeb64902ef159d4fbda70">46134fa8</a> rust: update to 1.36.0
+<div style="max-height:177px;overflow:hidden scroll">2021-08-16 <a href="https://github.com/kisslinux/repo/commit/3faa0d056a107b05208a0a2191f32f9612d4eff0">3faa0d05</a> rust: remove leftover code
+2021-08-16 <a href="https://github.com/kisslinux/repo/commit/66c018fdbbe7f8a54a788a69c3b0cb7d731e9c99">66c018fd</a> rust: support llvm-only systems. closes #304
+2021-07-30 <a href="https://github.com/kisslinux/repo/commit/145d1560344fb77a30f321b1f900e9c73a9ac44a">145d1560</a> rust: 1.54.0
+2021-07-18 <a href="https://github.com/kisslinux/repo/commit/3853980a54ae50d4d958a0feadb3b401e928aa1a">3853980a</a> rust: remove old checksum
+2021-07-18 <a href="https://github.com/kisslinux/repo/commit/67b6001c8cd01dc363d52a9e2310052cf6e778a0">67b6001c</a> rust: update for new env
+2021-07-15 <a href="https://github.com/kisslinux/repo/commit/8383c960cd64513c60e4f1743de28bc299caa546">8383c960</a> rust: use VERSION
+2021-07-08 <a href="https://github.com/kisslinux/repo/commit/40b7b544a3194967cf95af95597f8ce76d59ee43">40b7b544</a> rust: depend on openssl
+2021-07-06 <a href="https://github.com/kisslinux/repo/commit/85e9114ed1b93cddc59677289c115ee9323e9514">85e9114e</a> rust: remove more unneeded stuff
+2021-07-03 <a href="https://github.com/kisslinux/repo/commit/afbd121d2e26085c72e693a6e37f3b4aeb39a089">afbd121d</a> rust: remove sed -i
+2021-06-30 <a href="https://github.com/kisslinux/repo/commit/6169762d534607588634036fe0d69b0e78bbea28">6169762d</a> rust: 1.53.0
+2021-06-30 <a href="https://github.com/kisslinux/repo/commit/d3d9c9a370f43640593208db8bf4765a10e0eab3">d3d9c9a3</a> rust: drop from testing
+2020-10-09 <a href="https://github.com/kisslinux/repo/commit/a14d883d70536981305323754831e7aa5515b706">a14d883d</a> rust: 1.47.0
+2020-09-26 <a href="https://github.com/kisslinux/repo/commit/17f7c6d8617c6214171334fbc96f6cd70d6537e0">17f7c6d8</a> rust: fix depends. Closes #224
+2020-08-28 <a href="https://github.com/kisslinux/repo/commit/2037f953d25ddbb27d993da4b2f2af51b31921f0">2037f953</a> rust: move to extra
+2020-08-26 <a href="https://github.com/kisslinux/repo/commit/f7e3b61bcc62cffa4440c0803fa322085c2d0e06">f7e3b61b</a> rust: 1.45.2
+2020-08-26 <a href="https://github.com/kisslinux/repo/commit/651c7eb297cc727290736e2b19cb5615f6bfe740">651c7eb2</a> rust: drop from testing
+2020-08-06 <a href="https://github.com/kisslinux/repo/commit/f49aad4321e255efff30722165c2f3fcdb92353c">f49aad43</a> rust: remove unneeded bash script. #212
+2020-07-28 <a href="https://github.com/kisslinux/repo/commit/b3b764319803538b3bf06e318bebc0b23071ca44">b3b76431</a> rust: 1.45.0
+2020-07-21 <a href="https://github.com/kisslinux/repo/commit/6449dbea8c89286e06c79f8590d30dd70b90faf8">6449dbea</a> rust: bump to 1.45.0 (testing)
+2020-06-20 <a href="https://github.com/kisslinux/repo/commit/e285a1e1956311476a764f4ec96c620b046ae057">e285a1e1</a> rust: bump to 1.44.1
+2020-06-05 <a href="https://github.com/kisslinux/repo/commit/89f39913aaa805ab8bbf7bceb6cc9a7586d5631e">89f39913</a> rust: bump to 1.44.0
+2020-06-02 <a href="https://github.com/kisslinux/repo/commit/da3916cd96344a0ae4334cf707b8f7231f72f724">da3916cd</a> rust: Fix build with libressl 3.2.X
+2020-05-17 <a href="https://github.com/kisslinux/repo/commit/22a3500c829b0d7cc8b75b66d2028686fc8413da">22a3500c</a> rust: Update for libressl 3.1.1
+2020-05-08 <a href="https://github.com/kisslinux/repo/commit/6a480822c87325e68d748d57fb17a36948d3c303">6a480822</a> rust: bump to 1.43.1
+2020-05-06 <a href="https://github.com/kisslinux/repo/commit/40ebd70dc87b72c1f17c47bb9e22ebf015660b88">40ebd70d</a> rust: move from testing
+2020-05-06 <a href="https://github.com/kisslinux/repo/commit/9b9c39bde3f95954859b72398dab916966e69964">9b9c39bd</a> rust: bump to 1.43.0
+2020-05-03 <a href="https://github.com/kisslinux/repo/commit/4fc6ce2b0978853a866c7e15689898ab4af20155">4fc6ce2b</a> rust: Fix white-space
+2020-04-30 <a href="https://github.com/kisslinux/repo/commit/b65624963d47e1a57a45388dd5da7761f8eeef04">b6562496</a> rust: Revert to previous version until Firefox supports this one.
+2020-04-30 <a href="https://github.com/kisslinux/repo/commit/062935e79bd5db35d4157327310cd0aecf0fedd1">062935e7</a> rust: Move latest to testing
+2020-04-26 <a href="https://github.com/kisslinux/repo/commit/79a6d7a34dc43bb3ac9b8b38cf6b35a06c0e5096">79a6d7a3</a> rust: Remove sources
+2020-04-24 <a href="https://github.com/kisslinux/repo/commit/af3a73406620a8329b19db2786370c850375547b">af3a7340</a> rust: bump to 1.43.0
+2020-03-24 <a href="https://github.com/kisslinux/repo/commit/a0d530902056f441ce8b471ddfb2e046a4c6f675">a0d53090</a> mesa,rust: Bump rel for LLVM/Clang 10
+2020-03-12 <a href="https://github.com/kisslinux/repo/commit/9b61cd1f08b80900641aa52066e868e65ea62278">9b61cd1f</a> rust: bump to 1.42.0
+2020-02-27 <a href="https://github.com/kisslinux/repo/commit/9c46ea764f4125b7d8f56e56f5c1112571cad3a8">9c46ea76</a> rust: bump to 1.41.1
+2020-01-31 <a href="https://github.com/kisslinux/repo/commit/ebbb23bbcd2a6b0bdab6dac3fc0f8bc10ad25130">ebbb23bb</a> rust: bump to 1.41.0
+2020-01-31 <a href="https://github.com/kisslinux/repo/commit/24a54633e97a7f5cbd7e6d39e31eea37990f258b">24a54633</a> rust: Use xz
+2020-01-01 <a href="https://github.com/kisslinux/repo/commit/35fd7ff2fe1ec6f814bfc40c6d7122404af70088">35fd7ff2</a> firefox, firefox-privacy, rust: move to extra
+2019-11-26 <a href="https://github.com/kisslinux/repo/commit/c1a443fbe15ded08452e1337d2e4e1cbddc84314">c1a443fb</a> rust: bump to 1.39.0
+2019-11-07 <a href="https://github.com/kisslinux/repo/commit/7b6bcca76ece24a6e7548c67d38f1a6d21932899">7b6bcca7</a> rust: revert to 1.38.0. See: https://bugzilla.mozilla.org/show_bug.cgi?id=1594827
+2019-11-07 <a href="https://github.com/kisslinux/repo/commit/549ae1d7eea150da3f8969ffd8197783f1c5f182">549ae1d7</a> rust: bump to 1.39.0
+2019-10-25 <a href="https://github.com/kisslinux/repo/commit/765ef16aa18b6c86889703da21d5240154026abf">765ef16a</a> rust: fix build with libressl 3.0.X
+2019-10-15 <a href="https://github.com/kisslinux/repo/commit/b0f591d15e20fec7c6b8a8698bcca0b5c840f6ac">b0f591d1</a> rust: remove internet connection requirement per build.
+2019-10-07 <a href="https://github.com/kisslinux/repo/commit/5cf3a4e952c46fa254bca579d80a67624595c1e9">5cf3a4e9</a> rust: remove rm
+2019-09-27 <a href="https://github.com/kisslinux/repo/commit/d6646e5be25482061638d62bad3689e5ce8df721">d6646e5b</a> clang,llvm,rust: bump to 9.0.0,9.0.0,1.38.0
+2019-09-22 <a href="https://github.com/kisslinux/repo/commit/3e59edafee6118c7387ae47f8accde203c3f2d13">3e59edaf</a> rust: fix checksums
+2019-09-21 <a href="https://github.com/kisslinux/repo/commit/158f5273caac0ae2342e60d376ddff664ac0108c">158f5273</a> rust: revert llvm changes
+2019-09-20 <a href="https://github.com/kisslinux/repo/commit/3e9982ea44de8b4e4e940c7f9dea62f317ae79fd">3e9982ea</a> rust: fix build with LLVM 9.0.0
+2019-08-24 <a href="https://github.com/kisslinux/repo/commit/ad94869807c1f5b0140654c966ebf61a2b3dff6f">ad948698</a> rust: move to extra
+2019-08-24 <a href="https://github.com/kisslinux/repo/commit/4a4b6a53521ef5e7112a3208494607e8780151b1">4a4b6a53</a> rust: bump to 1.37.0
+2019-08-24 <a href="https://github.com/kisslinux/repo/commit/8eefa55da3f2e843c1ad4e383b61e810481a6a6b">8eefa55d</a> rust: add 1.37 testing package
+2019-08-07 <a href="https://github.com/kisslinux/repo/commit/3a997cd4a13e9e7a4877960fbd0f097547d854dd">3a997cd4</a> rust: remove patch listed in sources file
+2019-07-30 <a href="https://github.com/kisslinux/repo/commit/6ec3c232c5205ff2483e4696493fe7a49c078d64">6ec3c232</a> rust: uncomment dependencies
+2019-07-30 <a href="https://github.com/kisslinux/repo/commit/18d4113974003cbdc0e160000eba754b5de0fbbc">18d41139</a> rust: enable local rust if it has already been built and installed
+2019-07-30 <a href="https://github.com/kisslinux/repo/commit/46134fa86e50de0a113aeb64902ef159d4fbda70">46134fa8</a> rust: update to 1.36.0
 </div>
 
-[005] References
+[004] References
 ________________________________________________________________________________
 
 [0] https://en.wikipedia.org/wiki/Rust_(programming_language)

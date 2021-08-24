@@ -26,9 +26,8 @@ ________________________________________________________________________________
   * Starting-The-Service---------------------------------------------------<a href=#007>[007]</a>
 * Troubleshooting----------------------------------------------------------<a href=#008>[008]</a>
   * iwd-Fails-To-Start-----------------------------------------------------<a href=#009>[009]</a>
-* Information--------------------------------------------------------------<a href=#010>[010]</a>
-  * Change-History---------------------------------------------------------<a href=#011>[011]</a>
-* References---------------------------------------------------------------<a href=#012>[012]</a>
+* History------------------------------------------------------------------<a href=#010>[010]</a>
+* References---------------------------------------------------------------<a href=#011>[011]</a>
 
 
 <span id=001><a href=#001>[001]</a></span> Installation
@@ -151,45 +150,42 @@ ________________________________________________________________________________
   +----------------------------------------------------------------------------+
 
 
-<span id=010><a href=#010>[010]</a></span> Information
+<span id=010><a href=#010>[010]</a></span> History
 ________________________________________________________________________________
 
-
---<span id=011><a href=#011>[011]</a></span>-Change-History--------------------------------------------------------
-
-<div style="max-height:177px;overflow:hidden scroll">  2021-08-23 <a href="https://github.com/kisslinux/repo/commit/0f987bbd80140efead39a97ec0fb67342c41dc40">0f987bbd</a> eiwd: 1.17
-  2021-08-03 <a href="https://github.com/kisslinux/repo/commit/0872b80d7a6df8427e468ca57a9dba4bc972382b">0872b80d</a> eiwd: 1.16
-  2021-07-19 <a href="https://github.com/kisslinux/repo/commit/47499b1261b88431488c4e705accfb6888d948a3">47499b12</a> eiwd: add back iwd_passphrase
-  2021-07-19 <a href="https://github.com/kisslinux/repo/commit/e78fc2f7d971c5693168785940b6eb66f02c3dde">e78fc2f7</a> eiwd: fix version
-  2021-07-18 <a href="https://github.com/kisslinux/repo/commit/169ad1799767bba31a0115dd907732005810d4ac">169ad179</a> eiwd: remove install
-  2021-07-17 <a href="https://github.com/kisslinux/repo/commit/df7f53fc9b17a985a294ef14ddf0ec2240d836f2">df7f53fc</a> eiwd: update for new env
-  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/1d56bc57b29dbd9bd948c7cbfdeb6c3b2add0c92">1d56bc57</a> eiwd: use VERSION/MAJOR/MINOR
-  2021-07-10 <a href="https://github.com/kisslinux/repo/commit/b9dd1687d0bd692e21f7a9f1247cb81afacf7b81">b9dd1687</a> eiwd: fix depends
-  2021-07-10 <a href="https://github.com/kisslinux/repo/commit/6b7db9e42c5aa8103a1fca653af584169e5b9fcb">6b7db9e4</a> eiwd: 1.15-1
-  2021-06-30 <a href="https://github.com/kisslinux/repo/commit/9ba0a4b5ccfbcbc164f12346b6a83fc907305c88">9ba0a4b5</a> eiwd: drop for now
-  2020-04-26 <a href="https://github.com/kisslinux/repo/commit/6d56c97d203d8ab7f12d0562635adfc0399d9cd6">6d56c97d</a> eiwd: Add runit service
-  2020-03-25 <a href="https://github.com/kisslinux/repo/commit/71eefd6d7a860ffa2967b79a1d2ea59392046037">71eefd6d</a> eiwd: bump to 1.6-1
-  2020-03-22 <a href="https://github.com/kisslinux/repo/commit/f87280ce80dbf0e487fafc93e3d787d1c1bc6cd3">f87280ce</a> eiwd: bump to 1.5-5
-  2020-03-11 <a href="https://github.com/kisslinux/repo/commit/8674b0cf3ebfb56bbd1b35311f5982c5c0aa1c61">8674b0cf</a> eiwd: bump to 1.5-4
-  2020-03-11 <a href="https://github.com/kisslinux/repo/commit/b46109af3b5b2c8e12015fbac1533dbd5acb0ace">b46109af</a> eiwd: bump to 1.5-3
-  2020-03-11 <a href="https://github.com/kisslinux/repo/commit/3d96110bd6c4bfee12b2ff343430951fe9fb8f80">3d96110b</a> eiwd: bump to 1.5-2
-  2020-03-11 <a href="https://github.com/kisslinux/repo/commit/abbc35b3cb29d298c91f0d65c081e5ee578bf7d7">abbc35b3</a> eiwd: bump to 1.5-1
-  2020-02-20 <a href="https://github.com/kisslinux/repo/commit/26bb482bcf8343b41ebf8a17402aaf89e9c062de">26bb482b</a> eiwd: Fix depends
-  2020-02-12 <a href="https://github.com/kisslinux/repo/commit/4723a595f0e04f8ef56e5d68f83858f82db38fcb">4723a595</a> eiwd: Fix depends
-  2020-02-08 <a href="https://github.com/kisslinux/repo/commit/99d840e4a111f427a5f929af5ea3d0f473ba4020">99d840e4</a> eiwd: move to extra
-  2020-01-11 <a href="https://github.com/kisslinux/repo/commit/d9f135f3909d0534f7f3c6292c64f216ed9fc2ba">d9f135f3</a> eiwd: Fix make depends
-  2020-01-09 <a href="https://github.com/kisslinux/repo/commit/05bfdd8fbe1d6b691b4970118c27293561d1d5a0">05bfdd8f</a> eiwd: bump to 0.2.5
-  2020-01-02 <a href="https://github.com/kisslinux/repo/commit/f9160e38c25d741285beb6cb1d046366be589eef">f9160e38</a> eiwd: bump to 0.2.4
-  2020-01-02 <a href="https://github.com/kisslinux/repo/commit/a257d3dbdb4c8fae43b0a800b1e4541dcb9d3ecb">a257d3db</a> eiwd: Use autotools for now
-  2020-01-02 <a href="https://github.com/kisslinux/repo/commit/72698e66d81a1226789571704c1cf79405e15d2f">72698e66</a> eiwd: Update checksums
-  2020-01-02 <a href="https://github.com/kisslinux/repo/commit/a69b1db8a5a46b5da11b09cb3343966302d1c8d1">a69b1db8</a> eiwd: bump to 0.2.3
-  2020-01-02 <a href="https://github.com/kisslinux/repo/commit/e1ab365cbaf79c4b20667503451263eb0caeeb26">e1ab365c</a> eiwd: bump to 0.2.2
-  2019-12-05 <a href="https://github.com/kisslinux/repo/commit/812b7d3eafa2a115fa041958de9d63a9a9ccf3f8">812b7d3e</a> eiwd: bump to 0.2.1
-  2019-12-04 <a href="https://github.com/kisslinux/repo/commit/cf8086a013a1ced402e94a088381bb922bdf19ea">cf8086a0</a> eiwd: bump to 0.2.0
-  2019-12-02 <a href="https://github.com/kisslinux/repo/commit/d32dac1d820b3e58629fa024bbe9e902275d0a00">d32dac1d</a> eiwd: new package at 0.1.0
+<div style="max-height:177px;overflow:hidden scroll">2021-08-23 <a href="https://github.com/kisslinux/repo/commit/0f987bbd80140efead39a97ec0fb67342c41dc40">0f987bbd</a> eiwd: 1.17
+2021-08-03 <a href="https://github.com/kisslinux/repo/commit/0872b80d7a6df8427e468ca57a9dba4bc972382b">0872b80d</a> eiwd: 1.16
+2021-07-19 <a href="https://github.com/kisslinux/repo/commit/47499b1261b88431488c4e705accfb6888d948a3">47499b12</a> eiwd: add back iwd_passphrase
+2021-07-19 <a href="https://github.com/kisslinux/repo/commit/e78fc2f7d971c5693168785940b6eb66f02c3dde">e78fc2f7</a> eiwd: fix version
+2021-07-18 <a href="https://github.com/kisslinux/repo/commit/169ad1799767bba31a0115dd907732005810d4ac">169ad179</a> eiwd: remove install
+2021-07-17 <a href="https://github.com/kisslinux/repo/commit/df7f53fc9b17a985a294ef14ddf0ec2240d836f2">df7f53fc</a> eiwd: update for new env
+2021-07-15 <a href="https://github.com/kisslinux/repo/commit/1d56bc57b29dbd9bd948c7cbfdeb6c3b2add0c92">1d56bc57</a> eiwd: use VERSION/MAJOR/MINOR
+2021-07-10 <a href="https://github.com/kisslinux/repo/commit/b9dd1687d0bd692e21f7a9f1247cb81afacf7b81">b9dd1687</a> eiwd: fix depends
+2021-07-10 <a href="https://github.com/kisslinux/repo/commit/6b7db9e42c5aa8103a1fca653af584169e5b9fcb">6b7db9e4</a> eiwd: 1.15-1
+2021-06-30 <a href="https://github.com/kisslinux/repo/commit/9ba0a4b5ccfbcbc164f12346b6a83fc907305c88">9ba0a4b5</a> eiwd: drop for now
+2020-04-26 <a href="https://github.com/kisslinux/repo/commit/6d56c97d203d8ab7f12d0562635adfc0399d9cd6">6d56c97d</a> eiwd: Add runit service
+2020-03-25 <a href="https://github.com/kisslinux/repo/commit/71eefd6d7a860ffa2967b79a1d2ea59392046037">71eefd6d</a> eiwd: bump to 1.6-1
+2020-03-22 <a href="https://github.com/kisslinux/repo/commit/f87280ce80dbf0e487fafc93e3d787d1c1bc6cd3">f87280ce</a> eiwd: bump to 1.5-5
+2020-03-11 <a href="https://github.com/kisslinux/repo/commit/8674b0cf3ebfb56bbd1b35311f5982c5c0aa1c61">8674b0cf</a> eiwd: bump to 1.5-4
+2020-03-11 <a href="https://github.com/kisslinux/repo/commit/b46109af3b5b2c8e12015fbac1533dbd5acb0ace">b46109af</a> eiwd: bump to 1.5-3
+2020-03-11 <a href="https://github.com/kisslinux/repo/commit/3d96110bd6c4bfee12b2ff343430951fe9fb8f80">3d96110b</a> eiwd: bump to 1.5-2
+2020-03-11 <a href="https://github.com/kisslinux/repo/commit/abbc35b3cb29d298c91f0d65c081e5ee578bf7d7">abbc35b3</a> eiwd: bump to 1.5-1
+2020-02-20 <a href="https://github.com/kisslinux/repo/commit/26bb482bcf8343b41ebf8a17402aaf89e9c062de">26bb482b</a> eiwd: Fix depends
+2020-02-12 <a href="https://github.com/kisslinux/repo/commit/4723a595f0e04f8ef56e5d68f83858f82db38fcb">4723a595</a> eiwd: Fix depends
+2020-02-08 <a href="https://github.com/kisslinux/repo/commit/99d840e4a111f427a5f929af5ea3d0f473ba4020">99d840e4</a> eiwd: move to extra
+2020-01-11 <a href="https://github.com/kisslinux/repo/commit/d9f135f3909d0534f7f3c6292c64f216ed9fc2ba">d9f135f3</a> eiwd: Fix make depends
+2020-01-09 <a href="https://github.com/kisslinux/repo/commit/05bfdd8fbe1d6b691b4970118c27293561d1d5a0">05bfdd8f</a> eiwd: bump to 0.2.5
+2020-01-02 <a href="https://github.com/kisslinux/repo/commit/f9160e38c25d741285beb6cb1d046366be589eef">f9160e38</a> eiwd: bump to 0.2.4
+2020-01-02 <a href="https://github.com/kisslinux/repo/commit/a257d3dbdb4c8fae43b0a800b1e4541dcb9d3ecb">a257d3db</a> eiwd: Use autotools for now
+2020-01-02 <a href="https://github.com/kisslinux/repo/commit/72698e66d81a1226789571704c1cf79405e15d2f">72698e66</a> eiwd: Update checksums
+2020-01-02 <a href="https://github.com/kisslinux/repo/commit/a69b1db8a5a46b5da11b09cb3343966302d1c8d1">a69b1db8</a> eiwd: bump to 0.2.3
+2020-01-02 <a href="https://github.com/kisslinux/repo/commit/e1ab365cbaf79c4b20667503451263eb0caeeb26">e1ab365c</a> eiwd: bump to 0.2.2
+2019-12-05 <a href="https://github.com/kisslinux/repo/commit/812b7d3eafa2a115fa041958de9d63a9a9ccf3f8">812b7d3e</a> eiwd: bump to 0.2.1
+2019-12-04 <a href="https://github.com/kisslinux/repo/commit/cf8086a013a1ced402e94a088381bb922bdf19ea">cf8086a0</a> eiwd: bump to 0.2.0
+2019-12-02 <a href="https://github.com/kisslinux/repo/commit/d32dac1d820b3e58629fa024bbe9e902275d0a00">d32dac1d</a> eiwd: new package at 0.1.0
 </div>
 
-<span id=012><a href=#012>[012]</a></span> References
+<span id=011><a href=#011>[011]</a></span> References
 ________________________________________________________________________________
 
 <span id=0><a href=#0>[0]</a></span> <a href=https://github.com/illiliti/eiwd>https://github.com/illiliti/eiwd</a>

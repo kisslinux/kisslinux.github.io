@@ -20,9 +20,8 @@ ________________________________________________________________________________
   * Set-XDG_RUNTIME_DIR----------------------------------------------------[005]
 * Usage--------------------------------------------------------------------[006]
 * Troubleshooting----------------------------------------------------------[007]
-* Information--------------------------------------------------------------[008]
-  * Change-History---------------------------------------------------------[009]
-* References---------------------------------------------------------------[010]
+* History------------------------------------------------------------------[008]
+* References---------------------------------------------------------------[009]
 
 
 [001] Installation
@@ -98,42 +97,39 @@ If you are using the 'sway-tiny' package and encounter any issues, send bug
 reports to $/kisslinux/repo rather than upstream.
 
 
-[008] Information
+[008] History
 ________________________________________________________________________________
 
-
---[009]-Change-History--------------------------------------------------------
-
-<div style="max-height:177px;overflow:hidden scroll">  2021-08-24 <a href="https://github.com/kisslinux/repo/commit/145e318b0ec8d9c84672b1bd8c815ef0e466c50a">145e318b</a> sway-tiny: import Firefox fixes
-  2021-07-28 <a href="https://github.com/kisslinux/repo/commit/cf41d1db72d3243ab26249add43d60f26da70301">cf41d1db</a> sway-tiny: add link to DrmSetMaster info
-  2021-07-28 <a href="https://github.com/kisslinux/repo/commit/fe82f48e1fad46bc2a708e6c2a4ab9a9d80d7a21">fe82f48e</a> sway-tiny: comment
-  2021-07-28 <a href="https://github.com/kisslinux/repo/commit/a041f1fa5c41c1d55cd50f4416a8dda51fa2783c">a041f1fa</a> sway-tiny: new commit for fixes
-  2021-07-18 <a href="https://github.com/kisslinux/repo/commit/8c3548d0bdfb5f9b1152dc064f8563a75b47b58a">8c3548d0</a> sway-tiny: fix exec issue. Closes #293
-  2021-07-18 <a href="https://github.com/kisslinux/repo/commit/60e3b7b6a4de621d5dd4a0f69ca8ba0c8041232a">60e3b7b6</a> sway-tiny: bump rel
-  2021-07-18 <a href="https://github.com/kisslinux/repo/commit/989704d77ac83ce64af479743f234212537686ff">989704d7</a> sway-tiny: potential fix for media keys
-  2021-07-16 <a href="https://github.com/kisslinux/repo/commit/7fd2c9bd80b1053852a9cc989205f7ee6b1f6d6f">7fd2c9bd</a> sway-tiny: remove unintended change
-  2021-07-16 <a href="https://github.com/kisslinux/repo/commit/92e7e6af23e4c71cf9b8921f1368d8f0d206289b">92e7e6af</a> sway-tiny: fix post-install
-  2021-07-16 <a href="https://github.com/kisslinux/repo/commit/65e3a8a3c0fce7b6024dc27c3c42988ffc8a42f6">65e3a8a3</a> sway-tiny: document exec behavior
-  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/dc97526ef7114d925f9fe113875a8eb53373c882">dc97526e</a> sway-tiny: update for new env
-  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/b741b9009e52ea60262d1f9796a000cd51e40c2c">b741b900</a> sway-tiny: use VERSION
-  2021-07-13 <a href="https://github.com/kisslinux/repo/commit/4df3ef940a04fc74fa44de9ca04d6e43cc658e04">4df3ef94</a> sway-tiny: clarify groups
-  2021-07-13 <a href="https://github.com/kisslinux/repo/commit/84d8167508103c73cc5c45c6d5e3a5a6dee5e194">84d81675</a> sway-tiny: Add missing mesa dependency
-  2021-07-13 <a href="https://github.com/kisslinux/repo/commit/af45221e10d4e20ec42f4e979b3e673f3a650ae9">af45221e</a> sway-tiny: clarify rootless
-  2021-07-13 <a href="https://github.com/kisslinux/repo/commit/b1adedab50153282553a32794f5f4ffd1ff16669">b1adedab</a> sway-tiny: update sources
-  2021-07-10 <a href="https://github.com/kisslinux/repo/commit/b7add204cdc4bb3bb1bacfee39532d288290f735">b7add204</a> sway-tiny: fix post-install
-  2021-07-09 <a href="https://github.com/kisslinux/repo/commit/9a041174c61eb7a1926a704f112433290f681356">9a041174</a> sway-tiny: make default background color modifiable at compile-time
-  2021-07-09 <a href="https://github.com/kisslinux/repo/commit/7e2f255022501e29745acad01d37a0282b4cbd9e">7e2f2550</a> sway-tiny: remove libevdev dependency
-  2021-07-09 <a href="https://github.com/kisslinux/repo/commit/5d91414169f8651247ede02a639bd6aaa3ff560e">5d914141</a> sway-tiny: Add message about where to send bugs
-  2021-07-09 <a href="https://github.com/kisslinux/repo/commit/2eaed3280c1ea4ad98460700a30f75167edc7ffe">2eaed328</a> sway-tiny: fix build
-  2021-07-08 <a href="https://github.com/kisslinux/repo/commit/23cc3e675c60fe15445c40fa63ecbba2d80b6dfb">23cc3e67</a> sway-tiny: fix typo
-  2021-07-08 <a href="https://github.com/kisslinux/repo/commit/b076cae3f019f15265f9a4f127ec738b31f4d11c">b076cae3</a> sway-tiny: use sway-no-seat post-install
-  2021-07-08 <a href="https://github.com/kisslinux/repo/commit/cecfd7e3d84f8ddac9484745f7670315bc001394">cecfd7e3</a> sway-tiny: fix depends
-  2021-07-08 <a href="https://github.com/kisslinux/repo/commit/2e8ee32643ec435951d43e2f17edce0a6ae83f72">2e8ee326</a> sway-tiny: fix depends
-  2021-07-08 <a href="https://github.com/kisslinux/repo/commit/819240c7f4217e28d658613e4304da38fd78da06">819240c7</a> sway-tiny: fix post-install
-  2021-07-08 <a href="https://github.com/kisslinux/repo/commit/247518cf2268df7ebae260ab1183dcac5a5e2bc2">247518cf</a> sway-tiny: git
+<div style="max-height:177px;overflow:hidden scroll">2021-08-24 <a href="https://github.com/kisslinux/repo/commit/145e318b0ec8d9c84672b1bd8c815ef0e466c50a">145e318b</a> sway-tiny: import Firefox fixes
+2021-07-28 <a href="https://github.com/kisslinux/repo/commit/cf41d1db72d3243ab26249add43d60f26da70301">cf41d1db</a> sway-tiny: add link to DrmSetMaster info
+2021-07-28 <a href="https://github.com/kisslinux/repo/commit/fe82f48e1fad46bc2a708e6c2a4ab9a9d80d7a21">fe82f48e</a> sway-tiny: comment
+2021-07-28 <a href="https://github.com/kisslinux/repo/commit/a041f1fa5c41c1d55cd50f4416a8dda51fa2783c">a041f1fa</a> sway-tiny: new commit for fixes
+2021-07-18 <a href="https://github.com/kisslinux/repo/commit/8c3548d0bdfb5f9b1152dc064f8563a75b47b58a">8c3548d0</a> sway-tiny: fix exec issue. Closes #293
+2021-07-18 <a href="https://github.com/kisslinux/repo/commit/60e3b7b6a4de621d5dd4a0f69ca8ba0c8041232a">60e3b7b6</a> sway-tiny: bump rel
+2021-07-18 <a href="https://github.com/kisslinux/repo/commit/989704d77ac83ce64af479743f234212537686ff">989704d7</a> sway-tiny: potential fix for media keys
+2021-07-16 <a href="https://github.com/kisslinux/repo/commit/7fd2c9bd80b1053852a9cc989205f7ee6b1f6d6f">7fd2c9bd</a> sway-tiny: remove unintended change
+2021-07-16 <a href="https://github.com/kisslinux/repo/commit/92e7e6af23e4c71cf9b8921f1368d8f0d206289b">92e7e6af</a> sway-tiny: fix post-install
+2021-07-16 <a href="https://github.com/kisslinux/repo/commit/65e3a8a3c0fce7b6024dc27c3c42988ffc8a42f6">65e3a8a3</a> sway-tiny: document exec behavior
+2021-07-15 <a href="https://github.com/kisslinux/repo/commit/dc97526ef7114d925f9fe113875a8eb53373c882">dc97526e</a> sway-tiny: update for new env
+2021-07-15 <a href="https://github.com/kisslinux/repo/commit/b741b9009e52ea60262d1f9796a000cd51e40c2c">b741b900</a> sway-tiny: use VERSION
+2021-07-13 <a href="https://github.com/kisslinux/repo/commit/4df3ef940a04fc74fa44de9ca04d6e43cc658e04">4df3ef94</a> sway-tiny: clarify groups
+2021-07-13 <a href="https://github.com/kisslinux/repo/commit/84d8167508103c73cc5c45c6d5e3a5a6dee5e194">84d81675</a> sway-tiny: Add missing mesa dependency
+2021-07-13 <a href="https://github.com/kisslinux/repo/commit/af45221e10d4e20ec42f4e979b3e673f3a650ae9">af45221e</a> sway-tiny: clarify rootless
+2021-07-13 <a href="https://github.com/kisslinux/repo/commit/b1adedab50153282553a32794f5f4ffd1ff16669">b1adedab</a> sway-tiny: update sources
+2021-07-10 <a href="https://github.com/kisslinux/repo/commit/b7add204cdc4bb3bb1bacfee39532d288290f735">b7add204</a> sway-tiny: fix post-install
+2021-07-09 <a href="https://github.com/kisslinux/repo/commit/9a041174c61eb7a1926a704f112433290f681356">9a041174</a> sway-tiny: make default background color modifiable at compile-time
+2021-07-09 <a href="https://github.com/kisslinux/repo/commit/7e2f255022501e29745acad01d37a0282b4cbd9e">7e2f2550</a> sway-tiny: remove libevdev dependency
+2021-07-09 <a href="https://github.com/kisslinux/repo/commit/5d91414169f8651247ede02a639bd6aaa3ff560e">5d914141</a> sway-tiny: Add message about where to send bugs
+2021-07-09 <a href="https://github.com/kisslinux/repo/commit/2eaed3280c1ea4ad98460700a30f75167edc7ffe">2eaed328</a> sway-tiny: fix build
+2021-07-08 <a href="https://github.com/kisslinux/repo/commit/23cc3e675c60fe15445c40fa63ecbba2d80b6dfb">23cc3e67</a> sway-tiny: fix typo
+2021-07-08 <a href="https://github.com/kisslinux/repo/commit/b076cae3f019f15265f9a4f127ec738b31f4d11c">b076cae3</a> sway-tiny: use sway-no-seat post-install
+2021-07-08 <a href="https://github.com/kisslinux/repo/commit/cecfd7e3d84f8ddac9484745f7670315bc001394">cecfd7e3</a> sway-tiny: fix depends
+2021-07-08 <a href="https://github.com/kisslinux/repo/commit/2e8ee32643ec435951d43e2f17edce0a6ae83f72">2e8ee326</a> sway-tiny: fix depends
+2021-07-08 <a href="https://github.com/kisslinux/repo/commit/819240c7f4217e28d658613e4304da38fd78da06">819240c7</a> sway-tiny: fix post-install
+2021-07-08 <a href="https://github.com/kisslinux/repo/commit/247518cf2268df7ebae260ab1183dcac5a5e2bc2">247518cf</a> sway-tiny: git
 </div>
 
-[010] References
+[009] References
 ________________________________________________________________________________
 
 [0] https://en.wikipedia.org

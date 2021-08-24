@@ -15,9 +15,8 @@ ________________________________________________________________________________
 
 * Installation-------------------------------------------------------------[001]
 * Usage--------------------------------------------------------------------[002]
-* Information--------------------------------------------------------------[003]
-  * Change-History---------------------------------------------------------[004]
-* References---------------------------------------------------------------[005]
+* History------------------------------------------------------------------[003]
+* References---------------------------------------------------------------[004]
 
 
 [001] Installation
@@ -61,25 +60,22 @@ ________________________________________________________________________________
 Refer to the manual pages and command help output for more information.
 
 
-[003] Information
+[003] History
 ________________________________________________________________________________
 
-
---[004]-Change-History--------------------------------------------------------
-
-<div style="max-height:177px;overflow:hidden scroll">  2021-07-18 <a href="https://github.com/kisslinux/repo/commit/8f682d6083f1421755aab79d399242d5e0e86d36">8f682d60</a> tiff: update for new env
-  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/249976c4377a90cf31162eacc0b47f444a541cb5">249976c4</a> tiff: use VERSION
-  2021-07-12 <a href="https://github.com/kisslinux/repo/commit/5e3ae13b41a165827d49bea339ab751223ece640">5e3ae13b</a> tiff: enable library manual pages. See #273
-  2021-07-06 <a href="https://github.com/kisslinux/repo/commit/54d9d12b975a15fa780de33b5ba6f3ca37d1dd9a">54d9d12b</a> tiff: trim docs
-  2021-06-30 <a href="https://github.com/kisslinux/repo/commit/5f9806d7a1f8ac111f07a9e05ebbf733efbefdb1">5f9806d7</a> tiff: 4.3.0
-  2019-11-04 <a href="https://github.com/kisslinux/repo/commit/7acc8df7d22ebbbb886e9210533ebe822dcc521e">7acc8df7</a> tiff: bump to 4.1.0
-  2019-10-08 <a href="https://github.com/kisslinux/repo/commit/5406ced50d55add8009a12d6f0f5755d55caeb1e">5406ced5</a> tiff: bye bye autoconf
-  2019-10-07 <a href="https://github.com/kisslinux/repo/commit/165913e6a2817be05f14b75ce5af5b5a02a8f2f1">165913e6</a> tiff: remove rm
-  2019-08-29 <a href="https://github.com/kisslinux/repo/commit/4596fcb5c576f303474c4a4958a9b2997aa213aa">4596fcb5</a> tiff: remove docs
-  2019-07-18 <a href="https://github.com/kisslinux/repo/commit/e446bda18f935674b6fc1b99c08e5220606a0136">e446bda1</a> tiff: move to extra
+<div style="max-height:177px;overflow:hidden scroll">2021-07-18 <a href="https://github.com/kisslinux/repo/commit/8f682d6083f1421755aab79d399242d5e0e86d36">8f682d60</a> tiff: update for new env
+2021-07-15 <a href="https://github.com/kisslinux/repo/commit/249976c4377a90cf31162eacc0b47f444a541cb5">249976c4</a> tiff: use VERSION
+2021-07-12 <a href="https://github.com/kisslinux/repo/commit/5e3ae13b41a165827d49bea339ab751223ece640">5e3ae13b</a> tiff: enable library manual pages. See #273
+2021-07-06 <a href="https://github.com/kisslinux/repo/commit/54d9d12b975a15fa780de33b5ba6f3ca37d1dd9a">54d9d12b</a> tiff: trim docs
+2021-06-30 <a href="https://github.com/kisslinux/repo/commit/5f9806d7a1f8ac111f07a9e05ebbf733efbefdb1">5f9806d7</a> tiff: 4.3.0
+2019-11-04 <a href="https://github.com/kisslinux/repo/commit/7acc8df7d22ebbbb886e9210533ebe822dcc521e">7acc8df7</a> tiff: bump to 4.1.0
+2019-10-08 <a href="https://github.com/kisslinux/repo/commit/5406ced50d55add8009a12d6f0f5755d55caeb1e">5406ced5</a> tiff: bye bye autoconf
+2019-10-07 <a href="https://github.com/kisslinux/repo/commit/165913e6a2817be05f14b75ce5af5b5a02a8f2f1">165913e6</a> tiff: remove rm
+2019-08-29 <a href="https://github.com/kisslinux/repo/commit/4596fcb5c576f303474c4a4958a9b2997aa213aa">4596fcb5</a> tiff: remove docs
+2019-07-18 <a href="https://github.com/kisslinux/repo/commit/e446bda18f935674b6fc1b99c08e5220606a0136">e446bda1</a> tiff: move to extra
 </div>
 
-[005] References
+[004] References
 ________________________________________________________________________________
 
 [0] https://en.wikipedia.org/wiki/Libtiff

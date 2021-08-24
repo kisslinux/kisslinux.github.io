@@ -14,9 +14,8 @@ ________________________________________________________________________________
 * Installation-------------------------------------------------------------[001]
 * Setup--------------------------------------------------------------------[002]
 * Usage--------------------------------------------------------------------[003]
-* Information--------------------------------------------------------------[004]
-  * Change-History---------------------------------------------------------[005]
-* References---------------------------------------------------------------[006]
+* History------------------------------------------------------------------[004]
+* References---------------------------------------------------------------[005]
 
 
 [001] Installation
@@ -43,22 +42,19 @@ ________________________________________________________________________________
 Refer to the manual pages and command help output.
 
 
-[004] Information
+[004] History
 ________________________________________________________________________________
 
-
---[005]-Change-History--------------------------------------------------------
-
-<div style="max-height:177px;overflow:hidden scroll">  2021-07-18 <a href="https://github.com/kisslinux/repo/commit/ba21123ed0821dcb590d7067d54646f28878c775">ba21123e</a> zstd: update for new env
-  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/f58992a27919faa69e484d756d9ea6bcb69431ea">f58992a2</a> zstd: use VERSION
-  2021-07-03 <a href="https://github.com/kisslinux/repo/commit/57a692afcd4e2463c60394be5c6cad2da857a6ed">57a692af</a> zstd: remove sed -i
-  2021-07-03 <a href="https://github.com/kisslinux/repo/commit/259e251c2443fd944801664d2a4af7b3d067e994">259e251c</a> zstd: static programs, only zstd
-  2021-06-30 <a href="https://github.com/kisslinux/repo/commit/c987100aef2e36080b3c14bf18a30ab45ba24b8b">c987100a</a> zstd: 1.5.0
-  2020-05-22 <a href="https://github.com/kisslinux/repo/commit/0cf1b4ccf8589cf94d1c9707321d1e5b27dabe6e">0cf1b4cc</a> zstd: bump to 1.4.5
-  2020-03-22 <a href="https://github.com/kisslinux/repo/commit/2fede655ded755b52187d12a1da4d860233842f9">2fede655</a> zstd: new package at 1.4.4
+<div style="max-height:177px;overflow:hidden scroll">2021-07-18 <a href="https://github.com/kisslinux/repo/commit/ba21123ed0821dcb590d7067d54646f28878c775">ba21123e</a> zstd: update for new env
+2021-07-15 <a href="https://github.com/kisslinux/repo/commit/f58992a27919faa69e484d756d9ea6bcb69431ea">f58992a2</a> zstd: use VERSION
+2021-07-03 <a href="https://github.com/kisslinux/repo/commit/57a692afcd4e2463c60394be5c6cad2da857a6ed">57a692af</a> zstd: remove sed -i
+2021-07-03 <a href="https://github.com/kisslinux/repo/commit/259e251c2443fd944801664d2a4af7b3d067e994">259e251c</a> zstd: static programs, only zstd
+2021-06-30 <a href="https://github.com/kisslinux/repo/commit/c987100aef2e36080b3c14bf18a30ab45ba24b8b">c987100a</a> zstd: 1.5.0
+2020-05-22 <a href="https://github.com/kisslinux/repo/commit/0cf1b4ccf8589cf94d1c9707321d1e5b27dabe6e">0cf1b4cc</a> zstd: bump to 1.4.5
+2020-03-22 <a href="https://github.com/kisslinux/repo/commit/2fede655ded755b52187d12a1da4d860233842f9">2fede655</a> zstd: new package at 1.4.4
 </div>
 
-[006] References
+[005] References
 ________________________________________________________________________________
 
 [0] https://en.wikipedia.org/wiki/Zstandard

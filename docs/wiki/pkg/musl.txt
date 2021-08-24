@@ -21,9 +21,8 @@ ________________________________________________________________________________
 
 * Installation-------------------------------------------------------------[001]
 * Usage--------------------------------------------------------------------[002]
-* Information--------------------------------------------------------------[003]
-  * Change-History---------------------------------------------------------[004]
-* References---------------------------------------------------------------[005]
+* History------------------------------------------------------------------[003]
+* References---------------------------------------------------------------[004]
 
 
 [001] Installation
@@ -49,36 +48,33 @@ the man-pages package.
 +------------------------------------------------------------------------------+
 
 
-[003] Information
+[003] History
 ________________________________________________________________________________
 
-
---[004]-Change-History--------------------------------------------------------
-
-<div style="max-height:177px;overflow:hidden scroll">  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/c999029904e460d455be0b534c77f65ea481b793">c9990299</a> musl: update for new env
-  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/829ae078621b4c9d57ae683d4162e3a64c803a66">829ae078</a> musl: use VERSION
-  2021-07-01 <a href="https://github.com/kisslinux/repo/commit/2eb7a4ecca250262a55f540a619711590eaaa17d">2eb7a4ec</a> musl: remove usage of install
-  2021-06-30 <a href="https://github.com/kisslinux/repo/commit/f150b10db9b0543370849ef0900ff5e8a7c288dc">f150b10d</a> musl: 1.2.2
-  2020-11-01 <a href="https://github.com/kisslinux/repo/commit/de75252e291f27aa27846813cd2442f663c82fee">de75252e</a> musl: add comments about valgrind
-  2020-08-06 <a href="https://github.com/kisslinux/repo/commit/c572740d6cfb82fa6eeaf09abf110235915920cf">c572740d</a> musl: bump to 1.2.1
-  2020-06-06 <a href="https://github.com/kisslinux/repo/commit/699d79ffae787c8419b0f823ff86c18f3d331ed7">699d79ff</a> musl: Fix incorrect symlink to libc.so
-  2020-05-26 <a href="https://github.com/kisslinux/repo/commit/aeb8c6bca5fea7a678ab22480beebff429fbee95">aeb8c6bc</a> musl: Remove cdefs warning
-  2020-05-20 <a href="https://github.com/kisslinux/repo/commit/8ee2e80add04ffb02d62e5515b7b81e98855f519">8ee2e80a</a> musl: Add getent
-  2020-02-21 <a href="https://github.com/kisslinux/repo/commit/2a212957d1b9df9abff764c83d373d25785b55e1">2a212957</a> musl: bump to 1.2.0
-  2020-02-14 <a href="https://github.com/kisslinux/repo/commit/0cfbb664dcf85bc6b413b8d83ddc06d031e86b46">0cfbb664</a> musl: clean up
-  2019-10-14 <a href="https://github.com/kisslinux/repo/commit/05bb00156631f8111e98385d875e33e5fae683ae">05bb0015</a> musl: bump to 1.1.24
-  2019-09-28 <a href="https://github.com/kisslinux/repo/commit/311a653a57bd384a3e44badbeede60b16a77bfe7">311a653a</a> musl: provide getconf
-  2019-09-23 <a href="https://github.com/kisslinux/repo/commit/663d65a9b3c252a33a7207625424fbd300ab7bf7">663d65a9</a> musl: fix build
-  2019-09-16 <a href="https://github.com/kisslinux/repo/commit/c465eda57834dc753f1f8b6b5de70b3aaadd4157">c465eda5</a> musl: clean build
-  2019-09-04 <a href="https://github.com/kisslinux/repo/commit/8fc7e1d1c537d85ded1275492f106ead9f5d3873">8fc7e1d1</a> musl: include bsd-compat-headers
-  2019-08-04 <a href="https://github.com/kisslinux/repo/commit/ad6990a0ab175cec07d806d1c57fd2aad52cf08e">ad6990a0</a> musl: bump to 1.1.23
-  2019-07-21 <a href="https://github.com/kisslinux/repo/commit/8231e513c977daa3ede6ef37c002f8f88048d4e6">8231e513</a> musl: fix directories
-  2019-07-21 <a href="https://github.com/kisslinux/repo/commit/e807da7ffd09dfc109d86704472fd47b740e3005">e807da7f</a> musl: fix directories
-  2019-06-19 <a href="https://github.com/kisslinux/repo/commit/bf158907b1803752639890cf121aa6ec4e046867">bf158907</a> musl: add license
-  2019-06-02 <a href="https://github.com/kisslinux/repo/commit/b8102e6f7af5c2fdf3a72970686608656099661d">b8102e6f</a> musl: init at 1.1.22
+<div style="max-height:177px;overflow:hidden scroll">2021-07-15 <a href="https://github.com/kisslinux/repo/commit/c999029904e460d455be0b534c77f65ea481b793">c9990299</a> musl: update for new env
+2021-07-15 <a href="https://github.com/kisslinux/repo/commit/829ae078621b4c9d57ae683d4162e3a64c803a66">829ae078</a> musl: use VERSION
+2021-07-01 <a href="https://github.com/kisslinux/repo/commit/2eb7a4ecca250262a55f540a619711590eaaa17d">2eb7a4ec</a> musl: remove usage of install
+2021-06-30 <a href="https://github.com/kisslinux/repo/commit/f150b10db9b0543370849ef0900ff5e8a7c288dc">f150b10d</a> musl: 1.2.2
+2020-11-01 <a href="https://github.com/kisslinux/repo/commit/de75252e291f27aa27846813cd2442f663c82fee">de75252e</a> musl: add comments about valgrind
+2020-08-06 <a href="https://github.com/kisslinux/repo/commit/c572740d6cfb82fa6eeaf09abf110235915920cf">c572740d</a> musl: bump to 1.2.1
+2020-06-06 <a href="https://github.com/kisslinux/repo/commit/699d79ffae787c8419b0f823ff86c18f3d331ed7">699d79ff</a> musl: Fix incorrect symlink to libc.so
+2020-05-26 <a href="https://github.com/kisslinux/repo/commit/aeb8c6bca5fea7a678ab22480beebff429fbee95">aeb8c6bc</a> musl: Remove cdefs warning
+2020-05-20 <a href="https://github.com/kisslinux/repo/commit/8ee2e80add04ffb02d62e5515b7b81e98855f519">8ee2e80a</a> musl: Add getent
+2020-02-21 <a href="https://github.com/kisslinux/repo/commit/2a212957d1b9df9abff764c83d373d25785b55e1">2a212957</a> musl: bump to 1.2.0
+2020-02-14 <a href="https://github.com/kisslinux/repo/commit/0cfbb664dcf85bc6b413b8d83ddc06d031e86b46">0cfbb664</a> musl: clean up
+2019-10-14 <a href="https://github.com/kisslinux/repo/commit/05bb00156631f8111e98385d875e33e5fae683ae">05bb0015</a> musl: bump to 1.1.24
+2019-09-28 <a href="https://github.com/kisslinux/repo/commit/311a653a57bd384a3e44badbeede60b16a77bfe7">311a653a</a> musl: provide getconf
+2019-09-23 <a href="https://github.com/kisslinux/repo/commit/663d65a9b3c252a33a7207625424fbd300ab7bf7">663d65a9</a> musl: fix build
+2019-09-16 <a href="https://github.com/kisslinux/repo/commit/c465eda57834dc753f1f8b6b5de70b3aaadd4157">c465eda5</a> musl: clean build
+2019-09-04 <a href="https://github.com/kisslinux/repo/commit/8fc7e1d1c537d85ded1275492f106ead9f5d3873">8fc7e1d1</a> musl: include bsd-compat-headers
+2019-08-04 <a href="https://github.com/kisslinux/repo/commit/ad6990a0ab175cec07d806d1c57fd2aad52cf08e">ad6990a0</a> musl: bump to 1.1.23
+2019-07-21 <a href="https://github.com/kisslinux/repo/commit/8231e513c977daa3ede6ef37c002f8f88048d4e6">8231e513</a> musl: fix directories
+2019-07-21 <a href="https://github.com/kisslinux/repo/commit/e807da7ffd09dfc109d86704472fd47b740e3005">e807da7f</a> musl: fix directories
+2019-06-19 <a href="https://github.com/kisslinux/repo/commit/bf158907b1803752639890cf121aa6ec4e046867">bf158907</a> musl: add license
+2019-06-02 <a href="https://github.com/kisslinux/repo/commit/b8102e6f7af5c2fdf3a72970686608656099661d">b8102e6f</a> musl: init at 1.1.22
 </div>
 
-[005] References
+[004] References
 ________________________________________________________________________________
 
 [0] https://en.wikipedia.org/wiki/Musl

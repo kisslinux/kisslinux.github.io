@@ -13,9 +13,8 @@ ________________________________________________________________________________
 
 * Installation-------------------------------------------------------------[001]
 * Usage--------------------------------------------------------------------[002]
-* Information--------------------------------------------------------------[004]
-  * Change-History---------------------------------------------------------[005]
-* References---------------------------------------------------------------[006]
+* History------------------------------------------------------------------[004]
+* References---------------------------------------------------------------[005]
 
 
 [001] Installation
@@ -35,28 +34,25 @@ No documentation is currently provided with the package, refer to online
 documentation for the time being.
 
 
-[004] Information
+[004] History
 ________________________________________________________________________________
 
-
---[005]-Change-History--------------------------------------------------------
-
-<div style="max-height:177px;overflow:hidden scroll">  2021-07-21 <a href="https://github.com/kisslinux/repo/commit/fa80406426cce05dc28c97c211116801fea3f5f1">fa804064</a> x264: fix portability issues with ksh. Closes #297
-  2021-07-18 <a href="https://github.com/kisslinux/repo/commit/67dcdb809775c9e69ee95f2280216392e3ceb614">67dcdb80</a> x264: update for new env
-  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/75dfd3bf4982aae08c3105e3c88642913fdec4b5">75dfd3bf</a> x264: use VERSION
-  2021-07-03 <a href="https://github.com/kisslinux/repo/commit/77dc0590e34ecb06e96bdc3ec17253ab8319da28">77dc0590</a> x264: set generic CC/CXX if unset
-  2021-07-01 <a href="https://github.com/kisslinux/repo/commit/72c5df501c202a63f99cb0bec165b8d3464ce73c">72c5df50</a> x264: use new checksum format
-  2020-02-27 <a href="https://github.com/kisslinux/repo/commit/719539f376715a30666ecc57768ea74abf9c27a7">719539f3</a> x264: Remove perl depend
-  2019-09-13 <a href="https://github.com/kisslinux/repo/commit/3c77f03a95d15eec9ad9992c4328e89bb4a33739">3c77f03a</a> x264: use https for source
-  2019-08-24 <a href="https://github.com/kisslinux/repo/commit/37aae5306e88e179ce7db6eb9cbe2bfaed9ce488">37aae530</a> x264: remove bash dependency
-  2019-08-13 <a href="https://github.com/kisslinux/repo/commit/e49aa4ea0bb97d030db234c19b3cd92bddeda333">e49aa4ea</a> x264: bump to 20190812-2245
-  2019-08-04 <a href="https://github.com/kisslinux/repo/commit/2d4b163ef76d5f79d634955db88ff64bdf6dd765">2d4b163e</a> x264: fix package
-  2019-07-27 <a href="https://github.com/kisslinux/repo/commit/939f7d42e732c4d8defad422fe8a71582ded2bf5">939f7d42</a> x264: Add bash as a make depend.
-  2019-07-27 <a href="https://github.com/kisslinux/repo/commit/f375aa01be3b743f63d1edda91aa9adc068d7c18">f375aa01</a> x264: Fix depends.
-  2019-07-27 <a href="https://github.com/kisslinux/repo/commit/405300c25e94c2d3903b09058351c0cf3db536c1">405300c2</a> x264: new package at 20190507-2245
+<div style="max-height:177px;overflow:hidden scroll">2021-07-21 <a href="https://github.com/kisslinux/repo/commit/fa80406426cce05dc28c97c211116801fea3f5f1">fa804064</a> x264: fix portability issues with ksh. Closes #297
+2021-07-18 <a href="https://github.com/kisslinux/repo/commit/67dcdb809775c9e69ee95f2280216392e3ceb614">67dcdb80</a> x264: update for new env
+2021-07-15 <a href="https://github.com/kisslinux/repo/commit/75dfd3bf4982aae08c3105e3c88642913fdec4b5">75dfd3bf</a> x264: use VERSION
+2021-07-03 <a href="https://github.com/kisslinux/repo/commit/77dc0590e34ecb06e96bdc3ec17253ab8319da28">77dc0590</a> x264: set generic CC/CXX if unset
+2021-07-01 <a href="https://github.com/kisslinux/repo/commit/72c5df501c202a63f99cb0bec165b8d3464ce73c">72c5df50</a> x264: use new checksum format
+2020-02-27 <a href="https://github.com/kisslinux/repo/commit/719539f376715a30666ecc57768ea74abf9c27a7">719539f3</a> x264: Remove perl depend
+2019-09-13 <a href="https://github.com/kisslinux/repo/commit/3c77f03a95d15eec9ad9992c4328e89bb4a33739">3c77f03a</a> x264: use https for source
+2019-08-24 <a href="https://github.com/kisslinux/repo/commit/37aae5306e88e179ce7db6eb9cbe2bfaed9ce488">37aae530</a> x264: remove bash dependency
+2019-08-13 <a href="https://github.com/kisslinux/repo/commit/e49aa4ea0bb97d030db234c19b3cd92bddeda333">e49aa4ea</a> x264: bump to 20190812-2245
+2019-08-04 <a href="https://github.com/kisslinux/repo/commit/2d4b163ef76d5f79d634955db88ff64bdf6dd765">2d4b163e</a> x264: fix package
+2019-07-27 <a href="https://github.com/kisslinux/repo/commit/939f7d42e732c4d8defad422fe8a71582ded2bf5">939f7d42</a> x264: Add bash as a make depend.
+2019-07-27 <a href="https://github.com/kisslinux/repo/commit/f375aa01be3b743f63d1edda91aa9adc068d7c18">f375aa01</a> x264: Fix depends.
+2019-07-27 <a href="https://github.com/kisslinux/repo/commit/405300c25e94c2d3903b09058351c0cf3db536c1">405300c2</a> x264: new package at 20190507-2245
 </div>
 
-[006] References
+[005] References
 ________________________________________________________________________________
 
 [0] https://en.wikipedia.org/wiki/X264

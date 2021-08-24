@@ -14,9 +14,8 @@ ________________________________________________________________________________
 
 * Installation-------------------------------------------------------------[001]
 * Usage--------------------------------------------------------------------[002]
-* Information--------------------------------------------------------------[003]
-  * Change-History---------------------------------------------------------[004]
-* References---------------------------------------------------------------[005]
+* History------------------------------------------------------------------[003]
+* References---------------------------------------------------------------[004]
 
 
 [001] Installation
@@ -57,38 +56,35 @@ ________________________________________________________________________________
 Refer to the manual pages and command help output for more information.
 
 
-[003] Information
+[003] History
 ________________________________________________________________________________
 
-
---[004]-Change-History--------------------------------------------------------
-
-<div style="max-height:177px;overflow:hidden scroll">  2021-08-20 <a href="https://github.com/kisslinux/repo/commit/5de7abc71572930da0aa1fbda6f25fb35424a5e7">5de7abc7</a> e2fsprogs: 1.46.4
-  2021-07-28 <a href="https://github.com/kisslinux/repo/commit/aa0576cf691b426f45e4481c361a47217a15df01">aa0576cf</a> e2fsprogs: 1.46.3
-  2021-07-17 <a href="https://github.com/kisslinux/repo/commit/d950eb43ecc4a855cf4a7c39e68f8fc5caf8107d">d950eb43</a> e2fsprogs: update for new env
-  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/021b330a8d6ef9d49c10efb67d674b8c69998cf6">021b330a</a> e2fsprogs: use VERSION
-  2021-07-06 <a href="https://github.com/kisslinux/repo/commit/eb4a0ce36759e13570a8855af10376e1901acdd1">eb4a0ce3</a> e2fsprogs: install only what we want
-  2021-07-01 <a href="https://github.com/kisslinux/repo/commit/cd0fc1077e6e8e07679b37e516f23e3b0e6de604">cd0fc107</a> e2fsprogs: remove usage of install
-  2021-06-30 <a href="https://github.com/kisslinux/repo/commit/8923dc0493bf1cf429fe46d36f0ed8f0f4205151">8923dc04</a> e2fsprogs: 1.46.2
-  2020-05-03 <a href="https://github.com/kisslinux/repo/commit/204259651ae8cf19da60739697d02ceb77974f99">20425965</a> e2fsprogs: Fix depends
-  2020-03-22 <a href="https://github.com/kisslinux/repo/commit/813260f6366742316151a8fff5d87e46f85557e9">813260f6</a> e2fsprogs: bump to 1.45.6
-  2020-03-05 <a href="https://github.com/kisslinux/repo/commit/af38f2b5d4c0850327963dae0ea9d9dac96aa44c">af38f2b5</a> e2fsprogs: Move to extra
-  2020-02-18 <a href="https://github.com/kisslinux/repo/commit/c032d6754d676c0999c099bbeb19b49773f650c5">c032d675</a> e2fsprogs: Provide libs. Closes #155
-  2020-02-08 <a href="https://github.com/kisslinux/repo/commit/8c7acc6932c9cbe2c73e7c3a3c4c11b0469e5c0a">8c7acc69</a> e2fsprogs: Remove util-linux dependency
-  2020-01-08 <a href="https://github.com/kisslinux/repo/commit/1b91e94e2df88662842ec407552354e57a135943">1b91e94e</a> e2fsprogs: bump to 1.45.5
-  2019-10-07 <a href="https://github.com/kisslinux/repo/commit/c951fc03cba3cf24190d91f0711e5be6c65d07f2">c951fc03</a> e2fsprogs: remove rm
-  2019-10-05 <a href="https://github.com/kisslinux/repo/commit/dc29435a90ee7cbe515836a6c36d87e6764e0124">dc29435a</a> e2fsprogs: let nls be detected
-  2019-09-24 <a href="https://github.com/kisslinux/repo/commit/043ab3a0cc31390e7037838857e243e3b8df5b36">043ab3a0</a> e2fsprogs: bump to 1.45.4
-  2019-08-29 <a href="https://github.com/kisslinux/repo/commit/926dd7f41ad8d76fc85cad081092a673201f879f">926dd7f4</a> e2fsprogs: fix package
-  2019-07-19 <a href="https://github.com/kisslinux/repo/commit/c08c702e0f893a96c333269d1c584cd28e8a4af2">c08c702e</a> e2fsprogs: update to 1.45.3
-  2019-07-17 <a href="https://github.com/kisslinux/repo/commit/f8cb7de56f6eda0706507ac27db6e16a9eb00c2b">f8cb7de5</a> e2fsprogs: fix install dir (/usr/etc -> /etc)
-  2019-07-07 <a href="https://github.com/kisslinux/repo/commit/8cc4cc12770163d21b48c4ac19b5e68dc67a9a5b">8cc4cc12</a> e2fsprogs: add util-linux dependency
-  2019-06-21 <a href="https://github.com/kisslinux/repo/commit/c80a76bb581b96b910f338aef44748be51a86983">c80a76bb</a> e2fsprogs: Ensure same build regardless of system.
-  2019-06-21 <a href="https://github.com/kisslinux/repo/commit/4adb489faa068b99fb47f74e723891c9f8b3362f">4adb489f</a> e2fsprogs: Disable uuid.
-  2019-06-21 <a href="https://github.com/kisslinux/repo/commit/d0a450858b4e6833745f5878306032834c19c47a">d0a45085</a> e2fsprogs: Always build blkid and findfs
+<div style="max-height:177px;overflow:hidden scroll">2021-08-20 <a href="https://github.com/kisslinux/repo/commit/5de7abc71572930da0aa1fbda6f25fb35424a5e7">5de7abc7</a> e2fsprogs: 1.46.4
+2021-07-28 <a href="https://github.com/kisslinux/repo/commit/aa0576cf691b426f45e4481c361a47217a15df01">aa0576cf</a> e2fsprogs: 1.46.3
+2021-07-17 <a href="https://github.com/kisslinux/repo/commit/d950eb43ecc4a855cf4a7c39e68f8fc5caf8107d">d950eb43</a> e2fsprogs: update for new env
+2021-07-15 <a href="https://github.com/kisslinux/repo/commit/021b330a8d6ef9d49c10efb67d674b8c69998cf6">021b330a</a> e2fsprogs: use VERSION
+2021-07-06 <a href="https://github.com/kisslinux/repo/commit/eb4a0ce36759e13570a8855af10376e1901acdd1">eb4a0ce3</a> e2fsprogs: install only what we want
+2021-07-01 <a href="https://github.com/kisslinux/repo/commit/cd0fc1077e6e8e07679b37e516f23e3b0e6de604">cd0fc107</a> e2fsprogs: remove usage of install
+2021-06-30 <a href="https://github.com/kisslinux/repo/commit/8923dc0493bf1cf429fe46d36f0ed8f0f4205151">8923dc04</a> e2fsprogs: 1.46.2
+2020-05-03 <a href="https://github.com/kisslinux/repo/commit/204259651ae8cf19da60739697d02ceb77974f99">20425965</a> e2fsprogs: Fix depends
+2020-03-22 <a href="https://github.com/kisslinux/repo/commit/813260f6366742316151a8fff5d87e46f85557e9">813260f6</a> e2fsprogs: bump to 1.45.6
+2020-03-05 <a href="https://github.com/kisslinux/repo/commit/af38f2b5d4c0850327963dae0ea9d9dac96aa44c">af38f2b5</a> e2fsprogs: Move to extra
+2020-02-18 <a href="https://github.com/kisslinux/repo/commit/c032d6754d676c0999c099bbeb19b49773f650c5">c032d675</a> e2fsprogs: Provide libs. Closes #155
+2020-02-08 <a href="https://github.com/kisslinux/repo/commit/8c7acc6932c9cbe2c73e7c3a3c4c11b0469e5c0a">8c7acc69</a> e2fsprogs: Remove util-linux dependency
+2020-01-08 <a href="https://github.com/kisslinux/repo/commit/1b91e94e2df88662842ec407552354e57a135943">1b91e94e</a> e2fsprogs: bump to 1.45.5
+2019-10-07 <a href="https://github.com/kisslinux/repo/commit/c951fc03cba3cf24190d91f0711e5be6c65d07f2">c951fc03</a> e2fsprogs: remove rm
+2019-10-05 <a href="https://github.com/kisslinux/repo/commit/dc29435a90ee7cbe515836a6c36d87e6764e0124">dc29435a</a> e2fsprogs: let nls be detected
+2019-09-24 <a href="https://github.com/kisslinux/repo/commit/043ab3a0cc31390e7037838857e243e3b8df5b36">043ab3a0</a> e2fsprogs: bump to 1.45.4
+2019-08-29 <a href="https://github.com/kisslinux/repo/commit/926dd7f41ad8d76fc85cad081092a673201f879f">926dd7f4</a> e2fsprogs: fix package
+2019-07-19 <a href="https://github.com/kisslinux/repo/commit/c08c702e0f893a96c333269d1c584cd28e8a4af2">c08c702e</a> e2fsprogs: update to 1.45.3
+2019-07-17 <a href="https://github.com/kisslinux/repo/commit/f8cb7de56f6eda0706507ac27db6e16a9eb00c2b">f8cb7de5</a> e2fsprogs: fix install dir (/usr/etc -> /etc)
+2019-07-07 <a href="https://github.com/kisslinux/repo/commit/8cc4cc12770163d21b48c4ac19b5e68dc67a9a5b">8cc4cc12</a> e2fsprogs: add util-linux dependency
+2019-06-21 <a href="https://github.com/kisslinux/repo/commit/c80a76bb581b96b910f338aef44748be51a86983">c80a76bb</a> e2fsprogs: Ensure same build regardless of system.
+2019-06-21 <a href="https://github.com/kisslinux/repo/commit/4adb489faa068b99fb47f74e723891c9f8b3362f">4adb489f</a> e2fsprogs: Disable uuid.
+2019-06-21 <a href="https://github.com/kisslinux/repo/commit/d0a450858b4e6833745f5878306032834c19c47a">d0a45085</a> e2fsprogs: Always build blkid and findfs
 </div>
 
-[005] References
+[004] References
 ________________________________________________________________________________
 
 [0] https://en.wikipedia.org/wiki/E2fsprogs

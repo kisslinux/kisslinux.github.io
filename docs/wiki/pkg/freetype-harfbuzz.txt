@@ -29,9 +29,8 @@ ________________________________________________________________________________
 
 * Installation-------------------------------------------------------------[001]
 * Usage--------------------------------------------------------------------[002]
-* Information--------------------------------------------------------------[003]
-  * Change-History---------------------------------------------------------[004]
-* References---------------------------------------------------------------[005]
+* History------------------------------------------------------------------[003]
+* References---------------------------------------------------------------[004]
 
 
 [001] Installation
@@ -51,54 +50,51 @@ No documentation is currently provided with the package, refer to online
 documentation for the time being.
 
 
-[003] Information
+[003] History
 ________________________________________________________________________________
 
-
---[004]-Change-History--------------------------------------------------------
-
-<div style="max-height:177px;overflow:hidden scroll">  2021-08-08 <a href="https://github.com/kisslinux/repo/commit/a9984c8ab2a012f637e5b2e8ead585f83a385ac3">a9984c8a</a> freetype-harfbuzz: clean up
-  2021-08-08 <a href="https://github.com/kisslinux/repo/commit/b8d0723123be6f8e158b8d498d98b3a38b50dfda">b8d07231</a> freetype-harfbuzz: fix depends
-  2021-08-08 <a href="https://github.com/kisslinux/repo/commit/ea030eb1908ac66756446108e8d46fde7f6927e2">ea030eb1</a> freetype-harfbuzz: remove bzip2 dependency
-  2021-08-08 <a href="https://github.com/kisslinux/repo/commit/e115a8d74c3e1a2a4111ec1f9cfed9919ad19dcb">e115a8d7</a> freetype-harfbuzz: remove unneeded lines
-  2021-08-08 <a href="https://github.com/kisslinux/repo/commit/8832e80599cd44b7fedba42cb832d69189826366">8832e805</a> freetype-harfbuzz: remove glib dependency
-  2021-07-21 <a href="https://github.com/kisslinux/repo/commit/9a9dbcc8cbd58aaa48e3200c2b0584f14fcb1171">9a9dbcc8</a> freetype-harfbuzz: 2.11.0+2.8.2
-  2021-07-17 <a href="https://github.com/kisslinux/repo/commit/589ca5c10e2c72a15c8492785eb94fd6f04b6589">589ca5c1</a> freetype-harfbuzz: update for new env
-  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/d933bbaa95cfc21061e2bf6763e4296b7e31dce8">d933bbaa</a> freetype-harfbuzz: use MAJOR/MINOR/PATCH/IDENT
-  2021-07-11 <a href="https://github.com/kisslinux/repo/commit/2c027ca0206c6f0763f297d9759cd8735a1c915b">2c027ca0</a> freetype-harfbuzz: 2.10.4+2.8.2
-  2021-07-08 <a href="https://github.com/kisslinux/repo/commit/0725d5c9992ff146d68ea450bac1c8b8fb39b1aa">0725d5c9</a> freetype-harfbuzz: remove xorg dependency
-  2021-07-06 <a href="https://github.com/kisslinux/repo/commit/4c8283c0c15e9ff2687837a5fd885ade74183a8f">4c8283c0</a> freetype-harfbuzz: nit
-  2021-07-01 <a href="https://github.com/kisslinux/repo/commit/9d46ed2b59d39ded8f1e7c05d1221e03bed7afe2">9d46ed2b</a> freetype-harfbuzz: 2.10.4+2.8.1
-  2021-06-30 <a href="https://github.com/kisslinux/repo/commit/4ce840f20556776488203ed80279fe25dc343c2e">4ce840f2</a> freetype-harfbuzz: 2.10.2+2.8.1
-  2020-08-30 <a href="https://github.com/kisslinux/repo/commit/4fe8d99cd1aab49111f5745d731ccad9b8a41e4d">4fe8d99c</a> freetype-harfbuzz: 2.10.2+2.7.2
-  2020-08-16 <a href="https://github.com/kisslinux/repo/commit/9c3740ade2a7c152e8cb5823803b693012a93dca">9c3740ad</a> freetype-harfbuzz: 2.10.2+2.7.1
-  2020-07-28 <a href="https://github.com/kisslinux/repo/commit/225d08b98a08285a8b6eb95f9bdd37cf90f9e8c2">225d08b9</a> freetype-harfbuzz: 2.10.2+2.7.0
-  2020-07-28 <a href="https://github.com/kisslinux/repo/commit/8445e3f4c718654fd9b789c66a2d5c3e638be0a2">8445e3f4</a> freetype-harfbuzz: Fix checksums
-  2020-07-28 <a href="https://github.com/kisslinux/repo/commit/05096e5a4dc6db5d202342f538d067d87ae7135e">05096e5a</a> freetype-harfbuzz: revert to 2.10.2+2.6.8
-  2020-07-28 <a href="https://github.com/kisslinux/repo/commit/baf0829aaf15a984953162e736cfc181c0580faa">baf0829a</a> freetype-harfbuzz: Fix build.
-  2020-07-27 <a href="https://github.com/kisslinux/repo/commit/2e5271ccde867da15bbabe4187c3321dfcc6714e">2e5271cc</a> freetype-harfbuzz: bump to 2.10.2+2.7.0, swap to meson.
-  2020-06-22 <a href="https://github.com/kisslinux/repo/commit/2819de03e752c9e305d341daf6bb8a3f015f7925">2819de03</a> freetype-harfbuzz: bump to 2.10.2+2.6.8
-  2020-06-05 <a href="https://github.com/kisslinux/repo/commit/8d243b97d8a7c80fcbded8708b7ebd9ddfee5ee4">8d243b97</a> freetype-harfbuzz: bump to 2.10.2+2.6.7
-  2020-05-12 <a href="https://github.com/kisslinux/repo/commit/b7ac6e62482c3e7189ae7dfffeaeb0eaf9f11912">b7ac6e62</a> freetype-harfbuzz: bump to 2.10.2+2.6.6
-  2020-05-09 <a href="https://github.com/kisslinux/repo/commit/dc1e6bb73edec2597dc8b734a3ea1af5a73ecee5">dc1e6bb7</a> freetype-harfbuzz: bump to 2.10.2+2.6.5 and fix circular dependency with cairo
-  2020-04-18 <a href="https://github.com/kisslinux/repo/commit/33c419aff1be5ec0b930d00553b8561fc97f769e">33c419af</a> freetype-harfbuzz: Bump to 2.10.1+2.6.5
-  2019-11-08 <a href="https://github.com/kisslinux/repo/commit/7f1869524dc97be317a64b163f2785c4750fbff3">7f186952</a> freetype-harfbuzz: bmp to 2.10.1+2.6.4
-  2019-10-17 <a href="https://github.com/kisslinux/repo/commit/6058f9a0c259699fa8e32386dc032056dc653b05">6058f9a0</a> freetype-harfbuzz: Add missing libpng dependency.
-  2019-10-05 <a href="https://github.com/kisslinux/repo/commit/b5bb76a36bc430e57890325f4b0d6d8206c5528d">b5bb76a3</a> freetype-harfbuzz: bump to 2.10.1+2.6.2
-  2019-08-25 <a href="https://github.com/kisslinux/repo/commit/135f36d6547fe83f23e94ea59c876a28d6389821">135f36d6</a> freetype-harfbuzz: Update harfbuzz
-  2019-08-18 <a href="https://github.com/kisslinux/repo/commit/8a52bf63ab3e829876f743e79aa5e83aad324da9">8a52bf63</a> freetype-harfbuzz: fix depends
-  2019-08-18 <a href="https://github.com/kisslinux/repo/commit/1362dff71fc24617c1e510a6998a2734966b7785">1362dff7</a> freetype-harfbuzz: agressive depends to combat a circular dep with xorg-server
-  2019-08-13 <a href="https://github.com/kisslinux/repo/commit/9dd7ee2b5ec0a13932556e707164b2c378305aad">9dd7ee2b</a> freetype-harfbuzz: bump to 2.4.3+2.10.1
-  2019-08-04 <a href="https://github.com/kisslinux/repo/commit/fc9527e05c3653c02eb1995badd3a21e60817d7a">fc9527e0</a> freetype-harfbuzz: move to extra
-  2019-08-04 <a href="https://github.com/kisslinux/repo/commit/232480e99a1187f2f65b8cf5e4f6f40ef3955160">232480e9</a> freetype-harfbuzz: correctly link to local versions
-  2019-08-04 <a href="https://github.com/kisslinux/repo/commit/f0c635787664fc8c235aac8f32dde15ccbc91d7d">f0c63578</a> freetype-harfbuzz: correctly link to local versions
-  2019-08-04 <a href="https://github.com/kisslinux/repo/commit/fdf3f04b0a6185c59150d997e838f451f093db9e">fdf3f04b</a> freetype-harfbuzz: correctly link to local versions
-  2019-08-04 <a href="https://github.com/kisslinux/repo/commit/e6672bf1d3e8ea7fe3c73f07d75c12e6383a42b6">e6672bf1</a> freetype-harfbuzz: correctly link to local versions
-  2019-08-04 <a href="https://github.com/kisslinux/repo/commit/e34b1a5634518626e661f5045127d0535ce52881">e34b1a56</a> freetype-harfbuzz: fix depends
-  2019-08-04 <a href="https://github.com/kisslinux/repo/commit/59779af7b296ff8a11612110819989da062dfce8">59779af7</a> freetype-harfbuzz: added initial package
+<div style="max-height:177px;overflow:hidden scroll">2021-08-08 <a href="https://github.com/kisslinux/repo/commit/a9984c8ab2a012f637e5b2e8ead585f83a385ac3">a9984c8a</a> freetype-harfbuzz: clean up
+2021-08-08 <a href="https://github.com/kisslinux/repo/commit/b8d0723123be6f8e158b8d498d98b3a38b50dfda">b8d07231</a> freetype-harfbuzz: fix depends
+2021-08-08 <a href="https://github.com/kisslinux/repo/commit/ea030eb1908ac66756446108e8d46fde7f6927e2">ea030eb1</a> freetype-harfbuzz: remove bzip2 dependency
+2021-08-08 <a href="https://github.com/kisslinux/repo/commit/e115a8d74c3e1a2a4111ec1f9cfed9919ad19dcb">e115a8d7</a> freetype-harfbuzz: remove unneeded lines
+2021-08-08 <a href="https://github.com/kisslinux/repo/commit/8832e80599cd44b7fedba42cb832d69189826366">8832e805</a> freetype-harfbuzz: remove glib dependency
+2021-07-21 <a href="https://github.com/kisslinux/repo/commit/9a9dbcc8cbd58aaa48e3200c2b0584f14fcb1171">9a9dbcc8</a> freetype-harfbuzz: 2.11.0+2.8.2
+2021-07-17 <a href="https://github.com/kisslinux/repo/commit/589ca5c10e2c72a15c8492785eb94fd6f04b6589">589ca5c1</a> freetype-harfbuzz: update for new env
+2021-07-15 <a href="https://github.com/kisslinux/repo/commit/d933bbaa95cfc21061e2bf6763e4296b7e31dce8">d933bbaa</a> freetype-harfbuzz: use MAJOR/MINOR/PATCH/IDENT
+2021-07-11 <a href="https://github.com/kisslinux/repo/commit/2c027ca0206c6f0763f297d9759cd8735a1c915b">2c027ca0</a> freetype-harfbuzz: 2.10.4+2.8.2
+2021-07-08 <a href="https://github.com/kisslinux/repo/commit/0725d5c9992ff146d68ea450bac1c8b8fb39b1aa">0725d5c9</a> freetype-harfbuzz: remove xorg dependency
+2021-07-06 <a href="https://github.com/kisslinux/repo/commit/4c8283c0c15e9ff2687837a5fd885ade74183a8f">4c8283c0</a> freetype-harfbuzz: nit
+2021-07-01 <a href="https://github.com/kisslinux/repo/commit/9d46ed2b59d39ded8f1e7c05d1221e03bed7afe2">9d46ed2b</a> freetype-harfbuzz: 2.10.4+2.8.1
+2021-06-30 <a href="https://github.com/kisslinux/repo/commit/4ce840f20556776488203ed80279fe25dc343c2e">4ce840f2</a> freetype-harfbuzz: 2.10.2+2.8.1
+2020-08-30 <a href="https://github.com/kisslinux/repo/commit/4fe8d99cd1aab49111f5745d731ccad9b8a41e4d">4fe8d99c</a> freetype-harfbuzz: 2.10.2+2.7.2
+2020-08-16 <a href="https://github.com/kisslinux/repo/commit/9c3740ade2a7c152e8cb5823803b693012a93dca">9c3740ad</a> freetype-harfbuzz: 2.10.2+2.7.1
+2020-07-28 <a href="https://github.com/kisslinux/repo/commit/225d08b98a08285a8b6eb95f9bdd37cf90f9e8c2">225d08b9</a> freetype-harfbuzz: 2.10.2+2.7.0
+2020-07-28 <a href="https://github.com/kisslinux/repo/commit/8445e3f4c718654fd9b789c66a2d5c3e638be0a2">8445e3f4</a> freetype-harfbuzz: Fix checksums
+2020-07-28 <a href="https://github.com/kisslinux/repo/commit/05096e5a4dc6db5d202342f538d067d87ae7135e">05096e5a</a> freetype-harfbuzz: revert to 2.10.2+2.6.8
+2020-07-28 <a href="https://github.com/kisslinux/repo/commit/baf0829aaf15a984953162e736cfc181c0580faa">baf0829a</a> freetype-harfbuzz: Fix build.
+2020-07-27 <a href="https://github.com/kisslinux/repo/commit/2e5271ccde867da15bbabe4187c3321dfcc6714e">2e5271cc</a> freetype-harfbuzz: bump to 2.10.2+2.7.0, swap to meson.
+2020-06-22 <a href="https://github.com/kisslinux/repo/commit/2819de03e752c9e305d341daf6bb8a3f015f7925">2819de03</a> freetype-harfbuzz: bump to 2.10.2+2.6.8
+2020-06-05 <a href="https://github.com/kisslinux/repo/commit/8d243b97d8a7c80fcbded8708b7ebd9ddfee5ee4">8d243b97</a> freetype-harfbuzz: bump to 2.10.2+2.6.7
+2020-05-12 <a href="https://github.com/kisslinux/repo/commit/b7ac6e62482c3e7189ae7dfffeaeb0eaf9f11912">b7ac6e62</a> freetype-harfbuzz: bump to 2.10.2+2.6.6
+2020-05-09 <a href="https://github.com/kisslinux/repo/commit/dc1e6bb73edec2597dc8b734a3ea1af5a73ecee5">dc1e6bb7</a> freetype-harfbuzz: bump to 2.10.2+2.6.5 and fix circular dependency with cairo
+2020-04-18 <a href="https://github.com/kisslinux/repo/commit/33c419aff1be5ec0b930d00553b8561fc97f769e">33c419af</a> freetype-harfbuzz: Bump to 2.10.1+2.6.5
+2019-11-08 <a href="https://github.com/kisslinux/repo/commit/7f1869524dc97be317a64b163f2785c4750fbff3">7f186952</a> freetype-harfbuzz: bmp to 2.10.1+2.6.4
+2019-10-17 <a href="https://github.com/kisslinux/repo/commit/6058f9a0c259699fa8e32386dc032056dc653b05">6058f9a0</a> freetype-harfbuzz: Add missing libpng dependency.
+2019-10-05 <a href="https://github.com/kisslinux/repo/commit/b5bb76a36bc430e57890325f4b0d6d8206c5528d">b5bb76a3</a> freetype-harfbuzz: bump to 2.10.1+2.6.2
+2019-08-25 <a href="https://github.com/kisslinux/repo/commit/135f36d6547fe83f23e94ea59c876a28d6389821">135f36d6</a> freetype-harfbuzz: Update harfbuzz
+2019-08-18 <a href="https://github.com/kisslinux/repo/commit/8a52bf63ab3e829876f743e79aa5e83aad324da9">8a52bf63</a> freetype-harfbuzz: fix depends
+2019-08-18 <a href="https://github.com/kisslinux/repo/commit/1362dff71fc24617c1e510a6998a2734966b7785">1362dff7</a> freetype-harfbuzz: agressive depends to combat a circular dep with xorg-server
+2019-08-13 <a href="https://github.com/kisslinux/repo/commit/9dd7ee2b5ec0a13932556e707164b2c378305aad">9dd7ee2b</a> freetype-harfbuzz: bump to 2.4.3+2.10.1
+2019-08-04 <a href="https://github.com/kisslinux/repo/commit/fc9527e05c3653c02eb1995badd3a21e60817d7a">fc9527e0</a> freetype-harfbuzz: move to extra
+2019-08-04 <a href="https://github.com/kisslinux/repo/commit/232480e99a1187f2f65b8cf5e4f6f40ef3955160">232480e9</a> freetype-harfbuzz: correctly link to local versions
+2019-08-04 <a href="https://github.com/kisslinux/repo/commit/f0c635787664fc8c235aac8f32dde15ccbc91d7d">f0c63578</a> freetype-harfbuzz: correctly link to local versions
+2019-08-04 <a href="https://github.com/kisslinux/repo/commit/fdf3f04b0a6185c59150d997e838f451f093db9e">fdf3f04b</a> freetype-harfbuzz: correctly link to local versions
+2019-08-04 <a href="https://github.com/kisslinux/repo/commit/e6672bf1d3e8ea7fe3c73f07d75c12e6383a42b6">e6672bf1</a> freetype-harfbuzz: correctly link to local versions
+2019-08-04 <a href="https://github.com/kisslinux/repo/commit/e34b1a5634518626e661f5045127d0535ce52881">e34b1a56</a> freetype-harfbuzz: fix depends
+2019-08-04 <a href="https://github.com/kisslinux/repo/commit/59779af7b296ff8a11612110819989da062dfce8">59779af7</a> freetype-harfbuzz: added initial package
 </div>
 
-[005] References
+[004] References
 ________________________________________________________________________________
 
 [0] https://en.wikipedia.org/wiki/FreeType

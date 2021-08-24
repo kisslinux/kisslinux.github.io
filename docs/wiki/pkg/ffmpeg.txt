@@ -16,9 +16,8 @@ ________________________________________________________________________________
 
 * Installation-------------------------------------------------------------[001]
 * Usage--------------------------------------------------------------------[002]
-* Information--------------------------------------------------------------[003]
-  * Change-History---------------------------------------------------------[004]
-* References---------------------------------------------------------------[005]
+* History------------------------------------------------------------------[003]
+* References---------------------------------------------------------------[004]
 
 
 [001] Installation
@@ -37,45 +36,42 @@ ________________________________________________________________________________
 Refer to the manual pages and command help output.
 
 
-[003] Information
+[003] History
 ________________________________________________________________________________
 
-
---[004]-Change-History--------------------------------------------------------
-
-<div style="max-height:177px;overflow:hidden scroll">  2021-07-17 <a href="https://github.com/kisslinux/repo/commit/80c33b16870aa070fecff3d2db6e0ada674bb930">80c33b16</a> ffmpeg: update for new env
-  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/414822566fbe5d45271291e6be5c1885f000ff36">41482256</a> ffmpeg: use VERSION
-  2021-07-08 <a href="https://github.com/kisslinux/repo/commit/a7c2ec0a96d7e192f42796ea5dc58f65cd86fb7a">a7c2ec0a</a> ffmpeg: disable xorg
-  2021-07-08 <a href="https://github.com/kisslinux/repo/commit/99238b3deeebc79e34364c4a9ff39f9bc9f6e53b">99238b3d</a> ffmpeg: depend on openssl
-  2021-07-06 <a href="https://github.com/kisslinux/repo/commit/03d7dd29de628ed4821bbec15b704c338fb3aa0d">03d7dd29</a> ffmpeg: sort configure and add missing dependency
-  2021-07-05 <a href="https://github.com/kisslinux/repo/commit/0da1745da6bec1e3b63f447922e9b01d770d44f3">0da1745d</a> ffmpeg: disable static libraries
-  2021-06-30 <a href="https://github.com/kisslinux/repo/commit/33817f70c2dbe26f7eea672862c4e80e64adcdac">33817f70</a> ffmpeg: 4.4
-  2020-09-17 <a href="https://github.com/kisslinux/repo/commit/2da7428f1aa0191a7caefa83ce0bf2bf60010d2d">2da7428f</a> ffmpeg: never enable libxml2
-  2020-07-11 <a href="https://github.com/kisslinux/repo/commit/8dc3503785d4184a9ec108595ac3b1cd1e91c76d">8dc35037</a> ffmpeg: bump to 4.3.1
-  2020-06-16 <a href="https://github.com/kisslinux/repo/commit/e7f7c65b07886ec16a0355acb2ce8116c703655a">e7f7c65b</a> ffmpeg: bump to 4.3
-  2020-05-22 <a href="https://github.com/kisslinux/repo/commit/0f6ec1a6a064c792489effe8c23e87e6d03df1ca">0f6ec1a6</a> ffmpeg: bump to 4.2.3
-  2020-05-05 <a href="https://github.com/kisslinux/repo/commit/0f8aebf5fd5b4f0ae3f88cbc6ca8771ea2c377a4">0f8aebf5</a> ffmpeg: various changes. Enable libressl. Disable libtheora. Add missing dependencies
-  2020-02-28 <a href="https://github.com/kisslinux/repo/commit/24f43a5a8274b00dfb0f84e1d6b04111d6cb2675">24f43a5a</a> ffmpeg: use nasm
-  2020-02-18 <a href="https://github.com/kisslinux/repo/commit/faed0fd7103e449a9f18d5293415eb89749babf4">faed0fd7</a> ffmpeg: properly use CC/CXX. @konimex. Closes #154
-  2020-02-12 <a href="https://github.com/kisslinux/repo/commit/dd49b305245b29f72e12f3f80813b72437faa7b9">dd49b305</a> ffmpeg: use cc @konimex
-  2020-01-01 <a href="https://github.com/kisslinux/repo/commit/fa2cf089c7f67777464e39cf419d37c7a9249331">fa2cf089</a> ffmpeg: bump to 4.2.2
-  2019-10-08 <a href="https://github.com/kisslinux/repo/commit/05bc5ff136c690ed95876c92e7ce19d45332151e">05bc5ff1</a> ffmpeg: enable CC
-  2019-10-08 <a href="https://github.com/kisslinux/repo/commit/e918a917790d51d18d721525758ffe02ab0fa610">e918a917</a> ffmpeg: remove wavpack, unmaintained and has a lot of CVEs.
-  2019-09-16 <a href="https://github.com/kisslinux/repo/commit/8013100bab1c52a4f98c6b6ac816aeb9137dd568">8013100b</a> ffmpeg: build shared libraries. Fixes Firefox.
-  2019-09-07 <a href="https://github.com/kisslinux/repo/commit/c43856d5535e2197878f3ab97ca92121ff10d60c">c43856d5</a> ffmpeg: bump to 4.2.1
-  2019-08-19 <a href="https://github.com/kisslinux/repo/commit/5ef86baa02a2d74763167f84edf12564c641f5ba">5ef86baa</a> ffmpeg: remove example files
-  2019-08-14 <a href="https://github.com/kisslinux/repo/commit/9d469c4ae299f409a4ada3f129bbd733b26c38fd">9d469c4a</a> ffmpeg: bump to 4.2
-  2019-07-27 <a href="https://github.com/kisslinux/repo/commit/f33732b1578fb0cb79a12a42a607fab69ba7c33a">f33732b1</a> ffmpeg: Remove openssl dependency.
-  2019-07-27 <a href="https://github.com/kisslinux/repo/commit/2fc3f073f563cfef35ce96464c7a98d4c735a3c5">2fc3f073</a> ffmpeg: Added dependency xvidcore
-  2019-07-27 <a href="https://github.com/kisslinux/repo/commit/09a2f4c4c320248ea2f21ed6e6804fac2ff4819b">09a2f4c4</a> ffmpeg: Add x265 to dependencies
-  2019-07-27 <a href="https://github.com/kisslinux/repo/commit/58eb33e5cbe3cf10196cd1b25688042e2b5e257c">58eb33e5</a> ffmpeg: Added dependency x264
-  2019-07-26 <a href="https://github.com/kisslinux/repo/commit/e1ade01139ee3a2c0fade3641f7fda61481e4b26">e1ade011</a> ffmpeg: Disable libaom
-  2019-07-24 <a href="https://github.com/kisslinux/repo/commit/84b60468a2d9a5fae6aa9a32960eda08395f68c5">84b60468</a> ffmpeg: update dependencies
-  2019-07-23 <a href="https://github.com/kisslinux/repo/commit/595dd28cb2ae5b3ec973b9a0223813b23bff01ed">595dd28c</a> ffmpeg: add alsa dep
-  2019-07-23 <a href="https://github.com/kisslinux/repo/commit/8e9de3ad006f08d8dd136db0f6ed7952e96771c5">8e9de3ad</a> ffmpeg: new package at 4.1.4
+<div style="max-height:177px;overflow:hidden scroll">2021-07-17 <a href="https://github.com/kisslinux/repo/commit/80c33b16870aa070fecff3d2db6e0ada674bb930">80c33b16</a> ffmpeg: update for new env
+2021-07-15 <a href="https://github.com/kisslinux/repo/commit/414822566fbe5d45271291e6be5c1885f000ff36">41482256</a> ffmpeg: use VERSION
+2021-07-08 <a href="https://github.com/kisslinux/repo/commit/a7c2ec0a96d7e192f42796ea5dc58f65cd86fb7a">a7c2ec0a</a> ffmpeg: disable xorg
+2021-07-08 <a href="https://github.com/kisslinux/repo/commit/99238b3deeebc79e34364c4a9ff39f9bc9f6e53b">99238b3d</a> ffmpeg: depend on openssl
+2021-07-06 <a href="https://github.com/kisslinux/repo/commit/03d7dd29de628ed4821bbec15b704c338fb3aa0d">03d7dd29</a> ffmpeg: sort configure and add missing dependency
+2021-07-05 <a href="https://github.com/kisslinux/repo/commit/0da1745da6bec1e3b63f447922e9b01d770d44f3">0da1745d</a> ffmpeg: disable static libraries
+2021-06-30 <a href="https://github.com/kisslinux/repo/commit/33817f70c2dbe26f7eea672862c4e80e64adcdac">33817f70</a> ffmpeg: 4.4
+2020-09-17 <a href="https://github.com/kisslinux/repo/commit/2da7428f1aa0191a7caefa83ce0bf2bf60010d2d">2da7428f</a> ffmpeg: never enable libxml2
+2020-07-11 <a href="https://github.com/kisslinux/repo/commit/8dc3503785d4184a9ec108595ac3b1cd1e91c76d">8dc35037</a> ffmpeg: bump to 4.3.1
+2020-06-16 <a href="https://github.com/kisslinux/repo/commit/e7f7c65b07886ec16a0355acb2ce8116c703655a">e7f7c65b</a> ffmpeg: bump to 4.3
+2020-05-22 <a href="https://github.com/kisslinux/repo/commit/0f6ec1a6a064c792489effe8c23e87e6d03df1ca">0f6ec1a6</a> ffmpeg: bump to 4.2.3
+2020-05-05 <a href="https://github.com/kisslinux/repo/commit/0f8aebf5fd5b4f0ae3f88cbc6ca8771ea2c377a4">0f8aebf5</a> ffmpeg: various changes. Enable libressl. Disable libtheora. Add missing dependencies
+2020-02-28 <a href="https://github.com/kisslinux/repo/commit/24f43a5a8274b00dfb0f84e1d6b04111d6cb2675">24f43a5a</a> ffmpeg: use nasm
+2020-02-18 <a href="https://github.com/kisslinux/repo/commit/faed0fd7103e449a9f18d5293415eb89749babf4">faed0fd7</a> ffmpeg: properly use CC/CXX. @konimex. Closes #154
+2020-02-12 <a href="https://github.com/kisslinux/repo/commit/dd49b305245b29f72e12f3f80813b72437faa7b9">dd49b305</a> ffmpeg: use cc @konimex
+2020-01-01 <a href="https://github.com/kisslinux/repo/commit/fa2cf089c7f67777464e39cf419d37c7a9249331">fa2cf089</a> ffmpeg: bump to 4.2.2
+2019-10-08 <a href="https://github.com/kisslinux/repo/commit/05bc5ff136c690ed95876c92e7ce19d45332151e">05bc5ff1</a> ffmpeg: enable CC
+2019-10-08 <a href="https://github.com/kisslinux/repo/commit/e918a917790d51d18d721525758ffe02ab0fa610">e918a917</a> ffmpeg: remove wavpack, unmaintained and has a lot of CVEs.
+2019-09-16 <a href="https://github.com/kisslinux/repo/commit/8013100bab1c52a4f98c6b6ac816aeb9137dd568">8013100b</a> ffmpeg: build shared libraries. Fixes Firefox.
+2019-09-07 <a href="https://github.com/kisslinux/repo/commit/c43856d5535e2197878f3ab97ca92121ff10d60c">c43856d5</a> ffmpeg: bump to 4.2.1
+2019-08-19 <a href="https://github.com/kisslinux/repo/commit/5ef86baa02a2d74763167f84edf12564c641f5ba">5ef86baa</a> ffmpeg: remove example files
+2019-08-14 <a href="https://github.com/kisslinux/repo/commit/9d469c4ae299f409a4ada3f129bbd733b26c38fd">9d469c4a</a> ffmpeg: bump to 4.2
+2019-07-27 <a href="https://github.com/kisslinux/repo/commit/f33732b1578fb0cb79a12a42a607fab69ba7c33a">f33732b1</a> ffmpeg: Remove openssl dependency.
+2019-07-27 <a href="https://github.com/kisslinux/repo/commit/2fc3f073f563cfef35ce96464c7a98d4c735a3c5">2fc3f073</a> ffmpeg: Added dependency xvidcore
+2019-07-27 <a href="https://github.com/kisslinux/repo/commit/09a2f4c4c320248ea2f21ed6e6804fac2ff4819b">09a2f4c4</a> ffmpeg: Add x265 to dependencies
+2019-07-27 <a href="https://github.com/kisslinux/repo/commit/58eb33e5cbe3cf10196cd1b25688042e2b5e257c">58eb33e5</a> ffmpeg: Added dependency x264
+2019-07-26 <a href="https://github.com/kisslinux/repo/commit/e1ade01139ee3a2c0fade3641f7fda61481e4b26">e1ade011</a> ffmpeg: Disable libaom
+2019-07-24 <a href="https://github.com/kisslinux/repo/commit/84b60468a2d9a5fae6aa9a32960eda08395f68c5">84b60468</a> ffmpeg: update dependencies
+2019-07-23 <a href="https://github.com/kisslinux/repo/commit/595dd28cb2ae5b3ec973b9a0223813b23bff01ed">595dd28c</a> ffmpeg: add alsa dep
+2019-07-23 <a href="https://github.com/kisslinux/repo/commit/8e9de3ad006f08d8dd136db0f6ed7952e96771c5">8e9de3ad</a> ffmpeg: new package at 4.1.4
 </div>
 
-[005] References
+[004] References
 ________________________________________________________________________________
 
 [0] https://en.wikipedia.org/wiki/FFmpeg

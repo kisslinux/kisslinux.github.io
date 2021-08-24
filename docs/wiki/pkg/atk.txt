@@ -17,9 +17,8 @@ ________________________________________________________________________________
 
 * Installation-------------------------------------------------------------[001]
 * Usage--------------------------------------------------------------------[002]
-* Information--------------------------------------------------------------[003]
-  * Change-History---------------------------------------------------------[004]
-* References---------------------------------------------------------------[005]
+* History------------------------------------------------------------------[003]
+* References---------------------------------------------------------------[004]
 
 
 [001] Installation
@@ -39,30 +38,27 @@ No documentation is currently provided with the package, refer to online
 documentation for the time being.
 
 
-[003] Information
+[003] History
 ________________________________________________________________________________
 
-
---[004]-Change-History--------------------------------------------------------
-
-<div style="max-height:177px;overflow:hidden scroll">  2021-07-27 <a href="https://github.com/kisslinux/repo/commit/057d8fd61ee615853a5820c4762dbf634b633a3d">057d8fd6</a> atk: simpler test disable
-  2021-07-17 <a href="https://github.com/kisslinux/repo/commit/bc0d50c49a98f1f33807d457d82de02fabf772fa">bc0d50c4</a> atk: update for new env
-  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/c0f1ed46ba515a0c216757aa13a951e043ac30a8">c0f1ed46</a> atk: use MAJOR/MINOR/VERSION
-  2021-07-03 <a href="https://github.com/kisslinux/repo/commit/38ce25ac8824974e8827be9b12c6b9e47c223d5e">38ce25ac</a> atk: remove sed -i
-  2021-07-01 <a href="https://github.com/kisslinux/repo/commit/420730b0558e089693b41480b539061a8c0e3001">420730b0</a> atk: use new checksums format
-  2020-04-14 <a href="https://github.com/kisslinux/repo/commit/cd1f2010794ec978e3d8cf69304c6472ad6cfb54">cd1f2010</a> atk: bump to 2.36.0
-  2020-03-10 <a href="https://github.com/kisslinux/repo/commit/60acb1524f429b3f16c46391334ae153318a5816">60acb152</a> atk: Don't build tests
-  2019-10-07 <a href="https://github.com/kisslinux/repo/commit/02ff6eb6a11d020f34e0cc4e76f123e9e2149945">02ff6eb6</a> atk: Remove meson workaround
-  2019-09-13 <a href="https://github.com/kisslinux/repo/commit/0f391ece9eb3628e72431d3ed05fc9df10941e57">0f391ece</a> atk: use https for source
-  2019-09-10 <a href="https://github.com/kisslinux/repo/commit/f206f743ed14e12a75e0990645c0dd8c2b0965ab">f206f743</a> atk: bump to 2.34.1
-  2019-09-09 <a href="https://github.com/kisslinux/repo/commit/396fae736a5b5497296f9b07f79f7043dec04ce5">396fae73</a> atk: bump to 2.34.0
-  2019-08-18 <a href="https://github.com/kisslinux/repo/commit/326c2cf4877711308dabd96a00eea690ab491a6c">326c2cf4</a> atk: fix depends
-  2019-08-18 <a href="https://github.com/kisslinux/repo/commit/f43acd8b13fd92f332bb20f90d5fcecc191de328">f43acd8b</a> atk: fix depends
-  2019-08-17 <a href="https://github.com/kisslinux/repo/commit/23ea0a16bcbf5247783c254a819dc872a982f567">23ea0a16</a> atk: fix deps
-  2019-07-27 <a href="https://github.com/kisslinux/repo/commit/2be2e7b44af10a1c5c4c1f4d89544ffeaf6e6e62">2be2e7b4</a> atk: new package at 2.32.0
+<div style="max-height:177px;overflow:hidden scroll">2021-07-27 <a href="https://github.com/kisslinux/repo/commit/057d8fd61ee615853a5820c4762dbf634b633a3d">057d8fd6</a> atk: simpler test disable
+2021-07-17 <a href="https://github.com/kisslinux/repo/commit/bc0d50c49a98f1f33807d457d82de02fabf772fa">bc0d50c4</a> atk: update for new env
+2021-07-15 <a href="https://github.com/kisslinux/repo/commit/c0f1ed46ba515a0c216757aa13a951e043ac30a8">c0f1ed46</a> atk: use MAJOR/MINOR/VERSION
+2021-07-03 <a href="https://github.com/kisslinux/repo/commit/38ce25ac8824974e8827be9b12c6b9e47c223d5e">38ce25ac</a> atk: remove sed -i
+2021-07-01 <a href="https://github.com/kisslinux/repo/commit/420730b0558e089693b41480b539061a8c0e3001">420730b0</a> atk: use new checksums format
+2020-04-14 <a href="https://github.com/kisslinux/repo/commit/cd1f2010794ec978e3d8cf69304c6472ad6cfb54">cd1f2010</a> atk: bump to 2.36.0
+2020-03-10 <a href="https://github.com/kisslinux/repo/commit/60acb1524f429b3f16c46391334ae153318a5816">60acb152</a> atk: Don't build tests
+2019-10-07 <a href="https://github.com/kisslinux/repo/commit/02ff6eb6a11d020f34e0cc4e76f123e9e2149945">02ff6eb6</a> atk: Remove meson workaround
+2019-09-13 <a href="https://github.com/kisslinux/repo/commit/0f391ece9eb3628e72431d3ed05fc9df10941e57">0f391ece</a> atk: use https for source
+2019-09-10 <a href="https://github.com/kisslinux/repo/commit/f206f743ed14e12a75e0990645c0dd8c2b0965ab">f206f743</a> atk: bump to 2.34.1
+2019-09-09 <a href="https://github.com/kisslinux/repo/commit/396fae736a5b5497296f9b07f79f7043dec04ce5">396fae73</a> atk: bump to 2.34.0
+2019-08-18 <a href="https://github.com/kisslinux/repo/commit/326c2cf4877711308dabd96a00eea690ab491a6c">326c2cf4</a> atk: fix depends
+2019-08-18 <a href="https://github.com/kisslinux/repo/commit/f43acd8b13fd92f332bb20f90d5fcecc191de328">f43acd8b</a> atk: fix depends
+2019-08-17 <a href="https://github.com/kisslinux/repo/commit/23ea0a16bcbf5247783c254a819dc872a982f567">23ea0a16</a> atk: fix deps
+2019-07-27 <a href="https://github.com/kisslinux/repo/commit/2be2e7b44af10a1c5c4c1f4d89544ffeaf6e6e62">2be2e7b4</a> atk: new package at 2.32.0
 </div>
 
-[005] References
+[004] References
 ________________________________________________________________________________
 
 [0] https://en.wikipedia.org/wiki/Accessibility_Toolkit

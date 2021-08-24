@@ -15,9 +15,8 @@ ________________________________________________________________________________
 
 * Installation-------------------------------------------------------------[001]
 * Usage--------------------------------------------------------------------[002]
-* Information--------------------------------------------------------------[003]
-  * Change-History---------------------------------------------------------[004]
-* References---------------------------------------------------------------[005]
+* History------------------------------------------------------------------[003]
+* References---------------------------------------------------------------[004]
 
 
 [001] Installation
@@ -37,25 +36,22 @@ No documentation is currently provided with the package, refer to online
 documentation for the time being.
 
 
-[003] Information
+[003] History
 ________________________________________________________________________________
 
-
---[004]-Change-History--------------------------------------------------------
-
-<div style="max-height:177px;overflow:hidden scroll">  2021-07-18 <a href="https://github.com/kisslinux/repo/commit/ca8cb2770c2dc535a60b7cc9e6ee557c85e1fbbe">ca8cb277</a> libvorbis: update for new env
-  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/3b063f2be55367f2d8fba58e95660ab444138b96">3b063f2b</a> libvorbis: use VERSION
-  2021-07-06 <a href="https://github.com/kisslinux/repo/commit/6f66e8fde0f7ee9921921984ead92288ca56b846">6f66e8fd</a> libvorbis: disable HTML documentation
-  2021-07-01 <a href="https://github.com/kisslinux/repo/commit/da283675311e2c524efd555110a82341e2d4bef4">da283675</a> libvorbis: use new checksums format
-  2020-07-04 <a href="https://github.com/kisslinux/repo/commit/4d71c2b540580e09c6e938c84920df0b1d45ba48">4d71c2b5</a> libvorbis: bump to 1.3.7
-  2020-05-06 <a href="https://github.com/kisslinux/repo/commit/fd358baddbdf0c28d2e943730bc5a3e63e8fe520">fd358bad</a> libvorbis: Fix source.
-  2019-10-07 <a href="https://github.com/kisslinux/repo/commit/aaf797d94acb570022f3d213aa337bc668afa296">aaf797d9</a> libvorbis: remove rm
-  2019-08-11 <a href="https://github.com/kisslinux/repo/commit/b55e9c6f38434f88a929a7d5bd2a7d4346bc765e">b55e9c6f</a> libvorbis: remove docs
-  2019-08-04 <a href="https://github.com/kisslinux/repo/commit/b795bab9218b4899398bdecd154296349c231609">b795bab9</a> libvorbis: move to extra
-  2019-07-23 <a href="https://github.com/kisslinux/repo/commit/886eb1b1d597c3d788a6428d0155a1e8fd716954">886eb1b1</a> libvorbis: new package at 1.3.6
+<div style="max-height:177px;overflow:hidden scroll">2021-07-18 <a href="https://github.com/kisslinux/repo/commit/ca8cb2770c2dc535a60b7cc9e6ee557c85e1fbbe">ca8cb277</a> libvorbis: update for new env
+2021-07-15 <a href="https://github.com/kisslinux/repo/commit/3b063f2be55367f2d8fba58e95660ab444138b96">3b063f2b</a> libvorbis: use VERSION
+2021-07-06 <a href="https://github.com/kisslinux/repo/commit/6f66e8fde0f7ee9921921984ead92288ca56b846">6f66e8fd</a> libvorbis: disable HTML documentation
+2021-07-01 <a href="https://github.com/kisslinux/repo/commit/da283675311e2c524efd555110a82341e2d4bef4">da283675</a> libvorbis: use new checksums format
+2020-07-04 <a href="https://github.com/kisslinux/repo/commit/4d71c2b540580e09c6e938c84920df0b1d45ba48">4d71c2b5</a> libvorbis: bump to 1.3.7
+2020-05-06 <a href="https://github.com/kisslinux/repo/commit/fd358baddbdf0c28d2e943730bc5a3e63e8fe520">fd358bad</a> libvorbis: Fix source.
+2019-10-07 <a href="https://github.com/kisslinux/repo/commit/aaf797d94acb570022f3d213aa337bc668afa296">aaf797d9</a> libvorbis: remove rm
+2019-08-11 <a href="https://github.com/kisslinux/repo/commit/b55e9c6f38434f88a929a7d5bd2a7d4346bc765e">b55e9c6f</a> libvorbis: remove docs
+2019-08-04 <a href="https://github.com/kisslinux/repo/commit/b795bab9218b4899398bdecd154296349c231609">b795bab9</a> libvorbis: move to extra
+2019-07-23 <a href="https://github.com/kisslinux/repo/commit/886eb1b1d597c3d788a6428d0155a1e8fd716954">886eb1b1</a> libvorbis: new package at 1.3.6
 </div>
 
-[005] References
+[004] References
 ________________________________________________________________________________
 
 [0] https://en.wikipedia.org/wiki/Vorbis

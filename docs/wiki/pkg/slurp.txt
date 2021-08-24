@@ -11,9 +11,8 @@ ________________________________________________________________________________
 
 * Installation-------------------------------------------------------------[001]
 * Usage--------------------------------------------------------------------[002]
-* Information--------------------------------------------------------------[003]
-  * Change-History---------------------------------------------------------[004]
-* References---------------------------------------------------------------[005]
+* History------------------------------------------------------------------[003]
+* References---------------------------------------------------------------[004]
 
 
 [001] Installation
@@ -32,19 +31,16 @@ ________________________________________________________________________________
 Refer to the manual pages and command help output.
 
 
-[003] Information
+[003] History
 ________________________________________________________________________________
 
-
---[004]-Change-History--------------------------------------------------------
-
-<div style="max-height:177px;overflow:hidden scroll">  2021-08-07 <a href="https://github.com/kisslinux/repo/commit/413ea16d6d99f087a0adfa323e7799b1bd3d7c59">413ea16d</a> slurp: fix depends. Closes #311
-  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/5cc76378a5f7480437aa67c14ca9f08d02dabbcf">5cc76378</a> slurp: update for new env
-  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/2404f23a618c9528bc7356a33c1f5344b1f7baf5">2404f23a</a> slurp: use VERSION
-  2021-07-08 <a href="https://github.com/kisslinux/repo/commit/04822edc034d33601a5b85116a189eefc7b96f5e">04822edc</a> slurp: 1.3.2
+<div style="max-height:177px;overflow:hidden scroll">2021-08-07 <a href="https://github.com/kisslinux/repo/commit/413ea16d6d99f087a0adfa323e7799b1bd3d7c59">413ea16d</a> slurp: fix depends. Closes #311
+2021-07-15 <a href="https://github.com/kisslinux/repo/commit/5cc76378a5f7480437aa67c14ca9f08d02dabbcf">5cc76378</a> slurp: update for new env
+2021-07-15 <a href="https://github.com/kisslinux/repo/commit/2404f23a618c9528bc7356a33c1f5344b1f7baf5">2404f23a</a> slurp: use VERSION
+2021-07-08 <a href="https://github.com/kisslinux/repo/commit/04822edc034d33601a5b85116a189eefc7b96f5e">04822edc</a> slurp: 1.3.2
 </div>
 
-[005] References
+[004] References
 ________________________________________________________________________________
 
 [0] https://github.com/emersion/slurp

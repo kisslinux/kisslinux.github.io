@@ -18,9 +18,8 @@ ________________________________________________________________________________
 * Installation-------------------------------------------------------------[001]
 * Usage--------------------------------------------------------------------[002]
   * Services---------------------------------------------------------------[003]
-* Information--------------------------------------------------------------[004]
-  * Change-History---------------------------------------------------------[005]
-* References---------------------------------------------------------------[006]
+* History------------------------------------------------------------------[004]
+* References---------------------------------------------------------------[005]
 
 
 [001] Installation
@@ -67,117 +66,114 @@ in some of these documentation holes.
   $/kisslinux/repo and a service will be added.
 
 
-[004] Information
+[004] History
 ________________________________________________________________________________
 
-
---[005]-Change-History--------------------------------------------------------
-
-<div style="max-height:177px;overflow:hidden scroll">  2021-08-21 <a href="https://github.com/kisslinux/repo/commit/8483a24387a458ec30d781621c98ae4e5e1e8a3e">8483a243</a> busybox: new mdev.conf
-  2021-08-20 <a href="https://github.com/kisslinux/repo/commit/7ca2d33e8acb8c81c7bcae78e50bc66b855cfcad">7ca2d33e</a> busybox: 1.34.0
-  2021-07-22 <a href="https://github.com/kisslinux/repo/commit/6bd6a0d3952e2e0ca8527b8b8c1fcbf79c32eada">6bd6a0d3</a> busybox: swap to gz source
-  2021-07-18 <a href="https://github.com/kisslinux/repo/commit/16a357ba6e88d78c3463e5e2cd06153991fdd0bf">16a357ba</a> busybox: remove unintended change
-  2021-07-18 <a href="https://github.com/kisslinux/repo/commit/89bc1ca5d0c29628642a7d104132f2513a78791d">89bc1ca5</a> busybox: update for new env
-  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/72b3acf3bf2281865f11bd3370758223db12197c">72b3acf3</a> busybox: bump rel for depends change
-  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/5d2be71cb5985de0daa5cca59eda3a6d88237a90">5d2be71c</a> busybox: bump for depends change
-  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/423fb876d099cf8360dc2fdc365ad39d124e7f2a">423fb876</a> busybox: remove fake depends
-  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/6d3aa5810559b2705db7c8823558dd71c8fe9f7b">6d3aa581</a> busybox: use VERSION
-  2021-07-12 <a href="https://github.com/kisslinux/repo/commit/13e25e48ac483d36fcb13eb6f753eaec275448d8">13e25e48</a> busybox: fix segfaults with clang. Closes #278
-  2021-07-08 <a href="https://github.com/kisslinux/repo/commit/67c550a704ec385956f2a916e9048292e4db6adf">67c550a7</a> busybox: fix executable not being set. Closes #268
-  2021-07-07 <a href="https://github.com/kisslinux/repo/commit/00ceb6e98729c73eea081d53663bf011a87045b2">00ceb6e9</a> busybox: remove libressl from depends
-  2021-07-03 <a href="https://github.com/kisslinux/repo/commit/4c344a7b7ab10e81ea87048d15a1f3d2545263e5">4c344a7b</a> busybox: remove sed -i
-  2021-07-01 <a href="https://github.com/kisslinux/repo/commit/9e7f1ef669b736a8c8e77acc8ea3563eb83228d9">9e7f1ef6</a> busybox: remove usage of install
-  2021-07-01 <a href="https://github.com/kisslinux/repo/commit/5e4c797a07792e2d08579bb339753bd476d8bec2">5e4c797a</a> busybox: enable halt and chvt
-  2021-06-30 <a href="https://github.com/kisslinux/repo/commit/794ac8ace97de2a253b47ef3d3c4531626757343">794ac8ac</a> busybox: 1.33.1
-  2020-11-19 <a href="https://github.com/kisslinux/repo/commit/9078f197633c365fda4009dfb79cc4e4fc2df9ae">9078f197</a> busybox: Set CC fallback once
-  2020-11-19 <a href="https://github.com/kisslinux/repo/commit/e8f700827d6e29106afcc2a2b7f4f2ebb67a8e29">e8f70082</a> busybox: Fix build when 'cc' is clang.
-  2020-11-19 <a href="https://github.com/kisslinux/repo/commit/eb412f08f5a58bc8a70fb21abf4da1f034eddaf4">eb412f08</a> busybox: Fix segfaults when built with clang. See: #240
-  2020-11-18 <a href="https://github.com/kisslinux/repo/commit/2e0ed18bf70d1f228ecb7c6df8249b46ba5e8fef">2e0ed18b</a> busybox: revert CC change. See #240
-  2020-11-18 <a href="https://github.com/kisslinux/repo/commit/b98fac2901c99d2bc0e513c5a14765267a28ec0d">b98fac29</a> busybox: Fix build when not using gcc
-  2020-08-27 <a href="https://github.com/kisslinux/repo/commit/9aa67b4b501051b34da6621228f75a4b55ee42dc">9aa67b4b</a> busybox: add ntpd service
-  2020-08-17 <a href="https://github.com/kisslinux/repo/commit/e61bbf086c127e941afdeb0264e0fba8c68dd643">e61bbf08</a> busybox: fix unzip behavior (fixes neovim-git)
-  2020-07-03 <a href="https://github.com/kisslinux/repo/commit/1510dfca95baad907a334835e1355bf0f317fdd5">1510dfca</a> busybox: Enable HD
-  2020-06-30 <a href="https://github.com/kisslinux/repo/commit/6c332ee72d995b772779f17f194b8106d12b4dc6">6c332ee7</a> busybox: Add USB vendor names to lsusb.
-  2020-06-27 <a href="https://github.com/kisslinux/repo/commit/07734802bce2d60eac0d20bb0d527d1c37d7a812">07734802</a> busybox: bump to 1.32.0
-  2020-05-31 <a href="https://github.com/kisslinux/repo/commit/12419232f44b7958d6a707fed36dbfcada185f39">12419232</a> busybox: Add ipv6 support to -suid stuff
-  2020-05-31 <a href="https://github.com/kisslinux/repo/commit/d493efb4d39807f8149f8144db27777c7a923334">d493efb4</a> busybox: Add ping6, traceroute, etc
-  2020-05-18 <a href="https://github.com/kisslinux/repo/commit/8511390abca9a8151774b68c1e1005a447b0989c">8511390a</a> busybox: Use sha256 as default password algo.
-  2020-05-17 <a href="https://github.com/kisslinux/repo/commit/a5c8a4d311fb4bc71404df18e4eda0f716ab4165">a5c8a4d3</a> busybox: Move mkdir to build file
-  2020-05-04 <a href="https://github.com/kisslinux/repo/commit/33d5af2e8a77439977fd1c0c02d9859e38144835">33d5af2e</a> busybox: Drop halt as it is not portable across inits
-  2020-04-25 <a href="https://github.com/kisslinux/repo/commit/ca837d7433bbeb51e230ab8c9596ca362bec36eb">ca837d74</a> busybox: Enabled MODUTILS stuff
-  2020-04-22 <a href="https://github.com/kisslinux/repo/commit/aef6d4f223195d8ee32bc3de14c74380ceb6c52f">aef6d4f2</a> busybox: Fix broken install command
-  2020-04-18 <a href="https://github.com/kisslinux/repo/commit/4a3ef41018a30bfbaf5e69affd30a94274acf820">4a3ef410</a> busybox: Fix unicode display bug
-  2020-04-15 <a href="https://github.com/kisslinux/repo/commit/06db5b87e687d4f44c77110fc69bea6f91181d54">06db5b87</a> busybox: Enable mkswap
-  2020-04-15 <a href="https://github.com/kisslinux/repo/commit/240478fc9e88b2900be48559b797feeae85403b5">240478fc</a> busybox: Add modprobe patch
-  2020-03-20 <a href="https://github.com/kisslinux/repo/commit/9070a5dd9cdd7f45ea1075f70956c9376da3af76">9070a5dd</a> busybox: Add acpid service files. Closes #173
-  2020-03-19 <a href="https://github.com/kisslinux/repo/commit/ed6f5c008171fcde87b5a28c3c76af7b200d877f">ed6f5c00</a> busybox: Build acpid
-  2020-03-08 <a href="https://github.com/kisslinux/repo/commit/c3c113640e19d30bb157a4530567ace331819451">c3c11364</a> busybox: Fix checksums. Closes #166
-  2020-03-07 <a href="https://github.com/kisslinux/repo/commit/7243ef2c02f28b438e12b6efad02f0168e55e60d">7243ef2c</a> busybox: Fix hotplug null
-  2020-03-07 <a href="https://github.com/kisslinux/repo/commit/5eed8136c0b1a60bde32d2360cff597fd3c0e943">5eed8136</a> busybox: Clear hotplug for mdev service
-  2020-02-23 <a href="https://github.com/kisslinux/repo/commit/8ddbcb76e4dbd697b255a6fe5eff8cf36b170131">8ddbcb76</a> busybox: Use portable cc. Closes #157
-  2020-02-23 <a href="https://github.com/kisslinux/repo/commit/2b173b4886e10db9b6a7a85f8f0715699cb97cf8">2b173b48</a> busybox: enable USE_PORTABLE_CODE. Closes #157
-  2020-02-20 <a href="https://github.com/kisslinux/repo/commit/01ebdb53b9e14621caca60516697dad76869e053">01ebdb53</a> busybox: Add fsck fix for uuid
-  2020-02-20 <a href="https://github.com/kisslinux/repo/commit/16216b948b7156dc60d697a810d407a8987e678e">16216b94</a> busybox: fix adduser and enable util-linux utils
-  2020-02-05 <a href="https://github.com/kisslinux/repo/commit/87629a80439eed81e56f142083d355b9fe6a9e9b">87629a80</a> busybox: fix checksums
-  2020-02-04 <a href="https://github.com/kisslinux/repo/commit/f86714c25e6bde3ed4c83d455eb38b416635ac98">f86714c2</a> busybox: Fix mdev.run. Closes #140
-  2020-01-20 <a href="https://github.com/kisslinux/repo/commit/906e3e746c33777c36d4ca081c4580a9b8968867">906e3e74</a> busybox: mdev: Fix /dev/snd
-  2020-01-20 <a href="https://github.com/kisslinux/repo/commit/e33b64263468a83a4e63f4a0facbf8b60b25cd34">e33b6426</a> busybox: Remove broken mdev rule
-  2020-01-20 <a href="https://github.com/kisslinux/repo/commit/41b37a977c4b4336f3cf905759a0c34ca026c92c">41b37a97</a> busybox: mdev support
-  2020-01-20 <a href="https://github.com/kisslinux/repo/commit/0592cc42bff00b3409d96bf0d68d2ce8893339d6">0592cc42</a> busybox: Add initial mdev
-  2020-01-12 <a href="https://github.com/kisslinux/repo/commit/ca1baa36e159a0d3fc65544523c5fe98e9600868">ca1baa36</a> busybox: Remove acpid
-  2019-12-07 <a href="https://github.com/kisslinux/repo/commit/59566ab811076de37af5d8d9d69811eb516d0fd0">59566ab8</a> busybox: remove unneeded flag for acpid and add checks for directory files
-  2019-10-25 <a href="https://github.com/kisslinux/repo/commit/fbde4a21c4e68a2f162f81b6dc9977e0f1f7369d">fbde4a21</a> busybox: bump to 1.31.1
-  2019-10-09 <a href="https://github.com/kisslinux/repo/commit/77730d6ce011f9ce18abf881224a2131007c6b7f">77730d6c</a> busybox: remove utilities which no one will ever use.
-  2019-10-07 <a href="https://github.com/kisslinux/repo/commit/ee6f06039fa3204bcf6c5ded1739ff1512bc805a">ee6f0603</a> busybox: build with generic_gcc to use $CC
-  2019-10-07 <a href="https://github.com/kisslinux/repo/commit/cd85c4eb6b62004cfb7c80ede403519ff0cb9553">cd85c4eb</a> busybox: build with generic_gcc to use $CC
-  2019-09-28 <a href="https://github.com/kisslinux/repo/commit/426143e26cfdb54613539342a7ae94094071e816">426143e2</a> busybox: remove dpkg
-  2019-09-28 <a href="https://github.com/kisslinux/repo/commit/75bc688a1eb6c04504d83959ceee597a04c8ce11">75bc688a</a> busybox: don't build rpm
-  2019-09-18 <a href="https://github.com/kisslinux/repo/commit/e8484d1bc5990959bbc2b26e24e3fdfe1c337d2d">e8484d1b</a> busybox: fix passwd
-  2019-09-02 <a href="https://github.com/kisslinux/repo/commit/3f371a408020307c8eb72b02f7c1e73eae0061e8">3f371a40</a> busybox: disable weak passwd check.
-  2019-09-02 <a href="https://github.com/kisslinux/repo/commit/7626b312fd4e9c9e1907fef44adc41a2a2bd23ee">7626b312</a> busybox: build statically
-  2019-08-25 <a href="https://github.com/kisslinux/repo/commit/e1bfa7afcd44445719a08994dcda58a77d32aaf9">e1bfa7af</a> busybox: Fix su, login, crontab, ping, etc
-  2019-08-18 <a href="https://github.com/kisslinux/repo/commit/7dcc9332dc7d976262a4c328b464b52c05843133">7dcc9332</a> busybox: depends bzip2 for help usages
-  2019-08-18 <a href="https://github.com/kisslinux/repo/commit/833bd897c3c1320e87996c944bb0de0e886bde2c">833bd897</a> busybox: fix work around for DESTDIR
-  2019-08-15 <a href="https://github.com/kisslinux/repo/commit/ca440ed59581cb88507ae967bad1382a6e89a8b5">ca440ed5</a> busybox: depend on gzip to avoid accidental breakage.
-  2019-08-14 <a href="https://github.com/kisslinux/repo/commit/d9d18ca1fe65383c70cda893832d4d830d3d77c3">d9d18ca1</a> busybox: fix checksum .config
-  2019-08-13 <a href="https://github.com/kisslinux/repo/commit/d4ea0591b81c64fa947790b5a0ed4caa919588a7">d4ea0591</a> busybox: bump to 1.31.0
-  2019-08-13 <a href="https://github.com/kisslinux/repo/commit/7a85ade671681522b2b1fb6832852a43af0e98b4">7a85ade6</a> busybox: remove man
-  2019-08-13 <a href="https://github.com/kisslinux/repo/commit/e7b44d6fcc6afde0ad592fc155561ab778726cb4">e7b44d6f</a> busybox: fix depends
-  2019-08-12 <a href="https://github.com/kisslinux/repo/commit/06fb764381d4b9d1feb5d5e272ddb23a5cd7fcfe">06fb7643</a> busybox: Compile a second static binary for rescue/initramfs purposes.
-  2019-08-11 <a href="https://github.com/kisslinux/repo/commit/ab54213d8fad5318722c421ed627687d51b027bc">ab54213d</a> busybox: added busybox config'
-  2019-08-03 <a href="https://github.com/kisslinux/repo/commit/0f84f8e0a45eab91654a19452be1ddcb7a3d6989">0f84f8e0</a> busybox: build without bzip2
-  2019-07-30 <a href="https://github.com/kisslinux/repo/commit/d035612676d88506873837fbbdc9d486c9da0da2">d0356126</a> busybox: Remove gzip
-  2019-07-30 <a href="https://github.com/kisslinux/repo/commit/f5caca96d6553a982ccdb0501b036e2bfc0a5a5d">f5caca96</a> busybox: compile without gzip
-  2019-07-29 <a href="https://github.com/kisslinux/repo/commit/f520ab67e6055471117104900a8a96972f5cf5a4">f520ab67</a> busybox: compile without lspci
-  2019-07-20 <a href="https://github.com/kisslinux/repo/commit/be1c3ba8581ff35eef96f90ec82c2d71b4b21d8b">be1c3ba8</a> busybox: build dynamically and fix directories
-  2019-07-16 <a href="https://github.com/kisslinux/repo/commit/a64295eb30f3270592ab7a505ad06ae1a0bcb562">a64295eb</a> busybox: Compile with getopt for fakeroot.
-  2019-07-08 <a href="https://github.com/kisslinux/repo/commit/f00b73a18b8a107d08274a36e48267a6d752d455">f00b73a1</a> busybox: re-add lspci and lsusb
-  2019-07-07 <a href="https://github.com/kisslinux/repo/commit/763849defcec454e73c2e5038f4a8ce294fcc115">763849de</a> busybox: Fix mdev perms
-  2019-07-07 <a href="https://github.com/kisslinux/repo/commit/f9ecfe15bd8d5c86beb05280f2562115df5cb17d">f9ecfe15</a> busybox: Added mdev config
-  2019-07-07 <a href="https://github.com/kisslinux/repo/commit/90d3a27070245766089df98f3e4cf534244605c9">90d3a270</a> busybox: Remove xkb programs.
-  2019-07-07 <a href="https://github.com/kisslinux/repo/commit/e410e98a0cc4fdf39937944f3987a0d4786331a4">e410e98a</a> busybox: Remove xkb programs.
-  2019-07-07 <a href="https://github.com/kisslinux/repo/commit/24ac983911809450671ac433aa8f4e06977a7f19">24ac9839</a> busybox: disable more features taken by util-linux+e2fsprogs
-  2019-07-07 <a href="https://github.com/kisslinux/repo/commit/f2f1c563869d604e6b54b0300440e7fa44440927">f2f1c563</a> busybox: remove util-linux features
-  2019-07-06 <a href="https://github.com/kisslinux/repo/commit/f53c853a416c724546eaa60766b896bf0c889f8c">f53c853a</a> busybox: remove udhcpc runitscript
-  2019-07-04 <a href="https://github.com/kisslinux/repo/commit/4edcd3dc983c1f7fb9824c3314ccc582064be73a">4edcd3dc</a> busybox: Remove dhcp client/server.
-  2019-07-01 <a href="https://github.com/kisslinux/repo/commit/9a3d867f3f1c732b1362d4e1a49fc16cd0d747f0">9a3d867f</a> busybox: forgot to add the files to sources
-  2019-07-01 <a href="https://github.com/kisslinux/repo/commit/cffe93c3404a57037af95f00260907f86268e3e1">cffe93c3</a> busybox: add crond and syslogd runit service
-  2019-06-30 <a href="https://github.com/kisslinux/repo/commit/d07973c30e2bc87c0a0cd265e6d945acc4dab5ae">d07973c3</a> busybox: fix symlink mistake
-  2019-06-30 <a href="https://github.com/kisslinux/repo/commit/03759c0cd513994cc4922995331a83284c4b6f17">03759c0c</a> busybox: add udhcpc and acpid runit services
-  2019-06-28 <a href="https://github.com/kisslinux/repo/commit/729b4d295ad546d1613902f4d2fa934eda32faac">729b4d29</a> busybox: re-add tar functionality
-  2019-06-23 <a href="https://github.com/kisslinux/repo/commit/ade05e2d720c894c62cf7093dc3ac7b086c00bde">ade05e2d</a> busybox: Remove tar.
-  2019-06-22 <a href="https://github.com/kisslinux/repo/commit/213f93bfc64312452b331945bf4aaca40c9b1c52">213f93bf</a> busybox: Compile with crc32 for kernel. GCC: Use right arguments based on host.
-  2019-06-21 <a href="https://github.com/kisslinux/repo/commit/9e501a8d3dca896753d1d4e21624daad508d9c7b">9e501a8d</a> busybox: Don't compile modprobe small.
-  2019-06-20 <a href="https://github.com/kisslinux/repo/commit/9665acc9ee6c409c37cdb566f8b0a5bd96738709">9665acc9</a> busybox: Add init utlities.
-  2019-06-19 <a href="https://github.com/kisslinux/repo/commit/5deb23de6362629df4d1b20427798a6435be26c0">5deb23de</a> busybox: add license
-  2019-06-19 <a href="https://github.com/kisslinux/repo/commit/df85eea3ace6487fe28cc6f378bd9d988925699f">df85eea3</a> busybox: Remove select utilities.
-  2019-06-17 <a href="https://github.com/kisslinux/repo/commit/61530e3c92290fbe6f023d6e1a9a1d2c2afb8cc8">61530e3c</a> busybox: change libressl dep to makedepends
-  2019-06-17 <a href="https://github.com/kisslinux/repo/commit/2fb46d3676b3a35ca7ff45756af1b9762b60c5d9">2fb46d36</a> busybox: set -static in .config.
-  2019-06-17 <a href="https://github.com/kisslinux/repo/commit/7addd3083c7241203daeff80ca50c2f6c88f9961">7addd308</a> busybox: statically compile.
-  2019-06-02 <a href="https://github.com/kisslinux/repo/commit/0b4f427318ac74dd59f47c152bbd43fd2a43953f">0b4f4273</a> busybox: update manifest
+<div style="max-height:177px;overflow:hidden scroll">2021-08-21 <a href="https://github.com/kisslinux/repo/commit/8483a24387a458ec30d781621c98ae4e5e1e8a3e">8483a243</a> busybox: new mdev.conf
+2021-08-20 <a href="https://github.com/kisslinux/repo/commit/7ca2d33e8acb8c81c7bcae78e50bc66b855cfcad">7ca2d33e</a> busybox: 1.34.0
+2021-07-22 <a href="https://github.com/kisslinux/repo/commit/6bd6a0d3952e2e0ca8527b8b8c1fcbf79c32eada">6bd6a0d3</a> busybox: swap to gz source
+2021-07-18 <a href="https://github.com/kisslinux/repo/commit/16a357ba6e88d78c3463e5e2cd06153991fdd0bf">16a357ba</a> busybox: remove unintended change
+2021-07-18 <a href="https://github.com/kisslinux/repo/commit/89bc1ca5d0c29628642a7d104132f2513a78791d">89bc1ca5</a> busybox: update for new env
+2021-07-15 <a href="https://github.com/kisslinux/repo/commit/72b3acf3bf2281865f11bd3370758223db12197c">72b3acf3</a> busybox: bump rel for depends change
+2021-07-15 <a href="https://github.com/kisslinux/repo/commit/5d2be71cb5985de0daa5cca59eda3a6d88237a90">5d2be71c</a> busybox: bump for depends change
+2021-07-15 <a href="https://github.com/kisslinux/repo/commit/423fb876d099cf8360dc2fdc365ad39d124e7f2a">423fb876</a> busybox: remove fake depends
+2021-07-15 <a href="https://github.com/kisslinux/repo/commit/6d3aa5810559b2705db7c8823558dd71c8fe9f7b">6d3aa581</a> busybox: use VERSION
+2021-07-12 <a href="https://github.com/kisslinux/repo/commit/13e25e48ac483d36fcb13eb6f753eaec275448d8">13e25e48</a> busybox: fix segfaults with clang. Closes #278
+2021-07-08 <a href="https://github.com/kisslinux/repo/commit/67c550a704ec385956f2a916e9048292e4db6adf">67c550a7</a> busybox: fix executable not being set. Closes #268
+2021-07-07 <a href="https://github.com/kisslinux/repo/commit/00ceb6e98729c73eea081d53663bf011a87045b2">00ceb6e9</a> busybox: remove libressl from depends
+2021-07-03 <a href="https://github.com/kisslinux/repo/commit/4c344a7b7ab10e81ea87048d15a1f3d2545263e5">4c344a7b</a> busybox: remove sed -i
+2021-07-01 <a href="https://github.com/kisslinux/repo/commit/9e7f1ef669b736a8c8e77acc8ea3563eb83228d9">9e7f1ef6</a> busybox: remove usage of install
+2021-07-01 <a href="https://github.com/kisslinux/repo/commit/5e4c797a07792e2d08579bb339753bd476d8bec2">5e4c797a</a> busybox: enable halt and chvt
+2021-06-30 <a href="https://github.com/kisslinux/repo/commit/794ac8ace97de2a253b47ef3d3c4531626757343">794ac8ac</a> busybox: 1.33.1
+2020-11-19 <a href="https://github.com/kisslinux/repo/commit/9078f197633c365fda4009dfb79cc4e4fc2df9ae">9078f197</a> busybox: Set CC fallback once
+2020-11-19 <a href="https://github.com/kisslinux/repo/commit/e8f700827d6e29106afcc2a2b7f4f2ebb67a8e29">e8f70082</a> busybox: Fix build when 'cc' is clang.
+2020-11-19 <a href="https://github.com/kisslinux/repo/commit/eb412f08f5a58bc8a70fb21abf4da1f034eddaf4">eb412f08</a> busybox: Fix segfaults when built with clang. See: #240
+2020-11-18 <a href="https://github.com/kisslinux/repo/commit/2e0ed18bf70d1f228ecb7c6df8249b46ba5e8fef">2e0ed18b</a> busybox: revert CC change. See #240
+2020-11-18 <a href="https://github.com/kisslinux/repo/commit/b98fac2901c99d2bc0e513c5a14765267a28ec0d">b98fac29</a> busybox: Fix build when not using gcc
+2020-08-27 <a href="https://github.com/kisslinux/repo/commit/9aa67b4b501051b34da6621228f75a4b55ee42dc">9aa67b4b</a> busybox: add ntpd service
+2020-08-17 <a href="https://github.com/kisslinux/repo/commit/e61bbf086c127e941afdeb0264e0fba8c68dd643">e61bbf08</a> busybox: fix unzip behavior (fixes neovim-git)
+2020-07-03 <a href="https://github.com/kisslinux/repo/commit/1510dfca95baad907a334835e1355bf0f317fdd5">1510dfca</a> busybox: Enable HD
+2020-06-30 <a href="https://github.com/kisslinux/repo/commit/6c332ee72d995b772779f17f194b8106d12b4dc6">6c332ee7</a> busybox: Add USB vendor names to lsusb.
+2020-06-27 <a href="https://github.com/kisslinux/repo/commit/07734802bce2d60eac0d20bb0d527d1c37d7a812">07734802</a> busybox: bump to 1.32.0
+2020-05-31 <a href="https://github.com/kisslinux/repo/commit/12419232f44b7958d6a707fed36dbfcada185f39">12419232</a> busybox: Add ipv6 support to -suid stuff
+2020-05-31 <a href="https://github.com/kisslinux/repo/commit/d493efb4d39807f8149f8144db27777c7a923334">d493efb4</a> busybox: Add ping6, traceroute, etc
+2020-05-18 <a href="https://github.com/kisslinux/repo/commit/8511390abca9a8151774b68c1e1005a447b0989c">8511390a</a> busybox: Use sha256 as default password algo.
+2020-05-17 <a href="https://github.com/kisslinux/repo/commit/a5c8a4d311fb4bc71404df18e4eda0f716ab4165">a5c8a4d3</a> busybox: Move mkdir to build file
+2020-05-04 <a href="https://github.com/kisslinux/repo/commit/33d5af2e8a77439977fd1c0c02d9859e38144835">33d5af2e</a> busybox: Drop halt as it is not portable across inits
+2020-04-25 <a href="https://github.com/kisslinux/repo/commit/ca837d7433bbeb51e230ab8c9596ca362bec36eb">ca837d74</a> busybox: Enabled MODUTILS stuff
+2020-04-22 <a href="https://github.com/kisslinux/repo/commit/aef6d4f223195d8ee32bc3de14c74380ceb6c52f">aef6d4f2</a> busybox: Fix broken install command
+2020-04-18 <a href="https://github.com/kisslinux/repo/commit/4a3ef41018a30bfbaf5e69affd30a94274acf820">4a3ef410</a> busybox: Fix unicode display bug
+2020-04-15 <a href="https://github.com/kisslinux/repo/commit/06db5b87e687d4f44c77110fc69bea6f91181d54">06db5b87</a> busybox: Enable mkswap
+2020-04-15 <a href="https://github.com/kisslinux/repo/commit/240478fc9e88b2900be48559b797feeae85403b5">240478fc</a> busybox: Add modprobe patch
+2020-03-20 <a href="https://github.com/kisslinux/repo/commit/9070a5dd9cdd7f45ea1075f70956c9376da3af76">9070a5dd</a> busybox: Add acpid service files. Closes #173
+2020-03-19 <a href="https://github.com/kisslinux/repo/commit/ed6f5c008171fcde87b5a28c3c76af7b200d877f">ed6f5c00</a> busybox: Build acpid
+2020-03-08 <a href="https://github.com/kisslinux/repo/commit/c3c113640e19d30bb157a4530567ace331819451">c3c11364</a> busybox: Fix checksums. Closes #166
+2020-03-07 <a href="https://github.com/kisslinux/repo/commit/7243ef2c02f28b438e12b6efad02f0168e55e60d">7243ef2c</a> busybox: Fix hotplug null
+2020-03-07 <a href="https://github.com/kisslinux/repo/commit/5eed8136c0b1a60bde32d2360cff597fd3c0e943">5eed8136</a> busybox: Clear hotplug for mdev service
+2020-02-23 <a href="https://github.com/kisslinux/repo/commit/8ddbcb76e4dbd697b255a6fe5eff8cf36b170131">8ddbcb76</a> busybox: Use portable cc. Closes #157
+2020-02-23 <a href="https://github.com/kisslinux/repo/commit/2b173b4886e10db9b6a7a85f8f0715699cb97cf8">2b173b48</a> busybox: enable USE_PORTABLE_CODE. Closes #157
+2020-02-20 <a href="https://github.com/kisslinux/repo/commit/01ebdb53b9e14621caca60516697dad76869e053">01ebdb53</a> busybox: Add fsck fix for uuid
+2020-02-20 <a href="https://github.com/kisslinux/repo/commit/16216b948b7156dc60d697a810d407a8987e678e">16216b94</a> busybox: fix adduser and enable util-linux utils
+2020-02-05 <a href="https://github.com/kisslinux/repo/commit/87629a80439eed81e56f142083d355b9fe6a9e9b">87629a80</a> busybox: fix checksums
+2020-02-04 <a href="https://github.com/kisslinux/repo/commit/f86714c25e6bde3ed4c83d455eb38b416635ac98">f86714c2</a> busybox: Fix mdev.run. Closes #140
+2020-01-20 <a href="https://github.com/kisslinux/repo/commit/906e3e746c33777c36d4ca081c4580a9b8968867">906e3e74</a> busybox: mdev: Fix /dev/snd
+2020-01-20 <a href="https://github.com/kisslinux/repo/commit/e33b64263468a83a4e63f4a0facbf8b60b25cd34">e33b6426</a> busybox: Remove broken mdev rule
+2020-01-20 <a href="https://github.com/kisslinux/repo/commit/41b37a977c4b4336f3cf905759a0c34ca026c92c">41b37a97</a> busybox: mdev support
+2020-01-20 <a href="https://github.com/kisslinux/repo/commit/0592cc42bff00b3409d96bf0d68d2ce8893339d6">0592cc42</a> busybox: Add initial mdev
+2020-01-12 <a href="https://github.com/kisslinux/repo/commit/ca1baa36e159a0d3fc65544523c5fe98e9600868">ca1baa36</a> busybox: Remove acpid
+2019-12-07 <a href="https://github.com/kisslinux/repo/commit/59566ab811076de37af5d8d9d69811eb516d0fd0">59566ab8</a> busybox: remove unneeded flag for acpid and add checks for directory files
+2019-10-25 <a href="https://github.com/kisslinux/repo/commit/fbde4a21c4e68a2f162f81b6dc9977e0f1f7369d">fbde4a21</a> busybox: bump to 1.31.1
+2019-10-09 <a href="https://github.com/kisslinux/repo/commit/77730d6ce011f9ce18abf881224a2131007c6b7f">77730d6c</a> busybox: remove utilities which no one will ever use.
+2019-10-07 <a href="https://github.com/kisslinux/repo/commit/ee6f06039fa3204bcf6c5ded1739ff1512bc805a">ee6f0603</a> busybox: build with generic_gcc to use $CC
+2019-10-07 <a href="https://github.com/kisslinux/repo/commit/cd85c4eb6b62004cfb7c80ede403519ff0cb9553">cd85c4eb</a> busybox: build with generic_gcc to use $CC
+2019-09-28 <a href="https://github.com/kisslinux/repo/commit/426143e26cfdb54613539342a7ae94094071e816">426143e2</a> busybox: remove dpkg
+2019-09-28 <a href="https://github.com/kisslinux/repo/commit/75bc688a1eb6c04504d83959ceee597a04c8ce11">75bc688a</a> busybox: don't build rpm
+2019-09-18 <a href="https://github.com/kisslinux/repo/commit/e8484d1bc5990959bbc2b26e24e3fdfe1c337d2d">e8484d1b</a> busybox: fix passwd
+2019-09-02 <a href="https://github.com/kisslinux/repo/commit/3f371a408020307c8eb72b02f7c1e73eae0061e8">3f371a40</a> busybox: disable weak passwd check.
+2019-09-02 <a href="https://github.com/kisslinux/repo/commit/7626b312fd4e9c9e1907fef44adc41a2a2bd23ee">7626b312</a> busybox: build statically
+2019-08-25 <a href="https://github.com/kisslinux/repo/commit/e1bfa7afcd44445719a08994dcda58a77d32aaf9">e1bfa7af</a> busybox: Fix su, login, crontab, ping, etc
+2019-08-18 <a href="https://github.com/kisslinux/repo/commit/7dcc9332dc7d976262a4c328b464b52c05843133">7dcc9332</a> busybox: depends bzip2 for help usages
+2019-08-18 <a href="https://github.com/kisslinux/repo/commit/833bd897c3c1320e87996c944bb0de0e886bde2c">833bd897</a> busybox: fix work around for DESTDIR
+2019-08-15 <a href="https://github.com/kisslinux/repo/commit/ca440ed59581cb88507ae967bad1382a6e89a8b5">ca440ed5</a> busybox: depend on gzip to avoid accidental breakage.
+2019-08-14 <a href="https://github.com/kisslinux/repo/commit/d9d18ca1fe65383c70cda893832d4d830d3d77c3">d9d18ca1</a> busybox: fix checksum .config
+2019-08-13 <a href="https://github.com/kisslinux/repo/commit/d4ea0591b81c64fa947790b5a0ed4caa919588a7">d4ea0591</a> busybox: bump to 1.31.0
+2019-08-13 <a href="https://github.com/kisslinux/repo/commit/7a85ade671681522b2b1fb6832852a43af0e98b4">7a85ade6</a> busybox: remove man
+2019-08-13 <a href="https://github.com/kisslinux/repo/commit/e7b44d6fcc6afde0ad592fc155561ab778726cb4">e7b44d6f</a> busybox: fix depends
+2019-08-12 <a href="https://github.com/kisslinux/repo/commit/06fb764381d4b9d1feb5d5e272ddb23a5cd7fcfe">06fb7643</a> busybox: Compile a second static binary for rescue/initramfs purposes.
+2019-08-11 <a href="https://github.com/kisslinux/repo/commit/ab54213d8fad5318722c421ed627687d51b027bc">ab54213d</a> busybox: added busybox config'
+2019-08-03 <a href="https://github.com/kisslinux/repo/commit/0f84f8e0a45eab91654a19452be1ddcb7a3d6989">0f84f8e0</a> busybox: build without bzip2
+2019-07-30 <a href="https://github.com/kisslinux/repo/commit/d035612676d88506873837fbbdc9d486c9da0da2">d0356126</a> busybox: Remove gzip
+2019-07-30 <a href="https://github.com/kisslinux/repo/commit/f5caca96d6553a982ccdb0501b036e2bfc0a5a5d">f5caca96</a> busybox: compile without gzip
+2019-07-29 <a href="https://github.com/kisslinux/repo/commit/f520ab67e6055471117104900a8a96972f5cf5a4">f520ab67</a> busybox: compile without lspci
+2019-07-20 <a href="https://github.com/kisslinux/repo/commit/be1c3ba8581ff35eef96f90ec82c2d71b4b21d8b">be1c3ba8</a> busybox: build dynamically and fix directories
+2019-07-16 <a href="https://github.com/kisslinux/repo/commit/a64295eb30f3270592ab7a505ad06ae1a0bcb562">a64295eb</a> busybox: Compile with getopt for fakeroot.
+2019-07-08 <a href="https://github.com/kisslinux/repo/commit/f00b73a18b8a107d08274a36e48267a6d752d455">f00b73a1</a> busybox: re-add lspci and lsusb
+2019-07-07 <a href="https://github.com/kisslinux/repo/commit/763849defcec454e73c2e5038f4a8ce294fcc115">763849de</a> busybox: Fix mdev perms
+2019-07-07 <a href="https://github.com/kisslinux/repo/commit/f9ecfe15bd8d5c86beb05280f2562115df5cb17d">f9ecfe15</a> busybox: Added mdev config
+2019-07-07 <a href="https://github.com/kisslinux/repo/commit/90d3a27070245766089df98f3e4cf534244605c9">90d3a270</a> busybox: Remove xkb programs.
+2019-07-07 <a href="https://github.com/kisslinux/repo/commit/e410e98a0cc4fdf39937944f3987a0d4786331a4">e410e98a</a> busybox: Remove xkb programs.
+2019-07-07 <a href="https://github.com/kisslinux/repo/commit/24ac983911809450671ac433aa8f4e06977a7f19">24ac9839</a> busybox: disable more features taken by util-linux+e2fsprogs
+2019-07-07 <a href="https://github.com/kisslinux/repo/commit/f2f1c563869d604e6b54b0300440e7fa44440927">f2f1c563</a> busybox: remove util-linux features
+2019-07-06 <a href="https://github.com/kisslinux/repo/commit/f53c853a416c724546eaa60766b896bf0c889f8c">f53c853a</a> busybox: remove udhcpc runitscript
+2019-07-04 <a href="https://github.com/kisslinux/repo/commit/4edcd3dc983c1f7fb9824c3314ccc582064be73a">4edcd3dc</a> busybox: Remove dhcp client/server.
+2019-07-01 <a href="https://github.com/kisslinux/repo/commit/9a3d867f3f1c732b1362d4e1a49fc16cd0d747f0">9a3d867f</a> busybox: forgot to add the files to sources
+2019-07-01 <a href="https://github.com/kisslinux/repo/commit/cffe93c3404a57037af95f00260907f86268e3e1">cffe93c3</a> busybox: add crond and syslogd runit service
+2019-06-30 <a href="https://github.com/kisslinux/repo/commit/d07973c30e2bc87c0a0cd265e6d945acc4dab5ae">d07973c3</a> busybox: fix symlink mistake
+2019-06-30 <a href="https://github.com/kisslinux/repo/commit/03759c0cd513994cc4922995331a83284c4b6f17">03759c0c</a> busybox: add udhcpc and acpid runit services
+2019-06-28 <a href="https://github.com/kisslinux/repo/commit/729b4d295ad546d1613902f4d2fa934eda32faac">729b4d29</a> busybox: re-add tar functionality
+2019-06-23 <a href="https://github.com/kisslinux/repo/commit/ade05e2d720c894c62cf7093dc3ac7b086c00bde">ade05e2d</a> busybox: Remove tar.
+2019-06-22 <a href="https://github.com/kisslinux/repo/commit/213f93bfc64312452b331945bf4aaca40c9b1c52">213f93bf</a> busybox: Compile with crc32 for kernel. GCC: Use right arguments based on host.
+2019-06-21 <a href="https://github.com/kisslinux/repo/commit/9e501a8d3dca896753d1d4e21624daad508d9c7b">9e501a8d</a> busybox: Don't compile modprobe small.
+2019-06-20 <a href="https://github.com/kisslinux/repo/commit/9665acc9ee6c409c37cdb566f8b0a5bd96738709">9665acc9</a> busybox: Add init utlities.
+2019-06-19 <a href="https://github.com/kisslinux/repo/commit/5deb23de6362629df4d1b20427798a6435be26c0">5deb23de</a> busybox: add license
+2019-06-19 <a href="https://github.com/kisslinux/repo/commit/df85eea3ace6487fe28cc6f378bd9d988925699f">df85eea3</a> busybox: Remove select utilities.
+2019-06-17 <a href="https://github.com/kisslinux/repo/commit/61530e3c92290fbe6f023d6e1a9a1d2c2afb8cc8">61530e3c</a> busybox: change libressl dep to makedepends
+2019-06-17 <a href="https://github.com/kisslinux/repo/commit/2fb46d3676b3a35ca7ff45756af1b9762b60c5d9">2fb46d36</a> busybox: set -static in .config.
+2019-06-17 <a href="https://github.com/kisslinux/repo/commit/7addd3083c7241203daeff80ca50c2f6c88f9961">7addd308</a> busybox: statically compile.
+2019-06-02 <a href="https://github.com/kisslinux/repo/commit/0b4f427318ac74dd59f47c152bbd43fd2a43953f">0b4f4273</a> busybox: update manifest
 </div>
 
-[006] References
+[005] References
 ________________________________________________________________________________
 
 [0] https://en.wikipedia.org/wiki/BusyBox

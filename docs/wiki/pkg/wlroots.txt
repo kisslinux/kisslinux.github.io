@@ -14,9 +14,8 @@ ________________________________________________________________________________
 * Setup--------------------------------------------------------------------[002]
 * Usage--------------------------------------------------------------------[003]
 * Troubleshooting----------------------------------------------------------[004]
-* Information--------------------------------------------------------------[005]
-  * Change-History---------------------------------------------------------[006]
-* References---------------------------------------------------------------[007]
+* History------------------------------------------------------------------[005]
+* References---------------------------------------------------------------[006]
 
 
 [001] Installation
@@ -35,20 +34,17 @@ No documentation is currently provided with the package, refer to online
 documentation for the time being.
 
 
-[005] Information
+[005] History
 ________________________________________________________________________________
 
-
---[006]-Change-History--------------------------------------------------------
-
-<div style="max-height:177px;overflow:hidden scroll">  2021-07-24 <a href="https://github.com/kisslinux/repo/commit/fcde3251be918c1cfc79a405be878d2a755da3d1">fcde3251</a> wlroots: explicit gles2. See #298
-  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/2175cc0531b8ec69c44a4f15cdeee42aed6b5fb0">2175cc05</a> wlroots: update for new env
-  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/a770e5f22e45e78823d0c015c1550cd19a922466">a770e5f2</a> wlroots: use VERSION
-  2021-07-09 <a href="https://github.com/kisslinux/repo/commit/9c2cc22f9c101b5cd5a832bc7709beacdf61a6be">9c2cc22f</a> wlroots: 0.14.1
-  2021-07-08 <a href="https://github.com/kisslinux/repo/commit/61ef07d72445ae9787cc65e76928ca820b068847">61ef07d7</a> wlroots: 0.14.0
+<div style="max-height:177px;overflow:hidden scroll">2021-07-24 <a href="https://github.com/kisslinux/repo/commit/fcde3251be918c1cfc79a405be878d2a755da3d1">fcde3251</a> wlroots: explicit gles2. See #298
+2021-07-15 <a href="https://github.com/kisslinux/repo/commit/2175cc0531b8ec69c44a4f15cdeee42aed6b5fb0">2175cc05</a> wlroots: update for new env
+2021-07-15 <a href="https://github.com/kisslinux/repo/commit/a770e5f22e45e78823d0c015c1550cd19a922466">a770e5f2</a> wlroots: use VERSION
+2021-07-09 <a href="https://github.com/kisslinux/repo/commit/9c2cc22f9c101b5cd5a832bc7709beacdf61a6be">9c2cc22f</a> wlroots: 0.14.1
+2021-07-08 <a href="https://github.com/kisslinux/repo/commit/61ef07d72445ae9787cc65e76928ca820b068847">61ef07d7</a> wlroots: 0.14.0
 </div>
 
-[007] References
+[006] References
 ________________________________________________________________________________
 
 [0] https://github.com/swaywm/wlroots

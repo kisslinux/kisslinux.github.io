@@ -13,9 +13,8 @@ ________________________________________________________________________________
 
 * Installation-------------------------------------------------------------[001]
 * Usage--------------------------------------------------------------------[002]
-* Information--------------------------------------------------------------[003]
-  * Change-History---------------------------------------------------------[004]
-* References---------------------------------------------------------------[005]
+* History------------------------------------------------------------------[003]
+* References---------------------------------------------------------------[004]
 
 
 [001] Installation
@@ -34,19 +33,16 @@ ________________________________________________________________________________
 Refer to the manual pages and command help output.
 
 
-[003] Information
+[003] History
 ________________________________________________________________________________
 
-
---[004]-Change-History--------------------------------------------------------
-
-<div style="max-height:177px;overflow:hidden scroll">  2021-07-28 <a href="https://github.com/kisslinux/repo/commit/f1c2a16841b513885108b5cd43c59eefc578491c">f1c2a168</a> wl-clipboard: simpler removal
-  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/c6ec6d4f47f9e30132b977ded58328cac63b2e8a">c6ec6d4f</a> wl-clipboard: update for new env
-  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/6a11373100d59ceacb92e7a49ea90a32dd4561d5">6a113731</a> wl-clipboard: use VERSION
-  2021-07-09 <a href="https://github.com/kisslinux/repo/commit/89bb709843751afc13d7a076b996b9458f099641">89bb7098</a> wl-clipboard: 2.0.0
+<div style="max-height:177px;overflow:hidden scroll">2021-07-28 <a href="https://github.com/kisslinux/repo/commit/f1c2a16841b513885108b5cd43c59eefc578491c">f1c2a168</a> wl-clipboard: simpler removal
+2021-07-15 <a href="https://github.com/kisslinux/repo/commit/c6ec6d4f47f9e30132b977ded58328cac63b2e8a">c6ec6d4f</a> wl-clipboard: update for new env
+2021-07-15 <a href="https://github.com/kisslinux/repo/commit/6a11373100d59ceacb92e7a49ea90a32dd4561d5">6a113731</a> wl-clipboard: use VERSION
+2021-07-09 <a href="https://github.com/kisslinux/repo/commit/89bb709843751afc13d7a076b996b9458f099641">89bb7098</a> wl-clipboard: 2.0.0
 </div>
 
-[005] References
+[004] References
 ________________________________________________________________________________
 
 [0] https://github.com/bugaevc/wl-clipboard

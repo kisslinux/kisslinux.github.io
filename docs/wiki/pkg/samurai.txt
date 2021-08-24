@@ -12,9 +12,8 @@ ________________________________________________________________________________
 
 * Installation-------------------------------------------------------------[001]
 * Usage--------------------------------------------------------------------[002]
-* Information--------------------------------------------------------------[003]
-  * Change-History---------------------------------------------------------[004]
-* References---------------------------------------------------------------[005]
+* History------------------------------------------------------------------[003]
+* References---------------------------------------------------------------[004]
 
 
 [001] Installation
@@ -33,22 +32,19 @@ ________________________________________________________________________________
 Refer to the manual pages and command help output.
 
 
-[003] Information
+[003] History
 ________________________________________________________________________________
 
-
---[004]-Change-History--------------------------------------------------------
-
-<div style="max-height:177px;overflow:hidden scroll">  2021-07-18 <a href="https://github.com/kisslinux/repo/commit/d99225bee109478e3bf52d137ab3591947f62528">d99225be</a> samurai: update for new env
-  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/46290a47d463362b9db883186603ce480234a87a">46290a47</a> samurai: use VERSION
-  2021-07-12 <a href="https://github.com/kisslinux/repo/commit/e333e1cf865d245d962407094b1f2e6701f31707">e333e1cf</a> samurai: provide ninja manpage. See #273
-  2021-06-30 <a href="https://github.com/kisslinux/repo/commit/bb73bb99aabc00b83040fb71525b4f073333a312">bb73bb99</a> samurai: 1.2
-  2020-03-30 <a href="https://github.com/kisslinux/repo/commit/accc1c4dbdea784c36aa841bb451414db60b56df">accc1c4d</a> samurai: bump to 1.1
-  2020-03-05 <a href="https://github.com/kisslinux/repo/commit/8a89ed52b4031c48847793db98dc2d0783e3b727">8a89ed52</a> samurai: move to core
-  2019-12-19 <a href="https://github.com/kisslinux/repo/commit/5113cbca53187024cdeba3dff227291e1ab3054a">5113cbca</a> samurai: bump to 1.0
+<div style="max-height:177px;overflow:hidden scroll">2021-07-18 <a href="https://github.com/kisslinux/repo/commit/d99225bee109478e3bf52d137ab3591947f62528">d99225be</a> samurai: update for new env
+2021-07-15 <a href="https://github.com/kisslinux/repo/commit/46290a47d463362b9db883186603ce480234a87a">46290a47</a> samurai: use VERSION
+2021-07-12 <a href="https://github.com/kisslinux/repo/commit/e333e1cf865d245d962407094b1f2e6701f31707">e333e1cf</a> samurai: provide ninja manpage. See #273
+2021-06-30 <a href="https://github.com/kisslinux/repo/commit/bb73bb99aabc00b83040fb71525b4f073333a312">bb73bb99</a> samurai: 1.2
+2020-03-30 <a href="https://github.com/kisslinux/repo/commit/accc1c4dbdea784c36aa841bb451414db60b56df">accc1c4d</a> samurai: bump to 1.1
+2020-03-05 <a href="https://github.com/kisslinux/repo/commit/8a89ed52b4031c48847793db98dc2d0783e3b727">8a89ed52</a> samurai: move to core
+2019-12-19 <a href="https://github.com/kisslinux/repo/commit/5113cbca53187024cdeba3dff227291e1ab3054a">5113cbca</a> samurai: bump to 1.0
 </div>
 
-[005] References
+[004] References
 ________________________________________________________________________________
 
 [0] https://github.com/michaelforney/samurai

@@ -14,9 +14,8 @@ ________________________________________________________________________________
 
 * Installation-------------------------------------------------------------[001]
 * Usage--------------------------------------------------------------------[002]
-* Information--------------------------------------------------------------[003]
-  * Change-History---------------------------------------------------------[004]
-* References---------------------------------------------------------------[005]
+* History------------------------------------------------------------------[003]
+* References---------------------------------------------------------------[004]
 
 
 [001] Installation
@@ -36,40 +35,37 @@ No documentation is currently provided with the package, refer to online
 documentation for the time being.
 
 
-[003] Information
+[003] History
 ________________________________________________________________________________
 
-
---[004]-Change-History--------------------------------------------------------
-
-<div style="max-height:177px;overflow:hidden scroll">  2021-08-08 <a href="https://github.com/kisslinux/repo/commit/15884609ad7f9b4f132a60bc83fa30fea0700faf">15884609</a> cairo: fix depends
-  2021-07-28 <a href="https://github.com/kisslinux/repo/commit/aa7f14eb2e3673b83a5ecf8a175c36c6ba976c07">aa7f14eb</a> cairo: avoid chmod
-  2021-07-28 <a href="https://github.com/kisslinux/repo/commit/0d8c3c15b516134c018c57b0f29f71308dcbbed4">0d8c3c15</a> cairo: don't build boilerplate
-  2021-07-17 <a href="https://github.com/kisslinux/repo/commit/a6f65975aee8f9fa6b93011d92c54a9924f32cc2">a6f65975</a> cairo: update for new env
-  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/18bf343c31f6cf4acd765a70c5a6054df8435e68">18bf343c</a> cairo: use VERSION
-  2021-07-08 <a href="https://github.com/kisslinux/repo/commit/a654edf46975a5c718a6b9cd29248e5be2abbfbd">a654edf4</a> cairo: fix wayland
-  2021-07-08 <a href="https://github.com/kisslinux/repo/commit/5f88fd153b600ccccfd59b30ead9718711327b49">5f88fd15</a> cairo: remove xorg dependency
-  2021-07-06 <a href="https://github.com/kisslinux/repo/commit/95efc64207c642d1be6bb7d0b1a9a31bc750fbce">95efc642</a> cairo: disable html documentation
-  2021-07-03 <a href="https://github.com/kisslinux/repo/commit/de14245280f0d32b4005d9a1ad894d70583a1792">de142452</a> cairo: remove sed -i
-  2021-07-01 <a href="https://github.com/kisslinux/repo/commit/d8cc8fced53eb2c63052790b03e33ba4fb5b0df3">d8cc8fce</a> cairo: use new checksums format
-  2020-06-01 <a href="https://github.com/kisslinux/repo/commit/b8a16dc0174748a762b152a055fc831a3624b43f">b8a16dc0</a> cairo: Revert to last stable release to fix checkbox issue. Upstream is kinda dead as well.
-  2020-05-29 <a href="https://github.com/kisslinux/repo/commit/8139a94752c7e8f863e111ade798ac2ad4addda0">8139a947</a> cairo: Bump to development release as last release is years old. Fixes CVEs.
-  2019-11-18 <a href="https://github.com/kisslinux/repo/commit/75a189f1417c7edd8e1d492608740ff9e1909ad2">75a189f1</a> cairo: remove useless quotes
-  2019-08-18 <a href="https://github.com/kisslinux/repo/commit/e276a8e2af842244436905699f73fa26976bbb1d">e276a8e2</a> cairo: fix deps
-  2019-08-18 <a href="https://github.com/kisslinux/repo/commit/b06b91c153ad9c8a6e3c12becd4260d3c064b060">b06b91c1</a> cairo: fix depends
-  2019-08-18 <a href="https://github.com/kisslinux/repo/commit/e0122392cc6447e4c6c40c95ed0b27cef6de1b7c">e0122392</a> cairo: fix firefox error
-  2019-08-18 <a href="https://github.com/kisslinux/repo/commit/ce9909051bff9f75040653d157a2c1c562b0c51c">ce990905</a> cairo: Fix package
-  2019-08-17 <a href="https://github.com/kisslinux/repo/commit/84fae26816543ad40150aa0737141593996c91ed">84fae268</a> cairo: revert deps
-  2019-08-17 <a href="https://github.com/kisslinux/repo/commit/87615039e5f7c26d02c0b6c07f4637d783964f21">87615039</a> cairo: Fix depends
-  2019-08-05 <a href="https://github.com/kisslinux/repo/commit/b64b6c88ecbb05720b97654bc769ed75da231ebd">b64b6c88</a> pango/cairo: move to extra
-  2019-08-05 <a href="https://github.com/kisslinux/repo/commit/46bb7918fe9298a0cc9c9c3c3e9a72ce47d0cd8a">46bb7918</a> cairo: move to extra
-  2019-07-28 <a href="https://github.com/kisslinux/repo/commit/3a1939eabc3b4fa8bdaecb426bbb33786908287c">3a1939ea</a> cairo: Fix depends
-  2019-07-27 <a href="https://github.com/kisslinux/repo/commit/d6b74027e595dc46f457b06bd0af99ec4eac6093">d6b74027</a> cairo: Fix depends.
-  2019-07-27 <a href="https://github.com/kisslinux/repo/commit/b1060a084e5d087abf9f6c78f45ca8c5fbdfbbaf">b1060a08</a> cairo: fix depends.
-  2019-07-27 <a href="https://github.com/kisslinux/repo/commit/adeb34614c1e9048ad7a39f238f8d968a3dd5b49">adeb3461</a> cairo: new package at 1.16.0
+<div style="max-height:177px;overflow:hidden scroll">2021-08-08 <a href="https://github.com/kisslinux/repo/commit/15884609ad7f9b4f132a60bc83fa30fea0700faf">15884609</a> cairo: fix depends
+2021-07-28 <a href="https://github.com/kisslinux/repo/commit/aa7f14eb2e3673b83a5ecf8a175c36c6ba976c07">aa7f14eb</a> cairo: avoid chmod
+2021-07-28 <a href="https://github.com/kisslinux/repo/commit/0d8c3c15b516134c018c57b0f29f71308dcbbed4">0d8c3c15</a> cairo: don't build boilerplate
+2021-07-17 <a href="https://github.com/kisslinux/repo/commit/a6f65975aee8f9fa6b93011d92c54a9924f32cc2">a6f65975</a> cairo: update for new env
+2021-07-15 <a href="https://github.com/kisslinux/repo/commit/18bf343c31f6cf4acd765a70c5a6054df8435e68">18bf343c</a> cairo: use VERSION
+2021-07-08 <a href="https://github.com/kisslinux/repo/commit/a654edf46975a5c718a6b9cd29248e5be2abbfbd">a654edf4</a> cairo: fix wayland
+2021-07-08 <a href="https://github.com/kisslinux/repo/commit/5f88fd153b600ccccfd59b30ead9718711327b49">5f88fd15</a> cairo: remove xorg dependency
+2021-07-06 <a href="https://github.com/kisslinux/repo/commit/95efc64207c642d1be6bb7d0b1a9a31bc750fbce">95efc642</a> cairo: disable html documentation
+2021-07-03 <a href="https://github.com/kisslinux/repo/commit/de14245280f0d32b4005d9a1ad894d70583a1792">de142452</a> cairo: remove sed -i
+2021-07-01 <a href="https://github.com/kisslinux/repo/commit/d8cc8fced53eb2c63052790b03e33ba4fb5b0df3">d8cc8fce</a> cairo: use new checksums format
+2020-06-01 <a href="https://github.com/kisslinux/repo/commit/b8a16dc0174748a762b152a055fc831a3624b43f">b8a16dc0</a> cairo: Revert to last stable release to fix checkbox issue. Upstream is kinda dead as well.
+2020-05-29 <a href="https://github.com/kisslinux/repo/commit/8139a94752c7e8f863e111ade798ac2ad4addda0">8139a947</a> cairo: Bump to development release as last release is years old. Fixes CVEs.
+2019-11-18 <a href="https://github.com/kisslinux/repo/commit/75a189f1417c7edd8e1d492608740ff9e1909ad2">75a189f1</a> cairo: remove useless quotes
+2019-08-18 <a href="https://github.com/kisslinux/repo/commit/e276a8e2af842244436905699f73fa26976bbb1d">e276a8e2</a> cairo: fix deps
+2019-08-18 <a href="https://github.com/kisslinux/repo/commit/b06b91c153ad9c8a6e3c12becd4260d3c064b060">b06b91c1</a> cairo: fix depends
+2019-08-18 <a href="https://github.com/kisslinux/repo/commit/e0122392cc6447e4c6c40c95ed0b27cef6de1b7c">e0122392</a> cairo: fix firefox error
+2019-08-18 <a href="https://github.com/kisslinux/repo/commit/ce9909051bff9f75040653d157a2c1c562b0c51c">ce990905</a> cairo: Fix package
+2019-08-17 <a href="https://github.com/kisslinux/repo/commit/84fae26816543ad40150aa0737141593996c91ed">84fae268</a> cairo: revert deps
+2019-08-17 <a href="https://github.com/kisslinux/repo/commit/87615039e5f7c26d02c0b6c07f4637d783964f21">87615039</a> cairo: Fix depends
+2019-08-05 <a href="https://github.com/kisslinux/repo/commit/b64b6c88ecbb05720b97654bc769ed75da231ebd">b64b6c88</a> pango/cairo: move to extra
+2019-08-05 <a href="https://github.com/kisslinux/repo/commit/46bb7918fe9298a0cc9c9c3c3e9a72ce47d0cd8a">46bb7918</a> cairo: move to extra
+2019-07-28 <a href="https://github.com/kisslinux/repo/commit/3a1939eabc3b4fa8bdaecb426bbb33786908287c">3a1939ea</a> cairo: Fix depends
+2019-07-27 <a href="https://github.com/kisslinux/repo/commit/d6b74027e595dc46f457b06bd0af99ec4eac6093">d6b74027</a> cairo: Fix depends.
+2019-07-27 <a href="https://github.com/kisslinux/repo/commit/b1060a084e5d087abf9f6c78f45ca8c5fbdfbbaf">b1060a08</a> cairo: fix depends.
+2019-07-27 <a href="https://github.com/kisslinux/repo/commit/adeb34614c1e9048ad7a39f238f8d968a3dd5b49">adeb3461</a> cairo: new package at 1.16.0
 </div>
 
-[005] References
+[004] References
 ________________________________________________________________________________
 
 [0] https://en.wikipedia.org/wiki/Cairo_(graphics)

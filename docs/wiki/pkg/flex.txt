@@ -18,9 +18,8 @@ ________________________________________________________________________________
 
 * Installation-------------------------------------------------------------[001]
 * Usage--------------------------------------------------------------------[002]
-* Information--------------------------------------------------------------[003]
-  * Change-History---------------------------------------------------------[004]
-* References---------------------------------------------------------------[005]
+* History------------------------------------------------------------------[003]
+* References---------------------------------------------------------------[004]
 
 
 [001] Installation
@@ -39,30 +38,27 @@ ________________________________________________________________________________
 Refer to the manual pages and command help output.
 
 
-[003] Information
+[003] History
 ________________________________________________________________________________
 
-
---[004]-Change-History--------------------------------------------------------
-
-<div style="max-height:177px;overflow:hidden scroll">  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/aa167b5b4a7945a881cb63a0d0e63b1a6b88c8ce">aa167b5b</a> flex: update for new env
-  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/a241fba0cb29d47a6f087979035ddab6427aa22e">a241fba0</a> flex: use VERSION
-  2021-07-06 <a href="https://github.com/kisslinux/repo/commit/d4c59b7b6f7f5f4364d1450efc7e24168de7b6ed">d4c59b7b</a> flex: Disable docs
-  2021-07-01 <a href="https://github.com/kisslinux/repo/commit/642c35e32c7aeb6997c7cb22352a677ed30c4b32">642c35e3</a> flex: use new checksum format
-  2020-09-30 <a href="https://github.com/kisslinux/repo/commit/18682242b7537995d9d906c750c136cca337b695">18682242</a> flex: enable static lib
-  2020-05-29 <a href="https://github.com/kisslinux/repo/commit/3e50199246cddf8497061888cd390fbaa3bec500">3e501992</a> flex: Also provide lex
-  2020-03-14 <a href="https://github.com/kisslinux/repo/commit/585ecd21a09a8a0abe603a46d5efe856609fb426">585ecd21</a> flex: Make m4 make
-  2020-03-14 <a href="https://github.com/kisslinux/repo/commit/4d01aaec308757f719a0b010c0dadfe144e48b20">4d01aaec</a> flex: Fix depends
-  2019-10-07 <a href="https://github.com/kisslinux/repo/commit/bed9f938bf64265cc75e83b606ff03fa674cbbf7">bed9f938</a> flex: remove rm
-  2019-10-05 <a href="https://github.com/kisslinux/repo/commit/e97bc278e2f054ed0d564ccf1e676aa0ee1a2935">e97bc278</a> flex: let nls be detected
-  2019-09-16 <a href="https://github.com/kisslinux/repo/commit/fb7342f54a15c7955f80108da46d2d713930c91f">fb7342f5</a> flex: clean up build
-  2019-09-07 <a href="https://github.com/kisslinux/repo/commit/85109ac04f06303b4159c5d286db662f340643ef">85109ac0</a> flex: order depends
-  2019-08-11 <a href="https://github.com/kisslinux/repo/commit/55ed421f0bc76ad36919f088ccf8d3081498d837">55ed421f</a> flex: remove docs
-  2019-06-19 <a href="https://github.com/kisslinux/repo/commit/7d2ab0c467e48934d121ae9ec9ac646bf52dd124">7d2ab0c4</a> flex: add license
-  2019-06-02 <a href="https://github.com/kisslinux/repo/commit/df62ef95e4f69264bec684bc918dad42cbcd51b5">df62ef95</a> flex: update manifest
+<div style="max-height:177px;overflow:hidden scroll">2021-07-15 <a href="https://github.com/kisslinux/repo/commit/aa167b5b4a7945a881cb63a0d0e63b1a6b88c8ce">aa167b5b</a> flex: update for new env
+2021-07-15 <a href="https://github.com/kisslinux/repo/commit/a241fba0cb29d47a6f087979035ddab6427aa22e">a241fba0</a> flex: use VERSION
+2021-07-06 <a href="https://github.com/kisslinux/repo/commit/d4c59b7b6f7f5f4364d1450efc7e24168de7b6ed">d4c59b7b</a> flex: Disable docs
+2021-07-01 <a href="https://github.com/kisslinux/repo/commit/642c35e32c7aeb6997c7cb22352a677ed30c4b32">642c35e3</a> flex: use new checksum format
+2020-09-30 <a href="https://github.com/kisslinux/repo/commit/18682242b7537995d9d906c750c136cca337b695">18682242</a> flex: enable static lib
+2020-05-29 <a href="https://github.com/kisslinux/repo/commit/3e50199246cddf8497061888cd390fbaa3bec500">3e501992</a> flex: Also provide lex
+2020-03-14 <a href="https://github.com/kisslinux/repo/commit/585ecd21a09a8a0abe603a46d5efe856609fb426">585ecd21</a> flex: Make m4 make
+2020-03-14 <a href="https://github.com/kisslinux/repo/commit/4d01aaec308757f719a0b010c0dadfe144e48b20">4d01aaec</a> flex: Fix depends
+2019-10-07 <a href="https://github.com/kisslinux/repo/commit/bed9f938bf64265cc75e83b606ff03fa674cbbf7">bed9f938</a> flex: remove rm
+2019-10-05 <a href="https://github.com/kisslinux/repo/commit/e97bc278e2f054ed0d564ccf1e676aa0ee1a2935">e97bc278</a> flex: let nls be detected
+2019-09-16 <a href="https://github.com/kisslinux/repo/commit/fb7342f54a15c7955f80108da46d2d713930c91f">fb7342f5</a> flex: clean up build
+2019-09-07 <a href="https://github.com/kisslinux/repo/commit/85109ac04f06303b4159c5d286db662f340643ef">85109ac0</a> flex: order depends
+2019-08-11 <a href="https://github.com/kisslinux/repo/commit/55ed421f0bc76ad36919f088ccf8d3081498d837">55ed421f</a> flex: remove docs
+2019-06-19 <a href="https://github.com/kisslinux/repo/commit/7d2ab0c467e48934d121ae9ec9ac646bf52dd124">7d2ab0c4</a> flex: add license
+2019-06-02 <a href="https://github.com/kisslinux/repo/commit/df62ef95e4f69264bec684bc918dad42cbcd51b5">df62ef95</a> flex: update manifest
 </div>
 
-[005] References
+[004] References
 ________________________________________________________________________________
 
 [0] https://en.wikipedia.org/wiki/Flex_(lexical_analyser_generator)

@@ -15,9 +15,8 @@ ________________________________________________________________________________
 * Usage--------------------------------------------------------------------[002]
 * Troubleshooting----------------------------------------------------------[003]
   * Firefox-phones-home----------------------------------------------------[004]
-* Information--------------------------------------------------------------[005]
-  * Change-History---------------------------------------------------------[006]
-* References---------------------------------------------------------------[007]
+* History------------------------------------------------------------------[005]
+* References---------------------------------------------------------------[006]
 
 
 [001] Installation
@@ -46,22 +45,19 @@ ________________________________________________________________________________
   If you encounter Firefox phoning home, open an issue at $/kisslinux/repo
 
 
-[005] Information
+[005] History
 ________________________________________________________________________________
 
-
---[006]-Change-History--------------------------------------------------------
-
-<div style="max-height:177px;overflow:hidden scroll">  2021-07-25 <a href="https://github.com/kisslinux/repo/commit/9290f31859fc13af8f621c025e3c3c7ad2c7426a">9290f318</a> firefox-privacy: improvements to policies.json
-  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/9208821a18272daf3b8305b3f8ef82130af2dc9b">9208821a</a> firefox-privacy: unversion files
-  2021-07-01 <a href="https://github.com/kisslinux/repo/commit/c924bdda43e07bfbb293c1a30bfc2fae2395a5c2">c924bdda</a> firefox-privacy: remove usage of install
-  2021-07-01 <a href="https://github.com/kisslinux/repo/commit/94d86722bd4c020e239fca268baea927502aed00">94d86722</a> firefox-privacy: use new checksums format
-  2020-01-13 <a href="https://github.com/kisslinux/repo/commit/574fc458d83073626f28c40aeaddf0b55fcb9567">574fc458</a> firefox-privacy: Remove unneeded dependency
-  2019-12-31 <a href="https://github.com/kisslinux/repo/commit/712b76219db3cbf0e66ff8990e2e30cae8adedc6">712b7621</a> firefox-privacy: tweaks
-  2019-12-31 <a href="https://github.com/kisslinux/repo/commit/896eadd21f026efc459bfd6ad15c306035533b4d">896eadd2</a> firefox-privacy: new package at 1.0
+<div style="max-height:177px;overflow:hidden scroll">2021-07-25 <a href="https://github.com/kisslinux/repo/commit/9290f31859fc13af8f621c025e3c3c7ad2c7426a">9290f318</a> firefox-privacy: improvements to policies.json
+2021-07-15 <a href="https://github.com/kisslinux/repo/commit/9208821a18272daf3b8305b3f8ef82130af2dc9b">9208821a</a> firefox-privacy: unversion files
+2021-07-01 <a href="https://github.com/kisslinux/repo/commit/c924bdda43e07bfbb293c1a30bfc2fae2395a5c2">c924bdda</a> firefox-privacy: remove usage of install
+2021-07-01 <a href="https://github.com/kisslinux/repo/commit/94d86722bd4c020e239fca268baea927502aed00">94d86722</a> firefox-privacy: use new checksums format
+2020-01-13 <a href="https://github.com/kisslinux/repo/commit/574fc458d83073626f28c40aeaddf0b55fcb9567">574fc458</a> firefox-privacy: Remove unneeded dependency
+2019-12-31 <a href="https://github.com/kisslinux/repo/commit/712b76219db3cbf0e66ff8990e2e30cae8adedc6">712b7621</a> firefox-privacy: tweaks
+2019-12-31 <a href="https://github.com/kisslinux/repo/commit/896eadd21f026efc459bfd6ad15c306035533b4d">896eadd2</a> firefox-privacy: new package at 1.0
 </div>
 
-[007] References
+[006] References
 ________________________________________________________________________________
 
 [0] https://en.wikipedia.org

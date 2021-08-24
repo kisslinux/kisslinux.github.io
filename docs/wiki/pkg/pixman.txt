@@ -13,9 +13,8 @@ ________________________________________________________________________________
 
 * Installation-------------------------------------------------------------[001]
 * Usage--------------------------------------------------------------------[002]
-* Information--------------------------------------------------------------[003]
-  * Change-History---------------------------------------------------------[004]
-* References---------------------------------------------------------------[005]
+* History------------------------------------------------------------------[003]
+* References---------------------------------------------------------------[004]
 
 
 [001] Installation
@@ -35,20 +34,17 @@ No documentation is currently provided with the package, refer to online
 documentation for the time being.
 
 
-[003] Information
+[003] History
 ________________________________________________________________________________
 
-
---[004]-Change-History--------------------------------------------------------
-
-<div style="max-height:177px;overflow:hidden scroll">  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/9ab4109832c15c0658086012710fe83fa3b1b15f">9ab41098</a> pixman: update for new env
-  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/efdb1f3eb857f68bbf128d6ad0ee1d4662cd2b7d">efdb1f3e</a> pixman: use VERSION
-  2021-07-08 <a href="https://github.com/kisslinux/repo/commit/6fede6474346a31c07cfe63123f084c64c0e1267">6fede647</a> pixman: move to wayland repository
-  2021-07-01 <a href="https://github.com/kisslinux/repo/commit/7d27250bd1f28be2b1c538463e0a86092ba67c33">7d27250b</a> pixman: use new checksum format
-  2020-04-20 <a href="https://github.com/kisslinux/repo/commit/87975b8f0c43ee23a49302dec523862e99bf4fa8">87975b8f</a> pixman: bump to 0.40.0
+<div style="max-height:177px;overflow:hidden scroll">2021-07-15 <a href="https://github.com/kisslinux/repo/commit/9ab4109832c15c0658086012710fe83fa3b1b15f">9ab41098</a> pixman: update for new env
+2021-07-15 <a href="https://github.com/kisslinux/repo/commit/efdb1f3eb857f68bbf128d6ad0ee1d4662cd2b7d">efdb1f3e</a> pixman: use VERSION
+2021-07-08 <a href="https://github.com/kisslinux/repo/commit/6fede6474346a31c07cfe63123f084c64c0e1267">6fede647</a> pixman: move to wayland repository
+2021-07-01 <a href="https://github.com/kisslinux/repo/commit/7d27250bd1f28be2b1c538463e0a86092ba67c33">7d27250b</a> pixman: use new checksum format
+2020-04-20 <a href="https://github.com/kisslinux/repo/commit/87975b8f0c43ee23a49302dec523862e99bf4fa8">87975b8f</a> pixman: bump to 0.40.0
 </div>
 
-[005] References
+[004] References
 ________________________________________________________________________________
 
 [0] http://www.pixman.org/

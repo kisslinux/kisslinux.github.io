@@ -20,9 +20,8 @@ ________________________________________________________________________________
 
 * Installation-------------------------------------------------------------[001]
 * Usage--------------------------------------------------------------------[002]
-* Information--------------------------------------------------------------[003]
-  * Change-History---------------------------------------------------------[004]
-* References---------------------------------------------------------------[005]
+* History------------------------------------------------------------------[003]
+* References---------------------------------------------------------------[004]
 
 
 [001] Installation
@@ -41,65 +40,62 @@ ________________________________________________________________________________
 Refer to the manual pages and command help output.
 
 
-[003] Information
+[003] History
 ________________________________________________________________________________
 
-
---[004]-Change-History--------------------------------------------------------
-
-<div style="max-height:177px;overflow:hidden scroll">  2021-08-10 <a href="https://github.com/kisslinux/repo/commit/93fb6638f9562251b0343555b2e4e967ad2c54f3">93fb6638</a> python: bump rel
-  2021-08-10 <a href="https://github.com/kisslinux/repo/commit/2ef91243b52a14386afc1a20143cfdadd5c75478">2ef91243</a> python: slow startup fix for all pyc files
-  2021-08-10 <a href="https://github.com/kisslinux/repo/commit/42f4937f708dbac3b36d4eabfcb9fc8e3fa32f7a">42f4937f</a> python: fix slow startup time
-  2021-08-10 <a href="https://github.com/kisslinux/repo/commit/a95ba8739bc4a1380fb01db414bfdafa95bb842f">a95ba873</a> python: set default stack size to 1MB
-  2021-08-10 <a href="https://github.com/kisslinux/repo/commit/a2119c220f9bf168205dcfb4f0ecfcb1f56f6ca9">a2119c22</a> python: remove unneeded line
-  2021-07-20 <a href="https://github.com/kisslinux/repo/commit/9ee14d930c86ea37ad471cddc832ea2489bdfbcb">9ee14d93</a> python: enable ensurepip. Closes #295
-  2021-07-18 <a href="https://github.com/kisslinux/repo/commit/f2e4cb7076d453638f1be96e71f83f949d6e9e83">f2e4cb70</a> python: update for new env
-  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/1c1499d18118b18af7ee1259429f176e67ed1881">1c1499d1</a> python: use VERSION
-  2021-07-08 <a href="https://github.com/kisslinux/repo/commit/2716d66de1a92fa0982af54beb15da34780c8aab">2716d66d</a> python: depend on openssl
-  2021-07-06 <a href="https://github.com/kisslinux/repo/commit/41c785dfd6c64e22940f7068d11d85bc2a4d9dfe">41c785df</a> python: add libressl to depends
-  2021-06-30 <a href="https://github.com/kisslinux/repo/commit/526c2462e65d3f9f04d7bde28cf18acf5f00b77e">526c2462</a> python: 3.9.6
-  2020-10-06 <a href="https://github.com/kisslinux/repo/commit/6f803a3745f73116849c02a61c280379426ffbc1">6f803a37</a> python: bump to 3.9.0
-  2020-09-24 <a href="https://github.com/kisslinux/repo/commit/6a2d6104b66756985b4259b525e2529347ba8c5b">6a2d6104</a> python: 3.8.6
-  2020-07-21 <a href="https://github.com/kisslinux/repo/commit/ed0c3ec4f60f3c90bc56433d22d215f4bd8366a5">ed0c3ec4</a> python: bump to 3.8.5
-  2020-07-14 <a href="https://github.com/kisslinux/repo/commit/06b1e7acdff4bfdfc699f03bdb497008be40d3ff">06b1e7ac</a> python: bump to 3.8.4
-  2020-05-25 <a href="https://github.com/kisslinux/repo/commit/94f8a65abb7b577761c69a1011d6137c5c1a3f13">94f8a65a</a> python: Add back 2to3
-  2020-05-14 <a href="https://github.com/kisslinux/repo/commit/5c3afa2ac3519e3662af76a5e17265633b17b4ce">5c3afa2a</a> python: bump to 3.8.3
-  2020-03-28 <a href="https://github.com/kisslinux/repo/commit/33ee7e748dba8ffe21438cca35b168703e853709">33ee7e74</a> python: Re-add CFLAGS as clang (as of 10.0.0) supports it
-  2020-03-24 <a href="https://github.com/kisslinux/repo/commit/ec965e86754a0d05a208d4c8005433f2737c7920">ec965e86</a> python: Disable CFLAG for clang. Closes #177
-  2020-03-24 <a href="https://github.com/kisslinux/repo/commit/878a5ff1d5a19bf8f4346d6bc138c5e59294aaf8">878a5ff1</a> python: Drop -r
-  2020-03-24 <a href="https://github.com/kisslinux/repo/commit/f03ebb108022239bfdcb5c93d0d3b99004ee65a8">f03ebb10</a> python: Drop 90-100MB of STUFF
-  2020-02-26 <a href="https://github.com/kisslinux/repo/commit/d0dc7f4a04f33b3153acf6cc86ccba37025cc22e">d0dc7f4a</a> python: fix chmod
-  2020-02-25 <a href="https://github.com/kisslinux/repo/commit/b24033a2a05730cec7f05ca4d5320311853b26d0">b24033a2</a> python: bump to 3.8.2
-  2020-02-08 <a href="https://github.com/kisslinux/repo/commit/5901fbf9fe398547b28736f639f23fe1ec93da52">5901fbf9</a> python: remove util-linux dependency
-  2019-12-19 <a href="https://github.com/kisslinux/repo/commit/3ccd70cb316922dba7efc26c6f52a6fab2b186c2">3ccd70cb</a> python: bump to 3.8.1
-  2019-10-15 <a href="https://github.com/kisslinux/repo/commit/08d630b20bc867259e420c414fc8121caf67b43f">08d630b2</a> python: bump to 3.8.0. See: https://getkiss.org/news/20191015b
-  2019-09-11 <a href="https://github.com/kisslinux/repo/commit/232af986dabaf44064e5e4f040e516fd0e217d57">232af986</a> python: Fix python not always installing pip/setuptools
-  2019-09-09 <a href="https://github.com/kisslinux/repo/commit/3a7d6d072df33c766e18ad931e795d1a78449da3">3a7d6d07</a> python: fix builds sometimes not including pip/setuptools
-  2019-08-30 <a href="https://github.com/kisslinux/repo/commit/7939a69d5e7e844bb027f1864dbd2ea07f857801">7939a69d</a> python: fix package
-  2019-08-28 <a href="https://github.com/kisslinux/repo/commit/7faf20ea4c72c75fa6046d3408bd9cdb03d34df0">7faf20ea</a> python: Add pip to builds
-  2019-08-21 <a href="https://github.com/kisslinux/repo/commit/6f06b55daf64f8a59d70c1bafb41902fa0b9672e">6f06b55d</a> python: fix checksums
-  2019-08-20 <a href="https://github.com/kisslinux/repo/commit/973757c323432aaa527c9c2c953ad61332d40dc5">973757c3</a> python: fix depends
-  2019-08-20 <a href="https://github.com/kisslinux/repo/commit/e0b763fe52f19dec11c54e4736cce2dceb569d88">e0b763fe</a> python: fix 3.7 build.
-  2019-08-20 <a href="https://github.com/kisslinux/repo/commit/579c2947628f39cb9d426e295617304609ae3977">579c2947</a> python: fix build
-  2019-08-20 <a href="https://github.com/kisslinux/repo/commit/b2af02d7fe4419174f97115ce4129c5fe76077f0">b2af02d7</a> python: revert to python 3.6.8
-  2019-08-17 <a href="https://github.com/kisslinux/repo/commit/86f0da281785a704446b9651c8acc06b5a7dafce">86f0da28</a> python: bump to 3.7.4
-  2019-07-17 <a href="https://github.com/kisslinux/repo/commit/18b1fb4a78cfa208f971d88d3fccab63f7feb5c3">18b1fb4a</a> python: Revert auto rebuilding osubpackages.
-  2019-07-17 <a href="https://github.com/kisslinux/repo/commit/6dda50a1cc1e32246639ba03ad70522a346c5cf0">6dda50a1</a> python: Rebuild all subpackages if required.
-  2019-07-17 <a href="https://github.com/kisslinux/repo/commit/fa56ed1ad30a5d32b0d7d14127d3f6c769431260">fa56ed1a</a> python: Rebuild all subpackages if required.
-  2019-06-27 <a href="https://github.com/kisslinux/repo/commit/5e754ddee7eda6eff32f84c6cce43885c3fb920b">5e754dde</a> python: pls
-  2019-06-27 <a href="https://github.com/kisslinux/repo/commit/52ad04e69b8cdb9de78929f5c9ccb50a4e3f5c93">52ad04e6</a> python: Fix conflict with setuptools
-  2019-06-27 <a href="https://github.com/kisslinux/repo/commit/0f29f261fe3c6a6ed89d42cb1b68c22cb0fb61d1">0f29f261</a> python: Rollbac to 3.6.8
-  2019-06-27 <a href="https://github.com/kisslinux/repo/commit/7878725d5c01b15bd993b18d0b5f81e1cccc9382">7878725d</a> python: Fix build.
-  2019-06-27 <a href="https://github.com/kisslinux/repo/commit/b39f7eb4943e2f0739eef4bcbf067e7f2784209f">b39f7eb4</a> python: Attempt to fix build.
-  2019-06-27 <a href="https://github.com/kisslinux/repo/commit/7ed8ba10d55488d6614e224eb42c6fd91bd03f56">7ed8ba10</a> python: Attempt to fix build.
-  2019-06-27 <a href="https://github.com/kisslinux/repo/commit/c986f9c08ff96e97a5b0d7052a49e18b1a8367b2">c986f9c0</a> python: Attempt to fix build.
-  2019-06-25 <a href="https://github.com/kisslinux/repo/commit/0579582fd7ae04ac8dcc2029d6cf5c5529776c93">0579582f</a> python: Symlink to python
-  2019-06-25 <a href="https://github.com/kisslinux/repo/commit/5004e9f81d878599d4ec014d031f92a1a16d177a">5004e9f8</a> python: Fix musl build and remove libffi.
-  2019-06-25 <a href="https://github.com/kisslinux/repo/commit/0d4816e865a245ccfa78933a631eea394f8df13d">0d4816e8</a> python: Fix build error.
-  2019-06-02 <a href="https://github.com/kisslinux/repo/commit/0aa1d93a7dbf9b0f4271ddb8567d8571b35e8974">0aa1d93a</a> python: init at 3.7.3
+<div style="max-height:177px;overflow:hidden scroll">2021-08-10 <a href="https://github.com/kisslinux/repo/commit/93fb6638f9562251b0343555b2e4e967ad2c54f3">93fb6638</a> python: bump rel
+2021-08-10 <a href="https://github.com/kisslinux/repo/commit/2ef91243b52a14386afc1a20143cfdadd5c75478">2ef91243</a> python: slow startup fix for all pyc files
+2021-08-10 <a href="https://github.com/kisslinux/repo/commit/42f4937f708dbac3b36d4eabfcb9fc8e3fa32f7a">42f4937f</a> python: fix slow startup time
+2021-08-10 <a href="https://github.com/kisslinux/repo/commit/a95ba8739bc4a1380fb01db414bfdafa95bb842f">a95ba873</a> python: set default stack size to 1MB
+2021-08-10 <a href="https://github.com/kisslinux/repo/commit/a2119c220f9bf168205dcfb4f0ecfcb1f56f6ca9">a2119c22</a> python: remove unneeded line
+2021-07-20 <a href="https://github.com/kisslinux/repo/commit/9ee14d930c86ea37ad471cddc832ea2489bdfbcb">9ee14d93</a> python: enable ensurepip. Closes #295
+2021-07-18 <a href="https://github.com/kisslinux/repo/commit/f2e4cb7076d453638f1be96e71f83f949d6e9e83">f2e4cb70</a> python: update for new env
+2021-07-15 <a href="https://github.com/kisslinux/repo/commit/1c1499d18118b18af7ee1259429f176e67ed1881">1c1499d1</a> python: use VERSION
+2021-07-08 <a href="https://github.com/kisslinux/repo/commit/2716d66de1a92fa0982af54beb15da34780c8aab">2716d66d</a> python: depend on openssl
+2021-07-06 <a href="https://github.com/kisslinux/repo/commit/41c785dfd6c64e22940f7068d11d85bc2a4d9dfe">41c785df</a> python: add libressl to depends
+2021-06-30 <a href="https://github.com/kisslinux/repo/commit/526c2462e65d3f9f04d7bde28cf18acf5f00b77e">526c2462</a> python: 3.9.6
+2020-10-06 <a href="https://github.com/kisslinux/repo/commit/6f803a3745f73116849c02a61c280379426ffbc1">6f803a37</a> python: bump to 3.9.0
+2020-09-24 <a href="https://github.com/kisslinux/repo/commit/6a2d6104b66756985b4259b525e2529347ba8c5b">6a2d6104</a> python: 3.8.6
+2020-07-21 <a href="https://github.com/kisslinux/repo/commit/ed0c3ec4f60f3c90bc56433d22d215f4bd8366a5">ed0c3ec4</a> python: bump to 3.8.5
+2020-07-14 <a href="https://github.com/kisslinux/repo/commit/06b1e7acdff4bfdfc699f03bdb497008be40d3ff">06b1e7ac</a> python: bump to 3.8.4
+2020-05-25 <a href="https://github.com/kisslinux/repo/commit/94f8a65abb7b577761c69a1011d6137c5c1a3f13">94f8a65a</a> python: Add back 2to3
+2020-05-14 <a href="https://github.com/kisslinux/repo/commit/5c3afa2ac3519e3662af76a5e17265633b17b4ce">5c3afa2a</a> python: bump to 3.8.3
+2020-03-28 <a href="https://github.com/kisslinux/repo/commit/33ee7e748dba8ffe21438cca35b168703e853709">33ee7e74</a> python: Re-add CFLAGS as clang (as of 10.0.0) supports it
+2020-03-24 <a href="https://github.com/kisslinux/repo/commit/ec965e86754a0d05a208d4c8005433f2737c7920">ec965e86</a> python: Disable CFLAG for clang. Closes #177
+2020-03-24 <a href="https://github.com/kisslinux/repo/commit/878a5ff1d5a19bf8f4346d6bc138c5e59294aaf8">878a5ff1</a> python: Drop -r
+2020-03-24 <a href="https://github.com/kisslinux/repo/commit/f03ebb108022239bfdcb5c93d0d3b99004ee65a8">f03ebb10</a> python: Drop 90-100MB of STUFF
+2020-02-26 <a href="https://github.com/kisslinux/repo/commit/d0dc7f4a04f33b3153acf6cc86ccba37025cc22e">d0dc7f4a</a> python: fix chmod
+2020-02-25 <a href="https://github.com/kisslinux/repo/commit/b24033a2a05730cec7f05ca4d5320311853b26d0">b24033a2</a> python: bump to 3.8.2
+2020-02-08 <a href="https://github.com/kisslinux/repo/commit/5901fbf9fe398547b28736f639f23fe1ec93da52">5901fbf9</a> python: remove util-linux dependency
+2019-12-19 <a href="https://github.com/kisslinux/repo/commit/3ccd70cb316922dba7efc26c6f52a6fab2b186c2">3ccd70cb</a> python: bump to 3.8.1
+2019-10-15 <a href="https://github.com/kisslinux/repo/commit/08d630b20bc867259e420c414fc8121caf67b43f">08d630b2</a> python: bump to 3.8.0. See: https://getkiss.org/news/20191015b
+2019-09-11 <a href="https://github.com/kisslinux/repo/commit/232af986dabaf44064e5e4f040e516fd0e217d57">232af986</a> python: Fix python not always installing pip/setuptools
+2019-09-09 <a href="https://github.com/kisslinux/repo/commit/3a7d6d072df33c766e18ad931e795d1a78449da3">3a7d6d07</a> python: fix builds sometimes not including pip/setuptools
+2019-08-30 <a href="https://github.com/kisslinux/repo/commit/7939a69d5e7e844bb027f1864dbd2ea07f857801">7939a69d</a> python: fix package
+2019-08-28 <a href="https://github.com/kisslinux/repo/commit/7faf20ea4c72c75fa6046d3408bd9cdb03d34df0">7faf20ea</a> python: Add pip to builds
+2019-08-21 <a href="https://github.com/kisslinux/repo/commit/6f06b55daf64f8a59d70c1bafb41902fa0b9672e">6f06b55d</a> python: fix checksums
+2019-08-20 <a href="https://github.com/kisslinux/repo/commit/973757c323432aaa527c9c2c953ad61332d40dc5">973757c3</a> python: fix depends
+2019-08-20 <a href="https://github.com/kisslinux/repo/commit/e0b763fe52f19dec11c54e4736cce2dceb569d88">e0b763fe</a> python: fix 3.7 build.
+2019-08-20 <a href="https://github.com/kisslinux/repo/commit/579c2947628f39cb9d426e295617304609ae3977">579c2947</a> python: fix build
+2019-08-20 <a href="https://github.com/kisslinux/repo/commit/b2af02d7fe4419174f97115ce4129c5fe76077f0">b2af02d7</a> python: revert to python 3.6.8
+2019-08-17 <a href="https://github.com/kisslinux/repo/commit/86f0da281785a704446b9651c8acc06b5a7dafce">86f0da28</a> python: bump to 3.7.4
+2019-07-17 <a href="https://github.com/kisslinux/repo/commit/18b1fb4a78cfa208f971d88d3fccab63f7feb5c3">18b1fb4a</a> python: Revert auto rebuilding osubpackages.
+2019-07-17 <a href="https://github.com/kisslinux/repo/commit/6dda50a1cc1e32246639ba03ad70522a346c5cf0">6dda50a1</a> python: Rebuild all subpackages if required.
+2019-07-17 <a href="https://github.com/kisslinux/repo/commit/fa56ed1ad30a5d32b0d7d14127d3f6c769431260">fa56ed1a</a> python: Rebuild all subpackages if required.
+2019-06-27 <a href="https://github.com/kisslinux/repo/commit/5e754ddee7eda6eff32f84c6cce43885c3fb920b">5e754dde</a> python: pls
+2019-06-27 <a href="https://github.com/kisslinux/repo/commit/52ad04e69b8cdb9de78929f5c9ccb50a4e3f5c93">52ad04e6</a> python: Fix conflict with setuptools
+2019-06-27 <a href="https://github.com/kisslinux/repo/commit/0f29f261fe3c6a6ed89d42cb1b68c22cb0fb61d1">0f29f261</a> python: Rollbac to 3.6.8
+2019-06-27 <a href="https://github.com/kisslinux/repo/commit/7878725d5c01b15bd993b18d0b5f81e1cccc9382">7878725d</a> python: Fix build.
+2019-06-27 <a href="https://github.com/kisslinux/repo/commit/b39f7eb4943e2f0739eef4bcbf067e7f2784209f">b39f7eb4</a> python: Attempt to fix build.
+2019-06-27 <a href="https://github.com/kisslinux/repo/commit/7ed8ba10d55488d6614e224eb42c6fd91bd03f56">7ed8ba10</a> python: Attempt to fix build.
+2019-06-27 <a href="https://github.com/kisslinux/repo/commit/c986f9c08ff96e97a5b0d7052a49e18b1a8367b2">c986f9c0</a> python: Attempt to fix build.
+2019-06-25 <a href="https://github.com/kisslinux/repo/commit/0579582fd7ae04ac8dcc2029d6cf5c5529776c93">0579582f</a> python: Symlink to python
+2019-06-25 <a href="https://github.com/kisslinux/repo/commit/5004e9f81d878599d4ec014d031f92a1a16d177a">5004e9f8</a> python: Fix musl build and remove libffi.
+2019-06-25 <a href="https://github.com/kisslinux/repo/commit/0d4816e865a245ccfa78933a631eea394f8df13d">0d4816e8</a> python: Fix build error.
+2019-06-02 <a href="https://github.com/kisslinux/repo/commit/0aa1d93a7dbf9b0f4271ddb8567d8571b35e8974">0aa1d93a</a> python: init at 3.7.3
 </div>
 
-[005] References
+[004] References
 ________________________________________________________________________________
 
 [0] https://en.wikipedia.org/wiki/Python_(programming_language)

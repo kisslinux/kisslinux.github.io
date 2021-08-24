@@ -11,9 +11,8 @@ ________________________________________________________________________________
 
 * Installation-------------------------------------------------------------[001]
 * Usage--------------------------------------------------------------------[002]
-* Information--------------------------------------------------------------[003]
-  * Change-History---------------------------------------------------------[004]
-* References---------------------------------------------------------------[005]
+* History------------------------------------------------------------------[003]
+* References---------------------------------------------------------------[004]
 
 
 [001] Installation
@@ -32,20 +31,17 @@ ________________________________________________________________________________
 Refer to the manual pages and command help output.
 
 
-[003] Information
+[003] History
 ________________________________________________________________________________
 
-
---[004]-Change-History--------------------------------------------------------
-
-<div style="max-height:177px;overflow:hidden scroll">  2021-07-18 <a href="https://github.com/kisslinux/repo/commit/de69948bbb4ec8f5a3bb19fffb4fc326cfddedda">de69948b</a> scdoc: update for new env
-  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/8e8951fd29ee0b2661937e77539af980d5e65dc7">8e8951fd</a> scdoc: use VERSION
-  2021-07-12 <a href="https://github.com/kisslinux/repo/commit/36bfef6f3164c371de50900a9126018558788801">36bfef6f</a> scdoc: move to extra
-  2021-07-12 <a href="https://github.com/kisslinux/repo/commit/33f422db82ea48e3d020e1a5d52bd5bb49c9557f">33f422db</a> scdoc: Fix prefix
-  2021-07-12 <a href="https://github.com/kisslinux/repo/commit/ecc906ad143cab459847fad08d8e65b1309b008a">ecc906ad</a> scdoc: 1.11.1 (See #273)
+<div style="max-height:177px;overflow:hidden scroll">2021-07-18 <a href="https://github.com/kisslinux/repo/commit/de69948bbb4ec8f5a3bb19fffb4fc326cfddedda">de69948b</a> scdoc: update for new env
+2021-07-15 <a href="https://github.com/kisslinux/repo/commit/8e8951fd29ee0b2661937e77539af980d5e65dc7">8e8951fd</a> scdoc: use VERSION
+2021-07-12 <a href="https://github.com/kisslinux/repo/commit/36bfef6f3164c371de50900a9126018558788801">36bfef6f</a> scdoc: move to extra
+2021-07-12 <a href="https://github.com/kisslinux/repo/commit/33f422db82ea48e3d020e1a5d52bd5bb49c9557f">33f422db</a> scdoc: Fix prefix
+2021-07-12 <a href="https://github.com/kisslinux/repo/commit/ecc906ad143cab459847fad08d8e65b1309b008a">ecc906ad</a> scdoc: 1.11.1 (See #273)
 </div>
 
-[005] References
+[004] References
 ________________________________________________________________________________
 
 [0] https://git.sr.ht/~sircmpwn/scdoc

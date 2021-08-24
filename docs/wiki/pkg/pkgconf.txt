@@ -12,9 +12,8 @@ ________________________________________________________________________________
 
 * Installation-------------------------------------------------------------[001]
 * Usage--------------------------------------------------------------------[002]
-* Information--------------------------------------------------------------[003]
-  * Change-History---------------------------------------------------------[004]
-* References---------------------------------------------------------------[005]
+* History------------------------------------------------------------------[003]
+* References---------------------------------------------------------------[004]
 
 
 [001] Installation
@@ -33,34 +32,31 @@ ________________________________________________________________________________
 Refer to the manual pages and command help output.
 
 
-[003] Information
+[003] History
 ________________________________________________________________________________
 
-
---[004]-Change-History--------------------------------------------------------
-
-<div style="max-height:177px;overflow:hidden scroll">  2021-07-25 <a href="https://github.com/kisslinux/repo/commit/eba8dda203a17375f2deccc15dbb3e7e5958b0f7">eba8dda2</a> pkgconf: 1.8.0
-  2021-07-18 <a href="https://github.com/kisslinux/repo/commit/d77a8b9b242c732196d1a6a4d5e71aadd9f8781c">d77a8b9b</a> pkgconf: update for new env
-  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/03344b4c6210e6a5566137290d55701fd0d43ca7">03344b4c</a> pkgconf: use VERSION
-  2021-07-06 <a href="https://github.com/kisslinux/repo/commit/98c08f9c4873177175137a7ec0395e545acd877a">98c08f9c</a> pkgconf: remove documentation
-  2021-06-30 <a href="https://github.com/kisslinux/repo/commit/97cc8ae1738a5a1b96380280bb931f4d1288a628">97cc8ae1</a> pkgconf: 1.7.4
-  2020-09-09 <a href="https://github.com/kisslinux/repo/commit/b56b17b6fbdcef0b822c16520bf976a90c7ca80e">b56b17b6</a> pkgconf: move to extra
-  2020-05-31 <a href="https://github.com/kisslinux/repo/commit/15f41a30a02cb710c97d27926f5710fe1b702229">15f41a30</a> pkgconf: bump to 1.7.3
-  2020-05-27 <a href="https://github.com/kisslinux/repo/commit/e77c68587e7d59d88186718bd3ba011eb39724f1">e77c6858</a> pkgconf: bump to 1.7.2
-  2020-05-25 <a href="https://github.com/kisslinux/repo/commit/3c30be2bfde663489fddad6e0cdf6cdcd8ae8f25">3c30be2b</a> pkgconf: bump to 1.7.0
-  2020-03-23 <a href="https://github.com/kisslinux/repo/commit/22c346e14b26d61fd3fd48b51e7f644f1894f0c8">22c346e1</a> pkgconf: Use https
-  2020-01-27 <a href="https://github.com/kisslinux/repo/commit/f8658f130e6e0257520b4afdc945b49b93c497e1">f8658f13</a> pkgconf: Swap to http source for now. Closes #139
-  2019-10-07 <a href="https://github.com/kisslinux/repo/commit/eea3cabcaba8307071ae14734539f86f8987f2e7">eea3cabc</a> pkgconf: remove rm
-  2019-09-16 <a href="https://github.com/kisslinux/repo/commit/aa33cf7ec0742e279c210936d4a7e53eceb6cd11">aa33cf7e</a> pkgconf: clean build
-  2019-08-11 <a href="https://github.com/kisslinux/repo/commit/0a58e8445558c499a4afe7fd2171bb65b3eae5a3">0a58e844</a> pkgconf: remove docs
-  2019-08-04 <a href="https://github.com/kisslinux/repo/commit/b1a6e967813ce242f71b05affdcdbd00877b46cd">b1a6e967</a> pkgconf: bump to 1.6.3
-  2019-07-06 <a href="https://github.com/kisslinux/repo/commit/ee1cd304c67bd044c63433aadde9ac851c25cefe">ee1cd304</a> pkgconf: bump to 1.6.1
-  2019-06-19 <a href="https://github.com/kisslinux/repo/commit/8cf267eeb7e3ee39bfeacf4e11e552d927675043">8cf267ee</a> pkgconf: add license
-  2019-06-19 <a href="https://github.com/kisslinux/repo/commit/7c00ab0acf9ac45c9a97c4c9cd68b1213df6ec3c">7c00ab0a</a> pkgconf: update source url
-  2019-06-02 <a href="https://github.com/kisslinux/repo/commit/25f4e9238cfa7f32ef9e63c315a21e39245730ab">25f4e923</a> pkgconf: update manifest
+<div style="max-height:177px;overflow:hidden scroll">2021-07-25 <a href="https://github.com/kisslinux/repo/commit/eba8dda203a17375f2deccc15dbb3e7e5958b0f7">eba8dda2</a> pkgconf: 1.8.0
+2021-07-18 <a href="https://github.com/kisslinux/repo/commit/d77a8b9b242c732196d1a6a4d5e71aadd9f8781c">d77a8b9b</a> pkgconf: update for new env
+2021-07-15 <a href="https://github.com/kisslinux/repo/commit/03344b4c6210e6a5566137290d55701fd0d43ca7">03344b4c</a> pkgconf: use VERSION
+2021-07-06 <a href="https://github.com/kisslinux/repo/commit/98c08f9c4873177175137a7ec0395e545acd877a">98c08f9c</a> pkgconf: remove documentation
+2021-06-30 <a href="https://github.com/kisslinux/repo/commit/97cc8ae1738a5a1b96380280bb931f4d1288a628">97cc8ae1</a> pkgconf: 1.7.4
+2020-09-09 <a href="https://github.com/kisslinux/repo/commit/b56b17b6fbdcef0b822c16520bf976a90c7ca80e">b56b17b6</a> pkgconf: move to extra
+2020-05-31 <a href="https://github.com/kisslinux/repo/commit/15f41a30a02cb710c97d27926f5710fe1b702229">15f41a30</a> pkgconf: bump to 1.7.3
+2020-05-27 <a href="https://github.com/kisslinux/repo/commit/e77c68587e7d59d88186718bd3ba011eb39724f1">e77c6858</a> pkgconf: bump to 1.7.2
+2020-05-25 <a href="https://github.com/kisslinux/repo/commit/3c30be2bfde663489fddad6e0cdf6cdcd8ae8f25">3c30be2b</a> pkgconf: bump to 1.7.0
+2020-03-23 <a href="https://github.com/kisslinux/repo/commit/22c346e14b26d61fd3fd48b51e7f644f1894f0c8">22c346e1</a> pkgconf: Use https
+2020-01-27 <a href="https://github.com/kisslinux/repo/commit/f8658f130e6e0257520b4afdc945b49b93c497e1">f8658f13</a> pkgconf: Swap to http source for now. Closes #139
+2019-10-07 <a href="https://github.com/kisslinux/repo/commit/eea3cabcaba8307071ae14734539f86f8987f2e7">eea3cabc</a> pkgconf: remove rm
+2019-09-16 <a href="https://github.com/kisslinux/repo/commit/aa33cf7ec0742e279c210936d4a7e53eceb6cd11">aa33cf7e</a> pkgconf: clean build
+2019-08-11 <a href="https://github.com/kisslinux/repo/commit/0a58e8445558c499a4afe7fd2171bb65b3eae5a3">0a58e844</a> pkgconf: remove docs
+2019-08-04 <a href="https://github.com/kisslinux/repo/commit/b1a6e967813ce242f71b05affdcdbd00877b46cd">b1a6e967</a> pkgconf: bump to 1.6.3
+2019-07-06 <a href="https://github.com/kisslinux/repo/commit/ee1cd304c67bd044c63433aadde9ac851c25cefe">ee1cd304</a> pkgconf: bump to 1.6.1
+2019-06-19 <a href="https://github.com/kisslinux/repo/commit/8cf267eeb7e3ee39bfeacf4e11e552d927675043">8cf267ee</a> pkgconf: add license
+2019-06-19 <a href="https://github.com/kisslinux/repo/commit/7c00ab0acf9ac45c9a97c4c9cd68b1213df6ec3c">7c00ab0a</a> pkgconf: update source url
+2019-06-02 <a href="https://github.com/kisslinux/repo/commit/25f4e9238cfa7f32ef9e63c315a21e39245730ab">25f4e923</a> pkgconf: update manifest
 </div>
 
-[005] References
+[004] References
 ________________________________________________________________________________
 
 [0] https://github.com/pkgconf/pkgconf
