@@ -51,7 +51,7 @@ ________________________________________________________________________________
 
 --[006]-Change-History--------------------------------------------------------
 
-  2021-07-27 <a href="https://github.com/kisslinux/repo/commit/1010c8cc2bde7ea033be0b43da54ee321e380f90">1010c8cc</a> foot: ensure manual pages are installed when scdoc available
+<div style="max-height:177px;overflow:hidden scroll">  2021-07-27 <a href="https://github.com/kisslinux/repo/commit/1010c8cc2bde7ea033be0b43da54ee321e380f90">1010c8cc</a> foot: ensure manual pages are installed when scdoc available
   2021-07-27 <a href="https://github.com/kisslinux/repo/commit/3a47c8d437083484dcf2361806f20dc8c3f6857a">3a47c8d4</a> foot: disable ime detection
   2021-07-27 <a href="https://github.com/kisslinux/repo/commit/20500c0608a804e53e3dc4bdf3d279d1f717d084">20500c06</a> foot: use commit to backport bugfixes
   2021-07-23 <a href="https://github.com/kisslinux/repo/commit/cb978e2d3e5f505a6f6d12bc5daae26828c4fe2a">cb978e2d</a> foot: fcft 2.4.4
@@ -61,7 +61,7 @@ ________________________________________________________________________________
   2021-07-15 <a href="https://github.com/kisslinux/repo/commit/aa38115ce731fd616645bf438dab779a8f069c3e">aa38115c</a> foot: use VERSION
   2021-07-08 <a href="https://github.com/kisslinux/repo/commit/99e7abae9e9d17c375e0d4a7ef94717301067070">99e7abae</a> foot: remove completions, READMEs, etc
   2021-07-08 <a href="https://github.com/kisslinux/repo/commit/72903a83577d11f0fd20d8ad1ae7716f04e217f6">72903a83</a> foot: 1.8.1
-
+</div>
 
 [007] References
 ________________________________________________________________________________

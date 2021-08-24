@@ -46,7 +46,7 @@ ________________________________________________________________________________
 
 --[004]-Change-History--------------------------------------------------------
 
-  2021-07-27 <a href="https://github.com/kisslinux/repo/commit/1047006af1a18fc414a9a14d5c3256b57ad51803">1047006a</a> cmake: 3.21.1
+<div style="max-height:177px;overflow:hidden scroll">  2021-07-27 <a href="https://github.com/kisslinux/repo/commit/1047006af1a18fc414a9a14d5c3256b57ad51803">1047006a</a> cmake: 3.21.1
   2021-07-18 <a href="https://github.com/kisslinux/repo/commit/b5778a061c92b3e771f0a46b90236d8ae84a0719">b5778a06</a> cmake: update for new env
   2021-07-15 <a href="https://github.com/kisslinux/repo/commit/53fea662adbf78ce97b47363508cf31e1fa208ba">53fea662</a> make: update for new env
   2021-07-15 <a href="https://github.com/kisslinux/repo/commit/58c790520d2ec9d6741c387e5e20ced6244c85c1">58c79052</a> cmake: use MAJOR/MINOR/VERSION
@@ -107,7 +107,7 @@ ________________________________________________________________________________
   2019-06-18 <a href="https://github.com/kisslinux/repo/commit/63603c67cf70e69bda153bec01909c4344bdae76">63603c67</a> make: add package
   2019-06-02 <a href="https://github.com/kisslinux/repo/commit/3d462865a9ff07107eebd4fae2fc0897c4473416">3d462865</a> automake: add manifest
   2019-06-02 <a href="https://github.com/kisslinux/repo/commit/f70fcbf1ca7911e6fa9b655479249e2f84fd63f2">f70fcbf1</a> cmake: init at 3.14.5
-
+</div>
 
 [005] References
 ________________________________________________________________________________

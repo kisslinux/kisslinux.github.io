@@ -41,7 +41,7 @@ ________________________________________________________________________________
 
 --[004]-Change-History--------------------------------------------------------
 
-  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/05fd09a5970113e448c7dfc144231b118eab0f65">05fd09a5</a> m4: update for new env
+<div style="max-height:177px;overflow:hidden scroll">  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/05fd09a5970113e448c7dfc144231b118eab0f65">05fd09a5</a> m4: update for new env
   2021-07-15 <a href="https://github.com/kisslinux/repo/commit/241db8b60072392b69be8f80ce4c27ef9f867487">241db8b6</a> m4: use VERSION
   2021-06-30 <a href="https://github.com/kisslinux/repo/commit/dacf77a1250e8701d51bb041cb6d3480b40bab1e">dacf77a1</a> m4: 1.4.19
   2020-09-30 <a href="https://github.com/kisslinux/repo/commit/62dc459e416bfd8099ae2fe41b846483fcae5890">62dc459e</a> m4: statically linked
@@ -55,7 +55,7 @@ ________________________________________________________________________________
   2019-06-19 <a href="https://github.com/kisslinux/repo/commit/5aa18f3f49f523a36e46d74ece1584ace2443e40">5aa18f3f</a> m4: add license
   2019-06-17 <a href="https://github.com/kisslinux/repo/commit/990a525c97869b9a9f2c9852855cea6db73572c4">990a525c</a> m4: Fix build on glibc.
   2019-06-02 <a href="https://github.com/kisslinux/repo/commit/68d1f1f3683f713eb130c7252ecaa07c4f5ce06b">68d1f1f3</a> m4: remove unneeded patch, update manifest
-
+</div>
 
 [005] References
 ________________________________________________________________________________

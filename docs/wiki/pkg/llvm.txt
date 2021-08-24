@@ -44,7 +44,7 @@ ________________________________________________________________________________
 
 --[004]-Change-History--------------------------------------------------------
 
-  2021-08-01 <a href="https://github.com/kisslinux/repo/commit/273685de9676321627761c6898e757bea5643ba3">273685de</a> llvm: remove ncurses dependency
+<div style="max-height:177px;overflow:hidden scroll">  2021-08-01 <a href="https://github.com/kisslinux/repo/commit/273685de9676321627761c6898e757bea5643ba3">273685de</a> llvm: remove ncurses dependency
   2021-07-18 <a href="https://github.com/kisslinux/repo/commit/0070d6f2630f803635fb281aaa7da1187452d4d7">0070d6f2</a> llvm: update for new env
   2021-07-18 <a href="https://github.com/kisslinux/repo/commit/e8d1d91604224b72b050c817315019103695df93">e8d1d916</a> llvm: don't link to curses
   2021-07-15 <a href="https://github.com/kisslinux/repo/commit/9ae78630f226fbf6bedf8032553218c2c035c9aa">9ae78630</a> llvm: use VERSION/VERSION
@@ -68,7 +68,7 @@ ________________________________________________________________________________
   2019-06-27 <a href="https://github.com/kisslinux/repo/commit/c6c20843eafd7f0c4293f0ff576c6e5c0760a3d2">c6c20843</a> llvm: Build with amdgpu
   2019-06-27 <a href="https://github.com/kisslinux/repo/commit/c3a3c2ff3d796d66e482fbebadae7a42e5962b3a">c3a3c2ff</a> llvm: progress
   2019-06-02 <a href="https://github.com/kisslinux/repo/commit/03fff8ef23999a9cf63e071c9343ba0acf0f7a8d">03fff8ef</a> llvm: init at 8.0.0
-
+</div>
 
 [005] References
 ________________________________________________________________________________

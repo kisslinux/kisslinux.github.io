@@ -47,10 +47,10 @@ ________________________________________________________________________________
 
 --[004]-Change-History--------------------------------------------------------
 
-  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/a7fa8c7de137fe24c209e042c9a4257592d588fc">a7fa8c7d</a> wayland-protocols: update for new env
+<div style="max-height:177px;overflow:hidden scroll">  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/a7fa8c7de137fe24c209e042c9a4257592d588fc">a7fa8c7d</a> wayland-protocols: update for new env
   2021-07-15 <a href="https://github.com/kisslinux/repo/commit/bbf97498e23f4c40d5c66d46788c46af8670c03b">bbf97498</a> wayland-protocols: use VERSION
   2021-07-08 <a href="https://github.com/kisslinux/repo/commit/2a2df871d7fc2ef17d3d1b2761ab16ae56570d15">2a2df871</a> wayland-protocols: 1.21
-
+</div>
 
 [005] References
 ________________________________________________________________________________

@@ -127,7 +127,7 @@ ________________________________________________________________________________
 
 --[008]-Change-History--------------------------------------------------------
 
-  2021-08-23 <a href="https://github.com/kisslinux/repo/commit/f9ab42df297d5e5f90917200224f743d3da29ae1">f9ab42df</a> firefox: 92.0b7
+<div style="max-height:177px;overflow:hidden scroll">  2021-08-23 <a href="https://github.com/kisslinux/repo/commit/f9ab42df297d5e5f90917200224f743d3da29ae1">f9ab42df</a> firefox: 92.0b7
   2021-08-18 <a href="https://github.com/kisslinux/repo/commit/9a2dc73871df2e52c41ffc6c5ad7e152728d790a">9a2dc738</a> firefox: 92.0b5
   2021-08-11 <a href="https://github.com/kisslinux/repo/commit/5c10a54a8edaacbf1965ad519d49b2d90858d23b">5c10a54a</a> firefox: fix #316
   2021-08-10 <a href="https://github.com/kisslinux/repo/commit/8139aaec7f7a11f349a1390f32f9a4f93cfbe63e">8139aaec</a> firefox: 91.0
@@ -290,7 +290,7 @@ ________________________________________________________________________________
   2019-08-03 <a href="https://github.com/kisslinux/repo/commit/e3266fd9fa43948b40cc34187c1e5dd53a004d11">e3266fd9</a> firefox: Disable maintenance-service and em.
   2019-08-03 <a href="https://github.com/kisslinux/repo/commit/2d19c42b50e143dcb2c8f758e0d7c3da37defe76">2d19c42b</a> firefox: Fix OOM errors based on cores.
   2019-08-03 <a href="https://github.com/kisslinux/repo/commit/3aecb17979e427f4ab39776ee7fffdb50cf4c642">3aecb179</a> firefox: new package at 68.0.1
-
+</div>
 
 [009] References
 ________________________________________________________________________________

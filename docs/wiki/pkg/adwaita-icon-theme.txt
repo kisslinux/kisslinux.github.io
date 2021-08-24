@@ -49,10 +49,10 @@ ________________________________________________________________________________
 
 --[004]-Change-History--------------------------------------------------------
 
-  2021-07-17 <a href="https://github.com/kisslinux/repo/commit/748a68578231a44220a278ef2ce5b85a071bd8b7">748a6857</a> adwaita-icon-theme: update for new env
+<div style="max-height:177px;overflow:hidden scroll">  2021-07-17 <a href="https://github.com/kisslinux/repo/commit/748a68578231a44220a278ef2ce5b85a071bd8b7">748a6857</a> adwaita-icon-theme: update for new env
   2021-07-15 <a href="https://github.com/kisslinux/repo/commit/00f0d9bef1abeca47295b916001ea0098e03024f">00f0d9be</a> adwaita-icon-theme: use MAJOR/VERSION
   2021-07-09 <a href="https://github.com/kisslinux/repo/commit/b13f3d042a7cccb56c6af8db67b5d85ced65b8ba">b13f3d04</a> adwaita-icon-theme: 40.1.1
-
+</div>
 
 [005] References
 ________________________________________________________________________________

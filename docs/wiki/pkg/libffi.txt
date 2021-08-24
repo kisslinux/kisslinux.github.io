@@ -43,7 +43,7 @@ ________________________________________________________________________________
 
 --[004]-Change-History--------------------------------------------------------
 
-  2021-07-18 <a href="https://github.com/kisslinux/repo/commit/e49dba458fc1ec402de0277440a29ffd89e401ff">e49dba45</a> libffi: update for new env
+<div style="max-height:177px;overflow:hidden scroll">  2021-07-18 <a href="https://github.com/kisslinux/repo/commit/e49dba458fc1ec402de0277440a29ffd89e401ff">e49dba45</a> libffi: update for new env
   2021-07-15 <a href="https://github.com/kisslinux/repo/commit/ef8fb1e92414262c2fa9b8bc105167ecbe906715">ef8fb1e9</a> libffi: use VERSION/VERSION
   2021-07-03 <a href="https://github.com/kisslinux/repo/commit/20cd5a4206ad33ce6c46ee896a2a2b35e0443312">20cd5a42</a> libffi: typo
   2021-07-03 <a href="https://github.com/kisslinux/repo/commit/d0bb4107b723b7bb0aee7c06cd8fef1da8393c20">d0bb4107</a> libffi: Fix ABI issues with 3.4.2
@@ -63,7 +63,7 @@ ________________________________________________________________________________
   2019-07-23 <a href="https://github.com/kisslinux/repo/commit/0f07b47b95820770287ec2d6bb2820ec0856b33c">0f07b47b</a> libffi: new package at 3.2.1
   2019-06-27 <a href="https://github.com/kisslinux/repo/commit/c053f2f9ad742e25f4e9419c4b4222fe2694414e">c053f2f9</a> libffi: Fix python build.
   2019-06-02 <a href="https://github.com/kisslinux/repo/commit/2af0f72f01b99132abb69e90b4693e3833225f81">2af0f72f</a> libffi: init at 3.2.1
-
+</div>
 
 [005] References
 ________________________________________________________________________________

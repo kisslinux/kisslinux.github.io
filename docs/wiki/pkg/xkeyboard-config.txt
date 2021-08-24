@@ -41,7 +41,7 @@ ________________________________________________________________________________
 
 --[004]-Change-History--------------------------------------------------------
 
-  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/b2bf07f3962b20aa39cde6d3f5a53e9a43d43b68">b2bf07f3</a> xkeyboard-config: use VERSION
+<div style="max-height:177px;overflow:hidden scroll">  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/b2bf07f3962b20aa39cde6d3f5a53e9a43d43b68">b2bf07f3</a> xkeyboard-config: use VERSION
   2021-07-08 <a href="https://github.com/kisslinux/repo/commit/269228278b4f7f277bee227bf35ac5f965b08f97">26922827</a> xkeyboard-config: 2.33
   2021-07-08 <a href="https://github.com/kisslinux/repo/commit/d4b894c2e7251ceb0d91d191a8722552bbff4bd6">d4b894c2</a> xkeyboard-config: 2.32
   2021-07-03 <a href="https://github.com/kisslinux/repo/commit/1dcb6b4c1b0013b65caa12cc62cb5baee6f9b985">1dcb6b4c</a> xkeyboard-config: remove sed -i
@@ -57,7 +57,7 @@ ________________________________________________________________________________
   2020-02-01 <a href="https://github.com/kisslinux/repo/commit/b3db27bfb28cf0413efcfa262290662dbb2f0a03">b3db27bf</a> xkeyboard-config: bump to 2.29
   2019-10-20 <a href="https://github.com/kisslinux/repo/commit/307e711dbc6890c22c7bfa3a086d5066fb957c17">307e711d</a> xkeyboard-config: bump to 2.28
   2019-09-13 <a href="https://github.com/kisslinux/repo/commit/dc198878166fa64f568b20935aae84209fcde079">dc198878</a> xkeyboard-config: use https for source
-
+</div>
 
 [005] References
 ________________________________________________________________________________

@@ -50,10 +50,10 @@ ________________________________________________________________________________
 
 --[005]-Change-History--------------------------------------------------------
 
-  2021-07-18 <a href="https://github.com/kisslinux/repo/commit/471e46b99ce375b11bf0a5aa3062a7c0e10b215d">471e46b9</a> pigz: fix linter
+<div style="max-height:177px;overflow:hidden scroll">  2021-07-18 <a href="https://github.com/kisslinux/repo/commit/471e46b99ce375b11bf0a5aa3062a7c0e10b215d">471e46b9</a> pigz: fix linter
   2021-07-18 <a href="https://github.com/kisslinux/repo/commit/4c226fa3c048700043ea63016f95a99dc34bd01a">4c226fa3</a> pigz: get rid of zopfli and superfluous symlinks
   2021-07-15 <a href="https://github.com/kisslinux/repo/commit/8f254cb7900e76cd70b8a33bdf7755dce6c1a99c">8f254cb7</a> pigz: 2.6
-
+</div>
 
 [006] References
 ________________________________________________________________________________

@@ -56,7 +56,7 @@ ________________________________________________________________________________
 
 --[004]-Change-History--------------------------------------------------------
 
-  2021-08-10 <a href="https://github.com/kisslinux/repo/commit/219a80ee863fdc5fe4e5ec9d7b2bdc509c62267b">219a80ee</a> libjpeg-turbo: 2.1.1
+<div style="max-height:177px;overflow:hidden scroll">  2021-08-10 <a href="https://github.com/kisslinux/repo/commit/219a80ee863fdc5fe4e5ec9d7b2bdc509c62267b">219a80ee</a> libjpeg-turbo: 2.1.1
   2021-07-18 <a href="https://github.com/kisslinux/repo/commit/5bc6521a3f90b4610a9766ffd8c26add3bbb8610">5bc6521a</a> libjpeg-turbo: update for new env
   2021-07-15 <a href="https://github.com/kisslinux/repo/commit/be8009af136c981667358e26367601307a407bc1">be8009af</a> libjpeg-turbo: use VERSION
   2021-07-06 <a href="https://github.com/kisslinux/repo/commit/e20010b0db4efede64e28584bc7f53cb4d9a5219">e20010b0</a> libjpeg-turbo: remove documentation
@@ -70,7 +70,7 @@ ________________________________________________________________________________
   2019-08-11 <a href="https://github.com/kisslinux/repo/commit/a035054362fc129e88d8e906430358dfac80c89e">a0350543</a> libjpeg-turbo: remove docs
   2019-07-26 <a href="https://github.com/kisslinux/repo/commit/6de2395c44efae21c4c2686adfac8fb7bf47bd57">6de2395c</a> libjpeg-turbo: Fix missing cmake dependency
   2019-07-18 <a href="https://github.com/kisslinux/repo/commit/1bd49c120aa209bc2597610b7d97ac02a1fa6ac0">1bd49c12</a> libjpeg-turbo: move to extra
-
+</div>
 
 [005] References
 ________________________________________________________________________________

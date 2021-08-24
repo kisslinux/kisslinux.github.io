@@ -42,7 +42,7 @@ ________________________________________________________________________________
 
 --[004]-Change-History--------------------------------------------------------
 
-  2021-07-28 <a href="https://github.com/kisslinux/repo/commit/cf45c1ffde92c92d73ca160db46cdbe2e91d442e">cf45c1ff</a> libvpx: avoid chmod
+<div style="max-height:177px;overflow:hidden scroll">  2021-07-28 <a href="https://github.com/kisslinux/repo/commit/cf45c1ffde92c92d73ca160db46cdbe2e91d442e">cf45c1ff</a> libvpx: avoid chmod
   2021-07-18 <a href="https://github.com/kisslinux/repo/commit/a425090e5ba01f932d78522e0bd927f17827c68a">a425090e</a> libvpx: update for new env
   2021-07-15 <a href="https://github.com/kisslinux/repo/commit/0603d10161980d283b270dce693c24c10fc5a53d">0603d101</a> libvpx: use VERSION
   2021-07-03 <a href="https://github.com/kisslinux/repo/commit/df71ceee1dc4b334e1e8f3ae030c07be2337ab18">df71ceee</a> libvpx: remove sed -i
@@ -56,7 +56,7 @@ ________________________________________________________________________________
   2019-08-04 <a href="https://github.com/kisslinux/repo/commit/272db1e752a07fbe69071d43fccf3b7ebd9c78db">272db1e7</a> libvpx: move to extra
   2019-07-27 <a href="https://github.com/kisslinux/repo/commit/7d40b1580ed5b638c613608e97fa04caba168894">7d40b158</a> libvpx: Fix build without diffutils.
   2019-07-26 <a href="https://github.com/kisslinux/repo/commit/a40b441f504776d37aa9ec0abb0a10f78ac6e598">a40b441f</a> libvpx: new package at 1.7.0
-
+</div>
 
 [005] References
 ________________________________________________________________________________

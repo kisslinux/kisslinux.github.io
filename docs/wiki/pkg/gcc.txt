@@ -74,7 +74,7 @@ ________________________________________________________________________________
 
 --[007]-Change-History--------------------------------------------------------
 
-  2021-08-17 <a href="https://github.com/kisslinux/repo/commit/8650abf170734bff37d4d725815c68a604f23de3">8650abf1</a> gcc: fix checksums. Closes #319
+<div style="max-height:177px;overflow:hidden scroll">  2021-08-17 <a href="https://github.com/kisslinux/repo/commit/8650abf170734bff37d4d725815c68a604f23de3">8650abf1</a> gcc: fix checksums. Closes #319
   2021-08-17 <a href="https://github.com/kisslinux/repo/commit/f5c901bf5e8ea708c6ac08f5d1a4ef5db2b35663">f5c901bf</a> gcc: remove mold workaround
   2021-08-16 <a href="https://github.com/kisslinux/repo/commit/e4e4d460b98a5d1f4a864104017c003d724967ed">e4e4d460</a> gcc: fix build with mold
   2021-07-28 <a href="https://github.com/kisslinux/repo/commit/7652b979db9cc3e78f0dfcb13f61eec39d597214">7652b979</a> gcc: 11.2.0
@@ -138,7 +138,7 @@ ________________________________________________________________________________
   2019-06-18 <a href="https://github.com/kisslinux/repo/commit/0ee08bb6cb709bbfc45b57fba23b14e5926589a0">0ee08bb6</a> gcc: Added manifest
   2019-06-17 <a href="https://github.com/kisslinux/repo/commit/98b29bcf4d86b343defbb9657f41eba7f118359b">98b29bcf</a> gcc: Remove all patches
   2019-06-17 <a href="https://github.com/kisslinux/repo/commit/a4fb29a36c81fd63153d8ee2e1dd641789372e36">a4fb29a3</a> gcc: Build outside of gcc directory.
-
+</div>
 
 [008] References
 ________________________________________________________________________________

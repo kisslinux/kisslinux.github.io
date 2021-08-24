@@ -47,7 +47,7 @@ ________________________________________________________________________________
 
 --[004]-Change-History--------------------------------------------------------
 
-  2021-07-27 <a href="https://github.com/kisslinux/repo/commit/8a8e0d1802627d891736d34bd8e17fc08683b8a9">8a8e0d18</a> sqlite: better method of disabling readline
+<div style="max-height:177px;overflow:hidden scroll">  2021-07-27 <a href="https://github.com/kisslinux/repo/commit/8a8e0d1802627d891736d34bd8e17fc08683b8a9">8a8e0d18</a> sqlite: better method of disabling readline
   2021-07-18 <a href="https://github.com/kisslinux/repo/commit/0d0cda49ae176d6ddc39c5c247228332fbc5d924">0d0cda49</a> sqlite: update for new env
   2021-07-15 <a href="https://github.com/kisslinux/repo/commit/88066125f5520a61678d2286e8342f7419d915de">88066125</a> sqlite: use MAJOR/MINOR/PATCH
   2021-07-03 <a href="https://github.com/kisslinux/repo/commit/ea25146be5698f9047c7eda9c5cd7bc23ee37569">ea25146b</a> sqlite: remove sed -i
@@ -64,7 +64,7 @@ ________________________________________________________________________________
   2019-11-18 <a href="https://github.com/kisslinux/repo/commit/d6c59e1c338befaac35e8f5f5b28ec8f2c8a34dc">d6c59e1c</a> sqlite: remove useless quotes
   2019-10-12 <a href="https://github.com/kisslinux/repo/commit/925919977fc36e0f3aa76d4524cbb5f9e2e9be1f">92591997</a> sqlite: bump to 3.30.1
   2019-10-05 <a href="https://github.com/kisslinux/repo/commit/66ddc737c955756b042663bcb1fe16e0c9d002d7">66ddc737</a> sqlite: new package at 3.30.0
-
+</div>
 
 [005] References
 ________________________________________________________________________________

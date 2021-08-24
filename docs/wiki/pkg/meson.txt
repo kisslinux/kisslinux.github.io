@@ -40,7 +40,7 @@ ________________________________________________________________________________
 
 --[004]-Change-History--------------------------------------------------------
 
-  2021-08-18 <a href="https://github.com/kisslinux/repo/commit/350ac6f530a0a9475df5b52d668ce20b90da5d5a">350ac6f5</a> meson: 0.59.1
+<div style="max-height:177px;overflow:hidden scroll">  2021-08-18 <a href="https://github.com/kisslinux/repo/commit/350ac6f530a0a9475df5b52d668ce20b90da5d5a">350ac6f5</a> meson: 0.59.1
   2021-07-18 <a href="https://github.com/kisslinux/repo/commit/3b1d29ff9e2f60dd23704cdad713b9c731d2211b">3b1d29ff</a> meson: 0.59.0
   2021-07-15 <a href="https://github.com/kisslinux/repo/commit/61a6d1ab3bc6c9f7da5aa4f5443796495c9aa1b2">61a6d1ab</a> meson: use VERSION
   2021-07-12 <a href="https://github.com/kisslinux/repo/commit/6dac677b0c9ed0d9428c2b3016385a62e03818b6">6dac677b</a> meson: remove polkit directory
@@ -67,7 +67,7 @@ ________________________________________________________________________________
   2019-08-19 <a href="https://github.com/kisslinux/repo/commit/1208354201a327a42ffd5062d810a4853cc1410b">12083542</a> meson: remove polkit files
   2019-08-05 <a href="https://github.com/kisslinux/repo/commit/cf3f3df2ead2cf8c9c874e745e3054131ee45a96">cf3f3df2</a> meson: make gettext/intltool optional.
   2019-08-04 <a href="https://github.com/kisslinux/repo/commit/c98423c015d3247b55475ff89bef2261b738141c">c98423c0</a> meson: bump to 0.51.1
-
+</div>
 
 [005] References
 ________________________________________________________________________________

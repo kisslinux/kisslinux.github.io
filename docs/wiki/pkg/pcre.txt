@@ -43,12 +43,12 @@ ________________________________________________________________________________
 
 --[004]-Change-History--------------------------------------------------------
 
-  2021-07-18 <a href="https://github.com/kisslinux/repo/commit/664a928d4fcf2b81dfc577ac5049604851e3bd19">664a928d</a> pcre: update for new env
+<div style="max-height:177px;overflow:hidden scroll">  2021-07-18 <a href="https://github.com/kisslinux/repo/commit/664a928d4fcf2b81dfc577ac5049604851e3bd19">664a928d</a> pcre: update for new env
   2021-07-15 <a href="https://github.com/kisslinux/repo/commit/9e0e4d9a9acc30e1406133645c6078256530305d">9e0e4d9a</a> pcre: use VERSION
   2021-07-12 <a href="https://github.com/kisslinux/repo/commit/fc5daf4123c60c1237fc316c5c19ea0de05ebf57">fc5daf41</a> pcre: enable manual pages. See #273
   2021-07-10 <a href="https://github.com/kisslinux/repo/commit/9336d2478c0991049184545fb741e50ad6241288">9336d247</a> pcre: fix trailing whitespace
   2021-07-08 <a href="https://github.com/kisslinux/repo/commit/b04527711134178842041c54e18cd60c8e7aad12">b0452771</a> pcre: 8.45
-
+</div>
 
 [005] References
 ________________________________________________________________________________

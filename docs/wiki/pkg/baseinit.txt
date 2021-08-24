@@ -66,7 +66,7 @@ ________________________________________________________________________________
 
 --[006]-Change-History--------------------------------------------------------
 
-  2021-07-28 <a href="https://github.com/kisslinux/repo/commit/04ccf254773f42f10f885c7944103a7ae60f0b84">04ccf254</a> baseinit: 1.0.3
+<div style="max-height:177px;overflow:hidden scroll">  2021-07-28 <a href="https://github.com/kisslinux/repo/commit/04ccf254773f42f10f885c7944103a7ae60f0b84">04ccf254</a> baseinit: 1.0.3
   2021-07-18 <a href="https://github.com/kisslinux/repo/commit/9d4e296ce4375a0733cf948e78bf1ad73813071a">9d4e296c</a> baseinit: update for new env
   2021-07-15 <a href="https://github.com/kisslinux/repo/commit/8587ebb265a2efe94df6cf172e99ff56ec6fe52c">8587ebb2</a> baseinit: use VERSION
   2021-07-01 <a href="https://github.com/kisslinux/repo/commit/674fa07cb2f1ce6caf3568d8b44a3b948c601985">674fa07c</a> baseinit: remove usage of install
@@ -112,7 +112,7 @@ ________________________________________________________________________________
   2019-06-20 <a href="https://github.com/kisslinux/repo/commit/99b570cfbcb87b1d0884a90ac86146aae294d4ab">99b570cf</a> baseinit: Started work on rc.boot.
   2019-06-20 <a href="https://github.com/kisslinux/repo/commit/af41ba7f4020035085469f1f364d12b26d432094">af41ba7f</a> baseinit: Initial commit.
   2019-06-20 <a href="https://github.com/kisslinux/repo/commit/e8c8795755959d6914885315dfd004a0b4550443">e8c87957</a> baseinit: Initial commit.
-
+</div>
 
 [007] References
 ________________________________________________________________________________

@@ -43,7 +43,7 @@ ________________________________________________________________________________
 
 --[004]-Change-History--------------------------------------------------------
 
-  2021-08-09 <a href="https://github.com/kisslinux/repo/commit/f5ba1ad72d6fb39ebcf5850a7ec4487a423b0e25">f5ba1ad7</a> gtk+3: Fix pc files
+<div style="max-height:177px;overflow:hidden scroll">  2021-08-09 <a href="https://github.com/kisslinux/repo/commit/f5ba1ad72d6fb39ebcf5850a7ec4487a423b0e25">f5ba1ad7</a> gtk+3: Fix pc files
   2021-08-09 <a href="https://github.com/kisslinux/repo/commit/315aa395ba39f083c81efe236a921b5552e86472">315aa395</a> gtk+3: bump rel
   2021-08-09 <a href="https://github.com/kisslinux/repo/commit/dca269d4438b974594fe1ffab3029b5c14f4a393">dca269d4</a> gtk+3: fix depends
   2021-08-09 <a href="https://github.com/kisslinux/repo/commit/608b7a56821ba72968657c22ea9462d0e3ff4030">608b7a56</a> gtk+3: nit
@@ -96,7 +96,7 @@ ________________________________________________________________________________
   2019-07-27 <a href="https://github.com/kisslinux/repo/commit/c91924c717fae35543f5e72a381618b6f21f429a">c91924c7</a> gtk+3: fix package
   2019-07-27 <a href="https://github.com/kisslinux/repo/commit/72a9f3f64fedbc1ada80be80a5ab3a63d2e61b8d">72a9f3f6</a> gtk+3: Add more configure flags.
   2019-07-27 <a href="https://github.com/kisslinux/repo/commit/35e08b0a6c0a197431fbe18da3db8bc50b77d6db">35e08b0a</a> gtk+3: new package at 3.24.10
-
+</div>
 
 [005] References
 ________________________________________________________________________________

@@ -41,7 +41,7 @@ ________________________________________________________________________________
 
 --[004]-Change-History--------------------------------------------------------
 
-  2021-07-18 <a href="https://github.com/kisslinux/repo/commit/c91bec453f13c5bfbfd97216dca444a46b29fcb2">c91bec45</a> x265: update for new env
+<div style="max-height:177px;overflow:hidden scroll">  2021-07-18 <a href="https://github.com/kisslinux/repo/commit/c91bec453f13c5bfbfd97216dca444a46b29fcb2">c91bec45</a> x265: update for new env
   2021-07-15 <a href="https://github.com/kisslinux/repo/commit/6d9b1ff7bbfaf858454825a2c5e139fb4a453048">6d9b1ff7</a> x265: use VERSION
   2021-06-30 <a href="https://github.com/kisslinux/repo/commit/32c16e88f0960d69945146e74a469b3a9bec78a1">32c16e88</a> x265: 3.5
   2020-08-19 <a href="https://github.com/kisslinux/repo/commit/3a50095bacb9959c18a951039b9f39e91860fa1d">3a50095b</a> x265: fix source. closes #215
@@ -55,7 +55,7 @@ ________________________________________________________________________________
   2019-09-26 <a href="https://github.com/kisslinux/repo/commit/187bdbbb2047dfde2ad59a09ab130c2da3fb20d2">187bdbbb</a> x265: bump to 3.2
   2019-08-13 <a href="https://github.com/kisslinux/repo/commit/50c721ac90eef219bc3f1e6e811a5b299051cc22">50c721ac</a> x265: bump to 3.1.2
   2019-07-27 <a href="https://github.com/kisslinux/repo/commit/3c34b8758eedc959fb55bec841aea1fcd6cab302">3c34b875</a> x265: Added new package at 3.0
-
+</div>
 
 [005] References
 ________________________________________________________________________________

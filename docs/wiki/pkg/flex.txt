@@ -45,7 +45,7 @@ ________________________________________________________________________________
 
 --[004]-Change-History--------------------------------------------------------
 
-  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/aa167b5b4a7945a881cb63a0d0e63b1a6b88c8ce">aa167b5b</a> flex: update for new env
+<div style="max-height:177px;overflow:hidden scroll">  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/aa167b5b4a7945a881cb63a0d0e63b1a6b88c8ce">aa167b5b</a> flex: update for new env
   2021-07-15 <a href="https://github.com/kisslinux/repo/commit/a241fba0cb29d47a6f087979035ddab6427aa22e">a241fba0</a> flex: use VERSION
   2021-07-06 <a href="https://github.com/kisslinux/repo/commit/d4c59b7b6f7f5f4364d1450efc7e24168de7b6ed">d4c59b7b</a> flex: Disable docs
   2021-07-01 <a href="https://github.com/kisslinux/repo/commit/642c35e32c7aeb6997c7cb22352a677ed30c4b32">642c35e3</a> flex: use new checksum format
@@ -60,7 +60,7 @@ ________________________________________________________________________________
   2019-08-11 <a href="https://github.com/kisslinux/repo/commit/55ed421f0bc76ad36919f088ccf8d3081498d837">55ed421f</a> flex: remove docs
   2019-06-19 <a href="https://github.com/kisslinux/repo/commit/7d2ab0c467e48934d121ae9ec9ac646bf52dd124">7d2ab0c4</a> flex: add license
   2019-06-02 <a href="https://github.com/kisslinux/repo/commit/df62ef95e4f69264bec684bc918dad42cbcd51b5">df62ef95</a> flex: update manifest
-
+</div>
 
 [005] References
 ________________________________________________________________________________

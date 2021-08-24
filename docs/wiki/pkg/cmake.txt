@@ -64,7 +64,7 @@ ________________________________________________________________________________
 
 --[005]-Change-History--------------------------------------------------------
 
-  2021-07-27 <a href="https://github.com/kisslinux/repo/commit/1047006af1a18fc414a9a14d5c3256b57ad51803">1047006a</a> cmake: 3.21.1
+<div style="max-height:177px;overflow:hidden scroll">  2021-07-27 <a href="https://github.com/kisslinux/repo/commit/1047006af1a18fc414a9a14d5c3256b57ad51803">1047006a</a> cmake: 3.21.1
   2021-07-18 <a href="https://github.com/kisslinux/repo/commit/b5778a061c92b3e771f0a46b90236d8ae84a0719">b5778a06</a> cmake: update for new env
   2021-07-15 <a href="https://github.com/kisslinux/repo/commit/58c790520d2ec9d6741c387e5e20ced6244c85c1">58c79052</a> cmake: use MAJOR/MINOR/VERSION
   2021-07-15 <a href="https://github.com/kisslinux/repo/commit/5ed3a93ce81cf7bd60e4dab10b4b1612ef54681a">5ed3a93c</a> cmake: 3.21.0
@@ -105,7 +105,7 @@ ________________________________________________________________________________
   2019-08-04 <a href="https://github.com/kisslinux/repo/commit/788e5eabf4988aef859b30d98028cfac0835d0bd">788e5eab</a> cmake: bump to 3.15.1
   2019-06-28 <a href="https://github.com/kisslinux/repo/commit/59ba718a914e2b2d8c2235e32937e4a8582c2afb">59ba718a</a> cmake: legal
   2019-06-02 <a href="https://github.com/kisslinux/repo/commit/f70fcbf1ca7911e6fa9b655479249e2f84fd63f2">f70fcbf1</a> cmake: init at 3.14.5
-
+</div>
 
 [006] References
 ________________________________________________________________________________

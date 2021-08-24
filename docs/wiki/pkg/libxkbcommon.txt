@@ -40,7 +40,7 @@ ________________________________________________________________________________
 
 --[004]-Change-History--------------------------------------------------------
 
-  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/aba163e133307aa8962c6d2af7c18bb48a3ff0ff">aba163e1</a> libxkbcommon: update for new env
+<div style="max-height:177px;overflow:hidden scroll">  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/aba163e133307aa8962c6d2af7c18bb48a3ff0ff">aba163e1</a> libxkbcommon: update for new env
   2021-07-15 <a href="https://github.com/kisslinux/repo/commit/167043bbe10a29256eabc352323a99c5824750eb">167043bb</a> libxkbcommon: use VERSION
   2021-07-13 <a href="https://github.com/kisslinux/repo/commit/e50efb4baa00d6aea500a2c48602f5b3ed16daa1">e50efb4b</a> libxkbcommon: Add xkeyboard-config to depends
   2021-07-08 <a href="https://github.com/kisslinux/repo/commit/8f5899e411cc7e19290671996e4b79d4f819a905">8f5899e4</a> libxkbcommon: fix depends
@@ -56,7 +56,7 @@ ________________________________________________________________________________
   2020-09-07 <a href="https://github.com/kisslinux/repo/commit/6bc7279377817113a61fa777692a49fe019df096">6bc72793</a> libxkbcommon: 1.0.0
   2020-03-14 <a href="https://github.com/kisslinux/repo/commit/5d4c45cd7bb6d24cf956dd64b6a458322e2f32ed">5d4c45cd</a> libxkbcommon: Fix depends
   2020-01-20 <a href="https://github.com/kisslinux/repo/commit/7b9d38a3dd42f7e7b27684f482433dc8906e58d8">7b9d38a3</a> libxkbcommon: move from community
-
+</div>
 
 [005] References
 ________________________________________________________________________________

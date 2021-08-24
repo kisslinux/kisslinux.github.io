@@ -43,7 +43,7 @@ ________________________________________________________________________________
 
 --[004]-Change-History--------------------------------------------------------
 
-  2021-07-18 <a href="https://github.com/kisslinux/repo/commit/dee89701534fd5be8ea11deab76d8ce2358b1fda">dee89701</a> ncurses: update for new env
+<div style="max-height:177px;overflow:hidden scroll">  2021-07-18 <a href="https://github.com/kisslinux/repo/commit/dee89701534fd5be8ea11deab76d8ce2358b1fda">dee89701</a> ncurses: update for new env
   2021-07-15 <a href="https://github.com/kisslinux/repo/commit/167bfdd616adbf271673b9ca9222b0492b8ca154">167bfdd6</a> ncurses: use VERSION
   2021-07-12 <a href="https://github.com/kisslinux/repo/commit/4529f8d6e7e4c4e5aff81f6cdbd945710286de41">4529f8d6</a> ncurses: enable manual pages. See #273
   2021-07-06 <a href="https://github.com/kisslinux/repo/commit/9af8f9334989aa34eba58cc22cb1808ec9670a9d">9af8f933</a> ncurses: reduce package to 3MB~
@@ -53,7 +53,7 @@ ________________________________________________________________________________
   2020-01-29 <a href="https://github.com/kisslinux/repo/commit/a42e25d0bbd7dc536c675143a8e8690c496dac6c">a42e25d0</a> ncurses: Allow conflicts
   2020-01-03 <a href="https://github.com/kisslinux/repo/commit/d1f4498837c069fbe43b5b474ecb37469377ff3e">d1f44988</a> ncurses: Force non-wide ncurses lib to link against ncursesw (#131) @konimex
   2019-09-13 <a href="https://github.com/kisslinux/repo/commit/da01629fca7ca93a6c29a7aed1ec9824b125d78c">da01629f</a> ncurses: use https for source
-
+</div>
 
 [005] References
 ________________________________________________________________________________
