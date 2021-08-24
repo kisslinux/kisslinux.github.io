@@ -1,4 +1,4 @@
-kiss
+kiss                                                              version <a href=https://github.com/kisslinux/repo/tree/master/core/kiss>5.5.27</a>
 ________________________________________________________________________________
 
 The KISS package manager is a small, self-contained POSIX shell script with an

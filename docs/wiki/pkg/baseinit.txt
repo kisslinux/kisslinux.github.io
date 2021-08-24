@@ -1,4 +1,4 @@
-baseinit
+baseinit                                                           version <a href=https://github.com/kisslinux/repo/tree/master/core/baseinit>1.0.3</a>
 ________________________________________________________________________________
 
 KISS Linux's portable init framework. Handles the power-on and shutdown process
@@ -14,7 +14,9 @@ ________________________________________________________________________________
 * Setup--------------------------------------------------------------------[002]
 * Usage--------------------------------------------------------------------[003]
 * Troubleshooting----------------------------------------------------------[004]
-* References---------------------------------------------------------------[005]
+* Statistics---------------------------------------------------------------[005]
+  * Change-History---------------------------------------------------------[006]
+* References---------------------------------------------------------------[007]
 
 
 [001] Installation
@@ -58,7 +60,61 @@ ________________________________________________________________________________
 Open issues at $/kisslinux/init or send email #/contact
 
 
-[005] References
+[006] Statistics
+________________________________________________________________________________
+
+
+--[007]-Change-History--------------------------------------------------------
+
+  2021-07-28 <a href="https://github.com/kisslinux/repo/commit/04ccf254773f42f10f885c7944103a7ae60f0b84">04ccf254</a> baseinit: 1.0.3
+  2021-07-18 <a href="https://github.com/kisslinux/repo/commit/9d4e296ce4375a0733cf948e78bf1ad73813071a">9d4e296c</a> baseinit: update for new env
+  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/8587ebb265a2efe94df6cf172e99ff56ec6fe52c">8587ebb2</a> baseinit: use VERSION
+  2021-07-01 <a href="https://github.com/kisslinux/repo/commit/674fa07cb2f1ce6caf3568d8b44a3b948c601985">674fa07c</a> baseinit: remove usage of install
+  2021-07-01 <a href="https://github.com/kisslinux/repo/commit/6cdacfdb6ce2eebb39c4c23ab1b0caba577a23e9">6cdacfdb</a> baseinit: use new checksum format
+  2020-05-19 <a href="https://github.com/kisslinux/repo/commit/58104e1238296d479dbef3281d83a045fb281efa">58104e12</a> baseinit: bump to 1.0.2
+  2020-05-18 <a href="https://github.com/kisslinux/repo/commit/9144d8d46c3a0b41760fcf50af81b8fbe30270eb">9144d8d4</a> baseinit: Added post-install message
+  2020-05-18 <a href="https://github.com/kisslinux/repo/commit/1ac275ebd55659a0f6be4d7f3db7b372f26be920">1ac275eb</a> baseinit: bump to 1.0.1'
+  2020-05-18 <a href="https://github.com/kisslinux/repo/commit/bae46aaca79b7d2b215e9298587465df9e11338f">bae46aac</a> baseinit: bump to 1.0
+  2020-04-29 <a href="https://github.com/kisslinux/repo/commit/7068a6dce8a0a81b5ada1f8afe2c1e3248ed2026">7068a6dc</a> baseinit: bump to 0.7.4
+  2020-03-21 <a href="https://github.com/kisslinux/repo/commit/1a90d1271d2fa11d2c318c72cc0147b1bb759721">1a90d127</a> baseinit: bump to 0.7.3
+  2020-03-17 <a href="https://github.com/kisslinux/repo/commit/aadbe109a2c3e1d32ae479b76efdb56e1745fb05">aadbe109</a> baseinit: bump to 0.7.2
+  2020-03-15 <a href="https://github.com/kisslinux/repo/commit/32392de9b955f243058c16df9f8ce32f728a19db">32392de9</a> baseinit: bump to 0.7.1
+  2020-03-07 <a href="https://github.com/kisslinux/repo/commit/184a882527996c68116329bf98ada55478eee242">184a8825</a> baseinit: bump to 0.7.0
+  2020-03-07 <a href="https://github.com/kisslinux/repo/commit/91a006e865307dcb97f76f2bf287025ab8be9012">91a006e8</a> baseinit: bump to 0.6.3
+  2020-03-07 <a href="https://github.com/kisslinux/repo/commit/f86cc29f3544d69a84f6e829da100149148746ef">f86cc29f</a> baseinit: bump to 0.5.2
+  2020-03-07 <a href="https://github.com/kisslinux/repo/commit/d77e341c6e3b73bf4431445aa67639b86b79ebc0">d77e341c</a> baseinit: Install sources
+  2020-03-03 <a href="https://github.com/kisslinux/repo/commit/b2bc94d3dde27b7d8584248c6364f83524f9bea4">b2bc94d3</a> baseinit: bump to 0.5.1
+  2020-02-25 <a href="https://github.com/kisslinux/repo/commit/a402a14800b8ed4d6e731230865203e6c472ab44">a402a148</a> baseinit: bump to 0.5.0
+  2020-02-25 <a href="https://github.com/kisslinux/repo/commit/b8ef6eb885f487d2d2d750ccc287501a41e97c1e">b8ef6eb8</a> baseinit: bump to 0.4.4
+  2020-02-25 <a href="https://github.com/kisslinux/repo/commit/ebf283e6b30cac970bed93b0c748d52c90e99dab">ebf283e6</a> baseinit: bump to 0.4.3
+  2020-02-25 <a href="https://github.com/kisslinux/repo/commit/ba8e8cac8f6c8d52f680d100d5a031cd1349326b">ba8e8cac</a> baseinit: bump to 0.4.2
+  2020-02-14 <a href="https://github.com/kisslinux/repo/commit/564e1928ce2109ab1ff5ab150394b3d2d36f00c4">564e1928</a> baseinit: remove post-install
+  2020-02-14 <a href="https://github.com/kisslinux/repo/commit/205bd0d73056a4a29c77930fa7c190be990b7b96">205bd0d7</a> baseinit: use cc @konimex
+  2020-02-07 <a href="https://github.com/kisslinux/repo/commit/5611459b28d8e10187d32fa756cbb6a3b575b55e">5611459b</a> baseinit: bump to 0.4.1
+  2020-02-05 <a href="https://github.com/kisslinux/repo/commit/6447193020eb54ff9725bf7a302ad249d17cb2e3">64471930</a> baseinit: bump to 0.4
+  2020-01-29 <a href="https://github.com/kisslinux/repo/commit/e94983653f04bd4b865fa09d1071d7913e832c8b">e9498365</a> baseinit: bump to 0.3
+  2020-01-20 <a href="https://github.com/kisslinux/repo/commit/19829ea9886c529e24a3c24be484dc7f4600838a">19829ea9</a> baseinit: bump to 0.2.2
+  2020-01-14 <a href="https://github.com/kisslinux/repo/commit/6dbf671b507040820d483c97c479fd9dd74bf335">6dbf671b</a> baseinit: bump to 0.2.1
+  2020-01-11 <a href="https://github.com/kisslinux/repo/commit/10ee01594b9c2a0e32a194136fec5d1d8db3f764">10ee0159</a> baseinit: bump to 0.2.0
+  2020-01-09 <a href="https://github.com/kisslinux/repo/commit/c4658717394abbbbcc388bfd58e33ec82be95d83">c4658717</a> baseinit: fix checksums
+  2020-01-08 <a href="https://github.com/kisslinux/repo/commit/1699e0324f5d077d54162816f2cc598b4906213a">1699e032</a> baseinit: Fix source
+  2019-12-02 <a href="https://github.com/kisslinux/repo/commit/47dec02b7dda90841550ec2893770249382f1145">47dec02b</a> baseinit: bump to 0.1.5
+  2019-11-28 <a href="https://github.com/kisslinux/repo/commit/27cb2c8048baceb7e420b6d77b598123749312b3">27cb2c80</a> baseinit: bump to 0.1.4
+  2019-09-02 <a href="https://github.com/kisslinux/repo/commit/c3e9290bc057eebaab642df25a255b4eab6c477e">c3e9290b</a> baseinit: bump to 0.1.3
+  2019-07-11 <a href="https://github.com/kisslinux/repo/commit/93b80bf23593e6b72bed38332db0cbdccc574484">93b80bf2</a> baseinit: Update.
+  2019-06-30 <a href="https://github.com/kisslinux/repo/commit/fc7314eb3ed89d61fb23981ab9c3b8129b6c8358">fc7314eb</a> baseinit: update
+  2019-06-26 <a href="https://github.com/kisslinux/repo/commit/6b3961765da1ccb6d6079bd60245167cef8cfefd">6b396176</a> baseinit: change installation directory to /usr/lib
+  2019-06-23 <a href="https://github.com/kisslinux/repo/commit/682468f239cab525f78cedcf4ce4072ecc244a69">682468f2</a> baseinit: Track version.
+  2019-06-21 <a href="https://github.com/kisslinux/repo/commit/b2fcf50c197986ebf56a6308e95998b907175b41">b2fcf50c</a> baseinit: Fix package.
+  2019-06-21 <a href="https://github.com/kisslinux/repo/commit/8fa93b5b8148c92b5468654c127d8890467c89e5">8fa93b5b</a> baseinit: add license
+  2019-06-20 <a href="https://github.com/kisslinux/repo/commit/af2cba44da66651907f32afbd548e7845ce54d6b">af2cba44</a> baseinit: Update package.
+  2019-06-20 <a href="https://github.com/kisslinux/repo/commit/fec1edad8cf8b07d772594f328da2caf07ff3220">fec1edad</a> baseinit: Install from repository.
+  2019-06-20 <a href="https://github.com/kisslinux/repo/commit/99b570cfbcb87b1d0884a90ac86146aae294d4ab">99b570cf</a> baseinit: Started work on rc.boot.
+  2019-06-20 <a href="https://github.com/kisslinux/repo/commit/af41ba7f4020035085469f1f364d12b26d432094">af41ba7f</a> baseinit: Initial commit.
+  2019-06-20 <a href="https://github.com/kisslinux/repo/commit/e8c8795755959d6914885315dfd004a0b4550443">e8c87957</a> baseinit: Initial commit.
+
+
+[008] References
 ________________________________________________________________________________
 
 [0] #/wiki/service-management

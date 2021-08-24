@@ -1,4 +1,4 @@
-util-linux
+util-linux                                                        version <a href=https://github.com/kisslinux/repo/tree/master/extra/util-linux>2.37.2</a>
 ________________________________________________________________________________
 
 util-linux is a standard package distributed by the Linux Kernel Organization
@@ -16,7 +16,9 @@ ________________________________________________________________________________
 * Installation-------------------------------------------------------------[001]
 * Setup--------------------------------------------------------------------[002]
 * Usage--------------------------------------------------------------------[003]
-* References---------------------------------------------------------------[004]
+* Statistics---------------------------------------------------------------[004]
+  * Change-History---------------------------------------------------------[005]
+* References---------------------------------------------------------------[006]
 
 
 [001] Installation
@@ -49,7 +51,34 @@ ________________________________________________________________________________
 Refer to the manual pages and command help output.
 
 
-[004] References
+[005] Statistics
+________________________________________________________________________________
+
+
+--[006]-Change-History--------------------------------------------------------
+
+  2021-08-16 <a href="https://github.com/kisslinux/repo/commit/1e6436cd8513e8d09cf72c90ec789a8e392cc1a0">1e6436cd</a> util-linux: 2.37.2
+  2021-07-22 <a href="https://github.com/kisslinux/repo/commit/ae0832a1df675157281bd47bc8da3ee42c5b5b6b">ae0832a1</a> util-linux: 2.37.1
+  2021-07-18 <a href="https://github.com/kisslinux/repo/commit/3e981a84003c9213b7694353d7e32da57e1e3ebc">3e981a84</a> util-linux: update for new env
+  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/4dfa11cb9269099253655afe886d41d2cf6b89be">4dfa11cb</a> util-linux: use VERSION
+  2021-07-12 <a href="https://github.com/kisslinux/repo/commit/dd98b3963e33ba582238fb3675d8888a46b79c8e">dd98b396</a> util-linux: remove bash completions and getopt examples
+  2021-06-30 <a href="https://github.com/kisslinux/repo/commit/c3517d66155509b3e4a1695703fbfd05d92c6c84">c3517d66</a> util-linux: 2.37
+  2020-11-16 <a href="https://github.com/kisslinux/repo/commit/91b91bb3e5608e09f914f1e1bf63d1b094d83340">91b91bb3</a> util-linux: 2.36.1
+  2020-07-23 <a href="https://github.com/kisslinux/repo/commit/82a47f5c671d4588c09ebd267bbcf2c032dec641">82a47f5c</a> util-linux: bump to 2.36
+  2020-05-30 <a href="https://github.com/kisslinux/repo/commit/7836a7fa2798a38c27f051344ccba788d0e2137f">7836a7fa</a> util-linux: Fix source (cert exp)
+  2020-05-20 <a href="https://github.com/kisslinux/repo/commit/969cf18694876596cffeb0f591a7d026c736504e">969cf186</a> util-linux: bump to 2.35.2
+  2020-02-13 <a href="https://github.com/kisslinux/repo/commit/91a970429e10a0d5b4ecf7a7afa745454899e0dd">91a97042</a> util-linux: Don't exclude utils
+  2020-02-10 <a href="https://github.com/kisslinux/repo/commit/96b65b07a35fea43f8e48f34747722c5db8408e3">96b65b07</a> util-linux: fix broken --sbindir
+  2020-01-31 <a href="https://github.com/kisslinux/repo/commit/1d4b4a850886ab0d741e9d025df7ec575ce7b18a">1d4b4a85</a> util-linux: bump to 2.35.1
+  2020-01-21 <a href="https://github.com/kisslinux/repo/commit/993316797e33bc585cc2b8e569315f9b26effb38">99331679</a> util-linux: bump to 2.35
+  2019-10-05 <a href="https://github.com/kisslinux/repo/commit/45fe7ae74fb3b5a2005078c82c9cec763d27b583">45fe7ae7</a> util-linux: let nls be detected
+  2019-09-07 <a href="https://github.com/kisslinux/repo/commit/f2ead50f1620a9f25f718877e2ce6cd61a9fa7e7">f2ead50f</a> util-linux: fix depends
+  2019-07-21 <a href="https://github.com/kisslinux/repo/commit/941bfbbb55afb05b3b624730788603c21054c4ab">941bfbbb</a> util-linux: fix conflicts with busybox
+  2019-07-19 <a href="https://github.com/kisslinux/repo/commit/5fa629b8a65feb5c98fbcac2de650cad187bc92e">5fa629b8</a> util-linux: Don't install getopt
+  2019-07-07 <a href="https://github.com/kisslinux/repo/commit/aa13dd1fa322dd60be22e0f720784accfa8704ae">aa13dd1f</a> util-linux: add package
+
+
+[007] References
 ________________________________________________________________________________
 
 [0] https://en.wikipedia.org

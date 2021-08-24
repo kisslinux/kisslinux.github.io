@@ -1,4 +1,4 @@
-dosfstools
+dosfstools                                                           version <a href=https://github.com/kisslinux/repo/tree/master/extra/dosfstools>4.2</a>
 ________________________________________________________________________________
 
 dosfstools consists of the programs mkfs.fat, fsck.fat and fatlabel to create,
@@ -13,7 +13,9 @@ ________________________________________________________________________________
 
 * Installation-------------------------------------------------------------[001]
 * Usage--------------------------------------------------------------------[002]
-* References---------------------------------------------------------------[003]
+* Statistics---------------------------------------------------------------[003]
+  * Change-History---------------------------------------------------------[004]
+* References---------------------------------------------------------------[005]
 
 
 [001] Installation
@@ -42,7 +44,21 @@ ________________________________________________________________________________
 Refer to the manual pages and command help output for more information.
 
 
-[003] References
+[004] Statistics
+________________________________________________________________________________
+
+
+--[005]-Change-History--------------------------------------------------------
+
+  2021-07-17 <a href="https://github.com/kisslinux/repo/commit/59f2288fdf1de89e05ac8b1a0365fe4d230101a0">59f2288f</a> dosfstools: update for new env
+  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/2130a560e884718f73870ee8120a8969a965a450">2130a560</a> dosfstools: use VERSION
+  2021-07-06 <a href="https://github.com/kisslinux/repo/commit/d63b14759fbdbaa907cb3009516f31cb9c03fea0">d63b1475</a> dosfstools: disable documentation
+  2021-06-30 <a href="https://github.com/kisslinux/repo/commit/dcb5337f5a6459a6263f16293da6678061bffcae">dcb5337f</a> dosfstools: 4.2
+  2020-02-11 <a href="https://github.com/kisslinux/repo/commit/f48396aac9fff8ff4d914cb18ff65d5589317b64">f48396aa</a> dosfstools: Fix sbindir
+  2020-01-21 <a href="https://github.com/kisslinux/repo/commit/207b4c539e2f1a15b2ac818e3963c75d30363a53">207b4c53</a> dosfstools: new package at 4.1
+
+
+[006] References
 ________________________________________________________________________________
 
 [0] https://github.com/dosfstools/dosfstools

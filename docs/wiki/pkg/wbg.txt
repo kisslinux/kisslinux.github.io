@@ -1,4 +1,4 @@
-wbg
+wbg                                                                version <a href=https://github.com/kisslinux/repo/tree/master/wayland/wbg>1.0.2</a>
 ________________________________________________________________________________
 
 Super simple wallpaper application for Wayland compositors implementing the
@@ -13,7 +13,9 @@ ________________________________________________________________________________
 
 * Installation-------------------------------------------------------------[001]
 * Usage--------------------------------------------------------------------[002]
-* References---------------------------------------------------------------[003]
+* Statistics---------------------------------------------------------------[003]
+  * Change-History---------------------------------------------------------[004]
+* References---------------------------------------------------------------[005]
 
 
 [001] Installation
@@ -32,7 +34,18 @@ ________________________________________________________________________________
 Refer to the manual pages and command help output.
 
 
-[003] References
+[004] Statistics
+________________________________________________________________________________
+
+
+--[005]-Change-History--------------------------------------------------------
+
+  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/3cd0c56157a151392ec7a33893ce97ef3b0a07f4">3cd0c561</a> wbg: update for new env
+  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/5536e47ad4e7b2ae305f3311d02425932d8bd835">5536e47a</a> wbg: use VERSION
+  2021-07-08 <a href="https://github.com/kisslinux/repo/commit/ab2a291e8e1b7dff236d0a1f5c690d8d51a42a3b">ab2a291e</a> wbg: 1.0.2
+
+
+[006] References
 ________________________________________________________________________________
 
 [0] https://codeberg.org/dnkl/wbg

@@ -1,4 +1,4 @@
-curl
+curl                                                              version <a href=https://github.com/kisslinux/repo/tree/master/core/curl>7.78.0</a>
 ________________________________________________________________________________
 
 cURL (pronounced 'curl') is a computer software project providing a library
@@ -15,7 +15,9 @@ ________________________________________________________________________________
 * Installation-------------------------------------------------------------[001]
 * Setup--------------------------------------------------------------------[002]
 * Usage--------------------------------------------------------------------[003]
-* References---------------------------------------------------------------[004]
+* Statistics---------------------------------------------------------------[004]
+  * Change-History---------------------------------------------------------[005]
+* References---------------------------------------------------------------[006]
 
 
 [001] Installation
@@ -42,7 +44,47 @@ ________________________________________________________________________________
 Refer to the manual pages and command help output.
 
 
-[005] References
+[005] Statistics
+________________________________________________________________________________
+
+
+--[006]-Change-History--------------------------------------------------------
+
+  2021-08-23 <a href="https://github.com/kisslinux/repo/commit/692389cd2c6aca3bb3abf5d1d0018d1fc29483aa">692389cd</a> curl: fix static linking
+  2021-07-21 <a href="https://github.com/kisslinux/repo/commit/904726c5d2f73e245b0cf3083c6415cb4606bf39">904726c5</a> curl: 7.78.0
+  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/e4f1b59472be28d02006a5780a71c47e8841a8fe">e4f1b594</a> curl: update for new env
+  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/c33ef37f648e884a5d0e6498879767a0d5acc556">c33ef37f</a> curl: use VERSION
+  2021-07-12 <a href="https://github.com/kisslinux/repo/commit/51e24988bb01d9c11e94f25d85939dfc6129074b">51e24988</a> curl: enable library documentation. See #273
+  2021-07-08 <a href="https://github.com/kisslinux/repo/commit/9e78e4fc47c1de7af0753e03f6d5ef17cec67e43">9e78e4fc</a> curl: depend on openssl
+  2021-07-06 <a href="https://github.com/kisslinux/repo/commit/800fed7ff8db3035b16616f02718b1847793f8b8">800fed7f</a> curl: disable zstd, remove library docs
+  2021-06-30 <a href="https://github.com/kisslinux/repo/commit/598912a8420d9f66ebb94c2fe3424de00f0cec57">598912a8</a> curl: 7.77.0
+  2020-10-14 <a href="https://github.com/kisslinux/repo/commit/401bde6c3aa54e461d87319ccf94f079edcaf2dd">401bde6c</a> curl: 7.73.0
+  2020-08-19 <a href="https://github.com/kisslinux/repo/commit/ff64697888a54bc86cfebab8b9226219d904b971">ff646978</a> curl: 7.72.0
+  2020-07-01 <a href="https://github.com/kisslinux/repo/commit/4f57bf54b7338b10a4eaac0901e9b474a38f8d47">4f57bf54</a> curl: bump to 7.71.1
+  2020-06-25 <a href="https://github.com/kisslinux/repo/commit/68b5faf6eba8f1ec6f698a3fbd5281a2f7ae6429">68b5faf6</a> curl: bump to 7.71.0
+  2020-05-16 <a href="https://github.com/kisslinux/repo/commit/a463a38657444641a29c887f81b5f8e49ec2a491">a463a386</a> curl: drop duplicate configure flag
+  2020-04-29 <a href="https://github.com/kisslinux/repo/commit/51e88efbd87f33d0798d17975b00af43579327ae">51e88efb</a> curl: bump to 7.70.0
+  2020-03-11 <a href="https://github.com/kisslinux/repo/commit/361065ce220714f2130f00672e68f74d550fe20e">361065ce</a> curl: bump to 7.69.1
+  2020-03-04 <a href="https://github.com/kisslinux/repo/commit/ca6c6886f355162771e0af6e60135d7358ad696e">ca6c6886</a> curl: bump to 7.69.0
+  2020-01-21 <a href="https://github.com/kisslinux/repo/commit/45f92eb5020827a39ccd2869bfcba795aa810269">45f92eb5</a> curl: don't link to libpsl
+  2020-01-21 <a href="https://github.com/kisslinux/repo/commit/3bc5d513551834c8e20a9ae14dac4ecb4129c008">3bc5d513</a> curl: Don't link to icu
+  2020-01-11 <a href="https://github.com/kisslinux/repo/commit/624c4fbe953700a14f05326ead69242eca255af9">624c4fbe</a> curl: link statically
+  2020-01-08 <a href="https://github.com/kisslinux/repo/commit/bcdeddc56a7160f89b071a402af246e85d6b5793">bcdeddc5</a> curl: Fix sources
+  2020-01-08 <a href="https://github.com/kisslinux/repo/commit/c82efdc319f8d6f050ca06acfbbbb816abefec67">c82efdc3</a> curl: bump to 7.68.0
+  2019-12-03 <a href="https://github.com/kisslinux/repo/commit/b0dde4c54e8eb24b98130a6f3d228dfa1820d461">b0dde4c5</a> curl: remove unneeded dependency
+  2019-11-06 <a href="https://github.com/kisslinux/repo/commit/51713435928d095243b5b88a2b8a1a3a01f59fbd">51713435</a> curl: bump to 7.67.0
+  2019-09-11 <a href="https://github.com/kisslinux/repo/commit/26aa9df32000d5fdd8aba9b3c6141e63eb5ff1c2">26aa9df3</a> curl: bump to 7.66.0
+  2019-08-17 <a href="https://github.com/kisslinux/repo/commit/04bbd4c890ae0daadeaa227c844dcfadfccbfad6">04bbd4c8</a> curl: fix depends
+  2019-08-17 <a href="https://github.com/kisslinux/repo/commit/6add7d1a942ff1b39cb511838e22ec93dd68ba00">6add7d1a</a> curl: fix depends
+  2019-08-04 <a href="https://github.com/kisslinux/repo/commit/e29f84dfbc5c8a61a7781ba2c25e13efb6f2ac17">e29f84df</a> curl: bump to 7.65.3
+  2019-07-19 <a href="https://github.com/kisslinux/repo/commit/86f2fdf6297e2f80129d3b220ce2d5acf70aadb0">86f2fdf6</a> curl: update to 7.65.2
+  2019-07-06 <a href="https://github.com/kisslinux/repo/commit/11ab33d1688af9cf98abdee989ef26a5dd084453">11ab33d1</a> curl: bump to 7.65.1
+  2019-06-19 <a href="https://github.com/kisslinux/repo/commit/c3d88254fbe281f90d9cdf15b1bf675c8307a366">c3d88254</a> curl: add license
+  2019-06-19 <a href="https://github.com/kisslinux/repo/commit/7ffe548ee586e2d565f9268af8bf57e2b9de5ea5">7ffe548e</a> curl: remove unneeded dependencies
+  2019-06-18 <a href="https://github.com/kisslinux/repo/commit/11f58a5e96ca9b1bd607fc4625cee12afa5cda5b">11f58a5e</a> curl: Remove autoreconf.
+
+
+[007] References
 ________________________________________________________________________________
 
 [0] https://en.wikipedia.org/wiki/CURL

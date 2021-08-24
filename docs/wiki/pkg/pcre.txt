@@ -1,4 +1,4 @@
-pcre
+pcre                                                                version <a href=https://github.com/kisslinux/repo/tree/master/extra/pcre>8.45</a>
 ________________________________________________________________________________
 
 Perl Compatible Regular Expressions (PCRE) is a library written in C, which
@@ -16,7 +16,9 @@ ________________________________________________________________________________
 
 * Installation-------------------------------------------------------------[001]
 * Usage--------------------------------------------------------------------[002]
-* References---------------------------------------------------------------[003]
+* Statistics---------------------------------------------------------------[003]
+  * Change-History---------------------------------------------------------[004]
+* References---------------------------------------------------------------[005]
 
 
 [001] Installation
@@ -35,7 +37,20 @@ ________________________________________________________________________________
 Refer to the manual pages and command help output.
 
 
-[003] References
+[004] Statistics
+________________________________________________________________________________
+
+
+--[005]-Change-History--------------------------------------------------------
+
+  2021-07-18 <a href="https://github.com/kisslinux/repo/commit/664a928d4fcf2b81dfc577ac5049604851e3bd19">664a928d</a> pcre: update for new env
+  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/9e0e4d9a9acc30e1406133645c6078256530305d">9e0e4d9a</a> pcre: use VERSION
+  2021-07-12 <a href="https://github.com/kisslinux/repo/commit/fc5daf4123c60c1237fc316c5c19ea0de05ebf57">fc5daf41</a> pcre: enable manual pages. See #273
+  2021-07-10 <a href="https://github.com/kisslinux/repo/commit/9336d2478c0991049184545fb741e50ad6241288">9336d247</a> pcre: fix trailing whitespace
+  2021-07-08 <a href="https://github.com/kisslinux/repo/commit/b04527711134178842041c54e18cd60c8e7aad12">b0452771</a> pcre: 8.45
+
+
+[006] References
 ________________________________________________________________________________
 
 [0] https://en.wikipedia.org/wiki/Perl_Compatible_Regular_Expressions

@@ -1,4 +1,4 @@
-zlib
+zlib                                                              version <a href=https://github.com/kisslinux/repo/tree/master/core/zlib>1.2.11</a>
 ________________________________________________________________________________
 
 zlib is a software library used for data compression. zlib was written by
@@ -16,7 +16,9 @@ ________________________________________________________________________________
 
 * Installation-------------------------------------------------------------[001]
 * Usage--------------------------------------------------------------------[002]
-* References---------------------------------------------------------------[003]
+* Statistics---------------------------------------------------------------[003]
+  * Change-History---------------------------------------------------------[004]
+* References---------------------------------------------------------------[005]
 
 
 [001] Installation
@@ -35,7 +37,26 @@ ________________________________________________________________________________
 Refer to the manual pages and command help output.
 
 
-[005] References
+[004] Statistics
+________________________________________________________________________________
+
+
+--[005]-Change-History--------------------------------------------------------
+
+  2021-07-31 <a href="https://github.com/kisslinux/repo/commit/927af4f644f7e0f9064a33eb3d65d0aedf465072">927af4f6</a> zlib: remove unneeded flags
+  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/3fe7d5544f894e41486e4d086c2ce053ae4dac3b">3fe7d554</a> zlib: update for new env
+  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/a3fd768f845f1a8cbab221afda539f61b323f791">a3fd768f</a> zlib: use VERSION
+  2021-07-03 <a href="https://github.com/kisslinux/repo/commit/5ad1194dbbfae2853fec367ee1219c2e7267459b">5ad1194d</a> zlib: compile with -fPIC to make lld work
+  2020-09-28 <a href="https://github.com/kisslinux/repo/commit/8c145674bcae58ae0d29d3721f6bd7ab6d8d0ef6">8c145674</a> zlib: revert
+  2020-09-28 <a href="https://github.com/kisslinux/repo/commit/f8172d3d69419ef856b7a96cd318c360ba13b876">f8172d3d</a> zlib: remove stray file
+  2020-02-11 <a href="https://github.com/kisslinux/repo/commit/f76f7a922f4486ac38dad8a4f05087edff83b39d">f76f7a92</a> zlib: revert pie fixes
+  2020-02-10 <a href="https://github.com/kisslinux/repo/commit/b80d5bd08d4e6f57005096e23a114edd74ede489">b80d5bd0</a> zlib: compile -fPIE
+  2019-06-19 <a href="https://github.com/kisslinux/repo/commit/6806aed00215fef92466c8d1af7af4a0ac795731">6806aed0</a> zlib: add license
+  2019-06-18 <a href="https://github.com/kisslinux/repo/commit/f6edab3d6b74f0fc593e3c15f3cd650e3c94e087">f6edab3d</a> zlib: Update manifest
+  2019-06-02 <a href="https://github.com/kisslinux/repo/commit/58f869135f30b33bd703c5643bc865cdbbf12b77">58f86913</a> zlib: use /usr/lib for libraries
+
+
+[006] References
 ________________________________________________________________________________
 
 [0] https://en.wikipedia.org/wiki/Zlib

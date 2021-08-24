@@ -1,4 +1,4 @@
-grub
+grub                                                                version <a href=https://github.com/kisslinux/repo/tree/master/core/grub>2.06</a>
 ________________________________________________________________________________
 
 GNU GRUB (short for GNU GRand Unified Bootloader, commonly referred to as GRUB)
@@ -17,7 +17,9 @@ ________________________________________________________________________________
 * Installation-------------------------------------------------------------[001]
 * Setup--------------------------------------------------------------------[002]
 * Usage--------------------------------------------------------------------[003]
-* References---------------------------------------------------------------[004]
+* Statistics---------------------------------------------------------------[004]
+  * Change-History---------------------------------------------------------[005]
+* References---------------------------------------------------------------[006]
 
 
 [001] Installation
@@ -76,7 +78,57 @@ ________________________________________________________________________________
 Refer to the manual pages and command help output.
 
 
-[004] References
+[005] Statistics
+________________________________________________________________________________
+
+
+--[006]-Change-History--------------------------------------------------------
+
+  2021-08-22 <a href="https://github.com/kisslinux/repo/commit/6dfff99f4cbb79b3ec378a2e501452c01c4127ed">6dfff99f</a> grub: enable manual pages
+  2021-08-16 <a href="https://github.com/kisslinux/repo/commit/56871a28f38939d8227cd1c34cbff3071bf4569e">56871a28</a> grub: force bfd linker
+  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/4f6ddde67000aa271f752795921a08088d193a99">4f6ddde6</a> grub: fix build
+  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/23c4094214722512179f72152a7850a7f4960c0a">23c40942</a> grub: update for new env
+  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/fba6bd7f8dcd23c59da1341311269032e942eb6e">fba6bd7f</a> grub: use VERSION
+  2021-07-03 <a href="https://github.com/kisslinux/repo/commit/87b39eb0a7bae70232f6d63ffd2d0dc4e7847176">87b39eb0</a> grub: remove sed -i
+  2021-07-01 <a href="https://github.com/kisslinux/repo/commit/60726d9f64af35e6eb04f89edc95e5f7e4c3dc30">60726d9f</a> grub: remove usage of install
+  2021-06-30 <a href="https://github.com/kisslinux/repo/commit/e2e2ec51a558870ecce1970b1a3070de17c58270">e2e2ec51</a> grub: 2.06
+  2020-09-13 <a href="https://github.com/kisslinux/repo/commit/0d1aa38232e35ed8d72f552cf3fb2b2b2c68abe9">0d1aa382</a> grub: correctly strip -march=native
+  2020-05-17 <a href="https://github.com/kisslinux/repo/commit/d35223fc8999f37a35485c3ed87bbe7c02573149">d35223fc</a> grub: Drop non-posix -a flag
+  2020-03-25 <a href="https://github.com/kisslinux/repo/commit/89a8c19783328fb7c055ce15c4fa895e191d1530">89a8c197</a> grub: Remove pointless comment
+  2020-03-14 <a href="https://github.com/kisslinux/repo/commit/baf07a698ba90204a43a8ff6de3304ac576b112a">baf07a69</a> grub: Fix depends
+  2020-03-05 <a href="https://github.com/kisslinux/repo/commit/7dc7394fd48344b2e90fb90b31ea719740f70557">7dc7394f</a> grub: Bye bye python
+  2020-03-05 <a href="https://github.com/kisslinux/repo/commit/7471bd94a9a849be6f0d61feb626c3b5e2bb40bb">7471bd94</a> grub: disable nls
+  2020-02-22 <a href="https://github.com/kisslinux/repo/commit/687b271ca659ab2289b4ce5425143893d4558c2f">687b271c</a> grub: Remove pointless line
+  2020-02-22 <a href="https://github.com/kisslinux/repo/commit/ec4db0b2d88644746f779259ad7d12c8ae84a0a3">ec4db0b2</a> grub: Fix Ryzen issue
+  2020-02-22 <a href="https://github.com/kisslinux/repo/commit/874d3117e76ae7b0fe111a924940c0bc812a6fc7">874d3117</a> grub: Fix Ryzen issue
+  2020-02-11 <a href="https://github.com/kisslinux/repo/commit/297b4bfc349c7c2d833a7425a5967acd81bcf387">297b4bfc</a> grub: Disable -march=.*
+  2020-02-11 <a href="https://github.com/kisslinux/repo/commit/37b1fb53d2958b88d1121760a3d0d7844a22b958">37b1fb53</a> grub: revert pie fixes
+  2020-02-09 <a href="https://github.com/kisslinux/repo/commit/eecc3f2fbb737af5d7cba103286f035ebf1c7db2">eecc3f2f</a> grub: Fix build after GCC changes
+  2019-10-14 <a href="https://github.com/kisslinux/repo/commit/59935407c3a755cf6ff770a575bac51edbebf502">59935407</a> grub: remove file now handled by package manager
+  2019-10-05 <a href="https://github.com/kisslinux/repo/commit/15cfe437cfe6dfed205cb803da8b804a2d53c40e">15cfe437</a> grub: let nls be detected
+  2019-09-13 <a href="https://github.com/kisslinux/repo/commit/02e6649093f101c6b3b3ffe202832e1baa1a58e3">02e66490</a> grub: use https for source
+  2019-09-07 <a href="https://github.com/kisslinux/repo/commit/51b13c72e87e20d952c7f1b5dd3fe0dbc1a6dae0">51b13c72</a> grub: remove autotools dependency
+  2019-08-18 <a href="https://github.com/kisslinux/repo/commit/d4f86c4e966b29d52bc4dc0ec5c5be82f898acaf">d4f86c4e</a> grub: fix depends
+  2019-08-14 <a href="https://github.com/kisslinux/repo/commit/6cd8618e4e8515ad51a7ba307e9cb86dacb5a66e">6cd8618e</a> grub: bump to 2.04
+  2019-08-11 <a href="https://github.com/kisslinux/repo/commit/7b5f58895b06e506c857d8d59dad68133d74967e">7b5f5889</a> grub: revert 2.04
+  2019-08-11 <a href="https://github.com/kisslinux/repo/commit/abf076e190fae3e1236fa8d52eecab72aff9883d">abf076e1</a> grub: revert 2.04
+  2019-08-04 <a href="https://github.com/kisslinux/repo/commit/9a7a6376f3b0d242f25d681370a46439fa0ac10c">9a7a6376</a> grub: fix depends
+  2019-08-04 <a href="https://github.com/kisslinux/repo/commit/9c3fb67e7f25ef04e12270fafbec7ccf20666e3f">9c3fb67e</a> grub: bump to 2.04
+  2019-07-17 <a href="https://github.com/kisslinux/repo/commit/b30165360dc13c02bfd74beba87a903af6f94f49">b3016536</a> grub: fix directories
+  2019-07-17 <a href="https://github.com/kisslinux/repo/commit/12592917a5b472f8ff39955f7a195b27b8990659">12592917</a> grub: add defaults
+  2019-06-25 <a href="https://github.com/kisslinux/repo/commit/4f60df09c4b09fc68f2ebe4735127ca8385916aa">4f60df09</a> grub: Fix build
+  2019-06-25 <a href="https://github.com/kisslinux/repo/commit/5151100b5d1a5d08243975567b8c69e290ccf0f8">5151100b</a> grub: Fix build
+  2019-06-25 <a href="https://github.com/kisslinux/repo/commit/12ace252b9030b0cbbf536af9843361fffacb1ae">12ace252</a> grub: Fix error.
+  2019-06-19 <a href="https://github.com/kisslinux/repo/commit/0e3fbd22a2420c4ee19d82a45dff6b799d1a1b63">0e3fbd22</a> grub: add license
+  2019-06-19 <a href="https://github.com/kisslinux/repo/commit/52b59df73c275c1574ab67c42493d4161d5acab4">52b59df7</a> grub: strip binaries
+  2019-06-19 <a href="https://github.com/kisslinux/repo/commit/7d91fd63c39ff9871c6f68affafadc71f9f4187b">7d91fd63</a> grub: Add missing dependencies.
+  2019-06-19 <a href="https://github.com/kisslinux/repo/commit/398d072832f8dff4393e4f4096b86b817c9d2446">398d0728</a> grub: Remove gdb files.
+  2019-06-19 <a href="https://github.com/kisslinux/repo/commit/c01321864f2102383a413294228e03e4e79a5b48">c0132186</a> grub: Update build
+  2019-06-19 <a href="https://github.com/kisslinux/repo/commit/5969b803280181f8eb90f99aea24f36898a2bf44">5969b803</a> grub: Added dependencies.
+  2019-06-19 <a href="https://github.com/kisslinux/repo/commit/f3eea118381b5bd416a4b67c1062a86c31953670">f3eea118</a> grub: Added dependencies.
+
+
+[007] References
 ________________________________________________________________________________
 
 [0] https://en.wikipedia.org/wiki/GNU_GRUB

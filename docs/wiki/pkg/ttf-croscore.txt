@@ -1,4 +1,4 @@
-ttf-croscore
+ttf-croscore                                                      version <a href=https://github.com/kisslinux/repo/tree/master/extra/ttf-croscore>1.31.0</a>
 ________________________________________________________________________________
 
 The Chrome OS core fonts, also known as the Croscore fonts, are a collection of
@@ -14,7 +14,9 @@ Upstream: https://www.google.com/chromebook/chrome-os/
 ________________________________________________________________________________
 
 * Installation-------------------------------------------------------------[001]
-* References---------------------------------------------------------------[002]
+* Statistics---------------------------------------------------------------[002]
+  * Change-History---------------------------------------------------------[003]
+* References---------------------------------------------------------------[004]
 
 
 [001] Installation
@@ -27,7 +29,18 @@ ________________________________________________________________________________
 +------------------------------------------------------------------------------+
 
 
-[002] References
+[003] Statistics
+________________________________________________________________________________
+
+
+--[004]-Change-History--------------------------------------------------------
+
+  2021-08-21 <a href="https://github.com/kisslinux/repo/commit/bd4bf3f34b7c64ce28c15b1bb80179f76af1f840">bd4bf3f3</a> ttf-croscore: provide post-install
+  2021-07-16 <a href="https://github.com/kisslinux/repo/commit/fc806eb46ce4948abcf2a36b5306fddb56310262">fc806eb4</a> ttf-croscore: fix permissions. Closes #292
+  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/219b6303705a5c94d9719f3c2459084e7680b8e6">219b6303</a> ttf-croscore: 1.31.0
+
+
+[005] References
 ________________________________________________________________________________
 
 [0] https://en.wikipedia.org/wiki/Croscore_fonts

@@ -1,4 +1,4 @@
-efibootmgr
+efibootmgr                      version <a href=https://github.com/kisslinux/repo/tree/master/extra/efibootmgr>4069341e184471dccf407ca8410daa4c4fd634f5</a>
 ________________________________________________________________________________
 
 This is efibootmgr, a Linux user-space application to modify the Intel
@@ -17,7 +17,9 @@ ________________________________________________________________________________
   * Mounting-The-efivar-Filesystem-----------------------------------------[003]
   * Booting-The-System-With-An-EFISTUB-------------------------------------[004]
 * Usage--------------------------------------------------------------------[005]
-* References---------------------------------------------------------------[006]
+* Statistics---------------------------------------------------------------[006]
+  * Change-History---------------------------------------------------------[007]
+* References---------------------------------------------------------------[008]
 
 
 [001] Installation
@@ -77,7 +79,28 @@ ________________________________________________________________________________
 Refer to the manual pages and command help output for more information.
 
 
-[006] References
+[007] Statistics
+________________________________________________________________________________
+
+
+--[008]-Change-History--------------------------------------------------------
+
+  2021-07-17 <a href="https://github.com/kisslinux/repo/commit/bdee486ef3b587f1952d9139e03c38a55f8f52be">bdee486e</a> efibootmgr: update for new env
+  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/a35e998f0331f2671797f46b61c27141127a1585">a35e998f</a> efibootmgr: use VERSION
+  2021-07-06 <a href="https://github.com/kisslinux/repo/commit/6e5bd2a1a3d49b514b8b440c2ed643a21587be5f">6e5bd2a1</a> efibootmgr: use latest commit
+  2021-07-01 <a href="https://github.com/kisslinux/repo/commit/e4433ed7063bb3c49c9a827dca9562d6a00c5be8">e4433ed7</a> efibootmgr: remove usage of install
+  2021-07-01 <a href="https://github.com/kisslinux/repo/commit/35e7f7bece1edf5759b33fa12dbf018144063677">35e7f7be</a> efibootmgr: use new checksums format
+  2020-02-14 <a href="https://github.com/kisslinux/repo/commit/56cfe43e64e943817da75652c732a1c14299393b">56cfe43e</a> efibootmgr: Remove popt dependency
+  2020-02-13 <a href="https://github.com/kisslinux/repo/commit/acf66a014a7054e9e742b8e3d7196961a9cf6e46">acf66a01</a> efibootmgr: Swap source to pull in needed fixes. Closes #148
+  2020-02-12 <a href="https://github.com/kisslinux/repo/commit/54a7ffdcf4c35a661707ecb23b5934a8360f1ea9">54a7ffdc</a> efibootmgr: Use cc @konimex
+  2020-01-08 <a href="https://github.com/kisslinux/repo/commit/a7ecbd4a50d98b9f71a33c291566618998feaef2">a7ecbd4a</a> efibootmgr: Revert patch
+  2020-01-07 <a href="https://github.com/kisslinux/repo/commit/e36d67f9b667b3d41676fc395eae580503081d9e">e36d67f9</a> efibootmgr: Fix verbose
+  2019-10-08 <a href="https://github.com/kisslinux/repo/commit/c2dce02865feced81332808b781e6a6189e26ad3">c2dce028</a> efibootmgr: clean clean clean
+  2019-06-25 <a href="https://github.com/kisslinux/repo/commit/80b84491d8e1feb178cfa7e99ec65df3c547bdee">80b84491</a> efibootmgr: Fixed build
+  2019-06-25 <a href="https://github.com/kisslinux/repo/commit/ae65b9434bbfd3539d8b7e7c13ea46615934a856">ae65b943</a> efibootmgr: Fix build.
+
+
+[009] References
 ________________________________________________________________________________
 
 [0] https://github.com/rhboot/efibootmgr

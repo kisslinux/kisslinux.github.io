@@ -5,7 +5,7 @@
 |\ISS</a>               <a href=/tidbits>Tidbits</a>  <a href=/post>Posts</a>  <a href=/answers>Answers</a>  <a href=/install>Install</a>  <a href=/wiki>Wiki</a>  <a href=/contact>Contact</a>  <a href=/donate>Donate</a>  </div><div style="image-rendering:crisp-edges;display:inline-block;vertical-align:sub"><a href=https://github.com/kisslinux/><img src="data:image/gif;base64,R0lGODlhEAAQAPABAAAAAP//ACH5BAUIAAEALAAAAAAQABAAAAIojA2px6G/GJzgJASxbrI+jmVgGI3TSF4oZS6emmqw823dTFcWbklNAQA7"></a></div>
 
 
-mandoc
+mandoc                                                            version <a href=https://github.com/kisslinux/repo/tree/master/extra/mandoc>1.14.5</a>
 ________________________________________________________________________________
 
 mandoc (historically called mdocml) is an ISC licensed utility for formatting
@@ -22,7 +22,9 @@ ________________________________________________________________________________
 
 * Installation-------------------------------------------------------------<a href=#001>[001]</a>
 * Usage--------------------------------------------------------------------<a href=#002>[002]</a>
-* References---------------------------------------------------------------<a href=#003>[003]</a>
+* Statistics---------------------------------------------------------------<a href=#003>[003]</a>
+  * Change-History---------------------------------------------------------<a href=#004>[004]</a>
+* References---------------------------------------------------------------<a href=#005>[005]</a>
 
 
 <span id=001><a href=#001>[001]</a></span> Installation
@@ -41,7 +43,36 @@ ________________________________________________________________________________
 Refer to the manual pages and command help output.
 
 
-<span id=003><a href=#003>[003]</a></span> References
+<span id=004><a href=#004>[004]</a></span> Statistics
+________________________________________________________________________________
+
+
+--<span id=005><a href=#005>[005]</a></span>-Change-History--------------------------------------------------------
+
+  2021-07-28 <a href="https://github.com/kisslinux/repo/commit/af7bffe6bb8dc12f5daf3ea1b89b4fca5d4eeaac">af7bffe6</a> mandoc: fix permission of binaries
+  2021-07-28 <a href="https://github.com/kisslinux/repo/commit/5fb6f31a1e5cd189986a8917e298a27f2f46e5ec">5fb6f31a</a> mandoc: avoid chmod
+  2021-07-18 <a href="https://github.com/kisslinux/repo/commit/a168a4c28ef2863347d2832e5f7c7425bb1bf467">a168a4c2</a> mandoc: update for new env
+  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/cbcae73c0d4e19519a53f70583d694f84e1280ae">cbcae73c</a> mandoc: use VERSION
+  2021-07-12 <a href="https://github.com/kisslinux/repo/commit/ecb8dda21266f71f78b92108b59eb8183a81d728">ecb8dda2</a> mandoc: fix segfaults with some pages (See #273)
+  2021-07-03 <a href="https://github.com/kisslinux/repo/commit/20ca08706bb12f5127cfe4f761e29443806e61a7">20ca0870</a> mandoc: remove sed -i
+  2021-07-01 <a href="https://github.com/kisslinux/repo/commit/5898db04feeff932948f606647507c3fdc143602">5898db04</a> mandoc: use new checksums format
+  2020-03-25 <a href="https://github.com/kisslinux/repo/commit/455d9a0a43a7aaeb6e990a2fd744bcade9f2a328">455d9a0a</a> mandoc: Nitpick
+  2020-02-14 <a href="https://github.com/kisslinux/repo/commit/72b650b931dcb029d2dae61ebea301040cfecb1f">72b650b9</a> mandoc: use cc @konimex
+  2020-02-12 <a href="https://github.com/kisslinux/repo/commit/81fefca6c39b2e04a32db5574084681fe6482024">81fefca6</a> mandoc: Fix build with GCC 10
+  2020-02-11 <a href="https://github.com/kisslinux/repo/commit/3190098465a4e9484935002c8cccae35d0fae1ee">31900984</a> mandoc: revert pie fixes
+  2020-02-10 <a href="https://github.com/kisslinux/repo/commit/6a87c63763440e1ddbfaca5b13fcfd04cf96af47">6a87c637</a> mandoc: Fix build and sbindir
+  2020-01-22 <a href="https://github.com/kisslinux/repo/commit/c64afb1339e026d9bc246bfe71f88c01adeb533d">c64afb13</a> mandoc: Simplify package and fix pointless error
+  2020-01-21 <a href="https://github.com/kisslinux/repo/commit/f3a6a380903f0389f71340f5d8288c7da57478d1">f3a6a380</a> mandoc: Fix build with new gnumake
+  2019-11-18 <a href="https://github.com/kisslinux/repo/commit/4b808fc308951ed78ca710f2cf6a6a0b64637bc6">4b808fc3</a> mandoc: remove useless quotes
+  2019-10-12 <a href="https://github.com/kisslinux/repo/commit/7f66036baf4ea2f53860b84a592637290c6c2eea">7f66036b</a> mandoc: use mirror for source as upstream is offline.
+  2019-10-08 <a href="https://github.com/kisslinux/repo/commit/a92343c1eaa25b33e1f3663d94f0d60057f45b53">a92343c1</a> mandoc: Enable building with CC
+  2019-09-07 <a href="https://github.com/kisslinux/repo/commit/aab01ce8b80cf5bebe2dc8ecd2e27fd9b2418e35">aab01ce8</a> mandoc: fix depends'
+  2019-08-29 <a href="https://github.com/kisslinux/repo/commit/7e36ef47afb284429b055b4e52e673e90b4f6e43">7e36ef47</a> mandoc: fix package
+  2019-08-13 <a href="https://github.com/kisslinux/repo/commit/42eab33755c786d9c771aa8504d4585742df54d3">42eab337</a> mandoc: bump to 1.14.5
+  2019-08-13 <a href="https://github.com/kisslinux/repo/commit/33ea80ae6f4dc3ad6ec3252566f2729c25ef4749">33ea80ae</a> mandoc: new package at 1.14.3
+
+
+<span id=006><a href=#006>[006]</a></span> References
 ________________________________________________________________________________
 
 <span id=0><a href=#0>[0]</a></span> <a href=https://en.wikipedia.org/wiki/Mandoc>https://en.wikipedia.org/wiki/Mandoc</a>

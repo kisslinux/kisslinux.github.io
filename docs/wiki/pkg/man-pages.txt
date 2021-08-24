@@ -1,4 +1,4 @@
-man-pages
+man-pages                                                           version <a href=https://github.com/kisslinux/repo/tree/master/extra/man-pages>5.12</a>
 ________________________________________________________________________________
 
 The Linux man-pages project documents the Linux kernel and C library interfaces
@@ -18,7 +18,9 @@ ________________________________________________________________________________
 
 * Installation-------------------------------------------------------------[001]
 * Usage--------------------------------------------------------------------[002]
-* References---------------------------------------------------------------[003]
+* Statistics---------------------------------------------------------------[003]
+  * Change-History---------------------------------------------------------[004]
+* References---------------------------------------------------------------[005]
 
 
 [001] Installation
@@ -38,7 +40,18 @@ ________________________________________________________________________________
 Refer to the manual pages and command help output.
 
 
-[003] References
+[004] Statistics
+________________________________________________________________________________
+
+
+--[005]-Change-History--------------------------------------------------------
+
+  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/42b27cb27f542e2ac86d33f388331ad3d48cc6fe">42b27cb2</a> man-pages: use VERSION
+  2021-07-12 <a href="https://github.com/kisslinux/repo/commit/dce9f05156ca6cf286f6bb8d3ecbb3a28dc3f7eb">dce9f051</a> man-pages: provide man-pages-posix (See #273)
+  2021-07-12 <a href="https://github.com/kisslinux/repo/commit/55172af4262daaf4e0ceb88b932e88633307a7d8">55172af4</a> man-pages: 5.12 (See #273)
+
+
+[006] References
 ________________________________________________________________________________
 
 [0] https://www.kernel.org/doc/man-pages/

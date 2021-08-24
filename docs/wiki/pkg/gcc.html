@@ -5,7 +5,7 @@
 |\ISS</a>               <a href=/tidbits>Tidbits</a>  <a href=/post>Posts</a>  <a href=/answers>Answers</a>  <a href=/install>Install</a>  <a href=/wiki>Wiki</a>  <a href=/contact>Contact</a>  <a href=/donate>Donate</a>  </div><div style="image-rendering:crisp-edges;display:inline-block;vertical-align:sub"><a href=https://github.com/kisslinux/><img src="data:image/gif;base64,R0lGODlhEAAQAPABAAAAAP//ACH5BAUIAAEALAAAAAAQABAAAAIojA2px6G/GJzgJASxbrI+jmVgGI3TSF4oZS6emmqw823dTFcWbklNAQA7"></a></div>
 
 
-GCC
+gcc                                                               version <a href=https://github.com/kisslinux/repo/tree/master/core/gcc>11.2.0</a>
 ________________________________________________________________________________
 
 The GNU Compiler Collection (GCC) is an optimizing compiler produced by the GNU
@@ -28,7 +28,9 @@ ________________________________________________________________________________
 * Usage--------------------------------------------------------------------<a href=#003>[003]</a>
 * Troubleshooting----------------------------------------------------------<a href=#004>[004]</a>
   * C/CXX-Compiler-Cannot-Create-Executables-------------------------------<a href=#005>[005]</a>
-* References---------------------------------------------------------------<a href=#006>[006]</a>
+* Statistics---------------------------------------------------------------<a href=#006>[006]</a>
+  * Change-History---------------------------------------------------------<a href=#007>[007]</a>
+* References---------------------------------------------------------------<a href=#008>[008]</a>
 
 
 <span id=001><a href=#001>[001]</a></span> Installation
@@ -73,7 +75,79 @@ ________________________________________________________________________________
   If the issue still persists, open a bug at $/<a href=https://github.com/kisslinux/repo>kisslinux/repo</a>
 
 
-<span id=006><a href=#006>[006]</a></span> References
+<span id=007><a href=#007>[007]</a></span> Statistics
+________________________________________________________________________________
+
+
+--<span id=008><a href=#008>[008]</a></span>-Change-History--------------------------------------------------------
+
+  2021-08-17 <a href="https://github.com/kisslinux/repo/commit/8650abf170734bff37d4d725815c68a604f23de3">8650abf1</a> gcc: fix checksums. Closes #319
+  2021-08-17 <a href="https://github.com/kisslinux/repo/commit/f5c901bf5e8ea708c6ac08f5d1a4ef5db2b35663">f5c901bf</a> gcc: remove mold workaround
+  2021-08-16 <a href="https://github.com/kisslinux/repo/commit/e4e4d460b98a5d1f4a864104017c003d724967ed">e4e4d460</a> gcc: fix build with mold
+  2021-07-28 <a href="https://github.com/kisslinux/repo/commit/7652b979db9cc3e78f0dfcb13f61eec39d597214">7652b979</a> gcc: 11.2.0
+  2021-07-17 <a href="https://github.com/kisslinux/repo/commit/4a4e4e1fec34086758d696ae51097fba5ea3e789">4a4e4e1f</a> gcc: update for new env
+  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/9129f663efdb38710bece261679b74fc854881fb">9129f663</a> gcc: use VERSION
+  2021-07-09 <a href="https://github.com/kisslinux/repo/commit/fc4a67f57492e41eb2d5b9b560802e95b19a8731">fc4a67f5</a> gcc: enable initfini-array. See #271
+  2021-07-06 <a href="https://github.com/kisslinux/repo/commit/e4b4335e2e615cf26d4cf36de8f4cea0c1ae81d2">e4b4335e</a> gcc: update gmp, mpc and mpfr
+  2021-07-03 <a href="https://github.com/kisslinux/repo/commit/e594cf011ff196f09f081423d80d6e4c4ee76721">e594cf01</a> gcc: remove sed -i
+  2021-07-02 <a href="https://github.com/kisslinux/repo/commit/4ba84341250ad65a8019fb1244b931607eb1edbc">4ba84341</a> gcc: mark c99 as executable
+  2021-07-01 <a href="https://github.com/kisslinux/repo/commit/ce656189865ac13055c7cfdbfd886f66339eb9b3">ce656189</a> gcc: backport patch from GCC 11.2
+  2021-07-01 <a href="https://github.com/kisslinux/repo/commit/03082d8bbf050cb8a800d2f54661faf385251bbb">03082d8b</a> gcc: add missing flags
+  2021-07-01 <a href="https://github.com/kisslinux/repo/commit/61db95b2e398a6e3e699ba2ce2edf095d0617dcd">61db95b2</a> gcc: disable zstd
+  2021-07-01 <a href="https://github.com/kisslinux/repo/commit/895c4217cb236814dba040b947dc2292e1e5ce6c">895c4217</a> gcc: remove usage of install
+  2021-06-30 <a href="https://github.com/kisslinux/repo/commit/be32635baa0938e426470876e3cd500c7ced408b">be32635b</a> gcc: 11.1.0
+  2020-07-23 <a href="https://github.com/kisslinux/repo/commit/8bc8a49d4d66dd0ef848c9703b640cdbe9ba916e">8bc8a49d</a> gcc: bump to 10.2.0
+  2020-06-01 <a href="https://github.com/kisslinux/repo/commit/8a5f380c6fb2273ccb6f3ba520dbd6b11dafbf49">8a5f380c</a> gcc: fix source (cert expr)
+  2020-05-15 <a href="https://github.com/kisslinux/repo/commit/cc3efab794da92d8659c9ad64b1492e887498801">cc3efab7</a> gcc: unhardcode version
+  2020-05-11 <a href="https://github.com/kisslinux/repo/commit/d7d9eae4e8b09380e9b9ce09846c4e660ef75e97">d7d9eae4</a> gcc: Skip bootstrap if we are able
+  2020-05-08 <a href="https://github.com/kisslinux/repo/commit/d762966e006190fe27ffde7ab62516ec316d28eb">d762966e</a> gcc: Fix LTO location
+  2020-05-08 <a href="https://github.com/kisslinux/repo/commit/998cfc4f9bbcefc265b5fd2f8a7578b1f4e939ec">998cfc4f</a> gcc: minor tweaks
+  2020-05-08 <a href="https://github.com/kisslinux/repo/commit/6dd1eb90767390aacc31067462084cf710d57529">6dd1eb90</a> gcc: bump to 10.1.0
+  2020-05-02 <a href="https://github.com/kisslinux/repo/commit/071f63d170298d3c6e545a357705a490e33c7f3b">071f63d1</a> gcc: Fix broken LTO symlink
+  2020-03-28 <a href="https://github.com/kisslinux/repo/commit/ee1161617b1625ac015eef6e03d3cf6d042e0d2b">ee116161</a> gcc: bump to latest snapshot
+  2020-03-19 <a href="https://github.com/kisslinux/repo/commit/225acbd05cd433d11e52a59a77a8b4fb44907a41">225acbd0</a> gcc: Remove verbose from cp
+  2020-03-14 <a href="https://github.com/kisslinux/repo/commit/05ab743102d07b28b800e9307d2ebe2b0034c666">05ab7431</a> gcc: Fix depends
+  2020-03-12 <a href="https://github.com/kisslinux/repo/commit/d0f826b54150b7631673e1909998f5b5b5d79b7a">d0f826b5</a> gcc: bump to 9.3.0
+  2020-03-11 <a href="https://github.com/kisslinux/repo/commit/11622c4acc70e9481963415b4e09269a16b261a4">11622c4a</a> gcc: latest snapshot
+  2020-03-07 <a href="https://github.com/kisslinux/repo/commit/058ed8d015225aff00b8dbe5f02a7d223367c861">058ed8d0</a> gcc: Fix source
+  2020-03-03 <a href="https://github.com/kisslinux/repo/commit/5d3c33261a8a8b89ec3ec5e7662e212c8d7d1227">5d3c3326</a> gcc: latest snapshot
+  2020-03-03 <a href="https://github.com/kisslinux/repo/commit/a39a48c3bc0c6098f5e170bde5497a85df3551c0">a39a48c3</a> gcc: No nls
+  2020-02-25 <a href="https://github.com/kisslinux/repo/commit/c87231f2ce6af10f49ba8d7dbb74d0315c14faa9">c87231f2</a> gcc: latest snapshot
+  2020-02-17 <a href="https://github.com/kisslinux/repo/commit/ef16465613399c4930bf970086e704a71d2de8d3">ef164656</a> gcc: Latest snapshot
+  2020-02-15 <a href="https://github.com/kisslinux/repo/commit/9be524141f15fc64bdddd6bc2cd5daca737c9347">9be52414</a> gcc: setup lto. Closes #153
+  2020-02-12 <a href="https://github.com/kisslinux/repo/commit/2e5541c82e04f2586b603bf873dd47247be7482d">2e5541c8</a> gcc: Add version 10 to testing
+  2020-02-11 <a href="https://github.com/kisslinux/repo/commit/ba2e1027391d9d1628e92bdeeec2a023eef1b755">ba2e1027</a> gcc: Revert static-pie fix.
+  2020-02-09 <a href="https://github.com/kisslinux/repo/commit/96ad6fbe89791b0e0dd830b335ac3be2ac9851b0">96ad6fbe</a> gcc: bump version for libgomp and static-pie fixes.
+  2020-01-23 <a href="https://github.com/kisslinux/repo/commit/d7a4e9f6fd3331bab4a5bd29e7c2c46e36cf6fdc">d7a4e9f6</a> gcc: fix libgomp relocation. Patch applied from @ioraff
+  2019-12-18 <a href="https://github.com/kisslinux/repo/commit/8c20ab97a82fdba41c854b03610fe81b1d26329e">8c20ab97</a> gcc: Use better mirror
+  2019-10-07 <a href="https://github.com/kisslinux/repo/commit/1ef385f1840e6db934f3c38ea1a6e827eb174bae">1ef385f1</a> gcc: remove rm
+  2019-10-05 <a href="https://github.com/kisslinux/repo/commit/d9a64ed406adc14af10fedce71cf92a3c70af848">d9a64ed4</a> gcc: let nls be detected
+  2019-09-13 <a href="https://github.com/kisslinux/repo/commit/6714705a9b869e9e8de72f052d853ccbd14a0a56">6714705a</a> gcc: use https for source
+  2019-09-07 <a href="https://github.com/kisslinux/repo/commit/e3405c38c69b6e8b68ae815c80d6a8edfb824313">e3405c38</a> gcc: fix build formatting
+  2019-08-24 <a href="https://github.com/kisslinux/repo/commit/1b28bed346cb3cf49c7fc6cc18c5bd9eaddea9aa">1b28bed3</a> gcc: remove accidentally pushed changes
+  2019-08-23 <a href="https://github.com/kisslinux/repo/commit/027c7e337ddc6769a7e7712f2009b7309aba2a39">027c7e33</a> gcc: bump to 9.2
+  2019-08-22 <a href="https://github.com/kisslinux/repo/commit/f36dd5533907162ce6bbce41a2a238e4392e1bf6">f36dd553</a> gcc: Add 9.2.0 to testing.
+  2019-07-15 <a href="https://github.com/kisslinux/repo/commit/80f188be02777e64c1bbc90617963cdcc74f9111">80f188be</a> gcc: various fixes
+  2019-07-15 <a href="https://github.com/kisslinux/repo/commit/d6c56f85878b3bb86459a19249f6c39c0c232b92">d6c56f85</a> gcc: use lib and not lib64 by default
+  2019-07-15 <a href="https://github.com/kisslinux/repo/commit/903cab33cc8f513b307185a1394f3619519ae306">903cab33</a> gcc: bundle gmp/mpfr/mpc build
+  2019-07-13 <a href="https://github.com/kisslinux/repo/commit/37ca5b5343642e9375cee226214a7c81e05611f2">37ca5b53</a> gcc: re-enable bootstrap
+  2019-07-13 <a href="https://github.com/kisslinux/repo/commit/94b9e47dce4f8038e864b4465017b8957f85278f">94b9e47d</a> gcc: Fix -pipe
+  2019-07-13 <a href="https://github.com/kisslinux/repo/commit/80aafc3dc97f203fac867a3b779d66496fa9ddff">80aafc3d</a> gcc: Fix build.
+  2019-07-13 <a href="https://github.com/kisslinux/repo/commit/b7455c9466beac22e25a327cf920263339c9216a">b7455c94</a> gcc: Try and fix build again.
+  2019-07-12 <a href="https://github.com/kisslinux/repo/commit/e8c42dc00c7300b029e50ee0cfc7aaec001a43cd">e8c42dc0</a> gcc: Try more options.
+  2019-07-12 <a href="https://github.com/kisslinux/repo/commit/5ffda2c51284b9e8146d8412418ea40e01f3ebc0">5ffda2c5</a> gcc: Attempt to fix build.
+  2019-07-06 <a href="https://github.com/kisslinux/repo/commit/6dbca17fa941524cc70d7ed73c3dc34b34695da2">6dbca17f</a> gcc: bump to 9.1.0
+  2019-06-28 <a href="https://github.com/kisslinux/repo/commit/3af3d3b4c83d696d9ca3d708bf9e8414e86d051d">3af3d3b4</a> gcc: add c99 executable for POSIX compliance
+  2019-06-21 <a href="https://github.com/kisslinux/repo/commit/b22f6c7135e262b3ab38e650e87accb689dca269">b22f6c71</a> gcc: Fix build issue
+  2019-06-19 <a href="https://github.com/kisslinux/repo/commit/4948ff3c8112267ddb00d762504ecb7973753233">4948ff3c</a> gcc: add license
+  2019-06-19 <a href="https://github.com/kisslinux/repo/commit/bdb85168b3dbdc8b036b18da84113a499ed178e3">bdb85168</a> gcc: lint
+  2019-06-19 <a href="https://github.com/kisslinux/repo/commit/7313690ed8a3332960c14b918c10be358b9cee57">7313690e</a> gcc: add cc symlink
+  2019-06-18 <a href="https://github.com/kisslinux/repo/commit/0ee08bb6cb709bbfc45b57fba23b14e5926589a0">0ee08bb6</a> gcc: Added manifest
+  2019-06-17 <a href="https://github.com/kisslinux/repo/commit/98b29bcf4d86b343defbb9657f41eba7f118359b">98b29bcf</a> gcc: Remove all patches
+  2019-06-17 <a href="https://github.com/kisslinux/repo/commit/a4fb29a36c81fd63153d8ee2e1dd641789372e36">a4fb29a3</a> gcc: Build outside of gcc directory.
+
+
+<span id=009><a href=#009>[009]</a></span> References
 ________________________________________________________________________________
 
 <span id=0><a href=#0>[0]</a></span> <a href=https://en.wikipedia.org/wiki/GNU_Compiler_Collection>https://en.wikipedia.org/wiki/GNU_Compiler_Collection</a>

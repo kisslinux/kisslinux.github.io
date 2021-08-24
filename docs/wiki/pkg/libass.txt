@@ -1,4 +1,4 @@
-libass
+libass                                                            version <a href=https://github.com/kisslinux/repo/tree/master/extra/libass>0.15.1</a>
 ________________________________________________________________________________
 
 libass is a portable subtitle renderer for the ASS/SSA
@@ -13,7 +13,9 @@ ________________________________________________________________________________
 
 * Installation-------------------------------------------------------------[001]
 * Usage--------------------------------------------------------------------[002]
-* References---------------------------------------------------------------[003]
+* Statistics---------------------------------------------------------------[003]
+  * Change-History---------------------------------------------------------[004]
+* References---------------------------------------------------------------[005]
 
 
 [001] Installation
@@ -33,7 +35,25 @@ No documentation is currently provided with the package, refer to online
 documentation for the time being.
 
 
-[003] References
+[004] Statistics
+________________________________________________________________________________
+
+
+--[005]-Change-History--------------------------------------------------------
+
+  2021-07-28 <a href="https://github.com/kisslinux/repo/commit/72c73be4c5a663b9941cb993a48cf8659d5ac02b">72c73be4</a> libass: avoid chmod
+  2021-07-18 <a href="https://github.com/kisslinux/repo/commit/41d91ab4d3e7c3b98e19316606fe67c4e06c62ba">41d91ab4</a> libass: update for new env
+  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/f4ad874e7614ad48c967552995bf477c0e6f9601">f4ad874e</a> libass: use VERSION/VERSION
+  2021-07-07 <a href="https://github.com/kisslinux/repo/commit/92f6a37b6f0888447633202f6ef8a3a4768cad7c">92f6a37b</a> libass: remove fribidi dependency
+  2021-06-30 <a href="https://github.com/kisslinux/repo/commit/f4c70051ca6106807bdada6fb8a6ca3a448cebf8">f4c70051</a> libass: 0.15.1
+  2020-10-27 <a href="https://github.com/kisslinux/repo/commit/ed785918749476858c21c325e049307aebfe1250">ed785918</a> libass: 0.15.0
+  2020-02-28 <a href="https://github.com/kisslinux/repo/commit/0634031fd315b5586a8924f324877478fded961b">0634031f</a> libass: Use nasm
+  2020-01-19 <a href="https://github.com/kisslinux/repo/commit/8b5f266f1c81b7512ef2fc73030e93be64fd5869">8b5f266f</a> libass: Remove fribidi dependency
+  2019-08-05 <a href="https://github.com/kisslinux/repo/commit/92e8002a873752942f868dce61f342f72984510f">92e8002a</a> libass: move to extra
+  2019-07-23 <a href="https://github.com/kisslinux/repo/commit/7f21add39b81041e3be8b323e09c7d09e93b3e3e">7f21add3</a> libass: new package at 0.14.0
+
+
+[006] References
 ________________________________________________________________________________
 
 [0] https://github.com/libass/libass

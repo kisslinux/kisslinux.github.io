@@ -1,4 +1,4 @@
-efivar
+efivar                          version <a href=https://github.com/kisslinux/repo/tree/master/extra/efivar>cff88dd96b9d43e2c5875a24ba6180b196890ded</a>
 ________________________________________________________________________________
 
 Tools and libraries to work with EFI variables [0]
@@ -11,7 +11,9 @@ ________________________________________________________________________________
 
 * Installation-------------------------------------------------------------[001]
 * Usage--------------------------------------------------------------------[002]
-* References---------------------------------------------------------------[003]
+* Statistics---------------------------------------------------------------[003]
+  * Change-History---------------------------------------------------------[004]
+* References---------------------------------------------------------------[005]
 
 
 [001] Installation
@@ -30,7 +32,31 @@ ________________________________________________________________________________
 Refer to the manual pages for more information.
 
 
-[003] References
+[004] Statistics
+________________________________________________________________________________
+
+
+--[005]-Change-History--------------------------------------------------------
+
+  2021-08-15 <a href="https://github.com/kisslinux/repo/commit/1f2467755a8f2a26095193ae77bbf03de85646fe">1f246775</a> efivar: fix linking with alternative linkers.
+  2021-08-08 <a href="https://github.com/kisslinux/repo/commit/cce95407a0484c1ae02376336afefce44c77181c">cce95407</a> efivar: add rationale
+  2021-08-08 <a href="https://github.com/kisslinux/repo/commit/c29cd78bf35db44b6a16bbb00a8426b906d3eded">c29cd78b</a> efivar: disable thread-test
+  2021-07-27 <a href="https://github.com/kisslinux/repo/commit/301854405346e5b9b1c0caf51605ad5086858bb9">30185440</a> efivar: simplify build
+  2021-07-18 <a href="https://github.com/kisslinux/repo/commit/ae77a36798a067a72e22e65edf7c37be6d420dc5">ae77a367</a> efivar: fix linter
+  2021-07-17 <a href="https://github.com/kisslinux/repo/commit/482c7abade477871d9331e0bee9406538d298087">482c7aba</a> efivar: update for new env, also unhardcode gcc
+  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/e80d34eb17c811bbe393192564bfec713101d7cc">e80d34eb</a> efivar: use VERSION
+  2021-07-13 <a href="https://github.com/kisslinux/repo/commit/520617e74cb5f00fb8f2b2fde4f0dadd829fda9e">520617e7</a> efivar: Force -j1
+  2021-07-05 <a href="https://github.com/kisslinux/repo/commit/d8e18b91c6c7882f4c025c21095c6d9d116e45c2">d8e18b91</a> efivar: change source to recent commit
+  2021-07-03 <a href="https://github.com/kisslinux/repo/commit/564da4b48ce7b869a8ac4bc054cd4c7b951f7ab8">564da4b4</a> efivar: remove sed -i
+  2021-07-01 <a href="https://github.com/kisslinux/repo/commit/a889cfca75551143d191ae54f8c5100f3e903da4">a889cfca</a> efivar: use new checksums format
+  2020-09-21 <a href="https://github.com/kisslinux/repo/commit/b91421ec8b03b701a900f2738ae7740f3036c007">b91421ec</a> efivar: fix build when CFLAGS unset. #220
+  2020-02-12 <a href="https://github.com/kisslinux/repo/commit/080fd82bddc1a4eaf51fb4c3fd311d1dfa01e885">080fd82b</a> efivar: clean up and use cc
+  2020-01-08 <a href="https://github.com/kisslinux/repo/commit/64362b847c5a6486d80c76da6774cfed6ffdc614">64362b84</a> efivar: Pull patches from upstream to fix verbose issues in efibootmgr
+  2019-10-08 <a href="https://github.com/kisslinux/repo/commit/c0f220d067c85b5982759b528ef1a97b242f42d4">c0f220d0</a> efivar: dry
+  2019-07-16 <a href="https://github.com/kisslinux/repo/commit/01aa4ce81b701b6f1ee9a1d58f44d63d753845a5">01aa4ce8</a> efivar: fix gcc9 build
+
+
+[006] References
 ________________________________________________________________________________
 
 [0] https://github.com/rhboot/efivar

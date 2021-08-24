@@ -1,4 +1,4 @@
-pigz
+pigz                                                                 version <a href=https://github.com/kisslinux/repo/tree/master/core/pigz>2.6</a>
 ________________________________________________________________________________
 
 pigz, which stands for parallel implementation of gzip, is a fully functional
@@ -15,7 +15,9 @@ ________________________________________________________________________________
 * Installation-------------------------------------------------------------[001]
 * Setup--------------------------------------------------------------------[002]
 * Usage--------------------------------------------------------------------[003]
-* References---------------------------------------------------------------[004]
+* Statistics---------------------------------------------------------------[004]
+  * Change-History---------------------------------------------------------[005]
+* References---------------------------------------------------------------[006]
 
 
 [001] Installation
@@ -42,7 +44,18 @@ ________________________________________________________________________________
 Refer to the manual pages and command help output.
 
 
-[004] References
+[005] Statistics
+________________________________________________________________________________
+
+
+--[006]-Change-History--------------------------------------------------------
+
+  2021-07-18 <a href="https://github.com/kisslinux/repo/commit/471e46b99ce375b11bf0a5aa3062a7c0e10b215d">471e46b9</a> pigz: fix linter
+  2021-07-18 <a href="https://github.com/kisslinux/repo/commit/4c226fa3c048700043ea63016f95a99dc34bd01a">4c226fa3</a> pigz: get rid of zopfli and superfluous symlinks
+  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/8f254cb7900e76cd70b8a33bdf7755dce6c1a99c">8f254cb7</a> pigz: 2.6
+
+
+[007] References
 ________________________________________________________________________________
 
 [0] https://zlib.net/pigz/

@@ -47,17 +47,62 @@ page() {
     cp -Lf "site/$1" "docs/$1"
 }
 
+pkg() {
+    mkdir -p site/wiki/pkg
+
+    # Get git log of all packages.
+    git -C "$KISS_REPO" log \
+        --date=short \
+        --pretty="format:  %cd <a href=\"$url/commit/%H\">%h</a> %s" \
+        > .log
+
+    for pkg in "$KISS_REPO"/*/*/; do
+        pkg=${pkg%%/}
+        rep=${pkg%/*}
+        rep=${rep##*/}
+
+        while IFS= read -r line || [ "$line" ]; do case $line in
+            # Insert package version.
+            "${pkg##*/}")
+                read -r ver _ < "$pkg/version"
+                printf "%s%$((80 - ${#line}))s\\n" "$line" "version $ver" |
+                    sed "s	$ver	<a href=$url/tree/master/$rep/$line>$ver</a>	"
+            ;;
+
+            # Insert new entries into index.
+            "* References"*)
+                _i=${line##*\[0}
+                _i=${_i#0}
+                _i=${_i%%']'}
+                printf '* Statistics---------------------------------------------------------------[%03d]\n' "$_i"
+                printf '  * Change-History---------------------------------------------------------[%03d]\n' "$((_i += 1))"
+                printf '%s[%03d]\n' "${line%'['*}" "$((_i + 1))"
+            ;;
+
+            # Insert new entries into page.
+            "["???"] References"*)
+                printf '[%03d] Statistics\n' "$_i"
+                printf '________________________________________________________________________________\n\n'
+                printf -- '\n--[%03d]-Change-History--------------------------------------------------------\n\n' "$((_i += 1))"
+                grep -F "${pkg##*/}: " .log
+                printf '\n\n[%03d] References\n' "$((_i + 1))"
+            ;;
+
+            *)
+                printf '%s\n' "$line"
+            ;;
+        esac done < "$pkg/README" > "site/wiki/pkg/${pkg##*/}.txt" || :
+
+    done
+
+    rm -f .log
+}
+
 main() {
     rm -rf docs && mkdir -p docs
+    url=https://github.com/kisslinux/repo
 
-    [ -z "$KISS_REPO" ] || {
-        mkdir -p site/wiki/pkg
-
-        for pkg in "$KISS_REPO"/*/*/; do
-            pkg=${pkg%%/}
-            cp -Lf "$pkg/README" "site/wiki/pkg/${pkg##*/}.txt" || :
-        done
-    }
+    [ -z "$KISS_REPO" ] || pkg
 
     (cd site && find . ! -type d) |
 

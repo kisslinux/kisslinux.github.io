@@ -5,7 +5,7 @@
 |\ISS</a>               <a href=/tidbits>Tidbits</a>  <a href=/post>Posts</a>  <a href=/answers>Answers</a>  <a href=/install>Install</a>  <a href=/wiki>Wiki</a>  <a href=/contact>Contact</a>  <a href=/donate>Donate</a>  </div><div style="image-rendering:crisp-edges;display:inline-block;vertical-align:sub"><a href=https://github.com/kisslinux/><img src="data:image/gif;base64,R0lGODlhEAAQAPABAAAAAP//ACH5BAUIAAEALAAAAAAQABAAAAIojA2px6G/GJzgJASxbrI+jmVgGI3TSF4oZS6emmqw823dTFcWbklNAQA7"></a></div>
 
 
-openssh
+openssh                                                            version <a href=https://github.com/kisslinux/repo/tree/master/extra/openssh>8.7p1</a>
 ________________________________________________________________________________
 
 OpenSSH (also known as OpenBSD Secure Shell[a]) is a suite of secure networking
@@ -20,7 +20,9 @@ ________________________________________________________________________________
 
 * Installation-------------------------------------------------------------<a href=#001>[001]</a>
 * Usage--------------------------------------------------------------------<a href=#002>[002]</a>
-* References---------------------------------------------------------------<a href=#005>[005]</a>
+* Statistics---------------------------------------------------------------<a href=#005>[005]</a>
+  * Change-History---------------------------------------------------------<a href=#006>[006]</a>
+* References---------------------------------------------------------------<a href=#007>[007]</a>
 
 
 <span id=001><a href=#001>[001]</a></span> Installation
@@ -55,7 +57,37 @@ ________________________________________________________________________________
 Refer to the manual pages and command help output for more information.
 
 
-<span id=003><a href=#003>[003]</a></span> References
+<span id=006><a href=#006>[006]</a></span> Statistics
+________________________________________________________________________________
+
+
+--<span id=007><a href=#007>[007]</a></span>-Change-History--------------------------------------------------------
+
+  2021-08-20 <a href="https://github.com/kisslinux/repo/commit/4bfa1bf81be8de453b26ad3d25d3bc94c7fbe0c5">4bfa1bf8</a> openssh: 8.7p1
+  2021-08-05 <a href="https://github.com/kisslinux/repo/commit/36c87544a2a0f0004f50ffdf630616b53bdfbf22">36c87544</a> openssh: Fix ssh-copy-id not executable
+  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/37b8be80ce2271936e2237c3c46b518425a65fdd">37b8be80</a> openssh: use VERSION
+  2021-07-13 <a href="https://github.com/kisslinux/repo/commit/dbc9f588bb7dd73d681cb05e2d252e607a1e93be">dbc9f588</a> openssh: make runit file executable
+  2021-07-08 <a href="https://github.com/kisslinux/repo/commit/c5f35ce4749b7fd9a94f27391a7d7fc3447c1907">c5f35ce4</a> openssh: depend on openssl
+  2021-07-01 <a href="https://github.com/kisslinux/repo/commit/5be16f8ece6429a963c957c9dbd6cdaa4677710f">5be16f8e</a> openssh: remove usage of install
+  2021-06-30 <a href="https://github.com/kisslinux/repo/commit/8ead532679c6820c7f8910a1471b2fab4c66c7af">8ead5326</a> openssh: 8.6p1
+  2020-09-27 <a href="https://github.com/kisslinux/repo/commit/708c63774fd02d9d58fb3d5db9edc1326b1b88be">708c6377</a> openssh: 8.4p1
+  2020-05-27 <a href="https://github.com/kisslinux/repo/commit/0ee476af68ac902a463ce446c76f4395623f8c6d">0ee476af</a> openssh: bump to 8.3p1
+  2020-05-08 <a href="https://github.com/kisslinux/repo/commit/a4738c404dd6aedfb3560e738ad4025ededd41ce">a4738c40</a> openssh: Fix libexec location
+  2020-05-03 <a href="https://github.com/kisslinux/repo/commit/7be43ebb963a0a53e27f67a733d7f3341c29dc0b">7be43ebb</a> openssh: Clean up post-install file
+  2020-02-15 <a href="https://github.com/kisslinux/repo/commit/3d76f3029e47b23d519ffdc12695c561255ba908">3d76f302</a> openssh: bump to 8.2p1
+  2020-02-14 <a href="https://github.com/kisslinux/repo/commit/e9ba87a34140c97e55d02bc662065438b4f2bc33">e9ba87a3</a> openssh: clean up
+  2020-02-10 <a href="https://github.com/kisslinux/repo/commit/89fce838ea05c2c94d0e38583795f28bdd0b2ebe">89fce838</a> openssh: fix sbindir
+  2019-10-09 <a href="https://github.com/kisslinux/repo/commit/c1332541c7b812441308f51b1c70cc8507c68cf2">c1332541</a> openssh: bump to 8.1p1'
+  2019-09-23 <a href="https://github.com/kisslinux/repo/commit/0e94ed13f1719efd5c449a32a555d9baec7f4d75">0e94ed13</a> openssh: Error was musl related, reverted fix
+  2019-09-21 <a href="https://github.com/kisslinux/repo/commit/b8f85e5d441d8a54ec05635675c64125a61ba8ed">b8f85e5d</a> openssh: Don't use sys/cdefs.h from system.
+  2019-09-16 <a href="https://github.com/kisslinux/repo/commit/714d0f4d4ff7f289b48218492273298f8f954abc">714d0f4d</a> openssh: fix depends
+  2019-07-04 <a href="https://github.com/kisslinux/repo/commit/58b39a394fae5ea32ecd2166e7af573d649fe8fe">58b39a39</a> openssh: service change
+  2019-07-04 <a href="https://github.com/kisslinux/repo/commit/4d7cce5b336a75def664758f7a03a15f29348f13">4d7cce5b</a> openssh: add dependencies
+  2019-07-04 <a href="https://github.com/kisslinux/repo/commit/6965ea16c63000a95e0b1395a49ae124b4dcdde5">6965ea16</a> openssh: add runit services
+  2019-07-04 <a href="https://github.com/kisslinux/repo/commit/f0bc64d0db63a2ce4f489627b89c472a29a38ddb">f0bc64d0</a> openssh: add new package
+
+
+<span id=008><a href=#008>[008]</a></span> References
 ________________________________________________________________________________
 
 <span id=0><a href=#0>[0]</a></span> <a href=https://en.wikipedia.org/wiki/OpenSSH>https://en.wikipedia.org/wiki/OpenSSH</a>

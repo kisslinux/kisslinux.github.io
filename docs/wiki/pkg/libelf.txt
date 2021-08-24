@@ -1,4 +1,4 @@
-libelf
+libelf                                                             version <a href=https://github.com/kisslinux/repo/tree/master/extra/libelf>0.185</a>
 ________________________________________________________________________________
 
 NOTE: The libelf implementation is one component of elfutils of which the
@@ -16,7 +16,9 @@ ________________________________________________________________________________
 
 * Installation-------------------------------------------------------------[001]
 * Usage--------------------------------------------------------------------[002]
-* References---------------------------------------------------------------[003]
+* Statistics---------------------------------------------------------------[003]
+  * Change-History---------------------------------------------------------[004]
+* References---------------------------------------------------------------[005]
 
 
 [001] Installation
@@ -35,7 +37,44 @@ ________________________________________________________________________________
 Refer to the manual pages for more information.
 
 
-[003] References
+[004] Statistics
+________________________________________________________________________________
+
+
+--[005]-Change-History--------------------------------------------------------
+
+  2021-07-28 <a href="https://github.com/kisslinux/repo/commit/91e72c8e2e1d26bee00516837f12b97c3bb4ad3a">91e72c8e</a> libelf: avoid chmod
+  2021-07-18 <a href="https://github.com/kisslinux/repo/commit/58135ce6acbecac53530b8e42539bcb031f4e5fe">58135ce6</a> libelf: update for new env
+  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/abfe95d1623e9aeaf647cefbb164fb43bff2753e">abfe95d1</a> libelf: use VERSION/VERSION
+  2021-07-12 <a href="https://github.com/kisslinux/repo/commit/53bb9acb441b520afc5aa02effd2b076656a64dd">53bb9acb</a> libelf: install manual pages. See #273
+  2021-07-03 <a href="https://github.com/kisslinux/repo/commit/337653f27550a159e5468427131e79aed38aec2f">337653f2</a> libelf: remove sed -i
+  2021-07-03 <a href="https://github.com/kisslinux/repo/commit/713145387ec31e5cb19af5a21e9d5ac2e1c947dc">71314538</a> libelf: 0.185
+  2020-11-01 <a href="https://github.com/kisslinux/repo/commit/1b4b291178a2655753cc870523ce2c01127854a8">1b4b2911</a> libelf: 0.182
+  2020-10-14 <a href="https://github.com/kisslinux/repo/commit/f71e477dde8c08c57b50519507d71ce7a0a7fa7c">f71e477d</a> libelf: fix build with Clang (submitted by @konimex).
+  2020-09-12 <a href="https://github.com/kisslinux/repo/commit/16766089619aab695c246f79f625506bd13210b2">16766089</a> libelf: install pkg-config file. Closes #218
+  2020-09-10 <a href="https://github.com/kisslinux/repo/commit/4e269fe06c41a96b9b5822fb36a293b680f53e4b">4e269fe0</a> libelf: fix depends
+  2020-09-09 <a href="https://github.com/kisslinux/repo/commit/b394f79428ddb34a5c2aaa90d5073deb27ad99be">b394f794</a> libelf: 0.181
+  2020-08-01 <a href="https://github.com/kisslinux/repo/commit/dd0606a3499787cdf8dfd9924542abb3e4de6149">dd0606a3</a> libelf: fix build sometimes forcing -Werror. Closes #211
+  2020-08-01 <a href="https://github.com/kisslinux/repo/commit/ee62c900f91aade29e93b7fe83464810c44aab50">ee62c900</a> libelf: all hail elfutils 0.180
+  2020-07-24 <a href="https://github.com/kisslinux/repo/commit/bb6c33fd0ab89078b85f47aae8f9f4fd9d5c84ba">bb6c33fd</a> libelf: Add missing compile time dependency on m4. Closes #205
+  2020-05-26 <a href="https://github.com/kisslinux/repo/commit/969fbd8cf9634df8c816c17fd8fd8f2b2087e587">969fbd8c</a> libelf: Correctly use LDFLAGS/CPPFLAGS
+  2020-05-26 <a href="https://github.com/kisslinux/repo/commit/74b0ee8751e5d1641541f78816ddb0b031caf5cd">74b0ee87</a> libelf: Fix portability issues
+  2020-05-26 <a href="https://github.com/kisslinux/repo/commit/58ff323f1f203384f44e20f953bc241f58c21261">58ff323f</a> libelf: portability fixes from E5ten
+  2020-05-26 <a href="https://github.com/kisslinux/repo/commit/23380dfb3d95245aec8719ff120e7ffbf9f3a8d0">23380dfb</a> libelf: Fix build when previous libelf is installed
+  2020-05-26 <a href="https://github.com/kisslinux/repo/commit/01252e49a722515e85368de406534bdc4cac0884">01252e49</a> libelf: Fix issue with mesa
+  2020-05-26 <a href="https://github.com/kisslinux/repo/commit/34f4004226c5241bd611c2488c66cdd6b31ebf00">34f40042</a> libelf: Fix minor nitpick
+  2020-05-26 <a href="https://github.com/kisslinux/repo/commit/0195824b4f5ba4954b5dd1c1f1ba5f461a2f43c8">0195824b</a> libelf: Swap to elftoolchain libelf
+  2019-11-18 <a href="https://github.com/kisslinux/repo/commit/3dd0dff3064e4bb5b520fb4785e16e7eff339dab">3dd0dff3</a> libelf: remove useless quotes
+  2019-11-17 <a href="https://github.com/kisslinux/repo/commit/0e44a455584dffc4d0a330b6ab4273e6f5ae03db">0e44a455</a> libelf: fix checksums
+  2019-11-17 <a href="https://github.com/kisslinux/repo/commit/9b799b573bc9d6439ddc6870439e7f4ea8eaf3a3">9b799b57</a> libelf: remove patch
+  2019-10-05 <a href="https://github.com/kisslinux/repo/commit/5dd74681e0b8283496938b3e0d73adf5226da70d">5dd74681</a> libelf: let nls be detected
+  2019-08-26 <a href="https://github.com/kisslinux/repo/commit/4bf335ef98290aae731d923b2acf66df41e2a9ea">4bf335ef</a> libelf: format patch
+  2019-07-06 <a href="https://github.com/kisslinux/repo/commit/00fe9eae2e17dc010a9240f0938a159ef188054d">00fe9eae</a> libelf: Fix build with Linux 5.1
+  2019-07-06 <a href="https://github.com/kisslinux/repo/commit/c5f387a2dadb542f4044e9bce0f4dc3cf0f1c2fa">c5f387a2</a> libelf: Fix build with Linux 5.1
+  2019-06-02 <a href="https://github.com/kisslinux/repo/commit/616a9622f444dff3de011ee2011dd8f2e9e940d2">616a9622</a> libelf: add checksums and manifest
+
+
+[006] References
 ________________________________________________________________________________
 
 [0] https://sourceware.org/elfutils/

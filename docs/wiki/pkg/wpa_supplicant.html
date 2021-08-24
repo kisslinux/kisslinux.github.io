@@ -5,7 +5,7 @@
 |\ISS</a>               <a href=/tidbits>Tidbits</a>  <a href=/post>Posts</a>  <a href=/answers>Answers</a>  <a href=/install>Install</a>  <a href=/wiki>Wiki</a>  <a href=/contact>Contact</a>  <a href=/donate>Donate</a>  </div><div style="image-rendering:crisp-edges;display:inline-block;vertical-align:sub"><a href=https://github.com/kisslinux/><img src="data:image/gif;base64,R0lGODlhEAAQAPABAAAAAP//ACH5BAUIAAEALAAAAAAQABAAAAIojA2px6G/GJzgJASxbrI+jmVgGI3TSF4oZS6emmqw823dTFcWbklNAQA7"></a></div>
 
 
-wpa_supplicant
+wpa_supplicant                                                       version <a href=https://github.com/kisslinux/repo/tree/master/extra/wpa_supplicant>2.9</a>
 ________________________________________________________________________________
 
 wpa_supplicant is a free software implementation of an IEEE 802.11i supplicant
@@ -25,7 +25,9 @@ ________________________________________________________________________________
   * Conntecting-To-Networks------------------------------------------------]003]
 * Usage--------------------------------------------------------------------<a href=#004>[004]</a>
   * Starting-The-Service---------------------------------------------------<a href=#005>[005]</a>
-* References---------------------------------------------------------------<a href=#006>[006]</a>
+* Statistics---------------------------------------------------------------<a href=#006>[006]</a>
+  * Change-History---------------------------------------------------------<a href=#007>[007]</a>
+* References---------------------------------------------------------------<a href=#008>[008]</a>
 
 
 <span id=001><a href=#001>[001]</a></span> Installation
@@ -66,11 +68,40 @@ and its documentation.
   documentation for instructions on how to enable the service. <a href=#1>[1]</a>
 
 
-<span id=006><a href=#006>[006]</a></span> References
+<span id=007><a href=#007>[007]</a></span> Statistics
+________________________________________________________________________________
+
+
+--<span id=008><a href=#008>[008]</a></span>-Change-History--------------------------------------------------------
+
+  2021-07-29 <a href="https://github.com/kisslinux/repo/commit/7cb956ca685daf0f8792d450c8466492ec0ed576">7cb956ca</a> wpa_supplicant: provide service file
+  2021-07-18 <a href="https://github.com/kisslinux/repo/commit/3a3eb28420c354aec67b59493ae57d6e945b490d">3a3eb284</a> wpa_supplicant: remove unintended change
+  2021-07-18 <a href="https://github.com/kisslinux/repo/commit/39e12c0af274300fe9aec6ce87fdef327f7f4d58">39e12c0a</a> wpa_supplicant: update for new env
+  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/79493bc2f59be12e5812dd3c8f04c59ee9afd2db">79493bc2</a> wpa_supplicant: use VERSION
+  2021-07-08 <a href="https://github.com/kisslinux/repo/commit/1b4c581811a62a2184f32cf9af107b14790742e3">1b4c5818</a> wpa_supplicant: depend on openssl
+  2021-07-01 <a href="https://github.com/kisslinux/repo/commit/6acdef2ff0b0305d43696048b9375f509897ed6f">6acdef2f</a> wpa_supplicant: remove usage of install
+  2021-07-01 <a href="https://github.com/kisslinux/repo/commit/c900af4ba1b3a9e9e70b84a91aa61704d949ab74">c900af4b</a> wpa_supplicant: use new checksum format
+  2020-08-14 <a href="https://github.com/kisslinux/repo/commit/f7b634bdef33b53f0699b3ab6be05e2616e931ed">f7b634bd</a> wpa_supplicant: install manpages. closes #214
+  2020-02-25 <a href="https://github.com/kisslinux/repo/commit/c3085daee67a87be501e1140c980e8acad23c820">c3085dae</a> wpa_supplicant: use CC. @konimex. Closes #160
+  2020-02-24 <a href="https://github.com/kisslinux/repo/commit/b60d6455092361f94b2e7590c193d08c19c23499">b60d6455</a> wpa_supplicant: minor fixes
+  2020-02-24 <a href="https://github.com/kisslinux/repo/commit/78d2b7319521d0e37cf454cdc5499a4899104a9b">78d2b731</a> wpa_supplicant: Link statically to libnl-tiny
+  2020-02-14 <a href="https://github.com/kisslinux/repo/commit/e7d72d3468eef3999e76b9c74387745748d0aba6">e7d72d34</a> wpa_supplicant: clean up
+  2020-02-13 <a href="https://github.com/kisslinux/repo/commit/cec83368a6971b4fa986ce3144d5d058e259cd23">cec83368</a> libnl,mandoc,util-linux,wpa_supplicant: Move to extra
+  2019-10-07 <a href="https://github.com/kisslinux/repo/commit/5a9eccaae948ed7349401ebae7caa74d4c6dac91">5a9eccaa</a> wpa_supplicant: simplify build
+  2019-09-13 <a href="https://github.com/kisslinux/repo/commit/0b5a9992ac7c90984bcd48e52aac696f7b6f268a">0b5a9992</a> wpa_supplicant: use https for source
+  2019-08-18 <a href="https://github.com/kisslinux/repo/commit/3b8d5bf7241ed42eb3c8e6e978565ad2909fb11b">3b8d5bf7</a> wpa_supplicant: fix depends
+  2019-08-13 <a href="https://github.com/kisslinux/repo/commit/435df36594c64727ee012f4fd5534a54629339b2">435df365</a> wpa_supplicant: bump to 2.9
+  2019-08-04 <a href="https://github.com/kisslinux/repo/commit/61cd10eed0de6092b5b6e8ff2e690117932bbe5f">61cd10ee</a> wpa_supplicant: bump to 2.8
+  2019-08-04 <a href="https://github.com/kisslinux/repo/commit/2e335167033368cc85fd4c87dcff56bf0544ff0d">2e335167</a> wpa_supplicant: revert to 2.6
+  2019-06-21 <a href="https://github.com/kisslinux/repo/commit/f6b60b3c261ee59e14c090f321637ff54d3128b7">f6b60b3c</a> wpa_supplicant: use copyright notice
+  2019-06-21 <a href="https://github.com/kisslinux/repo/commit/715aa2ffcbdd7e6825761624562ba4ca5e777629">715aa2ff</a> wpa_supplicant: Fix package.
+
+
+<span id=009><a href=#009>[009]</a></span> References
 ________________________________________________________________________________
 
 <span id=0><a href=#0>[0]</a></span> <a href=https://en.wikipedia.org/wiki/Wpa_supplicant>https://en.wikipedia.org/wiki/Wpa_supplicant</a>
-<span id=1><a href=#1>[1]</a></span> #/<a href=/wiki/service-management>wiki/service-management</a>
+<span id=1><a href=#1>[1]</a></span> #/wiki/service-management
 
 
 

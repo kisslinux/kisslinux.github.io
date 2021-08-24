@@ -1,4 +1,4 @@
-alsa-utils
+alsa-utils                                                       version <a href=https://github.com/kisslinux/repo/tree/master/extra/alsa-utils>1.2.5.1</a>
 ________________________________________________________________________________
 
 This package contains the command line utilities for the ALSA project. The
@@ -13,7 +13,9 @@ ________________________________________________________________________________
 
 * Installation-------------------------------------------------------------[001]
 * Usage--------------------------------------------------------------------[002]
-* References---------------------------------------------------------------[003]
+* Statistics---------------------------------------------------------------[003]
+  * Change-History---------------------------------------------------------[004]
+* References---------------------------------------------------------------[005]
 
 
 [001] Installation
@@ -54,7 +56,31 @@ ________________________________________________________________________________
 Refer to the manual pages and help output for more information.
 
 
-[003] References
+[004] Statistics
+________________________________________________________________________________
+
+
+--[005]-Change-History--------------------------------------------------------
+
+  2021-07-17 <a href="https://github.com/kisslinux/repo/commit/ad088ae50fe6c5b65f57da4c7514bbee9fb5be31">ad088ae5</a> alsa-utils: update for new env
+  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/e5567d959aa4d3ad889c9da6a3258259a27dcdf2">e5567d95</a> alsa-utils: use VERSION
+  2021-06-30 <a href="https://github.com/kisslinux/repo/commit/57b91974c244c52627610e85f1169251354c3789">57b91974</a> alsa-utils: 1.2.5.1
+  2020-10-21 <a href="https://github.com/kisslinux/repo/commit/08c8cb0091d11d5a91e1a938f6ca9a0c755aa803">08c8cb00</a> alsa-utils: 1.2.4
+  2020-06-09 <a href="https://github.com/kisslinux/repo/commit/017756b170ce90e037eb3d69b9d40c3ca48b3006">017756b1</a> alsa-utils: bump to 1.2.3
+  2020-04-19 <a href="https://github.com/kisslinux/repo/commit/e14fc4b4e88a04e3643c11a22d96a0b48c5403e4">e14fc4b4</a> alsa-utils: Disable nls
+  2020-04-17 <a href="https://github.com/kisslinux/repo/commit/40797cc2f55c6c8ea99619c4b014fbc7f039b900">40797cc2</a> alsa-utils: Fix udev dir
+  2020-02-20 <a href="https://github.com/kisslinux/repo/commit/30141453fe827393d6e17654e32c13f177448f5c">30141453</a> alsa-utils: bump to 1.2.2
+  2020-02-10 <a href="https://github.com/kisslinux/repo/commit/34f29d7fb21c3ea3720f0bba86aeee9253c20f1e">34f29d7f</a> alsa-utils: Fix sbin dir
+  2020-01-03 <a href="https://github.com/kisslinux/repo/commit/5e0946e976deeb5e0a42cf85b106764dd741a5f9">5e0946e9</a> alsa-utils: Drop ncursesw flag
+  2019-11-16 <a href="https://github.com/kisslinux/repo/commit/b09aaa7201fa12d195b2d5a22ca4977da93ed145">b09aaa72</a> alsa-utils: bump to 1.2.1
+  2019-10-05 <a href="https://github.com/kisslinux/repo/commit/3d09c91094de714f54701ba4671332053fd7ea26">3d09c910</a> alsa-utils: let nls be detected
+  2019-09-25 <a href="https://github.com/kisslinux/repo/commit/7bcc547a88bc9fb153de441652de050ac64edcba">7bcc547a</a> alsa-utils: remove invalid configure flag
+  2019-09-13 <a href="https://github.com/kisslinux/repo/commit/079808dac1007913a8f0977d6dcc61f7b2af396c">079808da</a> alsa-utils: use https for source
+  2019-08-17 <a href="https://github.com/kisslinux/repo/commit/2a143d554e22dcab72d5a1b0443319e8919fcf60">2a143d55</a> alsa-utils: sort deps
+  2019-07-15 <a href="https://github.com/kisslinux/repo/commit/283944122ded52b1b0d344f300c6aa389f239836">28394412</a> alsa-utils: update to 1.1.9
+
+
+[006] References
 ________________________________________________________________________________
 
 [0] https://github.com/alsa-project/alsa-utils

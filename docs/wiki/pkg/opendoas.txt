@@ -1,4 +1,4 @@
-opendoas
+opendoas                                                           version <a href=https://github.com/kisslinux/repo/tree/master/extra/opendoas>6.8.1</a>
 ________________________________________________________________________________
 
 doas is a minimal replacement for the venerable sudo. It was initially written
@@ -14,7 +14,9 @@ ________________________________________________________________________________
 * Installation-------------------------------------------------------------[001]
 * Setup--------------------------------------------------------------------[002]
 * Usage--------------------------------------------------------------------[003]
-* References---------------------------------------------------------------[004]
+* Statistics---------------------------------------------------------------[004]
+  * Change-History---------------------------------------------------------[005]
+* References---------------------------------------------------------------[006]
 
 
 [001] Installation
@@ -40,7 +42,31 @@ ________________________________________________________________________________
 Refer to the manual pages and command help output.
 
 
-[004] References
+[005] Statistics
+________________________________________________________________________________
+
+
+--[006]-Change-History--------------------------------------------------------
+
+  2021-07-27 <a href="https://github.com/kisslinux/repo/commit/ea6901ff7450e7a6cda7c07dffeed74da967a24b">ea6901ff</a> opendoas: simplify build
+  2021-07-18 <a href="https://github.com/kisslinux/repo/commit/242a5e401de32aec3f40ee60917643d329e79081">242a5e40</a> opendoas: update for new env
+  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/50a77519604cda78662addcfa2f7bf095b034410">50a77519</a> opendoas: use VERSION
+  2021-07-03 <a href="https://github.com/kisslinux/repo/commit/e309be39eb7ddcef3d9fde780a824549b676bd7f">e309be39</a> opendoas: remove sed -i
+  2021-07-01 <a href="https://github.com/kisslinux/repo/commit/35437dcab4d965833dae5d9f81b9259fe8f14df0">35437dca</a> opendoas: remove usage of install
+  2021-06-30 <a href="https://github.com/kisslinux/repo/commit/0a3140af3e85b0eb517677d093a097c567ed231a">0a3140af</a> opendoas: 6.8.1
+  2020-11-15 <a href="https://github.com/kisslinux/repo/commit/3ae140462bd0322d6b73ba496630f9739d356e60">3ae14046</a> opendoas: Fix prefix. closes #239
+  2020-11-15 <a href="https://github.com/kisslinux/repo/commit/af9015ef27b0788f69cca1f8cac84c4d8c2abb4b">af9015ef</a> opendoas: 6.8
+  2020-05-18 <a href="https://github.com/kisslinux/repo/commit/91609b534fe19e13587c68fa8c5123b8baad7d91">91609b53</a> opendoas: Update config file
+  2020-05-14 <a href="https://github.com/kisslinux/repo/commit/e5ab47ad489a619a2ee680bb159e5dc74bc54766">e5ab47ad</a> opendoas: Fix config
+  2020-04-28 <a href="https://github.com/kisslinux/repo/commit/2eb82faebc5ebc67b96017e1d293512c493316fe">2eb82fae</a> opendoas: bump rel
+  2020-04-28 <a href="https://github.com/kisslinux/repo/commit/d1df7a508434c30b8c9f53ab0b9f7629e46e6695">d1df7a50</a> opendoas: Use 600 for config file
+  2020-02-24 <a href="https://github.com/kisslinux/repo/commit/cd34a78e247e49fa6f829289e4159ec2b8a69e61">cd34a78e</a> opendoas: fix comment
+  2020-02-09 <a href="https://github.com/kisslinux/repo/commit/1a9ada81120e8c666ebcd4c299be08ef61ef8c37">1a9ada81</a> opendoas: added new doas.conf for latest kiss
+  2020-02-04 <a href="https://github.com/kisslinux/repo/commit/eb4160f2dec4acf2e7c4203891298c6096cbf309">eb4160f2</a> opendoas: bump to 6.6.1
+  2020-01-30 <a href="https://github.com/kisslinux/repo/commit/806c863b39f0d832854dc66245c276b9b6718868">806c863b</a> opendoas: Move to extra
+
+
+[007] References
 ________________________________________________________________________________
 
 [0] https://github.com/Duncaen/OpenDoas

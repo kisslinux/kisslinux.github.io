@@ -5,7 +5,7 @@
 |\ISS</a>               <a href=/tidbits>Tidbits</a>  <a href=/post>Posts</a>  <a href=/answers>Answers</a>  <a href=/install>Install</a>  <a href=/wiki>Wiki</a>  <a href=/contact>Contact</a>  <a href=/donate>Donate</a>  </div><div style="image-rendering:crisp-edges;display:inline-block;vertical-align:sub"><a href=https://github.com/kisslinux/><img src="data:image/gif;base64,R0lGODlhEAAQAPABAAAAAP//ACH5BAUIAAEALAAAAAAQABAAAAIojA2px6G/GJzgJASxbrI+jmVgGI3TSF4oZS6emmqw823dTFcWbklNAQA7"></a></div>
 
 
-binutils
+binutils                                                            version <a href=https://github.com/kisslinux/repo/tree/master/core/binutils>2.37</a>
 ________________________________________________________________________________
 
 The GNU Binary Utilities, or binutils, are a set of programming tools for
@@ -22,7 +22,9 @@ ________________________________________________________________________________
 * Usage--------------------------------------------------------------------<a href=#002>[002]</a>
 * Troubleshooting----------------------------------------------------------<a href=#004>[004]</a>
   * Manual-Pages-Empty-----------------------------------------------------<a href=#005>[005]</a>
-* References---------------------------------------------------------------<a href=#006>[006]</a>
+* Statistics---------------------------------------------------------------<a href=#006>[006]</a>
+  * Change-History---------------------------------------------------------<a href=#007>[007]</a>
+* References---------------------------------------------------------------<a href=#008>[008]</a>
 
 
 <span id=001><a href=#001>[001]</a></span> Installation
@@ -81,7 +83,46 @@ ________________________________________________________________________________
   measure to ensure documentation remains available to those wanting it
 
 
-<span id=005><a href=#005>[005]</a></span> References
+<span id=007><a href=#007>[007]</a></span> Statistics
+________________________________________________________________________________
+
+
+--<span id=008><a href=#008>[008]</a></span>-Change-History--------------------------------------------------------
+
+  2021-08-21 <a href="https://github.com/kisslinux/repo/commit/0d76d5c0df09b628f58f4add00b719bbf653f283">0d76d5c0</a> binutils: fix empty manual pages issue
+  2021-08-17 <a href="https://github.com/kisslinux/repo/commit/dac75430d519c60df867151232f5566ae4cb63ed">dac75430</a> binutils: enable gold
+  2021-07-30 <a href="https://github.com/kisslinux/repo/commit/e2daa49642b0034b49c48bf32f19df1a45a2d4fc">e2daa496</a> binutils: fix #303
+  2021-07-19 <a href="https://github.com/kisslinux/repo/commit/e0c68962874c2ddc9580dbab57d83e6429148f82">e0c68962</a> binutils: 2.37
+  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/d28ff2fcf024d61db49479f31e51b5b586a7433a">d28ff2fc</a> binutils: update for new env
+  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/589d1273b166501c3dcb1d06d9b16e5d7535097d">589d1273</a> binutils: use VERSION
+  2021-06-30 <a href="https://github.com/kisslinux/repo/commit/be7f82375156d198164b106161870ce905a49a24">be7f8237</a> binutils: 2.36.1
+  2020-10-27 <a href="https://github.com/kisslinux/repo/commit/7fc0040f925a2de7e9468f8f9abbbac6d6137be7">7fc0040f</a> binutils: Enable deterministic archives. Closes #234
+  2020-09-19 <a href="https://github.com/kisslinux/repo/commit/0b6a5ad07a97a33c538137e77b26d79a5a2f0608">0b6a5ad0</a> binutils: 2.35.1
+  2020-09-17 <a href="https://github.com/kisslinux/repo/commit/9ceaf51444a4179d7c095be39665be64e1005759">9ceaf514</a> binutils: various changes
+  2020-08-30 <a href="https://github.com/kisslinux/repo/commit/d02884de06396a5eced05247c9f8ae118d0867fe">d02884de</a> binutils: use DESTDIR
+  2020-07-24 <a href="https://github.com/kisslinux/repo/commit/54abb9e2951ce7ec20f09f5116cfc0c4fb3508d3">54abb9e2</a> binutils: bump to 2.35
+  2020-05-11 <a href="https://github.com/kisslinux/repo/commit/5a446e4997910618ac94fccfaffeaeeced565838">5a446e49</a> binutils: Use /lib
+  2020-04-25 <a href="https://github.com/kisslinux/repo/commit/86e04a2b24e22f99cac90800b8e515bbb458c639">86e04a2b</a> binutils: Enable gold/lto
+  2020-03-15 <a href="https://github.com/kisslinux/repo/commit/a429d777002a8d4caa64dc79db8f8730e3455f53">a429d777</a> binutils: Fix depends
+  2020-03-14 <a href="https://github.com/kisslinux/repo/commit/954cb07993d7d3786e486a238c8b679a33a0ce18">954cb079</a> binutils: Fix depends
+  2020-03-14 <a href="https://github.com/kisslinux/repo/commit/9bc53316012e9a1845c4f9625b16949ce18a4465">9bc53316</a> binutils: Fix depends
+  2020-03-04 <a href="https://github.com/kisslinux/repo/commit/abc8e1558b1481b4d827601f22a05ac00269fd38">abc8e155</a> binutils: trailing white-space
+  2020-03-04 <a href="https://github.com/kisslinux/repo/commit/94ee1403b332770f2885162191bf4fac862ab676">94ee1403</a> binutils: Reduce size slightly
+  2020-02-01 <a href="https://github.com/kisslinux/repo/commit/b93e8ace77a9e39a3935826f7c9b544aa6d34bf7">b93e8ace</a> binutils: bump to 2.34
+  2019-10-24 <a href="https://github.com/kisslinux/repo/commit/0cad3ee6e2ac678c4d42ea2f143d9817bcb5cfb6">0cad3ee6</a> binutils: revert change
+  2019-10-24 <a href="https://github.com/kisslinux/repo/commit/f5a8ec62594dcd5a5d48bf63875f89cbea06955f">f5a8ec62</a> binutils: detect arch
+  2019-10-13 <a href="https://github.com/kisslinux/repo/commit/51643b712c20deec143cd7d8fddbee440f8628b5">51643b71</a> binutils: bump to 2.33.1
+  2019-10-08 <a href="https://github.com/kisslinux/repo/commit/1b31553dcd1fd587e1b83b0def1c61037d57f1c8">1b31553d</a> binutils: bump to 2.33. Uses debian/ubuntu source as official tarballs aren't out yet.
+  2019-10-07 <a href="https://github.com/kisslinux/repo/commit/9104289b1eba88515a1e06d18bf4d658a79c9202">9104289b</a> binutils: remove rm
+  2019-10-05 <a href="https://github.com/kisslinux/repo/commit/79f44edfed861b1608cda62f293572fff3f15926">79f44edf</a> binutils: let nls be detected
+  2019-08-17 <a href="https://github.com/kisslinux/repo/commit/851c4d3c216c27908dbba611fe382b3250ef5b20">851c4d3c</a> binutils: fix depends
+  2019-07-13 <a href="https://github.com/kisslinux/repo/commit/4e1a780e351045cda3397d9f718b06be886fc2d9">4e1a780e</a> binutils: Revert changes.
+  2019-06-19 <a href="https://github.com/kisslinux/repo/commit/5eaf0172202120afd7397c5301512f4cda7830d3">5eaf0172</a> binutils: add license
+  2019-06-17 <a href="https://github.com/kisslinux/repo/commit/e555d564f389d1335367673f5bf2eb7a188da014">e555d564</a> binutils: change deps to makedeps
+  2019-06-02 <a href="https://github.com/kisslinux/repo/commit/396d284f7f49c7054b0ec966150c6d3af403d36e">396d284f</a> binutils: add checksums and manifest
+
+
+<span id=009><a href=#009>[009]</a></span> References
 ________________________________________________________________________________
 
 <span id=0><a href=#0>[0]</a></span> <a href=https://en.wikipedia.org/wiki/GNU_Binutils>https://en.wikipedia.org/wiki/GNU_Binutils</a>

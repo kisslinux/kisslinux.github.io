@@ -5,7 +5,7 @@
 |\ISS</a>               <a href=/tidbits>Tidbits</a>  <a href=/post>Posts</a>  <a href=/answers>Answers</a>  <a href=/install>Install</a>  <a href=/wiki>Wiki</a>  <a href=/contact>Contact</a>  <a href=/donate>Donate</a>  </div><div style="image-rendering:crisp-edges;display:inline-block;vertical-align:sub"><a href=https://github.com/kisslinux/><img src="data:image/gif;base64,R0lGODlhEAAQAPABAAAAAP//ACH5BAUIAAEALAAAAAAQABAAAAIojA2px6G/GJzgJASxbrI+jmVgGI3TSF4oZS6emmqw823dTFcWbklNAQA7"></a></div>
 
 
-llvm
+llvm                                                              version <a href=https://github.com/kisslinux/repo/tree/master/extra/llvm>12.0.1</a>
 ________________________________________________________________________________
 
 LLVM is a set of compiler and toolchain technologies, which can be used to
@@ -23,7 +23,9 @@ ________________________________________________________________________________
 
 * Installation-------------------------------------------------------------<a href=#001>[001]</a>
 * Usage--------------------------------------------------------------------<a href=#002>[002]</a>
-* References---------------------------------------------------------------<a href=#003>[003]</a>
+* Statistics---------------------------------------------------------------<a href=#003>[003]</a>
+  * Change-History---------------------------------------------------------<a href=#004>[004]</a>
+* References---------------------------------------------------------------<a href=#005>[005]</a>
 
 
 <span id=001><a href=#001>[001]</a></span> Installation
@@ -43,7 +45,39 @@ Refer to the command help output. No manuals are (yet) provided with alongside
 this package.
 
 
-<span id=003><a href=#003>[003]</a></span> References
+<span id=004><a href=#004>[004]</a></span> Statistics
+________________________________________________________________________________
+
+
+--<span id=005><a href=#005>[005]</a></span>-Change-History--------------------------------------------------------
+
+  2021-08-01 <a href="https://github.com/kisslinux/repo/commit/273685de9676321627761c6898e757bea5643ba3">273685de</a> llvm: remove ncurses dependency
+  2021-07-18 <a href="https://github.com/kisslinux/repo/commit/0070d6f2630f803635fb281aaa7da1187452d4d7">0070d6f2</a> llvm: update for new env
+  2021-07-18 <a href="https://github.com/kisslinux/repo/commit/e8d1d91604224b72b050c817315019103695df93">e8d1d916</a> llvm: don't link to curses
+  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/9ae78630f226fbf6bedf8032553218c2c035c9aa">9ae78630</a> llvm: use VERSION/VERSION
+  2021-07-09 <a href="https://github.com/kisslinux/repo/commit/c841df7c59010dbc3158e39543627f524e710bbd">c841df7c</a> llvm: 12.0.1
+  2021-07-06 <a href="https://github.com/kisslinux/repo/commit/475f2bdcc542fda71961ff89806b6143b9291259">475f2bdc</a> llvm: swap to better means of disabling docs, etc
+  2021-06-30 <a href="https://github.com/kisslinux/repo/commit/12f128320f7393d539a8d317b68da66b7714cd73">12f12832</a> llvm: 12.0.0
+  2020-09-17 <a href="https://github.com/kisslinux/repo/commit/6c96e81956b1f4b95c64fa7b4e9fb2c92ac03342">6c96e819</a> llvm: disable libxml2
+  2020-05-05 <a href="https://github.com/kisslinux/repo/commit/a3695fe9a09241af89ee197c7a729cf8d9c2bb86">a3695fe9</a> llvm: Remove leftover shell
+  2019-11-14 <a href="https://github.com/kisslinux/repo/commit/8a95a1fd66cf1b3e2b79cd02fd6d86f28e9e6f5d">8a95a1fd</a> llvm: better build
+  2019-10-13 <a href="https://github.com/kisslinux/repo/commit/97a102fac3ea350bd17f3111f9a7af62b56de2e5">97a102fa</a> llvm: don't override MAKEFLAGS. Closes #105
+  2019-10-07 <a href="https://github.com/kisslinux/repo/commit/a012a942eb35dae52a974f63e6ab4cebebde658b">a012a942</a> llvm: test package for fully standalone llvm/clang
+  2019-09-21 <a href="https://github.com/kisslinux/repo/commit/970f8c226ea5696983c2544f64f6a7c52f70b767">970f8c22</a> llvm: revert to 8.0.1
+  2019-09-20 <a href="https://github.com/kisslinux/repo/commit/91f30c34d9fcf0d984723c7fb69fcea9bc667b86">91f30c34</a> llvm: use https for source
+  2019-09-20 <a href="https://github.com/kisslinux/repo/commit/496ce723d60589487559e79e6a49022d792ce0ae">496ce723</a> llvm: bump to 9.0.0
+  2019-08-14 <a href="https://github.com/kisslinux/repo/commit/1d33059b28748b0648906994dd412328aca41f01">1d33059b</a> llvm: bump to 8.0.1
+  2019-08-01 <a href="https://github.com/kisslinux/repo/commit/667a662ec814aab3eaaa1e5a1800883debbd34c2">667a662e</a> llvm: Fix missing -j to make
+  2019-08-01 <a href="https://github.com/kisslinux/repo/commit/dacbe92a1f0414270987401d52634f83f1c2d62e">dacbe92a</a> llvm: Fix travis
+  2019-07-31 <a href="https://github.com/kisslinux/repo/commit/34c78787d8f4735340d8cfe49029dc320446d3c6">34c78787</a> llvm: build with host triplet
+  2019-06-28 <a href="https://github.com/kisslinux/repo/commit/58b89a6b52ac47575ea0fe1b6eb78c57eb983496">58b89a6b</a> llvm: legal
+  2019-06-27 <a href="https://github.com/kisslinux/repo/commit/d5024c9bb7d0d87e104b00b23ad964d936ee852e">d5024c9b</a> llvm: Build with amdgpu
+  2019-06-27 <a href="https://github.com/kisslinux/repo/commit/c6c20843eafd7f0c4293f0ff576c6e5c0760a3d2">c6c20843</a> llvm: Build with amdgpu
+  2019-06-27 <a href="https://github.com/kisslinux/repo/commit/c3a3c2ff3d796d66e482fbebadae7a42e5962b3a">c3a3c2ff</a> llvm: progress
+  2019-06-02 <a href="https://github.com/kisslinux/repo/commit/03fff8ef23999a9cf63e071c9343ba0acf0f7a8d">03fff8ef</a> llvm: init at 8.0.0
+
+
+<span id=006><a href=#006>[006]</a></span> References
 ________________________________________________________________________________
 
 <span id=0><a href=#0>[0]</a></span> <a href=https://en.wikipedia.org/wiki/LLVM>https://en.wikipedia.org/wiki/LLVM</a>

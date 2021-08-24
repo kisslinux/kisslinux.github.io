@@ -1,4 +1,4 @@
-vim
+vim                                                                  version <a href=https://github.com/kisslinux/repo/tree/master/extra/vim>git</a>
 ________________________________________________________________________________
 
 Vim is a free and open-source, screen-based text editor program for Unix. It is
@@ -15,7 +15,9 @@ ________________________________________________________________________________
 
 * Installation-------------------------------------------------------------[001]
 * Usage--------------------------------------------------------------------[002]
-* References---------------------------------------------------------------[003]
+* Statistics---------------------------------------------------------------[003]
+  * Change-History---------------------------------------------------------[004]
+* References---------------------------------------------------------------[005]
 
 
 [001] Installation
@@ -34,7 +36,183 @@ ________________________________________________________________________________
 Refer to the manual pages and command help output.
 
 
-[003] References
+[004] Statistics
+________________________________________________________________________________
+
+
+--[005]-Change-History--------------------------------------------------------
+
+  2021-07-18 <a href="https://github.com/kisslinux/repo/commit/efd0474fae7c12d52926091ace70bd7fe1e61d84">efd0474f</a> vim: update for new env
+  2021-07-01 <a href="https://github.com/kisslinux/repo/commit/e845636e26e4bc0e38419dc91ba07a0267f5e452">e845636e</a> vim: remove unneeded checksums
+  2020-05-05 <a href="https://github.com/kisslinux/repo/commit/ece0b1fbe54969a7df3d0be714e6375cc99be3c2">ece0b1fb</a> vim: Disable nls
+  2020-02-08 <a href="https://github.com/kisslinux/repo/commit/1fa3519bdd58e58d847bb56d3422177f01cc29e1">1fa3519b</a> vim: remove unused flag
+  2020-02-06 <a href="https://github.com/kisslinux/repo/commit/e951a27ff1cdf7163f2493a7239b15cd76ead634">e951a27f</a> vim: don't link to util-linux
+  2020-01-18 <a href="https://github.com/kisslinux/repo/commit/064ed333fce870a67e17f31cf41703fb24713e4a">064ed333</a> vim: Fix checksums
+  2020-01-18 <a href="https://github.com/kisslinux/repo/commit/b46d9cf089f0bc16498ad45a677c0ddf0adb64c1">b46d9cf0</a> vim: swap to git
+  2020-01-15 <a href="https://github.com/kisslinux/repo/commit/eea6ce7d1c1fe386c59f1ce70f382844e5ef6a7a">eea6ce7d</a> vim: bump to 8.2.0119
+  2020-01-09 <a href="https://github.com/kisslinux/repo/commit/d04ddce417551a62ef5ad23854143b6556f88573">d04ddce4</a> vim: bump to 8.2.0109
+  2020-01-09 <a href="https://github.com/kisslinux/repo/commit/df95fba6a2fabdf4f7fe21d0a31df63973c6b5f5">df95fba6</a> vim: bump to 8.2.0106
+  2020-01-08 <a href="https://github.com/kisslinux/repo/commit/018bf47b499392ca6c6c0be3c3f36a2524ac30fa">018bf47b</a> vim: bump to 8.2.0100
+  2020-01-07 <a href="https://github.com/kisslinux/repo/commit/d66eda9591ed84f2bd38065e83d132cc8d127c60">d66eda95</a> vim: bump to 8.2.0096
+  2020-01-06 <a href="https://github.com/kisslinux/repo/commit/d26ce48d7ddc57521096217afa6cd7469e354cb8">d26ce48d</a> vim: bump to 8.2.0090
+  2020-01-04 <a href="https://github.com/kisslinux/repo/commit/09411fbad8e3153607c114165922245dbd5492d1">09411fba</a> vim: bump to 8.2.0086
+  2020-01-03 <a href="https://github.com/kisslinux/repo/commit/484367926d94a469a0dd738f14c04861ecbef801">48436792</a> vim: bump to 8.2.0080
+  2020-01-02 <a href="https://github.com/kisslinux/repo/commit/ec775efa95dd28ee567c31156254444bba2393e2">ec775efa</a> vim: bump to 8.2.0078
+  2020-01-01 <a href="https://github.com/kisslinux/repo/commit/25379f4476c4ec07a1be6b4a35933668d67d502a">25379f44</a> vim: bump to 8.2.0069
+  2019-12-31 <a href="https://github.com/kisslinux/repo/commit/ce775db09d2c40f9e5c2565a9f4c6f2fe584b9e3">ce775db0</a> vim: bump to 8.2.0065
+  2019-12-28 <a href="https://github.com/kisslinux/repo/commit/dcee0c22ab0f82382e4892ad87dd67e7f5018f53">dcee0c22</a> vim: bump to 8.2.0052
+  2019-12-26 <a href="https://github.com/kisslinux/repo/commit/f320173b04d52896efef65713218188ca534413a">f320173b</a> vim: bump to 8.2.0045
+  2019-12-23 <a href="https://github.com/kisslinux/repo/commit/aa36c4ea6e2d72aae73727508f332f3c7c7c64d1">aa36c4ea</a> vim: bump to 8.2.0033
+  2019-12-21 <a href="https://github.com/kisslinux/repo/commit/b62a656f86910f82cd5f6382a7113ecc7ed1b325">b62a656f</a> vim: bump to 8.2.0025
+  2019-12-19 <a href="https://github.com/kisslinux/repo/commit/17cf81b385c210b4b71cd18eb77b684fd0032b9e">17cf81b3</a> vim: bump to 8.2.0024
+  2019-12-19 <a href="https://github.com/kisslinux/repo/commit/b504ffb2e5003c859828dc228945422ac148f44d">b504ffb2</a> vim: bump to 8.2.0023
+  2019-12-16 <a href="https://github.com/kisslinux/repo/commit/235785e16db14844a1e7ad0ab53c4d17ea1e94b1">235785e1</a> vim: bump to 8.2.0012
+  2019-12-14 <a href="https://github.com/kisslinux/repo/commit/4d1ddf09872d9fd4208bb06be71c8c27b735f2d8">4d1ddf09</a> vim: bump to 8.2.0003
+  2019-12-12 <a href="https://github.com/kisslinux/repo/commit/fe09c57aa22fba0f1853eaf59ded58861963e2e2">fe09c57a</a> vim: bump to 8.2.0000
+  2019-12-12 <a href="https://github.com/kisslinux/repo/commit/f4b357f89c3bcf49282044c8e418e98f4a7aa802">f4b357f8</a> vim: bump to 8.1.2424
+  2019-12-11 <a href="https://github.com/kisslinux/repo/commit/862fc01f186704e32c389f08f0fe76246be4a321">862fc01f</a> vim: bump to 8.1.2421
+  2019-12-10 <a href="https://github.com/kisslinux/repo/commit/45d8cff7e7b711a8afb7fb166b326badd6425ded">45d8cff7</a> vim: bump to 8.1.2414
+  2019-12-09 <a href="https://github.com/kisslinux/repo/commit/c2301b51dabe480cc062b2434c00b97046eee84b">c2301b51</a> vim: bump to 8.1.2412
+  2019-12-08 <a href="https://github.com/kisslinux/repo/commit/535f2de975a24094a65b6bc024ff154e77e730b0">535f2de9</a> vim: bump to 8.1.2410
+  2019-12-07 <a href="https://github.com/kisslinux/repo/commit/fe23209d3d0952d786ffb300b905a7253ca165cc">fe23209d</a> vim: bump to 8.1.2402
+  2019-12-06 <a href="https://github.com/kisslinux/repo/commit/a95c8986cf37875c97953d6ccc36fb81ac3adfe6">a95c8986</a> vim: bump to 8.1.2397
+  2019-12-05 <a href="https://github.com/kisslinux/repo/commit/5c1b71c37cb96fe2b22005bd4a96a1db06b5e79d">5c1b71c3</a> vim: bump to 8.1.2389
+  2019-12-04 <a href="https://github.com/kisslinux/repo/commit/a7d524515a08e699cd634f771db1599bb1c1a941">a7d52451</a> vim: bump to 8.1.2384
+  2019-12-03 <a href="https://github.com/kisslinux/repo/commit/32b727967045c4543a50df7d8eadb588651c5f12">32b72796</a> vim: bump to 8.1.2383
+  2019-12-02 <a href="https://github.com/kisslinux/repo/commit/c722df7db163dbcdac479df31ea2ddf873939420">c722df7d</a> vim: bump to 8.1.2380
+  2019-12-01 <a href="https://github.com/kisslinux/repo/commit/9e1cf5992a5852a144b1cfde3f96e1ed3832df1a">9e1cf599</a> vim: bump to 8.1.2372
+  2019-11-30 <a href="https://github.com/kisslinux/repo/commit/358ddeb993c4b2a4e43e3aa4f82c55ead6cd95e5">358ddeb9</a> vim: bump to 8.1.2361
+  2019-11-29 <a href="https://github.com/kisslinux/repo/commit/6d9ee3d5f68bd987d3fd167405c86c33ebab3c2a">6d9ee3d5</a> vim: bump to 8.1.2357
+  2019-11-28 <a href="https://github.com/kisslinux/repo/commit/cfb475d60946979a4cbd014093aa4d15a659dff2">cfb475d6</a> vim: bump to 8.1.2352
+  2019-11-27 <a href="https://github.com/kisslinux/repo/commit/06a80ca4f580e908d10d64c1611e3092a35d7fb7">06a80ca4</a> vim: bump to 8.1.2351
+  2019-11-26 <a href="https://github.com/kisslinux/repo/commit/8b30a22be39e00140d650efda48875c25ffa8cf2">8b30a22b</a> vim: bump to 8.1.2350
+  2019-11-26 <a href="https://github.com/kisslinux/repo/commit/c7bbc8d383696c16ff9deda631a02a49b3dba410">c7bbc8d3</a> vim: bump to 8.1.2342
+  2019-11-25 <a href="https://github.com/kisslinux/repo/commit/0186a06d59fd7b39b99bbb3d5e1dd09fb9e09255">0186a06d</a> vim: bump to 8.1.2341
+  2019-11-24 <a href="https://github.com/kisslinux/repo/commit/d0aabe43bb7b364def5b9d75c9454384912f9625">d0aabe43</a> vim: bump to 8.1.2338
+  2019-11-23 <a href="https://github.com/kisslinux/repo/commit/16b0819fbee20cb58b86f061ba2e53fe95a5081d">16b0819f</a> vim: bump to 8.1.2337
+  2019-11-22 <a href="https://github.com/kisslinux/repo/commit/f813fecf44c9483741de0f3782749d80b4ab9032">f813fecf</a> vim: bump to 8.1.2333
+  2019-11-20 <a href="https://github.com/kisslinux/repo/commit/0cb8726abc15629da6704f063149f96c62c49221">0cb8726a</a> vim: bump to 8.1.2323
+  2019-11-19 <a href="https://github.com/kisslinux/repo/commit/b2f656c66e01533c165f4f690ca833151bc27a31">b2f656c6</a> vim: bump to 8.1.2321
+  2019-11-18 <a href="https://github.com/kisslinux/repo/commit/7de14f4f33c718a943252a9a8474179abd8d10f6">7de14f4f</a> vim: bump to 8.1.2318
+  2019-11-17 <a href="https://github.com/kisslinux/repo/commit/485226a97a55caaef93b4bf84cc9b0ed9505c2d2">485226a9</a> vim: bump to 8.1.2317
+  2019-11-17 <a href="https://github.com/kisslinux/repo/commit/8c3faba65bb69e881b033a62c58464f5a7d930f4">8c3faba6</a> vim: bump to 8.1.2311
+  2019-11-16 <a href="https://github.com/kisslinux/repo/commit/969bd3897e4c72637b550949bc38b75e3066a3e4">969bd389</a> vim: bump to 8.1.2301
+  2019-11-14 <a href="https://github.com/kisslinux/repo/commit/3734fa803fb72a69d914884218c6890a54334d85">3734fa80</a> vim: bump to 8.1.2300
+  2019-11-13 <a href="https://github.com/kisslinux/repo/commit/7605b5c6361a6e80b3a51e65f951d38e13e072d7">7605b5c6</a> vim: bump to 8.1.2297
+  2019-11-12 <a href="https://github.com/kisslinux/repo/commit/f483bd5dbc96628034e022343cffe48552854ce6">f483bd5d</a> vim: bump to 8.1.2292
+  2019-11-11 <a href="https://github.com/kisslinux/repo/commit/45412fd1f1e0b7e15eeaaf962e805fa5fd64d3a6">45412fd1</a> vim: bump to 8.1.2291
+  2019-11-10 <a href="https://github.com/kisslinux/repo/commit/d32c9c11fa7e59426eb52654945306c8c7290595">d32c9c11</a> vim: bump to 8.1.2284
+  2019-11-09 <a href="https://github.com/kisslinux/repo/commit/f8c84af93ebc94491a8288bf0094f8a901b8e495">f8c84af9</a> vim: bump to 8.1.2279
+  2019-11-09 <a href="https://github.com/kisslinux/repo/commit/ff86e935cbd1e2a8e64e8074b754982e5d6968bb">ff86e935</a> vim: bump to 8.1.2272
+  2019-11-08 <a href="https://github.com/kisslinux/repo/commit/5a0f2183104e1380d8988264e28eb516625dd6dd">5a0f2183</a> vim: bump to 8.1.2269
+  2019-11-07 <a href="https://github.com/kisslinux/repo/commit/581ff7d8e6073d214750415383927a51e95d92e1">581ff7d8</a> vim: bump to 8.1.2267
+  2019-11-07 <a href="https://github.com/kisslinux/repo/commit/46a0c83fdf16812b2bb692fd117d51b14e7ff6f4">46a0c83f</a> vim: bump to 8.1.2266
+  2019-11-06 <a href="https://github.com/kisslinux/repo/commit/d84a45fe69c9f05e64fb3c042d70cbf3f03ef923">d84a45fe</a> vim: bump to 8.1.2264
+  2019-11-06 <a href="https://github.com/kisslinux/repo/commit/f2173513584270bd4660dd3e379c7a8406c09019">f2173513</a> vim: bump to 8.1.2260
+  2019-11-05 <a href="https://github.com/kisslinux/repo/commit/44e05a323b93b83f3738b9c271d4e0caa48dbce3">44e05a32</a> vim: bump to 8.1.2256
+  2019-11-05 <a href="https://github.com/kisslinux/repo/commit/29c24b7bc9490a7ef68b4eff09b584dd84023675">29c24b7b</a> vim: bump to 8.1.2254
+  2019-11-04 <a href="https://github.com/kisslinux/repo/commit/06530290fd3b2cbb0e241068fccd0d3b93592e5d">06530290</a> vim: bump to 8.1.2251
+  2019-11-03 <a href="https://github.com/kisslinux/repo/commit/be30ea7f280ec35d20fce9027d6bc2e13d470777">be30ea7f</a> vim: bump to 8.1.2247
+  2019-11-03 <a href="https://github.com/kisslinux/repo/commit/e88863af81c795f6cac8349619aa9e589d803cb1">e88863af</a> vim: bump to 8.1.2244
+  2019-11-02 <a href="https://github.com/kisslinux/repo/commit/2971a1132ac94f84040366a00ac73758c2f7fa50">2971a113</a> vim: bump to 8.1.2238
+  2019-10-31 <a href="https://github.com/kisslinux/repo/commit/e33cf408ebea80e0fa4a6aaf87e04bec4f6f819c">e33cf408</a> vim: bump to 8.1.2237
+  2019-10-31 <a href="https://github.com/kisslinux/repo/commit/f61c1617bd97a0ca18a26a6acd07ddbd90fb534d">f61c1617</a> vim: bump to 8.1.2236
+  2019-10-30 <a href="https://github.com/kisslinux/repo/commit/c0986989be6d3e51839d40c54b085be53299f41d">c0986989</a> vim: bump to 8.1.2234
+  2019-10-29 <a href="https://github.com/kisslinux/repo/commit/59c692d0a54fa09869941eb536c035ae35b38610">59c692d0</a> vim: bump to 8.1.2233
+  2019-10-28 <a href="https://github.com/kisslinux/repo/commit/376e4742f260b91c27e0e8f0867d26aed2e80f40">376e4742</a> vim: bump to 8.1.2231
+  2019-10-28 <a href="https://github.com/kisslinux/repo/commit/0fd2c8166632f37af7de567517a82de124b215ac">0fd2c816</a> vim: bump to 8.1.2229
+  2019-10-27 <a href="https://github.com/kisslinux/repo/commit/ad641e92ffd465b5fbe22a6ef7d9a673277361d4">ad641e92</a> vim: bump to 8.1.2225
+  2019-10-27 <a href="https://github.com/kisslinux/repo/commit/4ddeda49fc5558ce476c066f4b103be0f2d034c2">4ddeda49</a> vim: bump to 8.1.2224
+  2019-10-26 <a href="https://github.com/kisslinux/repo/commit/9db56663848137b949f89f1651567c55b8c3080b">9db56663</a> vim: bump to 8.1.2216
+  2019-10-25 <a href="https://github.com/kisslinux/repo/commit/521f9e31886c7edd6fd9dae4559d038e069ea1ac">521f9e31</a> vim: bump to 8.1.2214
+  2019-10-24 <a href="https://github.com/kisslinux/repo/commit/cafcccce1489a59062e3eb7a8e78470c677f163a">cafcccce</a> vim: bump to 8.1.2204
+  2019-10-23 <a href="https://github.com/kisslinux/repo/commit/3b3745bd07fea826fe0f2a5e86a32eac6a84cda7">3b3745bd</a> vim: bump to 8.1.2200
+  2019-10-22 <a href="https://github.com/kisslinux/repo/commit/6b5152143346df50a6b020ff605b8363730c9e70">6b515214</a> vim: bump to 8.1.2198
+  2019-10-21 <a href="https://github.com/kisslinux/repo/commit/80700b593555890b20baa9b67ca7d553547fbedc">80700b59</a> vim: bump to 8.1.2197
+  2019-10-20 <a href="https://github.com/kisslinux/repo/commit/618aa2f072933b20abb451e7b6c4fb44141b521a">618aa2f0</a> vim: bump to 8.1.2196
+  2019-10-20 <a href="https://github.com/kisslinux/repo/commit/95c19efaeb4de6a0acb6342267dc0fcce56889a4">95c19efa</a> vim: bump to 8.1.2188
+  2019-10-19 <a href="https://github.com/kisslinux/repo/commit/82a4dbc088d18c0b898f2fa93736ac469b63c85e">82a4dbc0</a> vim: bump to 8.1.2176
+  2019-10-18 <a href="https://github.com/kisslinux/repo/commit/0fa0f3627ce02e157d1553825f7f8637e4afbded">0fa0f362</a> vim: bump to 8.1.2171
+  2019-10-17 <a href="https://github.com/kisslinux/repo/commit/8e7a6ae170af3d1fb8883fd9c348bc9aa2e39f51">8e7a6ae1</a> vim: bump to 8.1.2168
+  2019-10-16 <a href="https://github.com/kisslinux/repo/commit/7fea8653de03109a1b2d026bcdc458684a055d33">7fea8653</a> vim: bump to 8.1.2161
+  2019-10-15 <a href="https://github.com/kisslinux/repo/commit/470fc630f0590354cf4c7324f225d28bc39d3d6e">470fc630</a> vim: bump to 8.1.2152
+  2019-10-15 <a href="https://github.com/kisslinux/repo/commit/af7d59772fe024fdcaa1ee34dbba67f8e6ffb4d3">af7d5977</a> vim: bump to 8.1.2151
+  2019-10-13 <a href="https://github.com/kisslinux/repo/commit/e78f45f975f86e83b61a4634a7baa60e0ebfe3ba">e78f45f9</a> vim: bump to 8.1.2148
+  2019-10-13 <a href="https://github.com/kisslinux/repo/commit/fcec852b52ea67f03308c349134c39bfaef48a28">fcec852b</a> vim: bump to 8.1.2144
+  2019-10-12 <a href="https://github.com/kisslinux/repo/commit/7e85ad4df599472a0e4de8582ddc05357a2fc45a">7e85ad4d</a> vim: bump to 8.1.2136
+  2019-10-11 <a href="https://github.com/kisslinux/repo/commit/fd000d6adc590cfa610db6a3c3bb4eac9413c8bd">fd000d6a</a> vim: bump to 8.1.2135
+  2019-10-10 <a href="https://github.com/kisslinux/repo/commit/6ff7783c7c50c5b95db84184361d4340394aab92">6ff7783c</a> vim: bump to 8.1.2131
+  2019-10-10 <a href="https://github.com/kisslinux/repo/commit/20a207c3848e22d9a3aa2839ac7d7fa0af21d136">20a207c3</a> vim: bump to 8.1.2127
+  2019-10-09 <a href="https://github.com/kisslinux/repo/commit/5aca59d25e07d4e46de8c9c2acb8df8010cde1b6">5aca59d2</a> vim: Keep xxd
+  2019-10-09 <a href="https://github.com/kisslinux/repo/commit/7c9a8e3abc4ddf19637eb0e5e0b57726967637d8">7c9a8e3a</a> vim: bump to 8.1.2125
+  2019-10-08 <a href="https://github.com/kisslinux/repo/commit/1bcad09d8d0cd6cb921852f592ee02d07ebccc60">1bcad09d</a> vim: bump to 8.1.2122
+  2019-10-07 <a href="https://github.com/kisslinux/repo/commit/fb12185595b8e17bcfe0b87a831b6fb234ca5fcf">fb121855</a> vim: bump to 8.1.2120
+  2019-10-06 <a href="https://github.com/kisslinux/repo/commit/092a9b143284612c00d06d4bf64b98349889b51b">092a9b14</a> vim: bump to 8.1.2118
+  2019-10-06 <a href="https://github.com/kisslinux/repo/commit/caab12e32a8741c686382e57d3f69d675a6f7598">caab12e3</a> vim: bump to 8.1.2117
+  2019-10-05 <a href="https://github.com/kisslinux/repo/commit/878e47bcedf46afd2f5f546f35cc596aa7816f4a">878e47bc</a> vim: bump to 8.1.2115
+  2019-10-05 <a href="https://github.com/kisslinux/repo/commit/7cce9d46f79d8374df9a0975be6ae3bb086e29b0">7cce9d46</a> vim: let nls be detected
+  2019-10-05 <a href="https://github.com/kisslinux/repo/commit/5843580870058c74d077ef8d5c3b36277302ae29">58435808</a> vim: bump to 8.1.2112
+  2019-10-04 <a href="https://github.com/kisslinux/repo/commit/e2c00a9759bf480654b08fc1d7a51cf0a3aa2e09">e2c00a97</a> vim: bump to 8.1.2110
+  2019-10-03 <a href="https://github.com/kisslinux/repo/commit/d32f1fca6e2341f7a330753ce614202517d3038e">d32f1fca</a> vim: bump to 8.1.2109
+  2019-10-01 <a href="https://github.com/kisslinux/repo/commit/92c4112a14846053f829ae103b2218505febfd5d">92c4112a</a> vim: bump to 8.1.2108
+  2019-10-01 <a href="https://github.com/kisslinux/repo/commit/95f93e6f88bad7025e6955a1bfe28d0fda9e928a">95f93e6f</a> vim: bump to 8.1.2104
+  2019-09-30 <a href="https://github.com/kisslinux/repo/commit/5549076209a8e64ca03c92fa0921e2ab2e9c5078">55490762</a> vim: bump to 8.1.2102
+  2019-09-29 <a href="https://github.com/kisslinux/repo/commit/d2fbe4d44001df4c78c1b8bba37a5a63f2d39053">d2fbe4d4</a> vim: bump to 8.1.2099
+  2019-09-28 <a href="https://github.com/kisslinux/repo/commit/f350597f2130ccbab10afd01e70ee2595c703f7c">f350597f</a> vim: bump to 8.1.2090
+  2019-09-27 <a href="https://github.com/kisslinux/repo/commit/9957b25ee4f55d0fb0141aa8b1741fa78392a599">9957b25e</a> vim: bump to 8.1.2080
+  2019-09-26 <a href="https://github.com/kisslinux/repo/commit/770fbcb31684de05ee0efac611298de1b8593f25">770fbcb3</a> vim: bump to 8.1.2079
+  2019-09-25 <a href="https://github.com/kisslinux/repo/commit/fd4c1def3a4c254440b11842d402333411ee5977">fd4c1def</a> vim: bump to 8.1.2072
+  2019-09-24 <a href="https://github.com/kisslinux/repo/commit/c7db36f2e170e95f191a3de007e01470c8e445b7">c7db36f2</a> vim: bump to 8.1.2071
+  2019-09-23 <a href="https://github.com/kisslinux/repo/commit/89cf801b26e259bd5e5b8566b265a5a59a140550">89cf801b</a> vim: bump to 8.1.2069
+  2019-09-22 <a href="https://github.com/kisslinux/repo/commit/14b0bddf5964adf408c55ed20ea04c00a70f3fae">14b0bddf</a> vim: bump to 8.1.2065
+  2019-09-22 <a href="https://github.com/kisslinux/repo/commit/267cfbce57cf00e7b2c31071e7bd4ed9460aca32">267cfbce</a> vim: bump to 8.1.2064
+  2019-09-20 <a href="https://github.com/kisslinux/repo/commit/9371b8a4f13d61b9e54056ab34688a4f8ad54bf2">9371b8a4</a> vim: bump to 8.1.2061
+  2019-09-20 <a href="https://github.com/kisslinux/repo/commit/988bf3980f045106e75c153982f4a1df685334d0">988bf398</a> vim: bump to 8.1.2058
+  2019-09-19 <a href="https://github.com/kisslinux/repo/commit/cad78251ee12229f5501084cc753aae405f3cd9c">cad78251</a> vim: bump to 8.1.2056
+  2019-09-18 <a href="https://github.com/kisslinux/repo/commit/2e0d8d0d84f62829a279a4a674e8aff3804c407a">2e0d8d0d</a> vim: bump to 8.1.2052
+  2019-09-17 <a href="https://github.com/kisslinux/repo/commit/140f51eaf9722b7f606951274e48f589896c6344">140f51ea</a> vim: bump to 8.1.2051
+  2019-09-17 <a href="https://github.com/kisslinux/repo/commit/0c670f9e21b786fc4a90e9b21059229a3c44771f">0c670f9e</a> vim: bump to 8.1.2047
+  2019-09-16 <a href="https://github.com/kisslinux/repo/commit/8d26efd58473a2c8fce56c3154581c06c073d935">8d26efd5</a> vim: bump to 8.1.2044
+  2019-09-15 <a href="https://github.com/kisslinux/repo/commit/d8dab6596d5127045821da61586c74bb5ba0a7a0">d8dab659</a> vim: bump to 8.1.2034
+  2019-09-15 <a href="https://github.com/kisslinux/repo/commit/c659e9c8aa33e510c19fb12fca69098111f6a83d">c659e9c8</a> vim: bump to 8.1.2033
+  2019-09-14 <a href="https://github.com/kisslinux/repo/commit/d6e23f75b01b3d98facc9b91d33b90b57eb3f7ed">d6e23f75</a> vim: bump to 8.1.2028
+  2019-09-14 <a href="https://github.com/kisslinux/repo/commit/f2876c7f0b8334575a8bcf20766c139a46c81e92">f2876c7f</a> vim: bump to 8.1.2028
+  2019-09-14 <a href="https://github.com/kisslinux/repo/commit/3882c668df9ea70c5f561130cbf96af3e54518a2">3882c668</a> vim: bump to 8.1.2027
+  2019-09-13 <a href="https://github.com/kisslinux/repo/commit/b701e1d16462878a60e414ac9e159479a905c97c">b701e1d1</a> vim: bump to 8.1.2022
+  2019-09-11 <a href="https://github.com/kisslinux/repo/commit/8cd3b7b9f7da81fd65881d1251f95aa727e51962">8cd3b7b9</a> vim: bump to 8.1.2021
+  2019-09-10 <a href="https://github.com/kisslinux/repo/commit/4b4e799899e7a04b062976d3e3dc24007f8ba9ee">4b4e7998</a> vim: bump to 8.1.2019
+  2019-09-09 <a href="https://github.com/kisslinux/repo/commit/5f8bfbff84aebe32e55f4afc38aa0aea2e8a3234">5f8bfbff</a> vim: bump to 8.1.2016
+  2019-09-08 <a href="https://github.com/kisslinux/repo/commit/c97a578d66f164cd20b566e016df6bfcd47c8ef8">c97a578d</a> vim: bump to 8.1.2011
+  2019-09-08 <a href="https://github.com/kisslinux/repo/commit/2d71d30f6fd8f5c77e4b6555f4af94d7b912cff2">2d71d30f</a> vim: bump to 8.1.2010
+  2019-09-08 <a href="https://github.com/kisslinux/repo/commit/7ced99168ca4f60b9d1dd2f65e147bb370b722b1">7ced9916</a> vim: bump to 8.1.2006
+  2019-09-07 <a href="https://github.com/kisslinux/repo/commit/52ab2e1a64f4dbc3c6243a3915b42d6a1085c838">52ab2e1a</a> vim: bump to 8.1.2004
+  2019-09-07 <a href="https://github.com/kisslinux/repo/commit/4212903f15aa00c2c9da28abe1919e0f6c1d466c">4212903f</a> vim: bump to 8.1.1996
+  2019-09-06 <a href="https://github.com/kisslinux/repo/commit/3a69ab19d543de6505b8f479d0d069d6fd2a863e">3a69ab19</a> vim: bump to 8.1.1992
+  2019-09-06 <a href="https://github.com/kisslinux/repo/commit/cff374cf0389d05e973e4f735b4770916a6dbec2">cff374cf</a> vim: bump to 8.1.1991
+  2019-09-05 <a href="https://github.com/kisslinux/repo/commit/23640d4e2658c1c4171dc0c1850e56ae9c218c17">23640d4e</a> vim: bump to 8.1.1988
+  2019-09-04 <a href="https://github.com/kisslinux/repo/commit/6901375666b3ee498c37d21a971db7d4bd5489b8">69013756</a> vim: bump to 8.1.1977
+  2019-09-04 <a href="https://github.com/kisslinux/repo/commit/b83009aa434d341279fb77c2451f9c6362aa7372">b83009aa</a> vim: bump to 8.1.1972
+  2019-09-03 <a href="https://github.com/kisslinux/repo/commit/af2ee076a746320d9a6730e4dd5f48ee36b75302">af2ee076</a> vim: bump to 8.1.1967
+  2019-09-02 <a href="https://github.com/kisslinux/repo/commit/fcf85ce16859ec71f5974d5b86f9bf52501a6699">fcf85ce1</a> vim: bump to 8.1.1963
+  2019-09-01 <a href="https://github.com/kisslinux/repo/commit/761b4ec8f892661669c71db1744e810fbbba04f6">761b4ec8</a> vim: bump to 8.1.1962
+  2019-09-01 <a href="https://github.com/kisslinux/repo/commit/cdbeea5c09a158ff035a845b82624e4d40ac22ad">cdbeea5c</a> vim: bump to 8.1.1954
+  2019-08-31 <a href="https://github.com/kisslinux/repo/commit/0ed94e597c167e4de78464cf4055d5409b5ef4e8">0ed94e59</a> vim: bump to 8.1.1949
+  2019-08-30 <a href="https://github.com/kisslinux/repo/commit/51d14cb07321cd36bd39e032d15dec2c0731290b">51d14cb0</a> vim: bump to 8.1.1940
+  2019-08-30 <a href="https://github.com/kisslinux/repo/commit/5f58a94f4aed8abcc2aaa7f948bbc7f81d69fa89">5f58a94f</a> vim: bump to 8.1.1936
+  2019-08-29 <a href="https://github.com/kisslinux/repo/commit/0cf4fa90bc313512c18afd67ee1e026111f7cef8">0cf4fa90</a> vim: bump to 8.1.1935
+  2019-08-28 <a href="https://github.com/kisslinux/repo/commit/ea2f51faf73296b039509dd199ed264a0ef0ec93">ea2f51fa</a> vim: bump to 8.1.1933
+  2019-08-27 <a href="https://github.com/kisslinux/repo/commit/c411178b51744ed17cc06b01cf40f0ae17442497">c411178b</a> vim: bump to 8.1.1932
+  2019-08-27 <a href="https://github.com/kisslinux/repo/commit/4e968a6509d74458e496c2cb1acb3062be873aaf">4e968a65</a> vim: bump to 8.1.1931
+  2019-08-26 <a href="https://github.com/kisslinux/repo/commit/1cb9971c90fb597ef8a567aa6d3cf9bca8f6e526">1cb9971c</a> vim: bump to 8.1.1930
+  2019-08-26 <a href="https://github.com/kisslinux/repo/commit/0edc9666de93827e6f2668e0912ad7e35726ce78">0edc9666</a> vim: bump to 8.1.1929
+  2019-08-25 <a href="https://github.com/kisslinux/repo/commit/814fcf452b0722bcc03f2f23a0ab53a1a9cbb914">814fcf45</a> vim: bump to 8.1.1926
+  2019-08-25 <a href="https://github.com/kisslinux/repo/commit/76cc5b4ca59235bb109bae8ad0fb9eaed586c58e">76cc5b4c</a> vim: bump to 8.1.1925
+  2019-08-24 <a href="https://github.com/kisslinux/repo/commit/64c241b1c2965bf692f64064393f713a4faa71b2">64c241b1</a> vim: bump to 8.1.1915
+  2019-08-23 <a href="https://github.com/kisslinux/repo/commit/ded5537bb351276b04c89792384b22e95c3d39e0">ded5537b</a> vim: bump to 8.1.1912
+  2019-08-22 <a href="https://github.com/kisslinux/repo/commit/5efb28307b354f9c394426f65595b57e24381e9f">5efb2830</a> bash,vim: move to extra
+
+
+[006] References
 ________________________________________________________________________________
 
 [0] https://en.wikipedia.org/wiki/Vim_(text_editor)

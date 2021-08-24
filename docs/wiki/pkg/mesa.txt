@@ -1,4 +1,4 @@
-mesa
+mesa                                                              version <a href=https://github.com/kisslinux/repo/tree/master/extra/mesa>21.2.1</a>
 ________________________________________________________________________________
 
 Mesa, also called Mesa3D and The Mesa 3D Graphics Library, is an open-source
@@ -19,7 +19,9 @@ ________________________________________________________________________________
 * Installation-------------------------------------------------------------[001]
 * Setup--------------------------------------------------------------------[002]
 * Usage--------------------------------------------------------------------[003]
-* References---------------------------------------------------------------[004]
+* Statistics---------------------------------------------------------------[004]
+  * Change-History---------------------------------------------------------[005]
+* References---------------------------------------------------------------[006]
 
 
 [001] Installation
@@ -46,7 +48,100 @@ No documentation is currently provided with the package, refer to online
 documentation for the time being.
 
 
-[004] References
+[005] Statistics
+________________________________________________________________________________
+
+
+--[006]-Change-History--------------------------------------------------------
+
+  2021-08-20 <a href="https://github.com/kisslinux/repo/commit/ac400b38f7be4da292ed35eeda29e9d870975f69">ac400b38</a> mesa: 21.2.1
+  2021-08-05 <a href="https://github.com/kisslinux/repo/commit/03490d622a5a6d4f145864a6b1fc00aee3e13dcf">03490d62</a> mesa: 21.2.0
+  2021-07-29 <a href="https://github.com/kisslinux/repo/commit/b853b2de41163f3b4169f4422873e4d5c3cb3b9b">b853b2de</a> mesa: 21.1.6
+  2021-07-28 <a href="https://github.com/kisslinux/repo/commit/13fe1d7d643ed997abb15518369847f73d2cca6c">13fe1d7d</a> mesa: minor tweaks
+  2021-07-24 <a href="https://github.com/kisslinux/repo/commit/70366da56f73e93bad7ca60ff2d7387695e4af2d">70366da5</a> mesa: explicit egl, disable valgrind. See #298
+  2021-07-18 <a href="https://github.com/kisslinux/repo/commit/14b696542ec95e572b4fa6df87888a470fc67afb">14b69654</a> mesa: update for new env
+  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/01effa4539f5bfc0cd22182907a90f0733872d71">01effa45</a> mesa: use VERSION
+  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/7e88638a044e2b411d301181b6a77b9738fdf02a">7e88638a</a> mesa: 21.1.5
+  2021-07-10 <a href="https://github.com/kisslinux/repo/commit/87b61f4fb7a65d7f892a4fbac72c43a3321f0fd6">87b61f4f</a> mesa: fix typo
+  2021-07-10 <a href="https://github.com/kisslinux/repo/commit/c509e468c00bd0e9331e9f1592f2b3d7e4b81e03">c509e468</a> mesa: aid users needing libglvnd
+  2021-07-10 <a href="https://github.com/kisslinux/repo/commit/118a3f60807f4179abae17bee6e222533e1819ba">118a3f60</a> mesa: fix trailing whitespace
+  2021-07-10 <a href="https://github.com/kisslinux/repo/commit/bb043d522aeeaac84cf47d745d5d2ac1146e40b0">bb043d52</a> mesa: fix depends. Closes #272
+  2021-07-08 <a href="https://github.com/kisslinux/repo/commit/28d87227c297a1c804ab709bd1c873f61a08f47e">28d87227</a> mesa: add note about amdgpu
+  2021-07-08 <a href="https://github.com/kisslinux/repo/commit/4fb7e91e7ee464293cacda36a4e05b41d9fdaeb3">4fb7e91e</a> mesa: depend on wayland
+  2021-07-03 <a href="https://github.com/kisslinux/repo/commit/e30c184ef184f1c8f705bf6c3dfe0961dcd3fe39">e30c184e</a> mesa: remove sed -i
+  2021-07-01 <a href="https://github.com/kisslinux/repo/commit/6eda2d5c8ddf400d45ba3239d3fec3e18e6e635e">6eda2d5c</a> mesa: 21.1.4
+  2021-06-30 <a href="https://github.com/kisslinux/repo/commit/0627db09e173574dd389384fd04ae4290926e421">0627db09</a> mesa: 21.1.3
+  2020-11-25 <a href="https://github.com/kisslinux/repo/commit/000ef40702b286b640999a41e3836b00f0f1085d">000ef407</a> mesa: 20.2.3
+  2020-11-07 <a href="https://github.com/kisslinux/repo/commit/83f125553f1d213e473390146436684505d910ff">83f12555</a> mesa: 20.2.2
+  2020-10-15 <a href="https://github.com/kisslinux/repo/commit/b6c51e9a169c3e1e256c792072192768594a8ce7">b6c51e9a</a> mesa: 20.2.1
+  2020-10-01 <a href="https://github.com/kisslinux/repo/commit/d791f0db0703cef4d555e7770473965fc50e634a">d791f0db</a> mesa: disable zstd
+  2020-10-01 <a href="https://github.com/kisslinux/repo/commit/cb9a29266e81601cfa39bb21520a07e7f666b7e7">cb9a2926</a> mesa: 20.1.9
+  2020-09-17 <a href="https://github.com/kisslinux/repo/commit/53f009787cfaf70f2b58e9107e9fd4541dd2252e">53f00978</a> mesa: 20.1.8
+  2020-09-03 <a href="https://github.com/kisslinux/repo/commit/1303af8fe6b0060ffb3cbd4503837ca67582f1d1">1303af8f</a> mesa: 20.1.7
+  2020-08-20 <a href="https://github.com/kisslinux/repo/commit/3b3e749bb545137815a54bc21651775fad0a9d9c">3b3e749b</a> mesa: 20.1.6
+  2020-08-06 <a href="https://github.com/kisslinux/repo/commit/a8b82915209b6dac57632ba63eda20a407bf580f">a8b82915</a> mesa: 20.1.5
+  2020-08-01 <a href="https://github.com/kisslinux/repo/commit/6780ff9baec85226c3d8deec148b25416a73288a">6780ff9b</a> mesa: bump for libelf
+  2020-07-23 <a href="https://github.com/kisslinux/repo/commit/115dda5322c7fd6dd61b81817cacaa0f52a5c043">115dda53</a> mesa: bump to 20.1.4
+  2020-07-09 <a href="https://github.com/kisslinux/repo/commit/4ae7179920f90706f196a7f38bbd008a5c90796a">4ae71799</a> mesa: bump to 20.1.3
+  2020-06-25 <a href="https://github.com/kisslinux/repo/commit/f2e9eac5d06bffe9c297ee89df2e516975b2579b">f2e9eac5</a> mesa: bump to 20.1.2
+  2020-06-11 <a href="https://github.com/kisslinux/repo/commit/3ee71d8c64810087eb24dd3818bf2490d0276b1d">3ee71d8c</a> mesa: bump to 20.1.1
+  2020-05-26 <a href="https://github.com/kisslinux/repo/commit/aba069a964d13ab3021b095b10760a97ad23cd5a">aba069a9</a> mesa: bump rel again for libelf
+  2020-05-26 <a href="https://github.com/kisslinux/repo/commit/cce094f84af7401e484260284e19a5305130fc2c">cce094f8</a> mesa: bump rel for libelf
+  2020-05-14 <a href="https://github.com/kisslinux/repo/commit/8a869cc6e28e002a442e31f743087fa414b2f6e7">8a869cc6</a> mesa: bump to 20.0.7
+  2020-05-09 <a href="https://github.com/kisslinux/repo/commit/e2e78ba7b5d2cf40d3bd53898ce457dff9f00321">e2e78ba7</a> mesa: Drop -fcommon
+  2020-04-30 <a href="https://github.com/kisslinux/repo/commit/743209c7774a25bd11c1200f512dfbf4b0b8932b">743209c7</a> mesa: bump to 20.0.6
+  2020-04-23 <a href="https://github.com/kisslinux/repo/commit/11af8eeffe3ebc4e6cfb8a5a6e008020fc665b7f">11af8eef</a> mesa: bump to 20.0.5
+  2020-04-14 <a href="https://github.com/kisslinux/repo/commit/63a584c3617fae5240732b2c6dbc70034d60298a">63a584c3</a> mesa: bump to 20.0.4
+  2020-03-21 <a href="https://github.com/kisslinux/repo/commit/e6a4d06eb7bbad9a176ccaecf9b3185e22db3edb">e6a4d06e</a> mesa: Fix depends
+  2020-03-19 <a href="https://github.com/kisslinux/repo/commit/e6aaac1a2aec816edd88082ad2b9ebc2b498d640">e6aaac1a</a> mesa: bump to 20.0.2
+  2020-03-06 <a href="https://github.com/kisslinux/repo/commit/be0b0029baab8b70957fed627f28b60c75853a4b">be0b0029</a> mesa: bump to 20.0.1
+  2020-02-25 <a href="https://github.com/kisslinux/repo/commit/a6308e65e662a73902cec09c4f2ab4caa94886af">a6308e65</a> mesa: Use own python-mako. python-mako: drop
+  2020-02-17 <a href="https://github.com/kisslinux/repo/commit/e10ffc341549676c4ce4f4d32abfb5cf2c50f3aa">e10ffc34</a> mesa: Fix build with GCC 10
+  2020-02-14 <a href="https://github.com/kisslinux/repo/commit/3a18ab024a9062946dab7bd23c1b1dc4bf486a46">3a18ab02</a> mesa: bump to 19.3.4
+  2020-01-29 <a href="https://github.com/kisslinux/repo/commit/b314878859eaca41fa9fe1543eb2b702a9616c3f">b3148788</a> mesa: remove sed -i
+  2020-01-29 <a href="https://github.com/kisslinux/repo/commit/209bea78e636d079bec4894da44ac54995c9e875">209bea78</a> mesa: bump to 19.3.3
+  2020-01-09 <a href="https://github.com/kisslinux/repo/commit/4476c93d75ae64f58b2fd0f1e8f89d77bd8b6811">4476c93d</a> mesa: bump to 19.3.2
+  2019-12-19 <a href="https://github.com/kisslinux/repo/commit/080d372af6c471e1bad577e96580fd4e6fc49204">080d372a</a> mesa: bump to 19.3.1
+  2019-12-05 <a href="https://github.com/kisslinux/repo/commit/35f0638c8ae2fb212345a934408463eac5886074">35f0638c</a> mesa: bump to 19.2.7
+  2019-11-22 <a href="https://github.com/kisslinux/repo/commit/2d69187a80b78a86315450d339f995038d646fcc">2d69187a</a> mesa: bump to 19.2.6
+  2019-11-20 <a href="https://github.com/kisslinux/repo/commit/77b6a5b22896b6893d4172f3e9068eb2d46ac331">77b6a5b2</a> mesa: bump to 19.2.5
+  2019-11-14 <a href="https://github.com/kisslinux/repo/commit/cea9d372c0daee69670bf131024225e56e770924">cea9d372</a> mesa: bump to 19.2.4
+  2019-11-06 <a href="https://github.com/kisslinux/repo/commit/dd0927058181b374d036d9ff0b8ff1544c8f964c">dd092705</a> mesa: bump to 19.2.3
+  2019-10-24 <a href="https://github.com/kisslinux/repo/commit/22c6ff1789361cb03f08808bde7e0592af163f72">22c6ff17</a> mesa: bump to 19.2.2
+  2019-10-10 <a href="https://github.com/kisslinux/repo/commit/d2a04baccbf0c0176ad90bef0719d0d28d074e70">d2a04bac</a> mesa: bump to 19.2.1
+  2019-10-08 <a href="https://github.com/kisslinux/repo/commit/ff7e54e5e114b5ed3108c09bee87ffe6c398235d">ff7e54e5</a> mesa: cleanup
+  2019-09-17 <a href="https://github.com/kisslinux/repo/commit/3958adc507e18d946d3b761ed652428dd934b4a2">3958adc5</a> mesa: bump to 19.1.7
+  2019-09-04 <a href="https://github.com/kisslinux/repo/commit/607d3810d4a570ba245ec854f6997fd0f1f5fd06">607d3810</a> mesa: bump to 19.1.6
+  2019-08-23 <a href="https://github.com/kisslinux/repo/commit/82429b8016a0c7082daf18b0095177c58028b07f">82429b80</a> mesa: bump to 19.1.5
+  2019-08-14 <a href="https://github.com/kisslinux/repo/commit/e542d89abd32b5b36e66e75758ef9952f6ae6312">e542d89a</a> mesa: bump to 19.1.4
+  2019-08-05 <a href="https://github.com/kisslinux/repo/commit/14cd6ba4cb5886d4732c2bf6c7ef8dc2c6c791de">14cd6ba4</a> mesa: remove gettext patch
+  2019-08-04 <a href="https://github.com/kisslinux/repo/commit/b81f3bd48ec5b7b0e354c4c61bfde1597dbe0709">b81f3bd4</a> mesa: Fix firefox/musl
+  2019-08-04 <a href="https://github.com/kisslinux/repo/commit/a333ac410afb52034ac66bd9ef126d3ecc288d1f">a333ac41</a> mesa: bump version and fix mesa build.
+  2019-08-03 <a href="https://github.com/kisslinux/repo/commit/411dd0873013994a3209c0b21bc13566882e033b">411dd087</a> mesa: Fix issues with musl and firefox
+  2019-07-06 <a href="https://github.com/kisslinux/repo/commit/94dc02d4d5869f3945e163238a057efdffc62081">94dc02d4</a> mesa: Remove gettext dependency.
+  2019-07-06 <a href="https://github.com/kisslinux/repo/commit/bb957caa39b7afe9d32f4f9a09362a39cf37079f">bb957caa</a> mesa: Added missing dependency
+  2019-07-06 <a href="https://github.com/kisslinux/repo/commit/21fee342cb29b80ce912f7037d2bbac263016692">21fee342</a> mesa: Added missing dependency.
+  2019-06-30 <a href="https://github.com/kisslinux/repo/commit/fda0d375c567d4703ddce8bfbcafda7d78b2572b">fda0d375</a> mesa: Added missing dependency.
+  2019-06-27 <a href="https://github.com/kisslinux/repo/commit/d4b78bad4a7bd4f662c5a015abafbd1f54295cf8">d4b78bad</a> mesa: Fix build.
+  2019-06-27 <a href="https://github.com/kisslinux/repo/commit/6fdefc600bb5091e897aff12b0d13dca33b5a643">6fdefc60</a> mesa: Added dep
+  2019-06-27 <a href="https://github.com/kisslinux/repo/commit/27e8c9d8a709f402f87c5ca0dd6314a7f015bb02">27e8c9d8</a> mesa: Added dep
+  2019-06-27 <a href="https://github.com/kisslinux/repo/commit/f276368a889d7de92fe3561400eeb660c60c6ef6">f276368a</a> mesa: reeeeeeeeeeeeeeeeeee
+  2019-06-27 <a href="https://github.com/kisslinux/repo/commit/a220f1748f6cb4808bbfa39218ad8cb449eb4664">a220f174</a> mesa: version bump
+  2019-06-27 <a href="https://github.com/kisslinux/repo/commit/1fe297e6fe49301176502b86c3b730fdec3830ac">1fe297e6</a> mesa: Added musl patch.
+  2019-06-27 <a href="https://github.com/kisslinux/repo/commit/e4b73faafa2ca361c88d5733ce5c6c1576ef347d">e4b73faa</a> mesa: Add comment.
+  2019-06-27 <a href="https://github.com/kisslinux/repo/commit/279b4cf4b73609695fcb76d12d23d0023070063c">279b4cf4</a> mesa: Use autotools.
+  2019-06-27 <a href="https://github.com/kisslinux/repo/commit/11999bb2f6def67ebb4b08386324bd042db276e8">11999bb2</a> mesa: Use autotools.
+  2019-06-27 <a href="https://github.com/kisslinux/repo/commit/078f0e6e28b066c0ec9a5f53a759834a6a7083ea">078f0e6e</a> mesa: Use autotools.
+  2019-06-27 <a href="https://github.com/kisslinux/repo/commit/7d962166e7bcd8e83134f14c5f07ec3c02884f12">7d962166</a> mesa: Added dep
+  2019-06-27 <a href="https://github.com/kisslinux/repo/commit/2ba301b5deba0f0bdbad675ad5e57e8995f5f25a">2ba301b5</a> mesa: Added dep
+  2019-06-27 <a href="https://github.com/kisslinux/repo/commit/68916ec5308599b874fa8e604077ec8c8c6af38f">68916ec5</a> mesa: Don't build with wayland support.
+  2019-06-27 <a href="https://github.com/kisslinux/repo/commit/77bc4936615bcd8dbdc5583f1253a51ff47cb16b">77bc4936</a> mesa: Don't build with wayland support.
+  2019-06-27 <a href="https://github.com/kisslinux/repo/commit/7aa16258d8cc2be73d190e7a950fa3412d146451">7aa16258</a> mesa: Added expat dependency.
+  2019-06-27 <a href="https://github.com/kisslinux/repo/commit/24df38284d179aca375c6d66536be0420bbffe9d">24df3828</a> mesa: Fix build
+  2019-06-27 <a href="https://github.com/kisslinux/repo/commit/f38adc0b499980c63d988560b692cfecb7b17e43">f38adc0b</a> mesa: Fix build.
+
+
+[007] References
 ________________________________________________________________________________
 
 [0] https://en.wikipedia.org/wiki/Mesa_(computer_graphics)

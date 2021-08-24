@@ -1,4 +1,4 @@
-baselayout
+baselayout                                                             version <a href=https://github.com/kisslinux/repo/tree/master/core/baselayout>1</a>
 ________________________________________________________________________________
 
 KISS Linux's system directory structure. It contains the skeleton of the system

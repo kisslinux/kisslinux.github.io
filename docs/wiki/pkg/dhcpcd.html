@@ -5,7 +5,7 @@
 |\ISS</a>               <a href=/tidbits>Tidbits</a>  <a href=/post>Posts</a>  <a href=/answers>Answers</a>  <a href=/install>Install</a>  <a href=/wiki>Wiki</a>  <a href=/contact>Contact</a>  <a href=/donate>Donate</a>  </div><div style="image-rendering:crisp-edges;display:inline-block;vertical-align:sub"><a href=https://github.com/kisslinux/><img src="data:image/gif;base64,R0lGODlhEAAQAPABAAAAAP//ACH5BAUIAAEALAAAAAAQABAAAAIojA2px6G/GJzgJASxbrI+jmVgGI3TSF4oZS6emmqw823dTFcWbklNAQA7"></a></div>
 
 
-dhcpcd
+dhcpcd                                                             version <a href=https://github.com/kisslinux/repo/tree/master/extra/dhcpcd>9.4.0</a>
 ________________________________________________________________________________
 
 dhcpcd is an implementation of the DHCP client specified in RFC 2131. dhcpcd
@@ -28,7 +28,9 @@ ________________________________________________________________________________
 * Installation-------------------------------------------------------------<a href=#001>[001]</a>
 * Setup--------------------------------------------------------------------<a href=#002>[002]</a>
 * Usage--------------------------------------------------------------------<a href=#003>[003]</a>
-* References---------------------------------------------------------------<a href=#004>[004]</a>
+* Statistics---------------------------------------------------------------<a href=#004>[004]</a>
+  * Change-History---------------------------------------------------------<a href=#005>[005]</a>
+* References---------------------------------------------------------------<a href=#006>[006]</a>
 
 
 <span id=001><a href=#001>[001]</a></span> Installation
@@ -55,11 +57,53 @@ ________________________________________________________________________________
 Refer to the manual pages and command help output.
 
 
-<span id=004><a href=#004>[004]</a></span> References
+<span id=005><a href=#005>[005]</a></span> Statistics
+________________________________________________________________________________
+
+
+--<span id=006><a href=#006>[006]</a></span>-Change-History--------------------------------------------------------
+
+  2021-07-17 <a href="https://github.com/kisslinux/repo/commit/5d2ed547d9338e6284e337eb7fcb6c02c6b9d06a">5d2ed547</a> dhcpcd: update for new env
+  2021-07-15 <a href="https://github.com/kisslinux/repo/commit/e1c9370d55d3fabf993c8f562c367b147d0e42bd">e1c9370d</a> dhcpcd: use VERSION
+  2021-07-13 <a href="https://github.com/kisslinux/repo/commit/d1272e46e1648821bcf4c51893ba05651926e0f9">d1272e46</a> dhcpcd: make runit file executable
+  2021-07-01 <a href="https://github.com/kisslinux/repo/commit/b100d0a2bbc35aebda91c18c2a307405bbde91cc">b100d0a2</a> dhcpcd: remove usage of install
+  2021-06-30 <a href="https://github.com/kisslinux/repo/commit/bb28b328090e659d21e7212ecb34acb257125ffc">bb28b328</a> dhcpcd: 9.4.0
+  2020-11-20 <a href="https://github.com/kisslinux/repo/commit/bf9b0498b268e6af5bb55acd3dcd03d4f45466d1">bf9b0498</a> dhcpcd: 9.3.3
+  2020-11-02 <a href="https://github.com/kisslinux/repo/commit/ca8fb9852081bc66fd286fb79725a5d44e861c62">ca8fb985</a> dhcpcd: 9.3.2
+  2020-10-13 <a href="https://github.com/kisslinux/repo/commit/3bf1b145465603222ca503b81df0e51f7f2ddcab">3bf1b145</a> dhcpcd: 9.3.1
+  2020-10-06 <a href="https://github.com/kisslinux/repo/commit/2d8618992e69c3016f0c4564a47580c88cc8d1ae">2d861899</a> dhcpcd: 9.3.0
+  2020-09-07 <a href="https://github.com/kisslinux/repo/commit/f151c0ae419fba8dc6d94e304e15fa6e52731aef">f151c0ae</a> dhcpcd: 9.2.0
+  2020-07-03 <a href="https://github.com/kisslinux/repo/commit/a95aa27e6f2bff3134042c5450dd7243925679d9">a95aa27e</a> dhcpcd: bump to 9.1.4
+  2020-07-03 <a href="https://github.com/kisslinux/repo/commit/7ee68757731d0b41d483dc2c6e9389261e73fe1b">7ee68757</a> dhcpcd: bump to 9.1.3
+  2020-06-16 <a href="https://github.com/kisslinux/repo/commit/ba4ea8f87a1791ef6c46748dd7df3bf9329d254d">ba4ea8f8</a> dhcpcd: bump to 9.1.2
+  2020-06-05 <a href="https://github.com/kisslinux/repo/commit/cea4143b1a59e6600b61267a9344623974fb9056">cea4143b</a> dhcpcd: bump to 9.1.1
+  2020-06-01 <a href="https://github.com/kisslinux/repo/commit/df0e7ce149a6fdaf19117f36b877716ae0648e58">df0e7ce1</a> dhcpcd: Fix missing include
+  2020-05-31 <a href="https://github.com/kisslinux/repo/commit/8c0a5dfd7f22e4731bcaeda2c043548f6781cbb8">8c0a5dfd</a> dhcpcd: bump to 9.1.0
+  2020-05-08 <a href="https://github.com/kisslinux/repo/commit/7d43b76b390857453d1b66bfd9503a7c4d39706e">7d43b76b</a> dhcpcd: Move files to /usr/lib/dhcpcd
+  2020-04-28 <a href="https://github.com/kisslinux/repo/commit/08e6594706c4c7684839e4cd7cdb5a9c7fd176d1">08e65947</a> dhcpcd: Fix bug with privsep value
+  2020-04-24 <a href="https://github.com/kisslinux/repo/commit/9f638a04fff4ef1219ea6bacaff9c95fe3b7dfb4">9f638a04</a> dhcpcd: Drop privsepuser auto detection
+  2020-04-21 <a href="https://github.com/kisslinux/repo/commit/d22091ef6362f7c81485af2844502c503e09f61c">d22091ef</a> dhcpcd: bump to 9.0.2
+  2020-04-14 <a href="https://github.com/kisslinux/repo/commit/aad36ebb2d976b142ecb99b746c80f95c13842ca">aad36ebb</a> dhcpcd: bump to 9.0.1
+  2020-01-28 <a href="https://github.com/kisslinux/repo/commit/f9616528b7d859e0501b2888e7d75b96af92a048">f9616528</a> dhcpcd: bump to 8.1.6
+  2020-01-03 <a href="https://github.com/kisslinux/repo/commit/9a82e4bf18baf3a59349343adf3147260c30971c">9a82e4bf</a> dhcpcd: bump to 8.1.5
+  2019-12-21 <a href="https://github.com/kisslinux/repo/commit/20d9272f0dab4d709955048bb636bce9672723ba">20d9272f</a> dhcpcd: bump to 8.1.4
+  2019-12-20 <a href="https://github.com/kisslinux/repo/commit/ba9b65fed9a82571f24b2b53531c7b7d3eeed6ec">ba9b65fe</a> dhcpcd: bump to 8.1.3
+  2019-11-24 <a href="https://github.com/kisslinux/repo/commit/df156c6302acb5601e30386c188a8f4416e8fd58">df156c63</a> dhcpcd: use better mirror
+  2019-11-13 <a href="https://github.com/kisslinux/repo/commit/96cbae77e5e13b9131d43d61dccd4f08081cc793">96cbae77</a> dhcpcd: bump to 8.1.2
+  2019-10-16 <a href="https://github.com/kisslinux/repo/commit/d4fb6b88b7fa1de2202697545e40b61dd9347c41">d4fb6b88</a> dhcpcd: bump to 8.1.1
+  2019-10-13 <a href="https://github.com/kisslinux/repo/commit/6ab6b65a3ea7bbeafcaf1ce8b2dd6c0e464b387f">6ab6b65a</a> dhcpcd: bump to 8.1.0
+  2019-09-13 <a href="https://github.com/kisslinux/repo/commit/337327b0b893c3e31bf3b3be48e7e6efd09f9b0c">337327b0</a> dhcpcd: bump to 8.0.6
+  2019-09-05 <a href="https://github.com/kisslinux/repo/commit/e5189455caa63e6c386fdecd368ef284ebe78507">e5189455</a> dhcpcd: bump to 8.0.4
+  2019-08-22 <a href="https://github.com/kisslinux/repo/commit/3954712bb4f8604ac54bea4d9afbe9aedc0ee3a3">3954712b</a> dhcpcd: bump to 8.0.3
+  2019-08-04 <a href="https://github.com/kisslinux/repo/commit/5050696efb1d72e33763141af0afa46ce055b471">5050696e</a> dhcpcd: bump to 8.0.2
+  2019-07-04 <a href="https://github.com/kisslinux/repo/commit/1fac8101aebd14556e41537d048283d9e239f621">1fac8101</a> dhcpcd: add package
+
+
+<span id=007><a href=#007>[007]</a></span> References
 ________________________________________________________________________________
 
 <span id=0><a href=#0>[0]</a></span> dhcpcd.8
-<span id=1><a href=#1>[1]</a></span> #/<a href=/wiki/service-management>wiki/service-management</a>
+<span id=1><a href=#1>[1]</a></span> #/wiki/service-management
 
 
 
