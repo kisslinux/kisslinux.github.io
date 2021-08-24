@@ -28,7 +28,7 @@ This page covers only basic usage. A full list of supported commands (and how
 they work) can be found here. https://git.busybox.net/busybox/tree/runit/sv.c
 
 
---[002]-List-Package-Provided-Services------------------------------------------
+--[002] List Package Provided Services -----------------------------------------
 
   This command lists all services provided by installed packages. When creating
   packages it is recommended that a service file also be supplied. Services
@@ -41,7 +41,7 @@ they work) can be found here. https://git.busybox.net/busybox/tree/runit/sv.c
   +----------------------------------------------------------------------------+
 
 
---[003]-Enable-A-Service--------------------------------------------------------
+--[003] Enable A Service -------------------------------------------------------
 
   This enables the service and makes the utilities aware of its existence.
   Services stored in /etc/sv do nothing until they are symbolically linked
@@ -54,7 +54,7 @@ they work) can be found here. https://git.busybox.net/busybox/tree/runit/sv.c
   +----------------------------------------------------------------------------+
 
 
---[004]-Disabling-A-Service-----------------------------------------------------
+--[004] Disabling A Service ----------------------------------------------------
 
   This command is the inverse of above and fully disables a service.
 
@@ -65,7 +65,7 @@ they work) can be found here. https://git.busybox.net/busybox/tree/runit/sv.c
   +----------------------------------------------------------------------------+
 
 
---[005]-Status-Of-A-Service-----------------------------------------------------
+--[005] Status Of A Service ----------------------------------------------------
 
   Report the current status of the service and the log service (if available).
 
@@ -76,7 +76,7 @@ they work) can be found here. https://git.busybox.net/busybox/tree/runit/sv.c
   +----------------------------------------------------------------------------+
 
 
---[005]-Starting-A-Service------------------------------------------------------
+--[005] Starting A Service -----------------------------------------------------
 
   If the service is not running, start it (and if it stops, restart it).
 
@@ -87,7 +87,7 @@ they work) can be found here. https://git.busybox.net/busybox/tree/runit/sv.c
   +----------------------------------------------------------------------------+
 
 
---[006]-Stopping-A-Service------------------------------------------------------
+--[006] Stopping A Service -----------------------------------------------------
 
   If the service is running, send it the TERM signal and the CONT signal.
   If ./run exists, start ./finish (if it exists). Once stopped, do not restart
@@ -100,7 +100,7 @@ they work) can be found here. https://git.busybox.net/busybox/tree/runit/sv.c
   +----------------------------------------------------------------------------+
 
 
---[007]-Starting-A-Service-Once-------------------------------------------------
+--[007] Starting A Service Once ------------------------------------------------
 
   If the service is not running, start it (and if it stops, do not restart it).
 

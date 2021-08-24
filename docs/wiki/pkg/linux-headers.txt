@@ -38,7 +38,7 @@ ________________________________________________________________________________
 ________________________________________________________________________________
 
 
---[003]-The-Headers-Do-Not-Match-My-Kernel-Version------------------------------
+--[003] The Headers Do Not Match My Kernel Version -----------------------------
 
   The kernel headers in KISS are pinned to an LTS kernel version and are only
   updated when there are changes of interest in the kernel or headers themselves

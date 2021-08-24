@@ -65,7 +65,7 @@ has its own manual page.
 ________________________________________________________________________________
 
 
---[004]-Manual-Pages-Empty------------------------------------------------------
+--[004] Manual Pages Empty -----------------------------------------------------
 
   The latest binutils has a bug in its build system where manual pages are
   truncated and end up empty. A patch must be applied and they must be

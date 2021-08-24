@@ -93,7 +93,7 @@ declaring three variables.
 +------------------------------------------------------------------------------+
 
 
---<span id=002>[<a class=t href=#002>002</a>]</span>-Download-The-Installation-Tarball---------------------------------------
+--<span id=002>[<a class=t href=#002>002</a>]</span> Download The Installation Tarball --------------------------------------
 
   This tarball contains the base system minus the bootloader and kernel. Just
   enough for the system to rebuild itself and in addition, build any other
@@ -109,7 +109,7 @@ declaring three variables.
   +----------------------------------------------------------------------------+
 
 
---<span id=003>[<a class=t href=#003>003</a>]</span>-Verify-Checksums-(Recommended)------------------------------------------
+--<span id=003>[<a class=t href=#003>003</a>]</span> Verify Checksums (Recommended) -----------------------------------------
 
   This step verifies that the file downloaded matches the file hosted remotely.
   If this step fails, try downloading the file again. If the issue persists,
@@ -123,7 +123,7 @@ declaring three variables.
   +----------------------------------------------------------------------------+
 
 
---<span id=004>[<a class=t href=#004>004</a>]</span>-Verify-Signature-(Recommended)-----------------------------------------
+--<span id=004>[<a class=t href=#004>004</a>]</span> Verify Signature (Recommended) ----------------------------------------
 
   This step verifies that the release was signed by its creator, Dylan Araps.
   If the live OS of your choice does not include GPG, this step can also be
@@ -138,7 +138,7 @@ declaring three variables.
   +----------------------------------------------------------------------------+
 
 
---<span id=005>[<a class=t href=#005>005</a>]</span>-Unpack-The-Tarball------------------------------------------------------
+--<span id=005>[<a class=t href=#005>005</a>]</span> Unpack The Tarball -----------------------------------------------------
 
   This step installs the base system.
 
@@ -150,7 +150,7 @@ declaring three variables.
   +----------------------------------------------------------------------------+
 
 
---<span id=006>[<a class=t href=#006>006</a>]</span>-Enter-The-Chroot--------------------------------------------------------
+--<span id=006>[<a class=t href=#006>006</a>]</span> Enter The Chroot -------------------------------------------------------
 
   This is a simple script to change root to /mnt and setup the environment.
   The script handles mounting pseudo filesystems (/proc, /dev, /sys, etc),
@@ -172,7 +172,7 @@ The kiss-chroot tarball contains no repositories. To continue the installation,
 the official repositories must be enabled.
 
 
---<span id=008>[<a class=t href=#008>008</a>]</span>-What-Is-A-Repository?---------------------------------------------------
+--<span id=008>[<a class=t href=#008>008</a>]</span> What Is A Repository? --------------------------------------------------
 
   A repository is a directory containing directories (packages).
 
@@ -182,7 +182,7 @@ the official repositories must be enabled.
     - package/
 
 
---<span id=009>[<a class=t href=#009>009</a>]</span>-How-Are-Repositories-Configured?----------------------------------------
+--<span id=009>[<a class=t href=#009>009</a>]</span> How Are Repositories Configured? ---------------------------------------
 
   Repositories are configured via an environment variable called KISS_PATH. This
   variable is analogous to PATH (a colon separated list of absolute paths). The
@@ -219,7 +219,7 @@ the official repositories must be enabled.
   the first match.
 
 
---<span id=010>[<a class=t href=#010>010</a>]</span>-Obtain-The-Official-Repositories----------------------------------------
+--<span id=010>[<a class=t href=#010>010</a>]</span> Obtain The Official Repositories ---------------------------------------
 
   The official repositories provide everything up to and including a modern
   web browser and media player. For a list of all packages see #/<a href=/#300>#300</a>
@@ -239,7 +239,7 @@ the official repositories must be enabled.
   environment is desired, enable the wayland repository.
 
 
---<span id=011>[<a class=t href=#011>011</a>]</span>-Setting-KISS_PATH-------------------------------------------------------
+--<span id=011>[<a class=t href=#011>011</a>]</span> Setting KISS_PATH ------------------------------------------------------
 
   +----------------------------------------------------------------------------+
   |                                                                            |
@@ -280,7 +280,7 @@ and further prevents any unsigned updates from reaching your system. In KISS
 this uses a feature built into git itself (merge.verifySignatures).
 
 
---<span id=013>[<a class=t href=#013>013</a>]</span>-Build-And-Install-GPG---------------------------------------------------
+--<span id=013>[<a class=t href=#013>013</a>]</span> Build And Install GPG --------------------------------------------------
 
   This is how packages are built. The action takes a list of packages, resolves
   dependencies and builds them. When the build is complete the package manager
@@ -296,7 +296,7 @@ this uses a feature built into git itself (merge.verifySignatures).
   +----------------------------------------------------------------------------+
 
 
---<span id=014>[<a class=t href=#014>014</a>]</span>-Import-(Dylan-Araps')-Key-----------------------------------------------
+--<span id=014>[<a class=t href=#014>014</a>]</span> Import (Dylan Araps') Key ----------------------------------------------
 
   +----------------------------------------------------------------------------+
   |                                                                            |
@@ -311,7 +311,7 @@ this uses a feature built into git itself (merge.verifySignatures).
   +----------------------------------------------------------------------------+
 
 
---<span id=015>[<a class=t href=#015>015</a>]</span>-Enable-Signature-Verification-------------------------------------------
+--<span id=015>[<a class=t href=#015>015</a>]</span> Enable Signature Verification ------------------------------------------
 
   +----------------------------------------------------------------------------+
   |                                                                            |
@@ -327,7 +327,7 @@ ________________________________________________________________________________
 If a package fails to build, open an issue at $/<a href=https://github.com/kisslinux/repo>kisslinux/repo</a>
 
 
---<span id=017>[<a class=t href=#017>017</a>]</span>-Modify-Compiler-Flags-(Optional)----------------------------------------
+--<span id=017>[<a class=t href=#017>017</a>]</span> Modify Compiler Flags (Optional) ---------------------------------------
 
   These options have been tested and work with every package in the
   repositories. To play it safe use -O2 or -Os instead of -O3.
@@ -359,7 +359,7 @@ If a package fails to build, open an issue at $/<a href=https://github.com/kissl
   +----------------------------------------------------------------------------+
 
 
---<span id=018>[<a class=t href=#018>018</a>]</span>-Update-All-Base-Packages-To-The-Latest-Version--------------------------
+--<span id=018>[<a class=t href=#018>018</a>]</span> Update All Base Packages To The Latest Version -------------------------
 
   This is how updates are performed. This command uses git to pull down changes
   from all enabled repositories and will then optionally handle the upgrade
@@ -372,7 +372,7 @@ If a package fails to build, open an issue at $/<a href=https://github.com/kissl
   +----------------------------------------------------------------------------+
 
 
---<span id=019>[<a class=t href=#019>019</a>]</span>-Rebuild-All-Packages----------------------------------------------------
+--<span id=019>[<a class=t href=#019>019</a>]</span> Rebuild All Packages ---------------------------------------------------
 
   Simply 'cd' to the installed packages database and use a glob to grab the name
   of every installed package. This glob is then passed to the package manager as
@@ -394,7 +394,7 @@ be used from here on. Information about packages can be found in the wiki at
 @/<a href=/wiki/pkg/PKG_NAME>wiki/pkg/PKG_NAME</a>
 
 
---<span id=021>[<a class=t href=#021>021</a>]</span>-Filesystem-Utilities----------------------------------------------------
+--<span id=021>[<a class=t href=#021>021</a>]</span> Filesystem Utilities ---------------------------------------------------
 
   NOTE: Open an issue at $/<a href=https://github.com/kisslinux/repo>kisslinux/repo</a> for additional filesystem support.
 
@@ -402,13 +402,13 @@ be used from here on. Information about packages can be found in the wiki at
    * (V)FAT   @/<a href=/wiki/pkg/dosfstools>wiki/pkg/dosfstools</a>
 
 
---<span id=022>[<a class=t href=#022>022</a>]</span>-WiFi-(Optional)---------------------------------------------------------
+--<span id=022>[<a class=t href=#022>022</a>]</span> WiFi (Optional) --------------------------------------------------------
 
    * @/<a href=/wiki/pkg/wpa_supplicant>wiki/pkg/wpa_supplicant</a>
    * @/<a href=/wiki/pkg/eiwd>wiki/pkg/eiwd</a>
 
 
---<span id=023>[<a class=t href=#023>023</a>]</span>-Dynamic-IP-Addressing-(Optional)----------------------------------------
+--<span id=023>[<a class=t href=#023>023</a>]</span> Dynamic IP Addressing (Optional) ---------------------------------------
 
    * @/<a href=/wiki/pkg/dhcpcd>wiki/pkg/dhcpcd</a>
 
@@ -421,7 +421,7 @@ kernel is not managed by the distribution and is instead the user's sole
 responsibility.
 
 
---<span id=025>[<a class=t href=#025>025</a>]</span>-Download-The-Kernel-Sources---------------------------------------------
+--<span id=025>[<a class=t href=#025>025</a>]</span> Download The Kernel Sources --------------------------------------------
 
   Download the kernel sources of your choosing. Official kernel releases can
   be found at kernel.org and linux-libre can be found at linux-libre.fsfla.org.
@@ -436,7 +436,7 @@ responsibility.
   +----------------------------------------------------------------------------+
 
 
---<span id=026>[<a class=t href=#026>026</a>]</span>-Download-Firmware-Blobs-(If Required)-----------------------------------
+--<span id=026>[<a class=t href=#026>026</a>]</span> Download Firmware Blobs (If Required) ----------------------------------
 
   If your hardware requires the use of firmware, download the latest tarball
   snapshot from the link below and copy the required firmware (including
@@ -459,7 +459,7 @@ responsibility.
   +----------------------------------------------------------------------------+
 
 
---<span id=027>[<a class=t href=#027>027</a>]</span>-Configure-The-Kernel----------------------------------------------------
+--<span id=027>[<a class=t href=#027>027</a>]</span> Configure The Kernel ---------------------------------------------------
 
   Keep in mind that the distribution does not provide an initramfs nor does this
   guide include how to use one. Those requiring an initramfs should look into
@@ -494,7 +494,7 @@ responsibility.
   to store its config and make it accessible at runtime via /proc/config.gz
 
 
---<span id=028>[<a class=t href=#028>028</a>]</span>-Install-Required-Packages-----------------------------------------------
+--<span id=028>[<a class=t href=#028>028</a>]</span> Install Required Packages ----------------------------------------------
 
   Depending on how your kernel is configured, some additional software may be
   required. Your options are to either install the dependencies or figure out
@@ -523,7 +523,7 @@ responsibility.
   +----------------------------------------------------------------------------+
 
 
---<span id=029>[<a class=t href=#029>029</a>]</span>-Build-The-Kernel--------------------------------------------------------
+--<span id=029>[<a class=t href=#029>029</a>]</span> Build The Kernel -------------------------------------------------------
 
   This may take a while to complete. The compilation time depends on your
   hardware and kernel configuration. The smaller the .config the less time
@@ -536,7 +536,7 @@ responsibility.
   +----------------------------------------------------------------------------+
 
 
---<span id=030>[<a class=t href=#030>030</a>]</span>-Install-The-Kernel------------------------------------------------------
+--<span id=030>[<a class=t href=#030>030</a>]</span> Install The Kernel -----------------------------------------------------
 
 
 ----<span id=031>[<a class=t href=#031>031</a>]</span>-Install-The-Modules-(To-/usr/lib)-------------------------------------
@@ -580,7 +580,7 @@ BIOS, choose grub. If using EFI, choose grub or EFISTUB.
 * EFISTUB @/<a href=/wiki/pkg/efibootmgr>wiki/pkg/efibootmgr</a>
 
 
---<span id=034>[<a class=t href=#034>034</a>]</span>-Install-init-Scripts----------------------------------------------------
+--<span id=034>[<a class=t href=#034>034</a>]</span> Install init Scripts ---------------------------------------------------
 
   The default init is busybox init (though nothing ties you to it). The below
   commands install the portable initialization framework usable by all inits.
@@ -603,7 +603,7 @@ Users are encouraged to package things for themselves. If the default software
 offerings (listed below) are of no interest, package things that are.
 
 
---<span id=036>[<a class=t href=#036>036</a>]</span>-Change-The-root-Password------------------------------------------------
+--<span id=036>[<a class=t href=#036>036</a>]</span> Change The root Password -----------------------------------------------
 
   +----------------------------------------------------------------------------+
   |                                                                            |
@@ -612,7 +612,7 @@ offerings (listed below) are of no interest, package things that are.
   +----------------------------------------------------------------------------+
 
 
---<span id=037>[<a class=t href=#037>037</a>]</span>-Add-A-Normal-User-------------------------------------------------------
+--<span id=037>[<a class=t href=#037>037</a>]</span> Add A Normal User ------------------------------------------------------
 
   +----------------------------------------------------------------------------+
   |                                                                            |
@@ -621,7 +621,7 @@ offerings (listed below) are of no interest, package things that are.
   +----------------------------------------------------------------------------+
 
 
---<span id=038>[<a class=t href=#038>038</a>]</span>-Install-Graphical-Session-(Wayland)-(Optional)--------------------------
+--<span id=038>[<a class=t href=#038>038</a>]</span> Install Graphical Session (Wayland) (Optional) -------------------------
 
   Refer to the documentation for each package.
 

@@ -31,7 +31,7 @@ ________________________________________________________________________________
 +------------------------------------------------------------------------------+
 
 
---[002]-Runtime-Dependencies----------------------------------------------------
+--[002] Runtime Dependencies ---------------------------------------------------
 
   Firefox needs a few additional things to be fully functional. One is an icon
   theme and the other is a font. If you have already installed the fonts and
@@ -45,7 +45,7 @@ ________________________________________________________________________________
   +----------------------------------------------------------------------------+
 
 
---[003]-Privacy-Package---------------------------------------------------------
+--[003] Privacy Package --------------------------------------------------------
 
   Provided is also an optional privacy package which makes Firefox perform zero
   unsolicited network requests. More information can be found in the
@@ -67,7 +67,7 @@ enable Wayland support (in a Wayland only environment like ours). The browser
 should start with no further configuration.
 
 
---[005]-Enable-VAAPI-Acceleration-----------------------------------------------
+--[005] Enable VAAPI Acceleration ----------------------------------------------
 
 Make sure that the following are set in your about:config page.
 

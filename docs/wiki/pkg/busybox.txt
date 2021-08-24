@@ -49,7 +49,7 @@ in some of these documentation holes.
 |                                                                              |
 +------------------------------------------------------------------------------+
 
---[003]-Services----------------------------------------------------------------
+--[003] Services ---------------------------------------------------------------
 
   The busybox package provides various daemons and also accompanying service
   files for the default service manager. The following daemons have services

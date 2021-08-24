@@ -52,7 +52,7 @@ Refer to the manual pages and command help output.
 ________________________________________________________________________________
 
 
---[005]-C/CXX-Compiler-Cannot-Create-Executables--------------------------------
+--[005] C/CXX Compiler Cannot Create Executables -------------------------------
 
   This is almost always an error in your CFLAGS/CXXFLAGS. Ensure that you have
   used -ONUM (CAPITAL O) and not (lowercase o) or (zero 0). If this does not fix

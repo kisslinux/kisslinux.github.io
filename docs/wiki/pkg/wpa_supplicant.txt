@@ -35,7 +35,7 @@ ________________________________________________________________________________
 [002] Setup
 ________________________________________________________________________________
 
---[003]-Connecting-To-Networks--------------------------------------------------
+--[003] Connecting To Networks -------------------------------------------------
 
   Save the output of this command to /etc/wpa_supplicant.conf.
 
@@ -53,7 +53,7 @@ Refer to the manual pages and command help output. For DHCP, refer to dhcpcd
 and its documentation.
 
 
---[005]-Starting-The-Service----------------------------------------------------
+--[005] Starting The Service ---------------------------------------------------
 
   This package provides a service file compatible with the distribution's
   default service manager. Refer to the distribution's service management

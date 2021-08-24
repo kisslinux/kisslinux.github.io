@@ -35,7 +35,7 @@ ________________________________________________________________________________
 ________________________________________________________________________________
 
 
---[003]-Mounting-The-efivar-Filesystem------------------------------------------
+--[003] Mounting The efivar Filesystem -----------------------------------------
 
   To use efibootmgr and other software to manipulate the UEFI boot entries, the
   efivars filesystem must be mounted. This isn't handled automatically by KISS
@@ -48,7 +48,7 @@ ________________________________________________________________________________
   +----------------------------------------------------------------------------+
 
 
---[004]-Booting-The-System-With-An-EFISTUB--------------------------------------
+--[004] Booting The System With An EFISTUB -------------------------------------
 
   Using an EFISTUB to boot the system removes the need for a bootloader and
   shortens boot times. Ensure that the following options are enabled in your

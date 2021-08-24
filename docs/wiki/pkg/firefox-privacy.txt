@@ -40,7 +40,7 @@ the reverse.
 ________________________________________________________________________________
 
 
---[004]-Firefox-phones-home-----------------------------------------------------
+--[004] Firefox phones home ----------------------------------------------------
 
   If you encounter Firefox phoning home, open an issue at $/kisslinux/repo
 

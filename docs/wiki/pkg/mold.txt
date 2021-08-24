@@ -89,7 +89,7 @@ If 'mold' appears in the output, everything is setup correctly.
 ________________________________________________________________________________
 
 
---[005]-Package-Fails-To-Link-With-Mold-----------------------------------------
+--[005] Package Fails To Link With Mold ----------------------------------------
 
   If a package in the official repositories fails to link with mold, open an
   issue. If a package in a third-party repository fails to link with mold, open

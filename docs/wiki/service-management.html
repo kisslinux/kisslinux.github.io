@@ -35,7 +35,7 @@ This page covers only basic usage. A full list of supported commands (and how
 they work) can be found here. <a href=https://git.busybox.net/busybox/tree/runit/sv.c>https://git.busybox.net/busybox/tree/runit/sv.c</a>
 
 
---<span id=002>[<a class=t href=#002>002</a>]</span>-List-Package-Provided-Services------------------------------------------
+--<span id=002>[<a class=t href=#002>002</a>]</span> List Package Provided Services -----------------------------------------
 
   This command lists all services provided by installed packages. When creating
   packages it is recommended that a service file also be supplied. Services
@@ -48,7 +48,7 @@ they work) can be found here. <a href=https://git.busybox.net/busybox/tree/runit
   +----------------------------------------------------------------------------+
 
 
---<span id=003>[<a class=t href=#003>003</a>]</span>-Enable-A-Service--------------------------------------------------------
+--<span id=003>[<a class=t href=#003>003</a>]</span> Enable A Service -------------------------------------------------------
 
   This enables the service and makes the utilities aware of its existence.
   Services stored in /etc/sv do nothing until they are symbolically linked
@@ -61,7 +61,7 @@ they work) can be found here. <a href=https://git.busybox.net/busybox/tree/runit
   +----------------------------------------------------------------------------+
 
 
---<span id=004>[<a class=t href=#004>004</a>]</span>-Disabling-A-Service-----------------------------------------------------
+--<span id=004>[<a class=t href=#004>004</a>]</span> Disabling A Service ----------------------------------------------------
 
   This command is the inverse of above and fully disables a service.
 
@@ -72,7 +72,7 @@ they work) can be found here. <a href=https://git.busybox.net/busybox/tree/runit
   +----------------------------------------------------------------------------+
 
 
---<span id=005>[<a class=t href=#005>005</a>]</span>-Status-Of-A-Service-----------------------------------------------------
+--<span id=005>[<a class=t href=#005>005</a>]</span> Status Of A Service ----------------------------------------------------
 
   Report the current status of the service and the log service (if available).
 
@@ -83,7 +83,7 @@ they work) can be found here. <a href=https://git.busybox.net/busybox/tree/runit
   +----------------------------------------------------------------------------+
 
 
---<span id=005>[<a class=t href=#005>005</a>]</span>-Starting-A-Service------------------------------------------------------
+--<span id=005>[<a class=t href=#005>005</a>]</span> Starting A Service -----------------------------------------------------
 
   If the service is not running, start it (and if it stops, restart it).
 
@@ -94,7 +94,7 @@ they work) can be found here. <a href=https://git.busybox.net/busybox/tree/runit
   +----------------------------------------------------------------------------+
 
 
---<span id=006>[<a class=t href=#006>006</a>]</span>-Stopping-A-Service------------------------------------------------------
+--<span id=006>[<a class=t href=#006>006</a>]</span> Stopping A Service -----------------------------------------------------
 
   If the service is running, send it the TERM signal and the CONT signal.
   If ./run exists, start ./finish (if it exists). Once stopped, do not restart
@@ -107,7 +107,7 @@ they work) can be found here. <a href=https://git.busybox.net/busybox/tree/runit
   +----------------------------------------------------------------------------+
 
 
---<span id=007>[<a class=t href=#007>007</a>]</span>-Starting-A-Service-Once-------------------------------------------------
+--<span id=007>[<a class=t href=#007>007</a>]</span> Starting A Service Once ------------------------------------------------
 
   If the service is not running, start it (and if it stops, do not restart it).
 

@@ -40,7 +40,7 @@ The baseinit package supports mdev and mdevd. The only setup required is any
 additional configuration (if necessary) and to start the daemon.
 
 
---[003]-Configuration-----------------------------------------------------------
+--[003] Configuration ----------------------------------------------------------
 
   The default configuration files for both device managers are the same (as both
   device managers support the same format). The majority of use cases should be
@@ -56,7 +56,7 @@ additional configuration (if necessary) and to start the daemon.
   * https://skarnet.org/software/mdevd/
 
 
---[004]-Start-The-Daemon--------------------------------------------------------
+--[004] Start The Daemon -------------------------------------------------------
 
   Both device managers provide service files compatible with the distribution's
   default service manager. Refer to the distribution's service management

@@ -86,7 +86,7 @@ declaring three variables.
 +------------------------------------------------------------------------------+
 
 
---[002]-Download-The-Installation-Tarball---------------------------------------
+--[002] Download The Installation Tarball --------------------------------------
 
   This tarball contains the base system minus the bootloader and kernel. Just
   enough for the system to rebuild itself and in addition, build any other
@@ -102,7 +102,7 @@ declaring three variables.
   +----------------------------------------------------------------------------+
 
 
---[003]-Verify-Checksums-(Recommended)------------------------------------------
+--[003] Verify Checksums (Recommended) -----------------------------------------
 
   This step verifies that the file downloaded matches the file hosted remotely.
   If this step fails, try downloading the file again. If the issue persists,
@@ -116,7 +116,7 @@ declaring three variables.
   +----------------------------------------------------------------------------+
 
 
---[004]-Verify-Signature-(Recommended)-----------------------------------------
+--[004] Verify Signature (Recommended) ----------------------------------------
 
   This step verifies that the release was signed by its creator, Dylan Araps.
   If the live OS of your choice does not include GPG, this step can also be
@@ -131,7 +131,7 @@ declaring three variables.
   +----------------------------------------------------------------------------+
 
 
---[005]-Unpack-The-Tarball------------------------------------------------------
+--[005] Unpack The Tarball -----------------------------------------------------
 
   This step installs the base system.
 
@@ -143,7 +143,7 @@ declaring three variables.
   +----------------------------------------------------------------------------+
 
 
---[006]-Enter-The-Chroot--------------------------------------------------------
+--[006] Enter The Chroot -------------------------------------------------------
 
   This is a simple script to change root to /mnt and setup the environment.
   The script handles mounting pseudo filesystems (/proc, /dev, /sys, etc),
@@ -165,7 +165,7 @@ The kiss-chroot tarball contains no repositories. To continue the installation,
 the official repositories must be enabled.
 
 
---[008]-What-Is-A-Repository?---------------------------------------------------
+--[008] What Is A Repository? --------------------------------------------------
 
   A repository is a directory containing directories (packages).
 
@@ -175,7 +175,7 @@ the official repositories must be enabled.
     - package/
 
 
---[009]-How-Are-Repositories-Configured?----------------------------------------
+--[009] How Are Repositories Configured? ---------------------------------------
 
   Repositories are configured via an environment variable called KISS_PATH. This
   variable is analogous to PATH (a colon separated list of absolute paths). The
@@ -212,7 +212,7 @@ the official repositories must be enabled.
   the first match.
 
 
---[010]-Obtain-The-Official-Repositories----------------------------------------
+--[010] Obtain The Official Repositories ---------------------------------------
 
   The official repositories provide everything up to and including a modern
   web browser and media player. For a list of all packages see #/#300
@@ -232,7 +232,7 @@ the official repositories must be enabled.
   environment is desired, enable the wayland repository.
 
 
---[011]-Setting-KISS_PATH-------------------------------------------------------
+--[011] Setting KISS_PATH ------------------------------------------------------
 
   +----------------------------------------------------------------------------+
   |                                                                            |
@@ -273,7 +273,7 @@ and further prevents any unsigned updates from reaching your system. In KISS
 this uses a feature built into git itself (merge.verifySignatures).
 
 
---[013]-Build-And-Install-GPG---------------------------------------------------
+--[013] Build And Install GPG --------------------------------------------------
 
   This is how packages are built. The action takes a list of packages, resolves
   dependencies and builds them. When the build is complete the package manager
@@ -289,7 +289,7 @@ this uses a feature built into git itself (merge.verifySignatures).
   +----------------------------------------------------------------------------+
 
 
---[014]-Import-(Dylan-Araps')-Key-----------------------------------------------
+--[014] Import (Dylan Araps') Key ----------------------------------------------
 
   +----------------------------------------------------------------------------+
   |                                                                            |
@@ -304,7 +304,7 @@ this uses a feature built into git itself (merge.verifySignatures).
   +----------------------------------------------------------------------------+
 
 
---[015]-Enable-Signature-Verification-------------------------------------------
+--[015] Enable Signature Verification ------------------------------------------
 
   +----------------------------------------------------------------------------+
   |                                                                            |
@@ -320,7 +320,7 @@ ________________________________________________________________________________
 If a package fails to build, open an issue at $/kisslinux/repo
 
 
---[017]-Modify-Compiler-Flags-(Optional)----------------------------------------
+--[017] Modify Compiler Flags (Optional) ---------------------------------------
 
   These options have been tested and work with every package in the
   repositories. To play it safe use -O2 or -Os instead of -O3.
@@ -352,7 +352,7 @@ If a package fails to build, open an issue at $/kisslinux/repo
   +----------------------------------------------------------------------------+
 
 
---[018]-Update-All-Base-Packages-To-The-Latest-Version--------------------------
+--[018] Update All Base Packages To The Latest Version -------------------------
 
   This is how updates are performed. This command uses git to pull down changes
   from all enabled repositories and will then optionally handle the upgrade
@@ -365,7 +365,7 @@ If a package fails to build, open an issue at $/kisslinux/repo
   +----------------------------------------------------------------------------+
 
 
---[019]-Rebuild-All-Packages----------------------------------------------------
+--[019] Rebuild All Packages ---------------------------------------------------
 
   Simply 'cd' to the installed packages database and use a glob to grab the name
   of every installed package. This glob is then passed to the package manager as
@@ -387,7 +387,7 @@ be used from here on. Information about packages can be found in the wiki at
 @/wiki/pkg/PKG_NAME
 
 
---[021]-Filesystem-Utilities----------------------------------------------------
+--[021] Filesystem Utilities ---------------------------------------------------
 
   NOTE: Open an issue at $/kisslinux/repo for additional filesystem support.
 
@@ -395,13 +395,13 @@ be used from here on. Information about packages can be found in the wiki at
    * (V)FAT   @/wiki/pkg/dosfstools
 
 
---[022]-WiFi-(Optional)---------------------------------------------------------
+--[022] WiFi (Optional) --------------------------------------------------------
 
    * @/wiki/pkg/wpa_supplicant
    * @/wiki/pkg/eiwd
 
 
---[023]-Dynamic-IP-Addressing-(Optional)----------------------------------------
+--[023] Dynamic IP Addressing (Optional) ---------------------------------------
 
    * @/wiki/pkg/dhcpcd
 
@@ -414,7 +414,7 @@ kernel is not managed by the distribution and is instead the user's sole
 responsibility.
 
 
---[025]-Download-The-Kernel-Sources---------------------------------------------
+--[025] Download The Kernel Sources --------------------------------------------
 
   Download the kernel sources of your choosing. Official kernel releases can
   be found at kernel.org and linux-libre can be found at linux-libre.fsfla.org.
@@ -429,7 +429,7 @@ responsibility.
   +----------------------------------------------------------------------------+
 
 
---[026]-Download-Firmware-Blobs-(If Required)-----------------------------------
+--[026] Download Firmware Blobs (If Required) ----------------------------------
 
   If your hardware requires the use of firmware, download the latest tarball
   snapshot from the link below and copy the required firmware (including
@@ -452,7 +452,7 @@ responsibility.
   +----------------------------------------------------------------------------+
 
 
---[027]-Configure-The-Kernel----------------------------------------------------
+--[027] Configure The Kernel ---------------------------------------------------
 
   Keep in mind that the distribution does not provide an initramfs nor does this
   guide include how to use one. Those requiring an initramfs should look into
@@ -487,7 +487,7 @@ responsibility.
   to store its config and make it accessible at runtime via /proc/config.gz
 
 
---[028]-Install-Required-Packages-----------------------------------------------
+--[028] Install Required Packages ----------------------------------------------
 
   Depending on how your kernel is configured, some additional software may be
   required. Your options are to either install the dependencies or figure out
@@ -516,7 +516,7 @@ responsibility.
   +----------------------------------------------------------------------------+
 
 
---[029]-Build-The-Kernel--------------------------------------------------------
+--[029] Build The Kernel -------------------------------------------------------
 
   This may take a while to complete. The compilation time depends on your
   hardware and kernel configuration. The smaller the .config the less time
@@ -529,7 +529,7 @@ responsibility.
   +----------------------------------------------------------------------------+
 
 
---[030]-Install-The-Kernel------------------------------------------------------
+--[030] Install The Kernel -----------------------------------------------------
 
 
 ----[031]-Install-The-Modules-(To-/usr/lib)-------------------------------------
@@ -573,7 +573,7 @@ BIOS, choose grub. If using EFI, choose grub or EFISTUB.
 * EFISTUB @/wiki/pkg/efibootmgr
 
 
---[034]-Install-init-Scripts----------------------------------------------------
+--[034] Install init Scripts ---------------------------------------------------
 
   The default init is busybox init (though nothing ties you to it). The below
   commands install the portable initialization framework usable by all inits.
@@ -596,7 +596,7 @@ Users are encouraged to package things for themselves. If the default software
 offerings (listed below) are of no interest, package things that are.
 
 
---[036]-Change-The-root-Password------------------------------------------------
+--[036] Change The root Password -----------------------------------------------
 
   +----------------------------------------------------------------------------+
   |                                                                            |
@@ -605,7 +605,7 @@ offerings (listed below) are of no interest, package things that are.
   +----------------------------------------------------------------------------+
 
 
---[037]-Add-A-Normal-User-------------------------------------------------------
+--[037] Add A Normal User ------------------------------------------------------
 
   +----------------------------------------------------------------------------+
   |                                                                            |
@@ -614,7 +614,7 @@ offerings (listed below) are of no interest, package things that are.
   +----------------------------------------------------------------------------+
 
 
---[038]-Install-Graphical-Session-(Wayland)-(Optional)--------------------------
+--[038] Install Graphical Session (Wayland) (Optional) -------------------------
 
   Refer to the documentation for each package.
 

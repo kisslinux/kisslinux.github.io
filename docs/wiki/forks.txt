@@ -27,7 +27,7 @@ ________________________________________________________________________________
 ________________________________________________________________________________
 
 
---[002]-Glasnost-Linux----------------------------------------------------------
+--[002] Glasnost Linux ---------------------------------------------------------
 
   Glasnost Linux is a Linux® distribution using the Clang/LLVM toolchain and
   musl libc.
@@ -35,14 +35,14 @@ ________________________________________________________________________________
   Source: https://www.glasnost.org/
 
 
---[003]-GKISS-Linux-------------------------------------------------------------
+--[003] GKISS Linux ------------------------------------------------------------
 
   KISS Linux with glibc.
 
   Source: https://github.com/gkisslinux
 
 
---[004]-Carbs-Linux-------------------------------------------------------------
+--[004] Carbs Linux ------------------------------------------------------------
 
   Carbs Linux is an in-development Linux distribution with a suckless mindset.
   The base system will consist of only the necessary programs to create a Linux
@@ -51,7 +51,7 @@ ________________________________________________________________________________
   Source: https://carbslinux.org
 
 
---[005]-Wyvertux-(Not-In-Active-Development)------------------------------------
+--[005] Wyvertux (Not In Active Development) -----------------------------------
 
   Wyvertux is an experimental Linux distribution that aims to completely remove
   GNU utilities (if it's even possible) from the Linux build system.
@@ -59,7 +59,7 @@ ________________________________________________________________________________
   Source: https://github.com/wyvertux/wyvertux
 
 
---[006]-Pine-Linux-(Not-In-Active-Development)----------------------------------
+--[006] Pine Linux (Not In Active Development) ---------------------------------
 
   An experimental linux distro with the goal of being secure, fast, and fully
   suckless.
@@ -67,7 +67,7 @@ ________________________________________________________________________________
   Source: https://github.com/pine-linux
 
 
---[007]-Mue-Linux-(Not-In-Active-Development)-----------------------------------
+--[007] Mue Linux (Not In Active Development) ----------------------------------
 
   Mue Linux is an attempt at a minimalistic linux system with strong ideals.
   You can find more information about the ideals here https://muevoid.org/ideals
@@ -81,29 +81,29 @@ ________________________________________________________________________________
 Ports of KISS Linux to other architectures.
 
 
---[009]-i686--------------------------------------------------------------------
+--[009] i686 -------------------------------------------------------------------
 
   * https://github.com/arvl130/kiss32-repo
   * https://github.com/arvl130/kiss32-glibc-repo
   * https://github.com/arvl130/kiss32-uclibc-repo (unmaintained)
 
 
---[010]-aarch64-----------------------------------------------------------------
+--[010] aarch64 ----------------------------------------------------------------
 
   * https://github.com/jedavies-dev/kiss-aarch64
 
 
---[011]-ppc64le-----------------------------------------------------------------
+--[011] ppc64le ----------------------------------------------------------------
 
   * https://github.com/jedavies-dev/kiss-ppc64le
 
 
---[012]-armv7-------------------------------------------------------------------
+--[012] armv7 ------------------------------------------------------------------
 
   * https://github.com/jedavies-dev/kiss-armv7 (unmaintained)
 
 
---[013]-Raspberry-PI------------------------------------------------------------
+--[013] Raspberry PI -----------------------------------------------------------
 
   * https://github.com/xuxiaodong/kiss-raspi
 

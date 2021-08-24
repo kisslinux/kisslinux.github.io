@@ -26,7 +26,7 @@ ALAAAAAAQABAAAAM2SLrc/jA+QBUFM2iqA2bAMHSktwCCWJIYEIyvKLOuJt+wV69ry5cfwu7WCVp2RSP
 oUpE4n4sEADs=' rel=icon&gt;
 
 
---[002]-Why-Use-A-Favicon-At-All?-----------------------------------------------
+--[002] Why Use A Favicon At All? ----------------------------------------------
 
   The funny thing about web browsers is that they will assume a favicon exists
   despite this possibly being false. Browsers will try to load it and you'll
