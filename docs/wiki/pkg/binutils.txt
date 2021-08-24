@@ -13,11 +13,11 @@ ________________________________________________________________________________
 
 * Installation-------------------------------------------------------------[001]
 * Usage--------------------------------------------------------------------[002]
-* Troubleshooting----------------------------------------------------------[004]
-  * Manual-Pages-Empty-----------------------------------------------------[005]
-* Information--------------------------------------------------------------[006]
-  * Change-History---------------------------------------------------------[007]
-* References---------------------------------------------------------------[008]
+* Troubleshooting----------------------------------------------------------[003]
+  * Manual-Pages-Empty-----------------------------------------------------[004]
+* Information--------------------------------------------------------------[005]
+  * Change-History---------------------------------------------------------[006]
+* References---------------------------------------------------------------[007]
 
 
 [001] Installation
@@ -62,11 +62,11 @@ For usage information refer to the command's --help output, each command also
 has its own manual page.
 
 
-[004] Troubleshooting
+[003] Troubleshooting
 ________________________________________________________________________________
 
 
---[005]-Manual-Pages-Empty------------------------------------------------------
+--[004]-Manual-Pages-Empty------------------------------------------------------
 
   The latest binutils has a bug in its build system where manual pages are
   truncated and end up empty. A patch must be applied and they must be
@@ -76,11 +76,11 @@ ________________________________________________________________________________
   measure to ensure documentation remains available to those wanting it
 
 
-[006] Information
+[005] Information
 ________________________________________________________________________________
 
 
---[007]-Change-History--------------------------------------------------------
+--[006]-Change-History--------------------------------------------------------
 
   2021-08-21 <a href="https://github.com/kisslinux/repo/commit/0d76d5c0df09b628f58f4add00b719bbf653f283">0d76d5c0</a> binutils: fix empty manual pages issue
   2021-08-17 <a href="https://github.com/kisslinux/repo/commit/dac75430d519c60df867151232f5566ae4cb63ed">dac75430</a> binutils: enable gold
@@ -115,7 +115,7 @@ ________________________________________________________________________________
   2019-06-02 <a href="https://github.com/kisslinux/repo/commit/396d284f7f49c7054b0ec966150c6d3af403d36e">396d284f</a> binutils: add checksums and manifest
 
 
-[008] References
+[007] References
 ________________________________________________________________________________
 
 [0] https://en.wikipedia.org/wiki/GNU_Binutils
