@@ -1,4 +1,4 @@
-KISS PACKAGE SYSTEM
+KISS Package System
 ________________________________________________________________________________
 
 Packages are comprised of a directory and the series of files contained within.
