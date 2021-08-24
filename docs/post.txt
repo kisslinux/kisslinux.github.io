@@ -1,7 +1,7 @@
 Posts                                             (Archive  $/kisslinux/website)
 ________________________________________________________________________________
 
-RSS Feed: @/rss/post.xml
+RSS Feed: @/rss/post.rss
 
 * 00/00/0000 Coming soon.
 * 00/00/0000 Coming soon.

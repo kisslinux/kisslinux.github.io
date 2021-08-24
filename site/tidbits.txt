@@ -3,7 +3,7 @@ ________________________________________________________________________________
 
 Bite-sized news about Kiss Linux and its development.
 
-RSS Feed: @/rss/tidbits.xml
+RSS Feed: @/rss/tidbits.rss
 
 
 [23082021]
