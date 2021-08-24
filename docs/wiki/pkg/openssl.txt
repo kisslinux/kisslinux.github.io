@@ -1,4 +1,4 @@
-openssl                                                           version <a href=https://github.com/kisslinux/repo/tree/master/core/openssl>1.1.1k</a>
+openssl                                                           version <a href=https://github.com/kisslinux/repo/tree/master/core/openssl>1.1.1l</a>
 ________________________________________________________________________________
 
 OpenSSL is a software library for applications that secure communications over
@@ -44,7 +44,8 @@ certificates, run /etc/ssl/update-certdata.sh.
 [003] History
 ________________________________________________________________________________
 
-<div style="max-height:177px;overflow:hidden scroll">2021-07-17 <a href="https://github.com/kisslinux/repo/commit/f743a327440854a2b74002d9e6eab3005152e661">f743a327</a> openssl: nit
+<div style="max-height:177px;overflow:hidden scroll">2021-08-24 <a href="https://github.com/kisslinux/repo/commit/5a32eed21e741cce37ae44ab5357f9c3a7fce579">5a32eed2</a> openssl: 1.1.1l
+2021-07-17 <a href="https://github.com/kisslinux/repo/commit/f743a327440854a2b74002d9e6eab3005152e661">f743a327</a> openssl: nit
 2021-07-15 <a href="https://github.com/kisslinux/repo/commit/af75b8a96f9067de5cec42ff8b06a44ab6e92761">af75b8a9</a> openssl: update for new env
 2021-07-15 <a href="https://github.com/kisslinux/repo/commit/78753ba1f02cff48eb1dc53595fadffb29898421">78753ba1</a> openssl: use VERSION
 2021-07-12 <a href="https://github.com/kisslinux/repo/commit/64943907132756bf89282d32471576d90f2037cc">64943907</a> openssl: Fix build with clang. See #278
