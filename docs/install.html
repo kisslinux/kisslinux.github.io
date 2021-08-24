@@ -272,7 +272,7 @@ the official repositories must be enabled.
   The system is always able to rebuild itself.
 
 
-<span id=011><a href=#011>[011]</a></span> Enable Repository Signing (Recommended)
+<span id=012><a href=#012>[012]</a></span> Enable Repository Signing (Recommended)
 ________________________________________________________________________________
 
 Repository signing ensures that all updates have been signed by (Dylan Araps)
@@ -280,7 +280,7 @@ and further prevents any unsigned updates from reaching your system. In KISS
 this uses a feature built into git itself (merge.verifySignatures).
 
 
---<span id=011><a href=#011>[011]</a></span>-Build-And-Install-GPG---------------------------------------------------
+--<span id=013><a href=#013>[013]</a></span>-Build-And-Install-GPG---------------------------------------------------
 
   This is how packages are built. The action takes a list of packages, resolves
   dependencies and builds them. When the build is complete the package manager
@@ -296,7 +296,7 @@ this uses a feature built into git itself (merge.verifySignatures).
   +----------------------------------------------------------------------------+
 
 
---<span id=012><a href=#012>[012]</a></span>-Import-(Dylan-Araps')-Key-----------------------------------------------
+--<span id=014><a href=#014>[014]</a></span>-Import-(Dylan-Araps')-Key-----------------------------------------------
 
   +----------------------------------------------------------------------------+
   |                                                                            |
@@ -311,7 +311,7 @@ this uses a feature built into git itself (merge.verifySignatures).
   +----------------------------------------------------------------------------+
 
 
---<span id=013><a href=#013>[013]</a></span>-Enable-Signature-Verification-------------------------------------------
+--<span id=015><a href=#015>[015]</a></span>-Enable-Signature-Verification-------------------------------------------
 
   +----------------------------------------------------------------------------+
   |                                                                            |
@@ -321,13 +321,13 @@ this uses a feature built into git itself (merge.verifySignatures).
   +----------------------------------------------------------------------------+
 
 
-<span id=014><a href=#014>[014]</a></span> Rebuild KISS
+<span id=016><a href=#016>[016]</a></span> Rebuild KISS
 ________________________________________________________________________________
 
 If a package fails to build, open an issue at $/<a href=https://github.com/kisslinux/repo>kisslinux/repo</a>
 
 
---<span id=015><a href=#015>[015]</a></span>-Modify-Compiler-Flags-(Optional)----------------------------------------
+--<span id=017><a href=#017>[017]</a></span>-Modify-Compiler-Flags-(Optional)----------------------------------------
 
   These options have been tested and work with every package in the
   repositories. To play it safe use -O2 or -Os instead of -O3.
@@ -359,7 +359,7 @@ If a package fails to build, open an issue at $/<a href=https://github.com/kissl
   +----------------------------------------------------------------------------+
 
 
---<span id=016><a href=#016>[016]</a></span>-Update-All-Base-Packages-To-The-Latest-Version--------------------------
+--<span id=018><a href=#018>[018]</a></span>-Update-All-Base-Packages-To-The-Latest-Version--------------------------
 
   This is how updates are performed. This command uses git to pull down changes
   from all enabled repositories and will then optionally handle the upgrade
@@ -372,7 +372,7 @@ If a package fails to build, open an issue at $/<a href=https://github.com/kissl
   +----------------------------------------------------------------------------+
 
 
---<span id=017><a href=#017>[017]</a></span>-Rebuild-All-Packages----------------------------------------------------
+--<span id=019><a href=#019>[019]</a></span>-Rebuild-All-Packages----------------------------------------------------
 
   Simply 'cd' to the installed packages database and use a glob to grab the name
   of every installed package. This glob is then passed to the package manager as
@@ -385,7 +385,7 @@ If a package fails to build, open an issue at $/<a href=https://github.com/kissl
   +----------------------------------------------------------------------------+
 
 
-<span id=018><a href=#018>[018]</a></span> Userspace Tools
+<span id=020><a href=#020>[020]</a></span> Userspace Tools
 ________________________________________________________________________________
 
 The software below is required unless stated otherwise. Also, all package
@@ -394,7 +394,7 @@ be used from here on. Information about packages can be found in the wiki at
 @/<a href=/wiki/pkg/PKG_NAME>wiki/pkg/PKG_NAME</a>
 
 
---<span id=019><a href=#019>[019]</a></span>-Filesystem-Utilities----------------------------------------------------
+--<span id=021><a href=#021>[021]</a></span>-Filesystem-Utilities----------------------------------------------------
 
   NOTE: Open an issue at $/<a href=https://github.com/kisslinux/repo>kisslinux/repo</a> for additional filesystem support.
 
@@ -402,18 +402,18 @@ be used from here on. Information about packages can be found in the wiki at
    * (V)FAT   @/<a href=/wiki/pkg/dosfstools>wiki/pkg/dosfstools</a>
 
 
---<span id=020><a href=#020>[020]</a></span>-WiFi-(Optional)---------------------------------------------------------
+--<span id=022><a href=#022>[022]</a></span>-WiFi-(Optional)---------------------------------------------------------
 
    * @/<a href=/wiki/pkg/wpa_supplicant>wiki/pkg/wpa_supplicant</a>
    * @/<a href=/wiki/pkg/eiwd>wiki/pkg/eiwd</a>
 
 
---<span id=021><a href=#021>[021]</a></span>-Dynamic-IP-Addressing-(Optional)----------------------------------------
+--<span id=023><a href=#023>[023]</a></span>-Dynamic-IP-Addressing-(Optional)----------------------------------------
 
    * @/<a href=/wiki/pkg/dhcpcd>wiki/pkg/dhcpcd</a>
 
 
-<span id=023><a href=#023>[023]</a></span> The Kernel
+<span id=024><a href=#024>[024]</a></span> The Kernel
 ________________________________________________________________________________
 
 This step involves configuring and building your own Linux kernel. The Linux
@@ -494,7 +494,7 @@ responsibility.
   to store its config and make it accessible at runtime via /proc/config.gz
 
 
---<span id=024><a href=#024>[024]</a></span>-Install-Required-Packages-----------------------------------------------
+--<span id=028><a href=#028>[028]</a></span>-Install-Required-Packages-----------------------------------------------
 
   Depending on how your kernel is configured, some additional software may be
   required. Your options are to either install the dependencies or figure out
@@ -523,7 +523,7 @@ responsibility.
   +----------------------------------------------------------------------------+
 
 
---<span id=028><a href=#028>[028]</a></span>-Build-The-Kernel--------------------------------------------------------
+--<span id=029><a href=#029>[029]</a></span>-Build-The-Kernel--------------------------------------------------------
 
   This may take a while to complete. The compilation time depends on your
   hardware and kernel configuration. The smaller the .config the less time
@@ -536,10 +536,10 @@ responsibility.
   +----------------------------------------------------------------------------+
 
 
---<span id=029><a href=#029>[029]</a></span>-Install-The-Kernel------------------------------------------------------
+--<span id=030><a href=#030>[030]</a></span>-Install-The-Kernel------------------------------------------------------
 
 
-----<span id=030><a href=#030>[030]</a></span>-Install-The-Modules-(To-/usr/lib)-------------------------------------
+----<span id=031><a href=#031>[031]</a></span>-Install-The-Modules-(To-/usr/lib)-------------------------------------
 
     If your kernel has no modules this step can be skipped.
 
@@ -550,7 +550,7 @@ responsibility.
     +--------------------------------------------------------------------------+
 
 
-----<span id=031><a href=#031>[031]</a></span>-Install-The-Kernel-Image-To-(/boot)-----------------------------------
+----<span id=032><a href=#032>[032]</a></span>-Install-The-Kernel-Image-To-(/boot)-----------------------------------
 
     A LILO error may appear, this is normal.
 
@@ -570,7 +570,7 @@ responsibility.
     +--------------------------------------------------------------------------+
 
 
-<span id=030><a href=#030>[030]</a></span> The bootloader
+<span id=033><a href=#033>[033]</a></span> The bootloader
 ________________________________________________________________________________
 
 The distribution currently provides two boot methods. Grub or EFISTUB. If using
@@ -580,7 +580,7 @@ BIOS, choose grub. If using EFI, choose grub or EFISTUB.
 * EFISTUB @/<a href=/wiki/pkg/efibootmgr>wiki/pkg/efibootmgr</a>
 
 
---<span id=031><a href=#031>[031]</a></span>-Install-init-Scripts----------------------------------------------------
+--<span id=034><a href=#034>[034]</a></span>-Install-init-Scripts----------------------------------------------------
 
   The default init is busybox init (though nothing ties you to it). The below
   commands install the portable initialization framework usable by all inits.
@@ -592,7 +592,7 @@ BIOS, choose grub. If using EFI, choose grub or EFISTUB.
   +----------------------------------------------------------------------------+
 
 
-<span id=032><a href=#032>[032]</a></span> Post Installation
+<span id=035><a href=#035>[035]</a></span> Post Installation
 ________________________________________________________________________________
 
 The installation is complete and the system should now be capable of booting
@@ -603,7 +603,7 @@ Users are encouraged to package things for themselves. If the default software
 offerings (listed below) are of no interest, package things that are.
 
 
---<span id=033><a href=#033>[033]</a></span>-Change-The-root-Password------------------------------------------------
+--<span id=036><a href=#036>[036]</a></span>-Change-The-root-Password------------------------------------------------
 
   +----------------------------------------------------------------------------+
   |                                                                            |
@@ -612,7 +612,7 @@ offerings (listed below) are of no interest, package things that are.
   +----------------------------------------------------------------------------+
 
 
---<span id=034><a href=#034>[034]</a></span>-Add-A-Normal-User-------------------------------------------------------
+--<span id=037><a href=#037>[037]</a></span>-Add-A-Normal-User-------------------------------------------------------
 
   +----------------------------------------------------------------------------+
   |                                                                            |
@@ -621,7 +621,7 @@ offerings (listed below) are of no interest, package things that are.
   +----------------------------------------------------------------------------+
 
 
---<span id=035><a href=#035>[035]</a></span>-Install-Graphical-Session-(Wayland)-(Optional)--------------------------
+--<span id=038><a href=#038>[038]</a></span>-Install-Graphical-Session-(Wayland)-(Optional)--------------------------
 
   Refer to the documentation for each package.
 
@@ -636,7 +636,7 @@ offerings (listed below) are of no interest, package things that are.
     * Region Selection     @/<a href=/wiki/pkg/slurp>wiki/pkg/slurp</a>
 
 
-<span id=036><a href=#036>[036]</a></span> Further Reading
+<span id=039><a href=#039>[039]</a></span> Further Reading
 ________________________________________________________________________________
 
 Refer to the Wiki for more information. @/<a href=/wiki>wiki</a>
