@@ -1,6 +1,6 @@
-<!doctype html><html lang=en><link href='data:image/gif;base64,R0lGODlhEAAQAPH/AAAAAP8AAP8AN////yH5BAUAAAQALAAAAAAQABAAAAM2SLrc/jA+QBUFM2iqA2bAMHSktwCCWJIYEIyvKLOuJt+wV69ry5cfwu7WCVp2RSPoUpE4n4sEADs=' rel=icon><link rel=alternate type="application/rss+xml" title="Tidbits RSS feed" href=/rss/tidbits.rss><link rel=alternate type="application/rss+xml" title="Posts RSS feed" href=/rss/post.rss><title>KISS - home</title><meta charset=utf-8><meta name=Description content="Kiss Linux is a meta-distribution for the x86_64 architecture with a focus on simplicity, sustainability and user freedom. The distribution was created by Dylan Araps who also acts as its sole developer."><meta name=viewport content="width=device-width,initial-scale=1"><style>body{overflow-y:scroll;font:16px monospace,monospace}img,#c{display:table-cell;max-width:999px;max-width:80ch}pre{margin:0;overflow-x:hidden}#l{text-decoration:none;color:#a00}@media(max-width:999px){#c{display:block;font-size:1.94vw}}@media(prefers-color-scheme:dark){body{background:#000;color:#fff}a{color:#6CF}#l{color:#F33}}</style><div style="display:table;margin:16px auto">
+<!doctype html><html lang=en><link href='data:image/gif;base64,R0lGODlhEAAQAPH/AAAAAP8AAP8AN////yH5BAUAAAQALAAAAAAQABAAAAM2SLrc/jA+QBUFM2iqA2bAMHSktwCCWJIYEIyvKLOuJt+wV69ry5cfwu7WCVp2RSPoUpE4n4sEADs=' rel=icon><link rel=alternate type="application/rss+xml" title="Tidbits RSS feed" href=/rss/tidbits.rss><link rel=alternate type="application/rss+xml" title="Posts RSS feed" href=/rss/post.rss><title>KISS - home</title><meta charset=utf-8><meta name=Description content="Kiss Linux is a meta-distribution for the x86_64 architecture with a focus on simplicity, sustainability and user freedom. The distribution was created by Dylan Araps who also acts as its sole developer."><meta name=viewport content="width=device-width,initial-scale=1"><style>body{overflow-y:scroll;font:16px monospace,monospace}img,#c{display:table-cell;max-width:999px;max-width:80ch}pre{margin:0;overflow-x:hidden}.l{color:#a00}.t{text-decoration:none}@media(max-width:999px){#c{display:block;font-size:1.94vw}}@media(prefers-color-scheme:dark){body{background:#000;color:#fff}a{color:#6CF}#l{color:#F33}}</style><div style="display:table;margin:16px auto">
 <div id=c><pre>
-<div style="display:inline-block"><a href=/ id=l>
+<div style="display:inline-block"><a href=/ class="l t">
 |/
 |\ISS</a>               <a href=/tidbits>Tidbits</a>  <a href=/post>Posts</a>  <a href=/answers>Answers</a>  <a href=/install>Install</a>  <a href=/wiki>Wiki</a>  <a href=/contact>Contact</a>  <a href=/donate>Donate</a>  </div><div style="image-rendering:crisp-edges;display:inline-block;vertical-align:sub"><a href=https://github.com/kisslinux/><img src="data:image/gif;base64,R0lGODlhEAAQAPABAAAAAP//ACH5BAUIAAEALAAAAAAQABAAAAIojA2px6G/GJzgJASxbrI+jmVgGI3TSF4oZS6emmqw823dTFcWbklNAQA7"></a></div>
 
@@ -30,20 +30,20 @@
 |                                                                  (|     | )  |
 +------------------------------------------------------------------------------+
 
-* Overview-----------------------------------------------------------------<a href=#100>[100]</a>
-* Software-Distribution-Model----------------------------------------------<a href=#200>[200]</a>
-* The-Official-Repositories------------------------------------------------<a href=#300>[300]</a>
-* Package-System-----------------------------------------------------------<a href=#400>[400]</a>
-* Package-Manager----------------------------------------------------------<a href=#500>[500]</a>
-* Further-Reading----------------------------------------------------------<a href=#600>[600]</a>
+* Overview-----------------------------------------------------------------[<a class=t href=#001>001</a>]
+* Software-Distribution-Model----------------------------------------------[<a class=t href=#002>002</a>]
+* The-Official-Repositories------------------------------------------------[<a class=t href=#003>003</a>]
+* Package-System-----------------------------------------------------------[<a class=t href=#004>004</a>]
+* Package-Manager----------------------------------------------------------[<a class=t href=#005>005</a>]
+* Further-Reading----------------------------------------------------------[<a class=t href=#006>006</a>]
 
 
-<span id=100><a href=#100>[100]</a></span> Overview
+<span id=001>[<a class=t href=#001>001</a>]</span> Overview
 ________________________________________________________________________________
 
 Kiss Linux is a meta-distribution for the x86_64 architecture with a focus on
 simplicity, sustainability and user freedom. The project was created by
-Dylan Araps who also acts as its sole developer.
+Dylan Araps who also acts as its sole developer and BDFL [<a class=t href=#0>0</a>].
 
 The distribution is designed to be maintainable by a single person and to this
 end has no infrastructure, backend or monetary running costs. Further, all
@@ -64,11 +64,11 @@ The user is provided with three things.
    belongs to the user and they become totally self-reliant.
 
 
-<span id=200><a href=#200>[200]</a></span> Software Distribution Model
+<span id=002>[<a class=t href=#002>002</a>]</span> Software Distribution Model
 ________________________________________________________________________________
 
-The distribution is "rolling release" (install once, update perpetually) with
-the compilation process taking place on the user's machine. Updates to the
+The distribution is "rolling release" [<a class=t href=#1>1</a>] (install once, update perpetually)
+with the compilation process taking place on the user's machine. Updates to the
 distribution merely contain instructions for how each package is built.
 
 This model gives the user control over the compilation process while also
@@ -76,7 +76,7 @@ removing the need for the distribution to have the necessary infrastructure
 to churn out and distribute binaries on a daily basis.
 
 
-<span id=300><a href=#300>[300]</a></span> The Official Repositories
+<span id=003>[<a class=t href=#003>003</a>]</span> The Official Repositories
 ________________________________________________________________________________
 
 The problem with monolithic repositories is that they have no clear end. They
@@ -111,7 +111,7 @@ with lock-in, too complex or otherwise out of scope.
 Further reading: @/<a href=/wiki>wiki</a>
 
 
-<span id=400><a href=#400>[400]</a></span> Package System
+<span id=004>[<a class=t href=#004>004</a>]</span> Package System
 ________________________________________________________________________________
 
 The system is based around directories and files. A repository (directory)
@@ -145,7 +145,7 @@ deduplicate otherwise identical information.
 Further reading: @/<a href=/wiki/package-system>wiki/package-system</a>
 
 
-<span id=500><a href=#500>[500]</a></span> Package Manager
+<span id=005>[<a class=t href=#005>005</a>]</span> Package Manager
 ________________________________________________________________________________
 
 The package manager (also named 'kiss') is a small, self-contained and POSIX
@@ -172,7 +172,7 @@ Each action also has a single letter alias (build == b).
 Further reading: @/<a href=/wiki/package-manager>wiki/package-manager</a>
 
 
-<span id=600><a href=#600>[600]</a></span> Further Reading
+<span id=006>[<a class=t href=#006>006</a>]</span> Further Reading
 ________________________________________________________________________________
 
 - @/<a href=/answers>answers</a>               - Answers to the most common questions.
@@ -182,6 +182,8 @@ ________________________________________________________________________________
 - @/<a href=/wiki/website>wiki/website</a>          - About the website itself.
 - @/<a href=/contact>contact</a>               - Get in touch with Kiss Linux.
 
+<span id=0>[<a class=t href=#0>0</a>]</span> <a href=https://en.wikipedia.org/wiki/Benevolent_dictator_for_life>https://en.wikipedia.org/wiki/Benevolent_dictator_for_life</a>
+<span id=1>[<a class=t href=#1>1</a>]</span> <a href=https://en.wikipedia.org/wiki/Rolling_release>https://en.wikipedia.org/wiki/Rolling_release</a>
 
 
 ________________________________________________________________________________

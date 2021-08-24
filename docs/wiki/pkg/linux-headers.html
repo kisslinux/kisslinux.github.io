@@ -1,6 +1,6 @@
-<!doctype html><html lang=en><link href='data:image/gif;base64,R0lGODlhEAAQAPH/AAAAAP8AAP8AN////yH5BAUAAAQALAAAAAAQABAAAAM2SLrc/jA+QBUFM2iqA2bAMHSktwCCWJIYEIyvKLOuJt+wV69ry5cfwu7WCVp2RSPoUpE4n4sEADs=' rel=icon><link rel=alternate type="application/rss+xml" title="Tidbits RSS feed" href=/rss/tidbits.rss><link rel=alternate type="application/rss+xml" title="Posts RSS feed" href=/rss/post.rss><title>KISS - linux-headers</title><meta charset=utf-8><meta name=Description content="Kiss Linux is a meta-distribution for the x86_64 architecture with a focus on simplicity, sustainability and user freedom. The distribution was created by Dylan Araps who also acts as its sole developer."><meta name=viewport content="width=device-width,initial-scale=1"><style>body{overflow-y:scroll;font:16px monospace,monospace}img,#c{display:table-cell;max-width:999px;max-width:80ch}pre{margin:0;overflow-x:hidden}#l{text-decoration:none;color:#a00}@media(max-width:999px){#c{display:block;font-size:1.94vw}}@media(prefers-color-scheme:dark){body{background:#000;color:#fff}a{color:#6CF}#l{color:#F33}}</style><div style="display:table;margin:16px auto">
+<!doctype html><html lang=en><link href='data:image/gif;base64,R0lGODlhEAAQAPH/AAAAAP8AAP8AN////yH5BAUAAAQALAAAAAAQABAAAAM2SLrc/jA+QBUFM2iqA2bAMHSktwCCWJIYEIyvKLOuJt+wV69ry5cfwu7WCVp2RSPoUpE4n4sEADs=' rel=icon><link rel=alternate type="application/rss+xml" title="Tidbits RSS feed" href=/rss/tidbits.rss><link rel=alternate type="application/rss+xml" title="Posts RSS feed" href=/rss/post.rss><title>KISS - linux-headers</title><meta charset=utf-8><meta name=Description content="Kiss Linux is a meta-distribution for the x86_64 architecture with a focus on simplicity, sustainability and user freedom. The distribution was created by Dylan Araps who also acts as its sole developer."><meta name=viewport content="width=device-width,initial-scale=1"><style>body{overflow-y:scroll;font:16px monospace,monospace}img,#c{display:table-cell;max-width:999px;max-width:80ch}pre{margin:0;overflow-x:hidden}.l{color:#a00}.t{text-decoration:none}@media(max-width:999px){#c{display:block;font-size:1.94vw}}@media(prefers-color-scheme:dark){body{background:#000;color:#fff}a{color:#6CF}#l{color:#F33}}</style><div style="display:table;margin:16px auto">
 <div id=c><pre>
-<div style="display:inline-block"><a href=/ id=l>
+<div style="display:inline-block"><a href=/ class="l t">
 |/
 |\ISS</a>               <a href=/tidbits>Tidbits</a>  <a href=/post>Posts</a>  <a href=/answers>Answers</a>  <a href=/install>Install</a>  <a href=/wiki>Wiki</a>  <a href=/contact>Contact</a>  <a href=/donate>Donate</a>  </div><div style="image-rendering:crisp-edges;display:inline-block;vertical-align:sub"><a href=https://github.com/kisslinux/><img src="data:image/gif;base64,R0lGODlhEAAQAPABAAAAAP//ACH5BAUIAAEALAAAAAAQABAAAAIojA2px6G/GJzgJASxbrI+jmVgGI3TSF4oZS6emmqw823dTFcWbklNAQA7"></a></div>
 
@@ -15,22 +15,22 @@ calls, as well as constants and structures to be used with these system calls.
 The C library's header files include the kernel header files from the "linux"
 subdirectory. The system's libc headers are usually installed at the default
 location /usr/include and the kernel headers in subdirectories under that
-(most notably /usr/include/linux and /usr/include/asm). <a href=#0>[0]</a>
+(most notably /usr/include/linux and /usr/include/asm). [<a class=t href=#0>0</a>]
 
 Upstream: <a href=https://kernel.org>https://kernel.org</a>
 
 
-<span id=000><a href=#000>[000]</a></span> Index
+<span id=000>[<a class=t href=#000>000</a>]</span> Index
 ________________________________________________________________________________
 
-* Installation-------------------------------------------------------------<a href=#001>[001]</a>
-* Troubleshooting----------------------------------------------------------<a href=#002>[002]</a>
-  * The-Headers-Do-Not-Match-My-Kernel-Version-----------------------------<a href=#003>[003]</a>
-* History------------------------------------------------------------------<a href=#004>[004]</a>
-* References---------------------------------------------------------------<a href=#005>[005]</a>
+* Installation-------------------------------------------------------------[<a class=t href=#001>001</a>]
+* Troubleshooting----------------------------------------------------------[<a class=t href=#002>002</a>]
+  * The-Headers-Do-Not-Match-My-Kernel-Version-----------------------------[<a class=t href=#003>003</a>]
+* History------------------------------------------------------------------[<a class=t href=#004>004</a>]
+* References---------------------------------------------------------------[<a class=t href=#005>005</a>]
 
 
-<span id=001><a href=#001>[001]</a></span> Installation
+<span id=001>[<a class=t href=#001>001</a>]</span> Installation
 ________________________________________________________________________________
 
 +------------------------------------------------------------------------------+
@@ -41,11 +41,11 @@ ________________________________________________________________________________
 
 
 
-<span id=002><a href=#002>[002]</a></span> Troubleshooting
+<span id=002>[<a class=t href=#002>002</a>]</span> Troubleshooting
 ________________________________________________________________________________
 
 
---<span id=003><a href=#003>[003]</a></span>-The-Headers-Do-Not-Match-My-Kernel-Version------------------------------
+--<span id=003>[<a class=t href=#003>003</a>]</span>-The-Headers-Do-Not-Match-My-Kernel-Version------------------------------
 
   The kernel headers in KISS are pinned to an LTS kernel version and are only
   updated when there are changes of interest in the kernel or headers themselves
@@ -59,7 +59,7 @@ ________________________________________________________________________________
   2. To make use of features in your _newer_ kernel version.
 
 
-<span id=004><a href=#004>[004]</a></span> History
+<span id=004>[<a class=t href=#004>004</a>]</span> History
 ________________________________________________________________________________
 
 <div style="max-height:177px;overflow:hidden scroll">2021-07-28 <a href="https://github.com/kisslinux/repo/commit/c5d8889700a88c71520a3a56fc2abd68f44d8668">c5d88897</a> linux-headers: 5.10.54
@@ -107,10 +107,10 @@ ________________________________________________________________________________
 2019-06-19 <a href="https://github.com/kisslinux/repo/commit/94576a7cb5f0ea7d23e695e511d50bf8c83aa12e">94576a7c</a> linux/linux-headers: add license
 </div>
 
-<span id=005><a href=#005>[005]</a></span> References
+<span id=005>[<a class=t href=#005>005</a>]</span> References
 ________________________________________________________________________________
 
-<span id=0><a href=#0>[0]</a></span> <a href=https://www.kernel.org/doc/Documentation/kbuild/headers_install.txt>https://www.kernel.org/doc/Documentation/kbuild/headers_install.txt</a>
+<span id=0>[<a class=t href=#0>0</a>]</span> <a href=https://www.kernel.org/doc/Documentation/kbuild/headers_install.txt>https://www.kernel.org/doc/Documentation/kbuild/headers_install.txt</a>
 
 
 

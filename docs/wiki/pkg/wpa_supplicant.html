@@ -1,6 +1,6 @@
-<!doctype html><html lang=en><link href='data:image/gif;base64,R0lGODlhEAAQAPH/AAAAAP8AAP8AN////yH5BAUAAAQALAAAAAAQABAAAAM2SLrc/jA+QBUFM2iqA2bAMHSktwCCWJIYEIyvKLOuJt+wV69ry5cfwu7WCVp2RSPoUpE4n4sEADs=' rel=icon><link rel=alternate type="application/rss+xml" title="Tidbits RSS feed" href=/rss/tidbits.rss><link rel=alternate type="application/rss+xml" title="Posts RSS feed" href=/rss/post.rss><title>KISS - wpa_supplicant</title><meta charset=utf-8><meta name=Description content="Kiss Linux is a meta-distribution for the x86_64 architecture with a focus on simplicity, sustainability and user freedom. The distribution was created by Dylan Araps who also acts as its sole developer."><meta name=viewport content="width=device-width,initial-scale=1"><style>body{overflow-y:scroll;font:16px monospace,monospace}img,#c{display:table-cell;max-width:999px;max-width:80ch}pre{margin:0;overflow-x:hidden}#l{text-decoration:none;color:#a00}@media(max-width:999px){#c{display:block;font-size:1.94vw}}@media(prefers-color-scheme:dark){body{background:#000;color:#fff}a{color:#6CF}#l{color:#F33}}</style><div style="display:table;margin:16px auto">
+<!doctype html><html lang=en><link href='data:image/gif;base64,R0lGODlhEAAQAPH/AAAAAP8AAP8AN////yH5BAUAAAQALAAAAAAQABAAAAM2SLrc/jA+QBUFM2iqA2bAMHSktwCCWJIYEIyvKLOuJt+wV69ry5cfwu7WCVp2RSPoUpE4n4sEADs=' rel=icon><link rel=alternate type="application/rss+xml" title="Tidbits RSS feed" href=/rss/tidbits.rss><link rel=alternate type="application/rss+xml" title="Posts RSS feed" href=/rss/post.rss><title>KISS - wpa_supplicant</title><meta charset=utf-8><meta name=Description content="Kiss Linux is a meta-distribution for the x86_64 architecture with a focus on simplicity, sustainability and user freedom. The distribution was created by Dylan Araps who also acts as its sole developer."><meta name=viewport content="width=device-width,initial-scale=1"><style>body{overflow-y:scroll;font:16px monospace,monospace}img,#c{display:table-cell;max-width:999px;max-width:80ch}pre{margin:0;overflow-x:hidden}.l{color:#a00}.t{text-decoration:none}@media(max-width:999px){#c{display:block;font-size:1.94vw}}@media(prefers-color-scheme:dark){body{background:#000;color:#fff}a{color:#6CF}#l{color:#F33}}</style><div style="display:table;margin:16px auto">
 <div id=c><pre>
-<div style="display:inline-block"><a href=/ id=l>
+<div style="display:inline-block"><a href=/ class="l t">
 |/
 |\ISS</a>               <a href=/tidbits>Tidbits</a>  <a href=/post>Posts</a>  <a href=/answers>Answers</a>  <a href=/install>Install</a>  <a href=/wiki>Wiki</a>  <a href=/contact>Contact</a>  <a href=/donate>Donate</a>  </div><div style="image-rendering:crisp-edges;display:inline-block;vertical-align:sub"><a href=https://github.com/kisslinux/><img src="data:image/gif;base64,R0lGODlhEAAQAPABAAAAAP//ACH5BAUIAAEALAAAAAAQABAAAAIojA2px6G/GJzgJASxbrI+jmVgGI3TSF4oZS6emmqw823dTFcWbklNAQA7"></a></div>
 
@@ -12,24 +12,24 @@ wpa_supplicant is a free software implementation of an IEEE 802.11i supplicant
 for Linux, FreeBSD, NetBSD, QNX, AROS, Microsoft Windows, Solaris, OS/2
 (including ArcaOS and eComStation) and Haiku. In addition to being a WPA3 and
 WPA2 supplicant, it also implements WPA and older wireless LAN security
-protocols. <a href=#0>[0]</a>
+protocols. [<a class=t href=#0>0</a>]
 
 Upstream: <a href=https://w1.fi/wpa_supplicant/>https://w1.fi/wpa_supplicant/</a>
 
 
-<span id=000><a href=#000>[000]</a></span> Index
+<span id=000>[<a class=t href=#000>000</a>]</span> Index
 ________________________________________________________________________________
 
-* Installation-------------------------------------------------------------<a href=#001>[001]</a>
-* Setup--------------------------------------------------------------------<a href=#002>[002]</a>
+* Installation-------------------------------------------------------------[<a class=t href=#001>001</a>]
+* Setup--------------------------------------------------------------------[<a class=t href=#002>002</a>]
   * Conntecting-To-Networks------------------------------------------------]003]
-* Usage--------------------------------------------------------------------<a href=#004>[004]</a>
-  * Starting-The-Service---------------------------------------------------<a href=#005>[005]</a>
-* History------------------------------------------------------------------<a href=#006>[006]</a>
-* References---------------------------------------------------------------<a href=#007>[007]</a>
+* Usage--------------------------------------------------------------------[<a class=t href=#004>004</a>]
+  * Starting-The-Service---------------------------------------------------[<a class=t href=#005>005</a>]
+* History------------------------------------------------------------------[<a class=t href=#006>006</a>]
+* References---------------------------------------------------------------[<a class=t href=#007>007</a>]
 
 
-<span id=001><a href=#001>[001]</a></span> Installation
+<span id=001>[<a class=t href=#001>001</a>]</span> Installation
 ________________________________________________________________________________
 
 +------------------------------------------------------------------------------+
@@ -39,10 +39,10 @@ ________________________________________________________________________________
 +------------------------------------------------------------------------------+
 
 
-<span id=002><a href=#002>[002]</a></span> Setup
+<span id=002>[<a class=t href=#002>002</a>]</span> Setup
 ________________________________________________________________________________
 
---<span id=003><a href=#003>[003]</a></span>-Connecting-To-Networks--------------------------------------------------
+--<span id=003>[<a class=t href=#003>003</a>]</span>-Connecting-To-Networks--------------------------------------------------
 
   Save the output of this command to /etc/wpa_supplicant.conf.
 
@@ -53,21 +53,21 @@ ________________________________________________________________________________
   +----------------------------------------------------------------------------+
 
 
-<span id=004><a href=#004>[004]</a></span> Usage
+<span id=004>[<a class=t href=#004>004</a>]</span> Usage
 ________________________________________________________________________________
 
 Refer to the manual pages and command help output. For DHCP, refer to dhcpcd
 and its documentation.
 
 
---<span id=005><a href=#005>[005]</a></span>-Starting-The-Service----------------------------------------------------
+--<span id=005>[<a class=t href=#005>005</a>]</span>-Starting-The-Service----------------------------------------------------
 
   This package provides a service file compatible with the distribution's
   default service manager. Refer to the distribution's service management
-  documentation for instructions on how to enable the service. <a href=#1>[1]</a>
+  documentation for instructions on how to enable the service. [<a class=t href=#1>1</a>]
 
 
-<span id=006><a href=#006>[006]</a></span> History
+<span id=006>[<a class=t href=#006>006</a>]</span> History
 ________________________________________________________________________________
 
 <div style="max-height:177px;overflow:hidden scroll">2021-07-29 <a href="https://github.com/kisslinux/repo/commit/7cb956ca685daf0f8792d450c8466492ec0ed576">7cb956ca</a> wpa_supplicant: provide service file
@@ -93,11 +93,11 @@ ________________________________________________________________________________
 2019-06-21 <a href="https://github.com/kisslinux/repo/commit/715aa2ffcbdd7e6825761624562ba4ca5e777629">715aa2ff</a> wpa_supplicant: Fix package.
 </div>
 
-<span id=007><a href=#007>[007]</a></span> References
+<span id=007>[<a class=t href=#007>007</a>]</span> References
 ________________________________________________________________________________
 
-<span id=0><a href=#0>[0]</a></span> <a href=https://en.wikipedia.org/wiki/Wpa_supplicant>https://en.wikipedia.org/wiki/Wpa_supplicant</a>
-<span id=1><a href=#1>[1]</a></span> #/<a href=/wiki/service-management>wiki/service-management</a>
+<span id=0>[<a class=t href=#0>0</a>]</span> <a href=https://en.wikipedia.org/wiki/Wpa_supplicant>https://en.wikipedia.org/wiki/Wpa_supplicant</a>
+<span id=1>[<a class=t href=#1>1</a>]</span> #/<a href=/wiki/service-management>wiki/service-management</a>
 
 
 

@@ -1,6 +1,6 @@
-<!doctype html><html lang=en><link href='data:image/gif;base64,R0lGODlhEAAQAPH/AAAAAP8AAP8AN////yH5BAUAAAQALAAAAAAQABAAAAM2SLrc/jA+QBUFM2iqA2bAMHSktwCCWJIYEIyvKLOuJt+wV69ry5cfwu7WCVp2RSPoUpE4n4sEADs=' rel=icon><link rel=alternate type="application/rss+xml" title="Tidbits RSS feed" href=/rss/tidbits.rss><link rel=alternate type="application/rss+xml" title="Posts RSS feed" href=/rss/post.rss><title>KISS - package-system</title><meta charset=utf-8><meta name=Description content="Kiss Linux is a meta-distribution for the x86_64 architecture with a focus on simplicity, sustainability and user freedom. The distribution was created by Dylan Araps who also acts as its sole developer."><meta name=viewport content="width=device-width,initial-scale=1"><style>body{overflow-y:scroll;font:16px monospace,monospace}img,#c{display:table-cell;max-width:999px;max-width:80ch}pre{margin:0;overflow-x:hidden}#l{text-decoration:none;color:#a00}@media(max-width:999px){#c{display:block;font-size:1.94vw}}@media(prefers-color-scheme:dark){body{background:#000;color:#fff}a{color:#6CF}#l{color:#F33}}</style><div style="display:table;margin:16px auto">
+<!doctype html><html lang=en><link href='data:image/gif;base64,R0lGODlhEAAQAPH/AAAAAP8AAP8AN////yH5BAUAAAQALAAAAAAQABAAAAM2SLrc/jA+QBUFM2iqA2bAMHSktwCCWJIYEIyvKLOuJt+wV69ry5cfwu7WCVp2RSPoUpE4n4sEADs=' rel=icon><link rel=alternate type="application/rss+xml" title="Tidbits RSS feed" href=/rss/tidbits.rss><link rel=alternate type="application/rss+xml" title="Posts RSS feed" href=/rss/post.rss><title>KISS - package-system</title><meta charset=utf-8><meta name=Description content="Kiss Linux is a meta-distribution for the x86_64 architecture with a focus on simplicity, sustainability and user freedom. The distribution was created by Dylan Araps who also acts as its sole developer."><meta name=viewport content="width=device-width,initial-scale=1"><style>body{overflow-y:scroll;font:16px monospace,monospace}img,#c{display:table-cell;max-width:999px;max-width:80ch}pre{margin:0;overflow-x:hidden}.l{color:#a00}.t{text-decoration:none}@media(max-width:999px){#c{display:block;font-size:1.94vw}}@media(prefers-color-scheme:dark){body{background:#000;color:#fff}a{color:#6CF}#l{color:#F33}}</style><div style="display:table;margin:16px auto">
 <div id=c><pre>
-<div style="display:inline-block"><a href=/ id=l>
+<div style="display:inline-block"><a href=/ class="l t">
 |/
 |\ISS</a>               <a href=/tidbits>Tidbits</a>  <a href=/post>Posts</a>  <a href=/answers>Answers</a>  <a href=/install>Install</a>  <a href=/wiki>Wiki</a>  <a href=/contact>Contact</a>  <a href=/donate>Donate</a>  </div><div style="image-rendering:crisp-edges;display:inline-block;vertical-align:sub"><a href=https://github.com/kisslinux/><img src="data:image/gif;base64,R0lGODlhEAAQAPABAAAAAP//ACH5BAUIAAEALAAAAAAQABAAAAIojA2px6G/GJzgJASxbrI+jmVgGI3TSF4oZS6emmqw823dTFcWbklNAQA7"></a></div>
 
@@ -16,47 +16,47 @@ comprise the system are as follows.
 | File             | Language | Executable | Comments | Blank lines | Required |
 +------------------+----------+------------+----------+-------------+----------+
 |                  |          |            |          |             |          |
-| build            | Any      | Yes <a href=#2>[2]</a>    | N/A      | N/A         | Yes      |
-| checksums        | DSL <a href=#3>[3]</a>  | No         | No       | No          | No <a href=#1>[1]</a>   |
-| depends          | DSL <a href=#3>[3]</a>  | No         | Yes      | Yes         | No       |
-| sources          | DSL <a href=#3>[3]</a>  | No         | Yes      | Yes         | No       |
-| version          | DSL <a href=#3>[3]</a>  | No         | <a href=#4>[4]</a>      | <a href=#4>[4]</a>         | Yes      |
+| build            | Any      | Yes [<a class=t href=#2>2</a>]    | N/A      | N/A         | Yes      |
+| checksums        | DSL [<a class=t href=#3>3</a>]  | No         | No       | No          | No [<a class=t href=#1>1</a>]   |
+| depends          | DSL [<a class=t href=#3>3</a>]  | No         | Yes      | Yes         | No       |
+| sources          | DSL [<a class=t href=#3>3</a>]  | No         | Yes      | Yes         | No       |
+| version          | DSL [<a class=t href=#3>3</a>]  | No         | [<a class=t href=#4>4</a>]      | [<a class=t href=#4>4</a>]         | Yes      |
 |                  |          |            |          |             |          |
-| pre-remove       | Any      | Yes <a href=#2>[2]</a>    | N/A      | N/A         | No       |
-| post-install     | Any      | Yes <a href=#2>[2]</a>    | N/A      | N/A         | No       |
+| pre-remove       | Any      | Yes [<a class=t href=#2>2</a>]    | N/A      | N/A         | No       |
+| post-install     | Any      | Yes [<a class=t href=#2>2</a>]    | N/A      | N/A         | No       |
 |                  |          |            |          |             |          |
 +------------------+----------+------------+----------+-------------+----------+
 
 Unless stated otherwise, all files marked DSL are a grid of cells split into
 rows by newline and columns by whitespace.
 
-<span id=1><a href=#1>[1]</a></span> The checksums file is only required if the sources file contains sources
+<span id=1>[<a class=t href=#1>1</a>]</span> The checksums file is only required if the sources file contains sources
     which exist as files on disk (directories, git repositories need not apply).
 
-<span id=2><a href=#2>[2]</a></span> The only requirement is that the file be executable. The file itself can be
+<span id=2>[<a class=t href=#2>2</a>]</span> The only requirement is that the file be executable. The file itself can be
     written in any programming language.
 
-<span id=3><a href=#3>[3]</a></span> The file's format is a domain specific language with its own rules.
+<span id=3>[<a class=t href=#3>3</a>]</span> The file's format is a domain specific language with its own rules.
     <a href=https://en.wikipedia.org/wiki/Domain-specific_language>https://en.wikipedia.org/wiki/Domain-specific_language</a>
 
-<span id=4><a href=#4>[4]</a></span> Tooling should only read the first line of the version file. Any lines
+<span id=4>[<a class=t href=#4>4</a>]</span> Tooling should only read the first line of the version file. Any lines
     following should be ignored (allowing one to store arbitrary information).
 
 
-<span id=000><a href=#000>[000]</a></span> Index
+<span id=000>[<a class=t href=#000>000</a>]</span> Index
 ________________________________________________________________________________
 
-* build ------------------------------------------------------------------ <a href=#001>[001]</a>
-* checksums -------------------------------------------------------------- <a href=#002>[002]</a>
-* depends ---------------------------------------------------------------- <a href=#003>[003]</a>
-* sources ---------------------------------------------------------------- <a href=#004>[004]</a>
-* version ---------------------------------------------------------------- <a href=#005>[005]</a>
-* pre-remove ------------------------------------------------------------- <a href=#006>[006]</a>
-* post-install ----------------------------------------------------------- <a href=#007>[007]</a>
-* Further reading -------------------------------------------------------- <a href=#008>[008]</a>
+* build ------------------------------------------------------------------ [<a class=t href=#001>001</a>]
+* checksums -------------------------------------------------------------- [<a class=t href=#002>002</a>]
+* depends ---------------------------------------------------------------- [<a class=t href=#003>003</a>]
+* sources ---------------------------------------------------------------- [<a class=t href=#004>004</a>]
+* version ---------------------------------------------------------------- [<a class=t href=#005>005</a>]
+* pre-remove ------------------------------------------------------------- [<a class=t href=#006>006</a>]
+* post-install ----------------------------------------------------------- [<a class=t href=#007>007</a>]
+* Further reading -------------------------------------------------------- [<a class=t href=#008>008</a>]
 
 
-<span id=001><a href=#001>[001]</a></span> build
+<span id=001>[<a class=t href=#001>001</a>]</span> build
 ________________________________________________________________________________
 
 The build file is executed in the directory containing the package's extracted
@@ -89,7 +89,7 @@ toolchain defaults are as follows: AR=ar, CC=cc, CXX=c++, NM=nm, RANLIB=ranlib
 +------------------------------------------------------------------------------+
 
 
-<span id=002><a href=#002>[002]</a></span> checksums
+<span id=002>[<a class=t href=#002>002</a>]</span> checksums
 ________________________________________________________________________________
 
 The checksums file is generated by the package manager (kiss c pkg) and is
@@ -109,7 +109,7 @@ this occurs.
 +------------------------------------------------------------------------------+
 
 
-<span id=003><a href=#003>[003]</a></span> depends
+<span id=003>[<a class=t href=#003>003</a>]</span> depends
 ________________________________________________________________________________
 
 The depends file contains the package's dependencies listed one per line in
@@ -128,7 +128,7 @@ field denotes the dependency type (unset for runtime, 'make' for compile-time).
 +------------------------------------------------------------------------------+
 
 
-<span id=004><a href=#004>[004]</a></span> sources
+<span id=004>[<a class=t href=#004>004</a>]</span> sources
 ________________________________________________________________________________
 
 The sources file contains the package's sources one per line. A valid source is
@@ -167,7 +167,7 @@ by prepending a backslash.
 +------------------------------------------------------------------------------+
 
 
-<span id=005><a href=#005>[005]</a></span> version
+<span id=005>[<a class=t href=#005>005</a>]</span> version
 ________________________________________________________________________________
 
 The version file is a single line split into two mandatory fields. The first
@@ -186,7 +186,7 @@ number should match accordingly.
 +------------------------------------------------------------------------------+
 
 
-<span id=006><a href=#006>[006]</a></span> pre-remove
+<span id=006>[<a class=t href=#006>006</a>]</span> pre-remove
 ________________________________________________________________________________
 
 The pre-remove file is executed before removal of the package. This file should
@@ -201,7 +201,7 @@ be used to perform any required pre-removal steps or to display notices.
 +------------------------------------------------------------------------------+
 
 
-<span id=007><a href=#007>[007]</a></span> post-install
+<span id=007>[<a class=t href=#007>007</a>]</span> post-install
 ________________________________________________________________________________
 
 The post-install file is executed after installation of the package. This file
@@ -225,7 +225,7 @@ should be used to perform any required post-install steps or to display notices.
 +------------------------------------------------------------------------------+
 
 
-<span id=008><a href=#008>[008]</a></span> Further reading
+<span id=008>[<a class=t href=#008>008</a>]</span> Further reading
 ________________________________________________________________________________
 
 - @/<a href=/wiki/package-manager>package-manager</a>

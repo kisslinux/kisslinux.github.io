@@ -1,6 +1,6 @@
-<!doctype html><html lang=en><link href='data:image/gif;base64,R0lGODlhEAAQAPH/AAAAAP8AAP8AN////yH5BAUAAAQALAAAAAAQABAAAAM2SLrc/jA+QBUFM2iqA2bAMHSktwCCWJIYEIyvKLOuJt+wV69ry5cfwu7WCVp2RSPoUpE4n4sEADs=' rel=icon><link rel=alternate type="application/rss+xml" title="Tidbits RSS feed" href=/rss/tidbits.rss><link rel=alternate type="application/rss+xml" title="Posts RSS feed" href=/rss/post.rss><title>KISS - sway</title><meta charset=utf-8><meta name=Description content="Kiss Linux is a meta-distribution for the x86_64 architecture with a focus on simplicity, sustainability and user freedom. The distribution was created by Dylan Araps who also acts as its sole developer."><meta name=viewport content="width=device-width,initial-scale=1"><style>body{overflow-y:scroll;font:16px monospace,monospace}img,#c{display:table-cell;max-width:999px;max-width:80ch}pre{margin:0;overflow-x:hidden}#l{text-decoration:none;color:#a00}@media(max-width:999px){#c{display:block;font-size:1.94vw}}@media(prefers-color-scheme:dark){body{background:#000;color:#fff}a{color:#6CF}#l{color:#F33}}</style><div style="display:table;margin:16px auto">
+<!doctype html><html lang=en><link href='data:image/gif;base64,R0lGODlhEAAQAPH/AAAAAP8AAP8AN////yH5BAUAAAQALAAAAAAQABAAAAM2SLrc/jA+QBUFM2iqA2bAMHSktwCCWJIYEIyvKLOuJt+wV69ry5cfwu7WCVp2RSPoUpE4n4sEADs=' rel=icon><link rel=alternate type="application/rss+xml" title="Tidbits RSS feed" href=/rss/tidbits.rss><link rel=alternate type="application/rss+xml" title="Posts RSS feed" href=/rss/post.rss><title>KISS - sway</title><meta charset=utf-8><meta name=Description content="Kiss Linux is a meta-distribution for the x86_64 architecture with a focus on simplicity, sustainability and user freedom. The distribution was created by Dylan Araps who also acts as its sole developer."><meta name=viewport content="width=device-width,initial-scale=1"><style>body{overflow-y:scroll;font:16px monospace,monospace}img,#c{display:table-cell;max-width:999px;max-width:80ch}pre{margin:0;overflow-x:hidden}.l{color:#a00}.t{text-decoration:none}@media(max-width:999px){#c{display:block;font-size:1.94vw}}@media(prefers-color-scheme:dark){body{background:#000;color:#fff}a{color:#6CF}#l{color:#F33}}</style><div style="display:table;margin:16px auto">
 <div id=c><pre>
-<div style="display:inline-block"><a href=/ id=l>
+<div style="display:inline-block"><a href=/ class="l t">
 |/
 |\ISS</a>               <a href=/tidbits>Tidbits</a>  <a href=/post>Posts</a>  <a href=/answers>Answers</a>  <a href=/install>Install</a>  <a href=/wiki>Wiki</a>  <a href=/contact>Contact</a>  <a href=/donate>Donate</a>  </div><div style="image-rendering:crisp-edges;display:inline-block;vertical-align:sub"><a href=https://github.com/kisslinux/><img src="data:image/gif;base64,R0lGODlhEAAQAPABAAAAAP//ACH5BAUIAAEALAAAAAAQABAAAAIojA2px6G/GJzgJASxbrI+jmVgGI3TSF4oZS6emmqw823dTFcWbklNAQA7"></a></div>
 
@@ -12,26 +12,26 @@ Sway is a tiling window manager and Wayland compositor, inspired by i3, and
 written in C. Sway is designed as a drop-in replacement for i3 using the more
 modern Wayland display server protocol and wlroots compositor library. Sway
 works with existing i3 configuration files and supports most of i3's features
-while providing several new features of its own. <a href=#0>[0]</a>
+while providing several new features of its own. [<a class=t href=#0>0</a>]
 
 Upstream: <a href=https://swaywm.org/>https://swaywm.org/</a>
 
 
-<span id=000><a href=#000>[000]</a></span> Index
+<span id=000>[<a class=t href=#000>000</a>]</span> Index
 ________________________________________________________________________________
 
-* Installation-------------------------------------------------------------<a href=#001>[001]</a>
-* Setup--------------------------------------------------------------------<a href=#002>[002]</a>
-  * Add-User-To-Input-Video-And-TTY-Groups---------------------------------<a href=#003>[003]</a>
-  * Setup-Seat-Management--------------------------------------------------<a href=#004>[004]</a>
-  * Set-XDG_RUNTIME_DIR----------------------------------------------------<a href=#005>[005]</a>
-* Usage--------------------------------------------------------------------<a href=#006>[006]</a>
-* Troubleshooting----------------------------------------------------------<a href=#007>[007]</a>
-* History------------------------------------------------------------------<a href=#008>[008]</a>
-* References---------------------------------------------------------------<a href=#009>[009]</a>
+* Installation-------------------------------------------------------------[<a class=t href=#001>001</a>]
+* Setup--------------------------------------------------------------------[<a class=t href=#002>002</a>]
+  * Add-User-To-Input-Video-And-TTY-Groups---------------------------------[<a class=t href=#003>003</a>]
+  * Setup-Seat-Management--------------------------------------------------[<a class=t href=#004>004</a>]
+  * Set-XDG_RUNTIME_DIR----------------------------------------------------[<a class=t href=#005>005</a>]
+* Usage--------------------------------------------------------------------[<a class=t href=#006>006</a>]
+* Troubleshooting----------------------------------------------------------[<a class=t href=#007>007</a>]
+* History------------------------------------------------------------------[<a class=t href=#008>008</a>]
+* References---------------------------------------------------------------[<a class=t href=#009>009</a>]
 
 
-<span id=001><a href=#001>[001]</a></span> Installation
+<span id=001>[<a class=t href=#001>001</a>]</span> Installation
 ________________________________________________________________________________
 
 There are three flavors of Sway in the repositories.
@@ -60,11 +60,11 @@ If the system has no fonts, installation of a font is also required.
 +------------------------------------------------------------------------------+
 
 
-<span id=002><a href=#002>[002]</a></span> Setup
+<span id=002>[<a class=t href=#002>002</a>]</span> Setup
 ________________________________________________________________________________
 
 
---<span id=003><a href=#003>[003]</a></span>-Add-User-To-Input-Video-And-TTY-Groups----------------------------------
+--<span id=003>[<a class=t href=#003>003</a>]</span>-Add-User-To-Input-Video-And-TTY-Groups----------------------------------
 
   +----------------------------------------------------------------------------+
   |                                                                            |
@@ -75,36 +75,36 @@ ________________________________________________________________________________
   +----------------------------------------------------------------------------+
 
 
---<span id=004><a href=#004>[004]</a></span>-Setup-Seat-Management---------------------------------------------------
+--<span id=004>[<a class=t href=#004>004</a>]</span>-Setup-Seat-Management---------------------------------------------------
 
   If using the 'sway package, the seatd daemon must be setup. Refer to the
   documentation found here @/<a href=/wiki/pkg/libseat>libseat</a>
 
   If using the 'sway-no-seat' or 'sway-tiny' packages, there is no seatd daemon
-  requirement. Instead you must be the first to call DRMSetMaster. <a href=#1>[1]</a>
+  requirement. Instead you must be the first to call DRMSetMaster. [<a class=t href=#1>1</a>]
 
 
---<span id=005><a href=#005>[005]</a></span>-Set-XDG_RUNTIME_DIR-----------------------------------------------------
+--<span id=005>[<a class=t href=#005>005</a>]</span>-Set-XDG_RUNTIME_DIR-----------------------------------------------------
 
   This environment variable must be set to a directory that is writable by your
   user. This can be anywhere in theory though /run/user/$(id -u) is recommended.
 
 
-<span id=006><a href=#006>[006]</a></span> Usage
+<span id=006>[<a class=t href=#006>006</a>]</span> Usage
 ________________________________________________________________________________
 
 No documentation is currently provided with the package, refer to online
 documentation for the time being.
 
 
-<span id=007><a href=#007>[007]</a></span> Troubleshooting
+<span id=007>[<a class=t href=#007>007</a>]</span> Troubleshooting
 ________________________________________________________________________________
 
 If you are using the 'sway-tiny' package and encounter any issues, send bug
 reports to $/<a href=https://github.com/kisslinux/repo>kisslinux/repo</a> rather than upstream.
 
 
-<span id=008><a href=#008>[008]</a></span> History
+<span id=008>[<a class=t href=#008>008</a>]</span> History
 ________________________________________________________________________________
 
 <div style="max-height:177px;overflow:hidden scroll">2021-07-18 <a href="https://github.com/kisslinux/repo/commit/efbe6b8997488dd976f9746798d75abb7f425922">efbe6b89</a> sway: potential fix for media keys
@@ -123,11 +123,11 @@ ________________________________________________________________________________
 2021-07-08 <a href="https://github.com/kisslinux/repo/commit/fc9dad39c5477ac91f2f148311cf3830093edd61">fc9dad39</a> sway: 1.6.1
 </div>
 
-<span id=009><a href=#009>[009]</a></span> References
+<span id=009>[<a class=t href=#009>009</a>]</span> References
 ________________________________________________________________________________
 
-<span id=0><a href=#0>[0]</a></span> <a href=https://en.wikipedia.org>https://en.wikipedia.org</a>
-<span id=1><a href=#1>[1]</a></span> $/<a href=https://github.com/torvalds/linux/commit/45bc3d26c95a8fc63a7d8668ca9e57ef0883351c>torvalds/linux/commit/45bc3d26c95a8fc63a7d8668ca9e57ef0883351c</a>
+<span id=0>[<a class=t href=#0>0</a>]</span> <a href=https://en.wikipedia.org>https://en.wikipedia.org</a>
+<span id=1>[<a class=t href=#1>1</a>]</span> $/<a href=https://github.com/torvalds/linux/commit/45bc3d26c95a8fc63a7d8668ca9e57ef0883351c>torvalds/linux/commit/45bc3d26c95a8fc63a7d8668ca9e57ef0883351c</a>
 
 
 ________________________________________________________________________________

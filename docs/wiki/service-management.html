@@ -1,6 +1,6 @@
-<!doctype html><html lang=en><link href='data:image/gif;base64,R0lGODlhEAAQAPH/AAAAAP8AAP8AN////yH5BAUAAAQALAAAAAAQABAAAAM2SLrc/jA+QBUFM2iqA2bAMHSktwCCWJIYEIyvKLOuJt+wV69ry5cfwu7WCVp2RSPoUpE4n4sEADs=' rel=icon><link rel=alternate type="application/rss+xml" title="Tidbits RSS feed" href=/rss/tidbits.rss><link rel=alternate type="application/rss+xml" title="Posts RSS feed" href=/rss/post.rss><title>KISS - service-management</title><meta charset=utf-8><meta name=Description content="Kiss Linux is a meta-distribution for the x86_64 architecture with a focus on simplicity, sustainability and user freedom. The distribution was created by Dylan Araps who also acts as its sole developer."><meta name=viewport content="width=device-width,initial-scale=1"><style>body{overflow-y:scroll;font:16px monospace,monospace}img,#c{display:table-cell;max-width:999px;max-width:80ch}pre{margin:0;overflow-x:hidden}#l{text-decoration:none;color:#a00}@media(max-width:999px){#c{display:block;font-size:1.94vw}}@media(prefers-color-scheme:dark){body{background:#000;color:#fff}a{color:#6CF}#l{color:#F33}}</style><div style="display:table;margin:16px auto">
+<!doctype html><html lang=en><link href='data:image/gif;base64,R0lGODlhEAAQAPH/AAAAAP8AAP8AN////yH5BAUAAAQALAAAAAAQABAAAAM2SLrc/jA+QBUFM2iqA2bAMHSktwCCWJIYEIyvKLOuJt+wV69ry5cfwu7WCVp2RSPoUpE4n4sEADs=' rel=icon><link rel=alternate type="application/rss+xml" title="Tidbits RSS feed" href=/rss/tidbits.rss><link rel=alternate type="application/rss+xml" title="Posts RSS feed" href=/rss/post.rss><title>KISS - service-management</title><meta charset=utf-8><meta name=Description content="Kiss Linux is a meta-distribution for the x86_64 architecture with a focus on simplicity, sustainability and user freedom. The distribution was created by Dylan Araps who also acts as its sole developer."><meta name=viewport content="width=device-width,initial-scale=1"><style>body{overflow-y:scroll;font:16px monospace,monospace}img,#c{display:table-cell;max-width:999px;max-width:80ch}pre{margin:0;overflow-x:hidden}.l{color:#a00}.t{text-decoration:none}@media(max-width:999px){#c{display:block;font-size:1.94vw}}@media(prefers-color-scheme:dark){body{background:#000;color:#fff}a{color:#6CF}#l{color:#F33}}</style><div style="display:table;margin:16px auto">
 <div id=c><pre>
-<div style="display:inline-block"><a href=/ id=l>
+<div style="display:inline-block"><a href=/ class="l t">
 |/
 |\ISS</a>               <a href=/tidbits>Tidbits</a>  <a href=/post>Posts</a>  <a href=/answers>Answers</a>  <a href=/install>Install</a>  <a href=/wiki>Wiki</a>  <a href=/contact>Contact</a>  <a href=/donate>Donate</a>  </div><div style="image-rendering:crisp-edges;display:inline-block;vertical-align:sub"><a href=https://github.com/kisslinux/><img src="data:image/gif;base64,R0lGODlhEAAQAPABAAAAAP//ACH5BAUIAAEALAAAAAAQABAAAAIojA2px6G/GJzgJASxbrI+jmVgGI3TSF4oZS6emmqw823dTFcWbklNAQA7"></a></div>
 
@@ -17,25 +17,25 @@ This page merely documents the default service manager, how to interact with it
 and how to write its service files.
 
 
-<span id=000><a href=#000>[000]</a></span> Index
+<span id=000>[<a class=t href=#000>000</a>]</span> Index
 ________________________________________________________________________________
 
-* Basic Usage--------------------------------------------------------------<a href=#001>[001]</a>
-  * List-Package-Provided-Services-----------------------------------------<a href=#002>[002]</a>
-  * Enable-A-Service-------------------------------------------------------<a href=#003>[003]</a>
-  * Disabling-A-Service----------------------------------------------------<a href=#004>[004]</a>
-  * Starting-A-Service-----------------------------------------------------<a href=#005>[005]</a>
-  * Stopping-A-Service-----------------------------------------------------<a href=#006>[006]</a>
+* Basic Usage--------------------------------------------------------------[<a class=t href=#001>001</a>]
+  * List-Package-Provided-Services-----------------------------------------[<a class=t href=#002>002</a>]
+  * Enable-A-Service-------------------------------------------------------[<a class=t href=#003>003</a>]
+  * Disabling-A-Service----------------------------------------------------[<a class=t href=#004>004</a>]
+  * Starting-A-Service-----------------------------------------------------[<a class=t href=#005>005</a>]
+  * Stopping-A-Service-----------------------------------------------------[<a class=t href=#006>006</a>]
 
 
-<span id=001><a href=#001>[001]</a></span> Basic Usage
+<span id=001>[<a class=t href=#001>001</a>]</span> Basic Usage
 ________________________________________________________________________________
 
 This page covers only basic usage. A full list of supported commands (and how
 they work) can be found here. <a href=https://git.busybox.net/busybox/tree/runit/sv.c>https://git.busybox.net/busybox/tree/runit/sv.c</a>
 
 
---<span id=002><a href=#002>[002]</a></span>-List-Package-Provided-Services------------------------------------------
+--<span id=002>[<a class=t href=#002>002</a>]</span>-List-Package-Provided-Services------------------------------------------
 
   This command lists all services provided by installed packages. When creating
   packages it is recommended that a service file also be supplied. Services
@@ -48,7 +48,7 @@ they work) can be found here. <a href=https://git.busybox.net/busybox/tree/runit
   +----------------------------------------------------------------------------+
 
 
---<span id=003><a href=#003>[003]</a></span>-Enable-A-Service--------------------------------------------------------
+--<span id=003>[<a class=t href=#003>003</a>]</span>-Enable-A-Service--------------------------------------------------------
 
   This enables the service and makes the utilities aware of its existence.
   Services stored in /etc/sv do nothing until they are symbolically linked
@@ -61,7 +61,7 @@ they work) can be found here. <a href=https://git.busybox.net/busybox/tree/runit
   +----------------------------------------------------------------------------+
 
 
---<span id=004><a href=#004>[004]</a></span>-Disabling-A-Service-----------------------------------------------------
+--<span id=004>[<a class=t href=#004>004</a>]</span>-Disabling-A-Service-----------------------------------------------------
 
   This command is the inverse of above and fully disables a service.
 
@@ -72,7 +72,7 @@ they work) can be found here. <a href=https://git.busybox.net/busybox/tree/runit
   +----------------------------------------------------------------------------+
 
 
---<span id=005><a href=#005>[005]</a></span>-Status-Of-A-Service-----------------------------------------------------
+--<span id=005>[<a class=t href=#005>005</a>]</span>-Status-Of-A-Service-----------------------------------------------------
 
   Report the current status of the service and the log service (if available).
 
@@ -83,7 +83,7 @@ they work) can be found here. <a href=https://git.busybox.net/busybox/tree/runit
   +----------------------------------------------------------------------------+
 
 
---<span id=005><a href=#005>[005]</a></span>-Starting-A-Service------------------------------------------------------
+--<span id=005>[<a class=t href=#005>005</a>]</span>-Starting-A-Service------------------------------------------------------
 
   If the service is not running, start it (and if it stops, restart it).
 
@@ -94,7 +94,7 @@ they work) can be found here. <a href=https://git.busybox.net/busybox/tree/runit
   +----------------------------------------------------------------------------+
 
 
---<span id=006><a href=#006>[006]</a></span>-Stopping-A-Service------------------------------------------------------
+--<span id=006>[<a class=t href=#006>006</a>]</span>-Stopping-A-Service------------------------------------------------------
 
   If the service is running, send it the TERM signal and the CONT signal.
   If ./run exists, start ./finish (if it exists). Once stopped, do not restart
@@ -107,7 +107,7 @@ they work) can be found here. <a href=https://git.busybox.net/busybox/tree/runit
   +----------------------------------------------------------------------------+
 
 
---<span id=007><a href=#007>[007]</a></span>-Starting-A-Service-Once-------------------------------------------------
+--<span id=007>[<a class=t href=#007>007</a>]</span>-Starting-A-Service-Once-------------------------------------------------
 
   If the service is not running, start it (and if it stops, do not restart it).
 

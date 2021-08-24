@@ -23,20 +23,20 @@
 |                                                                  (|     | )  |
 +------------------------------------------------------------------------------+
 
-* Overview-----------------------------------------------------------------[100]
-* Software-Distribution-Model----------------------------------------------[200]
-* The-Official-Repositories------------------------------------------------[300]
-* Package-System-----------------------------------------------------------[400]
-* Package-Manager----------------------------------------------------------[500]
-* Further-Reading----------------------------------------------------------[600]
+* Overview-----------------------------------------------------------------[001]
+* Software-Distribution-Model----------------------------------------------[002]
+* The-Official-Repositories------------------------------------------------[003]
+* Package-System-----------------------------------------------------------[004]
+* Package-Manager----------------------------------------------------------[005]
+* Further-Reading----------------------------------------------------------[006]
 
 
-[100] Overview
+[001] Overview
 ________________________________________________________________________________
 
 Kiss Linux is a meta-distribution for the x86_64 architecture with a focus on
 simplicity, sustainability and user freedom. The project was created by
-Dylan Araps who also acts as its sole developer.
+Dylan Araps who also acts as its sole developer and BDFL [0].
 
 The distribution is designed to be maintainable by a single person and to this
 end has no infrastructure, backend or monetary running costs. Further, all
@@ -57,11 +57,11 @@ The user is provided with three things.
    belongs to the user and they become totally self-reliant.
 
 
-[200] Software Distribution Model
+[002] Software Distribution Model
 ________________________________________________________________________________
 
-The distribution is "rolling release" (install once, update perpetually) with
-the compilation process taking place on the user's machine. Updates to the
+The distribution is "rolling release" [1] (install once, update perpetually)
+with the compilation process taking place on the user's machine. Updates to the
 distribution merely contain instructions for how each package is built.
 
 This model gives the user control over the compilation process while also
@@ -69,7 +69,7 @@ removing the need for the distribution to have the necessary infrastructure
 to churn out and distribute binaries on a daily basis.
 
 
-[300] The Official Repositories
+[003] The Official Repositories
 ________________________________________________________________________________
 
 The problem with monolithic repositories is that they have no clear end. They
@@ -104,7 +104,7 @@ with lock-in, too complex or otherwise out of scope.
 Further reading: @/wiki
 
 
-[400] Package System
+[004] Package System
 ________________________________________________________________________________
 
 The system is based around directories and files. A repository (directory)
@@ -138,7 +138,7 @@ deduplicate otherwise identical information.
 Further reading: @/wiki/package-system
 
 
-[500] Package Manager
+[005] Package Manager
 ________________________________________________________________________________
 
 The package manager (also named 'kiss') is a small, self-contained and POSIX
@@ -165,7 +165,7 @@ Each action also has a single letter alias (build == b).
 Further reading: @/wiki/package-manager
 
 
-[600] Further Reading
+[006] Further Reading
 ________________________________________________________________________________
 
 - @/answers               - Answers to the most common questions.
@@ -175,3 +175,5 @@ ________________________________________________________________________________
 - @/wiki/website          - About the website itself.
 - @/contact               - Get in touch with Kiss Linux.
 
+[0] https://en.wikipedia.org/wiki/Benevolent_dictator_for_life
+[1] https://en.wikipedia.org/wiki/Rolling_release
