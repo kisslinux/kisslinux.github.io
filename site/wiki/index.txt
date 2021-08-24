@@ -22,46 +22,46 @@ Distribution               System                      Other
 
 Official Repositories
 
- %/adwaita-icon-theme       %/alsa-lib                  %/alsa-utils
- %/atk                      %/baseinit                  %/baselayout
- %/binutils                 %/bison                     %/busybox
- %/bzip2                    %/cairo                     %/cbindgen
- %/ccache                   %/clang                     %/cmake
- %/curl                     %/dhcpcd                    %/dosfstools
- %/e2fsprogs                %/efibootmgr                %/efivar
- %/eiwd                     %/expat                     %/ffmpeg
- %/firefox                  %/firefox-privacy           %/flex
- %/fontconfig               %/foot                      %/foot-pgo
- %/freetype-harfbuzz        %/gcc                       %/gdk-pixbuf
- %/git                      %/glib                      %/gnugrep
- %/gnupg1                   %/grim                      %/grub
- %/gtk+3                    %/hicolor-icon-theme        %/intel-vaapi-driver
- %/json-c                   %/kirc                      %/kiss
- %/lame                     %/libass                    %/libdrm
- %/libelf                   %/libffi                    %/libinput
- %/libjpeg-turbo            %/libogg                    %/libpciaccess
- %/libpng                   %/libseat                   %/libtheora
- %/libudev-zero             %/libva                     %/libva-utils
- %/libvorbis                %/libvpx                    %/libwebp
- %/libxkbcommon             %/linux-headers             %/llvm
- %/m4                       %/make                      %/man-pages
- %/mandoc                   %/mdevd                     %/mesa
- %/meson                    %/mold                      %/mpv
- %/musl                     %/mutt                      %/nasm
- %/ncurses                  %/nodejs                    %/opendoas
- %/openresolv               %/openssh                   %/openssl
- %/opus                     %/pango                     %/pcre
- %/perl                     %/pigz                      %/pixman
- %/pkgconf                  %/python                    %/rust
- %/samurai                  %/scdoc                     %/slurp
- %/sqlite                   %/ssu                       %/strace
- %/sway                     %/tiff                      %/ttf-croscore
- %/tzdata                   %/util-linux                %/vim
- %/wayland                  %/wayland-protocols         %/wbg
- %/wl-clipboard             %/wlroots                   %/wlsunset
- %/wpa_supplicant           %/x264                      %/x265
- %/xkeyboard-config         %/xvidcore                  %/xz
- %/zlib                     %/zstd
+ %/adwaita-icon-theme       %/hicolor-icon-theme        %/opendoas
+ %/alsa-lib                 %/intel-vaapi-driver        %/openresolv
+ %/alsa-utils               %/json-c                    %/openssh
+ %/atk                      %/kirc                      %/openssl
+ %/baseinit                 %/kiss                      %/opus
+ %/baselayout               %/lame                      %/pango
+ %/binutils                 %/libass                    %/pcre
+ %/bison                    %/libdrm                    %/perl
+ %/busybox                  %/libelf                    %/pigz
+ %/bzip2                    %/libffi                    %/pixman
+ %/cairo                    %/libinput                  %/pkgconf
+ %/cbindgen                 %/libjpeg-turbo             %/python
+ %/ccache                   %/libogg                    %/rust
+ %/clang                    %/libpciaccess              %/samurai
+ %/cmake                    %/libpng                    %/scdoc
+ %/curl                     %/libseat                   %/slurp
+ %/dhcpcd                   %/libtheora                 %/sqlite
+ %/dosfstools               %/libudev-zero              %/ssu
+ %/e2fsprogs                %/libva                     %/strace
+ %/efibootmgr               %/libva-utils               %/sway
+ %/efivar                   %/libvorbis                 %/tiff
+ %/eiwd                     %/libvpx                    %/ttf-croscore
+ %/expat                    %/libwebp                   %/tzdata
+ %/ffmpeg                   %/libxkbcommon              %/util-linux
+ %/firefox                  %/linux-headers             %/vim
+ %/firefox-privacy          %/llvm                      %/wayland
+ %/flex                     %/m4                        %/wayland-protocols
+ %/fontconfig               %/make                      %/wbg
+ %/foot                     %/man-pages                 %/wl-clipboard
+ %/foot-pgo                 %/mandoc                    %/wlroots
+ %/freetype-harfbuzz        %/mdevd                     %/wlsunset
+ %/gcc                      %/mesa                      %/wpa_supplicant
+ %/gdk-pixbuf               %/meson                     %/x264
+ %/git                      %/mold                      %/x265
+ %/glib                     %/mpv                       %/xkeyboard-config
+ %/gnugrep                  %/musl                      %/xvidcore
+ %/gnupg1                   %/mutt                      %/xz
+ %/grim                     %/nasm                      %/zlib
+ %/grub                     %/ncurses                   %/zstd
+ %/gtk+3                    %/nodejs
 
 
 
