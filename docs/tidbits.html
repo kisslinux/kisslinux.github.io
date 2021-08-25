@@ -13,6 +13,26 @@ Bite-sized news about Kiss Linux and its development.
 RSS Feed: @/<a href=/rss/tidbits.rss>rss/tidbits.rss</a>
 
 
+<span id=25082021>[<a class=t href=#25082021>25082021</a>]</span>----------------------------------------------------------------------
+
+-- Git Source Caching ----------------------------------------------------------
+
+  I have opened a pull request with Git source caching support. This removes the
+  need to re-clone whole repositories on each build with the package manager
+  pulling stuff down only when needed. $/<a href=https://github.com/kisslinux/kiss/pull/261>kisslinux/kiss/pull/261</a>
+
+  1. If a repository does not exist in the sources cache it is initialized and
+     then pulled down as shallowly as possible.
+
+  2. If the source tracks latest commit or a specific branch/tag, the package
+     manager will pull changes every build.
+
+  3. If the source tracks a specific commit, the commit will be pulled once and
+     every subsequent build will only do a checkout.
+
+  Try it out and let me know how it goes.
+
+
 <span id=24082021>[<a class=t href=#24082021>24082021</a>]</span>----------------------------------------------------------------------
 
 * All package documentation pages now also include the git commit log as well
