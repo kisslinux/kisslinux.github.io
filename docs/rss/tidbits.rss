@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0">
     <channel>
         <title>KISS Linux Tidbits</title>
         <description>Bite-sized news about Kiss Linux and its development.</description>
@@ -15,8 +15,8 @@ need to re-clone whole repositories on each build with the package manager
 pulling stuff down only when needed.
             </description>
             <link>https://kisslinux.org/tidbits#25082021</link>
+            <guid>https://kisslinux.org/tidbits#25082021</guid>
             <pubDate>Wed, 25 Aug 2021 09:30:00 +0000</pubDate>
-            <guid>0000000003</guid>
         </item>
 
         <item>
@@ -25,8 +25,8 @@ pulling stuff down only when needed.
 Small update on the website.
             </description>
             <link>https://kisslinux.org/tidbits#24082021</link>
+            <guid>https://kisslinux.org/tidbits#24082021</guid>
             <pubDate>Tue, 24 Aug 2021 16:30:00 +0000</pubDate>
-            <guid>0000000002</guid>
         </item>
 
         <item>
@@ -37,8 +37,8 @@ am happy for it to replace the previous one. So, expect further changes to the
 site for a little while.
             </description>
             <link>https://kisslinux.org/tidbits#23082021</link>
+            <guid>https://kisslinux.org/tidbits#23082021</guid>
             <pubDate>Mon, 23 Aug 2021 16:20:00 +0000</pubDate>
-            <guid>0000000001</guid>
         </item>
     </channel>
 </rss>
