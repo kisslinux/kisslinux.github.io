@@ -53,7 +53,7 @@ documentation for the time being.
 [003] History
 ________________________________________________________________________________
 
-<div style="max-height:177px;overflow:hidden scroll">2021-08-08 <a href="https://github.com/kisslinux/repo/commit/a9984c8ab2a012f637e5b2e8ead585f83a385ac3">a9984c8a</a> freetype-harfbuzz: clean up
+<span style="display:block;max-height:177px;overflow:hidden scroll">2021-08-08 <a href="https://github.com/kisslinux/repo/commit/a9984c8ab2a012f637e5b2e8ead585f83a385ac3">a9984c8a</a> freetype-harfbuzz: clean up
 2021-08-08 <a href="https://github.com/kisslinux/repo/commit/b8d0723123be6f8e158b8d498d98b3a38b50dfda">b8d07231</a> freetype-harfbuzz: fix depends
 2021-08-08 <a href="https://github.com/kisslinux/repo/commit/ea030eb1908ac66756446108e8d46fde7f6927e2">ea030eb1</a> freetype-harfbuzz: remove bzip2 dependency
 2021-08-08 <a href="https://github.com/kisslinux/repo/commit/e115a8d74c3e1a2a4111ec1f9cfed9919ad19dcb">e115a8d7</a> freetype-harfbuzz: remove unneeded lines
@@ -92,7 +92,7 @@ ________________________________________________________________________________
 2019-08-04 <a href="https://github.com/kisslinux/repo/commit/e6672bf1d3e8ea7fe3c73f07d75c12e6383a42b6">e6672bf1</a> freetype-harfbuzz: correctly link to local versions
 2019-08-04 <a href="https://github.com/kisslinux/repo/commit/e34b1a5634518626e661f5045127d0535ce52881">e34b1a56</a> freetype-harfbuzz: fix depends
 2019-08-04 <a href="https://github.com/kisslinux/repo/commit/59779af7b296ff8a11612110819989da062dfce8">59779af7</a> freetype-harfbuzz: added initial package
-</div>
+</span>
 
 [004] References
 ________________________________________________________________________________

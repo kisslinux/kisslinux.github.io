@@ -36,7 +36,7 @@ Refer to the manual pages and command help output.
 [003] History
 ________________________________________________________________________________
 
-<div style="max-height:177px;overflow:hidden scroll">2021-08-14 <a href="https://github.com/kisslinux/repo/commit/14759e0c9066e5d1e0065e4b8de5ede51527fb7d">14759e0c</a> libwebp: 1.2.1
+<span style="display:block;max-height:177px;overflow:hidden scroll">2021-08-14 <a href="https://github.com/kisslinux/repo/commit/14759e0c9066e5d1e0065e4b8de5ede51527fb7d">14759e0c</a> libwebp: 1.2.1
 2021-07-18 <a href="https://github.com/kisslinux/repo/commit/09442a9a5b3a32510b0b97c3ca4a3b10798b4df6">09442a9a</a> libwebp: update for new env
 2021-07-15 <a href="https://github.com/kisslinux/repo/commit/f6450639ea866820882ca2f07abfd359f432fa6f">f6450639</a> libwebp: use VERSION
 2021-06-30 <a href="https://github.com/kisslinux/repo/commit/93129c139f8aa3b2deb828cde3e4311c7aef7b3a">93129c13</a> libwebp: 1.2.0
@@ -46,7 +46,7 @@ ________________________________________________________________________________
 2020-01-07 <a href="https://github.com/kisslinux/repo/commit/8bcfbe0eaf5cd321edff431e8ca47deeed75af59">8bcfbe0e</a> libwebp: bump to 1.1.0
 2019-08-04 <a href="https://github.com/kisslinux/repo/commit/1fa7ac83175335786e7976e6056b655e5b1739cf">1fa7ac83</a> libwebp: move to extra
 2019-07-23 <a href="https://github.com/kisslinux/repo/commit/854791a1f91895e2f4302410ad6c6244dffdb735">854791a1</a> libwebp: new package at 1.0.3
-</div>
+</span>
 
 [004] References
 ________________________________________________________________________________

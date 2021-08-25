@@ -111,7 +111,7 @@ declaring three variables.
   +----------------------------------------------------------------------------+
   |                                                                            |
   |  $ curl -fLO "$url/$file.sha256"                                           |
-  |  $ sha256sum -c < "$file.sha256"                                           |
+  |  $ sha256sum -c &lt; "$file.sha256"                                           |
   |                                                                            |
   +----------------------------------------------------------------------------+
 
@@ -501,7 +501,7 @@ responsibility.
   |  $ kiss b perl                                                             |
   |                                                                            |
   |  # Option 2. Apply patch (written by $/E5ten).                             |
-  |  $ patch -p1 < /usr/share/doc/kiss/wiki/kernel/no-perl.patch               |
+  |  $ patch -p1 &lt; /usr/share/doc/kiss/wiki/kernel/no-perl.patch               |
   |                                                                            |
   |                                                                            |
   | libelf                                                                     |

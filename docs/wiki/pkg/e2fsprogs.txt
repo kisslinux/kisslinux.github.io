@@ -59,7 +59,7 @@ Refer to the manual pages and command help output for more information.
 [003] History
 ________________________________________________________________________________
 
-<div style="max-height:177px;overflow:hidden scroll">2021-08-20 <a href="https://github.com/kisslinux/repo/commit/5de7abc71572930da0aa1fbda6f25fb35424a5e7">5de7abc7</a> e2fsprogs: 1.46.4
+<span style="display:block;max-height:177px;overflow:hidden scroll">2021-08-20 <a href="https://github.com/kisslinux/repo/commit/5de7abc71572930da0aa1fbda6f25fb35424a5e7">5de7abc7</a> e2fsprogs: 1.46.4
 2021-07-28 <a href="https://github.com/kisslinux/repo/commit/aa0576cf691b426f45e4481c361a47217a15df01">aa0576cf</a> e2fsprogs: 1.46.3
 2021-07-17 <a href="https://github.com/kisslinux/repo/commit/d950eb43ecc4a855cf4a7c39e68f8fc5caf8107d">d950eb43</a> e2fsprogs: update for new env
 2021-07-15 <a href="https://github.com/kisslinux/repo/commit/021b330a8d6ef9d49c10efb67d674b8c69998cf6">021b330a</a> e2fsprogs: use VERSION
@@ -82,7 +82,7 @@ ________________________________________________________________________________
 2019-06-21 <a href="https://github.com/kisslinux/repo/commit/c80a76bb581b96b910f338aef44748be51a86983">c80a76bb</a> e2fsprogs: Ensure same build regardless of system.
 2019-06-21 <a href="https://github.com/kisslinux/repo/commit/4adb489faa068b99fb47f74e723891c9f8b3362f">4adb489f</a> e2fsprogs: Disable uuid.
 2019-06-21 <a href="https://github.com/kisslinux/repo/commit/d0a450858b4e6833745f5878306032834c19c47a">d0a45085</a> e2fsprogs: Always build blkid and findfs
-</div>
+</span>
 
 [004] References
 ________________________________________________________________________________

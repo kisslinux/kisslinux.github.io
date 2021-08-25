@@ -35,7 +35,7 @@ Refer to the manual pages and command help output.
 [003] History
 ________________________________________________________________________________
 
-<div style="max-height:177px;overflow:hidden scroll">2021-07-25 <a href="https://github.com/kisslinux/repo/commit/eba8dda203a17375f2deccc15dbb3e7e5958b0f7">eba8dda2</a> pkgconf: 1.8.0
+<span style="display:block;max-height:177px;overflow:hidden scroll">2021-07-25 <a href="https://github.com/kisslinux/repo/commit/eba8dda203a17375f2deccc15dbb3e7e5958b0f7">eba8dda2</a> pkgconf: 1.8.0
 2021-07-18 <a href="https://github.com/kisslinux/repo/commit/d77a8b9b242c732196d1a6a4d5e71aadd9f8781c">d77a8b9b</a> pkgconf: update for new env
 2021-07-15 <a href="https://github.com/kisslinux/repo/commit/03344b4c6210e6a5566137290d55701fd0d43ca7">03344b4c</a> pkgconf: use VERSION
 2021-07-06 <a href="https://github.com/kisslinux/repo/commit/98c08f9c4873177175137a7ec0395e545acd877a">98c08f9c</a> pkgconf: remove documentation
@@ -54,7 +54,7 @@ ________________________________________________________________________________
 2019-06-19 <a href="https://github.com/kisslinux/repo/commit/8cf267eeb7e3ee39bfeacf4e11e552d927675043">8cf267ee</a> pkgconf: add license
 2019-06-19 <a href="https://github.com/kisslinux/repo/commit/7c00ab0acf9ac45c9a97c4c9cd68b1213df6ec3c">7c00ab0a</a> pkgconf: update source url
 2019-06-02 <a href="https://github.com/kisslinux/repo/commit/25f4e9238cfa7f32ef9e63c315a21e39245730ab">25f4e923</a> pkgconf: update manifest
-</div>
+</span>
 
 [004] References
 ________________________________________________________________________________

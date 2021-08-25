@@ -100,7 +100,7 @@ reports to $/kisslinux/repo rather than upstream.
 [008] History
 ________________________________________________________________________________
 
-<div style="max-height:177px;overflow:hidden scroll">2021-08-24 <a href="https://github.com/kisslinux/repo/commit/145e318b0ec8d9c84672b1bd8c815ef0e466c50a">145e318b</a> sway-tiny: import Firefox fixes
+<span style="display:block;max-height:177px;overflow:hidden scroll">2021-08-24 <a href="https://github.com/kisslinux/repo/commit/145e318b0ec8d9c84672b1bd8c815ef0e466c50a">145e318b</a> sway-tiny: import Firefox fixes
 2021-07-28 <a href="https://github.com/kisslinux/repo/commit/cf41d1db72d3243ab26249add43d60f26da70301">cf41d1db</a> sway-tiny: add link to DrmSetMaster info
 2021-07-28 <a href="https://github.com/kisslinux/repo/commit/fe82f48e1fad46bc2a708e6c2a4ab9a9d80d7a21">fe82f48e</a> sway-tiny: comment
 2021-07-28 <a href="https://github.com/kisslinux/repo/commit/a041f1fa5c41c1d55cd50f4416a8dda51fa2783c">a041f1fa</a> sway-tiny: new commit for fixes
@@ -127,7 +127,7 @@ ________________________________________________________________________________
 2021-07-08 <a href="https://github.com/kisslinux/repo/commit/2e8ee32643ec435951d43e2f17edce0a6ae83f72">2e8ee326</a> sway-tiny: fix depends
 2021-07-08 <a href="https://github.com/kisslinux/repo/commit/819240c7f4217e28d658613e4304da38fd78da06">819240c7</a> sway-tiny: fix post-install
 2021-07-08 <a href="https://github.com/kisslinux/repo/commit/247518cf2268df7ebae260ab1183dcac5a5e2bc2">247518cf</a> sway-tiny: git
-</div>
+</span>
 
 [009] References
 ________________________________________________________________________________

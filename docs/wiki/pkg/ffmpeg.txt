@@ -39,7 +39,7 @@ Refer to the manual pages and command help output.
 [003] History
 ________________________________________________________________________________
 
-<div style="max-height:177px;overflow:hidden scroll">2021-07-17 <a href="https://github.com/kisslinux/repo/commit/80c33b16870aa070fecff3d2db6e0ada674bb930">80c33b16</a> ffmpeg: update for new env
+<span style="display:block;max-height:177px;overflow:hidden scroll">2021-07-17 <a href="https://github.com/kisslinux/repo/commit/80c33b16870aa070fecff3d2db6e0ada674bb930">80c33b16</a> ffmpeg: update for new env
 2021-07-15 <a href="https://github.com/kisslinux/repo/commit/414822566fbe5d45271291e6be5c1885f000ff36">41482256</a> ffmpeg: use VERSION
 2021-07-08 <a href="https://github.com/kisslinux/repo/commit/a7c2ec0a96d7e192f42796ea5dc58f65cd86fb7a">a7c2ec0a</a> ffmpeg: disable xorg
 2021-07-08 <a href="https://github.com/kisslinux/repo/commit/99238b3deeebc79e34364c4a9ff39f9bc9f6e53b">99238b3d</a> ffmpeg: depend on openssl
@@ -69,7 +69,7 @@ ________________________________________________________________________________
 2019-07-24 <a href="https://github.com/kisslinux/repo/commit/84b60468a2d9a5fae6aa9a32960eda08395f68c5">84b60468</a> ffmpeg: update dependencies
 2019-07-23 <a href="https://github.com/kisslinux/repo/commit/595dd28cb2ae5b3ec973b9a0223813b23bff01ed">595dd28c</a> ffmpeg: add alsa dep
 2019-07-23 <a href="https://github.com/kisslinux/repo/commit/8e9de3ad006f08d8dd136db0f6ed7952e96771c5">8e9de3ad</a> ffmpeg: new package at 4.1.4
-</div>
+</span>
 
 [004] References
 ________________________________________________________________________________

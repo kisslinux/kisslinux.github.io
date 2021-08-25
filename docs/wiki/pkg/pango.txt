@@ -40,7 +40,7 @@ documentation for the time being.
 [003] History
 ________________________________________________________________________________
 
-<div style="max-height:177px;overflow:hidden scroll">2021-08-18 <a href="https://github.com/kisslinux/repo/commit/907932a955080d7e90e7aa4a844d40c99044e01b">907932a9</a> pango: bump rel
+<span style="display:block;max-height:177px;overflow:hidden scroll">2021-08-18 <a href="https://github.com/kisslinux/repo/commit/907932a955080d7e90e7aa4a844d40c99044e01b">907932a9</a> pango: bump rel
 2021-08-18 <a href="https://github.com/kisslinux/repo/commit/f0ad5c73448ef71243a721b6c2b4a2748924f4fa">f0ad5c73</a> pango: fix segfaults
 2021-08-18 <a href="https://github.com/kisslinux/repo/commit/159dc0270700333d09b45167e800d2c36327ed62">159dc027</a> pango: 1.48.9
 2021-08-12 <a href="https://github.com/kisslinux/repo/commit/b199b67c44560a7d752edde6594a3368b04d1256">b199b67c</a> pango: 1.48.8
@@ -68,7 +68,7 @@ ________________________________________________________________________________
 2019-07-28 <a href="https://github.com/kisslinux/repo/commit/dd0634d0097f851e8cac04f9e5ba74020731b179">dd0634d0</a> pango: Fix depends
 2019-07-27 <a href="https://github.com/kisslinux/repo/commit/60014ddecad82f640159c2da182e3db8fafc814e">60014dde</a> pango: Fix dependencies.
 2019-07-27 <a href="https://github.com/kisslinux/repo/commit/7b103a9547edacbd0bd9c0703afdc0ffcdc0ebb3">7b103a95</a> pango: new package at 1.42.4
-</div>
+</span>
 
 [004] References
 ________________________________________________________________________________

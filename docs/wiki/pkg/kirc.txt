@@ -37,8 +37,8 @@ Refer to the manual pages and command help output.
 [003] History
 ________________________________________________________________________________
 
-<div style="max-height:177px;overflow:hidden scroll">2021-08-04 <a href="https://github.com/kisslinux/repo/commit/b1fdf5c22c35189cf6ea802d30a775fb9e020b3d">b1fdf5c2</a> kirc: new 0.2.9
-</div>
+<span style="display:block;max-height:177px;overflow:hidden scroll">2021-08-04 <a href="https://github.com/kisslinux/repo/commit/b1fdf5c22c35189cf6ea802d30a775fb9e020b3d">b1fdf5c2</a> kirc: new 0.2.9
+</span>
 
 [004] References
 ________________________________________________________________________________

@@ -37,7 +37,7 @@ documentation and command output for the time being.
 [003] History
 ________________________________________________________________________________
 
-<div style="max-height:177px;overflow:hidden scroll">2021-07-27 <a href="https://github.com/kisslinux/repo/commit/30ef3a30a0fe9dfab8d7fafc5e4a869db98f6a2a">30ef3a30</a> gdk-pixbuf: Simpler test disable
+<span style="display:block;max-height:177px;overflow:hidden scroll">2021-07-27 <a href="https://github.com/kisslinux/repo/commit/30ef3a30a0fe9dfab8d7fafc5e4a869db98f6a2a">30ef3a30</a> gdk-pixbuf: Simpler test disable
 2021-07-19 <a href="https://github.com/kisslinux/repo/commit/ebb78637adc29bdea9e82a8b684fc2512f5a9408">ebb78637</a> gdk-pixbuf: nits
 2021-07-18 <a href="https://github.com/kisslinux/repo/commit/d98bfca4670a8c7f68ce2e1fabd33168ccb6a082">d98bfca4</a> gdk-pixbuf: update for new env
 2021-07-15 <a href="https://github.com/kisslinux/repo/commit/9aac1dc043e158b2b405603886db692ed7083205">9aac1dc0</a> gdk-pixbuf: use MAJOR/MINOR/VERSION
@@ -58,7 +58,7 @@ ________________________________________________________________________________
 2019-09-02 <a href="https://github.com/kisslinux/repo/commit/e2ce7bc45edd28c48028db3d6dec39bba7942ce9">e2ce7bc4</a> gdk-pixbuf: fix depends
 2019-08-04 <a href="https://github.com/kisslinux/repo/commit/f90948244dee7b59cca7cf9d1a92a827ac801901">f9094824</a> gdk-pixbuf: move to extra
 2019-07-27 <a href="https://github.com/kisslinux/repo/commit/c36adcc137c63b7fd11f3cc7ff3fcd7687adda26">c36adcc1</a> gdk-pixbuf: new package at 2.38.1
-</div>
+</span>
 
 [004] References
 ________________________________________________________________________________

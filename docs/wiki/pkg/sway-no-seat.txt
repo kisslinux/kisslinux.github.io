@@ -100,7 +100,7 @@ reports to $/kisslinux/repo rather than upstream.
 [008] History
 ________________________________________________________________________________
 
-<div style="max-height:177px;overflow:hidden scroll">2021-07-28 <a href="https://github.com/kisslinux/repo/commit/05e381f142472637e7b62dc993dadbdcd8396cc6">05e381f1</a> sway-no-seat: new commit for fixes
+<span style="display:block;max-height:177px;overflow:hidden scroll">2021-07-28 <a href="https://github.com/kisslinux/repo/commit/05e381f142472637e7b62dc993dadbdcd8396cc6">05e381f1</a> sway-no-seat: new commit for fixes
 2021-07-18 <a href="https://github.com/kisslinux/repo/commit/afedcb2b1588ec2c5069de64eb1b344eaec3cfe2">afedcb2b</a> sway-no-seat: bump rel
 2021-07-18 <a href="https://github.com/kisslinux/repo/commit/a2bde0884774224074f7d3b8c3e7b4adcf100c2f">a2bde088</a> sway-no-seat: potential fix for media keys
 2021-07-15 <a href="https://github.com/kisslinux/repo/commit/d91973381b13dfe153352b4c47a8e86b9d3275f3">d9197338</a> sway-no-seat: update for new env
@@ -120,7 +120,7 @@ ________________________________________________________________________________
 2021-07-08 <a href="https://github.com/kisslinux/repo/commit/36b939fbd454fcb5bb247d30eba4b45881b4d0ff">36b939fb</a> sway-no-seat: fix depends
 2021-07-08 <a href="https://github.com/kisslinux/repo/commit/93a65d8d2947583ae4e03713103ecb615b4f9b7a">93a65d8d</a> sway-no-seat: fix post-install
 2021-07-08 <a href="https://github.com/kisslinux/repo/commit/7b2559f8c3133afe1a8c3d9d1fb3e196e402d688">7b2559f8</a> sway-no-seat: git
-</div>
+</span>
 
 [009] References
 ________________________________________________________________________________

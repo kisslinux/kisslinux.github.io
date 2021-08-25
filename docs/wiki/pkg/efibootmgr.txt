@@ -81,7 +81,7 @@ Refer to the manual pages and command help output for more information.
 [006] History
 ________________________________________________________________________________
 
-<div style="max-height:177px;overflow:hidden scroll">2021-07-17 <a href="https://github.com/kisslinux/repo/commit/bdee486ef3b587f1952d9139e03c38a55f8f52be">bdee486e</a> efibootmgr: update for new env
+<span style="display:block;max-height:177px;overflow:hidden scroll">2021-07-17 <a href="https://github.com/kisslinux/repo/commit/bdee486ef3b587f1952d9139e03c38a55f8f52be">bdee486e</a> efibootmgr: update for new env
 2021-07-15 <a href="https://github.com/kisslinux/repo/commit/a35e998f0331f2671797f46b61c27141127a1585">a35e998f</a> efibootmgr: use VERSION
 2021-07-06 <a href="https://github.com/kisslinux/repo/commit/6e5bd2a1a3d49b514b8b440c2ed643a21587be5f">6e5bd2a1</a> efibootmgr: use latest commit
 2021-07-01 <a href="https://github.com/kisslinux/repo/commit/e4433ed7063bb3c49c9a827dca9562d6a00c5be8">e4433ed7</a> efibootmgr: remove usage of install
@@ -94,7 +94,7 @@ ________________________________________________________________________________
 2019-10-08 <a href="https://github.com/kisslinux/repo/commit/c2dce02865feced81332808b781e6a6189e26ad3">c2dce028</a> efibootmgr: clean clean clean
 2019-06-25 <a href="https://github.com/kisslinux/repo/commit/80b84491d8e1feb178cfa7e99ec65df3c547bdee">80b84491</a> efibootmgr: Fixed build
 2019-06-25 <a href="https://github.com/kisslinux/repo/commit/ae65b9434bbfd3539d8b7e7c13ea46615934a856">ae65b943</a> efibootmgr: Fix build.
-</div>
+</span>
 
 [007] References
 ________________________________________________________________________________

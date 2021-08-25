@@ -41,7 +41,7 @@ documentation for the time being.
 [003] History
 ________________________________________________________________________________
 
-<div style="max-height:177px;overflow:hidden scroll">2021-07-27 <a href="https://github.com/kisslinux/repo/commit/057d8fd61ee615853a5820c4762dbf634b633a3d">057d8fd6</a> atk: simpler test disable
+<span style="display:block;max-height:177px;overflow:hidden scroll">2021-07-27 <a href="https://github.com/kisslinux/repo/commit/057d8fd61ee615853a5820c4762dbf634b633a3d">057d8fd6</a> atk: simpler test disable
 2021-07-17 <a href="https://github.com/kisslinux/repo/commit/bc0d50c49a98f1f33807d457d82de02fabf772fa">bc0d50c4</a> atk: update for new env
 2021-07-15 <a href="https://github.com/kisslinux/repo/commit/c0f1ed46ba515a0c216757aa13a951e043ac30a8">c0f1ed46</a> atk: use MAJOR/MINOR/VERSION
 2021-07-03 <a href="https://github.com/kisslinux/repo/commit/38ce25ac8824974e8827be9b12c6b9e47c223d5e">38ce25ac</a> atk: remove sed -i
@@ -56,7 +56,7 @@ ________________________________________________________________________________
 2019-08-18 <a href="https://github.com/kisslinux/repo/commit/f43acd8b13fd92f332bb20f90d5fcecc191de328">f43acd8b</a> atk: fix depends
 2019-08-17 <a href="https://github.com/kisslinux/repo/commit/23ea0a16bcbf5247783c254a819dc872a982f567">23ea0a16</a> atk: fix deps
 2019-07-27 <a href="https://github.com/kisslinux/repo/commit/2be2e7b44af10a1c5c4c1f4d89544ffeaf6e6e62">2be2e7b4</a> atk: new package at 2.32.0
-</div>
+</span>
 
 [004] References
 ________________________________________________________________________________

@@ -36,7 +36,7 @@ documentation for the time being.
 [003] History
 ________________________________________________________________________________
 
-<div style="max-height:177px;overflow:hidden scroll">2021-07-25 <a href="https://github.com/kisslinux/repo/commit/9149a9ccbdf7f9666e70a03a20ae147ee7b30b61">9149a9cc</a> libdrm: disable valgrind
+<span style="display:block;max-height:177px;overflow:hidden scroll">2021-07-25 <a href="https://github.com/kisslinux/repo/commit/9149a9ccbdf7f9666e70a03a20ae147ee7b30b61">9149a9cc</a> libdrm: disable valgrind
 2021-07-15 <a href="https://github.com/kisslinux/repo/commit/19ea517a9b7f42c3853a3cbbff61ffea4f3b4acd">19ea517a</a> libdrm: update for new env
 2021-07-15 <a href="https://github.com/kisslinux/repo/commit/d5dfc81f6f8ecf89f9ccaed55f693196d4baec6e">d5dfc81f</a> libdrm: use VERSION
 2021-07-08 <a href="https://github.com/kisslinux/repo/commit/acc8f9dcd2ccbeccdd7615cf931841098430621f">acc8f9dc</a> libdrm: move to wayland repository
@@ -50,7 +50,7 @@ ________________________________________________________________________________
 2019-08-16 <a href="https://github.com/kisslinux/repo/commit/ae9dc3848b66b6308c3e40af5d03abc577ec732b">ae9dc384</a> libdrm: fix depends
 2019-08-04 <a href="https://github.com/kisslinux/repo/commit/3e860747dd6946711976264603eff44bc755368f">3e860747</a> libdrm: fix build
 2019-08-04 <a href="https://github.com/kisslinux/repo/commit/ee5b97f384d2e59a3a287468a3719e1774223bfc">ee5b97f3</a> libdrm: bump to 2.4.99
-</div>
+</span>
 
 [004] References
 ________________________________________________________________________________

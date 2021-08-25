@@ -43,7 +43,7 @@ Refer to the manual pages and command help output.
 [003] History
 ________________________________________________________________________________
 
-<div style="max-height:177px;overflow:hidden scroll">2021-08-16 <a href="https://github.com/kisslinux/repo/commit/3faa0d056a107b05208a0a2191f32f9612d4eff0">3faa0d05</a> rust: remove leftover code
+<span style="display:block;max-height:177px;overflow:hidden scroll">2021-08-16 <a href="https://github.com/kisslinux/repo/commit/3faa0d056a107b05208a0a2191f32f9612d4eff0">3faa0d05</a> rust: remove leftover code
 2021-08-16 <a href="https://github.com/kisslinux/repo/commit/66c018fdbbe7f8a54a788a69c3b0cb7d731e9c99">66c018fd</a> rust: support llvm-only systems. closes #304
 2021-07-30 <a href="https://github.com/kisslinux/repo/commit/145d1560344fb77a30f321b1f900e9c73a9ac44a">145d1560</a> rust: 1.54.0
 2021-07-18 <a href="https://github.com/kisslinux/repo/commit/3853980a54ae50d4d958a0feadb3b401e928aa1a">3853980a</a> rust: remove old checksum
@@ -97,7 +97,7 @@ ________________________________________________________________________________
 2019-07-30 <a href="https://github.com/kisslinux/repo/commit/6ec3c232c5205ff2483e4696493fe7a49c078d64">6ec3c232</a> rust: uncomment dependencies
 2019-07-30 <a href="https://github.com/kisslinux/repo/commit/18d4113974003cbdc0e160000eba754b5de0fbbc">18d41139</a> rust: enable local rust if it has already been built and installed
 2019-07-30 <a href="https://github.com/kisslinux/repo/commit/46134fa86e50de0a113aeb64902ef159d4fbda70">46134fa8</a> rust: update to 1.36.0
-</div>
+</span>
 
 [004] References
 ________________________________________________________________________________

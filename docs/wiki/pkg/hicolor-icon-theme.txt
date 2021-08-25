@@ -35,12 +35,12 @@ Refer to the manual pages and command help output.
 [003] History
 ________________________________________________________________________________
 
-<div style="max-height:177px;overflow:hidden scroll">2021-07-18 <a href="https://github.com/kisslinux/repo/commit/b528d6e8f630ac9b353068a810ca847f9e752cf9">b528d6e8</a> hicolor-icon-theme: update for new env
+<span style="display:block;max-height:177px;overflow:hidden scroll">2021-07-18 <a href="https://github.com/kisslinux/repo/commit/b528d6e8f630ac9b353068a810ca847f9e752cf9">b528d6e8</a> hicolor-icon-theme: update for new env
 2021-07-15 <a href="https://github.com/kisslinux/repo/commit/370aca3f19975162b03992b624fe11836d1529a3">370aca3f</a> hicolor-icon-theme: use VERSION
 2021-07-01 <a href="https://github.com/kisslinux/repo/commit/c7558c169d99221f529641ef45493a8bd4c2434f">c7558c16</a> hicolor-icon-theme: use new checksums format
 2019-08-24 <a href="https://github.com/kisslinux/repo/commit/afdd4c3c8bd1449a079bb35b617a8d16264ea3e2">afdd4c3c</a> hicolor-icon-theme: fix formatting
 2019-08-24 <a href="https://github.com/kisslinux/repo/commit/aad14179a6775e9abea712cf78ca753662ccd593">aad14179</a> hicolor-icon-theme: new package at 0.17
-</div>
+</span>
 
 [004] References
 ________________________________________________________________________________

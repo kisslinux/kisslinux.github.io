@@ -82,9 +82,9 @@ pkg() {
             "["???"] References"*)
                 printf '[%03d] History\n' "$_i"
                 printf '________________________________________________________________________________\n\n'
-                printf '<div style="max-height:177px;overflow:hidden scroll">'
+                printf '<span style="display:block;max-height:177px;overflow:hidden scroll">'
                 grep -F "${pkg##*/}: " .log
-                printf '</div>\n\n[%03d] References\n' "$((_i + 1))"
+                printf '</span>\n\n[%03d] References\n' "$((_i + 1))"
             ;;
 
             *)

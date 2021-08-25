@@ -39,7 +39,7 @@ Refer to the manual pages for more information.
 [003] History
 ________________________________________________________________________________
 
-<div style="max-height:177px;overflow:hidden scroll">2021-07-28 <a href="https://github.com/kisslinux/repo/commit/91e72c8e2e1d26bee00516837f12b97c3bb4ad3a">91e72c8e</a> libelf: avoid chmod
+<span style="display:block;max-height:177px;overflow:hidden scroll">2021-07-28 <a href="https://github.com/kisslinux/repo/commit/91e72c8e2e1d26bee00516837f12b97c3bb4ad3a">91e72c8e</a> libelf: avoid chmod
 2021-07-18 <a href="https://github.com/kisslinux/repo/commit/58135ce6acbecac53530b8e42539bcb031f4e5fe">58135ce6</a> libelf: update for new env
 2021-07-15 <a href="https://github.com/kisslinux/repo/commit/abfe95d1623e9aeaf647cefbb164fb43bff2753e">abfe95d1</a> libelf: use VERSION/VERSION
 2021-07-12 <a href="https://github.com/kisslinux/repo/commit/53bb9acb441b520afc5aa02effd2b076656a64dd">53bb9acb</a> libelf: install manual pages. See #273
@@ -68,7 +68,7 @@ ________________________________________________________________________________
 2019-07-06 <a href="https://github.com/kisslinux/repo/commit/00fe9eae2e17dc010a9240f0938a159ef188054d">00fe9eae</a> libelf: Fix build with Linux 5.1
 2019-07-06 <a href="https://github.com/kisslinux/repo/commit/c5f387a2dadb542f4044e9bce0f4dc3cf0f1c2fa">c5f387a2</a> libelf: Fix build with Linux 5.1
 2019-06-02 <a href="https://github.com/kisslinux/repo/commit/616a9622f444dff3de011ee2011dd8f2e9e940d2">616a9622</a> libelf: add checksums and manifest
-</div>
+</span>
 
 [004] References
 ________________________________________________________________________________

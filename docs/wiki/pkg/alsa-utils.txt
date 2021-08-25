@@ -58,7 +58,7 @@ Refer to the manual pages and help output for more information.
 [003] History
 ________________________________________________________________________________
 
-<div style="max-height:177px;overflow:hidden scroll">2021-07-17 <a href="https://github.com/kisslinux/repo/commit/ad088ae50fe6c5b65f57da4c7514bbee9fb5be31">ad088ae5</a> alsa-utils: update for new env
+<span style="display:block;max-height:177px;overflow:hidden scroll">2021-07-17 <a href="https://github.com/kisslinux/repo/commit/ad088ae50fe6c5b65f57da4c7514bbee9fb5be31">ad088ae5</a> alsa-utils: update for new env
 2021-07-15 <a href="https://github.com/kisslinux/repo/commit/e5567d959aa4d3ad889c9da6a3258259a27dcdf2">e5567d95</a> alsa-utils: use VERSION
 2021-06-30 <a href="https://github.com/kisslinux/repo/commit/57b91974c244c52627610e85f1169251354c3789">57b91974</a> alsa-utils: 1.2.5.1
 2020-10-21 <a href="https://github.com/kisslinux/repo/commit/08c8cb0091d11d5a91e1a938f6ca9a0c755aa803">08c8cb00</a> alsa-utils: 1.2.4
@@ -74,7 +74,7 @@ ________________________________________________________________________________
 2019-09-13 <a href="https://github.com/kisslinux/repo/commit/079808dac1007913a8f0977d6dcc61f7b2af396c">079808da</a> alsa-utils: use https for source
 2019-08-17 <a href="https://github.com/kisslinux/repo/commit/2a143d554e22dcab72d5a1b0443319e8919fcf60">2a143d55</a> alsa-utils: sort deps
 2019-07-15 <a href="https://github.com/kisslinux/repo/commit/283944122ded52b1b0d344f300c6aa389f239836">28394412</a> alsa-utils: update to 1.1.9
-</div>
+</span>
 
 [004] References
 ________________________________________________________________________________

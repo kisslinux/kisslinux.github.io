@@ -146,7 +146,7 @@ ________________________________________________________________________________
 [010] History
 ________________________________________________________________________________
 
-<div style="max-height:177px;overflow:hidden scroll">2021-08-23 <a href="https://github.com/kisslinux/repo/commit/0f987bbd80140efead39a97ec0fb67342c41dc40">0f987bbd</a> eiwd: 1.17
+<span style="display:block;max-height:177px;overflow:hidden scroll">2021-08-23 <a href="https://github.com/kisslinux/repo/commit/0f987bbd80140efead39a97ec0fb67342c41dc40">0f987bbd</a> eiwd: 1.17
 2021-08-03 <a href="https://github.com/kisslinux/repo/commit/0872b80d7a6df8427e468ca57a9dba4bc972382b">0872b80d</a> eiwd: 1.16
 2021-07-19 <a href="https://github.com/kisslinux/repo/commit/47499b1261b88431488c4e705accfb6888d948a3">47499b12</a> eiwd: add back iwd_passphrase
 2021-07-19 <a href="https://github.com/kisslinux/repo/commit/e78fc2f7d971c5693168785940b6eb66f02c3dde">e78fc2f7</a> eiwd: fix version
@@ -176,7 +176,7 @@ ________________________________________________________________________________
 2019-12-05 <a href="https://github.com/kisslinux/repo/commit/812b7d3eafa2a115fa041958de9d63a9a9ccf3f8">812b7d3e</a> eiwd: bump to 0.2.1
 2019-12-04 <a href="https://github.com/kisslinux/repo/commit/cf8086a013a1ced402e94a088381bb922bdf19ea">cf8086a0</a> eiwd: bump to 0.2.0
 2019-12-02 <a href="https://github.com/kisslinux/repo/commit/d32dac1d820b3e58629fa024bbe9e902275d0a00">d32dac1d</a> eiwd: new package at 0.1.0
-</div>
+</span>
 
 [011] References
 ________________________________________________________________________________

@@ -39,7 +39,7 @@ Refer to the manual pages and command help output.
 [003] History
 ________________________________________________________________________________
 
-<div style="max-height:177px;overflow:hidden scroll">2021-07-31 <a href="https://github.com/kisslinux/repo/commit/927af4f644f7e0f9064a33eb3d65d0aedf465072">927af4f6</a> zlib: remove unneeded flags
+<span style="display:block;max-height:177px;overflow:hidden scroll">2021-07-31 <a href="https://github.com/kisslinux/repo/commit/927af4f644f7e0f9064a33eb3d65d0aedf465072">927af4f6</a> zlib: remove unneeded flags
 2021-07-15 <a href="https://github.com/kisslinux/repo/commit/3fe7d5544f894e41486e4d086c2ce053ae4dac3b">3fe7d554</a> zlib: update for new env
 2021-07-15 <a href="https://github.com/kisslinux/repo/commit/a3fd768f845f1a8cbab221afda539f61b323f791">a3fd768f</a> zlib: use VERSION
 2021-07-03 <a href="https://github.com/kisslinux/repo/commit/5ad1194dbbfae2853fec367ee1219c2e7267459b">5ad1194d</a> zlib: compile with -fPIC to make lld work
@@ -50,7 +50,7 @@ ________________________________________________________________________________
 2019-06-19 <a href="https://github.com/kisslinux/repo/commit/6806aed00215fef92466c8d1af7af4a0ac795731">6806aed0</a> zlib: add license
 2019-06-18 <a href="https://github.com/kisslinux/repo/commit/f6edab3d6b74f0fc593e3c15f3cd650e3c94e087">f6edab3d</a> zlib: Update manifest
 2019-06-02 <a href="https://github.com/kisslinux/repo/commit/58f869135f30b33bd703c5643bc865cdbbf12b77">58f86913</a> zlib: use /usr/lib for libraries
-</div>
+</span>
 
 [004] References
 ________________________________________________________________________________

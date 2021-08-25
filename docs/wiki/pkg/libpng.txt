@@ -38,13 +38,13 @@ Refer to the manual pages and command help output.
 [003] History
 ________________________________________________________________________________
 
-<div style="max-height:177px;overflow:hidden scroll">2021-07-18 <a href="https://github.com/kisslinux/repo/commit/9d9bda83bc2bd5be397f4fce80757f5aeb67a42b">9d9bda83</a> libpng: update for new env
+<span style="display:block;max-height:177px;overflow:hidden scroll">2021-07-18 <a href="https://github.com/kisslinux/repo/commit/9d9bda83bc2bd5be397f4fce80757f5aeb67a42b">9d9bda83</a> libpng: update for new env
 2021-07-15 <a href="https://github.com/kisslinux/repo/commit/c6799f29fb6e94d9601ec62571e6564b52a3f73c">c6799f29</a> libpng: use VERSION
 2021-07-01 <a href="https://github.com/kisslinux/repo/commit/ead97de12b009bb23e49bd40cf5ea45a6118d46e">ead97de1</a> libpng: use new checksums format
 2019-09-03 <a href="https://github.com/kisslinux/repo/commit/ed55239dbb635b6e418814bc91be2dcd2832db26">ed55239d</a> libpng: use mirror
 2019-08-28 <a href="https://github.com/kisslinux/repo/commit/7dad093e92cc9243f283e873d1db854363845932">7dad093e</a> libpng: added APNG support for Firefox.
 2019-07-18 <a href="https://github.com/kisslinux/repo/commit/042a378a59b18ee86a7ff288ded7ac85ada00cff">042a378a</a> libpng: move to extra
-</div>
+</span>
 
 [004] References
 ________________________________________________________________________________

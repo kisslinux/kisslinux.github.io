@@ -50,7 +50,7 @@ documentation for the time being.
 [004] History
 ________________________________________________________________________________
 
-<div style="max-height:177px;overflow:hidden scroll">2021-08-20 <a href="https://github.com/kisslinux/repo/commit/ac400b38f7be4da292ed35eeda29e9d870975f69">ac400b38</a> mesa: 21.2.1
+<span style="display:block;max-height:177px;overflow:hidden scroll">2021-08-20 <a href="https://github.com/kisslinux/repo/commit/ac400b38f7be4da292ed35eeda29e9d870975f69">ac400b38</a> mesa: 21.2.1
 2021-08-05 <a href="https://github.com/kisslinux/repo/commit/03490d622a5a6d4f145864a6b1fc00aee3e13dcf">03490d62</a> mesa: 21.2.0
 2021-07-29 <a href="https://github.com/kisslinux/repo/commit/b853b2de41163f3b4169f4422873e4d5c3cb3b9b">b853b2de</a> mesa: 21.1.6
 2021-07-28 <a href="https://github.com/kisslinux/repo/commit/13fe1d7d643ed997abb15518369847f73d2cca6c">13fe1d7d</a> mesa: minor tweaks
@@ -135,7 +135,7 @@ ________________________________________________________________________________
 2019-06-27 <a href="https://github.com/kisslinux/repo/commit/7aa16258d8cc2be73d190e7a950fa3412d146451">7aa16258</a> mesa: Added expat dependency.
 2019-06-27 <a href="https://github.com/kisslinux/repo/commit/24df38284d179aca375c6d66536be0420bbffe9d">24df3828</a> mesa: Fix build
 2019-06-27 <a href="https://github.com/kisslinux/repo/commit/f38adc0b499980c63d988560b692cfecb7b17e43">f38adc0b</a> mesa: Fix build.
-</div>
+</span>
 
 [005] References
 ________________________________________________________________________________

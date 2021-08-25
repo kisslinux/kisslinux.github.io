@@ -44,7 +44,7 @@ Refer to the manual pages and command help output.
 [004] History
 ________________________________________________________________________________
 
-<div style="max-height:177px;overflow:hidden scroll">2021-07-27 <a href="https://github.com/kisslinux/repo/commit/ea6901ff7450e7a6cda7c07dffeed74da967a24b">ea6901ff</a> opendoas: simplify build
+<span style="display:block;max-height:177px;overflow:hidden scroll">2021-07-27 <a href="https://github.com/kisslinux/repo/commit/ea6901ff7450e7a6cda7c07dffeed74da967a24b">ea6901ff</a> opendoas: simplify build
 2021-07-18 <a href="https://github.com/kisslinux/repo/commit/242a5e401de32aec3f40ee60917643d329e79081">242a5e40</a> opendoas: update for new env
 2021-07-15 <a href="https://github.com/kisslinux/repo/commit/50a77519604cda78662addcfa2f7bf095b034410">50a77519</a> opendoas: use VERSION
 2021-07-03 <a href="https://github.com/kisslinux/repo/commit/e309be39eb7ddcef3d9fde780a824549b676bd7f">e309be39</a> opendoas: remove sed -i
@@ -60,7 +60,7 @@ ________________________________________________________________________________
 2020-02-09 <a href="https://github.com/kisslinux/repo/commit/1a9ada81120e8c666ebcd4c299be08ef61ef8c37">1a9ada81</a> opendoas: added new doas.conf for latest kiss
 2020-02-04 <a href="https://github.com/kisslinux/repo/commit/eb4160f2dec4acf2e7c4203891298c6096cbf309">eb4160f2</a> opendoas: bump to 6.6.1
 2020-01-30 <a href="https://github.com/kisslinux/repo/commit/806c863b39f0d832854dc66245c276b9b6718868">806c863b</a> opendoas: Move to extra
-</div>
+</span>
 
 [005] References
 ________________________________________________________________________________

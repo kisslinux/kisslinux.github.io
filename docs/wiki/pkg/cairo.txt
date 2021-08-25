@@ -38,7 +38,7 @@ documentation for the time being.
 [003] History
 ________________________________________________________________________________
 
-<div style="max-height:177px;overflow:hidden scroll">2021-08-08 <a href="https://github.com/kisslinux/repo/commit/15884609ad7f9b4f132a60bc83fa30fea0700faf">15884609</a> cairo: fix depends
+<span style="display:block;max-height:177px;overflow:hidden scroll">2021-08-08 <a href="https://github.com/kisslinux/repo/commit/15884609ad7f9b4f132a60bc83fa30fea0700faf">15884609</a> cairo: fix depends
 2021-07-28 <a href="https://github.com/kisslinux/repo/commit/aa7f14eb2e3673b83a5ecf8a175c36c6ba976c07">aa7f14eb</a> cairo: avoid chmod
 2021-07-28 <a href="https://github.com/kisslinux/repo/commit/0d8c3c15b516134c018c57b0f29f71308dcbbed4">0d8c3c15</a> cairo: don't build boilerplate
 2021-07-17 <a href="https://github.com/kisslinux/repo/commit/a6f65975aee8f9fa6b93011d92c54a9924f32cc2">a6f65975</a> cairo: update for new env
@@ -63,7 +63,7 @@ ________________________________________________________________________________
 2019-07-27 <a href="https://github.com/kisslinux/repo/commit/d6b74027e595dc46f457b06bd0af99ec4eac6093">d6b74027</a> cairo: Fix depends.
 2019-07-27 <a href="https://github.com/kisslinux/repo/commit/b1060a084e5d087abf9f6c78f45ca8c5fbdfbbaf">b1060a08</a> cairo: fix depends.
 2019-07-27 <a href="https://github.com/kisslinux/repo/commit/adeb34614c1e9048ad7a39f238f8d968a3dd5b49">adeb3461</a> cairo: new package at 1.16.0
-</div>
+</span>
 
 [004] References
 ________________________________________________________________________________
