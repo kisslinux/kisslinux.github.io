@@ -1,4 +1,4 @@
-mutt                                                               version <a href=https://github.com/kisslinux/repo/tree/master/extra/mutt>2.1.1</a>
+mutt                                                               version <a href=https://github.com/kisslinux/repo/tree/master/extra/mutt>2.1.2</a>
 ________________________________________________________________________________
 
 Mutt is a text-based email client for Unix-like systems. It was originally
@@ -38,7 +38,8 @@ Refer to the manual pages and command help output.
 [003] History
 ________________________________________________________________________________
 
-<div style="max-height:177px;overflow:hidden scroll">2021-08-22 <a href="https://github.com/kisslinux/repo/commit/ce5ba18fd9555ad734936fdb45f96c28fb6af6b4">ce5ba18f</a> mutt: install manual pages
+<div style="max-height:177px;overflow:hidden scroll">2021-08-25 <a href="https://github.com/kisslinux/repo/commit/56f1760b7fa9b5f17e2ee8b273e981f2872d6ce7">56f1760b</a> mutt: 2.1.2
+2021-08-22 <a href="https://github.com/kisslinux/repo/commit/ce5ba18fd9555ad734936fdb45f96c28fb6af6b4">ce5ba18f</a> mutt: install manual pages
 2021-07-18 <a href="https://github.com/kisslinux/repo/commit/fa053d1c69af7135f676d762d2c924ac7df94a3a">fa053d1c</a> mutt: update for new env
 2021-07-15 <a href="https://github.com/kisslinux/repo/commit/55a8749316e4aeeea3231c9b30f592bf31c55adc">55a87493</a> mutt: use VERSION
 2021-07-13 <a href="https://github.com/kisslinux/repo/commit/4183b1ab9ea5b18d7bad36d237a7566f34552815">4183b1ab</a> mutt: 2.1.1

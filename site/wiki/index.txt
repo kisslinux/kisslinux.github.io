@@ -51,17 +51,17 @@ Official Repositories
  %/flex                     %/m4                        %/wayland-protocols
  %/fontconfig               %/make                      %/wbg
  %/foot                     %/man-pages                 %/wl-clipboard
- %/foot-pgo                 %/mandoc                    %/wlroots
- %/freetype-harfbuzz        %/mdevd                     %/wlsunset
- %/gcc                      %/mesa                      %/wpa_supplicant
- %/gdk-pixbuf               %/meson                     %/x264
- %/git                      %/mold                      %/x265
- %/glib                     %/mpv                       %/xkeyboard-config
- %/gnugrep                  %/musl                      %/xvidcore
- %/gnupg1                   %/mutt                      %/xz
- %/grim                     %/nasm                      %/zlib
- %/grub                     %/ncurses                   %/zstd
- %/gtk+3                    %/nodejs
+ %/freetype-harfbuzz        %/mandoc                    %/wlroots
+ %/gcc                      %/mdevd                     %/wlsunset
+ %/gdk-pixbuf               %/mesa                      %/wpa_supplicant
+ %/git                      %/meson                     %/x264
+ %/glib                     %/mold                      %/x265
+ %/gnugrep                  %/mpv                       %/xkeyboard-config
+ %/gnupg1                   %/musl                      %/xvidcore
+ %/grim                     %/mutt                      %/xz
+ %/grub                     %/nasm                      %/zlib
+ %/gtk+3                    %/ncurses                   %/zstd
+                            %/nodejs
 
 
 

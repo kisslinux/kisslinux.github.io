@@ -1,4 +1,4 @@
-firefox                                                           version <a href=https://github.com/kisslinux/repo/tree/master/testing/firefox>92.0b7</a>
+firefox                                                           version <a href=https://github.com/kisslinux/repo/tree/master/testing/firefox>92.0b8</a>
 ________________________________________________________________________________
 
 Mozilla Firefox or simply Firefox, is a free and open-source web browser
@@ -123,7 +123,8 @@ information.
 [007] History
 ________________________________________________________________________________
 
-<div style="max-height:177px;overflow:hidden scroll">2021-08-23 <a href="https://github.com/kisslinux/repo/commit/f9ab42df297d5e5f90917200224f743d3da29ae1">f9ab42df</a> firefox: 92.0b7
+<div style="max-height:177px;overflow:hidden scroll">2021-08-24 <a href="https://github.com/kisslinux/repo/commit/8c420edc5331428648dbcd2c2ac79161bae15aae">8c420edc</a> firefox: 91.0.2
+2021-08-23 <a href="https://github.com/kisslinux/repo/commit/f9ab42df297d5e5f90917200224f743d3da29ae1">f9ab42df</a> firefox: 92.0b7
 2021-08-18 <a href="https://github.com/kisslinux/repo/commit/9a2dc73871df2e52c41ffc6c5ad7e152728d790a">9a2dc738</a> firefox: 92.0b5
 2021-08-11 <a href="https://github.com/kisslinux/repo/commit/5c10a54a8edaacbf1965ad519d49b2d90858d23b">5c10a54a</a> firefox: fix #316
 2021-08-10 <a href="https://github.com/kisslinux/repo/commit/8139aaec7f7a11f349a1390f32f9a4f93cfbe63e">8139aaec</a> firefox: 91.0
