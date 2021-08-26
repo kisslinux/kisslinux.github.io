@@ -43,7 +43,7 @@ not yet contain many repositories. Send suggestions for inclusion to #/contact
   Source: https://github.com/ehawkvu/kiss-xorg
 
 
-[003] Further Reading
+[004] Further Reading
 ________________________________________________________________________________
 
 * @/KISS_PATH
