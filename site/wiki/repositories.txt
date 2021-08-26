@@ -1,0 +1,51 @@
+Repositories
+________________________________________________________________________________
+
+As repositories can be stored anywhere (and retrieved via any means) one may
+find it difficult to locate them. This page aims to partially solve this issue
+by providing a curated list of third party repositories.
+
+Listing every repository is not feasible as a complete list can never exist.
+Further, the wheat must be separated from the chaff as not all repositories
+are well maintained or of a high quality.
+
+
+[000] Index
+________________________________________________________________________________
+
+* Curated Repository List ................................................ [001]
+  * kiss-llvm ............................................................ [002]
+  * kiss-xorg ............................................................ [003]
+* Further Reading ........................................................ [004]
+
+
+[001] Curated Repository List
+________________________________________________________________________________
+
+Repositories in the list below complement and build upon the distribution.
+They are well maintained and of adequate quality. This list is very new and does
+not yet contain many repositories. Send suggestions for inclusion to #/contact
+
+
+--[002] kiss-llvm --------------------------------------------------------------
+
+  This is a kiss-compliant repository structure to build LLVM without any traces
+  of GCC libraries. It also provides any alternatives for official KISS packages
+  that cannot be built in an LLVM-only environment as is.
+
+  Source: https://github.com/konimex/kiss-llvm
+
+
+--[003] kiss-xorg --------------------------------------------------------------
+
+  A collection of repositories for running Xorg on KISS Linux.
+
+  Source: https://github.com/ehawkvu/kiss-xorg
+
+
+[003] Further Reading
+________________________________________________________________________________
+
+* @/KISS_PATH
+* #/wiki
+

@@ -36,7 +36,8 @@ documentation for the time being.
 [003] History
 ________________________________________________________________________________
 
-<span style="display:block;max-height:177px;overflow:hidden scroll">2021-07-25 <a href="https://github.com/kisslinux/repo/commit/9149a9ccbdf7f9666e70a03a20ae147ee7b30b61">9149a9cc</a> libdrm: disable valgrind
+<span style="display:block;max-height:177px;overflow:hidden scroll">2021-08-26 <a href="https://github.com/kisslinux/repo/commit/1fd782d510136f7f6995a6bb9aa2a4a42780edf5">1fd782d5</a> libdrm: enable manuals
+2021-07-25 <a href="https://github.com/kisslinux/repo/commit/9149a9ccbdf7f9666e70a03a20ae147ee7b30b61">9149a9cc</a> libdrm: disable valgrind
 2021-07-15 <a href="https://github.com/kisslinux/repo/commit/19ea517a9b7f42c3853a3cbbff61ffea4f3b4acd">19ea517a</a> libdrm: update for new env
 2021-07-15 <a href="https://github.com/kisslinux/repo/commit/d5dfc81f6f8ecf89f9ccaed55f693196d4baec6e">d5dfc81f</a> libdrm: use VERSION
 2021-07-08 <a href="https://github.com/kisslinux/repo/commit/acc8f9dcd2ccbeccdd7615cf931841098430621f">acc8f9dc</a> libdrm: move to wayland repository

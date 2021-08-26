@@ -13,7 +13,7 @@
 Distribution               System                      Universe
 
  @/package-system           @/service-management        @/forks
- @/package-manager          @/device-management
+ @/package-manager          @/device-management         @/repositories
  @/KISS_PATH                @/hostname
  @/website                  @/manual-pages
  @/testimonials
