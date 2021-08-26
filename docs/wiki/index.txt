@@ -10,11 +10,11 @@
 |                                                                              |
 +------------------------------------------------------------------------------+
 
-Distribution               System                      Other
+Distribution               System                      Universe
 
  @/package-system           @/service-management        @/forks
  @/package-manager          @/device-management
- #/install                  @/hostname
+ @/KISS_PATH                @/hostname
  @/website                  @/manual-pages
  @/testimonials
  @/screenshots

@@ -1,0 +1,80 @@
+Repository System (KISS_PATH)
+________________________________________________________________________________
+
+The repository system is unlike that of other distributions (though it utilizes
+behavior many should be familiar with). Repositories are configured via an
+environment variable called KISS_PATH. This environment variable is analogous to
+PATH (a colon separated list of absolute paths). The package manager searches
+for packages in this path stopping on the first match.
+
+On a technical level the distribution's official repositories are no different
+to repositories created by users. Their use (or disuse) too is determined via
+this search path.
+
+
+[000] Index
+________________________________________________________________________________
+
+* What Is A Repository? .................................................. [001]
+* Setting KISS_PATH ...................................................... [002]
+* Further Reading ........................................................ [003]
+
+
+[001] What Is A Repository?
+________________________________________________________________________________
+
+A repository is a directory containing directories (packages).
+
+  - repository/
+    - package/
+    - package/
+    - package/
+
+
+[002] Setting KISS_PATH
+________________________________________________________________________________
+
+Environment variables can be set system-wide or for a specific user, command or
+shell environment. To set KISS_PATH for your current user add the following to
+your ~/.profile (replacing example paths accordingly).
+
++------------------------------------------------------------------------------+
+|                                                                              |
+|  export KISS_PATH=''                                                         |
+|  KISS_PATH=/path/to/repo                                                     |
+|  KISS_PATH=$KISS_PATH:/path/to/repo                                          |
+|  KISS_PATH=$KISS_PATH:/path/to/repo                                          |
+|                                                                              |
++------------------------------------------------------------------------------+
+
+For the changes to take effect in your current environment, load the new version
+of the .profile file or restart your shell.
+
++------------------------------------------------------------------------------+
+|                                                                              |
+|  $ . ~/.profile                                                              |
+|                                                                              |
++------------------------------------------------------------------------------+
+
+To verify that KISS_PATH is setup correctly, get the package manager to spit
+out all packages found in its search path. All paths added to your KISS_PATH
+should be visible in the output.
+
++------------------------------------------------------------------------------+
+|                                                                              |
+|  $ kiss search \*                                                            |
+|                                                                              |
++------------------------------------------------------------------------------+
+
+One odd thing that may be noticed in the output is /var/db/kiss/installed. This
+is the installed package database (which is really just another repository).
+The package manager always appends this directory to its search path to ensure
+that the system is always able to rebuild itself.
+
+
+[003] Further Reading
+________________________________________________________________________________
+
+- @/package-system
+- @/package-manager
+

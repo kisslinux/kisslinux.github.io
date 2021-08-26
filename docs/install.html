@@ -36,31 +36,30 @@ ________________________________________________________________________________
   * Enter The Chroot ..................................................... [<a class=t href=#006>006</a>]
 
 * Setup Official Repositories ............................................ [<a class=t href=#007>007</a>]
-  * What Is A Repository? ................................................ [<a class=t href=#008>008</a>]
-  * How Are Repositories Configured? ..................................... [<a class=t href=#009>009</a>]
-  * Obtain The-Official Repositories ..................................... [<a class=t href=#010>010</a>]
-  * Setting KISS_PATH .................................................... [<a class=t href=#011>011</a>]
+  * Obtain The Official Repositories ..................................... [<a class=t href=#008>008</a>]
+  * Set KISS_PATH ........................................................ [<a class=t href=#009>009</a>]
+  * Enable Signature Verification ........................................ [<a class=t href=#010>010</a>]
+    * Build And Install GPG .............................................. [<a class=t href=#011>011</a>]
+    * Import (Dylan-Araps') Key .......................................... [<a class=t href=#012>012</a>]
+    * Enable Signature Verification ...................................... [<a class=t href=#013>013</a>]
 
-* Enable Repository Signing .............................................. [<a class=t href=#012>012</a>]
-  * Build And Install GPG ................................................ [<a class=t href=#013>013</a>]
-  * Import (Dylan-Araps') Key ............................................ [<a class=t href=#014>014</a>]
-  * Enable Signature Verification ........................................ [<a class=t href=#015>015</a>]
+* Rebuild The System ..................................................... [<a class=t href=#014>014</a>]
+  * Modify Compiler Flags (Optional) ..................................... [<a class=t href=#015>015</a>]
+  * Update All Base Packages To The Latest Version ....................... [<a class=t href=#016>016</a>]
+  * Rebuild All Packages ................................................. [<a class=t href=#017>017</a>]
 
-* Rebuild-KISS ........................................................... [<a class=t href=#016>016</a>]
-  * Modify Compiler Flags (Optional) ..................................... [<a class=t href=#017>017</a>]
-  * Update All Base Packages To The Latest Version ....................... [<a class=t href=#018>018</a>]
-  * Rebuild All Packages ................................................. [<a class=t href=#019>019</a>]
+* Userspace Tools ........................................................ [<a class=t href=#018>018</a>]
+  * Filesystem Utilities ................................................. [<a class=t href=#019>019</a>]
+  * WiFi (Optional) ...................................................... [<a class=t href=#020>020</a>]
+  * Dynamic IP Addressing (Optional) ..................................... [<a class=t href=#021>021</a>]
 
-* Userspace Tools ........................................................ [<a class=t href=#020>020</a>]
-  * Filesystem Utilities ................................................. [<a class=t href=#021>021</a>]
-  * WiFi (Optional) ...................................................... [<a class=t href=#022>022</a>]
-  * Dynamic IP Addressing (Optional) ..................................... [<a class=t href=#023>023</a>]
-
-* The-Kernel ............................................................. [<a class=t href=#024>024</a>]
-  * Download The Kernel Sources .......................................... [<a class=t href=#025>025</a>]
-  * Download Firmware Blobs (If Required) ................................ [<a class=t href=#026>026</a>]
-  * Configure The Kernel ................................................. [<a class=t href=#027>027</a>]
-  * Install Required Packages ............................................ [<a class=t href=#028>028</a>]
+* The-Kernel ............................................................. [<a class=t href=#022>022</a>]
+  * Download The Kernel Sources .......................................... [<a class=t href=#023>023</a>]
+  * Download Firmware Blobs (If Required) ................................ [<a class=t href=#024>024</a>]
+  * Configure The Kernel ................................................. [<a class=t href=#025>025</a>]
+  * Install Required Packages ............................................ [<a class=t href=#026>026</a>]
+    * perl ................................................................[<a class=t href=#027>027</a>]
+    * libelf ..............................................................[<a class=t href=#028>028</a>]
   * Build The Kernel ..................................................... [<a class=t href=#029>029</a>]
   * Install The Kernel ................................................... [<a class=t href=#030>030</a>]
     * Install The Modules (To /usr/lib) .................................. [<a class=t href=#031>031</a>]
@@ -167,169 +166,95 @@ declaring three variables.
 <span id=007>[<a class=t href=#007>007</a>]</span> Setup Official Repositories
 ________________________________________________________________________________
 
-The kiss-chroot tarball contains no repositories. To continue the installation,
-the official repositories must be enabled.
+The base system contains no repositories. To continue the installation, the
+official repositories must be enabled.
+
+The official repositories are designed to be small and understandable. Instead
+of attempting to package the world they act as an extensible base which users
+can build upon to suit their needs. They provide everything up to and including
+a modern web browser and media player. For a list of all packages see #/<a href=/#300>#300</a>
+
+Read the #/<a href=/wiki/KISS_PATH>wiki/KISS_PATH</a> page before continuing with the guide.
 
 
---<span id=008>[<a class=t href=#008>008</a>]</span> What Is A Repository? --------------------------------------------------
+--<span id=008>[<a class=t href=#008>008</a>]</span> Obtain The Official Repositories ---------------------------------------
 
-  A repository is a directory containing directories (packages).
-
-  - repository/
-    - package/
-    - package/
-    - package/
-
-
---<span id=009>[<a class=t href=#009>009</a>]</span> How Are Repositories Configured? ---------------------------------------
-
-  Repositories are configured via an environment variable called KISS_PATH. This
-  variable is analogous to PATH (a colon separated list of absolute paths). The
-  absolute path to the repository is the value given to KISS_PATH.
-
-  Example:
-
-  - ~/repos/             - Repositories are stored in the user's HOME.
-    - repo/              - A git repository containing three KISS repositories.
-      - .git/
-      - core/
-      - extra/
-      - wayland/
-    - personal/          - A directory containing two KISS repositories.
-      - games/
-      - web/
-
-  Example KISS_PATH:
+  Clone the repositories to the directory of your choosing. It is entirely up
+  to you where they reside though the distribution recommends it be somewhere
+  writable by your user.
 
   +----------------------------------------------------------------------------+
-  |                                                                            |
-  |  ~/.profile                                                                |
-  |                                                                            |
-  |    1 export KISS_PATH=''                                                   |
-  |    2 KISS_PATH=$KISS_PATH:$HOME/repos/personal/games                       |
-  |    3 KISS_PATH=$KISS_PATH:$HOME/repos/personal/web                         |
-  |    4 KISS_PATH=$KISS_PATH:$HOME/repos/repo/core                            |
-  |    5 KISS_PATH=$KISS_PATH:$HOME/repos/repo/extra                           |
-  |    6 KISS_PATH=$KISS_PATH:$HOME/repos/repo/wayland                         |
-  |                                                                            |
-  +----------------------------------------------------------------------------+
-
-  The package manager searches this list in the order it is defined stopping at
-  the first match.
-
-
---<span id=010>[<a class=t href=#010>010</a>]</span> Obtain The Official Repositories ---------------------------------------
-
-  The official repositories provide everything up to and including a modern
-  web browser and media player. For a list of all packages see #/<a href=/#300>#300</a>
-
-  +----------------------------------------------------------------------------+
-  |                                                                            |
-  | Clone the repository to the directory of your choosing. It is entirely up  |
-  | to you though recommended that it be somewhere writable by your user.      |
   |                                                                            |
   |  $ git clone <a href=https://github.com/kisslinux/repo>https://github.com/kisslinux/repo</a>                             |
   |                                                                            |
   +----------------------------------------------------------------------------+
 
-  Git will clone this to a directory called 'repo'. This directory contains
-  multiple KISS repositories (core, extra, testing and wayland). core and
-  extra must be enabled as this guide requires their use. If a graphical
-  environment is desired, enable the wayland repository.
+
+--<span id=009>[<a class=t href=#009>009</a>]</span> Set KISS_PATH ----------------------------------------------------------
+
+  Contained inside 'repo' are four KISS repositories (core, extra, testing and
+  wayland). The absolute paths to these four repositories are the values given
+  to KISS_PATH. Set your KISS_PATH and enable 'core' and 'extra'. If a graphical
+  environment is required, enable 'wayland'.
+
+  Refer to the #/<a href=/wiki/KISS_PATH>wiki/KISS_PATH</a> page for more information.
 
 
---<span id=011>[<a class=t href=#011>011</a>]</span> Setting KISS_PATH ------------------------------------------------------
+--<span id=010>[<a class=t href=#010>010</a>]</span> Enable Signature Verification (Recommended) ----------------------------
 
-  +----------------------------------------------------------------------------+
-  |                                                                            |
-  |  ~/.profile                                                                |
-  |                                                                            |
-  |   export KISS_PATH=''                                                      |
-  |   KISS_PATH=$KISS_PATH:/path/to/repo/core                                  |
-  |   KISS_PATH=$KISS_PATH:/path/to/repo/extra                                 |
-  |   KISS_PATH=$KISS_PATH:/path/to/repo/wayland                               |
-  |                                                                            |
-  |                                                                            |
-  |  TIP  Run '. ~/.profile' for changes to immediately take effect.           |
-  |                                                                            |
-  +----------------------------------------------------------------------------+
-
-  To verify that repositories are setup correctly, we will get the package
-  manager to spit out its search path. The package manager is called 'kiss'
-  and it handles all major package management tasks.
-
-  +----------------------------------------------------------------------------+
-  |                                                                            |
-  |  $ kiss search \*                                                          |
-  |                                                                            |
-  +----------------------------------------------------------------------------+
-
-  One odd thing you may notice in the output is /var/db/kiss/installed.
-
-  This is the installed package database which is really just another
-  repository. There being no repositories in the kiss-chroot tarball was a lie.
-  The system is always able to rebuild itself.
+  Repository signing ensures that all updates have been signed by (Dylan Araps)
+  and further prevents any unsigned updates from reaching your system. In KISS
+  this uses a feature built into git (merge.verifySignatures).
 
 
-<span id=012>[<a class=t href=#012>012</a>]</span> Enable Repository Signing (Recommended)
+----<span id=011>[<a class=t href=#011>011</a>]</span> Build And Install GPG ------------------------------------------------
+
+    This is how packages are built. The 'build' action takes a list of packages,
+    resolves dependencies and builds them. When complete the package manager
+    will save the package to its cache and prompt for installation.
+
+    Packages in the cache can be installed at any time via 'kiss install'.
+    This action also accepts tarballs as input.
+
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |  $ kiss build gnupg1                                                     |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
+
+
+----<span id=012>[<a class=t href=#012>012</a>]</span> Import (Dylan Araps') Key --------------------------------------------
+
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |  $ gpg --keyserver keyserver.ubuntu.com --recv-key 13295DAC2CF13B5C      |
+    |  $ echo trusted-key 0x13295DAC2CF13B5C &gt;&gt;/root/.gnupg/gpg.conf           |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
+
+
+----<span id=013>[<a class=t href=#013>013</a>]</span> Enable Signature Verification ----------------------------------------
+
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |  $ cd /path/to/repo # (where kisslinux/repo was cloned)                  |
+    |  $ git config merge.verifySignatures true                                |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
+
+
+<span id=014>[<a class=t href=#014>014</a>]</span> Rebuild The System
 ________________________________________________________________________________
 
-Repository signing ensures that all updates have been signed by (Dylan Araps)
-and further prevents any unsigned updates from reaching your system. In KISS
-this uses a feature built into git itself (merge.verifySignatures).
-
-
---<span id=013>[<a class=t href=#013>013</a>]</span> Build And Install GPG --------------------------------------------------
-
-  This is how packages are built. The action takes a list of packages, resolves
-  dependencies and builds them. When the build is complete the package manager
-  will save the package to its cache and prompt for installation.
-
-  Packages in the cache can be installed at any time via 'kiss install'. This
-  action also accepts tarballs as input.
-
-  +----------------------------------------------------------------------------+
-  |                                                                            |
-  |  $ kiss build gnupg1                                                       |
-  |                                                                            |
-  +----------------------------------------------------------------------------+
-
-
---<span id=014>[<a class=t href=#014>014</a>]</span> Import (Dylan Araps') Key ----------------------------------------------
-
-  +----------------------------------------------------------------------------+
-  |                                                                            |
-  | Import my public key.                                                      |
-  |                                                                            |
-  |  $ gpg --keyserver keyserver.ubuntu.com --recv-key 13295DAC2CF13B5C        |
-  |                                                                            |
-  | Trust my public key.                                                       |
-  |                                                                            |
-  |  $ echo trusted-key 0x13295DAC2CF13B5C >>/root/.gnupg/gpg.conf             |
-  |                                                                            |
-  +----------------------------------------------------------------------------+
-
-
---<span id=015>[<a class=t href=#015>015</a>]</span> Enable Signature Verification ------------------------------------------
-
-  +----------------------------------------------------------------------------+
-  |                                                                            |
-  |  $ cd /path/to/repo # (where kisslinux/repo was cloned)                    |
-  |  $ git config merge.verifySignatures true                                  |
-  |                                                                            |
-  +----------------------------------------------------------------------------+
-
-
-<span id=016>[<a class=t href=#016>016</a>]</span> Rebuild KISS
-________________________________________________________________________________
+The system must now be rebuilt to update its software, apply optimizations and
+install documentation.
 
 If a package fails to build, open an issue at $/<a href=https://github.com/kisslinux/repo>kisslinux/repo</a>
 
 
---<span id=017>[<a class=t href=#017>017</a>]</span> Modify Compiler Flags (Optional) ---------------------------------------
+--<span id=015>[<a class=t href=#015>015</a>]</span> Modify Compiler Flags (Optional) ---------------------------------------
 
-  These options have been tested and work with every package in the
-  repositories. To play it safe use -O2 or -Os instead of -O3.
+  * To play it safe use -O2 or -Os instead of -O3.
 
   * If memory is low, omit -pipe. This option speeds up compilation but may use
     more memory.
@@ -358,7 +283,7 @@ If a package fails to build, open an issue at $/<a href=https://github.com/kissl
   +----------------------------------------------------------------------------+
 
 
---<span id=018>[<a class=t href=#018>018</a>]</span> Update All Base Packages To The Latest Version -------------------------
+--<span id=016>[<a class=t href=#016>016</a>]</span> Update All Base Packages To The Latest Version -------------------------
 
   This is how updates are performed. This command uses git to pull down changes
   from all enabled repositories and will then optionally handle the upgrade
@@ -371,7 +296,7 @@ If a package fails to build, open an issue at $/<a href=https://github.com/kissl
   +----------------------------------------------------------------------------+
 
 
---<span id=019>[<a class=t href=#019>019</a>]</span> Rebuild All Packages ---------------------------------------------------
+--<span id=017>[<a class=t href=#017>017</a>]</span> Rebuild All Packages ---------------------------------------------------
 
   Simply 'cd' to the installed packages database and use a glob to grab the name
   of every installed package. This glob is then passed to the package manager as
@@ -384,7 +309,7 @@ If a package fails to build, open an issue at $/<a href=https://github.com/kissl
   +----------------------------------------------------------------------------+
 
 
-<span id=020>[<a class=t href=#020>020</a>]</span> Userspace Tools
+<span id=018>[<a class=t href=#018>018</a>]</span> Userspace Tools
 ________________________________________________________________________________
 
 The software below is required unless stated otherwise. Also, all package
@@ -393,7 +318,7 @@ be used from here on. Information about packages can be found in the wiki at
 @/<a href=/wiki/pkg/PKG_NAME>wiki/pkg/PKG_NAME</a>
 
 
---<span id=021>[<a class=t href=#021>021</a>]</span> Filesystem Utilities ---------------------------------------------------
+--<span id=019>[<a class=t href=#019>019</a>]</span> Filesystem Utilities ---------------------------------------------------
 
   NOTE: Open an issue at $/<a href=https://github.com/kisslinux/repo>kisslinux/repo</a> for additional filesystem support.
 
@@ -401,18 +326,18 @@ be used from here on. Information about packages can be found in the wiki at
    * (V)FAT   @/<a href=/wiki/pkg/dosfstools>wiki/pkg/dosfstools</a>
 
 
---<span id=022>[<a class=t href=#022>022</a>]</span> WiFi (Optional) --------------------------------------------------------
+--<span id=020>[<a class=t href=#020>020</a>]</span> WiFi (Optional) --------------------------------------------------------
 
    * @/<a href=/wiki/pkg/wpa_supplicant>wiki/pkg/wpa_supplicant</a>
    * @/<a href=/wiki/pkg/eiwd>wiki/pkg/eiwd</a>
 
 
---<span id=023>[<a class=t href=#023>023</a>]</span> Dynamic IP Addressing (Optional) ---------------------------------------
+--<span id=021>[<a class=t href=#021>021</a>]</span> Dynamic IP Addressing (Optional) ---------------------------------------
 
    * @/<a href=/wiki/pkg/dhcpcd>wiki/pkg/dhcpcd</a>
 
 
-<span id=024>[<a class=t href=#024>024</a>]</span> The Kernel
+<span id=022>[<a class=t href=#022>022</a>]</span> The Kernel
 ________________________________________________________________________________
 
 This step involves configuring and building your own Linux kernel. The Linux
@@ -420,7 +345,7 @@ kernel is not managed by the distribution and is instead the user's sole
 responsibility.
 
 
---<span id=025>[<a class=t href=#025>025</a>]</span> Download The Kernel Sources --------------------------------------------
+--<span id=023>[<a class=t href=#023>023</a>]</span> Download The Kernel Sources --------------------------------------------
 
   Download the kernel sources of your choosing. Official kernel releases can
   be found at kernel.org and linux-libre can be found at linux-libre.fsfla.org.
@@ -435,7 +360,7 @@ responsibility.
   +----------------------------------------------------------------------------+
 
 
---<span id=026>[<a class=t href=#026>026</a>]</span> Download Firmware Blobs (If Required) ----------------------------------
+--<span id=024>[<a class=t href=#024>024</a>]</span> Download Firmware Blobs (If Required) ----------------------------------
 
   If your hardware requires the use of firmware, download the latest tarball
   snapshot from the link below and copy the required firmware (including
@@ -458,7 +383,7 @@ responsibility.
   +----------------------------------------------------------------------------+
 
 
---<span id=027>[<a class=t href=#027>027</a>]</span> Configure The Kernel ---------------------------------------------------
+--<span id=025>[<a class=t href=#025>025</a>]</span> Configure The Kernel ---------------------------------------------------
 
   Keep in mind that the distribution does not provide an initramfs nor does this
   guide include how to use one. Those requiring an initramfs should look into
@@ -493,33 +418,41 @@ responsibility.
   to store its config and make it accessible at runtime via /proc/config.gz
 
 
---<span id=028>[<a class=t href=#028>028</a>]</span> Install Required Packages ----------------------------------------------
+--<span id=026>[<a class=t href=#026>026</a>]</span> Install Required Packages ----------------------------------------------
 
   Depending on how your kernel is configured, some additional software may be
   required. Your options are to either install the dependencies or figure out
   and disable the options pulling them in.
 
-  +----------------------------------------------------------------------------+
-  |                                                                            |
-  | perl                                                                       |
-  |                                                                            |
-  |  # Option 1. Install perl.                                                 |
-  |  $ kiss b perl                                                             |
-  |                                                                            |
-  |  # Option 2. Apply patch (written by $/<a href=https://github.com/E5ten>E5ten</a>).                             |
-  |  $ patch -p1 &lt; /usr/share/doc/kiss/wiki/kernel/no-perl.patch               |
-  |                                                                            |
-  |                                                                            |
-  | libelf                                                                     |
-  |                                                                            |
-  |  $ kiss b libelf                                                           |
-  |                                                                            |
-  |  # The following fix may also need to be applied.                          |
-  |  $ sed '/&lt;stdlib.h&gt;/a #include &lt;linux/stddef.h&gt;' \                         |
-  |        tools/objtool/arch/x86/decode.c &gt; _                                 |
-  |  $ mv -f _ tools/objtool/arch/x86/decode.c                                 |
-  |                                                                            |
-  +----------------------------------------------------------------------------+
+
+----<span id=027>[<a class=t href=#027>027</a>]</span> perl -----------------------------------------------------------------
+
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |  $ kiss b perl                                                           |
+    |                                                                          |
+    |                                                                          |
+    |  Perl can otherwise be avoided by applying this patch (by $/<a href=https://github.com/E5ten>E5ten</a>).      |
+    |                                                                          |
+    |  $ patch -p1 &lt; /usr/share/doc/kiss/wiki/kernel/no-perl.patch               |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
+
+
+----<span id=028>[<a class=t href=#028>028</a>]</span> libelf ---------------------------------------------------------------
+
+    +--------------------------------------------------------------------------+
+    |                                                                          |
+    |  $ kiss b libelf                                                         |
+    |                                                                          |
+    |                                                                          |
+    |  The following fix may also need to be applied.                          |
+    |                                                                          |
+    |  $ sed '/&lt;stdlib.h&gt;/a #include &lt;linux/stddef.h&gt;' \                         |
+    |        tools/objtool/arch/x86/decode.c &gt; _                                 |
+    |  $ mv -f _ tools/objtool/arch/x86/decode.c                                 |
+    |                                                                          |
+    +--------------------------------------------------------------------------+
 
 
 --<span id=029>[<a class=t href=#029>029</a>]</span> Build The Kernel -------------------------------------------------------

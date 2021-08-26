@@ -1,0 +1,97 @@
+<!doctype html><html lang=en><link href='data:image/gif;base64,R0lGODlhEAAQAPH/AAAAAP8AAP8AN////yH5BAUAAAQALAAAAAAQABAAAAM2SLrc/jA+QBUFM2iqA2bAMHSktwCCWJIYEIyvKLOuJt+wV69ry5cfwu7WCVp2RSPoUpE4n4sEADs=' rel=icon><link rel=alternate type="application/rss+xml" title="Tidbits RSS feed" href=/rss/tidbits.rss><link rel=alternate type="application/rss+xml" title="Posts RSS feed" href=/rss/post.rss><title>KISS - KISS_PATH</title><meta charset=utf-8><meta name=Description content="Kiss Linux is a meta-distribution for the x86_64 architecture with a focus on simplicity, sustainability and user freedom. The distribution was created by Dylan Araps who also acts as its sole developer."><meta name=viewport content="width=device-width,initial-scale=1"><style>body{overflow-y:scroll;font:16px monospace,monospace}pre{margin:0;overflow-x:hidden}.t{text-decoration:none}@media(max-width:999px){body{font-size:1.94vw}}@media(prefers-color-scheme:dark){body{background:#000;color:#fff}a{color:#6CF}#l{color:#F33}}img,#b{max-width:80ch}span{display:inline-block}</style><div style="display:table;margin:16px auto" id=a><div id=b><pre>
+<span><a href=/ class=t style=color:#a00>
+|/
+|\ISS</a>               <a href=/tidbits>Tidbits</a>  <a href=/post>Posts</a>  <a href=/answers>Answers</a>  <a href=/install>Install</a>  <a href=/wiki>Wiki</a>  <a href=/contact>Contact</a>  <a href=/donate>Donate</a>  </span><span style="image-rendering:crisp-edges;vertical-align:sub"><a href=https://github.com/kisslinux/><img alt=GitHub src="data:image/gif;base64,R0lGODlhEAAQAPABAAAAAP//ACH5BAUIAAEALAAAAAAQABAAAAIojA2px6G/GJzgJASxbrI+jmVgGI3TSF4oZS6emmqw823dTFcWbklNAQA7"></a></span>
+
+
+Repository System (KISS_PATH)
+________________________________________________________________________________
+
+The repository system is unlike that of other distributions (though it utilizes
+behavior many should be familiar with). Repositories are configured via an
+environment variable called KISS_PATH. This environment variable is analogous to
+PATH (a colon separated list of absolute paths). The package manager searches
+for packages in this path stopping on the first match.
+
+On a technical level the distribution's official repositories are no different
+to repositories created by users. Their use (or disuse) too is determined via
+this search path.
+
+
+<span id=000>[<a class=t href=#000>000</a>]</span> Index
+________________________________________________________________________________
+
+* What Is A Repository? .................................................. [<a class=t href=#001>001</a>]
+* Setting KISS_PATH ...................................................... [<a class=t href=#002>002</a>]
+* Further Reading ........................................................ [<a class=t href=#003>003</a>]
+
+
+<span id=001>[<a class=t href=#001>001</a>]</span> What Is A Repository?
+________________________________________________________________________________
+
+A repository is a directory containing directories (packages).
+
+  - repository/
+    - package/
+    - package/
+    - package/
+
+
+<span id=002>[<a class=t href=#002>002</a>]</span> Setting KISS_PATH
+________________________________________________________________________________
+
+Environment variables can be set system-wide or for a specific user, command or
+shell environment. To set KISS_PATH for your current user add the following to
+your ~/.profile (replacing example paths accordingly).
+
++------------------------------------------------------------------------------+
+|                                                                              |
+|  export KISS_PATH=''                                                         |
+|  KISS_PATH=/path/to/repo                                                     |
+|  KISS_PATH=$KISS_PATH:/path/to/repo                                          |
+|  KISS_PATH=$KISS_PATH:/path/to/repo                                          |
+|                                                                              |
++------------------------------------------------------------------------------+
+
+For the changes to take effect in your current environment, load the new version
+of the .profile file or restart your shell.
+
++------------------------------------------------------------------------------+
+|                                                                              |
+|  $ . ~/.profile                                                              |
+|                                                                              |
++------------------------------------------------------------------------------+
+
+To verify that KISS_PATH is setup correctly, get the package manager to spit
+out all packages found in its search path. All paths added to your KISS_PATH
+should be visible in the output.
+
++------------------------------------------------------------------------------+
+|                                                                              |
+|  $ kiss search \*                                                            |
+|                                                                              |
++------------------------------------------------------------------------------+
+
+One odd thing that may be noticed in the output is /var/db/kiss/installed. This
+is the installed package database (which is really just another repository).
+The package manager always appends this directory to its search path to ensure
+that the system is always able to rebuild itself.
+
+
+<span id=003>[<a class=t href=#003>003</a>]</span> Further Reading
+________________________________________________________________________________
+
+- @/<a href=/wiki/package-system>package-system</a>
+- @/<a href=/wiki/package-manager>package-manager</a>
+
+
+
+________________________________________________________________________________
+
+Dylan Araps (C) 2019-2021
+
+The registered trademark Linux(R) is used pursuant to a sublicense from the
+Linux Foundation, the exclusive licensee of Linus Torvalds, owner of the mark
+on a world­wide basis.
+
+</pre></div></div>
