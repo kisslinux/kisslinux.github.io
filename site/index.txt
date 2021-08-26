@@ -141,7 +141,7 @@ Further reading: @/wiki/package-system
 [005] Package Manager
 ________________________________________________________________________________
 
-The package manager (also named 'kiss') is a small, self-contained and POSIX
+The package manager (also named 'kiss') is a tiny, self-contained and POSIX
 compliant shell script written with portability in mind. It should run in all
 environments with a POSIX shell and core utilities.
 
