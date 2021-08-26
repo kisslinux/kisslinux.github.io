@@ -42,25 +42,24 @@ ________________________________________________________________________________
   * Update All Base Packages To The Latest Version ....................... [016]
   * Rebuild All Packages ................................................. [017]
 
-* Userspace Tools ........................................................ [018]
-  * Filesystem Utilities ................................................. [019]
-  * WiFi (Optional) ...................................................... [020]
-  * Dynamic IP Addressing (Optional) ..................................... [021]
+* The Kernel ............................................................. [018]
+  * Download The Kernel Sources .......................................... [019]
+  * Download Firmware Blobs (If Required) ................................ [020]
+  * Configure The Kernel ................................................. [021]
+  * Install Required Packages ............................................ [022]
+    * perl ................................................................[023]
+    * libelf ..............................................................[024]
+  * Build The Kernel ..................................................... [025]
+  * Install The Kernel ................................................... [026]
+    * Install The Modules (To /usr/lib) .................................. [027]
+    * Install The Kernel Image To (/boot) ................................ [028]
 
-* The Kernel ............................................................. [022]
-  * Download The Kernel Sources .......................................... [023]
-  * Download Firmware Blobs (If Required) ................................ [024]
-  * Configure The Kernel ................................................. [025]
-  * Install Required Packages ............................................ [026]
-    * perl ................................................................[027]
-    * libelf ..............................................................[028]
-  * Build The Kernel ..................................................... [029]
-  * Install The Kernel ................................................... [030]
-    * Install The Modules (To /usr/lib) .................................. [031]
-    * Install The Kernel Image To (/boot) ................................ [032]
-
-* The Bootloader ......................................................... [033]
-  * Install init Scripts ................................................. [034]
+* Install Required Packages .............................................. [029]
+  * Install init Scripts ................................................. [030]
+  * The Bootloader ....................................................... [031]
+  * Filesystem Utilities ................................................. [032]
+  * WiFi (Optional) ...................................................... [033]
+  * Dynamic IP Addressing (Optional) ..................................... [034]
 
 * Post Installation ...................................................... [035]
   * Change The root Password ............................................. [036]
@@ -303,35 +302,7 @@ If a package fails to build, open an issue at $/kisslinux/repo
   +----------------------------------------------------------------------------+
 
 
-[018] Userspace Tools
-________________________________________________________________________________
-
-The software below is required unless stated otherwise. Also, all package
-manager actions have a single letter alias (build == b), these aliases will
-be used from here on. Information about packages can be found in the wiki at
-@/wiki/pkg/PKG_NAME
-
-
---[019] Filesystem Utilities ---------------------------------------------------
-
-  NOTE: Open an issue at $/kisslinux/repo for additional filesystem support.
-
-   * EXT(234) @/wiki/pkg/e2fsprogs
-   * (V)FAT   @/wiki/pkg/dosfstools
-
-
---[020] WiFi (Optional) --------------------------------------------------------
-
-   * @/wiki/pkg/wpa_supplicant
-   * @/wiki/pkg/eiwd
-
-
---[021] Dynamic IP Addressing (Optional) ---------------------------------------
-
-   * @/wiki/pkg/dhcpcd
-
-
-[022] The Kernel
+[018] The Kernel
 ________________________________________________________________________________
 
 This step involves configuring and building your own Linux kernel. The Linux
@@ -339,7 +310,7 @@ kernel is not managed by the distribution and is instead the user's sole
 responsibility.
 
 
---[023] Download The Kernel Sources --------------------------------------------
+--[019] Download The Kernel Sources --------------------------------------------
 
   Download the kernel sources of your choosing. Official kernel releases can
   be found at kernel.org and linux-libre can be found at linux-libre.fsfla.org.
@@ -354,7 +325,7 @@ responsibility.
   +----------------------------------------------------------------------------+
 
 
---[024] Download Firmware Blobs (If Required) ----------------------------------
+--[020] Download Firmware Blobs (If Required) ----------------------------------
 
   If your hardware requires the use of firmware, download the latest tarball
   snapshot from the link below and copy the required firmware (including
@@ -377,7 +348,7 @@ responsibility.
   +----------------------------------------------------------------------------+
 
 
---[025] Configure The Kernel ---------------------------------------------------
+--[021] Configure The Kernel ---------------------------------------------------
 
   Keep in mind that the distribution does not provide an initramfs nor does this
   guide include how to use one. Those requiring an initramfs should look into
@@ -412,14 +383,14 @@ responsibility.
   to store its config and make it accessible at runtime via /proc/config.gz
 
 
---[026] Install Required Packages ----------------------------------------------
+--[022] Install Required Packages ----------------------------------------------
 
   Depending on how your kernel is configured, some additional software may be
   required. Your options are to either install the dependencies or figure out
   and disable the options pulling them in.
 
 
-----[027] perl -----------------------------------------------------------------
+----[023] perl -----------------------------------------------------------------
 
     +--------------------------------------------------------------------------+
     |                                                                          |
@@ -433,7 +404,7 @@ responsibility.
     +--------------------------------------------------------------------------+
 
 
-----[028] libelf ---------------------------------------------------------------
+----[024] libelf ---------------------------------------------------------------
 
     +--------------------------------------------------------------------------+
     |                                                                          |
@@ -449,7 +420,7 @@ responsibility.
     +--------------------------------------------------------------------------+
 
 
---[029] Build The Kernel -------------------------------------------------------
+--[025] Build The Kernel -------------------------------------------------------
 
   This may take a while to complete. The compilation time depends on your
   hardware and kernel configuration. The smaller the .config the less time
@@ -462,10 +433,10 @@ responsibility.
   +----------------------------------------------------------------------------+
 
 
---[030] Install The Kernel -----------------------------------------------------
+--[026] Install The Kernel -----------------------------------------------------
 
 
-----[031]-Install-The-Modules-(To-/usr/lib)-------------------------------------
+----[027]-Install-The-Modules-(To-/usr/lib)-------------------------------------
 
     If your kernel has no modules this step can be skipped.
 
@@ -476,7 +447,7 @@ responsibility.
     +--------------------------------------------------------------------------+
 
 
-----[032]-Install-The-Kernel-Image-To-(/boot)-----------------------------------
+----[028]-Install-The-Kernel-Image-To-(/boot)-----------------------------------
 
     A LILO error may appear, this is normal.
 
@@ -496,17 +467,16 @@ responsibility.
     +--------------------------------------------------------------------------+
 
 
-[033] The bootloader
+[029] Install Required Packages
 ________________________________________________________________________________
 
-The distribution currently provides two boot methods. Grub or EFISTUB. If using
-BIOS, choose grub. If using EFI, choose grub or EFISTUB.
+The software below is required unless stated otherwise. Also, all package
+manager actions have a single letter alias (build == b), these aliases will
+be used from here on. Information about packages can be found in the wiki at
+@/wiki/pkg/PKG_NAME
 
-* Grub    @/wiki/pkg/grub
-* EFISTUB @/wiki/pkg/efibootmgr
 
-
---[034] Install init Scripts ---------------------------------------------------
+--[030] Install init Scripts ---------------------------------------------------
 
   The default init is busybox init (though nothing ties you to it). The below
   commands install the portable initialization framework usable by all inits.
@@ -516,6 +486,34 @@ BIOS, choose grub. If using EFI, choose grub or EFISTUB.
   |  $ kiss b baseinit                                                         |
   |                                                                            |
   +----------------------------------------------------------------------------+
+
+
+--[031] The Bootloader ---------------------------------------------------------
+
+  The distribution currently provides two boot methods. Grub or EFISTUB. If
+  using BIOS, choose grub. If using EFI, choose grub or EFISTUB.
+
+  * Grub    @/wiki/pkg/grub
+  * EFISTUB @/wiki/pkg/efibootmgr
+
+
+--[032] Filesystem Utilities ---------------------------------------------------
+
+  NOTE: Open an issue at $/kisslinux/repo for additional filesystem support.
+
+   * EXT(234) @/wiki/pkg/e2fsprogs
+   * (V)FAT   @/wiki/pkg/dosfstools
+
+
+--[033] WiFi (Optional) --------------------------------------------------------
+
+   * @/wiki/pkg/wpa_supplicant
+   * @/wiki/pkg/eiwd
+
+
+--[034] Dynamic IP Addressing (Optional) ---------------------------------------
+
+   * @/wiki/pkg/dhcpcd
 
 
 [035] Post Installation
