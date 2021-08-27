@@ -48,6 +48,7 @@ page() {
 }
 
 pkg() {
+    rm -rf site/wiki/pkg
     mkdir -p site/wiki/pkg
 
     # Get git log of all packages.
@@ -109,8 +110,6 @@ main() {
         printf '%s\n' "CC $page"
         page "$page"
     done
-
-    [ -z "$KISS_REPO" ] || rm -rf site/wiki/pkg
 }
 
 main "$@"

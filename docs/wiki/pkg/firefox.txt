@@ -1,4 +1,4 @@
-firefox                                                           version <a href=https://github.com/kisslinux/repo/tree/master/testing/firefox>92.0b8</a>
+firefox                                                           version <a href=https://github.com/kisslinux/repo/tree/master/testing/firefox>92.0b9</a>
 ________________________________________________________________________________
 
 Mozilla Firefox or simply Firefox, is a free and open-source web browser
