@@ -270,7 +270,7 @@ If a package fails to build, open an issue at $/kisslinux/repo
   | MAKEFLAGS                                                                  |
   |                                                                            |
   |  # NOTE: '4' should be changed to match the number of threads.             |
-  |  #       This value can be found by running 'nproc'.
+  |  #       This value can be found by running 'nproc'.                       |
   |  $ export MAKEFLAGS="-j4"                                                  |
   |                                                                            |
   +----------------------------------------------------------------------------+
@@ -399,7 +399,7 @@ responsibility.
     |                                                                          |
     |  Perl can otherwise be avoided by applying this patch (by $/E5ten).      |
     |                                                                          |
-    |  $ patch -p1 &lt; /usr/share/doc/kiss/wiki/kernel/no-perl.patch               |
+    |  $ patch -p1 &lt; /usr/share/doc/kiss/wiki/kernel/no-perl.patch             |
     |                                                                          |
     +--------------------------------------------------------------------------+
 
@@ -413,9 +413,9 @@ responsibility.
     |                                                                          |
     |  The following fix may also need to be applied.                          |
     |                                                                          |
-    |  $ sed '/&lt;stdlib.h&gt;/a #include &lt;linux/stddef.h&gt;' \                         |
-    |        tools/objtool/arch/x86/decode.c &gt; _                                 |
-    |  $ mv -f _ tools/objtool/arch/x86/decode.c                                 |
+    |  $ sed '/&lt;stdlib.h&gt;/a #include &lt;linux/stddef.h&gt;' \                       |
+    |        tools/objtool/arch/x86/decode.c &gt; _                               |
+    |  $ mv -f _ tools/objtool/arch/x86/decode.c                               |
     |                                                                          |
     +--------------------------------------------------------------------------+
 
