@@ -6,6 +6,12 @@ Bite-sized news about Kiss Linux and its development.
 RSS Feed: @/rss/tidbits.rss
 
 
+[27082021]----------------------------------------------------------------------
+
+<a href="https://user-images.githubusercontent.com/6799467/131117754-19c534ab-def9-4014-be43-2a18479ff437.png"><img loading="lazy" src="https://user-images.githubusercontent.com/6799467/131117754-19c534ab-def9-4014-be43-2a18479ff437.png" alt="s6 pid 1"></a>
+
+
+
 [25082021]----------------------------------------------------------------------
 
 -- Git Source Caching ----------------------------------------------------------

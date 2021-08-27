@@ -8,6 +8,16 @@
         <ttl>1800</ttl>
 
         <item>
+            <title>27082021</title>
+            <description>
+                ...
+            </description>
+            <link>https://kisslinux.org/tidbits#27082021</link>
+            <guid>https://kisslinux.org/tidbits#27082021</guid>
+            <pubDate>Wed, 27 Aug 2021 14:00:00 +0000</pubDate>
+        </item>
+
+        <item>
             <title>25082021</title>
             <description>
 I have opened a pull request with Git source caching support. This removes the
