@@ -457,7 +457,7 @@ responsibility.
     |                                                                          |
     +--------------------------------------------------------------------------+
 
-    Rename the kernel/System.map (vmlinuz -> vmlinuz-VERSION).
+    Rename the kernel/System.map (vmlinuz to vmlinuz-VERSION).
 
     +--------------------------------------------------------------------------+
     |                                                                          |

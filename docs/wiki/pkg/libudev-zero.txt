@@ -1,4 +1,4 @@
-libudev-zero                                                       version <a href=https://github.com/kisslinux/repo/tree/master/extra/libudev-zero>0.5.2</a>
+libudev-zero                                                       version <a href=https://github.com/kisslinux/repo/tree/master/extra/libudev-zero>1.0.0</a>
 ________________________________________________________________________________
 
 Drop-in replacement for libudev intended to work with any device manager. [0]
@@ -14,9 +14,11 @@ ________________________________________________________________________________
 
 * Installation ........................................................... [001]
 * Setup .................................................................. [002]
-* Usage .................................................................. [003]
-* History ................................................................ [004]
-* References ............................................................. [005]
+  * Configure mdev For Hotplugging ....................................... [003]
+  * Configure mdevd For Hotplugging ...................................... [004]
+* Usage .................................................................. [005]
+* History ................................................................ [006]
+* References ............................................................. [007]
 
 
 [001] Installation
@@ -33,20 +35,41 @@ ________________________________________________________________________________
 ________________________________________________________________________________
 
 If using mdev or mdevd (with the default configuration files), libudev-zero will
-automatically be used once installed.
+automatically be used once installed. If not, the following configuration must
+be done for hotplugging to work.
 
 
-[003] Usage
+--[003] Configure mdev For Hotplugging -----------------------------------------
+
+  Add the folllowing to your /etc/mdev.conf.
+
+  +----------------------------------------------------------------------------+
+  |                                                                            |
+  |  SUBSYSTEM=drm;.*   root:video 660 *libudev-zero-helper                    |
+  |  SUBSYSTEM=input;.* root:input 660 *libudev-zero-helper                    |
+  |                                                                            |
+  +----------------------------------------------------------------------------+
+
+
+--[004] Configure mdevd For Hotplugging ----------------------------------------
+
+  Ensure that mdevd is started with the flags '-O 4'. This will make the daemon
+  rebroadcast kernel uevents to libudev-zero. The distribution's default service
+  runs mdevd with these flags.
+
+
+[005] Usage
 ________________________________________________________________________________
 
 Refer to the FreeDesktop libudev documentation for library information. Refer
 to the project's upstream for more information.
 
 
-[004] History
+[006] History
 ________________________________________________________________________________
 
-<span style="display:block;max-height:177px;overflow:hidden scroll">2021-07-18 <a href="https://github.com/kisslinux/repo/commit/5e1cac83c4abd3486a77514ba573f5ad189e85d0">5e1cac83</a> libudev-zero: update for new env
+<span style="display:block;max-height:177px;overflow:hidden scroll">2021-08-29 <a href="https://github.com/kisslinux/repo/commit/b4a47e94c8a30b26d22a19f5b61d9c82dbce52e5">b4a47e94</a> libudev-zero: 1.0.0
+2021-07-18 <a href="https://github.com/kisslinux/repo/commit/5e1cac83c4abd3486a77514ba573f5ad189e85d0">5e1cac83</a> libudev-zero: update for new env
 2021-07-15 <a href="https://github.com/kisslinux/repo/commit/c9444ecbae45b1ab370a789c29f9094f9126542a">c9444ecb</a> libudev-zero: use VERSION
 2021-07-03 <a href="https://github.com/kisslinux/repo/commit/b58602a025f6b6cec91b2d911905f9fd9a0f7809">b58602a0</a> libudev-zero: 0.5.2
 2021-06-30 <a href="https://github.com/kisslinux/repo/commit/8452681403f86649f8dfdd56fbfd7c3567aa5fdc">84526814</a> libudev-zero: 0.5.1
@@ -66,7 +89,7 @@ ________________________________________________________________________________
 2020-07-22 <a href="https://github.com/kisslinux/repo/commit/0aa2ee4aea1c5adf6ea82428377036e9beed485a">0aa2ee4a</a> libudev-zero: new package at 0.1.0
 </span>
 
-[005] References
+[007] References
 ________________________________________________________________________________
 
 [0] https://github.com/illiliti/libudev-zero

@@ -4,7 +4,7 @@
 |\ISS</a>               <a href=/tidbits>Tidbits</a>  <a href=/post>Posts</a>  <a href=/answers>Answers</a>  <a href=/install>Install</a>  <a href=/wiki>Wiki</a>  <a href=/contact>Contact</a>  <a href=/donate>Donate</a>  </span><span style="image-rendering:crisp-edges;vertical-align:sub"><a href=https://github.com/kisslinux/><img alt=GitHub src="data:image/gif;base64,R0lGODlhEAAQAPABAAAAAP//ACH5BAUIAAEALAAAAAAQABAAAAIojA2px6G/GJzgJASxbrI+jmVgGI3TSF4oZS6emmqw823dTFcWbklNAQA7"></a></span>
 
 
-libudev-zero                                                       version <a href=https://github.com/kisslinux/repo/tree/master/extra/libudev-zero>0.5.2</a>
+libudev-zero                                                       version <a href=https://github.com/kisslinux/repo/tree/master/extra/libudev-zero>1.0.0</a>
 ________________________________________________________________________________
 
 Drop-in replacement for libudev intended to work with any device manager. [<a class=t href=#0>0</a>]
@@ -20,9 +20,11 @@ ________________________________________________________________________________
 
 * Installation ........................................................... [<a class=t href=#001>001</a>]
 * Setup .................................................................. [<a class=t href=#002>002</a>]
-* Usage .................................................................. [<a class=t href=#003>003</a>]
-* History ................................................................ [<a class=t href=#004>004</a>]
-* References ............................................................. [<a class=t href=#005>005</a>]
+  * Configure mdev For Hotplugging ....................................... [<a class=t href=#003>003</a>]
+  * Configure mdevd For Hotplugging ...................................... [<a class=t href=#004>004</a>]
+* Usage .................................................................. [<a class=t href=#005>005</a>]
+* History ................................................................ [<a class=t href=#006>006</a>]
+* References ............................................................. [<a class=t href=#007>007</a>]
 
 
 <span id=001>[<a class=t href=#001>001</a>]</span> Installation
@@ -39,20 +41,41 @@ ________________________________________________________________________________
 ________________________________________________________________________________
 
 If using mdev or mdevd (with the default configuration files), libudev-zero will
-automatically be used once installed.
+automatically be used once installed. If not, the following configuration must
+be done for hotplugging to work.
 
 
-<span id=003>[<a class=t href=#003>003</a>]</span> Usage
+--<span id=003>[<a class=t href=#003>003</a>]</span> Configure mdev For Hotplugging -----------------------------------------
+
+  Add the folllowing to your /etc/mdev.conf.
+
+  +----------------------------------------------------------------------------+
+  |                                                                            |
+  |  SUBSYSTEM=drm;.*   root:video 660 *libudev-zero-helper                    |
+  |  SUBSYSTEM=input;.* root:input 660 *libudev-zero-helper                    |
+  |                                                                            |
+  +----------------------------------------------------------------------------+
+
+
+--<span id=004>[<a class=t href=#004>004</a>]</span> Configure mdevd For Hotplugging ----------------------------------------
+
+  Ensure that mdevd is started with the flags '-O 4'. This will make the daemon
+  rebroadcast kernel uevents to libudev-zero. The distribution's default service
+  runs mdevd with these flags.
+
+
+<span id=005>[<a class=t href=#005>005</a>]</span> Usage
 ________________________________________________________________________________
 
 Refer to the FreeDesktop libudev documentation for library information. Refer
 to the project's upstream for more information.
 
 
-<span id=004>[<a class=t href=#004>004</a>]</span> History
+<span id=006>[<a class=t href=#006>006</a>]</span> History
 ________________________________________________________________________________
 
-<span style="display:block;max-height:177px;overflow:hidden scroll">2021-07-18 <a href="https://github.com/kisslinux/repo/commit/5e1cac83c4abd3486a77514ba573f5ad189e85d0">5e1cac83</a> libudev-zero: update for new env
+<span style="display:block;max-height:177px;overflow:hidden scroll">2021-08-29 <a href="https://github.com/kisslinux/repo/commit/b4a47e94c8a30b26d22a19f5b61d9c82dbce52e5">b4a47e94</a> libudev-zero: 1.0.0
+2021-07-18 <a href="https://github.com/kisslinux/repo/commit/5e1cac83c4abd3486a77514ba573f5ad189e85d0">5e1cac83</a> libudev-zero: update for new env
 2021-07-15 <a href="https://github.com/kisslinux/repo/commit/c9444ecbae45b1ab370a789c29f9094f9126542a">c9444ecb</a> libudev-zero: use VERSION
 2021-07-03 <a href="https://github.com/kisslinux/repo/commit/b58602a025f6b6cec91b2d911905f9fd9a0f7809">b58602a0</a> libudev-zero: 0.5.2
 2021-06-30 <a href="https://github.com/kisslinux/repo/commit/8452681403f86649f8dfdd56fbfd7c3567aa5fdc">84526814</a> libudev-zero: 0.5.1
@@ -72,7 +95,7 @@ ________________________________________________________________________________
 2020-07-22 <a href="https://github.com/kisslinux/repo/commit/0aa2ee4aea1c5adf6ea82428377036e9beed485a">0aa2ee4a</a> libudev-zero: new package at 0.1.0
 </span>
 
-<span id=005>[<a class=t href=#005>005</a>]</span> References
+<span id=007>[<a class=t href=#007>007</a>]</span> References
 ________________________________________________________________________________
 
 <span id=0>[<a class=t href=#0>0</a>]</span> <a href=https://github.com/illiliti/libudev-zero>https://github.com/illiliti/libudev-zero</a>

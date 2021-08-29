@@ -1,4 +1,4 @@
-mold                            version <a href=https://github.com/kisslinux/repo/tree/master/extra/mold>b99626fbf2c22e1024996646cb87cfdab5cfe667</a>
+mold                            version <a href=https://github.com/kisslinux/repo/tree/master/extra/mold>c50dd1888121ef4e8c7806a56d0bc0df396ae3aa</a>
 ________________________________________________________________________________
 
 mold is a multi-threaded, high-performance linker that is several times faster
@@ -100,7 +100,9 @@ ________________________________________________________________________________
 [006] History
 ________________________________________________________________________________
 
-<span style="display:block;max-height:177px;overflow:hidden scroll">2021-08-26 <a href="https://github.com/kisslinux/repo/commit/67210c847c990cea9969516f76dfd3d08e148385">67210c84</a> mold: use more recent commit
+<span style="display:block;max-height:177px;overflow:hidden scroll">2021-08-29 <a href="https://github.com/kisslinux/repo/commit/653eda0d6289134a174eb89fbeaf9637a3ce5601">653eda0d</a> mold: import bug fix
+2021-08-28 <a href="https://github.com/kisslinux/repo/commit/20d53eb8f15e3a68a70924abbc75463eb1767fd4">20d53eb8</a> mold: 0.9.4
+2021-08-26 <a href="https://github.com/kisslinux/repo/commit/67210c847c990cea9969516f76dfd3d08e148385">67210c84</a> mold: use more recent commit
 2021-08-21 <a href="https://github.com/kisslinux/repo/commit/ce790b94c25d322a6f4af64f7d91c44ee9a29d4a">ce790b94</a> mold: new README
 2021-08-17 <a href="https://github.com/kisslinux/repo/commit/070b1be287a55582b56059c77825e7d100cf5fe2">070b1be2</a> mold: bump version to fix gcc
 2021-08-16 <a href="https://github.com/kisslinux/repo/commit/1814fddf5661366bb7c0e205eb390cb1800b6e1f">1814fddf</a> mold: fix typo
