@@ -16,8 +16,8 @@ distribution will provide s6 and sinit as alternatives to busybox init.
 
   - baseinit $/kisslinux/init/blob/master/README
   - rc.conf  $/kisslinux/init/blob/master/etc/rc.conf
-  - s6       $/kisslinux/init/blob/1a3fbbd0b211e89e7d4df3b9225573a30edd3812/extra/s6/README
-  - sinit    $/kisslinux/init/blob/1a3fbbd0b211e89e7d4df3b9225573a30edd3812/extra/sinit/README
+  - s6       $/kisslinux/repo/blob/1a3fbbd0b211e89e7d4df3b9225573a30edd3812/extra/s6/README
+  - sinit    $/kisslinux/repo/blob/1a3fbbd0b211e89e7d4df3b9225573a30edd3812/extra/sinit/README
 
 * The work itself can be seen here:
 
