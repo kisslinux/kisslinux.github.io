@@ -52,7 +52,8 @@ Refer to the manual pages and command help output.
 [004] History
 ________________________________________________________________________________
 
-<span style="display:block;max-height:177px;overflow:hidden scroll">2021-07-17 <a href="https://github.com/kisslinux/repo/commit/5d2ed547d9338e6284e337eb7fcb6c02c6b9d06a">5d2ed547</a> dhcpcd: update for new env
+<span style="display:block;max-height:177px;overflow:hidden scroll">2021-08-31 <a href="https://github.com/kisslinux/repo/commit/8e5944d76d271581dff5c2d22b8be9a2f80fe52e">8e5944d7</a> dhcpcd: redirect stderr to stdout in service
+2021-07-17 <a href="https://github.com/kisslinux/repo/commit/5d2ed547d9338e6284e337eb7fcb6c02c6b9d06a">5d2ed547</a> dhcpcd: update for new env
 2021-07-15 <a href="https://github.com/kisslinux/repo/commit/e1c9370d55d3fabf993c8f562c367b147d0e42bd">e1c9370d</a> dhcpcd: use VERSION
 2021-07-13 <a href="https://github.com/kisslinux/repo/commit/d1272e46e1648821bcf4c51893ba05651926e0f9">d1272e46</a> dhcpcd: make runit file executable
 2021-07-01 <a href="https://github.com/kisslinux/repo/commit/b100d0a2bbc35aebda91c18c2a307405bbde91cc">b100d0a2</a> dhcpcd: remove usage of install
