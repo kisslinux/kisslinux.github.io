@@ -58,9 +58,9 @@ ________________________________________________________________________________
 
 --[005] Slash Linux ------------------------------------------------------------
 
-  NOTE: This distribution does not describe itself in any way usable here.
-        Second, not much is known about it for the distribution to describe
-        it in its own words.
+
+  An experimental Linux distribution, based on KISS, focused on performance and
+  minimalism.
 
   Source: https://github.com/f1nniboy/slash
   Source: https://github.com/f1nniboy/slash-repo
