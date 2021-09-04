@@ -8,6 +8,17 @@
         <ttl>1800</ttl>
 
         <item>
+            <title>04092021</title>
+            <description>
+Packages using rust in the official repositories (firefox, cbindgen, rust) now
+have absolute paths to build directories in their binaries trimmed away.
+            </description>
+            <link>https://kisslinux.org/tidbits#04092021</link>
+            <guid>https://kisslinux.org/tidbits#04092021</guid>
+            <pubDate>Sat, 4 Sep 2021 15:00:00 +0000</pubDate>
+        </item>
+
+        <item>
             <title>27082021</title>
             <description>
                 ...
