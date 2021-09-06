@@ -1,4 +1,4 @@
-mold                                                               version <a href=https://github.com/kisslinux/repo/tree/master/extra/mold>0.9.4</a>
+mold                            version <a href=https://github.com/kisslinux/repo/tree/master/extra/mold>b99626fbf2c22e1024996646cb87cfdab5cfe667</a>
 ________________________________________________________________________________
 
 mold is a multi-threaded, high-performance linker that is several times faster

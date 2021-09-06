@@ -16,9 +16,11 @@ ________________________________________________________________________________
 
 * Installation ........................................................... [001]
 * Setup .................................................................. [002]
-* Usage .................................................................. [003]
-* History ................................................................ [004]
-* References ............................................................. [005]
+* BIOS ................................................................... [003]
+* UEFI ................................................................... [004]
+* Usage .................................................................. [005]
+* History ................................................................ [006]
+* References ............................................................. [007]
 
 
 [001] Installation
@@ -57,7 +59,7 @@ Ensure that all required partitions are mounted.
   +----------------------------------------------------------------------------+
 
 
---[004] EUFI -------------------------------------------------------------------
+--[004] UEFI -------------------------------------------------------------------
 
   Replace 'esp' with the EFI mount point (typically /boot).
 
@@ -71,16 +73,17 @@ Ensure that all required partitions are mounted.
   +----------------------------------------------------------------------------+
 
 
-[003] Usage
+[005] Usage
 ________________________________________________________________________________
 
 Refer to the manual pages and command help output.
 
 
-[004] History
+[006] History
 ________________________________________________________________________________
 
-<span style="display:block;max-height:177px;overflow:hidden scroll">2021-08-22 <a href="https://github.com/kisslinux/repo/commit/6dfff99f4cbb79b3ec378a2e501452c01c4127ed">6dfff99f</a> grub: enable manual pages
+<span style="display:block;max-height:177px;overflow:hidden scroll">2021-09-06 <a href="https://github.com/kisslinux/repo/commit/853382a3706acd0868324f515d65482ffdf2f2d9">853382a3</a> grub: fix docs. Closes #90
+2021-08-22 <a href="https://github.com/kisslinux/repo/commit/6dfff99f4cbb79b3ec378a2e501452c01c4127ed">6dfff99f</a> grub: enable manual pages
 2021-08-16 <a href="https://github.com/kisslinux/repo/commit/56871a28f38939d8227cd1c34cbff3071bf4569e">56871a28</a> grub: force bfd linker
 2021-07-15 <a href="https://github.com/kisslinux/repo/commit/4f6ddde67000aa271f752795921a08088d193a99">4f6ddde6</a> grub: fix build
 2021-07-15 <a href="https://github.com/kisslinux/repo/commit/23c4094214722512179f72152a7850a7f4960c0a">23c40942</a> grub: update for new env
@@ -124,7 +127,7 @@ ________________________________________________________________________________
 2019-06-19 <a href="https://github.com/kisslinux/repo/commit/f3eea118381b5bd416a4b67c1062a86c31953670">f3eea118</a> grub: Added dependencies.
 </span>
 
-[005] References
+[007] References
 ________________________________________________________________________________
 
 [0] https://en.wikipedia.org/wiki/GNU_GRUB
