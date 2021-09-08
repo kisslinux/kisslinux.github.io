@@ -81,7 +81,7 @@ Kiss Linux's repositories are instead designed to be small and understandable.
 Instead of attempting to package the world they act as an extensible base which
 users can build upon to suit their needs.
 
-To best illustrate, here is the entire thing (121 components) (18/08/2021).
+To best illustrate, here is the entire thing (120 components) (09/09/2021).
 
 baseinit baselayout binutils bison busybox curl flex gcc git grub kiss
 linux-headers m4 make musl openssl pigz xz zlib adwaita-icon-theme alsa-lib
@@ -92,7 +92,7 @@ hicolor-icon-theme intel-vaapi-driver json-c kirc lame libass libelf libffi
 libjpeg-turbo libogg libpng libtheora libudev-zero libva libva-utils libvorbis
 libvpx libwebp llvm man-pages mandoc mdevd mesa meson mold mpv mutt nasm ncurses
 nodejs opendoas openresolv openssh opus pango pcre perl pkgconf python rust
-samurai scdoc sqlite ssu strace tiff ttf-croscore tzdata util-linux vim
+samurai scdoc sqlite ssu strace ttf-croscore tzdata util-linux vim
 wpa_supplicant x264 x265 xvidcore zstd foot foot-pgo grim libdrm libinput
 libpciaccess libseat libxkbcommon pixman slurp sway sway-no-seat sway-tiny
 wayland wayland-protocols wbg wl-clipboard wlroots wlsunset xkeyboard-config
