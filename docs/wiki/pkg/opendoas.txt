@@ -44,7 +44,8 @@ Refer to the manual pages and command help output.
 [004] History
 ________________________________________________________________________________
 
-<span style="display:block;max-height:177px;overflow:hidden scroll">2021-07-27 <a href="https://github.com/kisslinux/repo/commit/ea6901ff7450e7a6cda7c07dffeed74da967a24b">ea6901ff</a> opendoas: simplify build
+<span style="display:block;max-height:177px;overflow:hidden scroll">2021-09-08 <a href="https://github.com/kisslinux/repo/commit/e613c6ccec2bab308752a774fff9a309fab43120">e613c6cc</a> opendoas: Fix build with bison 3.8
+2021-07-27 <a href="https://github.com/kisslinux/repo/commit/ea6901ff7450e7a6cda7c07dffeed74da967a24b">ea6901ff</a> opendoas: simplify build
 2021-07-18 <a href="https://github.com/kisslinux/repo/commit/242a5e401de32aec3f40ee60917643d329e79081">242a5e40</a> opendoas: update for new env
 2021-07-15 <a href="https://github.com/kisslinux/repo/commit/50a77519604cda78662addcfa2f7bf095b034410">50a77519</a> opendoas: use VERSION
 2021-07-03 <a href="https://github.com/kisslinux/repo/commit/e309be39eb7ddcef3d9fde780a824549b676bd7f">e309be39</a> opendoas: remove sed -i
