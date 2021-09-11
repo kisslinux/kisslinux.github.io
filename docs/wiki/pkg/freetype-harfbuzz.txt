@@ -1,4 +1,4 @@
-freetype-harfbuzz                                           version <a href=https://github.com/kisslinux/repo/tree/master/extra/freetype-harfbuzz>2.11.0+2.9.0</a>
+freetype-harfbuzz                                           version <a href=https://github.com/kisslinux/repo/tree/master/extra/freetype-harfbuzz>2.11.0+2.9.1</a>
 ________________________________________________________________________________
 
 +------------------------------------------------------------------------------+
@@ -53,7 +53,8 @@ documentation for the time being.
 [003] History
 ________________________________________________________________________________
 
-<span style="display:block;max-height:177px;overflow:hidden scroll">2021-08-26 <a href="https://github.com/kisslinux/repo/commit/2aee8053848121d3c779e1eb8f3d70e6ae553a3d">2aee8053</a> freetype-harfbuzz: 2.11.0+2.9.0
+<span style="display:block;max-height:177px;overflow:hidden scroll">2021-09-10 <a href="https://github.com/kisslinux/repo/commit/1873c7d5d09b9768aa928d881bf7ac2a92a8391f">1873c7d5</a> freetype-harfbuzz: 2.11.0+2.9.1
+2021-08-26 <a href="https://github.com/kisslinux/repo/commit/2aee8053848121d3c779e1eb8f3d70e6ae553a3d">2aee8053</a> freetype-harfbuzz: 2.11.0+2.9.0
 2021-08-08 <a href="https://github.com/kisslinux/repo/commit/a9984c8ab2a012f637e5b2e8ead585f83a385ac3">a9984c8a</a> freetype-harfbuzz: clean up
 2021-08-08 <a href="https://github.com/kisslinux/repo/commit/b8d0723123be6f8e158b8d498d98b3a38b50dfda">b8d07231</a> freetype-harfbuzz: fix depends
 2021-08-08 <a href="https://github.com/kisslinux/repo/commit/ea030eb1908ac66756446108e8d46fde7f6927e2">ea030eb1</a> freetype-harfbuzz: remove bzip2 dependency

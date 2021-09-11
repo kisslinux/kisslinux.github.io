@@ -8,6 +8,16 @@
         <ttl>1800</ttl>
 
         <item>
+            <title>11092021</title>
+            <description>
+The OpenSSL package will be updated to version 3.0.
+            </description>
+            <link>https://kisslinux.org/tidbits#11092021</link>
+            <guid>https://kisslinux.org/tidbits#11092021</guid>
+            <pubDate>Sat, 11 Sep 2021 05:00:00 +0000</pubDate>
+        </item>
+
+        <item>
             <title>04092021</title>
             <description>
 Packages using rust in the official repositories (firefox, cbindgen, rust) now

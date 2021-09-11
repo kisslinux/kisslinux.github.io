@@ -6,6 +6,16 @@ Bite-sized news about Kiss Linux and its development.
 RSS Feed: @/rss/tidbits.rss
 
 
+[11092021]----------------------------------------------------------------------
+
+-- OpenSSL 3.0.0 Soon ----------------------------------------------------------
+
+  The OpenSSL package will be updated to version 3.0. This has been confirmed to
+  work with all packages in the official repositories. The change will be made
+  in a week (18/09/2021). NOTE: This is a breaking change. All packages
+  depending on OpenSSL must be rebuilt.
+
+
 [04092021]----------------------------------------------------------------------
 
 Packages using rust in the official repositories (firefox, cbindgen, rust) now

@@ -37,7 +37,9 @@ Refer to the manual pages and command help output.
 [003] History
 ________________________________________________________________________________
 
-<span style="display:block;max-height:177px;overflow:hidden scroll">2021-07-18 <a href="https://github.com/kisslinux/repo/commit/103ae2e2d5a57e8d54832f17c861d3b9968bf12f">103ae2e2</a> perl: update for new env
+<span style="display:block;max-height:177px;overflow:hidden scroll">2021-09-10 <a href="https://github.com/kisslinux/repo/commit/ba4ea004f446de15edf70f3ffb63f5e2ee7e17eb">ba4ea004</a> perl: remove workaround. See #331
+2021-09-10 <a href="https://github.com/kisslinux/repo/commit/ba4f3586aa16b9f7cab790b591416998c473850a">ba4f3586</a> perl: temporary fix for #331
+2021-07-18 <a href="https://github.com/kisslinux/repo/commit/103ae2e2d5a57e8d54832f17c861d3b9968bf12f">103ae2e2</a> perl: update for new env
 2021-07-15 <a href="https://github.com/kisslinux/repo/commit/23ce381746d9fc4d4a4cc75b81ba9c2b541e8260">23ce3817</a> perl: use MAJOR/VERSION
 2021-07-12 <a href="https://github.com/kisslinux/repo/commit/3a3ab28a4759eacb29b65f411b95a3f62f15cfbf">3a3ab28a</a> perl: enable manual pages. See #273
 2021-06-30 <a href="https://github.com/kisslinux/repo/commit/5c1c28194b63f90282cdd11bfd661c33d900c5de">5c1c2819</a> perl: 5.34.0

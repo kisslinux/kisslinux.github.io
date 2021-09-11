@@ -69,7 +69,10 @@ in some of these documentation holes.
 [004] History
 ________________________________________________________________________________
 
-<span style="display:block;max-height:177px;overflow:hidden scroll">2021-08-29 <a href="https://github.com/kisslinux/repo/commit/2d8a7b98082e36fdb50cdaf88d16d45862f2bc2c">2d8a7b98</a> busybox: use new libudev-zero hotplugging method
+<span style="display:block;max-height:177px;overflow:hidden scroll">2021-09-10 <a href="https://github.com/kisslinux/repo/commit/13aa26c9e93f6de2b0a46f829837fc763525c9b6">13aa26c9</a> busybox: add attribution to patch
+2021-09-10 <a href="https://github.com/kisslinux/repo/commit/7623e60ab715ed2f34b0511bb6c5aa19edc6a3cc">7623e60a</a> busybox: apply newer fix for #331
+2021-09-10 <a href="https://github.com/kisslinux/repo/commit/139c13dcbbe7cf229770b3097e73313a2cdf1782">139c13dc</a> busybox: fix awk %% error. Closes #331
+2021-08-29 <a href="https://github.com/kisslinux/repo/commit/2d8a7b98082e36fdb50cdaf88d16d45862f2bc2c">2d8a7b98</a> busybox: use new libudev-zero hotplugging method
 2021-08-28 <a href="https://github.com/kisslinux/repo/commit/ae974db1aa9dd9a0c6c72c8086b44ff9b4a3ecf4">ae974db1</a> busybox: use baseinit by default when no inittab present
 2021-08-25 <a href="https://github.com/kisslinux/repo/commit/ed72bccba5254c26482bab9bbb623d1b34a55b07">ed72bccb</a> busybox: fix mdev.conf, closes #321
 2021-08-21 <a href="https://github.com/kisslinux/repo/commit/8483a24387a458ec30d781621c98ae4e5e1e8a3e">8483a243</a> busybox: new mdev.conf

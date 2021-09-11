@@ -1,4 +1,4 @@
-firefox                                                           version <a href=https://github.com/kisslinux/repo/tree/master/testing/firefox>93.0b2</a>
+firefox                                                           version <a href=https://github.com/kisslinux/repo/tree/master/testing/firefox>93.0b3</a>
 ________________________________________________________________________________
 
 Mozilla Firefox or simply Firefox, is a free and open-source web browser
@@ -123,7 +123,8 @@ information.
 [007] History
 ________________________________________________________________________________
 
-<span style="display:block;max-height:177px;overflow:hidden scroll">2021-09-07 <a href="https://github.com/kisslinux/repo/commit/0dfbe4ef47bc39a99b4b94bea15f0d5680445eae">0dfbe4ef</a> firefox: [testing] 93.0b1
+<span style="display:block;max-height:177px;overflow:hidden scroll">2021-09-10 <a href="https://github.com/kisslinux/repo/commit/7b14498aad00de6478df78747ac6b6ae1c75e52e">7b14498a</a> firefox: [testing] 93.0b3
+2021-09-07 <a href="https://github.com/kisslinux/repo/commit/0dfbe4ef47bc39a99b4b94bea15f0d5680445eae">0dfbe4ef</a> firefox: [testing] 93.0b1
 2021-09-06 <a href="https://github.com/kisslinux/repo/commit/ea6ef1f646deb8375bf5e08d384a1adcc55ebf95">ea6ef1f6</a> firefox: 92.0
 2021-09-03 <a href="https://github.com/kisslinux/repo/commit/9e51702c219305d2d4116e4d5e03393b1413d74b">9e51702c</a> firefox: Trim absolute paths
 2021-09-02 <a href="https://github.com/kisslinux/repo/commit/83f5ac736c73d3289c737bd85f06e03455a05575">83f5ac73</a> firefox: minor changes

@@ -20,11 +20,14 @@ ________________________________________________________________________________
 
 * Installation ........................................................... [<a class=t href=#001>001</a>]
 * Setup .................................................................. [<a class=t href=#002>002</a>]
-* Usage .................................................................. [<a class=t href=#003>003</a>]
-* Troubleshooting ........................................................ [<a class=t href=#004>004</a>]
-  * Package Fails To Link With Mold ...................................... [<a class=t href=#005>005</a>]
-* History ................................................................ [<a class=t href=#006>006</a>]
-* References ............................................................. [<a class=t href=#007>007</a>]
+  * METHOD 1 (Compiler-agnostic) ......................................... [<a class=t href=#003>003</a>]
+  * METHOD 2 (Clang >= 12.0) ............................................. [<a class=t href=#004>004</a>]
+  * METHOD 3 (GCC) ....................................................... [<a class=t href=#005>005</a>]
+* Usage .................................................................. [<a class=t href=#006>006</a>]
+* Troubleshooting ........................................................ [<a class=t href=#007>007</a>]
+  * Package Fails To Link With Mold ...................................... [<a class=t href=#008>008</a>]
+* History ................................................................ [<a class=t href=#009>009</a>]
+* References ............................................................. [<a class=t href=#010>010</a>]
 
 
 <span id=001>[<a class=t href=#001>001</a>]</span> Installation
@@ -44,34 +47,54 @@ To use mold as the system linker one of the following methods must be used.
 The first solution is recommended as it removes all possibility of the prior
 linker being executed by mistake.
 
-1. Use the alternatives system to set mold as the system linker.
 
-+------------------------------------------------------------------------------+
-|                                                                              |
-|  $ kiss a mold /usr/bin/ld                                                   |
-|                                                                              |
-+------------------------------------------------------------------------------+
+--<span id=003>[<a class=t href=#003>003</a>]</span> METHOD 1 (Compiler-agnostic) -------------------------------------------
 
-2. Add --ld-path to CFLAGS/CXXFLAGS (Clang > 12.0)
+  Use the alternatives system to set mold as the system linker.
 
-+------------------------------------------------------------------------------+
-|                                                                              |
-|  $ export CFLAGS="$CFLAGS --ld-path=/usr/bin/mold"                           |
-|  $ export CXXFLAGS="$CXXFLAGS --ld-path=/usr/bin/mold"                       |
-|                                                                              |
-+------------------------------------------------------------------------------+
-
-3. Add -B to CFLAGS/CXXFLAGS (GCC)
-
-+------------------------------------------------------------------------------+
-|                                                                              |
-|  $ export CFLAGS="$CFLAGS -B/usr/lib/mold"                                   |
-|  $ export CXXFLAGS="$CXXFLAGS -B/usr/lib/mold"                               |
-|                                                                              |
-+------------------------------------------------------------------------------+
+  +----------------------------------------------------------------------------+
+  |                                                                            |
+  |  $ kiss a mold /usr/bin/ld                                                 |
+  |                                                                            |
+  +----------------------------------------------------------------------------+
 
 
-<span id=003>[<a class=t href=#003>003</a>]</span> Usage
+--<span id=004>[<a class=t href=#004>004</a>]</span> METHOD 2 (Clang >= 12.0) -----------------------------------------------
+
+  Add --ld-path to CFLAGS/CXXFLAGS.
+
+  +----------------------------------------------------------------------------+
+  |                                                                            |
+  |  $ export CFLAGS="$CFLAGS --ld-path=/usr/bin/mold"                         |
+  |  $ export CXXFLAGS="$CXXFLAGS --ld-path=/usr/bin/mold"                     |
+  |                                                                            |
+  +----------------------------------------------------------------------------+
+
+  In addition to --ld-path, the following may also be needed. Please NOTE the
+  implications of this warning suppression and why METHOD 1 may be the best
+  solution to this problem.
+
+  +----------------------------------------------------------------------------+
+  |                                                                            |
+  | $ export CFLAGS="$CFLAGS -Wno-unused-command-line-argument"                |
+  | $ export CXXFLAGS="$CXXFLAGS -Wno-unused-command-line-argument"            |
+  |                                                                            |
+  +----------------------------------------------------------------------------+
+
+
+--<span id=005>[<a class=t href=#005>005</a>]</span> METHOD 3 (GCC) ---------------------------------------------------------
+
+  Add -B to CFLAGS/CXXFLAGS (GCC)
+
+  +----------------------------------------------------------------------------+
+  |                                                                            |
+  |  $ export CFLAGS="$CFLAGS -B/usr/lib/mold"                                 |
+  |  $ export CXXFLAGS="$CXXFLAGS -B/usr/lib/mold"                             |
+  |                                                                            |
+  +----------------------------------------------------------------------------+
+
+
+<span id=006>[<a class=t href=#006>006</a>]</span> Usage
 ________________________________________________________________________________
 
 Mold does not yet support all use cases. It can not be used to link the Linux
@@ -91,11 +114,11 @@ result in its usage. To verify that mold is being used, disable binary stripping
 If 'mold' appears in the output, everything is setup correctly.
 
 
-<span id=004>[<a class=t href=#004>004</a>]</span> Troubleshooting
+<span id=007>[<a class=t href=#007>007</a>]</span> Troubleshooting
 ________________________________________________________________________________
 
 
---<span id=005>[<a class=t href=#005>005</a>]</span> Package Fails To Link With Mold ----------------------------------------
+--<span id=008>[<a class=t href=#008>008</a>]</span> Package Fails To Link With Mold ----------------------------------------
 
   If a package in the official repositories fails to link with mold, open an
   issue. If a package in a third-party repository fails to link with mold, open
@@ -103,10 +126,12 @@ ________________________________________________________________________________
   issue is in the linker), open an issue upstream.
 
 
-<span id=006>[<a class=t href=#006>006</a>]</span> History
+<span id=009>[<a class=t href=#009>009</a>]</span> History
 ________________________________________________________________________________
 
-<span style="display:block;max-height:177px;overflow:hidden scroll">2021-09-07 <a href="https://github.com/kisslinux/repo/commit/56aa29f07d1be629c1efe255f090aecac3bc2442">56aa29f0</a> mold: use release tarball
+<span style="display:block;max-height:177px;overflow:hidden scroll">2021-09-10 <a href="https://github.com/kisslinux/repo/commit/b31d9d37a1db324e522ecc3109149b1be80df5ad">b31d9d37</a> mold: clarify clang method. Closes #332
+2021-09-10 <a href="https://github.com/kisslinux/repo/commit/f6bc4cd5d085da26264347f93aa3c6127f80a46e">f6bc4cd5</a> mold: fix docs. See #332
+2021-09-07 <a href="https://github.com/kisslinux/repo/commit/56aa29f07d1be629c1efe255f090aecac3bc2442">56aa29f0</a> mold: use release tarball
 2021-09-07 <a href="https://github.com/kisslinux/repo/commit/172adbeb7fbdfb4f65d98dc268bd39db5d103d91">172adbeb</a> mold: 0.9.5
 2021-09-03 <a href="https://github.com/kisslinux/repo/commit/846480af670606da4aeb1de123ddb1949d8fa465">846480af</a> mold: revert to older version.
 2021-08-29 <a href="https://github.com/kisslinux/repo/commit/653eda0d6289134a174eb89fbeaf9637a3ce5601">653eda0d</a> mold: import bug fix
@@ -121,7 +146,7 @@ ________________________________________________________________________________
 2021-08-15 <a href="https://github.com/kisslinux/repo/commit/970b16ac319b7dfda552edbdbf903513a37c7ae7">970b16ac</a> mold: 0.9.3
 </span>
 
-<span id=007>[<a class=t href=#007>007</a>]</span> References
+<span id=010>[<a class=t href=#010>010</a>]</span> References
 ________________________________________________________________________________
 
 <span id=0>[<a class=t href=#0>0</a>]</span> $/<a href=https://github.com/rui314/mold>rui314/mold</a>
