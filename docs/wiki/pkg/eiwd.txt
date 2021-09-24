@@ -1,4 +1,4 @@
-eiwd                                                                version <a href=https://github.com/kisslinux/repo/tree/master/extra/eiwd>1.17</a>
+eiwd                                                                version <a href=https://github.com/kisslinux/repo/tree/master/extra/eiwd>1.18</a>
 ________________________________________________________________________________
 
 eiwd is iNet Wireless Daemon (iwd) without dbus. This package only provides
@@ -146,7 +146,8 @@ ________________________________________________________________________________
 [010] History
 ________________________________________________________________________________
 
-<span style="display:block;max-height:177px;overflow:hidden scroll">2021-08-23 <a href="https://github.com/kisslinux/repo/commit/0f987bbd80140efead39a97ec0fb67342c41dc40">0f987bbd</a> eiwd: 1.17
+<span style="display:block;max-height:177px;overflow:hidden scroll">2021-09-17 <a href="https://github.com/kisslinux/repo/commit/17733e7579a304befbf0a2ca877e393e9c435f1c">17733e75</a> eiwd: 1.18
+2021-08-23 <a href="https://github.com/kisslinux/repo/commit/0f987bbd80140efead39a97ec0fb67342c41dc40">0f987bbd</a> eiwd: 1.17
 2021-08-03 <a href="https://github.com/kisslinux/repo/commit/0872b80d7a6df8427e468ca57a9dba4bc972382b">0872b80d</a> eiwd: 1.16
 2021-07-19 <a href="https://github.com/kisslinux/repo/commit/47499b1261b88431488c4e705accfb6888d948a3">47499b12</a> eiwd: add back iwd_passphrase
 2021-07-19 <a href="https://github.com/kisslinux/repo/commit/e78fc2f7d971c5693168785940b6eb66f02c3dde">e78fc2f7</a> eiwd: fix version

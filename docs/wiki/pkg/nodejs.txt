@@ -1,4 +1,4 @@
-nodejs                                                            version <a href=https://github.com/kisslinux/repo/tree/master/extra/nodejs>16.9.1</a>
+nodejs                                                           version <a href=https://github.com/kisslinux/repo/tree/master/extra/nodejs>16.10.0</a>
 ________________________________________________________________________________
 
 +------------------------------------------------------------------------------+
@@ -48,7 +48,8 @@ Refer to the manual pages and command help output.
 [003] History
 ________________________________________________________________________________
 
-<span style="display:block;max-height:177px;overflow:hidden scroll">2021-09-11 <a href="https://github.com/kisslinux/repo/commit/6cb4c6840118bd94c499b90ad21be4ad9d43c08c">6cb4c684</a> nodejs: 16.9.1
+<span style="display:block;max-height:177px;overflow:hidden scroll">2021-09-23 <a href="https://github.com/kisslinux/repo/commit/f83e5735b2cc22734705844da5c0737c53c48945">f83e5735</a> nodejs: 16.10.0
+2021-09-11 <a href="https://github.com/kisslinux/repo/commit/6cb4c6840118bd94c499b90ad21be4ad9d43c08c">6cb4c684</a> nodejs: 16.9.1
 2021-09-07 <a href="https://github.com/kisslinux/repo/commit/f12d40b74416546f72c680982dd30746d91e8553">f12d40b7</a> nodejs: 16.9.0
 2021-08-26 <a href="https://github.com/kisslinux/repo/commit/efb48609d6aee246582df2b88817850855ba24df">efb48609</a> nodejs: 16.8.0
 2021-08-18 <a href="https://github.com/kisslinux/repo/commit/604ac5269f76396e26b65dc8d7acd403ff728cf5">604ac526</a> nodejs: 16.7.0

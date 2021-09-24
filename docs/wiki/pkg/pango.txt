@@ -1,4 +1,4 @@
-pango                                                             version <a href=https://github.com/kisslinux/repo/tree/master/extra/pango>1.48.9</a>
+pango                                                            version <a href=https://github.com/kisslinux/repo/tree/master/extra/pango>1.48.10</a>
 ________________________________________________________________________________
 
 Pango is a text (i.e. glyph) layout engine library which works with the HarfBuzz
@@ -40,7 +40,8 @@ documentation for the time being.
 [003] History
 ________________________________________________________________________________
 
-<span style="display:block;max-height:177px;overflow:hidden scroll">2021-08-18 <a href="https://github.com/kisslinux/repo/commit/907932a955080d7e90e7aa4a844d40c99044e01b">907932a9</a> pango: bump rel
+<span style="display:block;max-height:177px;overflow:hidden scroll">2021-09-11 <a href="https://github.com/kisslinux/repo/commit/50c03a9e90c8c0a737b1ed91c09512c8d047a194">50c03a9e</a> pango: 1.48.10
+2021-08-18 <a href="https://github.com/kisslinux/repo/commit/907932a955080d7e90e7aa4a844d40c99044e01b">907932a9</a> pango: bump rel
 2021-08-18 <a href="https://github.com/kisslinux/repo/commit/f0ad5c73448ef71243a721b6c2b4a2748924f4fa">f0ad5c73</a> pango: fix segfaults
 2021-08-18 <a href="https://github.com/kisslinux/repo/commit/159dc0270700333d09b45167e800d2c36327ed62">159dc027</a> pango: 1.48.9
 2021-08-12 <a href="https://github.com/kisslinux/repo/commit/b199b67c44560a7d752edde6594a3368b04d1256">b199b67c</a> pango: 1.48.8

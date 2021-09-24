@@ -1,4 +1,4 @@
-libxkbcommon                                                       version <a href=https://github.com/kisslinux/repo/tree/master/wayland/libxkbcommon>1.3.0</a>
+libxkbcommon                                                       version <a href=https://github.com/kisslinux/repo/tree/master/wayland/libxkbcommon>1.3.1</a>
 ________________________________________________________________________________
 
 xkbcommon is a library for handling of keyboard descriptions, including loading
@@ -36,7 +36,8 @@ Refer to the manual pages and command help output.
 [003] History
 ________________________________________________________________________________
 
-<span style="display:block;max-height:177px;overflow:hidden scroll">2021-07-15 <a href="https://github.com/kisslinux/repo/commit/aba163e133307aa8962c6d2af7c18bb48a3ff0ff">aba163e1</a> libxkbcommon: update for new env
+<span style="display:block;max-height:177px;overflow:hidden scroll">2021-09-11 <a href="https://github.com/kisslinux/repo/commit/45574ecc1aaaa507072df9669f23e588c102aaa7">45574ecc</a> libxkbcommon: 1.3.1
+2021-07-15 <a href="https://github.com/kisslinux/repo/commit/aba163e133307aa8962c6d2af7c18bb48a3ff0ff">aba163e1</a> libxkbcommon: update for new env
 2021-07-15 <a href="https://github.com/kisslinux/repo/commit/167043bbe10a29256eabc352323a99c5824750eb">167043bb</a> libxkbcommon: use VERSION
 2021-07-13 <a href="https://github.com/kisslinux/repo/commit/e50efb4baa00d6aea500a2c48602f5b3ed16daa1">e50efb4b</a> libxkbcommon: Add xkeyboard-config to depends
 2021-07-08 <a href="https://github.com/kisslinux/repo/commit/8f5899e411cc7e19290671996e4b79d4f819a905">8f5899e4</a> libxkbcommon: fix depends

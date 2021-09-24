@@ -1,4 +1,4 @@
-wayland-protocols                                                   version <a href=https://github.com/kisslinux/repo/tree/master/wayland/wayland-protocols>1.22</a>
+wayland-protocols                                                   version <a href=https://github.com/kisslinux/repo/tree/master/wayland/wayland-protocols>1.23</a>
 ________________________________________________________________________________
 
 wayland-protocols contains Wayland protocols that add functionality not
@@ -43,7 +43,8 @@ documentation for the time being.
 [003] History
 ________________________________________________________________________________
 
-<span style="display:block;max-height:177px;overflow:hidden scroll">2021-09-01 <a href="https://github.com/kisslinux/repo/commit/980a355925dc04bef6a3c78ce6f9fef6547b2d53">980a3559</a> wayland-protocols: 1.22
+<span style="display:block;max-height:177px;overflow:hidden scroll">2021-09-15 <a href="https://github.com/kisslinux/repo/commit/8b0c6cfc7052d1ce7b03eeddedb2ad850c71c6a9">8b0c6cfc</a> wayland-protocols: 1.23
+2021-09-01 <a href="https://github.com/kisslinux/repo/commit/980a355925dc04bef6a3c78ce6f9fef6547b2d53">980a3559</a> wayland-protocols: 1.22
 2021-07-15 <a href="https://github.com/kisslinux/repo/commit/a7fa8c7de137fe24c209e042c9a4257592d588fc">a7fa8c7d</a> wayland-protocols: update for new env
 2021-07-15 <a href="https://github.com/kisslinux/repo/commit/bbf97498e23f4c40d5c66d46788c46af8670c03b">bbf97498</a> wayland-protocols: use VERSION
 2021-07-08 <a href="https://github.com/kisslinux/repo/commit/2a2df871d7fc2ef17d3d1b2761ab16ae56570d15">2a2df871</a> wayland-protocols: 1.21

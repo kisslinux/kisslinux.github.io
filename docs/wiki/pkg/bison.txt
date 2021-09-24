@@ -1,4 +1,4 @@
-bison                                                                version <a href=https://github.com/kisslinux/repo/tree/master/core/bison>3.8</a>
+bison                                                              version <a href=https://github.com/kisslinux/repo/tree/master/core/bison>3.8.1</a>
 ________________________________________________________________________________
 
 GNU Bison, commonly known as Bison, is a parser generator that is part of the
@@ -38,7 +38,8 @@ Refer to the accompanying manual pages or command help output.
 [003] History
 ________________________________________________________________________________
 
-<span style="display:block;max-height:177px;overflow:hidden scroll">2021-09-08 <a href="https://github.com/kisslinux/repo/commit/cb26a93803437f4e493b85e433dac931d03f8df9">cb26a938</a> bison: 3.8
+<span style="display:block;max-height:177px;overflow:hidden scroll">2021-09-11 <a href="https://github.com/kisslinux/repo/commit/1b42f90be15321f75c1cb5a706387befbe349f83">1b42f90b</a> bison: 3.8.1
+2021-09-08 <a href="https://github.com/kisslinux/repo/commit/cb26a93803437f4e493b85e433dac931d03f8df9">cb26a938</a> bison: 3.8
 2021-07-15 <a href="https://github.com/kisslinux/repo/commit/13020476328536ddeba669b89148a52ea71b9443">13020476</a> bison: update for new env
 2021-07-15 <a href="https://github.com/kisslinux/repo/commit/bdaaafd1f6d1817c6ac57145ee5c2245d0bb4f09">bdaaafd1</a> bison: use VERSION
 2021-07-06 <a href="https://github.com/kisslinux/repo/commit/63cd2b1814deff9ae28f972f376d9f63feb799d3">63cd2b18</a> bison: remove examples
