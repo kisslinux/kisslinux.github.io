@@ -16,51 +16,52 @@ Distribution               System                      Universe
  @/package-manager          @/device-management         @/repositories
  @/KISS_PATH                @/hostname
  @/website                  @/manual-pages
- @/testimonials
+ @/testimonials             @/console-keymap
  @/screenshots
 
 
 Official Repositories
 
- %/adwaita-icon-theme       %/hicolor-icon-theme        %/nodejs
- %/alsa-lib                 %/intel-vaapi-driver        %/opendoas
- %/alsa-utils               %/json-c                    %/openresolv
- %/atk                      %/kirc                      %/openssh
- %/baseinit                 %/kiss                      %/openssl
- %/baselayout               %/lame                      %/opus
- %/binutils                 %/libass                    %/pango
- %/bison                    %/libdrm                    %/pcre
- %/busybox                  %/libelf                    %/perl
- %/bzip2                    %/libffi                    %/pigz
- %/cairo                    %/libinput                  %/pixman
- %/cbindgen                 %/libjpeg-turbo             %/pkgconf
- %/ccache                   %/libogg                    %/python
- %/clang                    %/libpciaccess              %/rust
- %/cmake                    %/libpng                    %/samurai
- %/curl                     %/libseat                   %/scdoc
- %/dhcpcd                   %/libtheora                 %/slurp
- %/dosfstools               %/libudev-zero              %/sqlite
- %/e2fsprogs                %/libva                     %/ssu
- %/efibootmgr               %/libva-utils               %/strace
- %/efivar                   %/libvorbis                 %/sway
- %/eiwd                     %/libvpx                    %/ttf-croscore
- %/expat                    %/libwebp                   %/tzdata
- %/ffmpeg                   %/libxkbcommon              %/util-linux
- %/firefox                  %/linux-headers             %/vim
- %/firefox-privacy          %/llvm                      %/wayland
- %/flex                     %/m4                        %/wayland-protocols
- %/fontconfig               %/make                      %/wbg
- %/foot                     %/man-pages                 %/wl-clipboard
- %/freetype-harfbuzz        %/mandoc                    %/wlroots
- %/gcc                      %/mdevd                     %/wlsunset
- %/gdk-pixbuf               %/mesa                      %/wpa_supplicant
- %/git                      %/meson                     %/x264
- %/glib                     %/mold                      %/x265
- %/gnugrep                  %/mpv                       %/xkeyboard-config
- %/gnupg1                   %/musl                      %/xvidcore
- %/grim                     %/mutt                      %/xz
- %/grub                     %/nasm                      %/zlib
- %/gtk+3                    %/ncurses                   %/zstd
+ %/adwaita-icon-theme       %/hicolor-icon-theme        %/opendoas
+ %/alsa-lib                 %/intel-vaapi-driver        %/openresolv
+ %/alsa-utils               %/json-c                    %/openssh
+ %/atk                      %/kirc                      %/openssl
+ %/baseinit                 %/kiss                      %/opus
+ %/baselayout               %/lame                      %/pango
+ %/binutils                 %/libass                    %/pcre
+ %/bison                    %/libdrm                    %/perl
+ %/bkeymaps                 %/libelf                    %/pigz
+ %/busybox                  %/libffi                    %/pixman
+ %/bzip2                    %/libinput                  %/pkgconf
+ %/cairo                    %/libjpeg-turbo             %/python
+ %/cbindgen                 %/libogg                    %/rust
+ %/ccache                   %/libpciaccess              %/samurai
+ %/clang                    %/libpng                    %/scdoc
+ %/cmake                    %/libseat                   %/slurp
+ %/curl                     %/libtheora                 %/sqlite
+ %/dhcpcd                   %/libudev-zero              %/ssu
+ %/dosfstools               %/libva                     %/strace
+ %/e2fsprogs                %/libva-utils               %/sway
+ %/efibootmgr               %/libvorbis                 %/ttf-croscore
+ %/efivar                   %/libvpx                    %/tzdata
+ %/eiwd                     %/libwebp                   %/util-linux
+ %/expat                    %/libxkbcommon              %/vim
+ %/ffmpeg                   %/linux-headers             %/wayland
+ %/firefox                  %/llvm                      %/wayland-protocols
+ %/firefox-privacy          %/m4                        %/wbg
+ %/flex                     %/make                      %/wl-clipboard
+ %/fontconfig               %/man-pages                 %/wlroots
+ %/foot                     %/mandoc                    %/wlsunset
+ %/freetype-harfbuzz        %/mdevd                     %/wpa_supplicant
+ %/gcc                      %/mesa                      %/x264
+ %/gdk-pixbuf               %/meson                     %/x265
+ %/git                      %/mold                      %/xkeyboard-config
+ %/glib                     %/mpv                       %/xvidcore
+ %/gnugrep                  %/musl                      %/xz
+ %/gnupg1                   %/mutt                      %/zlib
+ %/grim                     %/nasm                      %/zstd
+ %/grub                     %/ncurses
+ %/gtk+3                    %/nodejs
 
 
 

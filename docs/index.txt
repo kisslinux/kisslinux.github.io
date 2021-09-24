@@ -81,9 +81,9 @@ Kiss Linux's repositories are instead designed to be small and understandable.
 Instead of attempting to package the world they act as an extensible base which
 users can build upon to suit their needs.
 
-To best illustrate, here is the entire thing (120 components) (09/09/2021).
+To best illustrate, here is the entire thing (121 components) (24/09/2021).
 
-baseinit baselayout binutils bison busybox curl flex gcc git grub kiss
+baseinit baselayout binutils bison bkeymaps busybox curl flex gcc git grub kiss
 linux-headers m4 make musl openssl pigz xz zlib adwaita-icon-theme alsa-lib
 alsa-utils atk bzip2 cairo cbindgen ccache clang cmake dhcpcd dosfstools
 e2fsprogs efibootmgr efivar eiwd expat ffmpeg firefox firefox-privacy

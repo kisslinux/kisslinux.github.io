@@ -1,0 +1,75 @@
+bkeymaps                                                            version <a href=https://github.com/kisslinux/repo/tree/master/extra/bkeymaps>1.13</a>
+________________________________________________________________________________
+
+Binary keymaps for busybox. [0] This package provides a set of binary keymaps
+for many different layout types. To change the console keyboard layout this
+package must be used alongside busybox's loadkmap or kbd's loadkeys.
+
+Upstream: https://dev.alpinelinux.org/bkeymaps/
+
+
+[000] Index
+________________________________________________________________________________
+
+* Installation ........................................................... [001]
+* Usage .................................................................. [002]
+  * Setting The Console Keyboard Layout .................................. [003]
+* History ................................................................ [004]
+* References ............................................................. [005]
+
+
+[001] Installation
+________________________________________________________________________________
+
++------------------------------------------------------------------------------+
+|                                                                              |
+|  $ kiss b bkeymaps                                                           |
+|                                                                              |
++------------------------------------------------------------------------------+
+
+
+[002] Usage
+________________________________________________________________________________
+
+Keymap files are installed to /usr/share/bkeymaps.
+
+
+--[003] Setting The Console Keyboard Layout ------------------------------------
+
+  +----------------------------------------------------------------------------+
+  |                                                                            |
+  | (Option 1) Using busybox.                                                  |
+  |                                                                            |
+  |  $ loadkmap &lt; /usr/share/bkeymaps/...                                      |
+  |                                                                            |
+  |                                                                            |
+  | (Option 2) Using kbd.                                                      |
+  |                                                                            |
+  |  $ loadkeys /usr/share/bkeymaps/...                                        |
+  |                                                                            |
+  +----------------------------------------------------------------------------+
+
+  It is up to the user when and how these commands are executed. For example,
+  a layout can be loaded at login for a specific user by putting the command
+  in the corresponding .profile file. To load a layout at boot, create a hook
+  file in /etc/rc.d containing the command.
+
+  +----------------------------------------------------------------------------+
+  |                                                                            |
+  |  $ printf '#!/bin/sh\nloadkmap &lt; /path/to/file\n' > /etc/rc.d/keymap.boot  |
+  |                                                                            |
+  +----------------------------------------------------------------------------+
+
+
+[004] History
+________________________________________________________________________________
+
+<span style="display:block;max-height:177px;overflow:hidden scroll">2021-09-24 <a href="https://github.com/kisslinux/repo/commit/ce0caad7021b784f72df41afe4d19251ded37978">ce0caad7</a> bkeymaps: Add README
+2021-09-24 <a href="https://github.com/kisslinux/repo/commit/19f258b3cfaffa3ae14002078e61b3e9962d20d1">19f258b3</a> bkeymaps: 1.13
+</span>
+
+[005] References
+________________________________________________________________________________
+
+[0] https://pkgs.alpinelinux.org/package/v3.4/main/x86/bkeymaps
+
