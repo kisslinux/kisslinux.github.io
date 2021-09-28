@@ -1,4 +1,4 @@
-mold                                                               version <a href=https://github.com/kisslinux/repo/tree/master/extra/mold>0.9.5</a>
+mold                                                               version <a href=https://github.com/kisslinux/repo/tree/master/extra/mold>0.9.6</a>
 ________________________________________________________________________________
 
 mold is a multi-threaded, high-performance linker that is several times faster
@@ -123,7 +123,8 @@ ________________________________________________________________________________
 [009] History
 ________________________________________________________________________________
 
-<span style="display:block;max-height:177px;overflow:hidden scroll">2021-09-10 <a href="https://github.com/kisslinux/repo/commit/b31d9d37a1db324e522ecc3109149b1be80df5ad">b31d9d37</a> mold: clarify clang method. Closes #332
+<span style="display:block;max-height:177px;overflow:hidden scroll">2021-09-27 <a href="https://github.com/kisslinux/repo/commit/80bbca61f06afadb7214c3ada05f74d6559b2218">80bbca61</a> mold: 0.9.6
+2021-09-10 <a href="https://github.com/kisslinux/repo/commit/b31d9d37a1db324e522ecc3109149b1be80df5ad">b31d9d37</a> mold: clarify clang method. Closes #332
 2021-09-10 <a href="https://github.com/kisslinux/repo/commit/f6bc4cd5d085da26264347f93aa3c6127f80a46e">f6bc4cd5</a> mold: fix docs. See #332
 2021-09-07 <a href="https://github.com/kisslinux/repo/commit/56aa29f07d1be629c1efe255f090aecac3bc2442">56aa29f0</a> mold: use release tarball
 2021-09-07 <a href="https://github.com/kisslinux/repo/commit/172adbeb7fbdfb4f65d98dc268bd39db5d103d91">172adbeb</a> mold: 0.9.5
