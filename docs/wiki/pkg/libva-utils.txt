@@ -1,4 +1,4 @@
-libva-utils                                                       version <a href=https://github.com/kisslinux/repo/tree/master/extra/libva-utils>2.12.0</a>
+libva-utils                                                       version <a href=https://github.com/kisslinux/repo/tree/master/extra/libva-utils>2.13.0</a>
 ________________________________________________________________________________
 
 libva-utils is a collection of utilities and examples to exercise VA-API in
@@ -38,7 +38,8 @@ Refer to the command help output. This package has no documentation.
 [003] History
 ________________________________________________________________________________
 
-<span style="display:block;max-height:177px;overflow:hidden scroll">2021-07-18 <a href="https://github.com/kisslinux/repo/commit/4c47e265a318201bd0174ea3e4cec100a28e3313">4c47e265</a> libva-utils: update for new env
+<span style="display:block;max-height:177px;overflow:hidden scroll">2021-10-01 <a href="https://github.com/kisslinux/repo/commit/ae143dc207e30cb5b64e6e672bbed97a201edc76">ae143dc2</a> libva-utils: 2.13.0
+2021-07-18 <a href="https://github.com/kisslinux/repo/commit/4c47e265a318201bd0174ea3e4cec100a28e3313">4c47e265</a> libva-utils: update for new env
 2021-07-15 <a href="https://github.com/kisslinux/repo/commit/e74f16391d34ea709b8570726545f76920584882">e74f1639</a> libva-utils: use VERSION
 2021-07-12 <a href="https://github.com/kisslinux/repo/commit/35b390236a66c5d3ec8729c8eaf7be37e948983e">35b39023</a> libva-utils: fix depends
 2021-06-30 <a href="https://github.com/kisslinux/repo/commit/f30aae44ba7ab8aa2ab27d523d07b771a02a827e">f30aae44</a> libva-utils: 2.12.0

@@ -1,4 +1,4 @@
-xkeyboard-config                                                    version <a href=https://github.com/kisslinux/repo/tree/master/wayland/xkeyboard-config>2.33</a>
+xkeyboard-config                                                    version <a href=https://github.com/kisslinux/repo/tree/master/wayland/xkeyboard-config>2.34</a>
 ________________________________________________________________________________
 
 The non-arch keyboard configuration database for X Window. The goal is to

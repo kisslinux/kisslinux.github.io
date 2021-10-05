@@ -1,4 +1,4 @@
-clang                                                             version <a href=https://github.com/kisslinux/repo/tree/master/extra/clang>12.0.1</a>
+clang                                                             version <a href=https://github.com/kisslinux/repo/tree/master/extra/clang>13.0.0</a>
 ________________________________________________________________________________
 
 Clang is a compiler front end for the C, C++, Objective-C and Objective-C++
@@ -65,7 +65,8 @@ If a package fails to build with clang, open an issue at $/kisslinux/repo
 [005] History
 ________________________________________________________________________________
 
-<span style="display:block;max-height:177px;overflow:hidden scroll">2021-08-15 <a href="https://github.com/kisslinux/repo/commit/5d84e02ca034bb25069049cd105b6c87808579df">5d84e02c</a> clang: fix incorrect flag
+<span style="display:block;max-height:177px;overflow:hidden scroll">2021-10-02 <a href="https://github.com/kisslinux/repo/commit/4e24c86ffb6dd3638dcf910ebc2eecff1c7ce9de">4e24c86f</a> clang: 13.0.0
+2021-08-15 <a href="https://github.com/kisslinux/repo/commit/5d84e02ca034bb25069049cd105b6c87808579df">5d84e02c</a> clang: fix incorrect flag
 2021-07-17 <a href="https://github.com/kisslinux/repo/commit/8ec205895ebaf246941fc05b02b125d33236540d">8ec20589</a> clang: update for new env
 2021-07-15 <a href="https://github.com/kisslinux/repo/commit/796d4f301d22766a55a93aa38a749446ef236936">796d4f30</a> clang: use VERSION
 2021-07-09 <a href="https://github.com/kisslinux/repo/commit/2d98f2f9a3309ec040a7fdd5bed70006c344e23f">2d98f2f9</a> clang: 12.0.1

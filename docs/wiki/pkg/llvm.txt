@@ -1,4 +1,4 @@
-llvm                                                              version <a href=https://github.com/kisslinux/repo/tree/master/extra/llvm>12.0.1</a>
+llvm                                                              version <a href=https://github.com/kisslinux/repo/tree/master/extra/llvm>13.0.0</a>
 ________________________________________________________________________________
 
 LLVM is a set of compiler and toolchain technologies, which can be used to
@@ -40,7 +40,8 @@ this package.
 [003] History
 ________________________________________________________________________________
 
-<span style="display:block;max-height:177px;overflow:hidden scroll">2021-08-01 <a href="https://github.com/kisslinux/repo/commit/273685de9676321627761c6898e757bea5643ba3">273685de</a> llvm: remove ncurses dependency
+<span style="display:block;max-height:177px;overflow:hidden scroll">2021-10-02 <a href="https://github.com/kisslinux/repo/commit/ac075f64c1815bc7decda36f67561c9ca630d38a">ac075f64</a> llvm: 13.0.0
+2021-08-01 <a href="https://github.com/kisslinux/repo/commit/273685de9676321627761c6898e757bea5643ba3">273685de</a> llvm: remove ncurses dependency
 2021-07-18 <a href="https://github.com/kisslinux/repo/commit/0070d6f2630f803635fb281aaa7da1187452d4d7">0070d6f2</a> llvm: update for new env
 2021-07-18 <a href="https://github.com/kisslinux/repo/commit/e8d1d91604224b72b050c817315019103695df93">e8d1d916</a> llvm: don't link to curses
 2021-07-15 <a href="https://github.com/kisslinux/repo/commit/9ae78630f226fbf6bedf8032553218c2c035c9aa">9ae78630</a> llvm: use VERSION/VERSION

@@ -1,4 +1,4 @@
-mesa                                                              version <a href=https://github.com/kisslinux/repo/tree/master/extra/mesa>21.2.2</a>
+mesa                                                              version <a href=https://github.com/kisslinux/repo/tree/master/extra/mesa>21.2.3</a>
 ________________________________________________________________________________
 
 Mesa, also called Mesa3D and The Mesa 3D Graphics Library, is an open-source
@@ -50,7 +50,8 @@ documentation for the time being.
 [004] History
 ________________________________________________________________________________
 
-<span style="display:block;max-height:177px;overflow:hidden scroll">2021-09-22 <a href="https://github.com/kisslinux/repo/commit/b4447331b7cbecea6794fc27b181ac88b418705b">b4447331</a> mesa: 21.2.2
+<span style="display:block;max-height:177px;overflow:hidden scroll">2021-09-30 <a href="https://github.com/kisslinux/repo/commit/e5df7a914e57e3136d012b019cbee9a7670990a3">e5df7a91</a> mesa: 21.2.3
+2021-09-22 <a href="https://github.com/kisslinux/repo/commit/b4447331b7cbecea6794fc27b181ac88b418705b">b4447331</a> mesa: 21.2.2
 2021-08-20 <a href="https://github.com/kisslinux/repo/commit/ac400b38f7be4da292ed35eeda29e9d870975f69">ac400b38</a> mesa: 21.2.1
 2021-08-05 <a href="https://github.com/kisslinux/repo/commit/03490d622a5a6d4f145864a6b1fc00aee3e13dcf">03490d62</a> mesa: 21.2.0
 2021-07-29 <a href="https://github.com/kisslinux/repo/commit/b853b2de41163f3b4169f4422873e4d5c3cb3b9b">b853b2de</a> mesa: 21.1.6
