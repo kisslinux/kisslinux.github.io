@@ -51,8 +51,8 @@ ________________________________________________________________________________
     * libelf ..............................................................[024]
   * Build The Kernel ..................................................... [025]
   * Install The Kernel ................................................... [026]
-    * Install The Modules (To /usr/lib) .................................. [027]
-    * Install The Kernel Image To (/boot) ................................ [028]
+    * Install Kernel Modules ............................................. [027]
+    * Install Kernel Image ............................................... [028]
 
 * Install Required Packages .............................................. [029]
   * Install init Scripts ................................................. [030]
@@ -436,9 +436,10 @@ responsibility.
 --[026] Install The Kernel -----------------------------------------------------
 
 
-----[027]-Install-The-Modules-(To-/usr/lib)-------------------------------------
+----[027] Install Kernel Modules -----------------------------------------------
 
-    If your kernel has no modules this step can be skipped.
+    If the kernel is configured without module support this step can be skipped.
+    Modules are installed to /usr/lib/modules.
 
     +--------------------------------------------------------------------------+
     |                                                                          |
@@ -447,9 +448,9 @@ responsibility.
     +--------------------------------------------------------------------------+
 
 
-----[028]-Install-The-Kernel-Image-To-(/boot)-----------------------------------
+----[028] Install Kernel Image -------------------------------------------------
 
-    A LILO error may appear, this is normal.
+    The kernel is installed to /boot. A LILO error may appear, this is normal.
 
     +--------------------------------------------------------------------------+
     |                                                                          |

@@ -57,8 +57,8 @@ ________________________________________________________________________________
     * libelf ..............................................................[<a class=t href=#024>024</a>]
   * Build The Kernel ..................................................... [<a class=t href=#025>025</a>]
   * Install The Kernel ................................................... [<a class=t href=#026>026</a>]
-    * Install The Modules (To /usr/lib) .................................. [<a class=t href=#027>027</a>]
-    * Install The Kernel Image To (/boot) ................................ [<a class=t href=#028>028</a>]
+    * Install Kernel Modules ............................................. [<a class=t href=#027>027</a>]
+    * Install Kernel Image ............................................... [<a class=t href=#028>028</a>]
 
 * Install Required Packages .............................................. [<a class=t href=#029>029</a>]
   * Install init Scripts ................................................. [<a class=t href=#030>030</a>]
@@ -442,9 +442,10 @@ responsibility.
 --<span id=026>[<a class=t href=#026>026</a>]</span> Install The Kernel -----------------------------------------------------
 
 
-----<span id=027>[<a class=t href=#027>027</a>]</span>-Install-The-Modules-(To-/usr/lib)-------------------------------------
+----<span id=027>[<a class=t href=#027>027</a>]</span> Install Kernel Modules -----------------------------------------------
 
-    If your kernel has no modules this step can be skipped.
+    If the kernel is configured without module support this step can be skipped.
+    Modules are installed to /usr/lib/modules.
 
     +--------------------------------------------------------------------------+
     |                                                                          |
@@ -453,9 +454,9 @@ responsibility.
     +--------------------------------------------------------------------------+
 
 
-----<span id=028>[<a class=t href=#028>028</a>]</span>-Install-The-Kernel-Image-To-(/boot)-----------------------------------
+----<span id=028>[<a class=t href=#028>028</a>]</span> Install Kernel Image -------------------------------------------------
 
-    A LILO error may appear, this is normal.
+    The kernel is installed to /boot. A LILO error may appear, this is normal.
 
     +--------------------------------------------------------------------------+
     |                                                                          |

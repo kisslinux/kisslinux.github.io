@@ -1,4 +1,4 @@
-libvpx                                                            version <a href=https://github.com/kisslinux/repo/tree/master/extra/libvpx>1.10.0</a>
+libvpx                                                            version <a href=https://github.com/kisslinux/repo/tree/master/extra/libvpx>1.11.0</a>
 ________________________________________________________________________________
 
 libvpx is a free software video codec library from Google and the Alliance for O
@@ -38,7 +38,8 @@ documentation for the time being.
 [003] History
 ________________________________________________________________________________
 
-<span style="display:block;max-height:177px;overflow:hidden scroll">2021-07-28 <a href="https://github.com/kisslinux/repo/commit/cf45c1ffde92c92d73ca160db46cdbe2e91d442e">cf45c1ff</a> libvpx: avoid chmod
+<span style="display:block;max-height:177px;overflow:hidden scroll">2021-10-13 <a href="https://github.com/kisslinux/repo/commit/c98a865ccfaf1e8253315c4fce033eeae86516b3">c98a865c</a> libvpx: 1.11.0
+2021-07-28 <a href="https://github.com/kisslinux/repo/commit/cf45c1ffde92c92d73ca160db46cdbe2e91d442e">cf45c1ff</a> libvpx: avoid chmod
 2021-07-18 <a href="https://github.com/kisslinux/repo/commit/a425090e5ba01f932d78522e0bd927f17827c68a">a425090e</a> libvpx: update for new env
 2021-07-15 <a href="https://github.com/kisslinux/repo/commit/0603d10161980d283b270dce693c24c10fc5a53d">0603d101</a> libvpx: use VERSION
 2021-07-03 <a href="https://github.com/kisslinux/repo/commit/df71ceee1dc4b334e1e8f3ae030c07be2337ab18">df71ceee</a> libvpx: remove sed -i

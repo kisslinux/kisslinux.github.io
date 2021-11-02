@@ -1,4 +1,4 @@
-firefox                                                           version <a href=https://github.com/kisslinux/repo/tree/master/testing/firefox>93.0b9</a>
+firefox                                                             version <a href=https://github.com/kisslinux/repo/tree/master/extra/firefox>93.0</a>
 ________________________________________________________________________________
 
 Mozilla Firefox or simply Firefox, is a free and open-source web browser
@@ -123,7 +123,10 @@ information.
 [007] History
 ________________________________________________________________________________
 
-<span style="display:block;max-height:177px;overflow:hidden scroll">2021-09-15 <a href="https://github.com/kisslinux/repo/commit/72a691559c59a94cebda9351129e957d46ef283d">72a69155</a> firefox: 93.0b5
+<span style="display:block;max-height:177px;overflow:hidden scroll">2021-10-06 <a href="https://github.com/kisslinux/repo/commit/27980cfab08d8c44f2367b5d461670f560a5c67e">27980cfa</a> firefox: fix missing wayland-protocols depend. Closes #349
+2021-10-05 <a href="https://github.com/kisslinux/repo/commit/60aca989ddf89dc977a25ad09846671d02e2a20f">60aca989</a> firefox: remove from testing
+2021-10-05 <a href="https://github.com/kisslinux/repo/commit/5bc1562889ec166badee274f5b97d1bf10996be1">5bc15628</a> firefox: 93.0
+2021-09-15 <a href="https://github.com/kisslinux/repo/commit/72a691559c59a94cebda9351129e957d46ef283d">72a69155</a> firefox: 93.0b5
 2021-09-13 <a href="https://github.com/kisslinux/repo/commit/c14efdf253160c7a0f3447f183074f8d9aa33ebd">c14efdf2</a> firefox: 93.0b4
 2021-09-10 <a href="https://github.com/kisslinux/repo/commit/7b14498aad00de6478df78747ac6b6ae1c75e52e">7b14498a</a> firefox: [testing] 93.0b3
 2021-09-07 <a href="https://github.com/kisslinux/repo/commit/0dfbe4ef47bc39a99b4b94bea15f0d5680445eae">0dfbe4ef</a> firefox: [testing] 93.0b1

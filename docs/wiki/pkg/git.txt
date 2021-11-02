@@ -1,4 +1,4 @@
-git                                                               version <a href=https://github.com/kisslinux/repo/tree/master/core/git>2.33.0</a>
+git                                                               version <a href=https://github.com/kisslinux/repo/tree/master/core/git>2.33.1</a>
 ________________________________________________________________________________
 
 Git is software for tracking changes in any set of files, usually used for
@@ -39,7 +39,8 @@ perl is required.
 [003] History
 ________________________________________________________________________________
 
-<span style="display:block;max-height:177px;overflow:hidden scroll">2021-08-17 <a href="https://github.com/kisslinux/repo/commit/33b38f8b3113ea7c85c99ad2f8e39e1437bbbabd">33b38f8b</a> git: 2.33.0
+<span style="display:block;max-height:177px;overflow:hidden scroll">2021-10-13 <a href="https://github.com/kisslinux/repo/commit/c288c67ff64c3aee6e125919209cafabddf2a5e2">c288c67f</a> git: 2.33.1
+2021-08-17 <a href="https://github.com/kisslinux/repo/commit/33b38f8b3113ea7c85c99ad2f8e39e1437bbbabd">33b38f8b</a> git: 2.33.0
 2021-07-28 <a href="https://github.com/kisslinux/repo/commit/801ead4d0777a7357229f36b9344c823f9b4b5ae">801ead4d</a> git: remove duplicate option. Closes #299
 2021-07-15 <a href="https://github.com/kisslinux/repo/commit/43aaf2d19b24828d3f05bb3e9a23878cfef43a91">43aaf2d1</a> git: update for new env
 2021-07-15 <a href="https://github.com/kisslinux/repo/commit/a052c08df9ff9ec24ed03aaa591bbf7e675bab26">a052c08d</a> git: use VERSION
