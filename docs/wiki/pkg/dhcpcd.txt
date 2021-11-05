@@ -52,7 +52,8 @@ Refer to the manual pages and command help output.
 [004] History
 ________________________________________________________________________________
 
-<span style="display:block;max-height:177px;overflow:hidden scroll">2021-10-25 <a href="https://github.com/kisslinux/repo/commit/fa8fa879fccb93aea28940e19392ac4281db4228">fa8fa879</a> dhcpcd: 9.4.1
+<span style="display:block;max-height:177px;overflow:hidden scroll">2021-11-05 <a href="https://github.com/kisslinux/repo/commit/7aba1c3465453df69785e19263e56425e2c916c7">7aba1c34</a> dhcpcd: fix permissions
+2021-10-25 <a href="https://github.com/kisslinux/repo/commit/fa8fa879fccb93aea28940e19392ac4281db4228">fa8fa879</a> dhcpcd: 9.4.1
 2021-08-31 <a href="https://github.com/kisslinux/repo/commit/8e5944d76d271581dff5c2d22b8be9a2f80fe52e">8e5944d7</a> dhcpcd: redirect stderr to stdout in service
 2021-07-17 <a href="https://github.com/kisslinux/repo/commit/5d2ed547d9338e6284e337eb7fcb6c02c6b9d06a">5d2ed547</a> dhcpcd: update for new env
 2021-07-15 <a href="https://github.com/kisslinux/repo/commit/e1c9370d55d3fabf993c8f562c367b147d0e42bd">e1c9370d</a> dhcpcd: use VERSION

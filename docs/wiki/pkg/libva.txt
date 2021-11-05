@@ -39,7 +39,8 @@ documentation for the time being.
 [003] History
 ________________________________________________________________________________
 
-<span style="display:block;max-height:177px;overflow:hidden scroll">2021-09-18 <a href="https://github.com/kisslinux/repo/commit/b86f2d598b8da6f0d337fa2426ff65283255dae1">b86f2d59</a> libva: 2.13.0
+<span style="display:block;max-height:177px;overflow:hidden scroll">2021-11-05 <a href="https://github.com/kisslinux/repo/commit/8159604e10da88f5895471c928171e067ada1b6d">8159604e</a> libva: fix build
+2021-09-18 <a href="https://github.com/kisslinux/repo/commit/b86f2d598b8da6f0d337fa2426ff65283255dae1">b86f2d59</a> libva: 2.13.0
 2021-08-08 <a href="https://github.com/kisslinux/repo/commit/c3e978dacb77173a1fc652da11d3d0444c1f72c4">c3e978da</a> libva: fix depends
 2021-07-18 <a href="https://github.com/kisslinux/repo/commit/dead103ac302383f257893e0a1a0d776d5764f62">dead103a</a> libva: update for new env
 2021-07-15 <a href="https://github.com/kisslinux/repo/commit/b16453baccb22c09589b11256db266ee830ec54a">b16453ba</a> libva: use VERSION

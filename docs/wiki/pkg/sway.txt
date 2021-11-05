@@ -100,7 +100,8 @@ reports to $/kisslinux/repo rather than upstream.
 [008] History
 ________________________________________________________________________________
 
-<span style="display:block;max-height:177px;overflow:hidden scroll">2021-10-02 <a href="https://github.com/kisslinux/repo/commit/b4901ca1415dccaf9cbed78a59e505e090865f7c">b4901ca1</a> sway: fix errors with llvm 13. See #343
+<span style="display:block;max-height:177px;overflow:hidden scroll">2021-11-05 <a href="https://github.com/kisslinux/repo/commit/ae052cac3e104c8d74b9f1bbbd7abf68fecaa236">ae052cac</a> sway: Fix #356
+2021-10-02 <a href="https://github.com/kisslinux/repo/commit/b4901ca1415dccaf9cbed78a59e505e090865f7c">b4901ca1</a> sway: fix errors with llvm 13. See #343
 2021-07-18 <a href="https://github.com/kisslinux/repo/commit/efbe6b8997488dd976f9746798d75abb7f425922">efbe6b89</a> sway: potential fix for media keys
 2021-07-15 <a href="https://github.com/kisslinux/repo/commit/4f967a251fc5d30bcec4a60f2852d17decb517fb">4f967a25</a> sway: update for new env
 2021-07-15 <a href="https://github.com/kisslinux/repo/commit/7e0b76af158337f3085a3cad94ee4ea4cbabe5ae">7e0b76af</a> sway: use VERSION

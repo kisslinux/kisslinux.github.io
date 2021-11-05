@@ -1,4 +1,4 @@
-cmake                                                             version <a href=https://github.com/kisslinux/repo/tree/master/extra/cmake>3.22.0</a>
+cmake                                                             version <a href=https://github.com/kisslinux/repo/tree/master/extra/cmake>3.21.3</a>
 ________________________________________________________________________________
 
 CMake is cross-platform free and open-source software for build automation,
