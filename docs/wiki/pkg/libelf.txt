@@ -1,4 +1,4 @@
-libelf                                                             version <a href=https://github.com/kisslinux/repo/tree/master/extra/libelf>0.185</a>
+libelf                                                             version <a href=https://github.com/kisslinux/repo/tree/master/extra/libelf>0.186</a>
 ________________________________________________________________________________
 
 NOTE: The libelf implementation is one component of elfutils of which the
@@ -39,7 +39,8 @@ Refer to the manual pages for more information.
 [003] History
 ________________________________________________________________________________
 
-<span style="display:block;max-height:177px;overflow:hidden scroll">2021-07-28 <a href="https://github.com/kisslinux/repo/commit/91e72c8e2e1d26bee00516837f12b97c3bb4ad3a">91e72c8e</a> libelf: avoid chmod
+<span style="display:block;max-height:177px;overflow:hidden scroll">2021-11-11 <a href="https://github.com/kisslinux/repo/commit/786007d3f8d63b7324e0c3619db6fa8408b753f9">786007d3</a> libelf: 0.186
+2021-07-28 <a href="https://github.com/kisslinux/repo/commit/91e72c8e2e1d26bee00516837f12b97c3bb4ad3a">91e72c8e</a> libelf: avoid chmod
 2021-07-18 <a href="https://github.com/kisslinux/repo/commit/58135ce6acbecac53530b8e42539bcb031f4e5fe">58135ce6</a> libelf: update for new env
 2021-07-15 <a href="https://github.com/kisslinux/repo/commit/abfe95d1623e9aeaf647cefbb164fb43bff2753e">abfe95d1</a> libelf: use VERSION/VERSION
 2021-07-12 <a href="https://github.com/kisslinux/repo/commit/53bb9acb441b520afc5aa02effd2b076656a64dd">53bb9acb</a> libelf: install manual pages. See #273

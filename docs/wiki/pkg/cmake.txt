@@ -1,4 +1,4 @@
-cmake                                                             version <a href=https://github.com/kisslinux/repo/tree/master/extra/cmake>3.21.3</a>
+cmake                                                             version <a href=https://github.com/kisslinux/repo/tree/master/extra/cmake>3.21.4</a>
 ________________________________________________________________________________
 
 CMake is cross-platform free and open-source software for build automation,
@@ -60,7 +60,8 @@ not yet provide manual pages.
 [004] History
 ________________________________________________________________________________
 
-<span style="display:block;max-height:177px;overflow:hidden scroll">2021-09-21 <a href="https://github.com/kisslinux/repo/commit/87f452a3e90cc1cc57064f0774e3889ec6c76e0b">87f452a3</a> cmake: 3.21.3
+<span style="display:block;max-height:177px;overflow:hidden scroll">2021-11-07 <a href="https://github.com/kisslinux/repo/commit/8a115503ea920047126477616f1128e564475f95">8a115503</a> cmake: 3.21.4
+2021-09-21 <a href="https://github.com/kisslinux/repo/commit/87f452a3e90cc1cc57064f0774e3889ec6c76e0b">87f452a3</a> cmake: 3.21.3
 2021-08-26 <a href="https://github.com/kisslinux/repo/commit/3f538bce6e90a18e6aa592a361b197ce9b57ac20">3f538bce</a> cmake: 3.21.2
 2021-07-27 <a href="https://github.com/kisslinux/repo/commit/1047006af1a18fc414a9a14d5c3256b57ad51803">1047006a</a> cmake: 3.21.1
 2021-07-18 <a href="https://github.com/kisslinux/repo/commit/b5778a061c92b3e771f0a46b90236d8ae84a0719">b5778a06</a> cmake: update for new env

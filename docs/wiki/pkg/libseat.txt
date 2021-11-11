@@ -1,4 +1,4 @@
-libseat                                                            version <a href=https://github.com/kisslinux/repo/tree/master/wayland/libseat>0.5.0</a>
+libseat                                                            version <a href=https://github.com/kisslinux/repo/tree/master/wayland/libseat>0.6.3</a>
 ________________________________________________________________________________
 
 A minimal seat management daemon, and a universal seat management library. [0]
@@ -45,7 +45,8 @@ Refer to the manual pages and command help output.
 [004] History
 ________________________________________________________________________________
 
-<span style="display:block;max-height:177px;overflow:hidden scroll">2021-07-15 <a href="https://github.com/kisslinux/repo/commit/fd449948019ec714bfd050cc74b4822f0b57bad4">fd449948</a> libseat: update for new env
+<span style="display:block;max-height:177px;overflow:hidden scroll">2021-11-07 <a href="https://github.com/kisslinux/repo/commit/22d6fd45e9961aff0ac3df80c39b33c982c8e8e4">22d6fd45</a> libseat: 0.6.3
+2021-07-15 <a href="https://github.com/kisslinux/repo/commit/fd449948019ec714bfd050cc74b4822f0b57bad4">fd449948</a> libseat: update for new env
 2021-07-15 <a href="https://github.com/kisslinux/repo/commit/faad798096852e3ea9417695c80629a66b49153c">faad7980</a> libseat: use VERSION
 2021-07-13 <a href="https://github.com/kisslinux/repo/commit/b8d5049694d48fc93e27486fa4465b3902b3ae82">b8d50496</a> libseat: provide runit service
 2021-07-12 <a href="https://github.com/kisslinux/repo/commit/ab50b5f8c7387c5cc5f0c21ea8e94ac98337d8a4">ab50b5f8</a> libseat: Fix build with clang
