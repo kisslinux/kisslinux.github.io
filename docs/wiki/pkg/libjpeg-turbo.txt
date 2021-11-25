@@ -1,4 +1,4 @@
-libjpeg-turbo                                                      version <a href=https://github.com/kisslinux/repo/tree/master/extra/libjpeg-turbo>2.1.1</a>
+libjpeg-turbo                                                      version <a href=https://github.com/kisslinux/repo/tree/master/extra/libjpeg-turbo>2.1.2</a>
 ________________________________________________________________________________
 
 libjpeg-turbo is a fork of libjpeg that uses SIMD instructions to accelerate
@@ -52,7 +52,8 @@ Refer to the manual pages and command help output for more information.
 [003] History
 ________________________________________________________________________________
 
-<span style="display:block;max-height:177px;overflow:hidden scroll">2021-08-10 <a href="https://github.com/kisslinux/repo/commit/219a80ee863fdc5fe4e5ec9d7b2bdc509c62267b">219a80ee</a> libjpeg-turbo: 2.1.1
+<span style="display:block;max-height:177px;overflow:hidden scroll">2021-11-20 <a href="https://github.com/kisslinux/repo/commit/8447b4195509c979f7eb1ff63b28d67533d6e7b9">8447b419</a> libjpeg-turbo: 2.1.2
+2021-08-10 <a href="https://github.com/kisslinux/repo/commit/219a80ee863fdc5fe4e5ec9d7b2bdc509c62267b">219a80ee</a> libjpeg-turbo: 2.1.1
 2021-07-18 <a href="https://github.com/kisslinux/repo/commit/5bc6521a3f90b4610a9766ffd8c26add3bbb8610">5bc6521a</a> libjpeg-turbo: update for new env
 2021-07-15 <a href="https://github.com/kisslinux/repo/commit/be8009af136c981667358e26367601307a407bc1">be8009af</a> libjpeg-turbo: use VERSION
 2021-07-06 <a href="https://github.com/kisslinux/repo/commit/e20010b0db4efede64e28584bc7f53cb4d9a5219">e20010b0</a> libjpeg-turbo: remove documentation

@@ -1,4 +1,4 @@
-scdoc                                                             version <a href=https://github.com/kisslinux/repo/tree/master/extra/scdoc>1.11.1</a>
+scdoc                                                             version <a href=https://github.com/kisslinux/repo/tree/master/extra/scdoc>1.11.2</a>
 ________________________________________________________________________________
 
 scdoc is a simple man page generator for POSIX systems written in C99. [0]
@@ -34,7 +34,8 @@ Refer to the manual pages and command help output.
 [003] History
 ________________________________________________________________________________
 
-<span style="display:block;max-height:177px;overflow:hidden scroll">2021-07-18 <a href="https://github.com/kisslinux/repo/commit/de69948bbb4ec8f5a3bb19fffb4fc326cfddedda">de69948b</a> scdoc: update for new env
+<span style="display:block;max-height:177px;overflow:hidden scroll">2021-11-14 <a href="https://github.com/kisslinux/repo/commit/013e8a884f6a123f4a0c66bc78c0dec541041b82">013e8a88</a> scdoc: 1.11.2
+2021-07-18 <a href="https://github.com/kisslinux/repo/commit/de69948bbb4ec8f5a3bb19fffb4fc326cfddedda">de69948b</a> scdoc: update for new env
 2021-07-15 <a href="https://github.com/kisslinux/repo/commit/8e8951fd29ee0b2661937e77539af980d5e65dc7">8e8951fd</a> scdoc: use VERSION
 2021-07-12 <a href="https://github.com/kisslinux/repo/commit/36bfef6f3164c371de50900a9126018558788801">36bfef6f</a> scdoc: move to extra
 2021-07-12 <a href="https://github.com/kisslinux/repo/commit/33f422db82ea48e3d020e1a5d52bd5bb49c9557f">33f422db</a> scdoc: Fix prefix
