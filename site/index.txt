@@ -98,7 +98,7 @@ libpciaccess libseat libxkbcommon pixman slurp sway sway-no-seat sway-tiny
 wayland wayland-protocols wbg wl-clipboard wlroots wlsunset xkeyboard-config
 
 The distribution explicitly excludes logind, udev, dbus, systemd, polkit,
-pulseaudio, electron and all desktop environments. This software is either
+pulseaudio, electron and all desktop environments. These software are either
 with lock-in, too complex or otherwise out of scope.
 
 Further reading: @/wiki
