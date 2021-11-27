@@ -1,4 +1,4 @@
-libdrm                                                           version <a href=https://github.com/kisslinux/repo/tree/master/wayland/libdrm>2.4.108</a>
+libdrm                                                           version <a href=https://github.com/kisslinux/repo/tree/master/wayland/libdrm>2.4.109</a>
 ________________________________________________________________________________
 
 A userspace library for accessing the DRM, direct rendering manager, on
@@ -36,7 +36,8 @@ documentation for the time being.
 [003] History
 ________________________________________________________________________________
 
-<span style="display:block;max-height:177px;overflow:hidden scroll">2021-11-09 <a href="https://github.com/kisslinux/repo/commit/d3a4d0a015978217e7c99cf1d07def127c4a1f4d">d3a4d0a0</a> libdrm: 2.4.108
+<span style="display:block;max-height:177px;overflow:hidden scroll">2021-11-27 <a href="https://github.com/kisslinux/repo/commit/7c340ef6e90145e419e758ffc9f3f0fb31e19379">7c340ef6</a> libdrm: 2.4.109
+2021-11-09 <a href="https://github.com/kisslinux/repo/commit/d3a4d0a015978217e7c99cf1d07def127c4a1f4d">d3a4d0a0</a> libdrm: 2.4.108
 2021-08-26 <a href="https://github.com/kisslinux/repo/commit/1fd782d510136f7f6995a6bb9aa2a4a42780edf5">1fd782d5</a> libdrm: enable manuals
 2021-07-25 <a href="https://github.com/kisslinux/repo/commit/9149a9ccbdf7f9666e70a03a20ae147ee7b30b61">9149a9cc</a> libdrm: disable valgrind
 2021-07-15 <a href="https://github.com/kisslinux/repo/commit/19ea517a9b7f42c3853a3cbbff61ffea4f3b4acd">19ea517a</a> libdrm: update for new env
