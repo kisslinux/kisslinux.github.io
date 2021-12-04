@@ -182,8 +182,8 @@ features or conditionally do things on a per-package basis.
   | hook          | arg1   | arg2     | arg3               | arg4              |
   +---------------+--------+----------+--------------------+-------------------+
   |               |        |          |                    |                   |
-  | build-fail    | type   | package  | Build directory    |                   |
-  | post-build    | type   | package  | DESTDIR            |                   |
+  | build-fail    | Type   | package  | Build directory    |                   |
+  | post-build    | Type   | package  | DESTDIR            |                   |
   | post-install  | Type   | Package  | Installed database |                   |
   | post-package  | Type   | Package  | Tarball            |                   |
   | post-source   | Type   | Package  | Verbatim source    | Resolved source   |
