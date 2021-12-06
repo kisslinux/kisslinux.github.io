@@ -1,4 +1,4 @@
-strace                                                              version <a href=https://github.com/kisslinux/repo/tree/master/extra/strace>5.14</a>
+strace                                                              version <a href=https://github.com/kisslinux/repo/tree/master/extra/strace>5.15</a>
 ________________________________________________________________________________
 
 strace is a diagnostic, debugging and instructional userspace utility for Linux.
@@ -38,7 +38,8 @@ Refer to the manual pages and command help output.
 [003] History
 ________________________________________________________________________________
 
-<span style="display:block;max-height:177px;overflow:hidden scroll">2021-09-02 <a href="https://github.com/kisslinux/repo/commit/96a853e9af1d4c805b8da3e40cad6fd06c8e2f87">96a853e9</a> strace: 5.14
+<span style="display:block;max-height:177px;overflow:hidden scroll">2021-12-02 <a href="https://github.com/kisslinux/repo/commit/8085bf94d122cd6a817ce41e4211de2e0298a21d">8085bf94</a> strace: 5.15
+2021-09-02 <a href="https://github.com/kisslinux/repo/commit/96a853e9af1d4c805b8da3e40cad6fd06c8e2f87">96a853e9</a> strace: 5.14
 2021-07-19 <a href="https://github.com/kisslinux/repo/commit/d3068fef425536995ed319eef44c72d074321a32">d3068fef</a> strace: 5.13
 2021-07-18 <a href="https://github.com/kisslinux/repo/commit/da8f621756369b9f4ff7167b750ffee9454e2a60">da8f6217</a> strace: update for new env
 2021-07-15 <a href="https://github.com/kisslinux/repo/commit/9b1b57820df2bf4da7ec55d02de41a0020829798">9b1b5782</a> strace: use VERSION

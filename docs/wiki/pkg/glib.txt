@@ -1,4 +1,4 @@
-glib                                                              version <a href=https://github.com/kisslinux/repo/tree/master/extra/glib>2.70.1</a>
+glib                                                              version <a href=https://github.com/kisslinux/repo/tree/master/extra/glib>2.70.2</a>
 ________________________________________________________________________________
 
 GLib is a bundle of three (formerly five) low-level system libraries written in
@@ -37,7 +37,8 @@ documentation and command output for the time being.
 [003] History
 ________________________________________________________________________________
 
-<span style="display:block;max-height:177px;overflow:hidden scroll">2021-10-29 <a href="https://github.com/kisslinux/repo/commit/83bb2c9517506a0a79de34cd49d69686d119589c">83bb2c95</a> glib: 2.70.1
+<span style="display:block;max-height:177px;overflow:hidden scroll">2021-12-04 <a href="https://github.com/kisslinux/repo/commit/074407f4a8a715a3598257d311abd6bce51b9d9b">074407f4</a> glib: 2.70.2
+2021-10-29 <a href="https://github.com/kisslinux/repo/commit/83bb2c9517506a0a79de34cd49d69686d119589c">83bb2c95</a> glib: 2.70.1
 2021-10-04 <a href="https://github.com/kisslinux/repo/commit/6b882705b3367bdda4dc2dc6b1c7ed2ce4e2ac24">6b882705</a> glib: Fix missing pcre dependency
 2021-09-17 <a href="https://github.com/kisslinux/repo/commit/a4921e651a0ea3fcfb75e8bfd44c61619d428306">a4921e65</a> glib: 2.70.0
 2021-08-20 <a href="https://github.com/kisslinux/repo/commit/3a7a734cf52aec45719e7e28383935e490c01e1a">3a7a734c</a> glib: 2.68.4
