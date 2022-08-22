@@ -51,10 +51,10 @@ ________________________________________________________________________________
 | POSIX utilities       | N/A                                       | Yes      |
 | git                   | Remote repositories and git sources       | Yes [1]  |
 | curl                  | Source downloads                          | Yes      |
-| gnupg1 or gnupg2      | Repository signing                        | No       |
 | openssl               | Checksums                                 | Yes [2]  |
 | tar                   | Sources, packages, etc                    | Yes [3]  |
 | gzip, bzip2, xz, zstd | Tarball compression                       | Yes [4]  |
+| gnupg1 or gnupg2      | Repository signing                        | No       |
 | su, sudo, doas, ssu   | Privilege escalation                      | No [5]   |
 | ldd                   | Dependency Fixer                          | No [6]   |
 | readelf               | Dependency Fixer (better edition)         | No [6]   |
