@@ -13,7 +13,7 @@ ________________________________________________________________________________
   * What Does "KISS" Mean? ............................................... [002]
 
 * Software ............................................................... [003]
-  * Why Is SOFTWARE Not Packaged? ........................................ [004]
+  * Why Is X piece of SOFTWARE Not Packaged? ............................. [004]
   * Can The Distribution Package SOFTWARE For Me? ........................ [005]
   * Does DRM Work In Web Browsers? ....................................... [006]
 
@@ -45,7 +45,7 @@ ________________________________________________________________________________
 ________________________________________________________________________________
 
 
---[004] Why Is SOFTWARE Not Packaged -------------------------------------------
+--[004] Why Is X piece of SOFTWARE Not Packaged?--------------------------------
 
   The distribution provides users with an extensible base (including a modern
   web browser and media player). Any software that goes beyond this goal is not
