@@ -3,7 +3,7 @@
     <channel>
         <title>KISS Linux Tidbits</title>
         <description>Bite-sized news about Kiss Linux and its development.</description>
-        <link>https://kisslinux.org/tidbits</link>
+        <link>https://kisslinux.github.io/tidbits</link>
         <pubDate>Mon, 23 Aug 2021 16:20:00 +0000</pubDate>
         <ttl>1800</ttl>
 
@@ -12,8 +12,8 @@
             <description>
 The OpenSSL package will be updated to version 3.0.
             </description>
-            <link>https://kisslinux.org/tidbits#11092021</link>
-            <guid>https://kisslinux.org/tidbits#11092021</guid>
+            <link>https://kisslinux.github.io/tidbits#11092021</link>
+            <guid>https://kisslinux.github.io/tidbits#11092021</guid>
             <pubDate>Sat, 11 Sep 2021 05:00:00 +0000</pubDate>
         </item>
 
@@ -23,8 +23,8 @@ The OpenSSL package will be updated to version 3.0.
 Packages using rust in the official repositories (firefox, cbindgen, rust) now
 have absolute paths to build directories in their binaries trimmed away.
             </description>
-            <link>https://kisslinux.org/tidbits#04092021</link>
-            <guid>https://kisslinux.org/tidbits#04092021</guid>
+            <link>https://kisslinux.github.io/tidbits#04092021</link>
+            <guid>https://kisslinux.github.io/tidbits#04092021</guid>
             <pubDate>Sat, 4 Sep 2021 15:00:00 +0000</pubDate>
         </item>
 
@@ -33,8 +33,8 @@ have absolute paths to build directories in their binaries trimmed away.
             <description>
                 ...
             </description>
-            <link>https://kisslinux.org/tidbits#27082021</link>
-            <guid>https://kisslinux.org/tidbits#27082021</guid>
+            <link>https://kisslinux.github.io/tidbits#27082021</link>
+            <guid>https://kisslinux.github.io/tidbits#27082021</guid>
             <pubDate>Wed, 27 Aug 2021 14:00:00 +0000</pubDate>
         </item>
 
@@ -45,8 +45,8 @@ I have opened a pull request with Git source caching support. This removes the
 need to re-clone whole repositories on each build with the package manager
 pulling stuff down only when needed.
             </description>
-            <link>https://kisslinux.org/tidbits#25082021</link>
-            <guid>https://kisslinux.org/tidbits#25082021</guid>
+            <link>https://kisslinux.github.io/tidbits#25082021</link>
+            <guid>https://kisslinux.github.io/tidbits#25082021</guid>
             <pubDate>Wed, 25 Aug 2021 09:30:00 +0000</pubDate>
         </item>
 
@@ -55,8 +55,8 @@ pulling stuff down only when needed.
             <description>
 Small update on the website.
             </description>
-            <link>https://kisslinux.org/tidbits#24082021</link>
-            <guid>https://kisslinux.org/tidbits#24082021</guid>
+            <link>https://kisslinux.github.io/tidbits#24082021</link>
+            <guid>https://kisslinux.github.io/tidbits#24082021</guid>
             <pubDate>Tue, 24 Aug 2021 16:30:00 +0000</pubDate>
         </item>
 
@@ -67,8 +67,8 @@ Welcome to the new website. It is not 100% complete yet but at a stage where I
 am happy for it to replace the previous one. So, expect further changes to the
 site for a little while.
             </description>
-            <link>https://kisslinux.org/tidbits#23082021</link>
-            <guid>https://kisslinux.org/tidbits#23082021</guid>
+            <link>https://kisslinux.github.io/tidbits#23082021</link>
+            <guid>https://kisslinux.github.io/tidbits#23082021</guid>
             <pubDate>Mon, 23 Aug 2021 16:20:00 +0000</pubDate>
         </item>
     </channel>
