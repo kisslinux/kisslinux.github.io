@@ -3,7 +3,7 @@
     <channel>
         <title>KISS Linux Posts</title>
         <description>Blog posts and news about Kiss Linux and its development.</description>
-        <link>https://kisslinux.org/post</link>
+        <link>https://kisslinux.github.io/post</link>
         <pubDate>Mon, 23 Aug 2021 16:20:00 +0000</pubDate>
         <ttl>1800</ttl>
 
@@ -15,8 +15,8 @@ managers and device managers easier than before (and to remove hardcoded
 assumptions (on busybox) or otherwise unconfigurable behavior). Also, the
 distribution will provide s6 and sinit as alternatives to busybox init.
             </description>
-            <link>https://kisslinux.org/post/20210829a</link>
-            <guid>https://kisslinux.org/post/20210829a</guid>
+            <link>https://https://kisslinux.github.io/post/20210829a</link>
+            <guid>https://https://kisslinux.github.io/post/20210829a</guid>
             <pubDate>Wed, 29 Aug 2021 13:00:00 +0000</pubDate>
         </item>
     </channel>
